@@ -57,7 +57,7 @@ module.exports = {
   js: {
     src: '_js',
     dest: 'js',
-    entry: ['bundle.js']
+    entry: ['bundle.js', 'spotlights/arctic/arctic.js']
   },
 
   sass: {
@@ -71,6 +71,11 @@ module.exports = {
 
   webpack: {
     mode: 'production',
+    output: {
+      filename: (chunkData) => {
+        return chunkData.chunk.entryModule._identifier.includes('spotlights') ? 'spotlights/[name].js' : '[name].js'
+      },
+    },
     module: {
       rules: []
     }

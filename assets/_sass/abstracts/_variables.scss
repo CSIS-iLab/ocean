@@ -4,24 +4,24 @@
 
 /*----------  Colors  ----------*/
 
-$black: #000;
-$white: #fff;
+$color__black: #000;
+$color__white: #fff;
 
-$color__background-body: $white;
-$color__background-screen: $white;
-$color__background-hr: $black;
+$color__background-body: $color__white;
+$color__background-screen: $color__white;
+$color__background-hr: $color__black;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 
-$color__text-screen: $black;
-$color__text-input: $black;
-$color__text-input-focus: $black;
-$color__link: $black;
-$color__link-visited: $black;
-$color__link-hover: $black;
-$color__text-main: $black;
+$color__text-screen: $color__black;
+$color__text-input: $color__black;
+$color__text-input-focus: $color__black;
+$color__link: $color__black;
+$color__link-visited: $color__black;
+$color__link-hover: $color__black;
+$color__text-main: $color__black;
 
-$color__border-input: $black;
+$color__border-input: $color__black;
 $color__border-abbr: #666;
 
 /*----------  Typography  ----------*/
