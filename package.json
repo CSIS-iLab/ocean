@@ -1,7 +1,7 @@
 {
-  "name": "csis-jekyll-starter",
+  "name": "ocean",
   "version": "0.0.0",
-  "description": "A Jekyll starter kit for CSIS iDeas Lab projects.",
+  "description": "The website for the Stephenson Ocean Security Project.",
   "main": "gulpfile.js",
   "scripts": {
     "preinstall": "bundle install --path vendor/bundle",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CSIS-iLab/csis-jekyll-starter.git"
+    "url": "https://github.com/CSIS-iLab/ocean.git"
   },
   "keywords": [
     "Autoprefixer",
