@@ -24,40 +24,32 @@
 }
 
 // Breakpoints
-$breakpoint-xlarge: 90em;
-$breakpoint-large: 62em;
-$breakpoint-medium: 48em;
-$breakpoint-small: 36em;
-$breakpoint-xsmall: 25em;
+// Breakpoints
+// $break: Breakpoint to use
+// $dir: 'min-width' or 'max-width'
+// $until: Maximum width
+// @include breakpoint('medium');
+// @include breakpoint($break: 'medium', $until: 'large');
+// @include breakpoint($break: 'medium', $dir: 'max-width');
+@mixin breakpoint($break, $dir: 'min-width', $until: null) {
+  @if not map-has-key($breakpoints, $break) {
+    $break: $break;
+  } @else {
+    $break: map-get($breakpoints, $break);
+  }
 
-@mixin breakpoint($break) {
-  @if $break==xlarge {
-    @media screen and (min-width: $breakpoint-xlarge) {
+  @if $break and $until {
+    @if not map-has-key($breakpoints, $until) {
+      $until: $until;
+    } @else {
+      $until: map-get($breakpoints, $until);
+    }
+
+    @media screen and (min-width: $break) and (max-width: $until) {
       @content;
     }
-  }
-  @else if $break==large {
-    @media screen and (min-width: $breakpoint-large) {
-      @content;
-    }
-  }
-  @else if $break==medium {
-    @media screen and (min-width: $breakpoint-medium) {
-      @content;
-    }
-  }
-  @else if $break==small {
-    @media screen and (min-width: $breakpoint-small) {
-      @content;
-    }
-  }
-  @else if $break==xsmall {
-    @media screen and (max-width: $breakpoint-xsmall) {
-      @content;
-    }
-  }
-  @else {
-    @media screen and (min-width: $break) {
+  } @else {
+    @media screen and ($dir: $break) {
       @content;
     }
   }

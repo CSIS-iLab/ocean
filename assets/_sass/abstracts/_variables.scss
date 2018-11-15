@@ -33,3 +33,69 @@ $font__line-height-body: 1.67;
 $font__line-height-pre: 1.6;
 
 /*----------  Structure  ----------*/
+
+$breakpoints: (
+  'small': 0, // 0
+  'medium': 37.5em, // 600px
+  'large': 56.25em, // 900px
+  'xlarge': 80em // 1280px
+);
+
+$size__container-max-width: (
+  'small': 100%,
+  'medium': 100%,
+  'large': 1280px,
+  'xlarge': 1280px
+);
+
+$size__container-padding: (
+  'small': 20px,
+  'medium': 20px,
+  'large': 32px,
+  'xlarge': (64px, 32px)
+);
+
+$size__content-margin--archive: (
+  'small': 0,
+  'medium': 0,
+  'large': (10vw, 2vw),
+  'xlarge': (192px, 32px)
+);
+
+$size__content-margin--post: (
+  'small': 0,
+  'medium': 0,
+  'large': 2vw,
+  'xlarge': 32px
+);
+
+$size__content-padding: (
+  'small': 0,
+  'medium': 3vw,
+  'large': 3vw,
+  'xlarge': 32px
+);
+
+$size__page-header-height--archive: 100vh;
+$size__page-header-max-height--archive: (
+  'small': 700px,
+  'medium': 900px,
+  'large': 900px,
+  'xlarge': 1000px
+);
+
+$size__page-header-height--search: (
+  'small': 300px,
+  'medium': 300px,
+  'large': 350px,
+  'search': 350px
+);
+
+$size__page-header-height--post: (
+  'small': 300px,
+  'medium': 400px,
+  'large': 450px,
+  'xlarge': 550px
+);
+
+
