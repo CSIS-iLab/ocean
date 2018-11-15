@@ -88,3 +88,30 @@
     left: calc(100% - 1px);
   }
 }
+
+@mixin structure($map, $property) {
+  @each $size in $sizes__default {
+    $value: return-map-value($map, $size);
+    @if $size == 'small' {
+      @include structure-property($property, $value);
+    } @else {
+      @include breakpoint($size) {
+        @include structure-property($property, $value);
+      }
+    }
+  }
+}
+
+@mixin structure-property($property, $value) {
+  @if $property == 'padding' or $property == 'margin' {
+    $right: nth($value, 1);
+    $left: nth($value, 1);
+    @if length($value) == 2 {
+      $left: nth($value, 2);
+    }
+    #{$property}-right: $right;
+    #{$property}-left: $left;
+  } @else {
+    #{$property}: $value;
+  }
+}

@@ -26,6 +26,10 @@ body {
   }
 }
 
-
+.container {
+  @include structure($size__container-max-width, 'max-width');
+  margin: 0 auto;
+  @include structure($size__container-padding, 'padding');
+}
 
 
