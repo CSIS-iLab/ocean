@@ -3,14 +3,12 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="{{ page.layout | slugify | prepend: 'layout-'}}">
 
     {%- include header.html -%}
 
-    <main class="page-content container" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main class="page-content wrapper" aria-label="Content">
+      {{ content }}
     </main>
 
     {%- include footer.html -%}
