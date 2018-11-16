@@ -1,6 +1,8 @@
 const autoprefixer = require('autoprefixer')
+const cssnano = require('cssnano')
 const config = require('../frasco.config.js')
 const gulp = require('gulp')
+const mqpacker = require('css-mqpacker')
 const postcss = require('gulp-postcss')
 const sass = require('gulp-sass')
 const rename = require('gulp-rename')
@@ -11,7 +13,13 @@ gulp.task('sass', ['styleLint'], function() {
     .pipe(
       sass({ outputStyle: config.sass.outputStyle }).on('error', sass.logError)
     )
-    .pipe(postcss([autoprefixer(config.sass.autoprefixer)]))
+    .pipe(postcss([
+      autoprefixer(config.sass.autoprefixer),
+      mqpacker(),
+      cssnano({
+        preset: 'default'
+      })
+    ]))
     .pipe(rename(function(file) {
       file.dirname = file.dirname.split('/')[0]
     }))
