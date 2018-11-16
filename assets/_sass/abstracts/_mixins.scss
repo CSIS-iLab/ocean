@@ -89,6 +89,8 @@
   }
 }
 
+// Returns a property: value pair for each breakpoint
+/* @include structure($size__container-max-width, 'max-width'); */
 @mixin structure($map, $property) {
   @each $size in $sizes__default {
     $value: return-map-value($map, $size);
@@ -102,6 +104,7 @@
   }
 }
 
+// Used exclusively by the structure mixin to return property-left/property-right/property depending on the type of property.
 @mixin structure-property($property, $value) {
   @if $property == 'padding' or $property == 'margin' {
     $right: nth($value, 1);
