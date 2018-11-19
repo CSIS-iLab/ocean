@@ -1,0 +1,154 @@
+/*===============================
+=            Archive            =
+===============================*/
+
+%content-border {
+  @include breakpoint('large') {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100vh;
+    background-color: $color__off-white;  
+  }
+}
+
+.archive {
+  $a: &;
+
+  &__header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: $size__page-header-height--archive;
+    @include structure($size__page-header-max-height--archive, 'max-height');
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+      display: block;
+      width: 100vw;
+      height: $size__page-header-height--archive;
+      margin-right: -50vw;
+      margin-left: -50vw;
+      background-image: url('https://placekitten.com/1500/1500');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &-content {
+      padding: 3rem 0 2rem;
+      background-color: $color__blue;
+
+      @include breakpoint('large') {
+        padding: 4.5rem 0 3rem;
+      }
+    }
+
+    #{$a}__title {
+      margin: 0 0 1rem;
+    }
+
+    #{$a}__desc {
+      @include structure($size__content-margin--post, 'margin');
+      @include structure($size__content-padding, 'padding');
+
+      @include breakpoint('large') {
+        position: relative;
+        max-width: $size__post-body-max-width;
+      }
+
+      &::before {
+        @extend %content-border;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__results {
+    $padding: map-get($size__content-padding, 'medium');
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    padding-right: $padding;
+    background-color: $color__off-white;
+
+    @include breakpoint('medium') {
+      position: relative;
+      margin-left: $padding * -1;
+      padding: 0 $padding;
+    }
+
+    &::before {
+      @include breakpoint('medium') {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 100%;
+        bottom: 0;
+        width: map-get($size__container-padding, 'medium');
+        background-color: $color__yellow; 
+      }
+
+      @include breakpoint('large') {
+        width: 2.5rem;
+      }
+    }
+  }
+
+  &__content {
+    $border-width: 1px;
+    position: relative;
+    @include structure($size__content-margin--archive, 'margin');
+    margin-top: -40px;
+    padding-bottom: 1.5rem;
+    @include structure($size__content-padding-left--archive, 'padding-left');
+    background-color: $color__white;
+
+    @include breakpoint('large') {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 100%;
+        display: block;
+        width: calc((100vw - 100%) / 2 + #{$border-width});
+        height: 100%;
+        background-color: $color__white;
+      }
+    }
+
+    &::after {
+      @extend %content-border;
+
+      @include breakpoint('large') {
+        height: 100%;
+      }
+    }
+  }
+
+  &__footer {
+    height: 3rem;
+    margin: 0 0 0 auto;
+    padding: 0 1.5rem;
+    background-color: $color__yellow;
+
+    @include breakpoint('large') {
+      width: fit-content;
+      margin-right: calc(10vw - 96px);
+    }
+  }
+}

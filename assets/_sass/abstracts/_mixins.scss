@@ -93,17 +93,17 @@
   }
 
   @if $direction == left {
-    &::before {
-      width: calc(#{$width_forumula} - 50%);
-    }
+    // &::before {
+    //   width: calc(#{$width_forumula} - 50%);
+    // }
 
     &::after {
       display: none;
     }
   } @else if $direction == right {
-    &::after {
-      width: calc(#{$width_forumula} - 50%);
-    }
+    // &::after {
+    //   width: calc(#{$width_forumula} - 50%);
+    // }
 
     &::before {
       display: none;

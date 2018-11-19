@@ -8,8 +8,11 @@ $color__black: #000;
 $color__white: #fff;
 $color__off-white: #f1f1f1;
 $color__gray: #ccc;
+$color__blue: #0aa4cf;
+$color__yellow: #f5a623;
+$color__gray-dark: #333;
 
-$color__background-body: $color__white;
+$color__background-body: $color__gray-dark;
 $color__background-screen: $color__white;
 $color__background-hr: $color__black;
 $color__background-pre: #eee;
@@ -80,6 +83,8 @@ $size__content-padding: (
   'xlarge': (64px, 32px)
 );
 
+$size__post-body-max-width: 700px;
+
 
 /*----------  Single Posts  ----------*/
 $size__post-sidebar-width: 30%;
@@ -146,4 +151,13 @@ $size__page-header-height--search: (
   'medium': 300px,
   'large': 350px,
   'search': 350px
+);
+
+$size__content-padding-left--archive: map-merge($size__content-padding, ('xlarge': 32px));
+
+$size__post-block-img--height: (
+  'small': 80px,
+  'medium': 135px,
+  'large': calc(100% * 0.7),
+  'xlarge': 203px
 );

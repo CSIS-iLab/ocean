@@ -1,0 +1,107 @@
+/*============================
+=            Post            =
+============================*/
+
+.post-block {
+  $post: &;
+
+  margin-bottom: 1.5rem;
+
+  @include breakpoint('medium') {
+    margin-bottom: 2.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include breakpoint('large') {
+    max-width: calc(#{$size__post-body-max-width} + 5vw);
+    margin-bottom: 2rem;
+    padding-right: 5vw; 
+  }
+
+  &--img {
+    $body-width: minmax(auto, $size__post-body-max-width);
+    display: grid;
+    grid-column-gap: 1.5rem;
+    grid-template-areas:
+      'header img'
+      'content img';
+    grid-template-columns: $body-width 80px;
+    grid-template-rows: auto auto;
+    padding-right: 0;
+
+    @include breakpoint('medium') {
+      grid-column-gap: 2rem;
+      grid-template-columns: $body-width 190px;
+      padding-right: 0;
+    }
+
+    @include breakpoint('large') {
+      grid-template-columns: $body-width 30%;
+      max-width: 100%;
+      padding-right: 0;
+    }
+
+    @include breakpoint('xlarge') {
+      grid-template-columns: $body-width 270px;
+    }
+  }
+  
+  &__header {
+    grid-area: header;
+  }
+
+  &__content {
+    grid-area: content;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    grid-area: img;
+
+    img {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      @include structure($size__post-block-img--height, 'height');
+      line-height: 1;
+    }
+  }
+
+  .archive &--featured {
+    margin-bottom: 2rem;
+
+    @include breakpoint('medium') {
+      margin-bottom: 1rem;
+    }
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      grid-template-areas:
+        'header'
+        'img'
+        'content';
+      grid-template-columns: auto;
+    }
+
+    #{$post}__header {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        padding-right: 1.5rem;
+        padding-bottom: 0.75rem;
+      }
+    }
+
+    #{$post}__img img {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        height: 150px;
+      }
+    }
+
+    #{$post}__content {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        padding-top: 0.75rem;
+      }
+    }
+  }
+}
