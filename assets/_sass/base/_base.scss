@@ -11,7 +11,13 @@ html {
 body {
   /* Fallback for when there is no custom background color defined. */
   --breakpoint: 'xsmall';
+  max-width: 100%;
+  overflow-x: hidden;
   background: $color__background-body;
+  background-image: url('https://via.placeholder.com/1000x300');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto;
 
   @include breakpoint('small') {
     --breakpoint: 'small';
@@ -26,15 +32,10 @@ body {
   }
 }
 
-.container {
+.wrapper {
   @include structure($size__container-max-width, 'max-width');
   margin: 0 auto;
   @include structure($size__container-padding, 'padding');
-}
-
-.wrapper {
-  margin: 0 auto;
-  @include structure($size__content-padding, 'padding');
 }
 
 

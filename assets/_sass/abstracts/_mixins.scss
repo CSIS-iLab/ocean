@@ -68,31 +68,53 @@
 }
 
 // Extend Background to full width of window
-@mixin full-width-background ( $background ) {
+@mixin full-width-background($background, $direction: '') {
+  $width_forumula: calc((100vw - 100%) / 2);
+  position: relative;
+  margin: 0 auto;
+
   &::before,
   &::after {
     content: '';
     position: absolute;
     top: 0;
     display: block;
-    width: 100vw;
+    width: $width_forumula;
     height: 100%;
     background-color: $background;
   }
 
   &::before {
-    right: calc(100% - 1px);
+    right: 100%;
   }
 
   &::after {
-    left: calc(100% - 1px);
+    left: 100%;
+  }
+
+  @if $direction == left {
+    &::before {
+      width: calc(#{$width_forumula} - 50%);
+    }
+
+    &::after {
+      display: none;
+    }
+  } @else if $direction == right {
+    &::after {
+      width: calc(#{$width_forumula} - 50%);
+    }
+
+    &::before {
+      display: none;
+    }
   }
 }
 
 // Returns a property: value pair for each breakpoint
 /* @include structure($size__container-max-width, 'max-width'); */
-@mixin structure($map, $property) {
-  @each $size in $sizes__default {
+@mixin structure($map, $property, $sizes: $sizes__default) {
+  @each $size in $sizes {
     $value: return-map-value($map, $size);
     @if $size == 'small' {
       @include structure-property($property, $value);
@@ -116,5 +138,56 @@
     #{$property}-left: $left;
   } @else {
     #{$property}: $value;
+  }
+}
+
+@mixin further-reading-padding() {
+  @each $size in $sizes__default {
+    $padding-right: return-map-value($size__further-reading-padding-right, $size);
+    $padding-bottom: return-map-value($size__further-reading-padding-bottom, $size) + (nth(return-map-value($size__related-content-margin, $size), 1) * -1);
+
+    @if $size == 'small' {
+      padding-right: $padding-right;
+      padding-bottom: $padding-bottom;
+    } @else {
+      @include breakpoint($size) {
+        padding-right: $padding-right;
+        padding-bottom: $padding-bottom;
+      }
+    }
+  }
+}
+
+@mixin related-content-margin() {
+  @each $size in $sizes__default {
+    $values: return-map-value($size__related-content-margin, $size);
+    $top: nth($values, 1);
+    $bottom: nth($values, 2);
+
+    @if $size == 'small' {
+      margin-top: $top;
+      margin-bottom: $bottom;
+    } @else {
+      @include breakpoint($size) {
+        margin-top: $top;
+        margin-bottom: $bottom;
+      }
+    }
+  }
+}
+
+@mixin related-content-padding() {
+  @each $size in ('small', 'medium', 'large') {
+    $values: return-map-value($size__related-content-padding, $size);
+    $top: nth($values, 1);
+    $sides: nth($values, 2);
+
+    @if $size == 'small' {
+      padding: $top $sides;
+    } @else {
+      @include breakpoint($size) {
+        padding: $top $sides;
+      }
+    }
   }
 }

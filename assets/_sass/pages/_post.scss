@@ -1,0 +1,144 @@
+/*=============================
+=            Posts            =
+=============================*/
+
+.post {
+  &__header {
+    position: relative;
+    @include structure($size__page-header-height--post, 'height', ('medium', 'large', 'xlarge'));
+    @include structure($size__page-header-padding--post, 'padding-bottom', ('medium', 'large', 'xlarge'));
+
+    @include breakpoint('medium') {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+    }
+
+    &::before {
+      content: '';
+      position: relative;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+      display: block;
+      width: 100vw;
+      height: return-map-value($size__page-header-height--post, 'small');
+      margin-right: -50vw;
+      margin-left: -50vw;
+      background-image: url('https://placekitten.com/1500/1000');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @include breakpoint('medium') {
+        position: absolute;
+        height: unset;
+      }
+
+      @include breakpoint('xlarge') {
+        width: calc(100vw + 20px);
+      }
+    }
+
+    &-content {
+      $margin-right-sizes: ('large', 'xlarge');
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      background-color: #0aa4cf;
+
+      @include breakpoint('medium') {
+        flex: 1;
+        margin-top: 0;
+      }
+
+      @include breakpoint('large') {
+        margin-right: return-map-value($size__content-margin--post, 'large') * 2;
+      }
+
+      @include breakpoint('xlarge') {
+        margin-right: nth(return-map-value($size__content-margin--post, 'xlarge'), 2) * 2;
+      }
+    }
+  }
+
+  &__content {
+    @include structure($size__content-margin--post, 'margin');
+    margin-bottom: 1rem;
+    @include structure($size__content-padding, 'padding');
+    background-color: #0aa4cf;
+    border-left: 1px solid $color__off-white;
+  }
+
+  &__content-aside {
+    background-color: #f5a623;
+
+    @include breakpoint('large') {
+      float: right;
+      width: $size__post-sidebar-width;
+    }
+  }
+
+  &-body {
+    @include structure($size__post-body-padding-right, 'padding-right', ('large', 'xlarge'));
+
+    @include breakpoint('large') {
+      width: calc(100% - #{$size__post-sidebar-width});
+    }
+  }
+
+  &__footer {
+    @include structure($size__content-margin--post, 'margin');
+    @include structure($size__post-footer-padding-right, 'padding-right');
+    background-color: #0aa4cf;
+
+    &-top {
+      margin-bottom: 1rem;
+
+      @include breakpoint('large') {
+        display: flex;
+      }
+    }
+
+    .keywords {
+      margin-bottom: 1rem;
+      @include structure($size__post-body-padding-right, 'padding-right', ('large', 'xlarge'));
+
+      @include breakpoint('large') {
+        flex: 0 0 auto;
+        width: calc(100% - #{$size__post-sidebar-width});
+        margin-bottom: 0;
+      }
+    }
+
+    .share {
+      background-color: #f5a623;
+      @include breakpoint('large') {
+        flex: 1 1 auto;
+        justify-content: flex-end;
+      }
+    }
+
+    &-middle {
+      position: relative;
+      padding-top: 2rem;
+      @include further-reading-padding;
+      background-color: $color__off-white;
+      @include full-width-background($color__off-white);
+
+      &::after {
+        @include breakpoint('medium') {
+          display: none;
+        }
+      }
+    }
+
+    &-end {
+      position: relative;
+      @include related-content-margin;
+      @include related-content-padding;
+      background-color: $color__white;
+    }
+  }
+}
