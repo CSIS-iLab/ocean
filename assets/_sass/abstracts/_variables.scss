@@ -80,6 +80,8 @@ $size__content-padding: (
   'xlarge': (64px, 32px)
 );
 
+
+/*----------  Single Posts  ----------*/
 $size__post-sidebar-width: 30%;
 
 $size__post-body-padding-right: (
@@ -87,26 +89,33 @@ $size__post-body-padding-right: (
   'xlarge': 40px
 );
 
-$size__post-footer-padding-right: (
+$size__post-footer-padding-right: map-merge($size__content-padding, ('xlarge': 64px));
+
+$size__further-reading-padding-right: (
   'small': 0,
   'medium': 3vw,
   'large': calc(#{$size__post-sidebar-width} + 32px),
   'xlarge': calc(#{$size__post-sidebar-width} + 40px)
 );
 
-$size__page-header-height--archive: 100vh;
-$size__page-header-max-height--archive: (
-  'small': 700px,
-  'medium': 900px,
-  'large': 900px,
-  'xlarge': 1000px
+$size__further-reading-padding-bottom: (
+  'small': 32px,
+  'medium': 40px,
+  'large': 56px,
+  'xlarge': 56px
 );
 
-$size__page-header-height--search: (
-  'small': 300px,
-  'medium': 300px,
-  'large': 350px,
-  'search': 350px
+$size__related-content-margin: (
+  'small': (-24px, 8px),
+  'medium': (-32px, 4px),
+  'large': (-40px, 8px),
+  'xlarge': (-40px, 4px)
+);
+
+$size__related-content-padding: (
+  'small': (24px, 16px),
+  'medium': (32px, 24px),
+  'large': (32px, 48px)
 );
 
 $size__page-header-height--post: (
@@ -121,4 +130,20 @@ $size__page-header-padding--post: (
   'medium': 32px,
   'large': 40px,
   'xlarge': 64px
+);
+
+/*----------  Archives  ----------*/
+$size__page-header-height--archive: 100vh;
+$size__page-header-max-height--archive: (
+  'small': 700px,
+  'medium': 900px,
+  'large': 900px,
+  'xlarge': 1000px
+);
+
+$size__page-header-height--search: (
+  'small': 300px,
+  'medium': 300px,
+  'large': 350px,
+  'search': 350px
 );
