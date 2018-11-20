@@ -155,7 +155,6 @@
   }
 
   &__cutout {
-    // height: var(--cutout-height);
     padding-top: 1rem;
     @include structure($size__content-padding--archive, 'padding-right');
     padding-bottom: 1rem;
@@ -233,14 +232,15 @@
   }
 
   &__footer {
+    position: relative;
     height: 3rem;
-    margin: 0 0 0 auto;
+    @include structure($size__archive-footer-margin-right, 'margin-right');
+    margin-left: auto;
     padding: 0 1.5rem;
     background-color: $color__yellow;
 
-    @include breakpoint('large') {
+    @include breakpoint('medium') {
       width: fit-content;
-      margin-right: calc(10vw - 96px);
     }
   }
 }

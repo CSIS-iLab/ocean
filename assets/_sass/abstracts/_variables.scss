@@ -62,20 +62,6 @@ $size__container-padding: (
   'xlarge': (64px, 32px)
 );
 
-$size__content-margin--archive: (
-  'small': 0,
-  'medium': 0,
-  'large': (10vw, 2vw),
-  'xlarge': (192px, 32px)
-);
-
-$size__content-margin--post: (
-  'small': 0,
-  'medium': 0,
-  'large': 2vw,
-  'xlarge': (0, 32px)
-);
-
 $size__content-padding: (
   'small': 0,
   'medium': 3vw,
@@ -87,6 +73,14 @@ $size__post-body-max-width: 700px;
 
 
 /*----------  Single Posts  ----------*/
+
+$size__content-margin--post: (
+  'small': 0,
+  'medium': 0,
+  'large': 2vw,
+  'xlarge': (0, 32px)
+);
+
 $size__post-sidebar-width: 30%;
 
 $size__post-body-padding-right: (
@@ -138,6 +132,13 @@ $size__page-header-padding--post: (
 );
 
 /*----------  Archives  ----------*/
+$size__content-margin--archive: (
+  'small': 0,
+  'medium': 0,
+  'large': (10vw, 2vw),
+  'xlarge': (192px, 32px)
+);
+
 $size__page-header-height--archive: 100vh;
 $size__page-header-max-height--archive: (
   'small': 700px,
@@ -163,3 +164,10 @@ $size__post-block-img--height: (
 );
 
 $size__search-header-cutout-height: 100px;
+
+$size__archive-footer-margin-right: (
+  'small': 0,
+  'medium': 0,
+  'large': 10vw,
+  'xlarge': 192px
+);
