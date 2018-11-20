@@ -100,7 +100,7 @@
     @include full-width-background($color__white, $excludeMargin: true);
 
     @include breakpoint('medium') {
-      border-left: $border-width solid $color__off-white;
+      border-left: $border-width solid $color__test;
     }
 
     &::before,
@@ -120,7 +120,7 @@
       top: var(--archive-cutout-height);
 
       @include breakpoint('medium') {
-        background-color: $color__off-white;
+        background-color: $color__test;
       }
 
       @each $size in ('large', 'xlarge') {
@@ -173,7 +173,7 @@
     align-self: flex-start;
     order: 2;
     max-width: fit-content;
-    background-color: $color__off-white;
+    background-color: $color__test;
 
     @include breakpoint('medium') {
       order: 1;
@@ -199,7 +199,7 @@
       right: 100%;
       bottom: 0;
       width: map-get($size__container-padding, 'medium');
-      background-color: $color__yellow;
+      background-color: $color__test;
 
       @include breakpoint('large') {
         width: 2.5rem;
@@ -225,7 +225,7 @@
     @include structure($size__archive-footer-margin-right, 'margin-right');
     margin-left: auto;
     padding: 0 1.5rem;
-    background-color: $color__yellow;
+    background-color: $color__test;
 
     @include breakpoint('medium') {
       width: fit-content;

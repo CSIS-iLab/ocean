@@ -4,15 +4,49 @@
 
 /*----------  Colors  ----------*/
 
+$color__test: #f5a623;
+
 $color__black: #000;
 $color__white: #fff;
-$color__off-white: #f1f1f1;
-$color__gray: #ccc;
-$color__blue: #0aa4cf;
-$color__yellow: #f5a623;
-$color__gray-dark: #333;
+$color__dkblue-lighter: #718699;
+$color__medblue-light: #3883b4;
+$color__dkblue-darker: #0b2033;
+$color__dkblue-light: #425e77;
+$color__dkblue-dark: #0f2b44;
+$color__medblue: #0663a1;
+$color__dkblue: #123554;
+$color__medblue-darker: #043c61;
+$color__ltblue-light: #58abd3;
+$color__ltblue: #2e96c7;
+$color__ltblue-lighter: #82c0de;
+$color__ltblue-dark: #2578a0;
+$color__ltblue-darker: #1c5a78;
+$color__red-lighter: #f6917b;
+$color__red-light: #f36c4f;
+$color__red: #ef4723;
+$color__red-dark: #c0391c;
+$color__red-darker: #902b15;
+$color__ltgray-lighter: #f2f2f2;
+$color__ltgray-light: #e2e2e2;
+$color__ltgray-dark: #a1a1a1;
+$color__dkgray-light: #767676;
+$color__focus: #7cc7ff;
+$color__black-light: #333;
+$color__dkgray: #595959;
+$color__bluegray-light: #c1c9d1;
+$color__slate-dark: #718699;
+$color__slate-light: #b8c3cc;
+$color__slate-lightest: #edeff2;
+$color__slate-lighter: #dce1e6;
+$color__slate: #8795a1;
+$color__slate-darker: #686d74;
+$color__dkslate-8: rgba(24, 55, 82, 0.08);
+$color__medblue-dark: #055081;
+$color__ltgray: #cecece;
+$color__gray-58: rgba(155, 155, 155, 0.58);
+$color__bluegray: #6aa2c7;
 
-$color__background-body: $color__gray-dark;
+$color__background-body: $color__dkgray;
 $color__background-screen: $color__white;
 $color__background-hr: $color__black;
 $color__background-pre: #eee;
