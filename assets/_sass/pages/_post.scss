@@ -46,7 +46,7 @@
       $margin-right-sizes: ('large', 'xlarge');
       margin-top: 1.5rem;
       margin-bottom: 1rem;
-      background-color: #0aa4cf;
+      background-color: $color__blue;
 
       @include breakpoint('medium') {
         flex: 1;
@@ -67,12 +67,12 @@
     @include structure($size__content-margin--post, 'margin');
     margin-bottom: 1rem;
     @include structure($size__content-padding, 'padding');
-    background-color: #0aa4cf;
+    background-color: $color__blue;
     border-left: 1px solid $color__off-white;
   }
 
   &__content-aside {
-    background-color: #f5a623;
+    background-color: $color__yellow;
 
     @include breakpoint('large') {
       float: right;
@@ -91,7 +91,7 @@
   &__footer {
     @include structure($size__content-margin--post, 'margin');
     @include structure($size__post-footer-padding-right, 'padding-right');
-    background-color: #0aa4cf;
+    background-color: $color__blue;
 
     &-top {
       margin-bottom: 1rem;
@@ -113,7 +113,7 @@
     }
 
     .share {
-      background-color: #f5a623;
+      background-color: $color__yellow;
       @include breakpoint('large') {
         flex: 1 1 auto;
         justify-content: flex-end;

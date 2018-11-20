@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{%- assign collection = site.collections | where: "title", page.title | first -%}
+{%- assign posts = site[collection.label] -%}
+{%- if page.post_list_collection == 'all' -%}
+{%- assign posts = site.posts | concat: site.spotlights -%}
+{%- endif -%}
+
+<article class="archive archive--{{ page.title | slugify }}" role="content" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="archive__header">
+    <div class="archive__header-content">
+      <h1 class="archive__title">{{ page.title | escape }}</h1>
+      {%- if page.is_search != true -%}
+      <div class="archive__desc">{{ content }}</div>
+      {%- endif -%}
+  </header>
+  <section class="archive__content e-content" itemprop="articleBody">
+    {% if page.archive_has_featured -%}
+    <div class="archive__featured">
+      {%- for post in posts limit: 1 -%}
+      {%- include post-block.html class="post-block--featured" -%}
+      {%- endfor -%}
+    </div>
+    {%- else -%}
+    <div class="archive__cutout js-cutout">
+      {%- if collection == 'authors' -%}
+      {{ content}}
+      {% else %}
+      Search Bar
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+    <div class="archive__content-filter">
+      <div class="archive__results">Results</div>
+      {%- if page.is_search -%}
+      <div class="archive__filters">Filters</div>
+      {%- endif -%}
+    </div>
+    <div class="archive__listing">
+      {%- for post in posts -%}
+        {%- include post-block.html -%}
+      {%- endfor -%}
+    </div>
+  </section>
+  <footer class="archive__footer" role="footer">
+    Pagination Goes Here
+  </footer>
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

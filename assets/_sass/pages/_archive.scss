@@ -1,0 +1,234 @@
+/*===============================
+=            Archive            =
+===============================*/
+
+:root {
+  --archive-cutout-height: #{$size__search-header-cutout-height};
+}
+
+.archive {
+  $a: &;
+  $search: #{$a}--search;
+
+  &__header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: $size__page-header-height--archive;
+    @include structure($size__page-header-max-height--archive, 'max-height');
+
+    #{$search} & {
+      align-items: flex-end;
+      @include structure($size__page-header-height--search, 'height');
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+      display: block;
+      width: 100vw;
+      height: $size__page-header-height--archive;
+      margin-right: -50vw;
+      margin-left: -50vw;
+      background-image: url('https://placekitten.com/1500/1500');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      #{$search} & {
+        height: 100%;
+      }
+    }
+
+    &-content {
+      position: relative;
+      padding: 3rem 0 2rem;
+
+      @include breakpoint('large') {
+        padding: 4.5rem 0 3rem;
+      }
+
+      #{$search} & {
+        @include structure($size__content-margin--post, 'margin');
+        margin-bottom: var(--archive-cutout-height);
+        padding: 0;
+      }
+
+      #{$search} &::before {
+        @extend %header-border;
+      }
+    }
+
+    #{$a}__title {
+      margin: 0 0 1rem;
+    }
+
+    #{$a}__desc {
+      position: relative;
+      @include structure($size__content-margin--post, 'margin');
+      @include structure($size__content-padding, 'padding');
+
+      @include breakpoint('large') {
+        position: relative;
+        max-width: $size__post-body-max-width;
+      }
+
+      &::before {
+        @extend %header-border;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__content {
+    $border-width: 1px;
+    position: relative;
+    margin-top: calc(var(--archive-cutout-height) * -1);
+    @include structure($size__content-margin--archive, 'margin');
+    padding-bottom: 1.5rem;
+    @include structure($size__content-padding--archive, 'padding-left');
+    background-color: $color__white;
+    @include full-width-background($color__white, $excludeMargin: true);
+
+    @include breakpoint('medium') {
+      border-left: $border-width solid $color__off-white;
+    }
+
+    &::before,
+    &::after {
+      bottom: 0;
+      height: unset;
+    }
+
+    &::before {
+      @include breakpoint('medium') {
+        top: var(--archive-cutout-height);
+        right: calc(100% + #{$border-width});
+      }
+    }
+
+    &::after {
+      top: var(--archive-cutout-height);
+
+      @include breakpoint('medium') {
+        background-color: $color__off-white;
+      }
+
+      @each $size in ('large', 'xlarge') {
+        $multiplier: 2;
+
+        @if $size == 'xlarge' {
+          $multiplier: 3;
+        }
+
+        @include breakpoint($size) {
+          $offset: nth(map-get($size__content-margin--archive, $size), 2) * $multiplier;
+          width: calc((100vw - 100%) / 2 + #{$offset});
+        } 
+      }
+    }
+
+    #{$search} & {
+      margin-top: calc(var(--archive-cutout-height) * -1);
+    }
+  }
+
+  &__cutout {
+    padding-top: 1rem;
+    @include structure($size__content-padding--archive, 'padding-right');
+    padding-bottom: 1rem;
+  }
+
+  &__content-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    @include breakpoint('medium') {
+      flex-direction: row;
+      height: 2.5rem;
+    }
+  }
+
+  &__results,
+  &__filters {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__results {
+    position: relative;
+    flex: 0 1 auto;
+    align-self: flex-start;
+    order: 2;
+    max-width: fit-content;
+    background-color: $color__off-white;
+
+    @include breakpoint('medium') {
+      order: 1;
+    }
+
+    @each $size in ('medium', 'xlarge') {
+      $padding: map-get($size__content-padding, $size);
+      @if $size == xlarge {
+        $padding: nth($padding, 2);
+      }
+      padding-right: $padding;
+      padding-left: $padding;
+
+      @include breakpoint($size) {
+        margin-left: calc((#{$padding} * -1) - 1px);
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      width: map-get($size__container-padding, 'medium');
+      background-color: $color__yellow;
+
+      @include breakpoint('large') {
+        width: 2.5rem;
+      }
+    }
+  }
+
+  &__filters {
+    flex: 1;
+    justify-content: flex-end;
+    order: 1;
+    @include structure($size__content-padding--archive, 'padding-right');
+    text-align: right;
+
+    @include breakpoint('medium') {
+      order: 2;
+    }
+  }
+
+  &__footer {
+    position: relative;
+    height: 3rem;
+    @include structure($size__archive-footer-margin-right, 'margin-right');
+    margin-left: auto;
+    padding: 0 1.5rem;
+    background-color: $color__yellow;
+
+    @include breakpoint('medium') {
+      width: fit-content;
+    }
+  }
+}

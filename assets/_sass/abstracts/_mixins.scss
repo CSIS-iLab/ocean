@@ -68,10 +68,13 @@
 }
 
 // Extend Background to full width of window
-@mixin full-width-background($background, $direction: '') {
+@mixin full-width-background($background, $direction: '', $excludeMargin: false) {
   $width_forumula: calc((100vw - 100%) / 2);
   position: relative;
-  margin: 0 auto;
+  
+  @if $excludeMargin != true {
+    margin: 0 auto;
+  }
 
   &::before,
   &::after {
@@ -93,17 +96,17 @@
   }
 
   @if $direction == left {
-    &::before {
-      width: calc(#{$width_forumula} - 50%);
-    }
+    // &::before {
+    //   width: calc(#{$width_forumula} - 50%);
+    // }
 
     &::after {
       display: none;
     }
   } @else if $direction == right {
-    &::after {
-      width: calc(#{$width_forumula} - 50%);
-    }
+    // &::after {
+    //   width: calc(#{$width_forumula} - 50%);
+    // }
 
     &::before {
       display: none;

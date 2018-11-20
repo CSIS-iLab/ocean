@@ -57,7 +57,7 @@ module.exports = {
   js: {
     src: '_js',
     dest: 'js',
-    entry: ['bundle.js', 'spotlights/arctic/arctic.js']
+    entry: ['bundle.js', 'archives.js', 'spotlights/arctic/arctic.js']
   },
 
   sass: {
