@@ -150,10 +150,10 @@ $size__page-header-height--search: (
   'small': 300px,
   'medium': 300px,
   'large': 350px,
-  'search': 350px
+  'xlarge': 350px
 );
 
-$size__content-padding-left--archive: map-merge($size__content-padding, ('xlarge': 32px));
+$size__content-padding--archive: map-merge($size__content-padding, ('xlarge': 32px));
 
 $size__post-block-img--height: (
   'small': 80px,
@@ -161,3 +161,5 @@ $size__post-block-img--height: (
   'large': calc(100% * 0.7),
   'xlarge': 203px
 );
+
+$size__search-header-cutout-height: 100px;
