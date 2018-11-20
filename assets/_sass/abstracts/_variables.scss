@@ -65,7 +65,10 @@ $color__border-abbr: #666;
 
 /*----------  Typography  ----------*/
 
-$font__main: sans-serif;
+$font__proxima: proxima-nova, sans-serif;
+$font__freight: freight-display-pro, serif;
+
+$font__main: $font__proxima;
 $font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
 $font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.67;
