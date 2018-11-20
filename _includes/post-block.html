@@ -3,11 +3,15 @@
 {%- assign img_class = 'post-block--img' -%}
 {%- endif -%}
 
+{%- if page.layout == 'archive' and include.class == 'post-block--featured' -%}
+{% assign headerClass = 'js-cutout' %}
+{%- endif -%}
+
 <article class="post-block {{ include.class }} {{ img_class }}" role="article" data-content-type="{{ post.collection | slugify }}">
   {% if post.image.size > 0 %}
   <a href="{{ post.url | relative_url }}" class="post-block__img"><img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" title="{{ post.title | escape }}" /></a>
   {% endif %}
-  <header class="post-block__header">
+  <header class="post-block__header {{ headerClass }}">
     Content Type
     <h2 class="post-block__title"><a href="{{ post.url | relative_url }}">
       {{ post.title | escape }}

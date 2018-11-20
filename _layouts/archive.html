@@ -23,11 +23,13 @@ layout: default
       {%- include post-block.html class="post-block--featured" -%}
       {%- endfor -%}
     </div>
-    {%- elsif collection == 'authors' -%}
-      Author bio
     {%- else -%}
-    <div class="archive__cutout">
+    <div class="archive__cutout js-cutout">
+      {%- if collection == 'authors' -%}
+      {{ content}}
+      {% else %}
       Search Bar
+      {%- endif -%}
     </div>
     {%- endif -%}
     <div class="archive__content-filter">

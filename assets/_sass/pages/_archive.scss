@@ -155,7 +155,7 @@
   }
 
   &__cutout {
-    height: var(--cutout-height);
+    // height: var(--cutout-height);
     padding-top: 1rem;
     @include structure($size__content-padding--archive, 'padding-right');
     padding-bottom: 1rem;
