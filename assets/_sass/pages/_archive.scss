@@ -3,19 +3,7 @@
 ===============================*/
 
 :root {
-  --cutout-height: #{$size__search-header-cutout-height};
-}
-
-%header-border {
-  @include breakpoint('medium') {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 100vh;
-    background-color: $color__off-white;
-  }
+  --archive-cutout-height: #{$size__search-header-cutout-height};
 }
 
 .archive {
@@ -68,7 +56,7 @@
 
       #{$search} & {
         @include structure($size__content-margin--post, 'margin');
-        margin-bottom: var(--cutout-height);
+        margin-bottom: var(--archive-cutout-height);
         padding: 0;
       }
 
@@ -104,7 +92,7 @@
   &__content {
     $border-width: 1px;
     position: relative;
-    margin-top: calc(var(--cutout-height) * -1);
+    margin-top: calc(var(--archive-cutout-height) * -1);
     @include structure($size__content-margin--archive, 'margin');
     padding-bottom: 1.5rem;
     @include structure($size__content-padding--archive, 'padding-left');
@@ -123,13 +111,13 @@
 
     &::before {
       @include breakpoint('medium') {
-        top: var(--cutout-height);
+        top: var(--archive-cutout-height);
         right: calc(100% + #{$border-width});
       }
     }
 
     &::after {
-      top: var(--cutout-height);
+      top: var(--archive-cutout-height);
 
       @include breakpoint('medium') {
         background-color: $color__off-white;
@@ -150,7 +138,7 @@
     }
 
     #{$search} & {
-      margin-top: calc(var(--cutout-height) * -1);
+      margin-top: calc(var(--archive-cutout-height) * -1);
     }
   }
 

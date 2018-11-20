@@ -2,4 +2,14 @@
 =            Placeholders            =
 ====================================*/
 
-
+%header-border {
+  @include breakpoint('medium') {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100vh;
+    background-color: $color__off-white;
+  }
+}

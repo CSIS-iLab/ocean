@@ -6,7 +6,7 @@ const ArchiveCutout = () => {
   }
 
   document.documentElement.style.setProperty(
-    '--cutout-height',
+    '--archive-cutout-height',
     cutout.offsetHeight + 'px'
   )
 }
