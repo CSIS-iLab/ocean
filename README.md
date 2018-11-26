@@ -1,5 +1,5 @@
-# CSIS Jekyll Starter Kit
-This is a Jekyll starter kit based on [Frasco](https://github.com/ixkaito/frasco/) that utilizes gulp, Sass, Autoprefixer, PostCSS, Webpack, imagemin, and Browsersync to speed-up development.
+# Ocean
+The website for the CSIS Stephenson Ocean Security project. It is built on the [CSIS Jekyll Starter](https://github.com/CSIS-iLab/csis-jekyll-starter) that utilizes gulp, Sass, Autoprefixer, PostCSS, Webpack, imagemin, and Browsersync to speed-up development.
 
 ## Table of Contents
 * [Quick-Start Instructions](#quick-start-instructions)
@@ -12,7 +12,7 @@ This is a Jekyll starter kit based on [Frasco](https://github.com/ixkaito/frasco
 
 ## Quick-start Instructions
 ```shell
-$ git clone https://github.com/CSIS-iLab/csis-jekyll-starter.git
+$ git clone https://github.com/CSIS-iLab/ocean.git
 $ cd csis-jekyll-starter
 $ npm install
 $ npm start
@@ -22,7 +22,7 @@ $ npm start
 
 ### Local Development
 
-This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting, etc.
+This will give you file watching, browser synchronization, auto-rebuild, CSS injecting, etc.
 
 ```shell
 $ npm start
@@ -61,6 +61,32 @@ For more information on what is included and modifying the default configuration
 - [imagemin](https://github.com/imagemin/imagemin)
 - [Browsersync](https://www.browsersync.io/)
 
+## Contributing
+### Branching
+When modifying the code base, always make a new branch. Unless it's necessary to do otherwise, all branches should be created off of `master`.
+
+Branches should use the following naming conventions:
+
+| Branch type | Name       | Example                     |
+|--------------------------|------------|-----------------------------|
+| New Feature | `feature/<short description of feature>` | `feature/header-navigation` |
+| Bug Fixes   | `bug/<short description of bug>`| `bug/mobile-navigation` |
+| Documentation | `docs/<short description of documentation being updated>` | `docs/readme` |
+| Code clean-up/refactoring | `refactor/<short description>` | `refactor/apply-linting` |
+| Content Updates | `content/<short description of content>` | `content/add-new-posts` |
+
+When ready to merge, submit a Pull Request into `master`. All code will be reviewed by the lead developer on the project before being merged into `master`.
+
+### Commit Messages
+Write clear and concise commit messages describing the changes you are making and why. If there are any issues associated with the commit, include the issue # in the commit title.
+
+### CSS Styles
+* This project uses the [BEM](http://getbem.com/introduction/) naming convention.
+* This project uses [Stylelint](https://stylelint.io) to maintain a consistent code style. Errors are flagged in the console during development and can be automatically fixed by running `npm run stylelint-fix`.
+
+### Includes
+When creating a [Jekyll include(https://jekyllrb.com/docs/includes/) that accepts parameters, add it to the [Includes](INCLUDES.md) document with a description of what the include is, how to call it, and what the parameters are.
+
 ## Copyright / License
 
-Copyright © 2018 CSIS iDeas Lab under the [MIT License](https://github.com/ixkaito/frasco/blob/master/LICENSE).
+Copyright © 2018 CSIS iDeas Lab under the [MIT License](https://github.com/CSIS-iLab/on-the-radar/blob/master/LICENSE).
