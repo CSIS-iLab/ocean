@@ -85,7 +85,7 @@ Write clear and concise commit messages describing the changes you are making an
 * This project uses [Stylelint](https://stylelint.io) to maintain a consistent code style. Errors are flagged in the console during development and can be automatically fixed by running `npm run stylelint-fix`.
 
 ### Includes
-When creating a [Jekyll include(https://jekyllrb.com/docs/includes/) that accepts parameters, add it to the [Includes](INCLUDES.md) document with a description of what the include is, how to call it, and what the parameters are.
+When creating a [Jekyll include](https://jekyllrb.com/docs/includes/) that accepts parameters, add it to the [Includes](INCLUDES.md) document with a description of what the include is, how to call it, and what the parameters are.
 
 ## Copyright / License
 
