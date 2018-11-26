@@ -1,0 +1,21 @@
+{% if include.path.size > 0 %}
+<figure class="{{ include.classes | default: post__image }}">
+{% if include.path contains 'cloudinary' %}
+{% assign image_name = include.path | split: "/upload/" | last %}
+  <img
+  sizes="(max-width: 400px) 400px,
+        (max-width: 600px) 600px,
+        700px"
+  srcset="{{ site.cloudinary_url }}f_auto,q_70,w_400/{{ image_name }} 400w,
+          {{ site.cloudinary_url }}f_auto,q_70,w_600/{{ image_name }} 600w,
+          {{ site.cloudinary_url }}f_auto,w_700/{{ image_name }} 700w"
+  src="{{ site.cloudinary_url }}f_auto,w_700/v2/{{ site.cloudinary_folder }}/{{ image_name }}" title="{{ include.title }}"
+  alt="{{ include.title }}" />
+{% else %}
+  <img src="{{ include.path }}" title="{{ include.title }}" alt="{{ include.title }}" />
+{% endif %}
+  {% if include.title %}
+    <figcaption class="img-caption">{{ include.title }} <span class="img-caption__source">{{ include.alt }}</span></figcaption>
+  {% endif %}
+  </figure>
+{% endif %}
