@@ -1,3 +1,7 @@
+:root {
+  --accent-color: $color__red;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -13,6 +17,7 @@ body {
   --breakpoint: 'xsmall';
   max-width: 100%;
   overflow-x: hidden;
+  color: #fff;
   background: $color__background-body;
   background-image: url('https://via.placeholder.com/1000x300');
   background-repeat: no-repeat;
