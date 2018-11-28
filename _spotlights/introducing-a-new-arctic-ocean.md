@@ -12,11 +12,12 @@ keywords:
 - fishing
 - Arctic
 further_reading: ''
-related_content: []
-is_featured: false
+related_content:
+- _posts/2018-11-19-test-post.md
+is_featured: true
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.43.31%20AM.png
-image_caption: ''
-image_source: ''
+image_caption: image caption
+image_source: image source
 
 ---
 <h2 class="test-header">Test Header</h2>
