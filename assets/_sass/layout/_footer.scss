@@ -15,8 +15,8 @@
 
     a {
       @extend %header-nav__link;
-      text-transform: uppercase;
       color: $color__slate-light;
+      text-transform: uppercase;
 
       &:hover {
         color: $color__white;

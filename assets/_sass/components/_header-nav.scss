@@ -18,10 +18,10 @@ $site-nav: '.site-header__nav';
   display: block;
   width: 20px;
   height: 12px;
-  transform: rotate(0deg);
-  border: 0;
-  background-color: transparent;
   padding: 0;
+  background-color: transparent;
+  border: 0;
+  transform: rotate(0deg);
   cursor: pointer;
   transition: 0.5s ease-in-out;
 
@@ -126,8 +126,8 @@ $site-nav: '.site-header__nav';
 
     a {
       @extend %header-nav__link;
-      text-transform: uppercase;
       color: $color__slate-light;
+      text-transform: uppercase;
     }
   }
 
