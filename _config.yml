@@ -32,6 +32,12 @@ defaults:
   values:
     layout: spotlight
     permalink: "/spotlights/:slug/"
+- scope:
+    path: ''
+    type: 'authors'
+  values:
+    layout: archive
+    permalink: "/authors/:slug/"
 
 # Build settings
 markdown: kramdown
