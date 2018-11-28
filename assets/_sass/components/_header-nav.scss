@@ -1,0 +1,137 @@
+/*====================================
+=            Header: Nav            =
+===================================*/
+
+$site-nav: '.site-header__nav';
+
+#{$site-nav} {
+  flex: 1 0 auto;
+  @extend %header-nav__section;
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    order: -1;
+  }
+}
+
+#{$site-nav}-trigger {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 12px;
+  transform: rotate(0deg);
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+
+  @include breakpoint('medium') {
+    display: none;
+  }
+
+  .line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    max-width: 20px;
+    height: 2px;
+    background: $color__black;
+    border-radius: 9px;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0%;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 50%;
+    }
+
+    &:nth-child(4) {
+      top: 100%;
+    }
+  }
+
+  &:hover .line,
+  &:focus .line {
+    background-color: $color__medblue;
+  }
+
+  &.is-active .line {
+    &:nth-child(1),
+    &:nth-child(4) {
+      top: 50%;
+      left: 25%;
+      width: 0%;
+    }
+
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+#{$site-nav}-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style: none;
+  background-color: $color__dkblue;
+  transform: translateX(-150%);
+  visibility: hidden;
+  transition: transform 0.5s linear, visibility 0s linear 0.3s;
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    width: 80%;
+    padding: 20px;
+  }
+
+  @include breakpoint('medium') {
+    position: static;
+    top: unset;
+    left: unset;
+    z-index: initial;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: transparent;
+    transform: none;
+    visibility: visible;
+  }
+
+  &.is-active {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  li {
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      margin-bottom: 1.2rem;
+    }
+
+    &:not(:first-of-type) {
+      @include breakpoint('medium') {
+        margin-left: 3rem;
+      }
+    }
+
+    a {
+      @extend %header-nav__link;
+      text-transform: uppercase;
+      color: $color__slate-light;
+    }
+  }
+
+  &--home li a {
+    color: $color__black-light;
+  }
+}
