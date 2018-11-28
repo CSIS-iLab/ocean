@@ -15,6 +15,9 @@ collections:
   spotlights:
     title: Spotlights
     output: true
+  authors:
+    title: Authors
+    output: true
 
 defaults:
 - scope:
