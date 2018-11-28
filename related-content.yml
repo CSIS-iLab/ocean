@@ -1,8 +1,5 @@
 ---
-title: Related Content
-foobar:
-  - dogs
-  - cats
+foobar: test front matter
 ---
 {%- assign posts = site.posts | concat: site.spotlights -%}
 test_section:
