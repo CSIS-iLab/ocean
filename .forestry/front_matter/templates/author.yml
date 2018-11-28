@@ -1,0 +1,14 @@
+---
+label: Author
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Name
+- type: text
+  name: role
+  label: Title
+- type: text
+  name: byline
+  label: Byline
