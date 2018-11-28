@@ -12,5 +12,5 @@
 - url: "/about/"
   title: About
   identifier: about
-  inHeader: ''
-  inFooter: ''
+  inHeader: true
+  inFooter: true
