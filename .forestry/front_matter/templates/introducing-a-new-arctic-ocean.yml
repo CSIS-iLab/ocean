@@ -23,3 +23,5 @@ fields:
   template: post-meta-secondary
 - type: include
   template: image-upload
+pages:
+- _spotlights/introducing-a-new-arctic-ocean.md
