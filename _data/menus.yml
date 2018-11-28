@@ -1,0 +1,16 @@
+---
+- url: "/spotlights/"
+  title: Spotlights
+  identifier: spotlights
+  inHeader: true
+  inFooter: true
+- url: "/commentary/"
+  title: Commentary
+  identifier: commentary
+  inHeader: true
+  inFooter: true
+- url: "/about/"
+  title: About
+  identifier: about
+  inHeader: true
+  inFooter: true

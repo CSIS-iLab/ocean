@@ -1,0 +1,28 @@
+---
+label: Spotlights
+hide_body: true
+is_partial: false
+fields:
+- type: include
+  name: ''
+  label: ''
+  template: post-meta-primary
+- name: js_files
+  label: Js files
+  type: list
+  hidden: false
+  default: ''
+- name: css_files
+  label: Css files
+  type: list
+  hidden: false
+  default: ''
+- type: include
+  name: ''
+  label: ''
+  template: post-meta-secondary
+- type: include
+  template: image-upload
+pages:
+- _spotlights/introducing-a-new-arctic-ocean.md
+- _spotlights/south-china-sea.md
