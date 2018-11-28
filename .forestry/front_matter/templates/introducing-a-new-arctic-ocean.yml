@@ -1,12 +1,18 @@
 ---
 label: Introducing a New Arctic Ocean
-hide_body: true
-is_partial: false
+hide_body: 
+is_partial: 
 fields:
-- type: include
-  name: ''
-  label: ''
-  template: post-meta-info
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
 - name: js_files
   label: Js files
   type: list
@@ -17,9 +23,3 @@ fields:
   type: list
   hidden: false
   default: ''
-- type: include
-  name: ''
-  label: ''
-  template: post-meta-secondary
-- type: include
-  template: image-upload
