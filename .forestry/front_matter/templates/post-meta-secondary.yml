@@ -2,4 +2,28 @@
 label: Post Meta Secondary
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: list
+  name: keywords
+  label: Keywords
+  config:
+    use_select: true
+    source:
+      type: documents
+      section: keywords
+      file: _data/keywords.yml
+      path: Keywords
+- type: textarea
+  name: further_reading
+  label: Further Reading
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: list
+  name: related_content
+  label: Related Content
+  config:
+    use_select: true
+    source:
+      type: pages
