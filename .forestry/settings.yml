@@ -15,6 +15,10 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+- type: document
+  path: _data
+  label: data
+  match: "**/*"
 upload_dir: ocean
 public_path: https://res.cloudinary.com/csisideaslab/image/upload
 front_matter_path: https://res.cloudinary.com/csisideaslab/image/upload
