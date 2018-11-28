@@ -5,4 +5,4 @@ is_for_related_content_list: true
 ---
 
 {%- assign posts = site.posts | concat: site.spotlights -%}
-{%- for post in posts -%}{{ post.title }}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}
+{%- for post in posts -%}{{ post.relative_path }}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}
