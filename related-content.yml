@@ -1,0 +1,6 @@
+---
+---
+{% assign posts = site.posts | concat: site.spotlights %}
+posts:
+{% for post in posts %}  - {{ post.title }}
+{% endfor %}
