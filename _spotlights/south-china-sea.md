@@ -1,10 +1,19 @@
 ---
 title: South China Sea
-date:   2018-11-14 00:56:34 +0900
-js_files:
-css_files:
----
+date: 2018-11-13 15:56:34 +0000
+js_files: []
+css_files: []
+excerpt: ''
+authors: []
+keywords: []
+further_reading: ''
+related_content: []
+is_featured: false
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.44.13%20AM.png
+image_caption: ''
+image_source: ''
 
+---
 <h2 class="test-header">Test Header</h2>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
