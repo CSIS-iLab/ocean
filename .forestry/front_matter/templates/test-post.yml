@@ -1,35 +1,17 @@
 ---
-label: Test Post
-hide_body: 
-is_partial: 
+label: Post
+hide_body: false
+is_partial: false
 fields:
-- name: layout
-  label: Layout
-  type: text
-  hidden: false
-  default: ''
-- name: title
-  label: Title
-  type: text
-  hidden: false
-  default: ''
-- name: date
-  label: Date
-  type: datetime
-  hidden: false
-  default: ''
-- name: categories
-  label: Categories
-  type: tag_list
-  hidden: false
-  default: ''
-- name: excerpt
-  label: Excerpt
-  type: textarea
-  hidden: false
-  default: ''
-- name: image
-  label: Image
-  type: text
-  hidden: false
-  default: ''
+- type: include
+  name: ''
+  label: ''
+  template: post-meta-primary
+- type: include
+  name: ''
+  label: ''
+  template: post-meta-secondary
+- type: include
+  name: ''
+  label: ''
+  template: image-upload
