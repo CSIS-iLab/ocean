@@ -1,4 +1,9 @@
 ---
+- url: "/commentary/"
+  title: Commentary
+  identifier: commentary
+  inHeader: true
+  inFooter: true
 - url: "/spotlights/"
   title: Spotlights
   identifier: spotlights
