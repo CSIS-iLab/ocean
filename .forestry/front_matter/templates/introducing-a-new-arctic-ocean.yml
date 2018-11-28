@@ -1,7 +1,7 @@
 ---
-label: Introducing a New Arctic Ocean
-hide_body: 
-is_partial: 
+label: Spotlights
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
