@@ -1,0 +1,9 @@
+---
+---
+{%- assign posts = site.posts | concat: site.spotlights -%}
+{%- capture values -%}[{%- for post in posts -%}"{{ post.title }}"{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]{%- endcapture -%}
+
+{
+  test_section: ['test', 'two'],
+  posts: {{ values}}
+}
