@@ -7,7 +7,9 @@ js_files:
 css_files:
 - arctic
 excerpt: ''
-authors: []
+authors:
+- _authors/test-sr.md
+- _authors/test-jr.md
 keywords:
 - fishing
 - Arctic
