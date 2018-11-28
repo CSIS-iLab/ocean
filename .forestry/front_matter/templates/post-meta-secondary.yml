@@ -27,3 +27,6 @@ fields:
     use_select: true
     source:
       type: pages
+- type: boolean
+  name: is_featured
+  label: Is Featured?
