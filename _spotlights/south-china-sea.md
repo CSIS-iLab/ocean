@@ -4,7 +4,9 @@ date: 2018-11-13 15:56:34 +0000
 js_files: []
 css_files: []
 excerpt: ''
-authors: []
+authors:
+- _authors/test-jr.md
+- _authors/test-sr.md
 keywords:
 - South China Sea
 - oil
