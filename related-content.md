@@ -1,8 +1,0 @@
----
-title: Related Content
-? posts_list
-is_for_related_content_list: true
----
-
-{%- assign posts = site.posts | concat: site.spotlights -%}
-{%- for post in posts -%}{{ post.relative_path }}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}
