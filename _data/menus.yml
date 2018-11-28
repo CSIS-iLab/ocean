@@ -1,0 +1,5 @@
+- url: /path/
+  title: Path
+  identifier: path
+  inHeader: true
+  inFooter: true
