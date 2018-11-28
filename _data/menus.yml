@@ -1,5 +1,6 @@
-- url: /path/
-  title: Path
-  identifier: path
+---
+- url: "/spotlights/"
+  title: Spotlights
+  identifier: spotlights
   inHeader: true
   inFooter: true
