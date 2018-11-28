@@ -24,3 +24,20 @@ fields:
     source:
       type: pages
       section: authors
+- type: list
+  label: Keywords
+  name: keywords
+  config:
+    use_select: true
+    source:
+      type: documents
+      section: keywords
+      file: _data/keywords.yml
+      path: Keywords
+- type: textarea
+  name: further_reading
+  label: Further Reading
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
