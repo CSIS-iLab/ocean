@@ -6,6 +6,7 @@ css_files: []
 excerpt: ''
 authors: []
 keywords:
+- South China Sea
 - oil
 further_reading: ''
 related_content: []
