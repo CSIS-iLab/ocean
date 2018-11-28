@@ -8,7 +8,9 @@ css_files:
 - arctic
 excerpt: ''
 authors: []
-keywords: []
+keywords:
+- fishing
+- Arctic
 further_reading: ''
 related_content: []
 is_featured: false
