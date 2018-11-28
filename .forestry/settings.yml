@@ -15,9 +15,19 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-- type: document
-  path: _data
+- type: heading
   label: data
+- type: document
+  path: _data/keywords.yml
+  label: Keywords
+  match: "**/*"
+- type: document
+  path: _data/language.yml
+  label: Language
+  match: "**/*"
+- type: document
+  path: _data/menus.yml
+  label: Menus
   match: "**/*"
 upload_dir: ocean
 public_path: https://res.cloudinary.com/csisideaslab/image/upload
