@@ -2,6 +2,10 @@
 title: Related Content
 ---
 {%- assign posts = site.posts | concat: site.spotlights -%}
+test_section:
+  - one
+  - two
+
 posts:
 {% for post in posts %}  - {{ post.title }}
 {% endfor %}
