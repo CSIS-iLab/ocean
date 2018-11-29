@@ -1,38 +1,24 @@
-<footer class="site-footer h-card">
+<footer class="site-footer wrapper h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <p>{{- site.description | escape -}}</p>
-        {% include site-nav.html class="footer__nav" location="inFooter" %}
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
+    <section class="site-footer__logo">
+      CSIS Logo
+    </section>
+    <section class="site-footer__desc">
+      {{- site.description | escape -}}
+    </section>
+    <section class="site-footer__mailing">
+      <span>Mailing List</span>
+    </section>
+    <section class="site-footer__contact">
+      Contact Info<br />
+      {%- if site.email -%}
+      <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {%- endif -%}
+    </section>
+    {% include site-nav.html class="footer__nav" location="inFooter" %}
+    <section class="site-footer__copyright">
+      Copyright
+    </section>
 </footer>
 
 <script src="{{ "/assets/js/bundle.js" | relative_url }}" type="text/javascript"></script>
