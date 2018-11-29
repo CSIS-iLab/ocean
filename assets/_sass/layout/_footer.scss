@@ -1,0 +1,26 @@
+.site-footer__nav {
+  display: none;
+  padding-left: 0;
+  list-style: none;
+
+  @include breakpoint('medium') {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+    }
+
+    a {
+      @extend %header-nav__link;
+      color: $color__slate-light;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $color__white;
+      }
+    }
+  }
+}

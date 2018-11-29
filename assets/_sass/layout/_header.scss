@@ -1,7 +1,26 @@
-/*==============================
-=            Header            =
-===============================*/
+/*===================================
+=            Site Header            =
+====================================*/
 
 .site-header {
-  position: fixed;
+  $header: &;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 0.8em;
+  transition: all 0.2s ease-in-out;
+
+  &--minimal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: $color__white;
+    @include box-shadow(0, 2px, 4px, 0, rgba($color__black, 0.41));
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
 }
