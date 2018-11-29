@@ -1,5 +1,4 @@
 .site-footer {
-  @include structure($size__content-margin--post, 'margin');
   display: grid;
   grid-template-areas:
     'logo'
@@ -7,6 +6,7 @@
     'mailing'
     'contact'
     'copyright';
+  @include structure($size__content-margin--post, 'margin');
   background-color: $color__dkblue-dark;
 
   @include breakpoint('medium') {
