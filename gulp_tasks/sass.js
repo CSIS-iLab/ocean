@@ -13,15 +13,21 @@ gulp.task('sass', ['styleLint'], function() {
     .pipe(
       sass({ outputStyle: config.sass.outputStyle }).on('error', sass.logError)
     )
-    .pipe(postcss([
-      autoprefixer(config.sass.autoprefixer),
-      mqpacker(),
-      cssnano({
-        preset: 'default'
+    .pipe(
+      postcss([
+        autoprefixer(config.sass.autoprefixer),
+        mqpacker({
+          sort: true
+        }),
+        cssnano({
+          preset: 'default'
+        })
+      ])
+    )
+    .pipe(
+      rename(function(file) {
+        file.dirname = file.dirname.split('/')[0]
       })
-    ]))
-    .pipe(rename(function(file) {
-      file.dirname = file.dirname.split('/')[0]
-    }))
+    )
     .pipe(gulp.dest(config.assets + '/' + config.sass.dest))
 })
