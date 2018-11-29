@@ -2,8 +2,6 @@
   {% assign page = post %}
 {% endif %}
 
-{% assign content_type = 'TEST IF THIS DOES NOT WORK' %}
-
 {% if page.collection == 'spotlights' %}
   {% assign content_type = 'Spotlight' %}
 {% endif %}
@@ -12,5 +10,6 @@
   {% assign content_type = 'Commentary' %}
 {% endif %}
 
-
-<span class="content-type">{{ content_type }}</span>
+{% if content_type %}
+  <span class="content-type">{{ content_type }}</span>
+{% endif %}
