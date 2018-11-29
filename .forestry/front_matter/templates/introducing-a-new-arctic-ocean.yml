@@ -10,12 +10,12 @@ fields:
 - name: js_files
   label: Js files
   type: list
-  hidden: false
+  hidden: true
   default: ''
 - name: css_files
   label: Css files
   type: list
-  hidden: false
+  hidden: true
   default: ''
 - type: include
   name: ''

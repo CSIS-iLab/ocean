@@ -1,19 +1,20 @@
+---
 label: Post
 hide_body: false
 is_partial: false
 fields:
-  - type: include
-    name: ''
-    label: ''
-    template: post-meta-primary
-  - type: include
-    name: ''
-    label: ''
-    template: post-meta-secondary
-  - type: include
-    name: ''
-    label: ''
-    template: image-upload
+- type: include
+  name: ''
+  label: ''
+  template: post-meta-primary
+- type: include
+  name: ''
+  label: ''
+  template: post-meta-secondary
+- type: include
+  name: ''
+  label: ''
+  template: image-upload
 pages:
-  - _posts/2018-11-19-test-post.md
-  - _posts/2018-02-14-welcome-to-jekyll.markdown
+- _posts/2018-11-19-test-post.md
+- _posts/2018-02-14-welcome-to-jekyll.markdown
