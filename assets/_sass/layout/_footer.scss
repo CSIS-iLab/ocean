@@ -1,31 +1,36 @@
 .site-footer {
-  display: grid;
-  grid-template-areas:
-    'logo'
-    'desc'
-    'mailing'
-    'contact'
-    'copyright';
-  @include structure($size__content-margin--post, 'margin');
-  background-color: $color__dkblue-dark;
+  @include structure($size__container-max-width, 'max-width');
+  margin: 0 auto;
 
-  @include breakpoint('medium') {
+  .wrapper {
+    display: grid;
     grid-template-areas:
-      'logo logo'
-      'desc desc'
-      'mailing contact'
-      'copyright copyright';
-    grid-template-columns: repeat(2, 1fr);
-  }
+      'logo'
+      'desc'
+      'mailing'
+      'contact'
+      'copyright';
+    @include structure($size__content-margin--post, 'margin');
+    background-color: $color__dkblue-dark;
 
-  @include breakpoint('large') {
-    grid-template-areas:
-      'logo logo .'
-      'desc mailing contact'
-      'nav mailing contact'
-      'copyright mailing contact';
-    grid-template-columns: 50% 25% 25%;
-    background-color: transparent;
+    @include breakpoint('medium') {
+      grid-template-areas:
+        'logo logo'
+        'desc desc'
+        'mailing contact'
+        'copyright copyright';
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint('large') {
+      grid-template-areas:
+        'logo logo .'
+        'desc mailing contact'
+        'nav mailing contact'
+        'copyright mailing contact';
+      grid-template-columns: 50% 25% 25%;
+      background-color: transparent;
+    }
   }
 
   a:hover {
@@ -48,6 +53,14 @@
 
     @include breakpoint('large') {
       padding-bottom: 0;
+    }
+
+    .csis-logo {
+      max-width: 300px;
+
+      @include breakpoint('medium') {
+        max-width: 320px;
+      }
     }
   }
 
