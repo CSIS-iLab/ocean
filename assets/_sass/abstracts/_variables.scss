@@ -67,7 +67,8 @@ $color__border-abbr: #666;
 
 $font__proxima: proxima-nova, sans-serif;
 $font__freight: freight-display-pro, serif;
-$font__fontello: '../fonts/';
+$font__fontello: 'sos';
+$font__fontello_url: '../fonts/';
 
 $font__main: $font__proxima;
 $font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
@@ -80,10 +81,13 @@ $font__line-height-pre: 1.6;
 $sizes__default: ('small', 'medium', 'large', 'xlarge');
 
 $breakpoints: (
-  'small': 0, // 0
-  'medium': 37.5em, // 600px
-  'large': 56.25em, // 900px
-  'xlarge': 80em // 1280px
+  'small': 0,
+  // 0
+    'medium': 37.5em,
+  // 600px
+    'large': 56.25em,
+  // 900px
+    'xlarge': 80em// 1280px
 );
 
 $size__container-max-width: (
@@ -93,6 +97,7 @@ $size__container-max-width: (
   'xlarge': 1280px
 );
 
+// prettier-ignore
 $size__container-padding: (
   'small': 20px,
   'medium': 20px,
@@ -100,6 +105,7 @@ $size__container-padding: (
   'xlarge': (64px, 32px)
 );
 
+// prettier-ignore
 $size__content-padding: (
   'small': 0,
   'medium': 3vw,
@@ -109,9 +115,9 @@ $size__content-padding: (
 
 $size__post-body-max-width: 700px;
 
-
 /*----------  Single Posts  ----------*/
 
+// prettier-ignore
 $size__content-margin--post: (
   'small': 0,
   'medium': 0,
@@ -126,8 +132,10 @@ $size__post-body-padding-right: (
   'xlarge': 40px
 );
 
+// prettier-ignore
 $size__post-footer-padding-right: map-merge($size__content-padding, ('xlarge': 64px));
 
+// prettier-ignore
 $size__further-reading-padding-right: (
   'small': 0,
   'medium': 3vw,
@@ -142,6 +150,7 @@ $size__further-reading-padding-bottom: (
   'xlarge': 56px
 );
 
+// prettier-ignore
 $size__related-content-margin: (
   'small': (-24px, 8px),
   'medium': (-32px, 4px),
@@ -149,6 +158,7 @@ $size__related-content-margin: (
   'xlarge': (-40px, 4px)
 );
 
+// prettier-ignore
 $size__related-content-padding: (
   'small': (24px, 16px),
   'medium': (32px, 24px),
@@ -170,6 +180,7 @@ $size__page-header-padding--post: (
 );
 
 /*----------  Archives  ----------*/
+// prettier-ignore
 $size__content-margin--archive: (
   'small': 0,
   'medium': 0,
@@ -192,6 +203,7 @@ $size__page-header-height--search: (
   'xlarge': 350px
 );
 
+// prettier-ignore
 $size__content-padding--archive: map-merge($size__content-padding, ('xlarge': 32px));
 
 $size__post-block-img--height: (

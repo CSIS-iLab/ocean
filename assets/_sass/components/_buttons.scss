@@ -1,0 +1,32 @@
+/*===========================
+=            Buttons        =
+===========================*/
+
+.btn {
+  @extend %button;
+  display: inline-block;
+  min-width: 160px;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:focus {
+    border: 2px solid $color__focus;
+  }
+
+  &--dkblue {
+    color: $color__white;
+    background-color: $color__dkblue-light;
+
+    &:hover {
+      background-color: $color__slate-dark;
+    }
+
+    &:focus {
+      color: $color__white;
+      background-color: $color__dkblue-light;
+    }
+  }
+}

@@ -28,6 +28,16 @@
     background-color: transparent;
   }
 
+  a:hover {
+    color: $color__white;
+  }
+
+  &__heading {
+    margin-bottom: 0.5rem;
+    @extend %footer__heading;
+    text-transform: uppercase;
+  }
+
   &__logo {
     grid-area: logo;
     padding: 1.5rem 0 0.5rem;
@@ -53,6 +63,11 @@
       padding-top: 1rem;
       padding-right: 1.5rem;
     }
+
+    p {
+      @extend %footer__text;
+      margin-bottom: 0;
+    }
   }
 
   &__logo,
@@ -77,6 +92,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background-color: $color__dkblue-dark;
+    @extend %footer__text;
 
     @include breakpoint('medium') {
       padding-right: 0.75rem;
@@ -106,11 +122,16 @@
       position: relative;
       z-index: 5;
     }
+
+    .btn {
+      text-transform: uppercase;
+    }
   }
 
   &__contact {
     grid-area: contact;
     padding-bottom: 1.5rem;
+    @extend %footer__text;
 
     @include breakpoint('medium') {
       padding-top: 1.5rem;
@@ -145,6 +166,7 @@
   &__copyright {
     grid-area: copyright;
     padding-bottom: 1rem;
+    @extend %copyright;
 
     @include breakpoint('large') {
       padding-bottom: 0.5rem;
@@ -159,6 +181,31 @@
       background-color: $color__dkblue;
       @include full-width-background($color__dkblue, 'left');
     }
+  }
+
+  &__address,
+  &__email {
+    $margin: 1.5rem;
+    position: relative;
+    margin-left: $margin;
+
+    &::before {
+      position: absolute;
+      left: -$margin;
+      display: block;
+      color: $color__white;
+      font-family: $font__fontello;
+    }
+  }
+
+  &__address::before {
+    content: '\e818';
+  }
+
+  &__email::before {
+    content: '\e811';
+    @include font-size(11px);
+    top: 2px;
   }
 }
 
@@ -185,6 +232,10 @@
 
       &:hover {
         color: $color__white;
+      }
+
+      &:focus {
+        color: $color__dkblue-dark;
       }
     }
   }

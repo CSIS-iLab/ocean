@@ -4,20 +4,25 @@
       CSIS Logo
     </section>
     <section class="site-footer__desc">
-      {{- site.description | escape -}}
+      <p>{{- site.description | escape -}}</p>
     </section>
     <section class="site-footer__mailing">
-      <span>Mailing List</span>
+      <p class="site-footer__heading">{{ site.data.language.footer.mailing_list }}</p>
+      <p>{{ site.data.language.footer.mailing_desc }}</p>
+      <a class="btn btn--dkblue" href="{{ site.newsletter_url }}" target="_blank">{{ site.data.language.footer.mailing_signup }}</a>
     </section>
     <section class="site-footer__contact">
-      Contact Info<br />
+      <p class="site-footer__heading">{{ site.data.language.footer.contact_heading }}</p>
+      {%- if site.address -%}
+      <address class="site-footer__address">{{ site.address }}</address>
+      {%- endif -%}
       {%- if site.email -%}
-      <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a class="site-footer__email u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
       {%- endif -%}
     </section>
     {% include site-nav.html class="footer__nav" location="inFooter" %}
     <section class="site-footer__copyright">
-      Copyright
+      &copy;{{ site.time | date: '%Y' }} {{ site.data.language.footer.copyright }} <a href="https://www.csis.org/privacy-policy" target="_blank">{{ site.data.language.footer.privacy }}</a>
     </section>
 </footer>
 

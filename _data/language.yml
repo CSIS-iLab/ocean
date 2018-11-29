@@ -1,8 +1,13 @@
----
-tagline: Explore the intersection of ocean conservation and national security
-email: oceans@csis.org
+tagline: 'The Stephenson Ocean Security Project: Maritime security through sustainability.'
 author_list: 'By '
-mailing_list: Mailing List
 related_topics: Related Topics
 related_commentary: Related Commentary
-related_commentary: Further Reading
+further_reading: Further Reading
+
+footer:
+  mailing_list: Mailing List
+  mailing_desc: Sign up for regular news and updates.
+  mailing_signup: Sign Up
+  contact_heading: Contact
+  copyright: by the Center for Strategic and International Studies. All rights reserved.
+  privacy: Privacy Policy
