@@ -4,7 +4,7 @@
 {% endif %}
 
 {% if authors_list.size > 0 %}
-<div class="authors-block">
+<div class="post-meta__authors-block-wrapper">
   <h2 class="authors-block__title">{{ site.data.language.about_authors }}</h2>
   {% for author in authors_list %}
     {%- assign author_info = site.authors | where: "relative_path", author | first -%}

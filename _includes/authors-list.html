@@ -7,9 +7,7 @@
   {% endif %}
 
   {% if authors.size > 0 %}
-  <div class="authors">
-    <span class="post-meta__label">{{ site.data.language.author_list }}</span>
-
+  <div class="post-meta__authors-list">
       {% if authors.size == 2 %}
         {%- assign list_break = ' and ' -%}
       {% elsif authors.size >= 3 %}
@@ -22,7 +20,7 @@
         {%- for author in authors -%}
           {%- assign author_info = site.authors | where: "relative_path", author | first -%}
           {%- assign author_list = author_info.title -%}
-            <span class="post-meta__authors">{{ author_list }}</span>
+            {{ author_list }}
           {%- if forloop.last == false -%}
             {{- list_break -}}
           {%- endif -%}
