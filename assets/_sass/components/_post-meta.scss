@@ -3,13 +3,30 @@
 ============================*/
 
 .post-meta {
+
   &__label {
-    @extend %post-block__meta-label;
-    color: $color__dkgray;
+
   }
 
+  &__authors,
   &__date {
     @extend %post-block__meta;
     color: $color__black;
+    text-transform: uppercase;
   }
+
+  &__authors::before {
+    content: "By ";
+    @extend %post-block__meta-label;
+    color: $color__dkgray;
+    text-transform: capitalize;
+  }
+
+  &__date::before {
+    content: "Published ";
+    @extend %post-block__meta-label;
+    color: $color__dkgray;
+    text-transform: capitalize;
+  }
+
 }
