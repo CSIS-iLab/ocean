@@ -1,0 +1,15 @@
+/*============================
+=        Post Meta           =
+============================*/
+
+.post-meta {
+  &__label {
+    @extend %post-block__meta-label;
+    color: $color__dkgray;
+  }
+
+  &__date {
+    @extend %post-block__meta;
+    color: $color__black;
+  }
+}
