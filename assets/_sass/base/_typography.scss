@@ -129,7 +129,6 @@ big {
   font-size: 125%;
 }
 
-
 /*=============================
 =            Links            =
 =============================*/
@@ -140,22 +139,38 @@ a {
   transition: all 0.3s ease-in-out;
 
   &:visited {
-    color: $color__link-visited;
+    color: inherit;
   }
 
   &:hover,
   &:focus,
   &:active {
-    color: $color__link-hover;
+    color: inherit;
     border: 0;
   }
 
   &:focus {
-    outline: thin dotted;
+    background-color: $color__slate-lighter;
+    outline: thin $color__slate-lighter;
   }
 
   &:hover,
   &:active {
     outline: 0;
+  }
+
+  .post-content &:not(.btn) {
+    @include box-shadow(0, -2px, 0, 0, $color__medblue, true);
+    color: inherit;
+
+    &:visited {
+      @include box-shadow(0, -2px, 0, 0, $color__medblue, true);
+      color: inherit;
+    }
+
+    &:hover {
+      color: inherit;
+      box-shadow: none;
+    }
   }
 }
