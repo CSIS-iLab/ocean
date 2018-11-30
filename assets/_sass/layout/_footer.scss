@@ -1,6 +1,19 @@
 .site-footer {
   @include structure($size__container-max-width, 'max-width');
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  @include structure($size__footer-padding-top, 'padding-top');
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    width: 100vw;
+    height: var(--footer-bg-min-height);
+    background-color: $color__medblue;
+  }
 
   .wrapper {
     display: grid;
