@@ -5,12 +5,15 @@
 .content-type {
   text-transform: uppercase;
 
-  .post-header & {
+  .post__header & {
     @extend %post-type;
   }
 
-  .post-block__header &,
-  .post-list & {
+  .post-block & {
     @extend %post-block__type;
+  }
+
+  .post-block--related {
+    @extend %post-block__type--related;
   }
 }
