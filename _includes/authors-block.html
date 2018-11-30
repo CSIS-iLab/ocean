@@ -5,8 +5,8 @@
 
 {% if authors_list.size > 0 %}
 <div class="post-meta__authors-block">
+  <span class="post-meta__label">{{ site.data.language.by_label }}</span>
   {% for author in authors_list %}
-    <span class="post-meta__label">{{ site.data.language.by_label }}</span>
     {%- assign author_info = site.authors | where: "relative_path", author | first -%}
     <span class="post-meta__authors-block-title">{{ author_info.title }}</span>
     {{ author_info.content }}
