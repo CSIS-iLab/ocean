@@ -5,8 +5,16 @@
 .post {
   &__header {
     position: relative;
-    @include structure($size__page-header-height--post, 'height', ('medium', 'large', 'xlarge'));
-    @include structure($size__page-header-padding--post, 'padding-bottom', ('medium', 'large', 'xlarge'));
+    @include structure(
+      $size__page-header-height--post,
+      'height',
+      ('medium', 'large', 'xlarge')
+    );
+    @include structure(
+      $size__page-header-padding--post,
+      'padding-bottom',
+      ('medium', 'large', 'xlarge')
+    );
 
     @include breakpoint('medium') {
       display: flex;
@@ -58,6 +66,7 @@
       }
 
       @include breakpoint('xlarge') {
+        // prettier-ignore
         margin-right: nth(return-map-value($size__content-margin--post, 'xlarge'), 2) * 2;
       }
     }
@@ -81,7 +90,11 @@
   }
 
   &-body {
-    @include structure($size__post-body-padding-right, 'padding-right', ('large', 'xlarge'));
+    @include structure(
+      $size__post-body-padding-right,
+      'padding-right',
+      ('large', 'xlarge')
+    );
 
     @include breakpoint('large') {
       width: calc(100% - #{$size__post-sidebar-width});
@@ -103,7 +116,11 @@
 
     .keywords {
       margin-bottom: 1rem;
-      @include structure($size__post-body-padding-right, 'padding-right', ('large', 'xlarge'));
+      @include structure(
+        $size__post-body-padding-right,
+        'padding-right',
+        ('large', 'xlarge')
+      );
 
       @include breakpoint('large') {
         flex: 0 0 auto;
