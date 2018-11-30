@@ -4,13 +4,8 @@
 
 .post {
   $post: &;
-  $width-offset: nth(
-    map-get(
-      $map: $size__container-padding,
-      $key: 'xlarge'
-    ),
-    2
-  );
+  // prettier-ignore
+  $width-offset: nth(map-get($map: $size__container-padding, $key: 'xlarge'), 2);
 
   &__header {
     position: relative;
@@ -71,6 +66,7 @@
       }
 
       @include breakpoint('large') {
+        // prettier-ignore
         margin-right: return-map-value($size__content-margin--post, 'large') * 2;
       }
 
