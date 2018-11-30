@@ -61,6 +61,7 @@
   }
 
   &__read-more {
+    color: $color__medblue;
     @extend %post-content__caption-link;
     text-transform: uppercase;
 
