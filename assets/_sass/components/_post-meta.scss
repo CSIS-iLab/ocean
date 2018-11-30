@@ -23,11 +23,27 @@
     text-transform: capitalize;
   }
 
-  &__date::before {
-    content: 'Published ';
-    @extend %post-block__meta-label;
-    color: $color__dkgray;
-    text-transform: capitalize;
+  &__date
+    //POST BLOCK
+
+
+    //PAGE
+    &::after {
+      content: '\A';
+      white-space: pre;
+    }
+
+    &::before {
+      content: 'Published ';
+      @extend %post-block__meta-label;
+      color: $color__dkgray;
+      text-transform: capitalize;
+    }
+  }
+
+  &__text::after {
+    content: '\A';
+    white-space: pre;
   }
 
   &__link {
