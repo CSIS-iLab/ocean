@@ -203,7 +203,7 @@
     @if $size == 'small' {
       background-image: $value;
     } @else {
-      @include breakpoint($size, $breakpoints-map: $breakpoints--bg-img) {
+      @include breakpoint($break: $size, $breakpoints-map: $breakpoints--bg-img) {
         background-image: $value;
       }
     }
