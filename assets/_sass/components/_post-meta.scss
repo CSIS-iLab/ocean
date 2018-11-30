@@ -60,19 +60,18 @@
     }
   }
 
+  &__read-more {
+    @extend %post-content__caption-link;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $color__slate-lighter;
+    }
+  }
+
   &__link {
     &:focus {
       background-color: $color__slate-lighter;
     }
-  }
-}
-
-.post-meta__read-more {
-  color: $color__medblue;
-  @extend %post-content__caption-link;
-  text-transform: uppercase;
-
-  &:hover {
-    background-color: $color__slate-lighter;
   }
 }
