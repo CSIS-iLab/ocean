@@ -16,7 +16,7 @@ layout: default
       <div class="archive__desc">{{ content }}</div>
       {%- endif -%}
   </header>
-  <section class="archive__content e-content" itemprop="articleBody">
+  <section class="archive__content js-footer-bg e-content" itemprop="articleBody">
     {% if page.archive_has_featured -%}
     <div class="archive__featured">
       {%- for post in posts limit: 1 -%}

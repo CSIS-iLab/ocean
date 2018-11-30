@@ -1,12 +1,18 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+<article
+  class="post h-entry"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
   <header class="post__header">
     <div class="post__header-content">
       Collection Type
-      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <h1 class="post-title p-name" itemprop="name headline">
+        {{ page.title | escape }}
+      </h1>
       Social Share
     </div>
   </header>
@@ -16,21 +22,17 @@ layout: default
       - Publish Date<br />
       - Authors List<br />
     </div>
-    <div class="post-body">
-      {{ content }}
-    </div>
+    <div class="post-body">{{ content }}</div>
   </section>
-  <section class="post__footer">
+  <footer class="post__footer">
     <section class="post__footer-top">
       <div class="keywords">tags</div>
       <div class="share">social share</div>
     </section>
-    <section class="post__footer-middle">
+    <section class="post__footer-middle js-footer-bg js-footer-bg-switch">
       Further Reading
     </section>
-    <section class="post__footer-end">
-      Related Commentary
-    </section>
-  </section>
+    <section class="post__footer-end">Related Commentary</section>
+  </footer>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

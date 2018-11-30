@@ -1,10 +1,12 @@
-title: "CSIS Jekyll Starter Project"
-email: csisideaslab@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Quick starter project for Jekyll including full setup for gulp, Sass, Autoprefixer, Bourbon/Neat/Bitters, Browserify, imagemin, Browsersync, PostCSS etc. Built on top of Frasco
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
+title: 'Stephenson Ocean Security Project'
+description: >-
+  The Stephenson Ocean Security Project will highlight global security challenges that arise from marine resource competition and promote solutions that support sustainable development, coalition building, and the need for American leadership.
+baseurl: '' # the subpath of your site, e.g. /blog
+url: '' # the base hostname & protocol for your site, e.g. http://example.com
+
+email: ocean@csis.org
+address: 1616 Rhode Island Avenue, NW Washington, DC 20036
+newsletter_url: https://
 
 cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 cloudinary_folder: ocean
@@ -20,26 +22,26 @@ collections:
     output: true
 
 defaults:
-- scope:
-    path: ''
-    type: 'posts'
-  values:
-    layout: post
-    permalink: "/commentary/:slug/"
-- scope:
-    path: ''
-    type: 'spotlights'
-  values:
-    layout: spotlight
-    permalink: "/spotlights/:slug/"
-- scope:
-    path: ''
-    type: 'authors'
-  values:
-    layout: archive
-    permalink: "/authors/:slug/"
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: post
+      permalink: '/commentary/:slug/'
+  - scope:
+      path: ''
+      type: 'spotlights'
+    values:
+      layout: spotlight
+      permalink: '/spotlights/:slug/'
+  - scope:
+      path: ''
+      type: 'authors'
+    values:
+      layout: archive
+      permalink: '/authors/:slug/'
 
-# Build settings
+  # Build settings
 markdown: kramdown
 
 plugins:

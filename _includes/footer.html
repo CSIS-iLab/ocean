@@ -1,38 +1,32 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <p>{{- site.description | escape -}}</p>
-        {% include site-nav.html class="footer__nav" location="inFooter" %}
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-    </div>
-
+    <section class="site-footer__logo">
+      <a href="https://csis.org" target="_blank"><img class="csis-logo" src="{{ 'assets/images/csis_logo_white.svg' | relative_url }}" alt="{{ site.data.language.csis }}"
+        title="{{ site.data.language.csis }}" /></a>
+    </section>
+    <section class="site-footer__desc">
+      <p>{{- site.description | escape -}}</p>
+    </section>
+    <section class="site-footer__mailing">
+      <p class="site-footer__heading">{{ site.data.language.footer.mailing_list }}</p>
+      <p>{{ site.data.language.footer.mailing_desc }}</p>
+      <a class="btn btn--dkblue" href="{{ site.newsletter_url }}" target="_blank">{{ site.data.language.footer.mailing_signup }}</a>
+    </section>
+    <section class="site-footer__contact">
+      <p class="site-footer__heading">{{ site.data.language.footer.contact_heading }}</p>
+      {%- if site.address -%}
+      <address class="site-footer__address">{{ site.address }}</address>
+      {%- endif -%}
+      {%- if site.email -%}
+      <a class="site-footer__email u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {%- endif -%}
+    </section>
+    {% include site-nav.html class="footer__nav" location="inFooter" %}
+    <section class="site-footer__copyright">
+      &copy;{{ site.time | date: '%Y' }} {{ site.data.language.footer.copyright }} <a href="https://www.csis.org/privacy-policy" target="_blank">{{ site.data.language.footer.privacy }}</a>
+    </section>
   </div>
-
 </footer>
 
 <script src="{{ "/assets/js/bundle.js" | relative_url }}" type="text/javascript"></script>
