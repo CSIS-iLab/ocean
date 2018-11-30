@@ -12,7 +12,8 @@
     display: block;
     width: 100vw;
     height: var(--footer-bg-min-height);
-    background-color: $color__medblue;
+    background-color: $color__dkblue-darker;
+    @include bg-images('footer');
   }
 
   .wrapper {
@@ -66,6 +67,11 @@
 
     @include breakpoint('large') {
       padding-bottom: 0;
+    }
+
+    a:focus {
+      background-color: transparent;
+      outline: thin dotted;
     }
 
     .csis-logo {

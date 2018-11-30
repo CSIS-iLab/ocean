@@ -31,18 +31,18 @@
 // @include breakpoint('medium');
 // @include breakpoint($break: 'medium', $until: 'large');
 // @include breakpoint($break: 'medium', $dir: 'max-width');
-@mixin breakpoint($break, $dir: 'min-width', $until: null) {
-  @if not map-has-key($breakpoints, $break) {
+@mixin breakpoint($break, $dir: 'min-width', $until: null, $breakpoints-map: $breakpoints) {
+  @if not map-has-key($breakpoints-map, $break) {
     $break: $break;
   } @else {
-    $break: map-get($breakpoints, $break);
+    $break: map-get($breakpoints-map, $break);
   }
 
   @if $break and $until {
-    @if not map-has-key($breakpoints, $until) {
+    @if not map-has-key($breakpoints-map, $until) {
       $until: $until;
     } @else {
-      $until: map-get($breakpoints, $until);
+      $until: map-get($breakpoints-map, $until);
     }
 
     @media screen and (min-width: $break) and (max-width: $until) {
@@ -190,6 +190,21 @@
     } @else {
       @include breakpoint($size) {
         padding: $top $sides;
+      }
+    }
+  }
+}
+
+// Returns a property: value pair for each breakpoint
+/* @include structure($size__container-max-width, 'max-width'); */
+@mixin bg-images($name, $dir: '/assets/images/', $subdir: 'site/', $ext: '.jpg') {
+  @each $size in $sizes__default {
+    $value: url('#{$dir}#{$subdir}#{$name}-#{$size}#{$ext}');
+    @if $size == 'small' {
+      background-image: $value;
+    } @else {
+      @include breakpoint($size, $breakpoints-map: $breakpoints--bg-img) {
+        background-image: $value;
       }
     }
   }
