@@ -1,33 +1,30 @@
-{% if post.collection == 'resources' %}
-    <span class="post-meta__label">{{ site.data.language.author_list }}</span> <span class="post-meta__authors">{{ post.authors }}</span>
-{% else %}
-  {% assign authors = page.authors %}
-  {% if post.authors.size > 0 %}
-    {% assign authors = post.authors %}
-  {% endif %}
+{% assign authors = page.authors %}
+{% if post.authors.size > 0 %}
+  {% assign authors = post.authors %}
+{% endif %}
 
-  {% if authors.size > 0 %}
-  <div class="post-meta__authors-list">
-      {% if authors.size == 2 %}
-        {%- assign list_break = ' and ' -%}
-      {% elsif authors.size >= 3 %}
-        {%- assign list_break = ', ' -%}
-        {%- assign end_break = ' and ' -%}
-      {% endif %}
+{% if authors.size > 0 %}
+<div class="post-meta__authors-list">
+    {% if authors.size == 2 %}
+      {%- assign list_break = ' and ' -%}
+    {% elsif authors.size >= 3 %}
+      {%- assign list_break = ', ' -%}
+      {%- assign end_break = ' and ' -%}
+    {% endif %}
 
-      {% assign penultimate = authors.size | minus: 1 %}
+    {% assign penultimate = authors.size | minus: 1 %}
 
-        {%- for author in authors -%}
-          {%- assign author_info = site.authors | where: "relative_path", author | first -%}
-          {%- assign author_list = author_info.title -%}
-            <a href="{{ author_info.url | relative_url }}" class="post-meta__link">{{ author_list }}</a>
-          {%- if forloop.last == false -%}
-            {{- list_break -}}
-          {%- endif -%}
-          {% if forloop.index == penultimate %}
-            {{- end_break -}}
-          {% endif %}
-        {%- endfor -%}
-  </div>
-  {% endif %}
+      {%- for author in authors -%}
+        {%- assign author_info = site.authors | where: "relative_path", author | first -%}
+        {%- assign author_list = author_info.title -%}
+          <a href="{{ author_info.url | relative_url }}" class="post-meta__link">{{ author_list }}</a>
+        {%- if forloop.last == false -%}
+          {{- list_break -}}
+        {%- endif -%}
+        {% if forloop.index == penultimate %}
+          {{- end_break -}}
+        {% endif %}
+      {%- endfor -%}
+</div>
+{% endif %}
 {% endif %}
