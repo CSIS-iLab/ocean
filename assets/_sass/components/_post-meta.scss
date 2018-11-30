@@ -3,7 +3,6 @@
 ============================*/
 
 .post-meta {
-
   &__label {
 
   }
@@ -17,18 +16,23 @@
   }
 
   &__authors-list::before,
-  &__authors-block-wrapper {
-    content: "By ";
+  &__authors-block-wrapper::before {
+    content: 'By ';
     @extend %post-block__meta-label;
     color: $color__dkgray;
     text-transform: capitalize;
   }
 
   &__date::before {
-    content: "Published ";
+    content: 'Published ';
     @extend %post-block__meta-label;
     color: $color__dkgray;
     text-transform: capitalize;
   }
 
+  &__link {
+    &:focus {
+      background-color: $color__slate-lighter;
+    }
+  }
 }

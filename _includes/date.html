@@ -3,8 +3,8 @@
   {% assign date = page.date %}
 {% endif %}
 
-<div class="post-meta__date">
-  {% if page %}
+{% if page %}
+  <div class="post-meta__date">
     {{ date | date: site.date_format }}
-  {% endif %}
-</div>
+  </div>
+{% endif %}
