@@ -3,6 +3,8 @@
 =============================*/
 
 .post {
+  $post: &;
+
   &__header {
     position: relative;
     @include structure($size__page-header-height--post, 'height', ('medium', 'large', 'xlarge'));
@@ -27,9 +29,9 @@
       height: return-map-value($size__page-header-height--post, 'small');
       margin-right: -50vw;
       margin-left: -50vw;
-      background-image: url('https://placekitten.com/1500/1000');
+      @include bg-images('hero_commentary');
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center 25%;
       background-size: cover;
 
       @include breakpoint('medium') {
@@ -46,7 +48,6 @@
       $margin-right-sizes: ('large', 'xlarge');
       margin-top: 1.5rem;
       margin-bottom: 1rem;
-      background-color: $color__test;
 
       @include breakpoint('medium') {
         flex: 1;
@@ -61,6 +62,12 @@
         margin-right: nth(return-map-value($size__content-margin--post, 'xlarge'), 2) * 2;
       }
     }
+
+    #{$post}-title {
+      @extend %post-title;
+      margin: 0.75rem 0;
+    }
+
   }
 
   &__content {

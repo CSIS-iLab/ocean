@@ -90,12 +90,8 @@ $breakpoints: (
     'xlarge': 80em// 1280px
 );
 
-$breakpoints--bg-img: (
-  'small': 0,
-  'medium': 56.25em,
-  'large': 80em,
-  'xlarge': 93.75em
-);
+// prettier-ignore
+$breakpoints--bg-img: map-merge($breakpoints, ('medium': 25em));
 
 $size__container-max-width: (
   'small': 100%,

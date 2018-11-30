@@ -9,6 +9,8 @@
 .archive {
   $a: &;
   $search: #{$a}--search;
+  // prettier-ignore
+  $width-offset: nth(map-get($map: $size__container-padding, $key: 'xlarge'), 2);
 
   &__header {
     position: relative;
@@ -36,13 +38,30 @@
       height: $size__page-header-height--archive;
       margin-right: -50vw;
       margin-left: -50vw;
-      background-image: url('https://placekitten.com/1500/1500');
+      @include bg-images('hero_commentary');
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
 
+      @include breakpoint('xlarge') {
+        width: calc(100vw + #{$width-offset});
+      }
+
       #{$search} & {
         height: 100%;
+        @include bg-images('hero_search');
+
+        @include breakpoint(
+          $break: 'medium',
+          $until: 'large',
+          $breakpoints-map: $breakpoints--bg-img
+        ) {
+          background-position-x: right;
+        }
+      }
+
+      #{$a}--spotlights & {
+        @include bg-images('hero_spotlights');
       }
     }
 
@@ -131,9 +150,10 @@
         }
 
         @include breakpoint($size) {
-          $offset: nth(map-get($size__content-margin--archive, $size), 2) * $multiplier;
+          $offset: nth(map-get($size__content-margin--archive, $size), 2) *
+            $multiplier;
           width: calc((100vw - 100%) / 2 + #{$offset});
-        } 
+        }
       }
     }
 

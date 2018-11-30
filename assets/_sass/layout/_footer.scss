@@ -7,13 +7,17 @@
   &::before {
     content: '';
     position: absolute;
+    right: 0;
     bottom: 0;
+    left: 0;
     z-index: -1;
     display: block;
     width: 100vw;
     height: var(--footer-bg-min-height);
     background-color: $color__dkblue-darker;
     @include bg-images('footer');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .wrapper {
