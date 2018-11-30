@@ -1,11 +1,255 @@
+.site-footer {
+  @include structure($size__container-max-width, 'max-width');
+  margin-right: auto;
+  margin-left: auto;
+  @include structure($size__footer-padding-top, 'padding-top');
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    width: 100vw;
+    height: var(--footer-bg-min-height);
+    background-color: $color__dkblue-darker;
+    @include bg-images('footer');
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+      'logo'
+      'desc'
+      'mailing'
+      'contact'
+      'copyright';
+    @include structure($size__content-margin--post, 'margin');
+    background-color: $color__dkblue-dark;
+
+    @include breakpoint('medium') {
+      grid-template-areas:
+        'logo logo'
+        'desc desc'
+        'mailing contact'
+        'copyright copyright';
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint('large') {
+      grid-template-areas:
+        'logo logo .'
+        'desc mailing contact'
+        'nav mailing contact'
+        'copyright mailing contact';
+      grid-template-columns: 50% 25% 25%;
+      background-color: transparent;
+    }
+  }
+
+  a:hover {
+    color: $color__white;
+  }
+
+  &__heading {
+    margin-bottom: 0.5rem;
+    @extend %footer__heading;
+    text-transform: uppercase;
+  }
+
+  &__logo {
+    grid-area: logo;
+    padding: 1.5rem 0 0.5rem;
+
+    @include breakpoint('medium') {
+      padding-top: 2.5rem;
+    }
+
+    @include breakpoint('large') {
+      padding-bottom: 0;
+    }
+
+    a:focus {
+      background-color: transparent;
+      outline: thin dotted;
+    }
+
+    .csis-logo {
+      max-width: 300px;
+
+      @include breakpoint('medium') {
+        max-width: 320px;
+      }
+    }
+  }
+
+  &__desc {
+    grid-area: desc;
+    padding-bottom: 1.5rem;
+
+    @include breakpoint('medium') {
+      padding-bottom: 2.5rem;
+    }
+
+    @include breakpoint('large') {
+      padding-top: 1rem;
+      padding-right: 1.5rem;
+    }
+
+    p {
+      @extend %footer__text;
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo,
+  &__desc {
+    width: 100%;
+    background-color: $color__dkblue;
+    @include full-width-background($color__dkblue);
+
+    @include breakpoint('large') {
+      &::before {
+        background-color: $color__dkblue;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__mailing {
+    grid-area: mailing;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: $color__dkblue-dark;
+    @extend %footer__text;
+
+    @include breakpoint('medium') {
+      padding-right: 0.75rem;
+    }
+
+    @include breakpoint('large') {
+      position: relative;
+      padding: 1rem 1.5rem;
+      background-color: $color__dkblue;
+    }
+
+    &::before {
+      @include breakpoint('large') {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background-color: $color__dkblue-dark;
+        opacity: 0.85;
+      }
+    }
+
+    > * {
+      position: relative;
+      z-index: 5;
+    }
+
+    .btn {
+      text-transform: uppercase;
+    }
+  }
+
+  &__contact {
+    grid-area: contact;
+    padding-bottom: 1.5rem;
+    @extend %footer__text;
+
+    @include breakpoint('medium') {
+      padding-top: 1.5rem;
+      padding-left: 0.75rem;
+    }
+
+    @include breakpoint('large') {
+      width: 100%;
+      padding-top: 1rem;
+      padding-left: 1.5rem;
+      background-color: $color__dkblue-dark;
+      opacity: 0.85;
+      @include full-width-background($color__dkblue-dark, 'right');
+    }
+
+    &::after {
+      @include breakpoint('large') {
+        // Subtract size of other sections
+        width: calc((100vw - 100%) / 2 - 150%);
+      }
+    }
+  }
+
+  &__nav {
+    grid-area: nav;
+
+    @include breakpoint('large') {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__copyright {
+    grid-area: copyright;
+    padding-bottom: 1rem;
+    @extend %copyright;
+
+    @include breakpoint('large') {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &__nav,
+  &__copyright {
+    width: 100%;
+    @include breakpoint('large') {
+      padding-right: 1.5rem;
+      background-color: $color__dkblue;
+      @include full-width-background($color__dkblue, 'left');
+    }
+  }
+
+  &__address,
+  &__email {
+    $margin: 1.5rem;
+    position: relative;
+    margin-left: $margin;
+
+    &::before {
+      position: absolute;
+      left: -$margin;
+      display: block;
+      color: $color__white;
+      font-family: $font__fontello;
+    }
+  }
+
+  &__address::before {
+    content: '\e818';
+  }
+
+  &__email::before {
+    content: '\e811';
+    @include font-size(11px);
+    top: 2px;
+  }
+}
+
 .site-footer__nav {
   display: none;
-  padding-left: 0;
-  list-style: none;
 
-  @include breakpoint('medium') {
+  @include breakpoint('large') {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
   }
 
   li {
@@ -20,6 +264,10 @@
 
       &:hover {
         color: $color__white;
+      }
+
+      &:focus {
+        color: $color__dkblue-dark;
       }
     }
   }

@@ -1,5 +1,6 @@
 :root {
   --accent-color: $color__red;
+  --footer-bg-min-height: 400px;
 }
 
 html {
@@ -15,13 +16,10 @@ html {
 body {
   /* Fallback for when there is no custom background color defined. */
   --breakpoint: 'xsmall';
+  position: relative;
   max-width: 100%;
   overflow-x: hidden;
   background: $color__background-body;
-  background-image: url('https://via.placeholder.com/1000x300');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100% auto;
 
   @include breakpoint('small') {
     --breakpoint: 'small';

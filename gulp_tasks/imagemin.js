@@ -9,10 +9,13 @@ gulp.task('imagemin', function () {
   return gulp.src(config.assets + '/' + config.imagemin.src + '/**/*')
     .pipe(plumber())
     .pipe(newer(config.assets + '/' + config.imagemin.dest))
-    .pipe(imagemin({
-      progressive: config.imagemin.progressive,
-      svgoPlugins: config.imagemin.svgoPlugins,
-      use:         [pngquant()],
-    }))
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: config.imagemin.progressive}),
+      imagemin.optipng({optimizationLevel: 5}),
+      imagemin.svgo({
+        plugins: config.imagemin.svgoPlugins
+      })
+    ]))
     .pipe(gulp.dest(config.assets + '/' + config.imagemin.dest));
 });

@@ -6,6 +6,7 @@ const mqpacker = require('css-mqpacker')
 const postcss = require('gulp-postcss')
 const sass = require('gulp-sass')
 const rename = require('gulp-rename')
+const postcssCustomProperties = require('postcss-custom-properties')
 
 gulp.task('sass', ['styleLint'], function() {
   return gulp
@@ -16,6 +17,7 @@ gulp.task('sass', ['styleLint'], function() {
     .pipe(
       postcss([
         autoprefixer(config.sass.autoprefixer),
+        postcssCustomProperties(),
         mqpacker({
           sort: true
         }),
