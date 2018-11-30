@@ -46,6 +46,16 @@
 
   &__authors-block {
     @extend %post-content__caption-desc;
+
+    .post-meta__read-more {
+      @extend %post-content__caption-link;
+      color: $color__medblue;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $color__slate-lighter;
+      }
+    }
   }
 
   &__authors-block-title {
@@ -57,16 +67,6 @@
     &::after {
       content: '\A';
       white-space: pre-line;
-    }
-  }
-
-  &__read-more {
-    @extend %post-content__caption-link;
-    color: $color__medblue;
-    text-transform: uppercase;
-
-    &:hover {
-      background-color: $color__slate-lighter;
     }
   }
 
