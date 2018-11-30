@@ -5,6 +5,7 @@
 
 {% if authors.size > 0 %}
 <div class="post-meta__authors-list">
+  <span class="post-meta__label">{{ site.data.language.by_label }}</span>
     {% if authors.size == 2 %}
       {%- assign list_break = ' and ' -%}
     {% elsif authors.size >= 3 %}

@@ -11,22 +11,11 @@
     text-transform: uppercase;
   }
 
-  &__authors-list::before,
-  &__authors-block::before,
-  &__date::before {
+  &__label {
     @extend %post-block__meta-label;
     color: $color__dkgray;
     line-height: 1.5rem;
     text-transform: capitalize;
-  }
-
-  &__authors-list::before,
-  &__authors-block::before {
-    content: 'By ';
-  }
-
-  &__date::before {
-    content: 'Published ';
   }
 
   &__date {
@@ -34,7 +23,6 @@
 
     .post__content-aside & {
       width: 45%;
-      height: 3rem;
       white-space: pre-line;
       border-bottom: solid 1px $color__ltgray;
 
@@ -50,10 +38,6 @@
     .post-meta__read-more {
       @extend %post-content__caption-link;
       text-transform: uppercase;
-
-      &:hover {
-        background-color: $color__slate-lighter;
-      }
     }
   }
 
@@ -66,12 +50,6 @@
     &::after {
       content: '\A';
       white-space: pre-line;
-    }
-  }
-
-  &__link {
-    &:focus {
-      background-color: $color__slate-lighter;
     }
   }
 }
