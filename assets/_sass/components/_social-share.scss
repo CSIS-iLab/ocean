@@ -1,0 +1,27 @@
+/*==================================
+=       Social Share Icons         =
+==================================*/
+
+.share {
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inherit;
+      margin: 0;
+      padding-right: 0.1rem;
+      text-align: center;
+      line-height: 1;
+
+      i {
+        font-size: 1.2rem;
+        transition: inherit;
+      }
+    }
+  }
+}
