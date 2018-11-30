@@ -3,8 +3,8 @@
 ===================================*/
 
 .keywords {
-  padding: 0.5rem;
   display: flex;
+  padding: 0.5rem;
 
   &__label {
     @extend %tag__label;
