@@ -213,6 +213,13 @@ $size__page-header-height--search: (
   'xlarge': 350px
 );
 
+$size__page-title-margin--search: (
+  'small': 1rem,
+  'medium': 1rem,
+  'large': 1.5rem,
+  'xlarge': 3rem
+);
+
 // prettier-ignore
 $size__content-padding--archive: map-merge($size__content-padding, ('xlarge': 32px));
 

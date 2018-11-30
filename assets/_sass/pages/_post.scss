@@ -4,11 +4,26 @@
 
 .post {
   $post: &;
+  $width-offset: nth(
+    map-get(
+      $map: $size__container-padding,
+      $key: 'xlarge'
+    ),
+    2
+  );
 
   &__header {
     position: relative;
-    @include structure($size__page-header-height--post, 'height', ('medium', 'large', 'xlarge'));
-    @include structure($size__page-header-padding--post, 'padding-bottom', ('medium', 'large', 'xlarge'));
+    @include structure(
+      $size__page-header-height--post,
+      'height',
+      ('medium', 'large', 'xlarge')
+    );
+    @include structure(
+      $size__page-header-padding--post,
+      'padding-bottom',
+      ('medium', 'large', 'xlarge')
+    );
 
     @include breakpoint('medium') {
       display: flex;
@@ -37,10 +52,11 @@
       @include breakpoint('medium') {
         position: absolute;
         height: unset;
+        background-position-y: bottom;
       }
 
       @include breakpoint('xlarge') {
-        width: calc(100vw + 20px);
+        width: calc(100vw + #{$width-offset});
       }
     }
 
@@ -59,6 +75,7 @@
       }
 
       @include breakpoint('xlarge') {
+        // prettier-ignore
         margin-right: nth(return-map-value($size__content-margin--post, 'xlarge'), 2) * 2;
       }
     }
@@ -67,15 +84,23 @@
       @extend %post-title;
       margin: 0.75rem 0;
     }
-
   }
 
   &__content {
+    position: relative;
     @include structure($size__content-margin--post, 'margin');
     margin-bottom: 1rem;
     @include structure($size__content-padding, 'padding');
-    background-color: $color__test;
-    border-left: 1px solid $color__test;
+
+    @include breakpoint('medium') {
+      border-left: 1px solid $color__gray-58;
+    }
+
+    &::after {
+      @extend %content-side-gradient;
+      top: -10px;
+      bottom: -5rem;
+    }
   }
 
   &__content-aside {
@@ -88,7 +113,11 @@
   }
 
   &-body {
-    @include structure($size__post-body-padding-right, 'padding-right', ('large', 'xlarge'));
+    @include structure(
+      $size__post-body-padding-right,
+      'padding-right',
+      ('large', 'xlarge')
+    );
 
     @include breakpoint('large') {
       width: calc(100% - #{$size__post-sidebar-width});
@@ -110,7 +139,11 @@
 
     .keywords {
       margin-bottom: 1rem;
-      @include structure($size__post-body-padding-right, 'padding-right', ('large', 'xlarge'));
+      @include structure(
+        $size__post-body-padding-right,
+        'padding-right',
+        ('large', 'xlarge')
+      );
 
       @include breakpoint('large') {
         flex: 0 0 auto;
