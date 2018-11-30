@@ -49,7 +49,6 @@
 
     .post-meta__read-more {
       @extend %post-content__caption-link;
-      color: $color__medblue;
       text-transform: uppercase;
 
       &:hover {
