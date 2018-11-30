@@ -1,0 +1,15 @@
+{% if post.collection.size > 0 %}
+  {% assign page = post %}
+{% endif %}
+
+{% if page.collection == 'spotlights' %}
+  {% assign content_type = 'Spotlight' %}
+{% endif %}
+
+{% if page.collection == 'posts' %}
+  {% assign content_type = 'Commentary' %}
+{% endif %}
+
+{% if content_type %}
+  <span class="content-type">{{ content_type }}</span>
+{% endif %}

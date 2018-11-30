@@ -9,10 +9,8 @@ layout: default
 >
   <header class="post__header">
     <div class="post__header-content">
-      Collection Type
-      <h1 class="post-title p-name" itemprop="name headline">
-        {{ page.title | escape }}
-      </h1>
+      {%- include content-type.html -%}
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
       Social Share
     </div>
   </header>
