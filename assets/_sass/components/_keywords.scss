@@ -5,13 +5,14 @@
 .keywords {
   display: flex;
   padding: 0.5rem;
+  vertical-align: bottom;
 
   &__label {
     @extend %tag__label;
-    vertical-align: bottom;
   }
 
   ul {
+    display: inherit;
     margin: 0;
     text-align: left;
     list-style-type: none;
@@ -20,6 +21,7 @@
   li {
     @extend %tag;
     justify-content: space-between;
+    padding: 0.5rem;
     text-transform: lowercase;
     list-style-type: none;
   }
