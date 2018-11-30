@@ -3,10 +3,27 @@
 =============================*/
 
 .post {
+  $post: &;
+  $width-offset: nth(
+    map-get(
+      $map: $size__container-padding,
+      $key: 'xlarge'
+    ),
+    2
+  );
+
   &__header {
     position: relative;
-    @include structure($size__page-header-height--post, 'height', ('medium', 'large', 'xlarge'));
-    @include structure($size__page-header-padding--post, 'padding-bottom', ('medium', 'large', 'xlarge'));
+    @include structure(
+      $size__page-header-height--post,
+      'height',
+      ('medium', 'large', 'xlarge')
+    );
+    @include structure(
+      $size__page-header-padding--post,
+      'padding-bottom',
+      ('medium', 'large', 'xlarge')
+    );
 
     @include breakpoint('medium') {
       display: flex;
@@ -27,18 +44,19 @@
       height: return-map-value($size__page-header-height--post, 'small');
       margin-right: -50vw;
       margin-left: -50vw;
-      background-image: url('https://placekitten.com/1500/1000');
+      @include bg-images('hero_commentary');
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: center 25%;
       background-size: cover;
 
       @include breakpoint('medium') {
         position: absolute;
         height: unset;
+        background-position-y: bottom;
       }
 
       @include breakpoint('xlarge') {
-        width: calc(100vw + 20px);
+        width: calc(100vw + #{$width-offset});
       }
     }
 
@@ -46,7 +64,6 @@
       $margin-right-sizes: ('large', 'xlarge');
       margin-top: 1.5rem;
       margin-bottom: 1rem;
-      background-color: $color__test;
 
       @include breakpoint('medium') {
         flex: 1;
@@ -58,17 +75,32 @@
       }
 
       @include breakpoint('xlarge') {
+        // prettier-ignore
         margin-right: nth(return-map-value($size__content-margin--post, 'xlarge'), 2) * 2;
       }
+    }
+
+    #{$post}-title {
+      @extend %post-title;
+      margin: 0.75rem 0;
     }
   }
 
   &__content {
+    position: relative;
     @include structure($size__content-margin--post, 'margin');
     margin-bottom: 1rem;
     @include structure($size__content-padding, 'padding');
-    background-color: $color__test;
-    border-left: 1px solid $color__test;
+
+    @include breakpoint('medium') {
+      border-left: 1px solid $color__gray-58;
+    }
+
+    &::after {
+      @extend %content-side-gradient;
+      top: -10px;
+      bottom: -5rem;
+    }
   }
 
   &__content-aside {
@@ -81,7 +113,11 @@
   }
 
   &-body {
-    @include structure($size__post-body-padding-right, 'padding-right', ('large', 'xlarge'));
+    @include structure(
+      $size__post-body-padding-right,
+      'padding-right',
+      ('large', 'xlarge')
+    );
 
     @include breakpoint('large') {
       width: calc(100% - #{$size__post-sidebar-width});
@@ -103,7 +139,11 @@
 
     .keywords {
       margin-bottom: 1rem;
-      @include structure($size__post-body-padding-right, 'padding-right', ('large', 'xlarge'));
+      @include structure(
+        $size__post-body-padding-right,
+        'padding-right',
+        ('large', 'xlarge')
+      );
 
       @include breakpoint('large') {
         flex: 0 0 auto;

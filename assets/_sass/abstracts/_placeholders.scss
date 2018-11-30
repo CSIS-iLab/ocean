@@ -45,6 +45,17 @@
   @include font-size(14px);
 }
 
+%content-side-gradient {
+  @include breakpoint('medium') {
+    content: '';
+    position: absolute;
+    left: 100%;
+    width: calc(100vw - 100%);
+    // prettier-ignore
+    background-image: linear-gradient(179deg, rgba(14, 26, 44, 0), #081324 3%, #03232c 95%, rgba(0, 11, 14, 0.01));
+  }
+}
+
 %copyright {
   color: $color__slate;
   font-family: $font__proxima;
@@ -87,7 +98,7 @@
     left: 0;
     width: 1px;
     height: 100vh;
-    background-color: $color__test;
+    background-color: $color__gray-58;
   }
 }
 
@@ -451,6 +462,7 @@
     color: $color__white;
     line-height: 1.04;
     letter-spacing: 0.4px;
+    text-shadow: 0 2px 4px rgba($color__black, 0.5);
   }
 }
 
