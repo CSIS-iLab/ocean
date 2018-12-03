@@ -36,7 +36,7 @@
     a:focus {
       padding: 2px 5px;
       background-color: transparent;
-      border: 1px solid $color__focus;
+      @extend %focus--border;
     }
   }
 }

@@ -63,6 +63,14 @@
   @include font-size(12px);
 }
 
+%focus--bg {
+  background-color: $color__slate-lighter;
+}
+
+%focus--border {
+  border: 2px solid $color__focus;
+}
+
 %footer__heading {
   color: $color__white;
   font-family: $font__proxima;

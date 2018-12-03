@@ -150,7 +150,7 @@ a {
   }
 
   &:focus {
-    background-color: $color__slate-lighter;
+    @extend %focus--bg;
     outline: thin $color__slate-lighter;
   }
 
