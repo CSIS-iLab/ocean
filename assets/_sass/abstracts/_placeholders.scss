@@ -2,6 +2,10 @@
 =            Placeholders            =
 ====================================*/
 
+%align--right {
+  float: right;
+}
+
 %archive__clear {
   color: $color__slate;
   font-family: $font__proxima;
@@ -61,6 +65,14 @@
   font-family: $font__proxima;
   line-height: 1.17;
   @include font-size(12px);
+}
+
+%focus--bg {
+  background-color: $color__slate-lighter;
+}
+
+%focus--border {
+  border: 2px solid $color__focus;
 }
 
 %footer__heading {
@@ -337,6 +349,30 @@
   }
 }
 
+%post-content__align--right {
+  $adjust-offset-left: 10px;
+  @include breakpoint('large') {
+    // prettier-ignore
+    $offset-right: map-get($map: $size__content-padding, $key: 'large');
+    // prettier-ignore
+    $offset-left: map-get($map: $size__post-body-padding-right, $key: 'large');
+    position: absolute;
+    right: $offset-right;
+    // prettier-ignore
+    width: calc(#{$size__post-sidebar-width} - #{$offset-left} + #{$adjust-offset-left});
+  }
+
+  @include breakpoint('xlarge') {
+    // prettier-ignore
+    $offset-right: nth(map-get($map: $size__content-padding, $key: 'xlarge'), 1);
+    // prettier-ignore
+    $offset-left: map-get($map: $size__post-body-padding-right, $key: 'xlarge');
+    right: $offset-right;
+    // prettier-ignore
+    width: calc(#{$size__post-sidebar-width} - #{$offset-left} + #{$adjust-offset-left});
+  }
+}
+
 %post-content__body {
   color: $color__black-light;
   font-family: $font__proxima;
@@ -401,6 +437,7 @@
 %post-content__h2 {
   color: $color__black;
   font-family: $font__freight;
+  font-weight: 500;
   line-height: 1.05;
   letter-spacing: 0.5px;
   @include font-size(40px);
@@ -409,6 +446,7 @@
 %post-content__h3 {
   color: $color__black;
   font-family: $font__freight;
+  font-weight: 400;
   line-height: 1.13;
   letter-spacing: 0.5px;
   @include font-size(32px);
@@ -417,6 +455,7 @@
 %post-content__h4 {
   color: $color__black;
   font-family: $font__proxima;
+  font-weight: normal;
   line-height: 1.17;
   @include font-size(24px);
 }

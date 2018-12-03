@@ -108,7 +108,7 @@
     }
   }
 
-  &-body {
+  &__content-body {
     @include structure(
       $size__post-body-padding-right,
       'padding-right',

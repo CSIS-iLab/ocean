@@ -1,0 +1,32 @@
+.footnotes {
+  position: relative;
+  margin: 2.5rem 0 0;
+
+  &::before {
+    content: 'Notes';
+    position: relative;
+    top: 0;
+    left: 0;
+    @extend %section-heading;
+    text-transform: uppercase;
+  }
+
+  li,
+  p {
+    @extend %body-text__med;
+  }
+
+  a {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .reversefootnote {
+    color: $color__red;
+    box-shadow: none;
+
+    &:hover {
+      color: $color__red-darker;
+    }
+  }
+}
