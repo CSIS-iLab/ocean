@@ -3,22 +3,32 @@ layout: post
 title: Welcome to Jekyll!
 date: 2018-02-13 15:56:34 +0000
 categories: jekyll update
-excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+excerpt:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
   exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 authors:
-- _authors/test-sr.md
+  - _authors/test-sr.md
 keywords:
-- fishing
+  - fishing
+  - polar bears
+  - Arctic
+  - economy
+  - polar bears
+  - Arctic
+  - economy
+  - polar bears
+  - Arctic
+  - economy
 further_reading: ''
 related_content:
-- _spotlights/introducing-a-new-arctic-ocean.md
+  - _spotlights/introducing-a-new-arctic-ocean.md
 is_featured: false
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.43.40%20AM.png
 image_caption: image caption
 image_source: image source
-
 ---
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
@@ -27,7 +37,7 @@ Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
 def print_hi(name)
-  puts "Hi, #{name}"
+puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
@@ -36,5 +46,5 @@ print_hi('Tom')
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-gh]: https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
