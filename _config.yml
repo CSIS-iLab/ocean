@@ -10,6 +10,8 @@ newsletter_url: https://
 
 cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 cloudinary_folder: ocean
+
+keyword_url: /search/?dFR[keywords][0]=
 collections:
   posts:
     title: Commentary

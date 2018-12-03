@@ -1,0 +1,8 @@
+{% if page.keywords.size > 0 %}
+<div class="keywords__label">{{ site.data.language.related_topics }}</div>
+<ul>
+  {% for keyword in page.keywords %}
+  <li><a href="{{ site.keyword_url | append: keyword | relative_url }}">{{ keyword }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
