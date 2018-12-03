@@ -13,5 +13,5 @@ install:
   - npm install
   - gem install html-proofer
 script:
-  - npm test
-  - htmlproofer --assume-extension ./_site
+  - npm run build
+  - pushd _site; htmlproofer --assume-extension ./_site; popd
