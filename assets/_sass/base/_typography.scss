@@ -54,6 +54,22 @@ p {
   }
 }
 
+.post-content {
+  ul,
+  ol {
+    padding-left: 2rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.35;
+    }
+  }
+
+  ol li {
+    padding-left: 0.5rem;
+  }
+}
+
 hr {
   height: 0.5px;
   margin: 2rem 0;
@@ -185,7 +201,7 @@ a {
     outline: 0;
   }
 
-  .post-content &:not(.btn) {
+  .post-content &:not(.btn):not(.reversefootnote) {
     @include box-shadow(0, -2px, 0, 0, $color__medblue, true);
     color: inherit;
 
