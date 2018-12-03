@@ -88,8 +88,10 @@
     @include structure($size__content-margin--post, 'margin');
     margin-bottom: 1rem;
     @include structure($size__content-padding, 'padding');
+    padding-bottom: 0.5rem;
 
     @include breakpoint('medium') {
+      margin-bottom: 2rem;
       padding-top: 2rem;
       border-left: 1px solid $color__gray-58;
     }
@@ -102,6 +104,20 @@
       @extend %content-side-gradient;
       top: -10px;
       bottom: -5rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 45%;
+      height: 1px;
+      background-color: $color__ltgray;
+
+      @include breakpoint('medium') {
+        display: none;
+      }
     }
   }
 
@@ -141,7 +157,6 @@
   &__footer {
     @include structure($size__content-margin--post, 'margin');
     @include structure($size__post-footer-padding-right, 'padding-right');
-    background-color: $color__test;
 
     &-top {
       margin-bottom: 1rem;
@@ -167,7 +182,6 @@
     }
 
     .share {
-      background-color: $color__test;
       @include breakpoint('large') {
         flex: 1 1 auto;
         justify-content: flex-end;
@@ -178,13 +192,16 @@
       position: relative;
       padding-top: 2rem;
       @include further-reading-padding;
-      background-color: $color__test;
-      @include full-width-background($color__test);
+      background-color: $color__ltgray-lighter;
+      @include full-width-background($color__ltgray-lighter);
 
       &::after {
-        @include breakpoint('medium') {
-          display: none;
-        }
+        // prettier-ignore
+        @include structure(
+          $size__post-footer-padding-right,
+          'width',
+          ('medium', 'large', 'xlarge')
+        );
       }
     }
 
@@ -193,6 +210,8 @@
       @include related-content-margin;
       @include related-content-padding;
       background-color: $color__white;
+      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.14);
     }
   }
 }
