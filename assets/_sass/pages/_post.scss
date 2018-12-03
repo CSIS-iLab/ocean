@@ -84,12 +84,18 @@
 
   &__content {
     position: relative;
+    display: grid;
     @include structure($size__content-margin--post, 'margin');
     margin-bottom: 1rem;
     @include structure($size__content-padding, 'padding');
 
     @include breakpoint('medium') {
+      padding-top: 2rem;
       border-left: 1px solid $color__gray-58;
+    }
+
+    @include breakpoint('large') {
+      display: block;
     }
 
     &::after {
@@ -99,8 +105,19 @@
     }
   }
 
+  &-lede {
+    order: 2;
+    margin: 0 0 1rem;
+    @extend %post-lede;
+
+    @include breakpoint('large') {
+      margin-bottom: 2rem;
+    }
+  }
+
   &__content-aside {
-    background-color: $color__test;
+    order: 1;
+    margin-bottom: 2rem;
 
     @include breakpoint('large') {
       float: right;
@@ -109,6 +126,7 @@
   }
 
   &__content-body {
+    order: 3;
     @include structure(
       $size__post-body-padding-right,
       'padding-right',
