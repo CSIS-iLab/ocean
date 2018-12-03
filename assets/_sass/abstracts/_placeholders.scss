@@ -409,6 +409,7 @@
 %post-content__h2 {
   color: $color__black;
   font-family: $font__freight;
+  font-weight: 500;
   line-height: 1.05;
   letter-spacing: 0.5px;
   @include font-size(40px);
@@ -417,6 +418,7 @@
 %post-content__h3 {
   color: $color__black;
   font-family: $font__freight;
+  font-weight: 400;
   line-height: 1.13;
   letter-spacing: 0.5px;
   @include font-size(32px);
@@ -425,6 +427,7 @@
 %post-content__h4 {
   color: $color__black;
   font-family: $font__proxima;
+  font-weight: normal;
   line-height: 1.17;
   @include font-size(24px);
 }

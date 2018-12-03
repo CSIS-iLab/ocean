@@ -17,39 +17,41 @@ textarea {
   color: var(--accent-color);
 }
 
-// %h1 {}
-
-// %h2 {}
-
-// %h3 {}
-
-// %h4 {}
-
-// %h5 {}
-
-// %h6 {}
-
-// h1 { @extend %h1 }
-// h2 { @extend %h2 }
-// h3 { @extend %h3 }
-// h4 { @extend %h4 }
-// h5 { @extend %h5 }
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin: 0;
+  }
+}
 
 /*============================
 =            Copy            =
 ============================*/
+
+.post-content,
+.post-content p {
+  @extend %post-content__body;
+}
 
 p {
   margin: 0 0 1rem;
   line-height: $font__line-height-body;
 }
 
-p + h2,
-p + h3,
-p + h4,
-p + h5,
-p + h6 {
-  margin-top: 2rem;
+@for $i from 2 through 6 {
+  $placeholder: post-content__h#{$i};
+
+  .post-content {
+    p + h#{$i},
+    ul + h#{$i},
+    ol + h#{$i} {
+      margin-top: 2.5rem;
+    }
+
+    h#{$i} {
+      @extend %#{$placeholder} !optional;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 hr {
@@ -71,21 +73,45 @@ i {
   font-style: italic;
 }
 
+.post-content {
+  blockquote,
+  blockquote p,
+  q,
+  q p {
+    @extend %post-content__caption;
+  }
+}
+
 blockquote {
   p {
     margin-bottom: 0;
   }
 
-  // cite {}
+  cite {
+    display: block;
+  }
 }
 
 blockquote,
 q {
+  margin: 1.5rem 0;
   quotes: '' '';
 
   &::before,
   &::after {
     content: '';
+  }
+}
+
+cite {
+  margin-top: 0.5rem;
+  @extend %post-content__caption-desc--sm;
+  font-style: normal;
+  text-transform: uppercase;
+
+  &::before {
+    content: '\2014';
+    margin-right: 4px;
   }
 }
 
