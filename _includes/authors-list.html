@@ -6,7 +6,6 @@
 {% if authors.size > 0 %}
 <div class="post-meta post-meta__authors-list">
   <div class="post-meta__label">{{ site.data.language.by_label }}</div>
-  <div class="post-meta__subtitle">
     {% if authors.size == 2 %}
       {%- assign list_break = ' and ' -%}
     {% elsif authors.size >= 3 %}
@@ -27,6 +26,5 @@
           {{- end_break -}}
         {% endif %}
       {%- endfor -%}
-  </div>
 </div>
 {% endif %}

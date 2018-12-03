@@ -8,9 +8,8 @@
   <div class="post-meta__label">{{ site.data.language.by_label }}</div>
   {% for author in authors_list %}
     {%- assign author_info = site.authors | where: "relative_path", author | first -%}
-    <div class="post-meta__subtitle">{{ author_info.title }}</div>
-    {{ author_info.content }}
-    <a href="{{ author_info.url | relative_url }}" class="post-meta__read-more">{{ site.data.language.read_more }}</a>
+    {{ author_info.title }}
+    <p class="post-meta__bio">{{ author_info.content }} <a href="{{ author_info.url | relative_url }}" class="post-meta__read-more">{{ site.data.language.read_more }}</a></p>
   {% endfor %}
 </div>
 {% endif %}

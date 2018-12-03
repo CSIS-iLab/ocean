@@ -3,7 +3,10 @@
 ============================*/
 
 .post-meta {
-  @extend %post-content__caption-desc;
+  @extend %post-block__meta;
+  padding: 0.3rem 0;
+  color: $color__black;
+  text-transform: uppercase;
 
   &__label {
     @extend %post-block__meta-label;
@@ -12,11 +15,9 @@
     text-transform: capitalize;
   }
 
-  &__subtitle {
-    @extend %post-block__meta;
-    padding: 0.3rem 0;
-    color: $color__black;
-    text-transform: uppercase;
+  &__bio {
+    @extend %post-content__caption-desc;
+    text-transform: none;
   }
 
   &__date::after {
@@ -37,10 +38,10 @@
 
   .post-block & {
     display: flex;
+    vertical-align: bottom;
 
     div {
       padding-right: 0.3rem;
-      vertical-align: bottom;
     }
   }
 }
