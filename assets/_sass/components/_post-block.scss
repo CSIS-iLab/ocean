@@ -15,7 +15,7 @@
   @include breakpoint('large') {
     max-width: calc(#{$size__post-body-max-width} + 5vw);
     margin-bottom: 2rem;
-    padding-right: 5vw; 
+    padding-right: 5vw;
   }
 
   &--img {
@@ -45,7 +45,7 @@
       grid-template-columns: $body-width 270px;
     }
   }
-  
+
   &__header {
     grid-area: header;
   }

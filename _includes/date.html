@@ -4,8 +4,8 @@
 {% endif %}
 
 {% if date %}
-<div class="post-meta__date">
-  <span class="post-meta__label">{{ site.data.language.published_label }}</span>
-  {{ date | date: site.date_format }}
+<div class="post-meta post-meta__date">
+  <div class="post-meta__label">{{ site.data.language.published_label }}</div>
+  <div class="post-meta__subtitle">{{ date | date: site.date_format }}</div>
 </div>
 {% endif %}

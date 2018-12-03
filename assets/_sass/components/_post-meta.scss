@@ -3,27 +3,25 @@
 ============================*/
 
 .post-meta {
-  &__authors-block-title,
-  &__authors-list,
-  &__date {
-    @extend %post-block__meta;
-    color: $color__black;
-    text-transform: uppercase;
-  }
+  @extend %post-content__caption-desc;
 
   &__label {
     @extend %post-block__meta-label;
     color: $color__dkgray;
-    line-height: 1.5rem;
+    line-height: 1.3rem;
     text-transform: capitalize;
   }
 
-  &__date {
-    display: block;
+  &__subtitle {
+    @extend %post-block__meta;
+    padding: 0.3rem 0;
+    color: $color__black;
+    text-transform: uppercase;
+  }
 
+  &__date::after {
     .post__content-aside & {
       width: 45%;
-      white-space: pre-line;
       border-bottom: solid 1px $color__ltgray;
 
       @include breakpoint('large') {
@@ -32,24 +30,17 @@
     }
   }
 
-  &__authors-block {
-    @extend %post-content__caption-desc;
-
-    .post-meta__read-more {
-      @extend %post-content__caption-link;
-      text-transform: uppercase;
-    }
+  &__read-more {
+    @extend %post-content__caption-link;
+    text-transform: uppercase;
   }
 
-  &__authors-block-title {
-    &::before {
-      content: '\A';
-      white-space: pre-line;
-    }
+  .post-block & {
+    display: flex;
 
-    &::after {
-      content: '\A';
-      white-space: pre-line;
+    div {
+      padding-right: 0.3rem;
+      vertical-align: bottom;
     }
   }
 }

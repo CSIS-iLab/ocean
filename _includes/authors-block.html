@@ -4,11 +4,11 @@
 {% endif %}
 
 {% if authors_list.size > 0 %}
-<div class="post-meta__authors-block">
-  <span class="post-meta__label">{{ site.data.language.by_label }}</span>
+<div class="post-meta post-meta__authors-block">
+  <div class="post-meta__label">{{ site.data.language.by_label }}</div>
   {% for author in authors_list %}
     {%- assign author_info = site.authors | where: "relative_path", author | first -%}
-    <span class="post-meta__authors-block-title">{{ author_info.title }}</span>
+    <div class="post-meta__subtitle">{{ author_info.title }}</div>
     {{ author_info.content }}
     <a href="{{ author_info.url | relative_url }}" class="post-meta__read-more">{{ site.data.language.read_more }}</a>
   {% endfor %}
