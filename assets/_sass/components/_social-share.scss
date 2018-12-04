@@ -4,19 +4,16 @@
 
 .share {
   display: flex;
-  padding: 0.5rem;
+  align-items: center;
 
   ul {
     justify-content: space-between;
-    margin: 0;
-    padding: 0;
     list-style-type: none;
   }
 
   li {
     display: inherit;
     margin: 0;
-    padding-right: 0.1rem;
     text-align: center;
     line-height: 1;
   }
@@ -26,7 +23,23 @@
     transition: inherit;
   }
 
-  ___ & {
-    background-color: $color__dkgray;
+  .post__header-content & {
+    float: right;
+    // align-content: flex-end;
+
+    li {
+      color: $color__white;
+      padding: 0.3rem 0 0 0;
+      margin: 0 -1rem 0 0;
+      height: 1.3rem;
+      opacity: 0.7;
+    }
+  }
+
+  .post__footer & {
+    li {
+      padding-right: 0.1rem;
+      flex-direction: row;
+    }
   }
 }
