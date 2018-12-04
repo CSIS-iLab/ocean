@@ -7,6 +7,10 @@ fields:
   name: ''
   label: ''
   template: post-meta-primary
+- type: textarea
+  label: Lede
+  name: lede
+  description: 1 or 2 sentence lede into the full article.
 - type: include
   name: ''
   label: ''
@@ -16,5 +20,5 @@ fields:
   label: ''
   template: image-upload
 pages:
-- _posts/2018-11-19-test-post.md
 - _posts/2018-02-14-welcome-to-jekyll.markdown
+- _posts/2018-11-19-test-post.md
