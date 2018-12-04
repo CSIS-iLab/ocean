@@ -19,8 +19,8 @@ layout: default
   <section class="post__content e-content" itemprop="articleBody">
     <p class="post-lede">{{ page.lede }}</p>
     <div class="post__content-aside">
-      - Publish Date<br />
-      - Authors List<br />
+      {%- include date.html -%}
+      {%- include authors-block.html -%}
     </div>
     <div class="post__content-body post-content">{{ content }}</div>
   </section>

@@ -1,0 +1,11 @@
+{% assign date = post.date %}
+{% if page.date %}
+  {% assign date = page.date %}
+{% endif %}
+
+{% if date %}
+<div class="post-meta post-meta__date">
+  <div class="post-meta__label">{{ site.data.language.published_label }}</div>
+  {{ date | date: site.date_format }}
+</div>
+{% endif %}
