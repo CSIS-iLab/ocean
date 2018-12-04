@@ -1,1 +1,4 @@
-{% if page.further_reading %}
+{% if page.further_reading.size > 0 %}
+<div class="further-reading">{{ site.data.language.further_reading }}</div>
+{{ page.further_reading | newline_to_br }}
+{% endif %}
