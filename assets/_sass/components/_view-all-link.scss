@@ -1,0 +1,18 @@
+.view-all {
+  position: relative;
+  z-index: 5;
+  @extend %post__view-all;
+  color: $color__slate-lighter;
+  text-align: right;
+  text-transform: uppercase;
+
+  a:hover {
+    color: $color__white;
+  }
+
+  a:focus {
+    padding: 0 5px;
+    background-color: transparent;
+    @extend %focus--border;
+  }
+}

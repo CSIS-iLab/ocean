@@ -496,7 +496,7 @@
   letter-spacing: 0.3px;
   @include font-size(30px);
 
-  @include breakpoint('large') {
+  @include breakpoint('medium') {
     @include font-size(48px);
     color: $color__white;
     line-height: 1.04;
