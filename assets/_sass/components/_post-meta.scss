@@ -4,7 +4,6 @@
 
 .post-meta {
   @extend %post-block__meta;
-  padding: 0.3rem 0;
   color: $color__black;
   text-transform: uppercase;
 
@@ -25,7 +24,8 @@
       content: '';
       display: block;
       width: 45%;
-      padding-top: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       border-bottom: solid 1px $color__ltgray;
 
       @include breakpoint('large') {
