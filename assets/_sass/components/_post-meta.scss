@@ -20,9 +20,12 @@
     text-transform: none;
   }
 
-  .post-meta__date::after {
+  &__date::after {
     .post__content-aside & {
-      // width: 45%;
+      content: '';
+      display: block;
+      width: 45%;
+      padding-top: 1rem;
       border-bottom: solid 1px $color__ltgray;
 
       @include breakpoint('large') {
@@ -38,7 +41,7 @@
 
   .post-block & {
     display: flex;
-    vertical-align: bottom;
+    align-items: baseline;
 
     div {
       padding-right: 0.3rem;
