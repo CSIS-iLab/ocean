@@ -36,6 +36,10 @@
     align-items: center;
     height: 100%;
     @include structure($size__header-container-padding, 'padding');
+
+    @include breakpoint('medium') {
+      justify-content: flex-end;
+    }
   }
 
   &__title {
@@ -46,6 +50,7 @@
 
     @include breakpoint('medium') {
       order: 1;
+      margin: 0 auto 0 0;
       text-align: left;
     }
   }
