@@ -24,5 +24,5 @@ fields:
 - type: include
   template: image-upload
 pages:
-- _spotlights/south-china-sea.md
 - _spotlights/introducing-a-new-arctic-ocean.md
+- _spotlights/south-china-sea.md

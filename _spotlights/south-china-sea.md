@@ -17,6 +17,12 @@ is_featured: false
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.44.13%20AM.png
 image_caption: image caption
 image_source: image source
+related_spotlight:
+- _spotlights/arctic/test-arctic.html
+- _spotlights/introducing-a-new-arctic-ocean.md
+related_commentary:
+- _posts/2018-11-19-test-post.md
+- _posts/2018-02-14-welcome-to-jekyll.markdown
 
 ---
 <h2 class="test-header">Test Header</h2>
