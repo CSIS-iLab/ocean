@@ -1,4 +1,8 @@
-<header class="site-header" role="banner">
+{%- if page.layout == 'spotlight' -%}
+{%- assign header_secondary_class = 'site-header--minimal' -%}
+{%- endif -%}
+
+<header class="site-header {{ header_secondary_class }}" role="banner">
   <div class="wrapper">
     {%- include header-logo.html -%}
     {%- include header-nav.html -%}

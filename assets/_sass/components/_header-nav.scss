@@ -16,9 +16,17 @@ $site-nav: '.site-header__nav';
   @include breakpoint('medium') {
     order: 2;
   }
+
+  .layout-spotlight & {
+    max-width: unset;
+
+    @include breakpoint('medium') {
+      margin-left: 2rem;
+    }
+  }
 }
 
-#{$site-nav}-trigger {
+.menu-trigger {
   position: relative;
   display: block;
   width: 20px;
@@ -29,10 +37,6 @@ $site-nav: '.site-header__nav';
   transform: rotate(0deg);
   cursor: pointer;
   transition: 0.5s ease-in-out;
-
-  @include breakpoint('medium') {
-    display: none;
-  }
 
   &:focus {
     @extend %focus--outline;
@@ -94,6 +98,12 @@ $site-nav: '.site-header__nav';
   }
 }
 
+#{$site-nav}-trigger {
+  @include breakpoint('medium') {
+    display: none;
+  }
+}
+
 #{$site-nav}-menu {
   position: absolute;
   top: 100%;
@@ -136,11 +146,11 @@ $site-nav: '.site-header__nav';
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       margin-bottom: 1.2rem;
     }
+  }
 
-    &:not(:first-of-type) {
-      @include breakpoint('medium') {
-        margin-left: 3rem;
-      }
+  &:not(.site-header__nav-menu--spotlight) li:not(:first-of-type) {
+    @include breakpoint('medium') {
+      margin-left: 3rem;
     }
   }
 
@@ -156,6 +166,9 @@ $site-nav: '.site-header__nav';
     }
 
     #{$minimal} & {
+      @include breakpoint('medium') {
+        
+      }
       color: $color__black-light;
 
       &:hover,

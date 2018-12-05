@@ -1,0 +1,122 @@
+/*====================================
+=      Header: Nav Spotlight        =
+===================================*/
+
+.site-header__spotlight {
+  $site-header: '.site-header';
+  $header-active: '.site-header--menu-active';
+  $site-nav: '.site-header__nav';
+
+  display: flex;
+  align-items: center;
+
+  #{$site-header}__section {
+    display: none;
+    @extend %header-nav__section;
+
+    @include breakpoint('medium') {
+      position: relative;
+      display: block;
+      margin-left: 1rem;
+      padding-left: 1rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        bottom: -5px;
+        left: 0;
+        width: 1px;
+        background-color: $color__bluegray-light;
+      }
+    }
+  }
+
+  #{$site-header}__panel {
+    // display: none;
+    position: absolute;
+    @include structure(
+      $size__header-height--minimal,
+      'top',
+      ('small', 'medium')
+    );
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    // @include structure(
+    //   $size__header-container-padding,
+    //   'left',
+    //   ('small', 'medium')
+    // );
+    height: 100vh;
+    background-color: $color__dkblue-dark;
+
+    @include breakpoint('medium') {
+      flex-direction: row;
+      max-width: 600px;
+      height: auto;
+    }
+
+    &-site {
+      @include breakpoint('medium') {
+        width: 325px;
+      }
+    }
+
+    &-spotlight,
+    &-site {
+      padding-top: 1rem;
+      @include structure($size__header-container-padding, 'padding');
+      padding-bottom: 1rem;
+    }
+
+    &-logo-sub {
+      @extend %header-nav__logo-sub;
+    }
+
+    &-logo {
+      margin-bottom: 1rem;
+      @extend %header-nav__logo;
+    }
+
+    &-desc {
+      margin-bottom: 4rem;
+      @extend %header-nav__logo-desc;
+    }
+
+    &-copyright {
+      @extend %copyright;
+      margin-bottom: 0;
+    }
+  }
+
+  #{$site-header}__panel-spotlight {
+    background-color: $color__dkblue;
+    
+    &-title {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      @extend %header-nav__spotlight-title;
+      border-bottom: 1px solid $color__dkblue-light;
+    }
+  }
+
+  #{$site-nav}-menu--spotlight {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+
+    li {
+      margin: 0 0 0.5rem;
+    }
+
+    a {
+      color: $color__slate-light;
+
+      &:hover,
+      &:focus {
+        color: $color__white;
+      }
+    }
+  }
+}
