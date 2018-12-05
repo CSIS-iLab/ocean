@@ -3,35 +3,38 @@ layout: post
 title: Welcome to Jekyll!
 date: 2018-02-13 15:56:34 +0000
 categories: jekyll update
-excerpt:
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
   exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 authors:
-  - _authors/test-sr.md
-lede:
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+- _authors/test-sr.md
+lede: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 keywords:
-  - fishing
-  - polar bears
-  - Arctic
-  - economy
-  - polar bears
-  - Arctic
-  - economy
-  - polar bears
-  - Arctic
-  - economy
+- fishing
+- polar bears
+- Arctic
+- economy
+- polar bears
+- Arctic
+- economy
+- polar bears
+- Arctic
+- economy
 further_reading: ''
 related_content:
-  - _spotlights/introducing-a-new-arctic-ocean.md
+- _spotlights/introducing-a-new-arctic-ocean.md
 is_featured: false
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.43.40%20AM.png
 image_caption: image caption
 image_source: image source
----
+related_spotlight:
+- _spotlights/introducing-a-new-arctic-ocean.md
+- _spotlights/arctic/test-arctic.html
+related_commentary:
+- _posts/2018-02-14-welcome-to-jekyll.markdown
 
+---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
