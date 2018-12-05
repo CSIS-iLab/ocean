@@ -117,6 +117,16 @@ $size__content-padding: (
 
 $size__post-body-max-width: 700px;
 
+$size__header-height: (
+  'small': 64px,
+  'medium': 80px
+);
+
+$size__header-height--minimal: (
+  'small': 48px,
+  'medium': 64px
+);
+
 $size__footer-padding-top: (
   'small': 5rem,
   'medium': 9rem,

@@ -3,24 +3,31 @@
 ====================================*/
 
 .site-header {
-  $header: &;
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 10;
-  padding-bottom: 0.8em;
+  width: 100%;
+  @include structure($size__header-height, 'height', ('small', 'medium'));
+  // prettier-ignore
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.43));
   transition: all 0.2s ease-in-out;
 
   &--minimal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-    background-color: $color__white;
-    @include box-shadow(0, 2px, 4px, 0, rgba($color__black, 0.41));
+    @include structure(
+      $size__header-height--minimal,
+      'height',
+      ('small', 'medium')
+    );
+    @include site-header-white;
+  }
+
+  &--menu-active {
+    @include site-header-white;
   }
 
   .wrapper {
     display: flex;
     align-items: center;
+    height: 100%;
   }
 }
