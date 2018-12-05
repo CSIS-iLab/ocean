@@ -75,6 +75,10 @@
   border: 2px solid $color__focus;
 }
 
+%focus--outline {
+  outline-color: $color__focus;
+}
+
 %footer__heading {
   color: $color__white;
   font-family: $font__proxima;

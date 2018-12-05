@@ -35,7 +35,7 @@ $site-nav: '.site-header__nav';
   }
 
   &:focus {
-    outline-color: $color__focus;
+    @extend %focus--outline;
   }
 
   .line {

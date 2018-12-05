@@ -127,6 +127,9 @@ $size__header-height--minimal: (
   'medium': 64px
 );
 
+// prettier-ignore
+$size__header-container-padding: map-merge($size__container-padding, (xlarge: 32px));
+
 $size__footer-padding-top: (
   'small': 5rem,
   'medium': 9rem,
