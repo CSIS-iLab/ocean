@@ -3,7 +3,13 @@
 ===================================*/
 
 .further-reading {
-  @extend %section-heading;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
+  &__title {
+    @extend %section-heading;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @extend %body-text__med;
+    margin-bottom: 0.5rem;
+  }
 }
