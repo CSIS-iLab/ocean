@@ -5,11 +5,11 @@
 .further-reading {
   &__title {
     @extend %section-heading;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
 
   &__text {
     @extend %body-text__med;
-    margin-bottom: 0.5rem;
   }
 }
