@@ -21,12 +21,21 @@ fields:
     schema:
       format: markdown
 - type: list
-  name: related_content
-  label: Related Content
+  name: related_spotlight
+  label: Related Spotlight
   config:
     use_select: true
     source:
       type: pages
+      section: spotlights
+- type: list
+  name: related_commentary
+  label: Related Commentary
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: jekyll-posts
 - type: boolean
   name: is_featured
   label: Is Featured?
