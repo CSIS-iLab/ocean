@@ -48,7 +48,8 @@ $site-nav: '.site-header__nav';
     transition: 0.25s ease-in-out;
 
     #{$minimal} &,
-    #{$header-active} & {
+    #{$header-active} &,
+    .layout-home & {
       background: $color__black;
     }
 
@@ -139,21 +140,32 @@ $site-nav: '.site-header__nav';
         margin-left: 3rem;
       }
     }
+  }
 
-    a {
-      @extend %header-nav__link;
-      color: $color__slate-light;
-      text-transform: uppercase;
+  a {
+    @extend %header-nav__link;
+    color: $color__slate-light;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: $color__white;
+      background-color: transparent;
+    }
+
+    #{$minimal} & {
+      color: $color__black-light;
 
       &:hover,
       &:focus {
-        color: $color__white;
-        background-color: transparent;
+        color: $color__medblue;
       }
     }
   }
 
-  &--home li a {
-    color: $color__black-light;
+  &--home a {
+    @include breakpoint('medium') {
+      color: $color__black-light;
+    }
   }
 }
