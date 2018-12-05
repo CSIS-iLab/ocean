@@ -159,29 +159,29 @@
   &__content-filter {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 1rem;
 
     @include breakpoint('medium') {
       flex-direction: row;
-      height: 2.5rem;
     }
   }
 
-  &__results,
+  &__result-summary,
   &__filters {
     display: flex;
-    align-items: center;
-    height: 100%;
   }
 
-  &__results {
+  &__result-summary {
     position: relative;
     flex: 0 1 auto;
     align-self: flex-start;
     order: 2;
     max-width: fit-content;
-    background-color: $color__test;
+    white-space: nowrap;
+    background-color: $color__ltgray-light;
+    @extend %archive__results;
 
     @include breakpoint('medium') {
       order: 1;
@@ -200,14 +200,20 @@
       }
     }
 
+    .ais-root {
+      display: flex;
+      align-items: center;
+      height: 2.5rem;
+    }
+
     &::before {
-      content: '';
       position: absolute;
       top: 0;
       right: 100%;
       bottom: 0;
       width: map-get($size__container-padding, 'medium');
-      background-color: $color__test;
+      background-color: $color__ltgray;
+      content: '';
 
       @include breakpoint('large') {
         width: 2.5rem;
@@ -216,14 +222,79 @@
   }
 
   &__filters {
+    position: relative;
     flex: 1;
-    justify-content: flex-end;
+    flex-wrap: wrap;
     order: 1;
     @include structure($size__content-padding--archive, 'padding-right');
-    text-align: right;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      flex-wrap: wrap;
+      width: 100%;
+    }
 
     @include breakpoint('medium') {
+      justify-content: flex-end;
       order: 2;
+    }
+
+    &-sort,
+    &-content_type,
+    &-keywords {
+      @include breakpoint('medium') {
+        margin-right: 1rem;
+      }
+    }
+
+    > div:not(:first-child):not(.archive__filters-sort) {
+      .ais-root {
+        @include breakpoint($break: 'medium', $dir: 'max-width') {
+          border-top: 1px solid $color__gray-58;
+        }
+      }
+    }
+
+    &-sort,
+    &-content_type,
+    &-keywords,
+    &-clear_all {
+      display: flex;
+      align-items: center;
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        flex-basis: 100%;
+
+        > div {
+          width: 100%;
+
+          .ais-root {
+            padding: 1rem 0;
+          }
+        }
+      }
+    }
+
+    &-clear_all {
+      @extend %archive__clear;
+      text-align: center;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $color__red;
+      }
+
+      &:focus {
+        @extend %focus--border;
+      }
+    }
+
+    &-sort .ais-root::before {
+      content: 'Sort By';
+    }
+
+    .selectCalc {
+      height: 0;
+      visibility: hidden;
     }
   }
 
@@ -232,8 +303,7 @@
     height: 3rem;
     @include structure($size__archive-footer-margin-right, 'margin-right');
     margin-left: auto;
-    padding: 0 1.5rem;
-    background-color: $color__test;
+    background-color: $color__red;
 
     @include breakpoint('medium') {
       width: fit-content;

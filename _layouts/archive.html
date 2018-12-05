@@ -1,13 +1,20 @@
 ---
 layout: default
 ---
-{%- assign collection = site.collections | where: "title", page.title | first -%}
-{%- assign posts = site[collection.label] -%}
+
+
+{%- if page.post_list_collection.size > 0 -%}
+  {%- assign collection = page.post_list_collection -%}
+{%- else -%}
+  {%- assign collection = site.collections | where: "title", page.title | first -%}
+  {%- assign posts = site[collection.label] -%}
+  {%- assign collection = collection.title -%}
+{%- endif -%}
 {%- if page.post_list_collection == 'all' -%}
-{%- assign posts = site.posts | concat: site.spotlights -%}
+  {%- assign posts = site.posts | concat: site.spotlights -%}
 {%- endif -%}
 
-<article class="archive archive--{{ page.title | slugify }}" role="content" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="archive archive--{{ page.title | slugify }}" data-collection-title="{{ collection }}"  role="content" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="archive__header">
     <div class="archive__header-content">
@@ -19,7 +26,8 @@ layout: default
   <section class="archive__content js-footer-bg e-content" itemprop="articleBody">
     {% if page.archive_has_featured -%}
     <div class="archive__featured">
-      {%- for post in posts limit: 1 -%}
+      {%- assign featured_posts = posts | where: 'is_featured', 'true' -%}
+        {%- for post in featured_posts -%}
       {%- include post-block.html class="post-block--featured" -%}
       {%- endfor -%}
     </div>
@@ -27,15 +35,22 @@ layout: default
     <div class="archive__cutout js-cutout">
       {%- if collection == 'authors' -%}
       {{ content}}
+      <span class="archive__filters-authors-name"></span>
       {% else %}
-      Search Bar
+      <input id="search-input" class="archive__search-input" placeholder="{{ site.data.language.archive.search_placeholder }}">
       {%- endif -%}
     </div>
     {%- endif -%}
     <div class="archive__content-filter">
-      <div class="archive__results">Results</div>
+      <div class="archive__result-summary algolia--hide-no-results"></div>
       {%- if page.is_search -%}
-      <div class="archive__filters">Filters</div>
+      <div class="archive__filters">
+        <div class="selectCalc"></div>
+        <div class="archive__filters-sort"> </div>
+        <div class="archive__filters-content_type"> </div>
+        <div class="archive__filters-keywords"> </div>
+        <div class="archive__filters-clear_all"></div>
+      </div>
       {%- endif -%}
     </div>
     <div class="archive__listing">
@@ -45,7 +60,8 @@ layout: default
     </div>
   </section>
   <footer class="archive__footer" role="footer">
-    Pagination Goes Here
+    <div class="pagination">
+      </div>
   </footer>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
