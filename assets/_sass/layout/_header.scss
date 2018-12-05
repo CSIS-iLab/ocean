@@ -31,7 +31,33 @@
 
   .wrapper {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
+  }
+
+  &__title {
+    flex: 1 0 auto;
+    order: 2;
+    max-width: fit-content;
+    text-align: center;
+
+    @include breakpoint('medium') {
+      order: 1;
+      text-align: left;
+    }
+  }
+
+  .site-logo {
+    display: block;
+  }
+
+  .csis-logo {
+    width: auto;
+    height: 20px;
+
+    @include breakpoint('medium') {
+      height: 30px;
+    }
   }
 }

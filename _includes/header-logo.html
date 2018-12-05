@@ -1,0 +1,8 @@
+<a class="site-header__title" rel="author" href="{{ "/" | relative_url }}">
+{%- if page.layout == 'home' -%}
+<img class="site-logo csis-logo" src="{{ 'assets/images/csis_logo_black.svg' | relative_url }}" alt="{{ site.data.language.csis }}"
+  title="{{ site.data.language.csis }}" />
+{%- else -%}
+{{ site.title | escape }}
+{%- endif -%}
+</a>
