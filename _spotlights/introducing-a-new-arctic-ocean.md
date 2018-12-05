@@ -20,6 +20,10 @@ is_featured: true
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.43.31%20AM.png
 image_caption: image caption
 image_source: image source
+related_spotlight:
+- _spotlights/arctic/test-arctic.html
+related_commentary:
+- _posts/2018-11-19-test-post.md
 
 ---
 <h2 class="test-header">Test Header</h2>
