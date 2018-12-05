@@ -1,1 +1,11 @@
-Related Posts
+{% assign related_content = page.related_content %}
+{% if page.related_content.size > 0 %}
+<div class="related-posts">
+  <div class="related-posts__title">{{ site.data.language.related_commentary }}</div>
+  {% for related in related_content %}
+    <!-- {%- assign related_info = site.posts | where: "relative_path", related | first -%} -->
+    <div class="related-posts__post">{{ related_info.url | relative_url }}</div>
+    {{ related }}
+  {% endfor %}
+</div>
+{% endif %}
