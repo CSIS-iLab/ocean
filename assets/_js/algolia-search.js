@@ -165,6 +165,7 @@ const addPagination = () => {
   search.addWidget(
     pagination({
       container: '.pagination',
+      scrollTo: '.archive__content',
       showFirstLast: false,
       labels: {
         previous: '<i class="icon-arrow-chevron_left"></i>',

@@ -3,28 +3,35 @@
 
   div {
     height: 100%;
+  }
 
-    .ais-pagination {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      height: 100%;
-      margin: 0;
-      padding-left: 0;
-      line-height: 0;
+  .ais-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding-left: 0;
+    line-height: 0;
 
-      @include breakpoint($break: 'medium', $dir: 'max-width') {
-        @include box-shadow(0, 0.75rem, 1.5rem, -0.75rem, $color__black, true);
-      }
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      @include box-shadow(0, 0.75rem, 1.5rem, -0.75rem, $color__black, true);
+    }
 
-      @include breakpoint('medium') {
-        padding-left: 1.5rem;
+    @include breakpoint('large') {
+      padding-left: 1.5rem;
+    }
 
-        & > li:last-of-type {
-          margin-right: -3rem;
-        }
+    > li:last-of-type {
+      @include breakpoint('large') {
+        margin-right: -3rem;
       }
     }
+  }
+
+  .ais-pagination--item__previous:not(.ais-pagination--item__disabled)
+  + .ais-pagination--item__next:not(.ais-pagination--item__disabled) {
+    margin-right: -6rem;
   }
 }
 
