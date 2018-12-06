@@ -29,6 +29,11 @@ $site-nav: '.site-header__nav';
     display: none;
   }
 
+  &:focus {
+    outline: 0;
+    @extend %focus--border;
+  }
+
   .line {
     position: absolute;
     display: block;

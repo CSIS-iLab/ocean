@@ -19,9 +19,13 @@ layout: default
   <header class="archive__header">
     <div class="archive__header-content">
       <h1 class="archive__title">{{ page.title | escape }}</h1>
+      {%- if page.is_search != true -%}
       <div class="archive__desc">{{ content }}</div>
+      {%- endif -%}
+    </div>
+    {%- include social-share.html class="post__header" -%}
   </header>
-  <section class="archive__content js-footer-bg e-content" itemprop="articleBody">
+  <section id="content" class="archive__content js-footer-bg e-content" itemprop="articleBody">
     {% if page.archive_has_featured -%}
     <div class="archive__featured">
       {%- assign featured_posts = posts | where: 'is_featured', 'true' -%}

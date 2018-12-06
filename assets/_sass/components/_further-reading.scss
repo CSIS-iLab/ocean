@@ -1,0 +1,23 @@
+/*====================================
+=          Further Reading           =
+===================================*/
+
+.further-reading {
+  &__title {
+    @extend %section-heading;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    ul {
+      padding-left: 0;
+
+      li {
+        margin-bottom: 1rem;
+        list-style-type: none;
+        @extend %body-text__med;
+      }
+    }
+  }
+}

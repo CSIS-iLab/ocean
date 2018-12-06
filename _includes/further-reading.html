@@ -1,0 +1,6 @@
+{% if page.further_reading.size > 0 %}
+<div class="further-reading__title">{{ site.data.language.further_reading }}</div>
+<div class="further-reading__text">
+  {{ page.further_reading | markdownify }}
+</div>
+{% endif %}

@@ -16,6 +16,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     height: $size__page-header-height--archive;
     @include structure($size__page-header-max-height--archive, 'max-height');
