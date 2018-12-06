@@ -2,44 +2,134 @@
 =       Social Share Icons         =
 ==================================*/
 
+.site-header__share {
+  display: flex;
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    flex-direction: column;
+  }
+
+  &-trigger {
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 0;
+    background-color: rgba($color__white, 0.5);
+    border: 0;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      color: $color__medblue;
+    }
+
+    .is-active {
+      color: $color__slate;
+    }
+  }
+}
+
 .share {
   display: flex;
-  align-items: center;
+  margin: 0;
+  padding-left: 0;
 
-  ul {
-    justify-content: space-between;
-    list-style-type: none;
+  .site-header & {
+    visibility: hidden;
+    transition: transform 0.5s linear, visibility 0s linear 0.3s;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      transform: translateY(-150%);
+    }
+
+    @include breakpoint('medium') {
+      transform: translateX(150%);
+    }
+
+    &.is-active {
+      transform: translateY(0);
+      visibility: visible;
+    }
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      position: absolute;
+      top: 100%;
+      right: 20px;
+      z-index: -1;
+      flex-direction: column;
+    }
+
+    @include breakpoint('medium') {
+      order: -1;
+    }
+
+    li a {
+      color: $color__medblue;
+      text-shadow: 2px 2px 4px rgba($color__black, 0.33);
+
+      &:hover {
+        color: $color__bluegray;
+      }
+    }
   }
 
-  li {
-    display: inherit;
-    margin: 0;
-    text-align: center;
-    line-height: 1;
-  }
+  .post__header & {
+    flex-direction: column;
 
-  i {
-    font-size: 1.2rem;
-    transition: inherit;
-  }
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      display: none;
+    }
 
-  .post__header-content & {
-    float: right;
-    // align-content: flex-end;
+    @include breakpoint($break: 'medium', $until: 'xlarge') {
+      margin-right: return-map-value($size__content-margin--post, 'large');
+    }
 
-    li {
+    li a {
+      margin-right: 2px;
       color: $color__white;
-      padding: 0.3rem 0 0 0;
-      margin: 0 -1rem 0 0;
-      height: 1.3rem;
       opacity: 0.7;
     }
   }
 
   .post__footer & {
-    li {
-      padding-right: 0.1rem;
-      flex-direction: row;
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      font-size: 1.3rem;
+    }
+
+    li a {
+      margin-left: 0.5rem;
+      color: $color__dkgray;
+
+      &:hover {
+        color: $color__medblue;
+      }
+    }
+  }
+
+  li {
+    text-align: center;
+    list-style-type: none;
+
+    a {
+      display: block;
+      border: 2px solid transparent;
+
+      &:hover {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+
+      &:focus {
+        @extend %focus--border;
+        background-color: transparent;
+        outline: 0;
+      }
+
+      i::before {
+        width: auto;
+        height: auto;
+        margin: 0;
+      }
     }
   }
 }

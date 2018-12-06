@@ -33,4 +33,7 @@
 {%- if page.layout == 'archive' -%}
 <script src="{{ "/assets/js/archives.js" | relative_url }}" type="text/javascript"></script>
 {%- endif -%}
+{%- if page.layout == 'spotlight' -%}
+<script src="{{ "/assets/js/header-share.js" | relative_url }}" type="text/javascript"></script>
+{%- endif -%}
 {% include footer-spotlights.html %}
