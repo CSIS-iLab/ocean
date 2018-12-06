@@ -2,9 +2,39 @@
 =      Related Posts         =
 ============================*/
 
-.related_posts {
+.related-posts {
+  @extend %archive__results;
+  display: flex;
 
   &__title {
-    @extend %post-block__featured;
+    @extend %post-block__title--featured;
+    text-transform: capitalize;
+  }
+
+  // &__related {
+  //   @extend %post-block__title--related;
+  //   text-transform: none;
+  //
+  //   &:hover {
+  //     color: $color__medblue;
+  //     transition: inherit;
+  //   }
+  // }
+
+  &__block {
+    @extend %archive__results;
+    text-transform: uppercase;
+
+    &--title {
+      @extend %post-block__title--related;
+    }
+  }
+
+  &__label {
+    @extend %tag__label;
+  }
+
+  &__date {
+    @extend %archive__results;
   }
 }
