@@ -34,7 +34,6 @@ if (!['all', 'authors'].includes(dataset.collectionTitle)) {
 }
 
 if (dataset.collectionTitle === 'authors') {
-  console.log(dataset.collectionTitle)
   searchParameters.facetFilters = [`authors: ${location[1]}`]
 }
 
