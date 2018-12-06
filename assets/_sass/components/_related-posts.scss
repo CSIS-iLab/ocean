@@ -3,12 +3,11 @@
 ============================*/
 
 .related-posts {
-  @extend %archive__results;
   display: flex;
   flex-wrap: wrap;
 
   &__header {
-    @extend %post-block__type;
+    @extend %post-block__type--related;
     width: 100%;
     text-transform: uppercase;
   }
