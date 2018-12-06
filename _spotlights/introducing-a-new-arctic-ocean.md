@@ -14,7 +14,10 @@ authors:
 keywords:
 - fishing
 - Arctic
-further_reading: ''
+further_reading: |-
+  * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  * Ut tristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
+  * Leo a diam sollicitudin tempor id eu nisl nunc mi. Nascetur ridiculus mus mauris vitae ultricies. Sagittis eu volutpat.
 related_content:
 - _posts/2018-11-19-test-post.md
 is_featured: true
