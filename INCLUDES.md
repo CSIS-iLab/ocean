@@ -9,6 +9,13 @@ Displays a list of navigation menu items
 
 - `location`: References menu item attribute that determines whether the item should be rendered.
 
+## social-share
+Displays a list of social share options
+`{%- include social-share.html class="site__header [or] post__header [or] post__footer" -%}`
+
+- `class`: Determines style differentiation between post header and footer--or special functionality for site header on spotlights.
+
+
 ## post-block
 `{% include post-block.html hide_excerpt=true show_image=true class="post-block--featured" %}`
 
