@@ -25,6 +25,7 @@
     grid-template-areas:
       'header img'
       'content img';
+    // 'header img';
     grid-template-columns: $body-width 80px;
     grid-template-rows: auto auto;
     padding-right: 0;
@@ -32,6 +33,7 @@
     @include breakpoint('medium') {
       grid-column-gap: 2rem;
       grid-template-columns: $body-width 190px;
+      grid-template-rows: 1fr 2fr;
       padding-right: 0;
     }
 
@@ -48,13 +50,33 @@
 
   &__header {
     grid-area: header;
+    margin-bottom: 0.75rem;
+
+    #{$post}__title {
+      @extend %post-block__title--related;
+
+      &:hover {
+        color: $color__medblue;
+      }
+
+      &:focus {
+        @extend %focus--bg;
+        color: $color__medblue;
+      }
+
+      .archive__featured & {
+        @extend %post-block__title--featured;
+      }
+    }
   }
 
   &__content {
     grid-area: content;
+    // grid-area: header;
 
     p {
       margin-bottom: 0;
+      @extend %body-text__med;
     }
   }
 

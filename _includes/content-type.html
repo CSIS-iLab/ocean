@@ -10,6 +10,11 @@
   {% assign content_type = 'Commentary' %}
 {% endif %}
 
+
+
 {% if content_type %}
-  <span class="content-type">{{ content_type }}</span>
+  <span class="content-type">
+    {%-if page.is_featured -%}{{ site.data.language.is_featured }} {%- endif -%}
+    {{ content_type }}
+  </span>
 {% endif %}
