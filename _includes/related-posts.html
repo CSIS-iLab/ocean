@@ -17,7 +17,7 @@
 {% if related_posts.size > 0 %}
 <div class="related-posts">
 <span class="related-posts__header">{{ site.data.language.related_commentary }}</span>
-  {%- for related in related_posts | limit: 2 | sort: 'date' | reverse -%}
+  {%- for related in related_posts | sort: 'date' | reverse | limit: 2 -%}
     <div class="related-posts__block">
       <a href="{{ related.url | relative_url }}"><h2 class="related-posts__block-title">{{ related.title }}</h2></a>
       <span class="related-posts__block-label">{{ site.data.language.published_label }}</span> {{ related.date | date: site.date_format }}
