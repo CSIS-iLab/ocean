@@ -5,36 +5,34 @@
 .related-posts {
   @extend %archive__results;
   display: flex;
+  flex-wrap: wrap;
 
-  &__title {
-    @extend %post-block__title--featured;
-    text-transform: capitalize;
+  &__header {
+    @extend %post-block__type;
+    text-transform: uppercase;
+    width: 100%;
   }
-
-  // &__related {
-  //   @extend %post-block__title--related;
-  //   text-transform: none;
-  //
-  //   &:hover {
-  //     color: $color__medblue;
-  //     transition: inherit;
-  //   }
-  // }
 
   &__block {
     @extend %archive__results;
+    padding: 1.5em 1.5em 1.5em 0;
     text-transform: uppercase;
+    width: 50%;
 
-    &--title {
+    &-title {
       @extend %post-block__title--related;
+      padding: 0.2em 0;
+      text-transform: none;
+
+      &:hover {
+        color: $color__medblue;
+        transition: inherit;
+      }
     }
-  }
 
-  &__label {
-    @extend %tag__label;
-  }
-
-  &__date {
-    @extend %archive__results;
+    &-label {
+      @extend %tag__label;
+      text-transform: none;
+    }
   }
 }
