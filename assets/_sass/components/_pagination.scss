@@ -1,0 +1,107 @@
+.pagination {
+  height: 100%;
+
+  div {
+    height: 100%;
+  }
+
+  .ais-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding-left: 0;
+    line-height: 0;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      @include box-shadow(0, 0.75rem, 1.5rem, -0.75rem, $color__black, true);
+    }
+
+    @include breakpoint('large') {
+      padding-left: 1.5rem;
+    }
+
+    > li:last-of-type {
+      @include breakpoint('large') {
+        margin-right: -3rem;
+      }
+    }
+  }
+
+  .ais-pagination--item__previous:not(.ais-pagination--item__disabled)
+  + .ais-pagination--item__next:not(.ais-pagination--item__disabled) {
+    margin-right: -6rem;
+  }
+}
+
+.ais-pagination--item {
+  $a: ais-pagination--link;
+
+  list-style-type: none;
+
+  .#{$a} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: $color__white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+    @extend %pagination__item;
+
+    i {
+      padding: 0;
+      color: $color__white;
+      border: 0;
+      @include font-size(24px);
+    }
+  }
+
+  &__active .#{$a} {
+    color: $color__red;
+    background-color: $color__white;
+  }
+
+  &:not(:first-child):not(:last-child) {
+    margin-left: 0.5rem;
+
+    &:not(.ais-pagination--item__previous) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &:not(.ais-pagination--item__active) .#{$a}:focus {
+    @extend %focus--border;
+    background-color: $color__red;
+  }
+
+  &:not(.ais-pagination--item__active):hover .#{$a} {
+    background-color: $color__red-dark;
+  }
+
+  &__next,
+  &__previous {
+    align-self: stretch;
+
+    .#{$a} {
+      width: 3rem;
+      height: 100%;
+      background-color: $color__red-dark;
+      border-radius: 0;
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        @include box-shadow(0, 0.75rem, 1.5rem, -0.75rem, $color__black, true);
+      }
+
+      &:hover:not(.ais-pagination--item__active) {
+        background-color: $color__red-darker;
+      }
+    }
+  }
+
+  &__disabled .#{$a} {
+    display: none;
+  }
+}

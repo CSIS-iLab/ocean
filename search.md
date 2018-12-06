@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: search
 title: Search
 permalink: /search/
 post_list_collection: all
