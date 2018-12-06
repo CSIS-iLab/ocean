@@ -5,12 +5,12 @@
 
 {% if authors.size > 0 %}
 <div class="post-meta post-meta__authors-list">
-  <div class="post-meta__label">{{ site.data.language.by_label }}</div>
+  <span class="post-meta__label">{{ site.data.language.by_label }}</span>
     {% if authors.size == 2 %}
-      {%- assign list_break = ' and ' -%}
+      {%- assign list_break = '&nbsp;and&nbsp;' -%}
     {% elsif authors.size >= 3 %}
-      {%- assign list_break = ', ' -%}
-      {%- assign end_break = ' and ' -%}
+      {%- assign list_break = ',&nbsp;' -%}
+      {%- assign end_break = '&nbsp;and&nbsp;' -%}
     {% endif %}
 
     {% assign penultimate = authors.size | minus: 1 %}

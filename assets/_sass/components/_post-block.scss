@@ -4,7 +4,6 @@
 
 .post-block {
   $post: &;
-
   margin-bottom: 1.5rem;
 
   @include breakpoint('medium') {
@@ -32,6 +31,8 @@
     @include breakpoint('medium') {
       grid-column-gap: 2rem;
       grid-template-columns: $body-width 190px;
+      grid-template-rows: 1fr 2fr;
+      max-height: min-content;
       padding-right: 0;
     }
 
@@ -48,13 +49,34 @@
 
   &__header {
     grid-area: header;
+    margin-bottom: 0.75rem;
+
+    #{$post}__title {
+      margin-bottom: 0.5rem;
+      @extend %post-block__title;
+
+      &:hover {
+        color: $color__medblue;
+      }
+
+      &:focus {
+        @extend %focus--bg;
+        color: $color__medblue;
+      }
+
+      .archive__featured & {
+        @extend %post-block__title--featured;
+      }
+    }
   }
 
   &__content {
     grid-area: content;
+    // grid-area: header;
 
     p {
       margin-bottom: 0;
+      @extend %body-text__med;
     }
   }
 
@@ -73,10 +95,6 @@
   .archive &--featured {
     margin-bottom: 2rem;
 
-    @include breakpoint('medium') {
-      margin-bottom: 1rem;
-    }
-
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       grid-template-areas:
         'header'
@@ -86,9 +104,10 @@
     }
 
     #{$post}__header {
+      padding-top: 1rem;
+
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         padding-right: 1.5rem;
-        padding-bottom: 0.75rem;
       }
     }
 
