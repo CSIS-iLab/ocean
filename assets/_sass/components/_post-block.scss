@@ -4,7 +4,6 @@
 
 .post-block {
   $post: &;
-
   margin-bottom: 1.5rem;
 
   @include breakpoint('medium') {
@@ -25,7 +24,6 @@
     grid-template-areas:
       'header img'
       'content img';
-    // 'header img';
     grid-template-columns: $body-width 80px;
     grid-template-rows: auto auto;
     padding-right: 0;
@@ -34,6 +32,7 @@
       grid-column-gap: 2rem;
       grid-template-columns: $body-width 190px;
       grid-template-rows: 1fr 2fr;
+      max-height: min-content;
       padding-right: 0;
     }
 
@@ -53,7 +52,8 @@
     margin-bottom: 0.75rem;
 
     #{$post}__title {
-      @extend %post-block__title--related;
+      margin-bottom: 0.5rem;
+      @extend %post-block__title;
 
       &:hover {
         color: $color__medblue;
@@ -95,10 +95,6 @@
   .archive &--featured {
     margin-bottom: 2rem;
 
-    @include breakpoint('medium') {
-      margin-bottom: 1rem;
-    }
-
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       grid-template-areas:
         'header'
@@ -108,9 +104,10 @@
     }
 
     #{$post}__header {
+      padding-top: 1rem;
+
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         padding-right: 1.5rem;
-        padding-bottom: 0.75rem;
       }
     }
 
