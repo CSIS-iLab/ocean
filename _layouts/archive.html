@@ -18,7 +18,7 @@ layout: default
     </div>
       {%- include social-share.html class="post__header" -%}
   </header>
-  <section class="archive__content js-footer-bg e-content" itemprop="articleBody">
+  <section id="content" class="archive__content js-footer-bg e-content" itemprop="articleBody">
     {% if page.archive_has_featured -%}
     <div class="archive__featured">
       {%- for post in posts limit: 1 -%}

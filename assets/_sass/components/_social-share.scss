@@ -89,7 +89,7 @@
     display: none;
   }
 
-  @include breakpoint($break: 'medium', $until: 'xlarge') {
+  @include breakpoint($break: 'large', $until: 'xlarge') {
     margin-right: return-map-value($size__content-margin--post, 'large');
   }
 
@@ -97,12 +97,6 @@
     margin-right: 2px;
     color: $color__white;
     opacity: 0.7;
-  }
-
-  .archive & {
-    align-self: flex-end;
-    position: relative;
-    bottom: 20%;
   }
 }
 
@@ -134,6 +128,11 @@
   li {
     text-align: center;
     list-style-type: none;
+    line-height: 1.5rem;
+
+    &:last-child {
+      display: none;
+    }
 
     a {
       display: block;
@@ -156,5 +155,16 @@
       height: auto;
       margin: 0;
     }
+  }
+}
+
+.archive .share {
+  align-self: flex-end;
+  position: relative;
+  bottom: calc(var(--archive-cutout-height) - 2rem);
+
+  li:last-child {
+    display: block;
+    font-size: 3rem;
   }
 }
