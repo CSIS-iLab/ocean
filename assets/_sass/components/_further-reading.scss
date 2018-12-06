@@ -10,6 +10,14 @@
   }
 
   &__text {
-    @extend %body-text__med;
+    ul {
+      padding-left: 0;
+
+      li {
+        margin-bottom: 1rem;
+        list-style-type: none;
+        @extend %body-text__med;
+      }
+    }
   }
 }

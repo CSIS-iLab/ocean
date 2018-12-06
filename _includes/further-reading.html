@@ -1,6 +1,6 @@
 {% if page.further_reading.size > 0 %}
 <div class="further-reading__title">{{ site.data.language.further_reading }}</div>
-<p class="further-reading__text">
-  {{ page.further_reading | newline_to_br }}
-</p>
+<div class="further-reading__text">
+  {{ page.further_reading | markdownify }}
+</div>
 {% endif %}
