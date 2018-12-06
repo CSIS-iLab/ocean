@@ -87,8 +87,10 @@
     #{$a}__title {
       margin: 0 0 4rem;
       @extend %page-title;
+      text-transform: uppercase;
 
       #{$search} & {
+        @extend %page-title--archive;
         @include structure($size__page-title-margin--search, 'margin-bottom');
         @include structure($size__content-padding, 'padding');
       }
@@ -154,6 +156,10 @@
     padding-top: 1rem;
     @include structure($size__content-padding--archive, 'padding-right');
     padding-bottom: 1rem;
+
+    > p {
+      @extend %body-text__med;
+    }
   }
 
   &__content-filter {
@@ -293,6 +299,7 @@
     }
 
     .selectCalc {
+      position: absolute;
       height: 0;
       visibility: hidden;
     }

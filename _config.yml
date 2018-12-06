@@ -42,7 +42,7 @@ defaults:
     path: ''
     type: 'authors'
   values:
-    layout: archive
+    layout: search
     is_search: true
     permalink: "/authors/:slug/"
     post_list_collection: authors

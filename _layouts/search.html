@@ -14,12 +14,15 @@ layout: default
 {%- endif -%}
 
 
-<article class="archive archive--{{ page.title | slugify }}" data-collection-title="{{ collection }}"  role="content" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="archive archive--search" data-collection-title="{{ collection }}"  role="content" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="archive__header">
     <div class="archive__header-content">
-      <h1 class="archive__title">{{ page.title | escape }}</h1>
-      <div class="archive__desc">{{ content }}</div>
+      {%- if collection == 'all' -%}
+        <h1 class="archive__title">{{ site.data.language.search_title | escape }}</h1>
+      {%- else -%}
+        <h1 class="archive__title">{{ page.title | escape | prepend: site.data.language.authors_title }}</h1>
+      {%- endif -%}
   </header>
   <section class="archive__content js-footer-bg e-content" itemprop="articleBody">
     {% if page.archive_has_featured -%}
@@ -31,11 +34,22 @@ layout: default
     </div>
     {%- else -%}
     <div class="archive__cutout js-cutout">
+      {%- if collection == 'authors' -%}
+      {{ content}}
+      {% else %}
+      <input id="search-input" class="archive__search-input" placeholder="{{ site.data.language.search_placeholder }}">
+      {%- endif -%}
     </div>
     {%- endif -%}
     <div class="archive__content-filter">
       <div class="archive__result-summary algolia--hide-no-results"></div>
-
+      <div class="archive__filters">
+        <div class="selectCalc"></div>
+        <div class="archive__filters-sort"> </div>
+        <div class="archive__filters-content_type"> </div>
+        <div class="archive__filters-keywords"> </div>
+        <div class="archive__filters-clear_all"></div>
+      </div>
     </div>
     <div class="archive__listing">
       {%- for post in posts -%}

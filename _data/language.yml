@@ -16,5 +16,6 @@ read_more: More
 published_label: Published
 by_label: By
 is_featured: 'Featured '
-archive:
-  search_placeholder: Search
+search_placeholder: Search
+search_title: Search result for
+authors_title: 'Articles by: '

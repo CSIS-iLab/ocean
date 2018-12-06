@@ -78,18 +78,15 @@ const AlgoliaSearch = () => {
     addFilterWidgets()
   }
 
-  if (dataset.collectionTitle !== 'authors') {
-    addPagination()
-    addResultSummary()
-  }
-
+  addPagination()
+  addResultSummary()
   addResults()
 
   search.on('render', render)
   search.start()
 }
 
-const updateSearchTitle = () => {
+const updateSearchInput = () => {
   const queryText = document.querySelector('.archive__search-input')
 
   if (!search.helper.state.query) {
@@ -97,8 +94,6 @@ const updateSearchTitle = () => {
     return
   }
   queryText.value = search.helper.state.query
-
-  titleText.innerHTML = `Search for ${search.helper.state.query}`
 }
 
 const updateTaglineTitle = () => {
@@ -282,15 +277,13 @@ const calcSelectWidth = select => {
 
   let hiddenInput = hiddenInputContainer.querySelector('select')
 
-  hiddenInput.style.display = 'block'
-
-  hiddenInput.style.webkitAppearance = 'none'
+  // hiddenInput.style.display = 'block'
 
   let width = hiddenInput.offsetWidth
 
   select.style.width = `${width + 15}px`
 
-  hiddenInput.style.display = 'none'
+  // hiddenInput.style.display = 'none'
 }
 
 const render = () => {
@@ -309,7 +302,7 @@ const render = () => {
   })
 
   if (search.helper.state.query) {
-    updateSearchTitle()
+    updateSearchInput()
   }
 
   if (location[0] === 'authors') {
@@ -324,13 +317,6 @@ const render = () => {
     toggleElementsOnNoResults(elementsToHideNoResults, 'add')
   } else {
     toggleElementsOnNoResults(elementsToHideNoResults, 'remove')
-  }
-
-  if (search.helper.lastResults.nbHits < 2) {
-    toggleElementsOnNoResults(
-      document.querySelectorAll('.archive__result-summary'),
-      'add'
-    )
   }
 }
 export default AlgoliaSearch

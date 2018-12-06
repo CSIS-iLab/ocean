@@ -72,9 +72,9 @@
     }
   }
 
-  &:not(.ais-pagination--item__active):focus .#{$a} {
+  &:not(.ais-pagination--item__active) .#{$a}:focus {
     @extend %focus--border;
-    outline: 0;
+    background-color: $color__red;
   }
 
   &:not(.ais-pagination--item__active):hover .#{$a} {

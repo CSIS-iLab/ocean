@@ -60,6 +60,11 @@
   background-color: transparent;
   border: 0;
 
+  &:focus {
+    @extend %focus--border;
+    outline: 0;
+  }
+
   &::-webkit-search-decoration,
   &::-webkit-search-cancel-button,
   &::-webkit-search-results-button,
@@ -78,6 +83,12 @@ select {
   /* stylelint-disable */
   -webkit-appearance: none;
   /* stylelint-enable */
+
+  &:focus {
+    @extend %focus--border;
+    border-radius: 0;
+    outline: 0;
+  }
 }
 
 .ais-menu-select,
