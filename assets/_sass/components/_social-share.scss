@@ -126,9 +126,9 @@
   padding-left: 0;
 
   li {
+    line-height: 1.5rem;
     text-align: center;
     list-style-type: none;
-    line-height: 1.5rem;
 
     &:last-child {
       display: none;
@@ -159,9 +159,9 @@
 }
 
 .archive .share {
-  align-self: flex-end;
   position: relative;
   bottom: calc(var(--archive-cutout-height) - 2rem);
+  align-self: flex-end;
 
   li:last-child {
     display: block;
