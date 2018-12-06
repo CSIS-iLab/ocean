@@ -4,6 +4,11 @@
 
 .site-header__share {
   display: flex;
+  transition: transform 0.5s linear, visibility 0s linear 0.3s;
+
+  .site-header:not(.site-header--minimal) & {
+    transform: translateX(200%);
+  }
 
   @include breakpoint($break: 'medium', $dir: 'max-width') {
     flex-direction: column;
@@ -14,7 +19,7 @@
     z-index: 1;
     display: block;
     padding: 0;
-    background-color: rgba($color__white, 0.5);
+    background-color: transparent;
     border: 0;
     cursor: pointer;
     transition: 0.5s ease-in-out;
@@ -23,7 +28,12 @@
       color: $color__medblue;
     }
 
-    .is-active {
+    &:focus {
+      outline: 0;
+      @extend %focus--border;
+    }
+
+    &.is-active {
       color: $color__slate;
     }
   }
@@ -62,6 +72,10 @@
     color: $color__medblue;
     text-shadow: 2px 2px 4px rgba($color__black, 0.33);
 
+    @include breakpoint('medium') {
+      margin: 0 0.5rem;
+    }
+
     &:hover {
       color: $color__bluegray;
     }
@@ -84,6 +98,12 @@
     color: $color__white;
     opacity: 0.7;
   }
+
+  .archive & {
+    align-self: flex-end;
+    position: relative;
+    bottom: 20%;
+  }
 }
 
 .share-post__footer {
@@ -91,12 +111,17 @@
     font-size: 1.3rem;
   }
 
-  li a {
-    margin-left: 0.5rem;
-    color: $color__dkgray;
+  li {
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
 
-    &:hover {
-      color: $color__medblue;
+    a {
+      color: $color__dkgray;
+
+      &:hover {
+        color: $color__medblue;
+      }
     }
   }
 }
