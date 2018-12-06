@@ -14,7 +14,7 @@ layout: default
         {{ page.title | escape }}
       </h1>
     </div>
-    {%- include social-share.html -%}
+    {%- include social-share.html class="post__header" -%}
   </header>
   <section class="post__content e-content" itemprop="articleBody">
     <p class="post-lede">{{ page.lede }}</p>
@@ -27,7 +27,7 @@ layout: default
   <footer class="post__footer">
     <section class="post__footer-top">
       <div class="keywords">{% include keywords.html %}</div>
-      {%- include social-share.html -%}
+      {%- include social-share.html class="post__footer"  -%}
     </section>
     <section class="post__footer-middle js-footer-bg js-footer-bg-switch">
       Further Reading
