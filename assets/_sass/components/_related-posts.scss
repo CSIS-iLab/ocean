@@ -9,19 +9,19 @@
 
   &__header {
     @extend %post-block__type;
-    text-transform: uppercase;
     width: 100%;
+    text-transform: uppercase;
   }
 
   &__block {
     @extend %archive__results;
-    padding: 1.5em 1.5em 1.5em 0;
-    text-transform: uppercase;
     width: 50%;
+    padding-top: 1.2em;
+    text-transform: uppercase;
 
     &-title {
       @extend %post-block__title--related;
-      padding: 0.2em 0;
+      padding-bottom: 0.2em;
       text-transform: none;
 
       &:hover {
@@ -32,6 +32,7 @@
 
     &-label {
       @extend %tag__label;
+      padding-right: 0.1em;
       text-transform: none;
     }
   }

@@ -1,21 +1,25 @@
 {% assign spotlights = page.related_spotlight | sort: 'date' %}
+{% assign related_spotlights_array = "" | split: '' %}
 {%- for spotlight in spotlights -%}
-  {% assign related_spotlights = site.spotlights | where: "relative_path", related | first %}
+  {% assign related_spotlight = site.spotlights | where: "relative_path", spotlight | first %}
+  {% assign related_spotlights_array = related_spotlights_array | push: related_spotlight %}
 {%- endfor -%}
 
 {% assign commentaries = page.related_commentary %}
+{% assign related_commentaries_array = "" | split: '' %}
 {%- for commentary in commentaries -%}
-  {% assign related_commentaries = site.posts | where: "relative_path", related | first %}
+  {% assign related_commentary = site.posts | where: "relative_path", commenatary | first %}
+  {% assign related_commentaries_array = related_commentaries_array | push: related_commentary %}
 {%- endfor -%}
 
-{% assign related_posts = related_spotlights | concat: related_commentaries %}
+{% assign related_posts = related_spotlights_array | concat: related_commentaries_array %}
 
 {% if related_posts.size > 0 %}
 <div class="related-posts">
 <span class="related-posts__header">{{ site.data.language.related_commentary }}</span>
-  {%- for related in related_posts -%}
+  {%- for related in related_posts limit:2 -%}
     <div class="related-posts__block">
-      <h2 class="related-posts__block-title">{{ related.title }}</h2>
+      <a href="{{ related.url | relative_url }}"><h2 class="related-posts__block-title">{{ related.title }}</h2></a>
       <span class="related-posts__block-label">{{ site.data.language.published_label }}</span> {{ related.date | date: site.date_format }}
     </div>
   {% endfor %}
