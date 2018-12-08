@@ -5,6 +5,8 @@ const TableOfContents = () => {
   const headings = document.querySelectorAll(
     '.post__content h2:not(' + exclude_toc + '), .post__content ' + include_toc
   )
+  const current_section = document.querySelector('.site-header__section')
+  const title = current_section.innerHTML
   const observer_config = {
     rootMargin: '0px',
     threshold: 1
@@ -72,6 +74,13 @@ const TableOfContents = () => {
       toc_container
         .querySelector(`li[data-target="${previous_section}"]`)
         .classList.add('is-current')
+    }
+
+    let current = toc_container.querySelector('.is-current a')
+    if (!current) {
+      current_section.innerHTML = title
+    } else {
+      current_section.innerHTML = current.innerHTML
     }
   }
 }
