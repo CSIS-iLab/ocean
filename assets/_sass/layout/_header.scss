@@ -65,14 +65,12 @@
 
   .csis-logo {
     width: auto;
-    height: 20px;
-
-    @include breakpoint('medium') {
-      height: 30px;
-    }
+    height: 30px;
   }
 
   .site-logo--icon {
+    height: 25px;
+
     @include breakpoint('medium') {
       display: none;
     }
@@ -99,10 +97,15 @@
   }
 
   &--minimal {
+    .csis-logo {
+      display: none;
+    }
+
     .site-logo--white {
       &.site-logo--icon {
         display: none;
       }
+
       &.site-logo--full {
         display: none;
 
@@ -120,6 +123,7 @@
           display: none;
         }
       }
+
       &.site-logo--full {
         @include breakpoint('medium') {
           display: block;

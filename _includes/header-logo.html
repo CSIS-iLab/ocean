@@ -1,15 +1,15 @@
 <a class="site-header__title" rel="author" href="{{ "/" | relative_url }}">
 {%- if page.layout == 'home' -%}
-<img class="site-logo csis-logo" src="{{ 'assets/images/csis_logo_black.svg' | relative_url }}" alt="{{ site.data.language.csis }}"
+  <img class="site-logo csis-logo" src="{{ 'assets/images/csis_logo_black.svg' | relative_url }}" alt="{{ site.data.language.csis }}"
   title="{{ site.data.language.csis }}" />
 {%- else -%}
   <img class="site-logo sos-logo site-logo--icon site-logo--white" src="{{ 'assets/images/logos/logo_white_icon.svg' | relative_url }}" alt="{{ site.title }}"
   title="{{ site.title }}" />
-  <img class="site-logo sos-logo site-logo--icon site-logo--blue" src="{{ 'assets/images/logos/logo_blue_icon.svg' | relative_url }}" alt="{{ site.title }}"
-  title="{{ site.title }}" />
   <img class="site-logo sos-logo site-logo--full site-logo--white" src="{{ 'assets/images/logos/logo_white_full.svg' | relative_url }}" alt="{{ site.title }}"
   title="{{ site.title }}" />
+{%- endif -%}
+  <img class="site-logo sos-logo site-logo--icon site-logo--blue" src="{{ 'assets/images/logos/logo_blue_icon.svg' | relative_url }}"
+    alt="{{ site.title }}" title="{{ site.title }}" />
   <img class="site-logo sos-logo site-logo--full site-logo--blue" src="{{ 'assets/images/logos/logo_blue_full.svg' | relative_url }}" alt="{{ site.title }}"
   title="{{ site.title }}" />
-{%- endif -%}
 </a>
