@@ -3,7 +3,7 @@ const TableOfContents = () => {
   const include_toc = '.include-toc'
   const toc_container = document.getElementById('toc')
   const headings = document.querySelectorAll(
-    '.post-content h2:not(' + exclude_toc + '), .post-content ' + include_toc
+    '.post__content h2:not(' + exclude_toc + '), .post__content ' + include_toc
   )
   const observer_config = {
     rootMargin: '0px',

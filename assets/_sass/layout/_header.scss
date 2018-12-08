@@ -150,6 +150,19 @@
 
 
 .layout-spotlight {
+  .site-header {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      width: var(--scroll-progress);
+      height: 4px;
+      background-color: $color__red;
+    }
+  }
+
   .site-header__title {
     margin-right: -1rem;
     
