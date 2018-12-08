@@ -96,6 +96,10 @@ $site-nav: '.site-header__nav';
       transform: rotate(-45deg);
     }
   }
+
+  &.is-active:hover .line {
+    background-color: $color__medblue;
+  }
 }
 
 #{$site-nav}-trigger {
