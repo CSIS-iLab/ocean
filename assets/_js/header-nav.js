@@ -37,9 +37,7 @@ const Navigation = () => {
     if (is_spotlight) {
       // Set a delay to give the ToC time to populate
       setTimeout(function() {
-        const toc_links = document.querySelectorAll(
-          '.site-header__nav-spotlight-menu a'
-        )
+        const toc_links = document.querySelectorAll('.spotlight-nav a')
 
         toc_links.forEach(link => {
           link.addEventListener('click', function() {

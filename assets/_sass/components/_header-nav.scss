@@ -183,6 +183,19 @@ $site-nav: '.site-header__nav';
         }
       }
     }
+
+    .layout-spotlight & {
+      @include breakpoint('large') {
+        color: $color__slate-light;
+      }
+
+      &:hover,
+      &:focus {
+        @include breakpoint('large') {
+          color: $color__white;
+        }
+      }
+    }
   }
 
   &--home a {
