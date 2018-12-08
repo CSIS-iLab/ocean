@@ -30,8 +30,4 @@
 </footer>
 <div class="content-overlay"></div>
 
-<script src="{{ "/assets/js/bundle.js" | relative_url }}" type="text/javascript"></script>
-{%- if page.layout == 'archive' or page.layout == 'search' -%}
-<script src="{{ "/assets/js/archives.js" | relative_url }}" type="text/javascript"></script>
-{%- endif -%}
-{% include footer-spotlights.html %}
+{%- include footer-scripts.html -%}
