@@ -64,6 +64,11 @@
     @extend %focus--border;
     outline: 0;
   }
+}
+
+.input--search {
+  background-color: transparent;
+  border: 0;
 
   &::-webkit-search-decoration,
   &::-webkit-search-cancel-button,

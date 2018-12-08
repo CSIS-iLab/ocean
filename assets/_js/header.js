@@ -5,6 +5,10 @@ const Header = () => {
   let scrollPos = window.pageYOffset
   let offsetScroll = true
 
+  if (document.body.classList.contains('layout-spotlight')) {
+    return
+  }
+
   window.addEventListener('scroll', function() {
     if (document.documentElement.classList.contains('js-no-scroll')) {
       return false

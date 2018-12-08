@@ -1,0 +1,9 @@
+.layout-spotlight {
+  .page-content {
+    @include structure($size__header-height, 'margin-top', ('small', 'large'));
+  }
+
+  .post-header {
+    height: 800px;
+  }
+}

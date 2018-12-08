@@ -75,6 +75,10 @@
   border: 2px solid $color__focus;
 }
 
+%focus--outline {
+  outline-color: $color__focus;
+}
+
 %footer__heading {
   color: $color__white;
   font-family: $font__proxima;
@@ -142,6 +146,7 @@
   line-height: 1.67;
   letter-spacing: 1.2px;
   @include font-size(12px);
+  text-transform: uppercase;
 }
 
 %header-nav__section {

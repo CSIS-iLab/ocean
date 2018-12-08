@@ -1,0 +1,12 @@
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]', {
+    header: '.site-header',
+    speed: 500
+  });
+</script>
+<script src="{{ "/assets/js/bundle.js" | relative_url }}" type="text/javascript"></script>
+{%- if page.layout == 'archive' or page.layout == 'search' -%}
+<script src="{{ "/assets/js/archives.js" | relative_url }}" type="text/javascript"></script>
+{%- endif -%}
+{% include footer-spotlights.html %}

@@ -1,0 +1,38 @@
+<div class="site-header__spotlight">
+  <button
+    class="site-header__spotlight-trigger menu-trigger"
+    aria-expanded="false"
+    aria-label="Toggle Menu"
+    data-target=".site-header__panel"
+  >
+    <span class="line"></span> <span class="line"></span>
+    <span class="line"></span> <span class="line"></span>
+    <span class="visually-hidden">Menu</span>
+  </button>
+  <div class="site-header__section">{{ page.title }}</div>
+  <div class="site-header__panel">
+    <div class="site-header__panel-spotlight">
+      <div class="site-header__panel-spotlight-title">{{ page.title }}</div>
+      <ul id="toc" class="site-header__nav-spotlight-menu spotlight-nav"></ul>
+      <ul class="site-header__nav-spotlight-submenu spotlight-nav">
+        {%- if page.methodology -%}
+        <li><a href="#methodology">{{ site.data.language.methodology }}</a></li>
+        {%- endif -%}
+        <li><a href="#credits">{{ site.data.language.credits }}</a></li>
+        {%- if page.further_reading -%}
+        <li><a href="#further-reading">{{ site.data.language.further_reading }}</a></li>
+        {%- endif -%}
+      </ul>
+    </div>
+    <div class="site-header__panel-site">
+      <div class="site-header__panel-logo-sub">
+        {{ site.data.language.about_the }}
+      </div>
+      <div class="site-header__panel-logo">{{ site.title }}</div>
+      <p class="site-header__panel-desc">{{- site.description | escape -}}</p>
+      {% include site-nav.html class='header__nav-menu
+      site-header__nav-menu--spotlight' location="inHeader" %}
+      <p class="site-header__panel-copyright">{{ site.data.language.csis }}</p>
+    </div>
+  </div>
+</div>

@@ -3,15 +3,15 @@
 ==================================*/
 
 .site-header__share {
+  position: relative;
   display: flex;
+  flex: 0 0 auto;
+  order: 3;
+  margin-right: 1rem;
   transition: transform 0.5s linear, visibility 0s linear 0.3s;
 
-  .site-header:not(.site-header--minimal) & {
-    transform: translateX(200%);
-  }
-
-  @include breakpoint($break: 'medium', $dir: 'max-width') {
-    flex-direction: column;
+  @include breakpoint('large') {
+    margin-right: 0;
   }
 
   &-trigger {
@@ -20,9 +20,26 @@
     display: block;
     padding: 0;
     background-color: transparent;
-    border: 0;
+    border: 2px solid transparent;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 0.25s ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: calc(100% + 2px);
+      bottom: 0;
+      display: block;
+      width: 100vw;
+      height: 0;
+      background-color: transparent;
+      transition: background-color 0.2s linear;
+
+      @include breakpoint('large') {
+        display: none;
+      }
+    }
 
     &:hover {
       color: $color__medblue;
@@ -35,46 +52,39 @@
 
     &.is-active {
       color: $color__slate;
+
+      &::before {
+        height: 100%;
+        background-color: $color__white;
+
+        @include breakpoint('large') {
+          height: 0;
+        }
+      }
     }
   }
 }
 
 .share-site__header {
+  position: absolute;
+  top: 0;
+  right: calc(100% + 0.5rem);
+  z-index: -1;
+  transform: translateX(100%);
   visibility: hidden;
-  transition: transform 0.5s linear, visibility 0s linear 0.3s;
-
-  @include breakpoint($break: 'medium', $dir: 'max-width') {
-    transform: translateY(-150%);
-  }
-
-  @include breakpoint('medium') {
-    transform: translateX(150%);
-  }
+  transition: transform 0.5s linear, visibility 0s linear 0.1s;
 
   &.is-active {
-    transform: translateY(0);
+    z-index: 5;
+    transform: translateX(0);
     visibility: visible;
   }
 
-  @include breakpoint($break: 'medium', $dir: 'max-width') {
-    position: absolute;
-    top: 100%;
-    right: 20px;
-    z-index: -1;
-    flex-direction: column;
-  }
-
-  @include breakpoint('medium') {
-    order: -1;
-  }
-
   li a {
+    margin: 0 1rem;
     color: $color__medblue;
-    text-shadow: 2px 2px 4px rgba($color__black, 0.33);
-
-    @include breakpoint('medium') {
-      margin: 0 0.5rem;
-    }
+    @include font-size(18px);
+    text-shadow: 0 0 4px rgba($color__black, 0.33);
 
     &:hover {
       color: $color__bluegray;

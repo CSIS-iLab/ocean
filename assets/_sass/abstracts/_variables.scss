@@ -117,6 +117,19 @@ $size__content-padding: (
 
 $size__post-body-max-width: 700px;
 
+$size__header-height: (
+  'small': 64px,
+  'large': 80px
+);
+
+$size__header-height--minimal: (
+  'small': 48px,
+  'large': 64px
+);
+
+// prettier-ignore
+$size__header-container-padding: map-merge($size__container-padding, (xlarge: 32px));
+
 $size__footer-padding-top: (
   'small': 5rem,
   'medium': 9rem,

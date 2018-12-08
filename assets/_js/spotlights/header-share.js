@@ -1,6 +1,7 @@
-const Share = () => {
+const HeaderShare = () => {
   const trigger = document.querySelector('.site-header__share-trigger')
-  const share = document.querySelector('.site-header__share ul.share')
+  const share = document.querySelector('.site-header__share .share')
+
   trigger.addEventListener('click', function() {
     if (share.classList.contains('is-active')) {
       this.setAttribute('aria-expanded', 'false')
@@ -14,6 +15,4 @@ const Share = () => {
   })
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  Share()
-})
+export default HeaderShare

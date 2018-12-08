@@ -2,18 +2,31 @@
 =            Header: Nav            =
 ===================================*/
 
+$site-header: '.site-header';
+$minimal: '.site-header--minimal';
+$header-active: '.site-header--menu-active';
 $site-nav: '.site-header__nav';
 
 #{$site-nav} {
   flex: 1 0 auto;
+  order: 1;
+  max-width: fit-content;
   @extend %header-nav__section;
 
-  @include breakpoint($break: 'medium', $dir: 'max-width') {
-    order: -1;
+  @include breakpoint('large') {
+    order: 2;
+  }
+
+  .layout-spotlight & {
+    max-width: unset;
+
+    @include breakpoint('large') {
+      margin-left: 2rem;
+    }
   }
 }
 
-#{$site-nav}-trigger {
+.menu-trigger {
   position: relative;
   display: block;
   width: 20px;
@@ -25,13 +38,8 @@ $site-nav: '.site-header__nav';
   cursor: pointer;
   transition: 0.5s ease-in-out;
 
-  @include breakpoint('medium') {
-    display: none;
-  }
-
   &:focus {
-    outline: 0;
-    @extend %focus--border;
+    @extend %focus--outline;
   }
 
   .line {
@@ -40,10 +48,16 @@ $site-nav: '.site-header__nav';
     width: 100%;
     max-width: 20px;
     height: 2px;
-    background: $color__black;
+    background: $color__slate-light;
     border-radius: 9px;
     transform: rotate(0deg);
     transition: 0.25s ease-in-out;
+
+    #{$minimal} &,
+    #{$header-active} &,
+    .layout-home & {
+      background: $color__black;
+    }
 
     &:nth-child(1) {
       top: 0%;
@@ -65,6 +79,8 @@ $site-nav: '.site-header__nav';
   }
 
   &.is-active .line {
+    background-color: $color__slate;
+
     &:nth-child(1),
     &:nth-child(4) {
       top: 50%;
@@ -80,6 +96,16 @@ $site-nav: '.site-header__nav';
       transform: rotate(-45deg);
     }
   }
+
+  &.is-active:hover .line {
+    background-color: $color__medblue;
+  }
+}
+
+#{$site-nav}-trigger {
+  @include breakpoint('large') {
+    display: none;
+  }
 }
 
 #{$site-nav}-menu {
@@ -89,25 +115,27 @@ $site-nav: '.site-header__nav';
   z-index: -1;
   display: flex;
   flex-direction: column;
+  width: 80%;
+  height: 100vh;
   margin: 0;
+  padding: 1.5rem;
   list-style: none;
   background-color: $color__dkblue;
   transform: translateX(-150%);
   visibility: hidden;
   transition: transform 0.5s linear, visibility 0s linear 0.3s;
 
-  @include breakpoint($break: 'medium', $dir: 'max-width') {
-    width: 80%;
-    padding: 20px;
-  }
-
-  @include breakpoint('medium') {
+  @include breakpoint('large') {
     position: static;
     top: unset;
     left: unset;
     z-index: initial;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
     background-color: transparent;
     transform: none;
     visibility: visible;
@@ -119,24 +147,60 @@ $site-nav: '.site-header__nav';
   }
 
   li {
-    @include breakpoint($break: 'medium', $dir: 'max-width') {
-      margin-bottom: 1.2rem;
-    }
+    margin-bottom: 1.2rem;
 
-    &:not(:first-of-type) {
-      @include breakpoint('medium') {
-        margin-left: 3rem;
-      }
-    }
-
-    a {
-      @extend %header-nav__link;
-      color: $color__slate-light;
-      text-transform: uppercase;
+    @include breakpoint('large') {
+      margin-bottom: 0;
     }
   }
 
-  &--home li a {
-    color: $color__black-light;
+  &:not(.site-header__nav-menu--spotlight) li:not(:first-of-type) {
+    @include breakpoint('large') {
+      margin-left: 3rem;
+    }
+  }
+
+  a {
+    @extend %header-nav__link;
+    color: $color__slate-light;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: $color__white;
+      background-color: transparent;
+    }
+
+    #{$minimal} & {
+      @include breakpoint('large') {
+        color: $color__black-light;
+      }
+
+      &:hover,
+      &:focus {
+        @include breakpoint('large') {
+          color: $color__medblue;
+        }
+      }
+    }
+
+    .layout-spotlight & {
+      @include breakpoint('large') {
+        color: $color__slate-light;
+      }
+
+      &:hover,
+      &:focus {
+        @include breakpoint('large') {
+          color: $color__white;
+        }
+      }
+    }
+  }
+
+  &--home a {
+    @include breakpoint('large') {
+      color: $color__black-light;
+    }
   }
 }

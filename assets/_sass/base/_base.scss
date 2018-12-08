@@ -1,6 +1,7 @@
 :root {
   --accent-color: $color__red;
   --footer-bg-min-height: 400px;
+  --scroll-progress: 0;
 }
 
 html {
@@ -34,8 +35,37 @@ body {
   }
 }
 
+.js-no-scroll,
+.js-no-scroll body {
+  height: unset !important;
+  overflow: hidden;
+  touch-action: none;
+}
+
+/* Create class to allow scrolling on certain elements, like modal windows */
+.allow-scroll {
+  touch-action: auto !important;
+}
+
 .wrapper {
   @include structure($size__container-max-width, 'max-width');
   margin: 0 auto;
   @include structure($size__container-padding, 'padding');
+}
+
+.content-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $color__black;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+
+  &.is-active {
+    visibility: visible;
+    opacity: 0.25;
+  }
 }
