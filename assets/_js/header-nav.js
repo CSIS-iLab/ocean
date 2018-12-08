@@ -4,6 +4,11 @@ const Navigation = () => {
   const overlay = document.querySelector('.content-overlay')
   const header = document.querySelector('.site-header')
   const triggers = document.querySelectorAll('.menu-trigger')
+  let is_spotlight = false
+
+  if (document.body.classList.contains('layout-spotlight')) {
+    is_spotlight = true
+  }
 
   triggers.forEach(trigger => {
     const target = document.querySelector(trigger.dataset.target)
@@ -17,7 +22,7 @@ const Navigation = () => {
         this.classList.add('is-active')
         header.classList.add('site-header--menu-active')
 
-        if (document.body.classList.contains('layout-spotlight')) {
+        if (is_spotlight) {
           return
         }
         overlay.classList.add('is-active')
@@ -28,6 +33,22 @@ const Navigation = () => {
     overlay.addEventListener('click', function() {
       closeMenu(trigger, target)
     })
+
+    if (is_spotlight) {
+      // Set a delay to give the ToC time to populate
+      setTimeout(function() {
+        const toc_links = document.querySelectorAll(
+          '.site-header__nav-spotlight-menu a'
+        )
+
+        toc_links.forEach(link => {
+          link.addEventListener('click', function() {
+            console.log('clicked')
+            closeMenu(trigger, target)
+          })
+        })
+      }, 1000)
+    }
   })
 
   function closeMenu(trigger, target) {
@@ -36,7 +57,7 @@ const Navigation = () => {
     target.classList.remove('is-active')
     header.classList.remove('site-header--menu-active')
 
-    if (document.body.classList.contains('layout-spotlight')) {
+    if (is_spotlight) {
       return
     }
     overlay.classList.remove('is-active')
