@@ -143,3 +143,19 @@
     }
   }
 }
+
+.layout-spotlight .site-logo--blue {
+  &.site-logo--icon {
+    @include breakpoint('large') {
+      display: block;
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  &.site-logo--full {
+    @include breakpoint('large') {
+      display: none;
+    }
+  }
+}
