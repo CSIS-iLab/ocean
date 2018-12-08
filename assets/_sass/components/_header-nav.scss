@@ -13,14 +13,14 @@ $site-nav: '.site-header__nav';
   max-width: fit-content;
   @extend %header-nav__section;
 
-  @include breakpoint('medium') {
+  @include breakpoint('large') {
     order: 2;
   }
 
   .layout-spotlight & {
     max-width: unset;
 
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       margin-left: 2rem;
     }
   }
@@ -99,7 +99,7 @@ $site-nav: '.site-header__nav';
 }
 
 #{$site-nav}-trigger {
-  @include breakpoint('medium') {
+  @include breakpoint('large') {
     display: none;
   }
 }
@@ -121,7 +121,7 @@ $site-nav: '.site-header__nav';
   visibility: hidden;
   transition: transform 0.5s linear, visibility 0s linear 0.3s;
 
-  @include breakpoint('medium') {
+  @include breakpoint('large') {
     position: static;
     top: unset;
     left: unset;
@@ -143,13 +143,15 @@ $site-nav: '.site-header__nav';
   }
 
   li {
-    @include breakpoint($break: 'medium', $dir: 'max-width') {
-      margin-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+
+    @include breakpoint('large') {
+      margin-bottom: 0;
     }
   }
 
   &:not(.site-header__nav-menu--spotlight) li:not(:first-of-type) {
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       margin-left: 3rem;
     }
   }
@@ -176,7 +178,7 @@ $site-nav: '.site-header__nav';
   }
 
   &--home a {
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       color: $color__black-light;
     }
   }

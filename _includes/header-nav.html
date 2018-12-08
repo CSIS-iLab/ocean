@@ -9,8 +9,10 @@
     <span class="visually-hidden">Menu</span>
   </button>
 
-  {% assign class = 'header__nav-menu' %} {% if page.layout == 'home' %} {%
-  assign class = 'header__nav-menu site-header__nav-menu--home' %} {% endif %}
-  {% include site-nav.html class=class location="inHeader" %} {%- if page.layout
-  == 'spotlight' -%} {%- include header-nav-spotlight.html -%} {%- endif -%}
+  {% assign class = 'header__nav-menu' %}
+  {% if page.layout == 'home' %}
+    {%
+  assign class = 'header__nav-menu site-header__nav-menu--home' %}
+  {% endif %}
+  {% include site-nav.html class=class location="inHeader" %}
 </nav>

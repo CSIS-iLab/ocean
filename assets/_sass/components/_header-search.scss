@@ -13,7 +13,7 @@
   height: 100%;
   text-align: right;
 
-  @include breakpoint('medium') {
+  @include breakpoint('large') {
     margin-left: 3rem;
   }
 

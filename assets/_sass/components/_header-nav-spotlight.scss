@@ -9,12 +9,18 @@
 
   display: flex;
   align-items: center;
+  order: 1;
+
+  @include breakpoint('large') {
+    order: 2;
+    margin: 0 auto 0 2rem;
+  }
 
   #{$site-header}__section {
     display: none;
     @extend %header-nav__section;
 
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       position: relative;
       display: block;
       margin-left: 1rem;
@@ -38,7 +44,7 @@
     @include structure(
       $size__header-height--minimal,
       'top',
-      ('small', 'medium')
+      ('small', 'large')
     );
     left: 0;
     display: flex;
@@ -51,14 +57,14 @@
     height: 100vh;
     background-color: $color__dkblue-dark;
 
-    @include breakpoint('medium') {
+    @include breakpoint('large') {
       flex-direction: row;
       max-width: 600px;
       height: auto;
     }
 
     &-site {
-      @include breakpoint('medium') {
+      @include breakpoint('large') {
         width: 325px;
       }
     }
@@ -92,7 +98,7 @@
 
   #{$site-header}__panel-spotlight {
     background-color: $color__dkblue;
-    
+
     &-title {
       margin-bottom: 2rem;
       padding-bottom: 1rem;

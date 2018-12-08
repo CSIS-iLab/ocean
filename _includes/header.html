@@ -5,7 +5,11 @@
 <header class="site-header {{ header_secondary_class }}" role="banner">
   <div class="wrapper">
     {%- include header-logo.html -%}
-    {%- include header-nav.html -%}
+    {%- if page.layout == 'spotlight' -%}
+      {%- include header-nav-spotlight.html -%}
+    {%- else -%}
+      {%- include header-nav.html -%}
+    {%- endif -%}
     {%- include header-search.html -%}
   </div>
 </header>
