@@ -49,7 +49,7 @@
 
   &__header {
     grid-area: header;
-    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
 
     #{$post}__title {
       margin-bottom: 0.5rem;

@@ -45,7 +45,7 @@
       background-size: cover;
 
       @include breakpoint('xlarge') {
-        width: calc(100vw + #{$width-offset});
+        width: calc(100vw + (#{$width-offset}) / 2);
       }
 
       #{$search} & {
@@ -134,18 +134,48 @@
     position: relative;
     margin-top: calc(var(--archive-cutout-height) * -1);
     @include structure($size__content-margin--archive, 'margin');
-    padding-bottom: 1.5rem;
+    padding-bottom: 3rem;
     @include structure($size__content-padding--archive, 'padding-left');
     background-color: $color__white;
 
     @include breakpoint('medium') {
+      padding-bottom: 4rem;
       border-left: $border-width solid $color__gray-58;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      display: block;
+      width: calc((100vw - 100%) / 2);
+      background-color: $color__white;
+
+      @include breakpoint('medium') {
+        top: var(--archive-cutout-height);
+        right: calc(100% + 1px);
+        bottom: 0;
+        height: unset;
+      }
     }
 
     &::after {
       @extend %content-side-gradient;
       top: calc(var(--archive-cutout-height) - 2rem);
       bottom: -2.5rem;
+      display: block;
+
+      @include breakpoint('large') {
+        $width_offset: nth(map-get($map: $size__content-margin--archive, $key: 'large'), 2) * 2;
+        width: calc((100vw - 100%) / 2 + #{$width_offset});
+      }
+
+      @include breakpoint('xlarge') {
+        $width_offset: nth(map-get($map: $size__content-margin--archive, $key: 'xlarge'), 2) * 3;
+        width: calc((100vw - 100%) / 2 + #{$width_offset} - 1px);
+      }
     }
 
     #{$search} & {

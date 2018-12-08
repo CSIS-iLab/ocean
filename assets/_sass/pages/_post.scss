@@ -51,7 +51,7 @@
       }
 
       @include breakpoint('xlarge') {
-        width: calc(100vw + #{$width-offset});
+        width: calc(100vw + (#{$width-offset}) / 2);
       }
     }
 
