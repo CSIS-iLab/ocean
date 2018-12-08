@@ -51,12 +51,16 @@
   &__title {
     display: flex;
     flex: 1 0 auto;
+    justify-content: center;
     order: 2;
-    max-width: fit-content;
     text-align: center;
 
     @include breakpoint('large') {
+      flex-shrink: 1;
+      justify-content: flex-start;
       order: 1;
+      width: fit-content;
+      max-width: fit-content;
       margin: 0 auto 0 0;
       text-align: left;
     }
@@ -144,18 +148,29 @@
   }
 }
 
-.layout-spotlight .site-logo--blue {
-  &.site-logo--icon {
+
+.layout-spotlight {
+  .site-header__title {
+    margin-right: -1rem;
+    
     @include breakpoint('large') {
-      display: block;
-      width: 42px;
-      height: 42px;
+      margin-right: 0;
     }
   }
 
-  &.site-logo--full {
-    @include breakpoint('large') {
-      display: none;
+  .site-logo--blue {
+    &.site-logo--icon {
+      @include breakpoint('large') {
+        display: block;
+        width: 42px;
+        height: 42px;
+      }
+    }
+
+    &.site-logo--full {
+      @include breakpoint('large') {
+        display: none;
+      }
     }
   }
 }
