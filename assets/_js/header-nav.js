@@ -43,7 +43,6 @@ const Navigation = () => {
 
         toc_links.forEach(link => {
           link.addEventListener('click', function() {
-            console.log('clicked')
             closeMenu(trigger, target)
           })
         })

@@ -172,11 +172,15 @@ $site-nav: '.site-header__nav';
     }
 
     #{$minimal} & {
-      color: $color__black-light;
+      @include breakpoint('large') {
+        color: $color__black-light;
+      }
 
       &:hover,
       &:focus {
-        color: $color__medblue;
+        @include breakpoint('large') {
+          color: $color__medblue;
+        }
       }
     }
   }
