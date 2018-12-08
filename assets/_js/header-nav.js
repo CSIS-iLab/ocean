@@ -1,32 +1,35 @@
 import scroll from '@threespot/freeze-scroll'
 
 const Navigation = () => {
-  const trigger = document.querySelector('.site-header__nav-trigger')
-  const menu = document.querySelector('.site-header__nav-menu')
   const overlay = document.querySelector('.content-overlay')
   const header = document.querySelector('.site-header')
+  const triggers = document.querySelectorAll('.menu-trigger')
 
-  trigger.addEventListener('click', function() {
-    if (menu.classList.contains('is-active')) {
-      closeMenu(this)
-    } else {
-      menu.classList.add('is-active')
-      this.setAttribute('aria-expanded', 'true')
-      this.classList.add('is-active')
-      overlay.classList.add('is-active')
-      header.classList.add('site-header--menu-active')
-      scroll.freeze()
-    }
+  triggers.forEach(trigger => {
+    const target = document.querySelector(trigger.dataset.target)
+
+    trigger.addEventListener('click', function() {
+      if (target.classList.contains('is-active')) {
+        closeMenu(trigger, target)
+      } else {
+        target.classList.add('is-active')
+        this.setAttribute('aria-expanded', 'true')
+        this.classList.add('is-active')
+        overlay.classList.add('is-active')
+        header.classList.add('site-header--menu-active')
+        scroll.freeze()
+      }
+    })
+
+    overlay.addEventListener('click', function() {
+      closeMenu(trigger, target)
+    })
   })
 
-  overlay.addEventListener('click', function() {
-    closeMenu(trigger)
-  })
-
-  function closeMenu(el) {
-    el.setAttribute('aria-expanded', 'false')
-    el.classList.remove('is-active')
-    menu.classList.remove('is-active')
+  function closeMenu(trigger, target) {
+    trigger.setAttribute('aria-expanded', 'false')
+    trigger.classList.remove('is-active')
+    target.classList.remove('is-active')
     overlay.classList.remove('is-active')
     header.classList.remove('site-header--menu-active')
     scroll.unfreeze()
