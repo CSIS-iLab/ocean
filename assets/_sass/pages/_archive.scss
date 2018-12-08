@@ -134,11 +134,12 @@
     position: relative;
     margin-top: calc(var(--archive-cutout-height) * -1);
     @include structure($size__content-margin--archive, 'margin');
-    padding-bottom: 1.5rem;
+    padding-bottom: 3rem;
     @include structure($size__content-padding--archive, 'padding-left');
     background-color: $color__white;
 
     @include breakpoint('medium') {
+      padding-bottom: 4rem;
       border-left: $border-width solid $color__gray-58;
     }
 
@@ -153,13 +154,19 @@
       }
 
       @include breakpoint('xlarge') {
-        $width_offset: nth(map-get($map: $size__content-margin--archive, $key: 'large'), 2) * 3;
+        $width_offset: nth(map-get($map: $size__content-margin--archive, $key: 'xlarge'), 2) * 3;
         width: calc((100vw - 100%) / 2 + #{$width_offset} - 1px);
       }
     }
 
     #{$search} & {
       margin-top: calc(var(--archive-cutout-height) * -1);
+    }
+  }
+
+  &__featured {
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      @include full-width-background($color__white, 'left');
     }
   }
 
