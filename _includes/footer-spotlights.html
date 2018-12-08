@@ -1,5 +1,5 @@
 {%- if page.layout == 'spotlight' -%}
-  <script src="{{ "/assets/js/header-share.js" | relative_url }}" type="text/javascript"></script>
+  <script src="{{ "/assets/js/spotlights.js" | relative_url }}" type="text/javascript"></script>
   {% if page.js_files.size > 0 %}
     {%- for file in page.js_files %}
       {%- if file.contains '://' -%}

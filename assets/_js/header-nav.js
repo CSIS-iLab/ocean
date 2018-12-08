@@ -15,8 +15,12 @@ const Navigation = () => {
         target.classList.add('is-active')
         this.setAttribute('aria-expanded', 'true')
         this.classList.add('is-active')
-        overlay.classList.add('is-active')
         header.classList.add('site-header--menu-active')
+
+        if (document.body.classList.contains('layout-spotlight')) {
+          return
+        }
+        overlay.classList.add('is-active')
         scroll.freeze()
       }
     })
@@ -30,8 +34,12 @@ const Navigation = () => {
     trigger.setAttribute('aria-expanded', 'false')
     trigger.classList.remove('is-active')
     target.classList.remove('is-active')
-    overlay.classList.remove('is-active')
     header.classList.remove('site-header--menu-active')
+
+    if (document.body.classList.contains('layout-spotlight')) {
+      return
+    }
+    overlay.classList.remove('is-active')
     scroll.unfreeze()
   }
 }

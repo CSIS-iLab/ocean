@@ -1,4 +1,4 @@
-const Share = () => {
+const HeaderShare = () => {
   const trigger = document.querySelector('.site-header__share-trigger')
   const share = document.querySelector('.site-header__share .share')
 
@@ -15,6 +15,4 @@ const Share = () => {
   })
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-  Share()
-})
+export default HeaderShare

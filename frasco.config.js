@@ -59,7 +59,7 @@ module.exports = {
     dest: 'js',
     entry: [
       'bundle.js',
-      'header-share.js',
+      'spotlights.js',
       'archives.js',
       'spotlights/arctic/arctic.js'
     ]
@@ -78,7 +78,7 @@ module.exports = {
     mode: 'production',
     output: {
       filename: chunkData => {
-        return chunkData.chunk.entryModule._identifier.includes('spotlights')
+        return chunkData.chunk.entryModule._identifier.includes('spotlights/')
           ? 'spotlights/[name].js'
           : '[name].js'
       }

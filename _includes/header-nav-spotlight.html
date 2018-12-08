@@ -9,11 +9,11 @@
     <span class="line"></span> <span class="line"></span>
     <span class="visually-hidden">Menu</span>
   </button>
-  <div class="site-header__section">Current Section</div>
+  <div class="site-header__section">{{ page.title }}</div>
   <div class="site-header__panel">
     <div class="site-header__panel-spotlight">
       <div class="site-header__panel-spotlight-title">{{ page.title }}</div>
-      Spotlight Navigation
+      <ul id="toc" class="site-header__nav-spotlight-menu"></ul>
     </div>
     <div class="site-header__panel-site">
       <div class="site-header__panel-logo-sub">
