@@ -1,4 +1,5 @@
 {%- if page.layout == 'spotlight' -%}
+  <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
   <script src="{{ "/assets/js/spotlights.js" | relative_url }}" type="text/javascript"></script>
   {% if page.js_files.size > 0 %}
     {%- for file in page.js_files %}
