@@ -13,8 +13,6 @@ const CalcHeight = el => {
     height = height + el.offsetHeight
   }
 
-  console.log(height)
-
   document.documentElement.style.setProperty(
     '--footer-bg-min-height',
     height + 'px'
