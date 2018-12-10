@@ -1,8 +1,8 @@
 ---
 title: Monica Medina
 date: 2018-12-10 14:29:58 +0000
-role: Founder/Publisher of Out Daily Planet
-byline: ''
+role: Senior Associate (non-resident) at CSIS
+byline: Founder and Publisher, Our Daily Planet
 published: false
 
 ---
