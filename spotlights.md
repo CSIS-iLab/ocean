@@ -1,8 +1,8 @@
 ---
 layout: archive
 title: Spotlights
-permalink: /Spotlights/
+permalink: "/Spotlights/"
 archive_has_featured: true
----
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+---
+SOS Spotlight projects provide in depth analysis and novel research on regionally specific marine resource and security challenges.  These deep dives are meant to examine particularly complex issues and advance the global dialog towards solutions.
