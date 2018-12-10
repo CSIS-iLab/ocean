@@ -9,7 +9,9 @@ authors:
 - _authors/dan-myers.md
 lede: ''
 keywords:
+- IUU
 - fishing
+- legal
 further_reading: ''
 related_spotlight: []
 related_commentary:
