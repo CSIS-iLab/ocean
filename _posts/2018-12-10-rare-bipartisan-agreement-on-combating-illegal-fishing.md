@@ -15,7 +15,7 @@ related_spotlight:
 - _spotlights/south-china-sea.md
 related_commentary:
 - _posts/2018-02-14-welcome-to-jekyll.markdown
-is_featured: true
+is_featured: false
 image: ''
 image_caption: ''
 image_source: ''
