@@ -279,7 +279,7 @@ $size__sc--float-large: (
 $size__sc--large: (
   'small': 100%,
   'medium': 100%,
-  'large': calc(100% + 4vw),
+  'large': calc(100% - 4vw),
   'xlarge': 75%
 );
 
