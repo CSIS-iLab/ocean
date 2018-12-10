@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
+  <header class="spotlight__header">
     {%- include content-type.html -%}
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -17,11 +17,11 @@ layout: default
       {%- endif -%}</p>
   </header>
 
-  <section class="post__content e-content" itemprop="articleBody">
-    {{ content }}
+  <section class="spotlight__content e-content" itemprop="articleBody">
+    <div class="spotlight__content-body post-content">{{ content }}</div>
   </section>
 
-  <footer>
+  <footer class="spotlight__footer">
     <h2>This is the footer</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

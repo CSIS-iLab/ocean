@@ -250,3 +250,39 @@ $size__archive-footer-margin-right: (
   'large': 10vw,
   'xlarge': 192px
 );
+
+/*---------  Spotlights  ---------*/
+
+$size__spotlight-container-width: (
+  'small': 100%,
+  'medium': 560px,
+  'large': 800px,
+  'xlarge': 1157px
+);
+
+$size__spotlight-body-width: 625px;
+
+$size__sc--float-small: (
+  'small': 100%,
+  'medium': 300px,
+  'large': 250px,
+  'xlarge': 300px
+);
+
+$size__sc--float-large: (
+  'small': 100%,
+  'medium': 350px,
+  'large': 50%,
+  'xlarge': 500px
+);
+
+$size__sc--large: (
+  'small': 100%,
+  'medium': 100%,
+  'large': calc(100% + 4vw),
+  'xlarge': 75%
+);
+
+$size__sc--max: 100%;
+
+$size__sc--full: 100vw;
