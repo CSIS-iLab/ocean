@@ -8,7 +8,8 @@ authors:
 - _authors/monica-medina.md
 - _authors/dan-myers.md
 lede: ''
-keywords: []
+keywords:
+- fishing
 further_reading: ''
 related_spotlight: []
 related_commentary:
