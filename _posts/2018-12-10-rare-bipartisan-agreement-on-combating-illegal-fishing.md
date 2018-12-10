@@ -9,7 +9,8 @@ authors:
 - _authors/monica-medina.md
 - _authors/carolyn-weis.md
 lede: ''
-keywords: []
+keywords:
+- fishing
 further_reading: ''
 related_spotlight:
 - _spotlights/south-china-sea.md
