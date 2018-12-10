@@ -1,8 +1,8 @@
 ---
 layout: archive
 title: Commentary
-permalink: /commentary/
+permalink: "/commentary/"
 archive_has_featured: true
----
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+---
+SOS Commentaries provide a platform for experts from a variety of backgrounds to provide insight and opinions on marine resource related security challenges. Commentary authors may come from across the spectrum of expertise including academia, government, and industry. SOS welcomes ideas for contributions via the email address below. Opinions expressed in commentaries are solely those of the authors.
