@@ -5,8 +5,12 @@ js_files:
 - arctic
 css_files:
 - arctic
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-'
+excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+  nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+  officia deserunt mollit anim id est laborum. '
 authors:
 - _authors/test-sr.md
 - _authors/test-jr.md
@@ -24,12 +28,13 @@ image: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Sc
 image_caption: image caption
 image_source: image source
 related_spotlight:
+- _spotlights/introducing-a-new-arctic-ocean.md
 - _spotlights/arctic/test-arctic.html
 related_commentary:
+- _posts/2018-12-10-harmonizing-enforcement-would-make-the-oceans-more-secure.md
 - _posts/2018-11-19-test-post.md
 
 ---
-
 <h2 class="test-header">Section one</h2>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
