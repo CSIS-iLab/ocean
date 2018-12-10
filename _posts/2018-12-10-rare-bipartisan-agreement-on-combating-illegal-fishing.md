@@ -14,7 +14,7 @@ further_reading: ''
 related_spotlight:
 - _spotlights/south-china-sea.md
 related_commentary:
-- _posts/rare-bipartisan-agreement-on-combating-illegal-fishing.md
+- _posts/2018-02-14-welcome-to-jekyll.markdown
 is_featured: true
 image: ''
 image_caption: ''
