@@ -2,8 +2,28 @@
   .page-content {
     @include structure($size__header-height, 'margin-top', ('small', 'large'));
   }
+}
 
-  .post-header {
+.spotlight {
+  &__header {
     height: 800px;
+  }
+
+  &__content {
+    @include structure($size__spotlight-container-width, 'width');
+    margin: 0 auto;
+  }
+
+  &__content-body {
+    > *:not(.spotlight-component) {
+      @include breakpoint('large') {
+        width: $size__spotlight-body-width;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &-component {
+    background-color: $color__test;
   }
 }

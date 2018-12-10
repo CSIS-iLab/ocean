@@ -1,0 +1,41 @@
+@each $dir in ('right', 'left') {
+  .sc--float-#{$dir} {
+    float: unquote($dir);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    @if $dir == 'right' {
+      margin-right: 0;
+      margin-left: 1rem;
+    } @else {
+      margin-right: 1rem;
+      margin-left: 0;
+    }
+  }
+}
+
+.sc--float-small {
+  @include structure($size__sc--float-small, 'width');
+}
+
+.sc--float-large {
+  @include structure($size__sc--float-large, 'width');
+}
+
+.sc--large {
+  @include structure($size__sc--large, 'width');
+  margin: 1rem auto;
+}
+
+.sc--max {
+  width: $size__sc--max;
+  margin: 1rem auto;
+}
+
+.sc--full {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: $size__sc--full;
+  margin: 1rem -50vw;
+}
