@@ -12,6 +12,9 @@ fields:
 - type: text
   name: byline
   label: Byline
+- type: file
+  name: image
+  label: Image
 pages:
 - _authors/test-jr.md
 - _authors/test-sr.md
