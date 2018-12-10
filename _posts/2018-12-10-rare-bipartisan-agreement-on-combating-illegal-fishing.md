@@ -10,7 +10,9 @@ authors:
 - _authors/carolyn-weis.md
 lede: ''
 keywords:
+- IUU
 - fishing
+- legal
 further_reading: ''
 related_spotlight:
 - _spotlights/south-china-sea.md
