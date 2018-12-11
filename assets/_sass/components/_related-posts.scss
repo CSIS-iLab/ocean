@@ -8,31 +8,41 @@
 
   &__header {
     @extend %post-block__type--related;
-    width: 100%;
+    flex-basis: 100%;
+    padding-bottom: 0.5rem;
     text-transform: uppercase;
   }
 
-  &__block {
-    @extend %archive__results;
-    width: 50%;
-    padding-top: 1.2em;
-    text-transform: uppercase;
+  .post-block {
+    margin-bottom: 0;
 
-    &-title {
-      @extend %post-block__title--related;
-      padding-bottom: 0.2em;
-      text-transform: none;
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      flex-basis: 100%;
 
-      &:hover {
-        color: $color__medblue;
-        transition: inherit;
+      &:last-child:not(:only-child) {
+        margin-top: 1rem;
+      }
+
+      .post-block__title {
+        margin-bottom: 0;
+        @include font-size(20px);
       }
     }
 
-    &-label {
-      @extend %tag__label;
-      padding-right: 0.1em;
-      text-transform: none;
+    @include breakpoint('medium') {
+      flex-basis: calc(50% - 4rem);
+
+      &:last-child:not(:only-child) {
+        margin-left: 4rem;
+      }
+    }
+
+    &__header {
+      margin-bottom: 0;
+
+      .post-meta__label {
+        @include font-size(15px);
+      }
     }
   }
 }

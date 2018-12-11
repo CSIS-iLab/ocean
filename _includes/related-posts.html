@@ -1,27 +1,24 @@
-{% assign commentaries = page.related_commentary | sort: 'date' | reverse %}
-{% assign related_commentaries_array = "" | split: '' %}
-{%- for commentary in commentaries -%}
-  {% assign related_commentary = site.posts | where: "relative_path", commentary | first %}
-  {% assign related_commentaries_array = related_commentaries_array | push: related_commentary %}
-{%- endfor -%}
-
-{% assign spotlights = page.related_spotlight | sort: 'date' | reverse %}
-{% assign related_spotlights_array = "" | split: '' %}
-{%- for spotlight in spotlights -%}
-  {% assign related_spotlight = site.spotlights | where: "relative_path", spotlight | first %}
-  {% assign related_spotlights_array = related_spotlights_array | push: related_spotlight %}
-{%- endfor -%}
-
-{% assign related_posts = related_commentaries_array | concat: related_spotlights_array %}
+{% assign related_posts = page.related_commentary | concat: page.related_spotlight %}
 
 {% if related_posts.size > 0 %}
-<div class="related-posts">
-<span class="related-posts__header">{{ site.data.language.related_commentary }}</span>
-  {%- for related in related_posts | sort: 'date' | reverse | limit: 2 -%}
-    <div class="related-posts__block">
-      <a href="{{ related.url | relative_url }}"><h2 class="related-posts__block-title">{{ related.title }}</h2></a>
-      <span class="related-posts__block-label">{{ site.data.language.published_label }}</span> {{ related.date | date: site.date_format }}
-    </div>
+
+  {% assign related_posts_full = '' | split: '' %}
+
+  {% assign all_content = site.posts | concat: site.spotlights | sort: "date" | reverse %}
+  <!-- Add a counter to break for loop when maximum amount is reached -->
+
+  {% for post in all_content %}
+    {% if related_posts contains post.relative_path %}
+      {% assign related_posts_full = related_posts_full | push: post %}
+    {% endif %}
+
+    {% if related_posts_full.size == 2 %}{% break %}{% endif %}
   {% endfor %}
-</div>
+  <div class="related-posts">
+    <div class="related-posts__header">{{ site.data.language.related_commentary }}</div>
+      {% for post in related_posts_full %}
+        {%- include post-block.html minimal=true -%}
+      {% endfor %}
+  </div>
+
 {% endif %}

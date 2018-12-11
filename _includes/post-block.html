@@ -1,6 +1,6 @@
 {%- assign img_class = null -%}
-{%- if post.image.size > 0 -%}
-{%- assign img_class = 'post-block--img' -%}
+{%- if post.image.size > 0  and include.minimal !=true  -%}
+  {%- assign img_class = 'post-block--img' -%}
 {%- endif -%}
 
 {%- if page.layout == 'archive' and include.class == 'post-block--featured' -%}
@@ -8,20 +8,34 @@
 {%- endif -%}
 
 <article class="post-block {{ include.class }} {{ img_class }}" role="article" data-content-type="{{ post.collection | slugify }}">
-  {% if post.image.size > 0 %}
-  <a href="{{ post.url | relative_url }}" class="post-block__img"><img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" title="{{ post.title | escape }}" /></a>
+  {% if post.image.size > 0 and include.minimal !=true %}
+    <a href="{{ post.url | relative_url }}" class="post-block__img">
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" title="{{ post.title | escape }}" />
+    </a>
   {% endif %}
+
   <header class="post-block__header {{ headerClass }}">
-    {%- include content-type.html -%}
-    <h2 class="post-block__title"><a href="{{ post.url | relative_url }}">
-      {{ post.title | escape }}
-    </a></h2>
-    {%- include authors-list.html -%}
+
+    {% if include.minimal != true %}
+      {%- include content-type.html -%}
+    {% endif %}
+
+    <h2 class="post-block__title">
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h2>
+
+    {% if include.minimal != true %}
+      {%- include authors-list.html -%}
+    {% endif %}
+
     {%- include date.html -%}
+
   </header>
-  {% if include.hide_excerpt != true %}
+
+  {% if include.minimal != true %}
     <section class="post-block__content">
       <p>{{ post.excerpt }}</p>
     </section>
   {% endif %}
+
 </article>
