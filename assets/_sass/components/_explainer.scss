@@ -1,0 +1,89 @@
+.explainer {
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    float: none;
+    margin: 0;
+
+    .icon-x {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      display: block;
+      color: $color__slate;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+
+    &.is-active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      padding: 1.4rem 1rem 1rem;
+      background-color: $color__slate-lightest;
+      box-shadow: 0 10px 30px 0 rgba(0, 20, 29, 0.2);
+    }
+
+    &:not(.is-active) &__content {
+      display: none;
+    }
+  }
+
+  &__trigger {
+    display: inline-flex;
+    justify-content: center;
+    width: 2rem;
+    margin: 0;
+    padding: 0;
+    line-height: 0.75;
+    background-color: $color__orange;
+    border: 0;
+    border-radius: 33%;
+    cursor: pointer;
+
+    &:focus {
+      outline: 0;
+      @extend %focus--border;
+    }
+
+    .is-active & {
+      display: none;
+    }
+
+    i {
+      display: block;
+      margin: 0 0 0.6rem;
+      font-size: 20px;
+      line-height: 0;
+    }
+  }
+
+  @include breakpoint('medium') {
+    .icon-x {
+      display: none;
+    }
+
+    &__trigger {
+      display: none;
+    }
+
+    &::before {
+      display: block;
+      width: 33%;
+      height: 2px;
+      margin-bottom: 0.5rem;
+      border-top: 2px solid $color__bluegray-light;
+      content: '';
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 0.5rem;
+    @extend %post-content__table-title;
+  }
+
+  &__body {
+    display: block;
+    @extend %body-text__med;
+  }
+}
