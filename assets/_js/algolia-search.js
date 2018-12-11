@@ -100,7 +100,6 @@ const updateTaglineTitle = () => {
     search.helper.state.hierarchicalFacetsRefinements.keywords
   }`
 }
-const updateBylineTitle = () => {}
 
 const toggleElementsOnNoResults = (elements, action) => {
   elements.forEach(el => el.classList[action]('algolia--is-hidden'))
@@ -277,13 +276,9 @@ const calcSelectWidth = select => {
 
   let hiddenInput = hiddenInputContainer.querySelector('select')
 
-  // hiddenInput.style.display = 'block'
-
   let width = hiddenInput.offsetWidth
 
   select.style.width = `${width + 15}px`
-
-  // hiddenInput.style.display = 'none'
 }
 
 const render = () => {
@@ -303,10 +298,6 @@ const render = () => {
 
   if (search.helper.state.query) {
     updateSearchInput()
-  }
-
-  if (location[0] === 'authors') {
-    updateBylineTitle()
   }
 
   if (search.helper.state.hierarchicalFacetsRefinements.keywords) {
