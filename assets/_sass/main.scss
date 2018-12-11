@@ -27,7 +27,6 @@
 @import 'components/pagination';
 @import 'components/post-meta';
 @import 'components/social-share';
-@import 'components/spotlights-components';
 @import 'components/view-all-link';
 
 @import 'layout/footer';
@@ -37,3 +36,5 @@
 @import 'pages/home';
 @import 'pages/post';
 @import 'pages/spotlight';
+
+@import 'spotlights/spotlights-components';

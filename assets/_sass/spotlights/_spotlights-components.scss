@@ -1,0 +1,43 @@
+/*===========================
+=                           =
+=    Spotlight Components   =
+=                           =
+===========================*/
+
+.spotlight-component {
+
+  .document {
+    display: flex;
+    box-shadow: none;
+    text-align: center;
+
+    &__title {
+      @extend %post-content__caption-label;
+      display: block;
+    }
+
+    &__caption {
+      @extend %post-content__caption-desc--sm;
+      display: block;
+    }
+
+    &__icon {
+      width: 2em;
+      height: 2em;
+      align-items: center;
+
+      i {
+        background-color: $color__test;
+        padding: 0.5rem;
+        color: $color__white;
+        border-radius: 3rem;
+        align-items: center;
+
+        &:hover {
+          opacity: 0.8;
+          transition: inherit;
+        }
+      }
+    }
+  }
+}
