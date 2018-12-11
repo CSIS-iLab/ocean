@@ -5,39 +5,53 @@
 ===========================*/
 
 .spotlight-component {
-
   .document {
-    display: flex;
-    box-shadow: none;
-    text-align: center;
+    display: block;
+  }
+}
 
-    &__title {
-      @extend %post-content__caption-label;
-      display: block;
+
+/*===========================
+=                           =
+=          Document         =
+=                           =
+===========================*/
+
+.document {
+  &-title {
+    @extend %post-content__caption-label;
+    display: block;
+  }
+
+  &-caption {
+    @extend %post-content__caption-desc--sm;
+    display: block;
+  }
+
+  &-icon {
+    display: block;
+
+    i {
+      width: 43px;
+      height: 43px;
+      padding: 0.5rem;
+      justify-content: center;
+      color: $color__white;
+      background-color: $color__test;
+      border-radius: 5rem;
     }
 
-    &__caption {
-      @extend %post-content__caption-desc--sm;
-      display: block;
+    i:hover {
+      opacity: 0.8;
+      transition: inherit;
     }
 
-    &__icon {
-      width: 2em;
-      height: 2em;
-      align-items: center;
-
-      i {
-        background-color: $color__test;
-        padding: 0.5rem;
-        color: $color__white;
-        border-radius: 3rem;
-        align-items: center;
-
-        &:hover {
-          opacity: 0.8;
-          transition: inherit;
-        }
-      }
+    @include breakpoint('small') {
+      display: flex;
     }
+  }
+
+  @include breakpoint('small') {
+    display: block;
   }
 }
