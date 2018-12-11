@@ -8,9 +8,9 @@
 {%- endif -%}
 
 {%- if include.url and include.title and align_class != null -%}
-<span class="spotlight-component {{ align_class}} {{ size_class }}">
-  <a href="{{ include.url }}" class="document__icon"><i class="icon-paperclip"></i></a>
-  <span class="document__title"> {{ include.title }} </span>
-  <span class="document__caption"> {{ include.caption }} </span>
+<span class="spotlight-component document {{ align_class}} {{ size_class }}">
+  <a href="{{ include.url }}" class="document-icon"><i class="icon-paperclip"></i></a>
+  <span class="document-title"> {{ include.title }} </span>
+  <span class="document-caption"> {{ include.caption }} </span>
 </span>
 {%- endif -%}

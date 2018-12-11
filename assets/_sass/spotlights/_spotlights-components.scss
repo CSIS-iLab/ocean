@@ -5,16 +5,51 @@
 ===========================*/
 
 .spotlight-component {
-  &__caption-serif {
-    @extend %post-content__caption;
-  }
+
 }
+
 
 /*===========================
 =                           =
-=         Statistic         =
+=          Document         =
 =                           =
 ===========================*/
+
+.document {
+  &-title {
+    @extend %post-content__caption-label;
+    display: block;
+  }
+
+  &-caption {
+    @extend %post-content__caption-desc--sm;
+    display: block;
+  }
+
+  &-icon {
+    display: block;
+
+    i {
+      width: 43px;
+      height: 43px;
+      padding: 0.5rem;
+      justify-content: center;
+      color: $color__white;
+      background-color: $color__test;
+      border-radius: 5rem;
     }
+
+    i:hover {
+      opacity: 0.8;
+      transition: inherit;
+    }
+
+    @include breakpoint('small') {
+      display: flex;
+    }
+  }
+
+  @include breakpoint('small') {
+    display: block;
   }
 }
