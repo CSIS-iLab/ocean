@@ -1,16 +1,13 @@
+{%- assign size_class = 'small' | prepend: 'sc--float-' -%}
 {%- assign align_class = null -%}
 {%- if include.align -%}
   {%- assign align_class = include.align | prepend: 'sc--float-' -%}
 {%- endif -%}
-{%- assign size_class = null -%}
-{%- if include.size -%}
-{%- assign size_class = include.size | prepend: 'sc--' -%}
-{%- endif -%}
 
-{%- if include.url and include.title and align_class != null -%}
-<span class="spotlight-component document {{ align_class}} {{ size_class }}">
+{%- if include.url and include.label and align_class != null -%}
+<span class="spotlight-component document {{ align_class }} {{ size_class }}">
   <a href="{{ include.url }}" class="document-icon"><i class="icon-paperclip"></i></a>
-  <span class="document-title"> {{ include.title }} </span>
-  <span class="document-caption"> {{ include.caption }} </span>
+  <span class="spotlight-component__label"> {{ include.label }} </span>
+  <span class="spotlight-component__caption"> {{ include.caption }} </span>
 </span>
 {%- endif -%}
