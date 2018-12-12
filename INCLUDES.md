@@ -22,3 +22,7 @@ Displays a list of social share options
 - `hide_excerpt`: Set to `true` to hide the post excerpt
 - `show_image`: Set to `true` to show the post thumbnail
 - `class`: Add additional classes to block. Useful for specifying a featured post. Default is null.
+
+## spotlights
+- `align`: Set to 'left' to align left. Set to 'right' to align right
+- 'width': Set 'small' 'large' 'full' or 'max' width
