@@ -6,8 +6,11 @@
 
 .spotlight-component {
 
+  &__caption {
+    @extend %post-content__caption-desc--sm;
+    display: block;
+  }
 }
-
 
 /*===========================
 =                           =
@@ -49,7 +52,12 @@
     }
   }
 
+<<<<<<< HEAD
   @include breakpoint('small') {
     display: block;
+=======
+  @include breakpoint('medium') {
+    text-align: left;
+>>>>>>> corrected float component
   }
 }
