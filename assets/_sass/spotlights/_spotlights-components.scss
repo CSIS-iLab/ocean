@@ -5,6 +5,8 @@
 ===========================*/
 
 .spotlight-component {
+  text-align: center;
+
   .document {
     display: block;
   }
@@ -18,6 +20,8 @@
 ===========================*/
 
 .document {
+  width: 100%;
+
   &-title {
     @extend %post-content__caption-label;
     display: block;
@@ -30,15 +34,17 @@
 
   &-icon {
     display: block;
+    float: none;
+    padding: 0.3rem;
+    text-align: center;
 
     i {
-      width: 43px;
-      height: 43px;
-      padding: 0.5rem;
-      justify-content: center;
+      width: 2.3rem;
+      height: 2.3rem;
+      padding: 0.3rem 0.25rem;
       color: $color__white;
       background-color: $color__test;
-      border-radius: 5rem;
+      border-radius: 6rem;
     }
 
     i:hover {
@@ -46,12 +52,15 @@
       transition: inherit;
     }
 
-    @include breakpoint('small') {
-      display: flex;
+    @include breakpoint('medium') {
+      display: inline-block;
+      float: left;
+      padding-right: 0.5rem;
     }
   }
 
-  @include breakpoint('small') {
-    display: block;
+  @include breakpoint('medium') {
+    width: 40%;
+    text-align: left;
   }
 }
