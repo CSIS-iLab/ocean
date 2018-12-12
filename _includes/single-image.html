@@ -1,0 +1,14 @@
+{%- assign align_class = null -%}
+{%- if include.align -%}
+  {%- assign align_class = include.align | prepend: ' sc--float-' -%}
+{%- endif -%}
+{%- assign width_class = null -%}
+{%- if include.width -%}
+  {%- assign width_class = include.width | prepend: ' sc--' -%}
+{%- endif -%}
+{%- if include.width and include.align -%}
+  {%- assign width_class = include.width | prepend: ' sc--float-' -%}
+{%- endif -%}
+{%- assign classes = align_class | prepend: width_class | prepend: ' spotlight-component' -%}
+
+{% include cloudinary-responsive-img.html figcaption=include.figcaption path=include.path title=include.caption alt= include.credit classes=classes %}

@@ -1,0 +1,143 @@
+/*=============================
+=            Media            =
+=============================*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+
+  .image-group & {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.image-group {
+  &__images {
+    display: grid;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      grid-gap: 0.5rem;
+    }
+
+    @include breakpoint('medium') {
+      grid-gap: 1rem;
+    }
+
+    .image-group:not(.sc--float-left):not(.sc--float-right) & {
+      @include breakpoint('medium') {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+    }
+  }
+
+  &__caption {
+    grid-column: 1 / -1;
+    @extend %post-content__caption-desc;
+
+    &-label {
+      @extend %post-content__caption-label;
+
+      &::before {
+        display: inline-block;
+        text-transform: uppercase;
+      }
+
+      &.top::before {
+        content: 'top:';
+
+        .image-group:not(.sc--float-left):not(.sc--float-right) & {
+          @include breakpoint('medium') {
+            content: 'left:';
+          }
+        }
+      }
+
+      &.middle::before {
+        content: 'middle:';
+
+        .image-group:not(.sc--float-left):not(.sc--float-right) & {
+          @include breakpoint('medium') {
+            content: 'center:';
+          }
+        }
+      }
+
+      &.bottom::before {
+        content: 'bottom:';
+
+        .image-group:not(.sc--float-left):not(.sc--float-right) & {
+          @include breakpoint('medium') {
+            content: 'right:';
+          }
+        }
+      }
+    }
+  }
+}
+
+figcaption,
+.image-group__caption {
+  margin: auto;
+  @extend %post-content__caption-desc;
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    max-width: calc(100vw - 40px);
+  }
+  @include breakpoint($break: 'medium', $until: 'large') {
+    @include structure($size__spotlight-container-width, 'max-width');
+  }
+
+  @include breakpoint('large') {
+    max-width: $size__spotlight-body-width;
+  }
+
+  &__source {
+    @extend %post-content__caption-desc--sm;
+  }
+}
+
+iframe {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.video-wrapper {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-bottom: calc(100% / (16 / 9));
+  }
+
+  * + & {
+    margin-top: 2rem;
+  }
+
+  > img {
+    height: auto;
+  }
+
+  > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
