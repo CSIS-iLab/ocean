@@ -1,0 +1,73 @@
+{%- assign align_class = null -%}
+{%- if include.align -%}
+  {%- assign align_class = include.align | prepend: ' sc--float-' -%}
+{%- endif -%}
+{%- assign width_class = null -%}
+{%- if include.width -%}
+  {%- assign width_class = include.width | prepend: ' sc--' -%}
+{%- endif -%}
+{%- if include.width and include.align -%}
+  {%- assign width_class = include.width | prepend: ' sc--float-' -%}
+{%- endif -%}
+
+
+
+
+{%- assign images = include.images | strip_newlines | split: "~"  -%}
+{%- assign captions = include.captions | strip_newlines | split: "~"  -%}
+{%- assign credits_array = include.credits | strip_newlines | split: "~"  -%}
+{%- assign credits = '' | split: ',' -%}
+
+{%- for item in credits_array -%}
+  {%- assign credit = item | strip  -%}
+  {%- if credit.size > 0 -%}
+    {%- capture credit -%}({{ credit }}){%- endcapture -%}
+  {%- else -%}
+    {% assign credit = "" -%}
+  {%- endif -%}
+  {% assign credits = credits | push: credit -%}
+{%- endfor -%}
+
+
+  {%- assign labels="top,middle,bottom" | split: "," -%}
+
+
+
+
+{%- capture group_caption -%}
+  {%- if images.size == 2 %}
+    <span class="image-group__caption-label {{ labels[0] }}"> </span>
+    {{ captions[0] }} {{ credits[0] }}
+    <span class="image-group__caption-label {{ labels[2] }}"> </span>
+    {{ captions[1] }} {{ credits[1] }}
+  {%- elsif images.size == 3 %}
+    <span class="image-group__caption-label {{ labels[0] }}"> </span>
+    {{ captions[0] }} {{ credits[0] }}
+    <span class="image-group__caption-label {{ labels[1] }}"> </span>
+    {{ captions[1] }} {{ credits[1] }}
+    <span class="image-group__caption-label {{ labels[2] }}"> </span>
+    {{ captions[2] }} {{ credits[2] }}
+  {%- endif -%}
+{%- endcapture -%}
+
+
+<div class="image-group spotlight-component {{ align_class}} {{ width_class}}">
+
+  <div class="image-group__images">
+    {%- for image in images -%}
+
+      {%- assign caption = captions[forloop.index0] -%}
+      {%- assign credit = credits[forloop.index0] -%}
+
+      {%- include single-image.html
+        path=image
+        figcaption=false
+        caption=caption
+        credit=credit
+        -%}
+    {%- endfor -%}
+  </div>
+  <div class="image-group__caption">
+    {{ group_caption }}
+  </div>
+</div>

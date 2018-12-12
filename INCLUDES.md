@@ -22,3 +22,21 @@ Displays a list of social share options
 - `hide_excerpt`: Set to `true` to hide the post excerpt
 - `show_image`: Set to `true` to show the post thumbnail
 - `class`: Add additional classes to block. Useful for specifying a featured post. Default is null.
+
+## spotlights
+- `align`: Set to 'left' to align left. Set to 'right' to align right
+- 'width': Set 'small' 'large' 'full' or 'max' width
+
+## single-image
+`{% include single-image.html path="https://...jpg" caption="Two cats" credit="Likely Getty" %}`
+
+- `path`: Full image path
+- `caption`: Image caption
+- `credit`: Image credit
+
+## image-grou
+`{% include image-group.html  images="path~path~path" captions="caption~caption~caption" credits="credit~credit~credit" class="Likely Getty" %}`
+
+- `path`: List of full image paths connected with tilde (~)
+- `caption`: List of image captions connected with tilde (~)
+- `credit`: List of image credits connected with tilde (~)
