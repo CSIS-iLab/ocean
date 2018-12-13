@@ -1,1 +1,29 @@
-Related Posts
+{% assign related_posts = page.related_commentary | concat: page.related_spotlight %}
+
+{% if related_posts.size > 0 %}
+
+  {% assign related_posts_full = '' | split: '' %}
+
+  {% assign all_content = site.posts | concat: site.spotlights | sort: "date" | reverse %}
+  <!-- Add a counter to break for loop when maximum amount is reached -->
+
+  {% for post in all_content %}
+    {% if related_posts contains post.relative_path %}
+      {% assign related_posts_full = related_posts_full | push: post %}
+    {% endif %}
+
+    {% if related_posts_full.size == 2 %}{% break %}{% endif %}
+  {% endfor %}
+  <div class="related-posts">
+    <div class="related-posts__header">{{ site.data.language.related_commentary }}</div>
+      {% for post in related_posts_full %}
+      <article class="related-posts__block">
+        <h2 class="related-posts__block__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        {%- include date.html -%}
+      </article>
+      {% endfor %}
+  </div>
+
+{% endif %}
