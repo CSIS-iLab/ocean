@@ -17,8 +17,6 @@ Displays a list of social share options
 
 
 ## post-block
-`{% include post-block.html hide_excerpt=true show_image=true class="post-block--featured" %}`
+`{% include post-block.html minimal=true  %}`
 
-- `hide_excerpt`: Set to `true` to hide the post excerpt
-- `show_image`: Set to `true` to show the post thumbnail
-- `class`: Add additional classes to block. Useful for specifying a featured post. Default is null.
+- `minimal`: Set to `true` to hide the post excerpt, photo, and authors
