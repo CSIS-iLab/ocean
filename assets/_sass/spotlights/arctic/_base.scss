@@ -1,5 +1,10 @@
+$color: #0663a1;
+
 :root {
-  --accent-color: #0663a1;
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+  --accent-color: #{$red}, #{$green}, #{$blue};
 }
 
 body {
