@@ -34,8 +34,9 @@
     width: 2rem;
     margin: 0;
     padding: 0;
+    color: $color__white;
     line-height: 0.75;
-    background-color: $color__orange;
+    background-color: var(--accent-color);
     border: 0;
     border-radius: 33%;
     cursor: pointer;
