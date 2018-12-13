@@ -81,7 +81,7 @@ figure {
     }
   }
 
-  &-label.top::before {
+  &__caption-label.top::before {
     content: 'top:';
 
     .image-group:not(.sc--float-left):not(.sc--float-right) & {
@@ -91,7 +91,7 @@ figure {
     }
   }
 
-  &-label.middle::before {
+  &__caption-label.middle::before {
     content: 'middle:';
 
     .image-group:not(.sc--float-left):not(.sc--float-right) & {
@@ -101,7 +101,7 @@ figure {
     }
   }
 
-  &-label.bottom::before {
+  &__caption-label.bottom::before {
     content: 'bottom:';
 
     .image-group:not(.sc--float-left):not(.sc--float-right) & {
@@ -172,8 +172,8 @@ figure {
     }
 
     &:focus {
-      background-color: $color__white;
       color: $color__black;
+      background-color: $color__white;
       @extend %focus--border;
       outline: 0;
     }
