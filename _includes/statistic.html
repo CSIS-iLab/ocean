@@ -4,7 +4,7 @@
 {%- endif -%}
 
 {%- if include.number and align_class != null -%}
-<div class="spotlight-component statistic {{ align_class }} {{ size_class | default: 'sc--float-small' }}">
+<div class="spotlight-component statistic {{ align_class }} {{ size_class | default: 'small' | prepend: 'sc--float-' }}">
   <div class="spotlight-component__caption-serif"> {{ include.pre }} </div>
   <div class="spotlight-component__number"> {{ include.number }} </div>
   <div class="spotlight-component__caption-serif"> {{ include.post }} </div>
