@@ -1,0 +1,42 @@
+/*===========================
+=                           =
+=    Spotlight Components   =
+=                           =
+===========================*/
+
+.spotlight-component {
+  text-align: center;
+
+  &__label {
+    @extend %post-content__caption-label;
+    display: block;
+  }
+
+  &__caption {
+    @extend %post-content__caption-desc--sm;
+    display: block;
+  }
+
+  &__description {
+    @extend %post-content__caption;
+    display: block;
+  }
+}
+
+/*===========================
+=                           =
+=         Dialogue          =
+=                           =
+===========================*/
+
+.dialogue {
+  text-align: center;
+
+  .blockquote {
+    @extend %post-content__body;
+  }
+
+  .cite {
+    @extend %post-content__caption-label;
+  }
+}
