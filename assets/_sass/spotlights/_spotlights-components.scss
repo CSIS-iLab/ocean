@@ -8,7 +8,12 @@
 
   &__caption {
     @extend %post-content__caption-desc--sm;
-    display: block;
+  }
+
+  i {
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: $color__test;
   }
 }
 
@@ -52,12 +57,7 @@
     }
   }
 
-<<<<<<< HEAD
   @include breakpoint('small') {
     display: block;
-=======
-  @include breakpoint('medium') {
-    text-align: left;
->>>>>>> corrected float component
   }
 }
