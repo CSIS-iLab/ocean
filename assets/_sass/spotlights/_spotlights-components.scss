@@ -1,0 +1,37 @@
+/*===========================
+=                           =
+=    Spotlight Components   =
+=                           =
+===========================*/
+
+.spotlight-component {
+  &__caption-serif {
+    @extend %post-content__caption;
+  }
+}
+
+/*===========================
+=                           =
+=         Statistic         =
+=                           =
+===========================*/
+
+.statistic {
+  text-align: center;
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+
+  &__number {
+    color: var(--accent-color);
+    font-family: $font__proxima;
+    @include font-size(50px);
+    font-weight: 600;
+    line-height: 1;
+
+    @include breakpoint('medium') {
+      @include font-size(64px);
+    }
+  }
+}
