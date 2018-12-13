@@ -5,21 +5,8 @@
 ===========================*/
 
 .spotlight-component {
-  text-align: center;
-
   &__caption-serif {
     @extend %post-content__caption;
-  }
-
-  &__number {
-    font-size: 50px;
-    font-family: $font__proxima;
-    font-weight: 600;
-    line-height: 60px;
-
-    @include breakpoint('medium') {
-      font-size: 64px;
-    }
   }
 }
 
@@ -30,5 +17,21 @@
 ===========================*/
 
 .statistic {
-  color: $color__test;
+  text-align: center;
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+
+  &__number {
+    color: var(--accent-color);
+    font-family: $font__proxima;
+    @include font-size(50px);
+    font-weight: 600;
+    line-height: 1;
+
+    @include breakpoint('medium') {
+      @include font-size(64px);
+    }
+  }
 }

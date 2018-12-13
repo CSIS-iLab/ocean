@@ -1,12 +1,9 @@
-{%- assign align_class = null -%}
-{%- if include.align -%}
-  {%- assign align_class = include.align | prepend: 'sc--float-' -%}
-{%- endif -%}
+{% assign align_class = include.align | default: 'left' | prepend: 'sc--float-' %}
 
-{%- if include.number and align_class != null -%}
-<div class="spotlight-component statistic {{ align_class }} {{ size_class | default: 'small' | prepend: 'sc--float-' }}">
-  <div class="spotlight-component__caption-serif"> {{ include.pre }} </div>
-  <div class="spotlight-component__number"> {{ include.number }} </div>
-  <div class="spotlight-component__caption-serif"> {{ include.post }} </div>
+{%- if include.number -%}
+<div class="spotlight-component statistic sc--float-small {{ align_class }}">
+  {%- if include.pre -%}<div class="spotlight-component__caption-serif">{{ include.pre }}</div>{%- endif -%}
+  <div class="statistic__number">{{ include.number }}</div>
+  {%- if include.post -%}<div class="spotlight-component__caption-serif">{{ include.post }}</div>{%- endif -%}
 </div>
 {%- endif -%}
