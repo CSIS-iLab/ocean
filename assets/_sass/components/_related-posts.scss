@@ -3,34 +3,31 @@
 ============================*/
 
 .related-posts {
+  display: grid;
+  grid-row-gap: 0.5rem;
+
   @include breakpoint('medium') {
     display: grid;
+    grid-column-gap: 4rem;
     grid-template-columns: auto auto;
   }
 
   &__header {
     @extend %post-block__type--related;
     grid-column: 1 / -1;
-    margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
 
   &__block {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       &:first-of-type:not(:only-child) {
-        margin-bottom: 1rem;
-      }
-    }
-
-    @include breakpoint('medium') {
-      &:first-of-type:not(:only-child) {
-        margin-right: 4rem;
+        margin-bottom: 0.5rem;
       }
     }
 
     &__title {
       @extend %post-block__title--related;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.25rem;
     }
 
     .post-meta {
