@@ -1,5 +1,10 @@
+$color: #ef4723;
+
 :root {
-  --accent-color: #ef4723;
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+  --accent-color: #{$red}, #{$green}, #{$blue};
   --footer-bg-min-height: 400px;
   --scroll-progress: 0;
 }

@@ -1,7 +1,7 @@
 .explainer {
   @include breakpoint($break: 'medium', $dir: 'max-width') {
     float: none;
-    margin: 0;
+    margin: 0 0 0.2rem;
 
     .icon-x {
       position: absolute;
@@ -32,16 +32,20 @@
     display: inline-flex;
     justify-content: center;
     width: 2rem;
-    margin: 0;
-    padding: 0;
-    color: $color__white;
-    line-height: 0.75;
-    background-color: var(--accent-color);
+    padding: 0.2rem 0;
+    background-color: rgba(var(--accent-color), 0.3);
     border: 0;
-    border-radius: 33%;
+    border-radius: 12px;
+    position: relative;
+    bottom: 0.3rem;
     cursor: pointer;
 
+    &:hover {
+      background-color: rgba(var(--accent-color), 0.6);
+    }
+
     &:focus {
+      background-color: rgba(var(--accent-color), 0.3);
       outline: 0;
       @extend %focus--border;
     }
