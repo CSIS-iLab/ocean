@@ -3,14 +3,16 @@
 =============================*/
 
 img {
-  max-width: 100%;
-  height: auto;
+  // max-width: 100%;
+  // height: auto;
 }
 
 figure {
   margin: 0;
 
-  .image-group & {
+  div[class*='sc--float-'] & {
+    position: relative;
+    height: 0;
     padding-bottom: 56.25%;
 
     img {
@@ -21,19 +23,19 @@ figure {
     }
   }
 
-  .image-gallery & {
-    padding-bottom: 8.4375%;
-  }
-
-  .image-group &,
-  .image-gallery & {
-    position: relative;
-    height: 0;
-  }
+  // .image-gallery & {
+  //   padding-bottom: 8.4375%;
+  // }
+  //
+  // .image-gallery & {
+  //   position: relative;
+  //   height: 0;
+  // }
 }
 
 .img-caption,
-.image-group__caption {
+.image-group__caption,
+.image-gallery__caption {
   margin: auto;
   @include structure($size__spotlight-container-width, 'max-width');
 }
@@ -180,12 +182,24 @@ figure {
   }
 
   &__image {
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      height: 50vw;
+      width: auto;
+    }
+
+    @include breakpoint('medium') {
+      height: 65vh;
+      min-height: 300px;
+      max-height: 750px;
+      width: auto;
+    }
+
     &.tns-slide-active {
       opacity: 1;
       transition: opacity 0.3s ease-in-out;
 
       img {
-        width: 100%;
+        // width: 100%;
       }
     }
 
@@ -193,15 +207,19 @@ figure {
       opacity: 0.5;
 
       img {
-        left: 1rem;
+        // left: 1rem;
+        margin: auto;
+        display: block;
         width: calc(100% - 2rem);
       }
     }
 
     img {
-      position: absolute;
+      // position: absolute;
+      // object-fit: cover;
       height: 100%;
-      object-fit: cover;
+      width: auto;
+      max-width: unset;
     }
   }
 

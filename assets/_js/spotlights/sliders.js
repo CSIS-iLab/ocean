@@ -15,7 +15,8 @@ const Sliders = () => {
     edgePadding: Breakpoints.isMobile() ? 0 : 105,
     lazyload: true,
     mouseDrag: true,
-    nav: false
+    nav: false,
+    autoWidth: true
   })
 
   const caption_slider = tns({
@@ -25,24 +26,24 @@ const Sliders = () => {
     center: true,
     edgePadding: Breakpoints.isMobile() ? 0 : 105,
     nav: false,
-    animateNormal: 'false',
-    animateIn: 'false',
-    animateOut: 'false'
+    autoWidth: true
   })
 
   let index = 0
 
   image_slider.events.on('indexChanged', slider => {
     let max = slider.slideCountNew - slider.cloneCount
+    index = slider.index
 
-    if (slider.index > index && slider.index < max) {
-      caption_slider.goTo('next')
+    if (slider.index >= index) {
+      if (slider.index !== slider.slideCountNew - 2) {
+        caption_slider.goTo('next')
+      }
+
       index = slider.index
     } else if (slider.index < index) {
       caption_slider.goTo('prev')
       index = slider.index
-    } else if (slider.index == max) {
-      index = 0
     }
 
     let label = document.querySelector(
