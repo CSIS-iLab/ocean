@@ -1,0 +1,12 @@
+{%- assign size_class = 'small' | prepend: 'sc--float-' -%}
+{%- assign align_class = null -%}
+{%- if include.align -%}
+  {%- assign align_class = include.align | prepend: 'sc--float-' -%}
+{%- endif -%}
+
+{%- if include.number and include.description and align_class != null -%}
+<span class="spotlight-component statistic {{ align_class }} {{ size_class }}">
+  <span class="spotlight-component__number"> {{ include.number }} </span>
+  <span class="spotlight-component__description"> {{ include.description }} </span>
+</span>
+{%- endif -%}

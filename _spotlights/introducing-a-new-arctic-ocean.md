@@ -36,6 +36,9 @@ related_commentary:
 
 ---
 <h2 class="test-header">Section one</h2>
+
+{%- include reference-link.html align='left' url='https://www.ipcc.ch/assessment-report/sr/' title='The source title' caption='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor nulla purus, non bibendum purus condimentum auctor. Sed semper sit amet metus eu blandit.' -%}
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <div class="spotlight-component sc--float-right sc--float-small">This is a float small component.</div>
