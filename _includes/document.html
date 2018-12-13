@@ -5,9 +5,9 @@
 {%- endif -%}
 
 {%- if include.url and include.label and align_class != null -%}
-<span class="spotlight-component document {{ align_class }} {{ size_class }}">
+<div class="spotlight-component document {{ align_class }} {{ size_class }}">
   <a href="{{ include.url }}" class="document-icon"><i class="icon-paperclip"></i></a>
-  <span class="spotlight-component__label"> {{ include.label }} </span>
-  <span class="spotlight-component__caption"> {{ include.caption }} </span>
-</span>
+  <div class="spotlight-component__label"> {{ include.label }} </div>
+  <div class="spotlight-component__caption"> {{ include.caption }} </div>
+</div>
 {%- endif -%}

@@ -62,8 +62,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <h3 class="include-toc">Subsection One</h3>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-{%- include document.html align='right' url='https://csis-prod.s3.amazonaws.com/s3fs-public/publication/180924_Cognitive_Effect_Cyberspace.pdf?R6FPUdDaOystuUCWsMCXUhKTBg.4CW.D' label='The document title' caption='Feb. 24, 2016 (p. 45-78)' -%}
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <h2 class="test-header" id="section-three">Section three</h2>
@@ -74,9 +72,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 {% include_relative arctic/test-arctic.html %}
 
 <h2 class="test-header">Section four</h2>
+
+{%- include document.html align='right' url='https://csis-prod.s3.amazonaws.com/s3fs-public/publication/180924_Cognitive_Effect_Cyberspace.pdf?R6FPUdDaOystuUCWsMCXUhKTBg.4CW.D' label='The document title' caption='Feb. 24, 2016 (p. 45-78)' -%}
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <h3>Subsection One</h3>
+
+{%- include document.html align='left' url='https://csis-prod.s3.amazonaws.com/s3fs-public/publication/180924_Cognitive_Effect_Cyberspace.pdf?R6FPUdDaOystuUCWsMCXUhKTBg.4CW.D' label='The document title' caption='Feb. 24, 2016 (p. 45-78)' -%}
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
