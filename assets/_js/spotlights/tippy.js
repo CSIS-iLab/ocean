@@ -1,5 +1,5 @@
 import tippy from 'tippy.js'
-import Breakpoints from './breakpoints'
+import Breakpoints from '../breakpoints'
 
 const Tippy = () => {
   tippy('.tooltip', {

@@ -61,7 +61,6 @@ module.exports = {
       'bundle.js',
       'spotlights.js',
       'archives.js',
-      'posts.js',
       'spotlights/arctic/arctic.js'
     ]
   },

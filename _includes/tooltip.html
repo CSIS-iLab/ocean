@@ -1,7 +1,5 @@
-{%- assign glossary_entry = site.data.glossary | where_exp: "entry","include.term contains entry.title" | first -%}
-
-{%- if glossary_entry.size > 0 -%}
-  <span data-content='{"title":{{ include.term | jsonify }},"entry":{{ glossary_entry.description | jsonify }}, "slug":{{ glossary_entry.title | slugify | jsonify }}}' class="tooltip">{{ include.term }}</span>
+{%- if include.title and include.description -%}
+  <span data-content='{"title":{{ include.title | jsonify }},"entry":{{ include.description | jsonify }}}' class="tooltip">{{ include.title }}</span>
 {%- else -%}
-  {{ include.term }}
+  {{ include.title }}
 {%- endif -%}
