@@ -1,5 +1,6 @@
 .explainer {
   @include breakpoint($break: 'medium', $dir: 'max-width') {
+    display: inline;
     float: none;
     margin: 0 0 0.2rem;
 
