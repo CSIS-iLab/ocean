@@ -1,11 +1,10 @@
-{%- assign size_class = 'small' | prepend: 'sc--float-' -%}
 {%- assign align_class = null -%}
 {%- if include.align -%}
   {%- assign align_class = include.align | prepend: 'sc--float-' -%}
 {%- endif -%}
 
 {%- if include.url and include.label and align_class != null -%}
-<div class="spotlight-component document {{ align_class }} {{ size_class }}">
+<div class="spotlight-component document {{ align_class }} {{ size_class }} {{ size_class | default: 'small' | prepend: 'sc--float-' }}">
   <a href="{{ include.url }}" class="document-icon"><i class="icon-paperclip"></i></a>
   <div class="spotlight-component__label"> {{ include.label }} </div>
   <div class="spotlight-component__caption"> {{ include.caption }} </div>
