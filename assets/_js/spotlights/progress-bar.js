@@ -4,8 +4,9 @@ const ProgressBar = () => {
   const st = 'scrollTop'
   const sh = 'scrollHeight'
   const header = document.querySelector('.site-header')
+
   const content_height =
-    document.querySelector('.post__content').clientHeight - 100
+    document.querySelector('.spotlight__content').clientHeight - 100
   let scroll
 
   document.addEventListener('scroll', function() {

@@ -11,9 +11,7 @@ figure {
   margin: 0;
 
   .image-group & {
-    position: relative;
     padding-bottom: 56.25%;
-    height: 0;
 
     img {
       position: absolute;
@@ -21,6 +19,36 @@ figure {
       height: 100%;
       object-fit: cover;
     }
+  }
+
+  .image-gallery & {
+    padding-bottom: 8.4375%;
+  }
+
+  .image-group &,
+  .image-gallery & {
+    position: relative;
+    height: 0;
+  }
+}
+
+.img-caption,
+.image-group__caption {
+  margin: auto;
+  @include structure($size__spotlight-container-width, 'max-width');
+}
+
+.img-caption,
+.image-group__caption,
+.image-gallery__caption {
+  @extend %post-content__caption-desc;
+
+  &-label {
+    @extend %post-content__caption-label;
+  }
+
+  &__source {
+    @extend %post-content__caption-desc--sm;
   }
 }
 
@@ -46,67 +74,178 @@ figure {
 
   &__caption {
     grid-column: 1 / -1;
-    @extend %post-content__caption-desc;
 
-    &-label {
-      @extend %post-content__caption-label;
+    &-label::before {
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
 
-      &::before {
-        display: inline-block;
-        text-transform: uppercase;
+  &-label.top::before {
+    content: 'top:';
+
+    .image-group:not(.sc--float-left):not(.sc--float-right) & {
+      @include breakpoint('medium') {
+        content: 'left:';
       }
+    }
+  }
 
-      &.top::before {
-        content: 'top:';
+  &-label.middle::before {
+    content: 'middle:';
 
-        .image-group:not(.sc--float-left):not(.sc--float-right) & {
-          @include breakpoint('medium') {
-            content: 'left:';
-          }
-        }
+    .image-group:not(.sc--float-left):not(.sc--float-right) & {
+      @include breakpoint('medium') {
+        content: 'center:';
       }
+    }
+  }
 
-      &.middle::before {
-        content: 'middle:';
+  &-label.bottom::before {
+    content: 'bottom:';
 
-        .image-group:not(.sc--float-left):not(.sc--float-right) & {
-          @include breakpoint('medium') {
-            content: 'center:';
-          }
-        }
-      }
-
-      &.bottom::before {
-        content: 'bottom:';
-
-        .image-group:not(.sc--float-left):not(.sc--float-right) & {
-          @include breakpoint('medium') {
-            content: 'right:';
-          }
-        }
+    .image-group:not(.sc--float-left):not(.sc--float-right) & {
+      @include breakpoint('medium') {
+        content: 'right:';
       }
     }
   }
 }
 
-figcaption,
-.image-group__caption {
-  margin: auto;
-  @extend %post-content__caption-desc;
+.image-gallery {
+  .tns-outer {
+    position: relative;
 
-  @include breakpoint($break: 'medium', $dir: 'max-width') {
-    max-width: calc(100vw - 40px);
-  }
-  @include breakpoint($break: 'medium', $until: 'large') {
-    @include structure($size__spotlight-container-width, 'max-width');
+    .tns-controls {
+      position: absolute;
+      left: 50%;
+      z-index: 99;
+      display: flex;
+      justify-content: space-between;
+      width: calc(100% - 4rem);
+      margin-left: auto;
+      transform: translate(-50%, -50%);
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        top: 100%;
+      }
+
+      @include breakpoint('medium') {
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
 
-  @include breakpoint('large') {
-    max-width: $size__spotlight-body-width;
+  button {
+    background-color: $color__white;
+    border-color: rgba(0, 0, 0, 0.23);
+    border-radius: 50%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.23);
+    cursor: pointer;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    @include breakpoint('medium') {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        &::before {
+          @include font-size(20px);
+        }
+      }
+    }
+
+    &:focus {
+      @extend %focus--border;
+      outline: 0;
+    }
+
+    &:hover {
+      color: $color__white;
+      background-color: var(--accent-color);
+    }
   }
 
-  &__source {
-    @extend %post-content__caption-desc--sm;
+  &__image {
+    &.tns-slide-active {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &:not(.tns-slide-active) {
+      opacity: 0.5;
+
+      img {
+        left: 1rem;
+        width: calc(100% - 2rem);
+      }
+    }
+
+    img {
+      position: absolute;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__captions {
+    transition-duration: 0s !important;
+  }
+
+  &__caption {
+    display: inline-flex !important;
+    justify-content: center;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0.5rem 20px 0;
+    }
+
+    @include breakpoint('medium') {
+      padding: 1rem 0 0.5rem;
+      border-bottom: 2px solid $color__ltgray;
+    }
+
+    &.tns-item:not(.tns-slide-active) {
+      opacity: 0;
+    }
+
+    &-label {
+      white-space: nowrap;
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        @include font-size(18px);
+      }
+
+      @include breakpoint('medium') {
+        @include font-size(20px);
+        margin-right: 2rem;
+      }
+    }
+
+    &-text {
+      padding-bottom: 0.5rem;
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        border-bottom: 2px solid $color__ltgray;
+      }
+    }
   }
 }
 

@@ -19,9 +19,6 @@ Displays a list of social share options
 ## post-block
 `{% include post-block.html minimal=true  %}`
 
-<<<<<<< HEAD
-- `minimal`: Set to `true` to hide the post excerpt, photo, and authors
-=======
 - `hide_excerpt`: Set to `true` to hide the post excerpt
 - `show_image`: Set to `true` to show the post thumbnail
 - `class`: Add additional classes to block. Useful for specifying a featured post. Default is null.
@@ -37,10 +34,9 @@ Displays a list of social share options
 - `caption`: Image caption
 - `credit`: Image credit
 
-## image-grou
+## image-group
 `{% include image-group.html  images="path~path~path" captions="caption~caption~caption" credits="credit~credit~credit" class="Likely Getty" %}`
 
 - `path`: List of full image paths connected with tilde (~)
 - `caption`: List of image captions connected with tilde (~)
 - `credit`: List of image credits connected with tilde (~)
->>>>>>> commit to image-single + image-group
