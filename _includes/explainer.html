@@ -2,15 +2,9 @@
 {%- if include.align -%}
   {%- assign align_class = include.align | prepend: 'sc--float-' -%}
 {%- endif -%}
-{%- if include.width -%}
-  {%- assign width_class = include.width | prepend: 'sc--' -%}
-{%- endif -%}
-{%- if include.width and include.align -%}
-  {%- assign width_class = include.width | prepend: 'sc--float-' -%}
-{%- endif -%}
 
 {%- if include.title && include.body -%}
-<div class="explainer spotlight-component {{ align_class}} {{ width_class}}">
+<div class="explainer spotlight-component sc--float-small {{ align_class }}">
   <button class="explainer__trigger" aria-expanded="false" aria-label="Toggle Explainer">
     <i class="ellipse">&hellip;</i>
   </button>
