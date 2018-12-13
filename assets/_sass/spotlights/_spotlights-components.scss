@@ -5,8 +5,6 @@
 ===========================*/
 
 .spotlight-component {
-  text-align: center;
-
   &__label {
     @extend %post-content__caption-label;
   }
@@ -19,6 +17,9 @@
     width: 2.3rem;
     height: 2.3rem;
     background-color: $color__test;
+
+  &__caption-serif {
+    @extend %post-content__caption;
   }
 }
 
@@ -57,5 +58,30 @@
 
   @include breakpoint('medium') {
     text-align: left;
+  }
+}
+  
+=======
+=         Statistic         =
+=                           =
+===========================*/
+
+.statistic {
+  text-align: center;
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+
+  &__number {
+    color: var(--accent-color);
+    font-family: $font__proxima;
+    @include font-size(50px);
+    font-weight: 600;
+    line-height: 1;
+
+    @include breakpoint('medium') {
+      @include font-size(64px);
+    }
   }
 }
