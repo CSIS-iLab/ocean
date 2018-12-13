@@ -11,8 +11,6 @@
 {%- endif -%}
 
 
-
-
 {%- assign images = include.images | strip_newlines | split: "~"  -%}
 {%- assign captions = include.captions | strip_newlines | split: "~"  -%}
 {%- assign credits_array = include.credits | strip_newlines | split: "~"  -%}
@@ -21,7 +19,7 @@
 {%- for item in credits_array -%}
   {%- assign credit = item | strip  -%}
   {%- if credit.size > 0 -%}
-    {%- capture credit -%}<span class="image-group__caption__source">({{ credit }})</span>{%- endcapture -%}
+    {%- capture credit -%}<span class="image-gallery__caption__source">{{ credit }}</span>{%- endcapture -%}
   {%- else -%}
     {% assign credit = "" -%}
   {%- endif -%}
@@ -29,31 +27,9 @@
 {%- endfor -%}
 
 
-  {%- assign labels="top,middle,bottom" | split: "," -%}
-
-
-
-
-{%- capture group_caption -%}
-  {%- if images.size == 2 %}
-    <span class="image-group__caption-label {{ labels[0] }}"> </span>
-    {{ captions[0] }} {{ credits[0] }}
-    <span class="image-group__caption-label {{ labels[2] }}"> </span>
-    {{ captions[1] }} {{ credits[1] }}
-  {%- elsif images.size == 3 %}
-    <span class="image-group__caption-label {{ labels[0] }}"> </span>
-    {{ captions[0] }} {{ credits[0] }}
-    <span class="image-group__caption-label {{ labels[1] }}"> </span>
-    {{ captions[1] }} {{ credits[1] }}
-    <span class="image-group__caption-label {{ labels[2] }}"> </span>
-    {{ captions[2] }} {{ credits[2] }}
-  {%- endif -%}
-{%- endcapture -%}
-
-
-<div class="image-group spotlight-component {{ align_class}} {{ width_class}}">
-
-  <div class="image-group__images">
+<div class="image-gallery spotlight-component {{ align_class}} {{ width_class}}">
+  <!-- <div class="image-gallery__controls"><i class="icon-arrow-long_left">previous</i><i class="icon-arrow-long_right">next</i></div> -->
+  <div class="image-gallery__images">
     {%- for image in images -%}
 
       {%- assign caption = captions[forloop.index0] -%}
@@ -64,11 +40,22 @@
         figcaption=false
         caption=caption
         credit=credit
-        class="image-group__image"
+        class="image-gallery__image"
         -%}
     {%- endfor -%}
   </div>
-  <div class="image-group__caption">
-    {{ group_caption }}
-  </div>
+    <div class="image-gallery__captions">
+      {%- for image in images -%}
+
+        {%- assign caption = captions[forloop.index0] -%}
+        {%- assign credit = credits[forloop.index0] -%}
+
+      <div class="image-gallery__caption">
+        <span class="image-gallery__caption-label">1 of 3</span>
+        <span class="image-gallery__caption-text">{{ captions[forloop.index0] }} {{ credits[forloop.index0] }}</span>
+      </div>
+
+      {%- endfor -%}
+    </div>
+
 </div>

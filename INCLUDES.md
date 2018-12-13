@@ -34,9 +34,20 @@ Displays a list of social share options
 - `caption`: Image caption
 - `credit`: Image credit
 
-## image-grou
-`{% include image-group.html  images="path~path~path" captions="caption~caption~caption" credits="credit~credit~credit" class="Likely Getty" %}`
+## image-group
+`{% include image-group.html figcaption=false class="image-group__image images="path~path~path" captions="caption~caption~caption" credits="credit~credit~credit" class="Likely Getty" %}`
 
 - `path`: List of full image paths connected with tilde (~)
 - `caption`: List of image captions connected with tilde (~)
 - `credit`: List of image credits connected with tilde (~)
+- `class`: class for single-image component
+- `figcaption`: FALSE so that caption doesn't display for each image
+
+## image-gallery
+`{% include image-group.html figcaption=false class="image-gallery__image images="path~path~path" captions="caption~caption~caption" credits="credit~credit~credit" class="Likely Getty" %}`
+
+- `path`: List of full image paths connected with tilde (~)
+- `caption`: List of image captions connected with tilde (~)
+- `credit`: List of image credits connected with tilde (~)
+- `class`: class for single-image component
+- `figcaption`: FALSE so that caption doesn't display for each image

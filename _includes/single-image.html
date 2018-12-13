@@ -9,6 +9,13 @@
 {%- if include.width and include.align -%}
   {%- assign width_class = include.width | prepend: ' sc--float-' -%}
 {%- endif -%}
-{%- assign classes = align_class | prepend: width_class | prepend: ' spotlight-component' -%}
+
+{%- if include.class -%}
+  {%- assign component_class = include.class -%}
+{%- else -%}
+  {%- assign component_class = 'spotlight-component' -%}
+{%- endif -%}
+
+{%- assign classes = align_class | prepend: width_class | prepend: ' ' | prepend: component_class -%}
 
 {% include cloudinary-responsive-img.html figcaption=include.figcaption path=include.path title=include.caption alt= include.credit classes=classes %}
