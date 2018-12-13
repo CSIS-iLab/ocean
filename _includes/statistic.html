@@ -6,7 +6,7 @@
 
 {%- if include.number and include.description and align_class != null -%}
 <span class="spotlight-component statistic {{ align_class }} {{ size_class }}">
-  <span class="statistic-number"> {{ include.number }} </span>
+  <span class="spotlight-component__number"> {{ include.number }} </span>
   <span class="spotlight-component__description"> {{ include.description }} </span>
 </span>
 {%- endif -%}

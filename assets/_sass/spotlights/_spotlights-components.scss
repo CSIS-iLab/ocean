@@ -4,6 +4,32 @@
 =                           =
 ===========================*/
 
+.spotlight-component {
+  text-align: center;
+  var: (--accent-color);
+
+  &__label {
+    @extend %post-content__caption-label;
+    display: block;
+  }
+
+  &__caption {
+    @extend %post-content__caption-desc--sm;
+    display: block;
+  }
+
+  &__description {
+    @extend %post-content__caption;
+    display: block;
+  }
+
+  &__number {
+    font-size: 64px;
+    font-family: $font__proxima;
+    font-weight: 600;
+    line-height: 60px;
+  }
+}
 
 /*===========================
 =                           =
@@ -14,11 +40,11 @@
 .statistic {
 
   &-number {
-    // @extend %spotlight-component__number;
+    // @extend %spotlight-component__number; //can't extend this placeholder, i know it's not saved as such
   }
 
   &-description {
-    // @extend %spotlight-component__description;
+    // @extend %spotlight-component__description; //can't extend this placeholder, i know it's not saved as such
   }
 
   @include breakpoint('medium') {
