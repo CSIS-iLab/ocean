@@ -1,0 +1,27 @@
+/*===========================
+=                           =
+=    Spotlight Components   =
+=                           =
+===========================*/
+
+
+/*===========================
+=                           =
+=         Statistic         =
+=                           =
+===========================*/
+
+.statistic {
+
+  &-number {
+    // @extend %spotlight-component__number;
+  }
+
+  &-description {
+    // @extend %spotlight-component__description;
+  }
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+}
