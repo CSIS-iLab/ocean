@@ -3,6 +3,10 @@
     display: inline;
     float: none;
     margin: 0 0 0.2rem;
+
+    + p {
+      display: inline;
+    }
   }
 
   @include breakpoint('medium') {
