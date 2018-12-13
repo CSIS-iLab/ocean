@@ -2,20 +2,21 @@
 {%- if include.align -%}
   {%- assign align_class = include.align | prepend: 'sc--float-' -%}
 {%- endif -%}
-  {%- assign width_class = null -%}
 {%- if include.width -%}
   {%- assign width_class = include.width | prepend: 'sc--' -%}
 {%- endif -%}
 {%- if include.width and include.align -%}
   {%- assign width_class = include.width | prepend: 'sc--float-' -%}
 {%- endif -%}
-<span class="explainer spotlight-component {{ align_class}} {{ width_class}}">
-  <span class="explainer__trigger" aria-expanded="false" aria-label="Toggle Explainer">
+{%- if include.title && include.body -%}
+<div class="explainer spotlight-component {{ align_class}} {{ width_class}}">
+  <button class="explainer__trigger" aria-expanded="false" aria-label="Toggle Explainer">
     <i class="ellipse">&hellip;</i>
-  </span>
+  </button>
   <span class="explainer__content">
     <i class="icon-x"></i>
     <span class="explainer__title">{{ include.title }}</span>
     <span class="explainer__body">{{ include.body }}</span>
   </span>
-</span>
+</div>
+{%- endif -%}
