@@ -3,45 +3,41 @@
 ============================*/
 
 .related-posts {
-  display: flex;
-  flex-wrap: wrap;
+  @include breakpoint('medium') {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 
   &__header {
     @extend %post-block__type--related;
-    flex-basis: 100%;
-    padding-bottom: 0.5rem;
+    grid-column: 1 / -1;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
 
-  .post-block {
-    margin-bottom: 0;
-
+  &__block {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
-      flex-basis: 100%;
-
-      &:last-child:not(:only-child) {
-        margin-top: 1rem;
-      }
-
-      .post-block__title {
-        margin-bottom: 0;
-        @include font-size(20px);
+      &:first-of-type:not(:only-child) {
+        margin-bottom: 1rem;
       }
     }
 
     @include breakpoint('medium') {
-      flex-basis: calc(50% - 4rem);
-
-      &:last-child:not(:only-child) {
-        margin-left: 4rem;
+      &:first-of-type:not(:only-child) {
+        margin-right: 4rem;
       }
     }
 
-    &__header {
-      margin-bottom: 0;
+    &__title {
+      @extend %post-block__title--related;
+      margin-bottom: 0.5rem;
+    }
 
-      .post-meta__label {
-        @include font-size(15px);
+    .post-meta {
+      @extend %archive__results;
+
+      &__label {
+        @extend %tag__label;
       }
     }
   }

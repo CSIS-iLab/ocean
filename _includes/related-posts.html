@@ -17,7 +17,12 @@
   <div class="related-posts">
     <div class="related-posts__header">{{ site.data.language.related_commentary }}</div>
       {% for post in related_posts_full %}
-        {%- include post-block.html minimal=true -%}
+      <article class="related-posts__block">
+        <h2 class="related-posts__block__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        {%- include date.html -%}
+      </article>
       {% endfor %}
   </div>
 

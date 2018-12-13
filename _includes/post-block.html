@@ -16,26 +16,20 @@
 
   <header class="post-block__header {{ headerClass }}">
 
-    {% if include.minimal != true %}
-      {%- include content-type.html -%}
-    {% endif %}
+    {%- include content-type.html -%}
 
     <h2 class="post-block__title">
       <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
     </h2>
 
-    {% if include.minimal != true %}
-      {%- include authors-list.html -%}
-    {% endif %}
+    {%- include authors-list.html -%}
 
     {%- include date.html -%}
 
   </header>
 
-  {% if include.minimal != true %}
-    <section class="post-block__content">
-      <p>{{ post.excerpt }}</p>
-    </section>
-  {% endif %}
+  <section class="post-block__content">
+    <p>{{ post.excerpt }}</p>
+  </section>
 
 </article>
