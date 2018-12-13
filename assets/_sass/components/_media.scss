@@ -166,14 +166,16 @@ figure {
       }
     }
 
-    &:focus {
-      @extend %focus--border;
-      outline: 0;
-    }
-
     &:hover {
       color: $color__white;
-      background-color: var(--accent-color);
+      background-color: rgba(var(--accent-color), 1);
+    }
+
+    &:focus {
+      background-color: $color__white;
+      color: $color__black;
+      @extend %focus--border;
+      outline: 0;
     }
   }
 

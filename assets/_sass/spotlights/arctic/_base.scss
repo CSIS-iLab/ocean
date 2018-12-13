@@ -1,5 +1,10 @@
+$color: $color__medblue;
+
 :root {
-  --accent-color: #{$color__medblue};
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+  --accent-color: #{$red}, #{$green}, #{$blue};
 }
 
 body {
