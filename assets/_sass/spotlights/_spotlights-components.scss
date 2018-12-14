@@ -5,6 +5,10 @@
 ===========================*/
 
 .spotlight-component {
+  &__label {
+    @extend %post-content__caption-label;
+    margin-bottom: 0.2rem;
+  }
 
   &__caption {
     @extend %post-content__caption-desc--sm;
@@ -13,7 +17,11 @@
   i {
     width: 2.3rem;
     height: 2.3rem;
-    background-color: $color__test;
+    background-color: var(--accent-color);
+  }
+
+  &__caption-serif {
+    @extend %post-content__caption;
   }
 }
 
@@ -24,40 +32,56 @@
 ===========================*/
 
 .document {
-  &-title {
-    @extend %post-content__caption-label;
-    display: block;
+  text-align: center;
+
+  @include breakpoint('medium') {
+    text-align: left;
   }
 
-  &-caption {
-    @extend %post-content__caption-desc--sm;
-    display: block;
-  }
+  &__icon {
+    text-align: center;
+    vertical-align: middle;
 
-  &-icon {
-    display: block;
+    @include breakpoint('medium') {
+      float: left;
+      padding-right: 0.5rem;
+    }
 
     i {
-      width: 43px;
-      height: 43px;
-      padding: 0.5rem;
-      justify-content: center;
+      padding: 0.3rem 0.25rem;
       color: $color__white;
-      background-color: $color__test;
-      border-radius: 5rem;
-    }
+      border-radius: 50%;
 
-    i:hover {
-      opacity: 0.8;
-      transition: inherit;
-    }
-
-    @include breakpoint('small') {
-      display: flex;
+      &:hover {
+        opacity: 0.8;
+        transition: inherit;
+      }
     }
   }
+}
 
-  @include breakpoint('small') {
-    display: block;
+/*===========================
+=                           =
+=         Statistic         =
+=                           =
+===========================*/
+
+.statistic {
+  text-align: center;
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+
+  &__number {
+    color: var(--accent-color);
+    font-family: $font__proxima;
+    @include font-size(50px);
+    font-weight: 600;
+    line-height: 1;
+
+    @include breakpoint('medium') {
+      @include font-size(64px);
+    }
   }
 }
