@@ -1,15 +1,15 @@
 @each $dir in ('right', 'left') {
   .sc--float-#{$dir} {
-    float: unquote($dir);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    @include breakpoint('medium') {
+      float: unquote($dir);
     
-    @if $dir == 'right' {
-      margin-right: 0;
-      margin-left: 1rem;
-    } @else {
-      margin-right: 1rem;
-      margin-left: 0;
+      @if $dir == 'right' {
+        margin-right: 0;
+        margin-left: 1.5rem;
+      } @else {
+        margin-right: 1.5rem;
+        margin-left: 0;
+      }
     }
   }
 }

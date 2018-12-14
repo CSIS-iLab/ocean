@@ -5,6 +5,9 @@
 ===========================*/
 
 .spotlight-component {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
   &__label {
     @extend %post-content__caption-label;
     margin-bottom: 0.2rem;
@@ -14,14 +17,14 @@
     @extend %post-content__caption-desc--sm;
   }
 
+  &__caption-serif {
+    @extend %post-content__caption;
+  }
+
   i {
     width: 2.3rem;
     height: 2.3rem;
     background-color: var(--accent-color);
-  }
-
-  &__caption-serif {
-    @extend %post-content__caption;
   }
 }
 
