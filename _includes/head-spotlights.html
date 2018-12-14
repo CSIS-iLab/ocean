@@ -1,9 +1,12 @@
-{% if page.layout == 'spotlight' and page.css_files.size > 0 %}
-  {%- for file in page.css_files %}
-    {%- if file.contains '://' -%}
-      <link href="{{ file }}" rel="stylesheet">
-    {%- else -%}
-      <link href="{{ file | prepend: '/assets/css/spotlights/' | append: '.css' | relative_url }}" rel="stylesheet">
-    {%- endif -%}
-  {%- endfor -%}
+{%- if page.layout == 'spotlight' -%}
+  <link rel="stylesheet" href="{{ "/assets/css/spotlights.css" | relative_url }}">
+  {%- if page.css_files.size > 0 -%}
+    {%- for file in page.css_files %}
+      {%- if file.contains '://' -%}
+        <link href="{{ file }}" rel="stylesheet">
+      {%- else -%}
+        <link href="{{ file | prepend: '/assets/css/spotlights/' | append: '.css' | relative_url }}" rel="stylesheet">
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
 {%- endif -%}

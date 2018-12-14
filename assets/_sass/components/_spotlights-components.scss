@@ -34,14 +34,14 @@
 =                           =
 ===========================*/
 
-.document {
+.sc__document {
   text-align: center;
 
   @include breakpoint('medium') {
     text-align: left;
   }
 
-  &__icon {
+  &-icon {
     text-align: center;
     vertical-align: middle;
 
@@ -69,7 +69,7 @@
 =                           =
 ===========================*/
 
-.statistic {
+.sc__statistic {
   text-align: center;
 
   @include breakpoint('medium') {
