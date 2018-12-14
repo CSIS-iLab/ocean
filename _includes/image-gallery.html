@@ -43,18 +43,18 @@
         -%}
     {%- endfor -%}
   </div>
-    <div class="image-gallery__captions">
-      {%- for image in images -%}
+  <div class="image-gallery__captions">
+    {%- for image in images -%}
 
-        {%- assign caption = captions[forloop.index0] -%}
-        {%- assign credit = credits[forloop.index0] -%}
+      {%- assign caption = captions[forloop.index0] -%}
+      {%- assign credit = credits[forloop.index0] -%}
 
-      <div class="image-gallery__caption">
-        <span class="image-gallery__caption-label">1 of 3</span>
-        <span class="image-gallery__caption-text">{{ captions[forloop.index0] }} {{ credits[forloop.index0] }}</span>
-      </div>
-
-      {%- endfor -%}
+    <div class="image-gallery__caption">
+      <span class="image-gallery__caption-label">1 of 3</span>
+      <span class="image-gallery__caption-text">{{ captions[forloop.index0] }} {{ credits[forloop.index0] }}</span>
     </div>
+
+    {%- endfor -%}
+  </div>
 
 </div>

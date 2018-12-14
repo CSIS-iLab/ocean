@@ -12,45 +12,55 @@ const Sliders = () => {
     ],
     items: 1,
     center: true,
-    edgePadding: Breakpoints.isMobile() ? 0 : 105,
     lazyload: true,
     mouseDrag: true,
+    viewportMax: 630,
     nav: false,
-    autoWidth: Breakpoints.isMobile() ? false : true
+    autoWidth: Breakpoints.isMobile() ? false : true,
+    autoHeight: true,
+    gutter: Breakpoints.isMobile() ? 16 : 32
   })
 
   const caption_slider = tns({
     container: '.image-gallery__captions',
     controls: false,
     items: 1,
+    slideBy: 1,
     center: true,
-    edgePadding: Breakpoints.isMobile() ? 0 : 105,
+    mouseDrag: true,
     nav: false,
-    autoWidth: Breakpoints.isMobile() ? false : true
+    autoWidth: Breakpoints.isMobile() ? false : true,
+    autoHeight: true,
+    gutter: Breakpoints.isMobile() ? 16 : 32
   })
 
-  let index = 0
+  let index = image_slider.getInfo().index
+  let cachedIndex = image_slider.getInfo().index
 
   image_slider.events.on('indexChanged', slider => {
-    let max = slider.slideCountNew - slider.cloneCount
-    index = slider.index
-
     if (slider.index >= index) {
-      if (slider.index !== slider.slideCountNew - 2) {
+      if (slider.index === cachedIndex + 1) {
         caption_slider.goTo('next')
       }
-
+      cachedIndex = slider.index
       index = slider.index
     } else if (slider.index < index) {
-      caption_slider.goTo('prev')
+      if (slider.index === cachedIndex - 1) {
+        caption_slider.goTo('prev')
+      }
+      cachedIndex = slider.index
       index = slider.index
     }
 
-    let label = document.querySelector(
-      '.tns-slide-active .image-gallery__caption-label'
-    )
+    let labels = [
+      ...document.querySelectorAll(
+        '.tns-slide-active .image-gallery__caption-label'
+      )
+    ]
 
-    label.innerHTML = `${slider.displayIndex} of ${slider.slideCount}`
+    labels.forEach((label, i) => {
+      label.innerHTML = `${slider.displayIndex} of ${slider.slideCount}`
+    })
   })
 }
 

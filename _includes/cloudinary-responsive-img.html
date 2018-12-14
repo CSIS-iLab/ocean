@@ -1,5 +1,7 @@
 {%- if include.path.size > 0 -%}
 <figure class="{{ include.classes | default: post__image }}">
+
+
 {%- if include.path contains 'cloudinary' -%}
   {%- assign image_name = include.path | split: "/upload/" | last -%}
 

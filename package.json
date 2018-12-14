@@ -74,6 +74,6 @@
     "instantsearch.js": "^2.10.4",
     "stylelint-config-sass-guidelines": "^5.2.0",
     "stylelint-scss": "^3.3.2",
-    "tiny-slider": "^2.8.8"
+    "tiny-slider": "^2.9.0"
   }
 }

@@ -2,37 +2,6 @@
 =            Media            =
 =============================*/
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-figure {
-  margin: 0;
-
-  div[class*='sc--float-'] &.image-group__image {
-    position: relative;
-    height: 0;
-    padding-bottom: 56.25%;
-
-    img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  // .image-gallery & {
-  //   padding-bottom: 8.4375%;
-  // }
-  //
-  // .image-gallery & {
-  //   position: relative;
-  //   height: 0;
-  // }
-}
-
 .img-caption,
 .image-group__caption,
 .image-gallery__caption {
@@ -51,6 +20,52 @@ figure {
 
   &__source {
     @extend %post-content__caption-desc--sm;
+  }
+}
+
+.single-image {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+figure {
+  margin: 0;
+
+  &.image-group__image {
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      position: relative;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+
+    div[class*='sc--float-'] & {
+      position: relative;
+      height: 0;
+      padding-bottom: 56.25%;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    img {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include breakpoint('medium') {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 }
 
@@ -75,8 +90,8 @@ figure {
   }
 
   &__caption {
-    max-width: calc(100vw - 40px);
     grid-column: 1 / -1;
+    max-width: calc(100vw - 40px);
 
     &-label::before {
       display: inline-block;
@@ -116,8 +131,16 @@ figure {
 }
 
 .image-gallery {
+  @include breakpoint('medium') {
+    margin-bottom: 3rem;
+  }
+
   .tns-outer {
     position: relative;
+
+    .tns-ovh {
+      overflow: visible;
+    }
 
     .tns-controls {
       position: absolute;
@@ -183,44 +206,21 @@ figure {
   }
 
   &__image {
-    @include breakpoint($break: 'medium', $dir: 'max-width') {
-      // height: 50vw;
-    }
-
-    @include breakpoint('medium') {
-      width: auto;
-      height: 65vh;
-      min-height: 300px;
-      max-height: 750px;
-    }
-
-    &.tns-slide-active {
-      opacity: 1;
-      transition: opacity 0.3s ease-in-out;
-
-      img {
-        // width: 100%;
-      }
-    }
-
-    &:not(.tns-slide-active) {
-      opacity: 0.5;
-
-      img {
-        display: block;
-        width: calc(100% - 2rem);
-        // left: 1rem;
-        margin: auto;
-      }
-    }
-
     img {
+      width: auto;
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        height: 50vw;
+      }
+
       @include breakpoint('medium') {
-        width: auto;
-        max-width: unset;
-        // position: absolute;
-        // object-fit: cover;
-        height: 100%;
+        height: 65vh;
+        min-height: 300px;
+        max-height: 750px;
+      }
+
+      @include breakpoint('large') {
+        max-width: 70vw;
       }
     }
   }
@@ -236,7 +236,6 @@ figure {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       flex-wrap: wrap;
       justify-content: center;
-      padding: 0.5rem 20px 0;
     }
 
     @include breakpoint('medium') {
@@ -244,8 +243,14 @@ figure {
       border-bottom: 2px solid $color__ltgray;
     }
 
-    &.tns-item:not(.tns-slide-active) {
-      opacity: 0;
+    &.tns-item {
+      @include breakpoint('medium') {
+        opacity: 0;
+      }
+    }
+
+    &.tns-item:not(.tns-slide-active) + .tns-slide-active + .tns-slide-active {
+      opacity: 1;
     }
 
     &-label {
@@ -265,6 +270,7 @@ figure {
       padding-bottom: 0.5rem;
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
+        max-width: calc(100vw-40px);
         border-bottom: 2px solid $color__ltgray;
       }
     }
