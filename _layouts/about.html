@@ -9,7 +9,6 @@ layout: default
 >
   <header class="post__header">
     <div class="post__header-content">
-      {%- include content-type.html -%}
       <h1 class="post-title p-name" itemprop="name headline">
         {{ page.title | escape }}
       </h1>
@@ -22,11 +21,9 @@ layout: default
   </section>
   <footer class="post__footer">
     <section class="post__footer-top">
-      <div class="keywords">{% include keywords.html %}</div>
       {%- include social-share.html class="post__footer"  -%}
     </section>
     <section class="post__footer-middle js-footer-bg js-footer-bg-switch">
-      {% include further-reading.html %}
     </section>
   </footer>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
