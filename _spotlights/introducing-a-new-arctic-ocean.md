@@ -37,7 +37,7 @@ related_commentary:
 ---
 
 <h2 class="test-header">Section one</h2>
-{% include tooltip.html title="Lorem"  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." %} _ipsum_ dolor sit amet, **consectetur** adipiscing elit, sed do [eiusmod tempor](https://google.com) incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. {% include tooltip.html title="Duis"  description=" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." %} aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{% include sc-tooltip.html title="Lorem"  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." %} _ipsum_ dolor sit amet, **consectetur** adipiscing elit, sed do [eiusmod tempor](https://google.com) incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. {% include sc-tooltip.html title="Duis"  description=" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." %} aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <div class="spotlight-component sc--float-right sc--float-small">This is a float small component.</div>
 
@@ -61,13 +61,13 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <h3 class="include-toc">Subsection One</h3>
-{% include statistic.html align='right' number='33%' post='and this is the text after.' %}
+{% include sc-statistic.html align='right' number='33%' post='and this is the text after.' %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-{% include statistic.html pre='Text before statistic' number='33%' %}
+{% include sc-statistic.html pre='Text before statistic' number='33%' %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -80,17 +80,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <h2 class="test-header">Section four</h2>
 
-{%- include document.html align='right' url='https://csis-prod.s3.amazonaws.com/s3fs-public/publication/180924_Cognitive_Effect_Cyberspace.pdf?R6FPUdDaOystuUCWsMCXUhKTBg.4CW.D' label='The document title' caption='Feb. 24, 2016 (p. 45-78)' -%}
+{%- include sc-document.html align='right' url='https://csis-prod.s3.amazonaws.com/s3fs-public/publication/180924_Cognitive_Effect_Cyberspace.pdf?R6FPUdDaOystuUCWsMCXUhKTBg.4CW.D' label='The document title' caption='Feb. 24, 2016 (p. 45-78)' -%}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <h3>Subsection One</h3>
 
-{%- include document.html align='left' url='https://csis-prod.s3.amazonaws.com/s3fs-public/publication/180924_Cognitive_Effect_Cyberspace.pdf?R6FPUdDaOystuUCWsMCXUhKTBg.4CW.D' label='This is a longer document title' caption='Written for a longer caption. Pg 2, chart 5, range 20-40pp.' -%}
+{%- include sc-document.html align='left' url='https://csis-prod.s3.amazonaws.com/s3fs-public/publication/180924_Cognitive_Effect_Cyberspace.pdf?R6FPUdDaOystuUCWsMCXUhKTBg.4CW.D' label='This is a longer document title' caption='Written for a longer caption. Pg 2, chart 5, range 20-40pp.' -%}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-{% include statistic.html align='left' pre='Text before statistic' number='33%' post='and this is the text after.' %}
-
+{% include sc-statistic.html align='left' pre='Text before statistic' number='33%' post='and this is the text after.' %}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
