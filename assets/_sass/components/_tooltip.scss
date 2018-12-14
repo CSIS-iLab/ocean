@@ -1,0 +1,68 @@
+.tooltipped {
+  padding: 1.4rem 1rem 1rem;
+  background-color: $color__slate-lightest;
+
+  .icon-x {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: block;
+    color: $color__slate;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+    @extend %post-content__table-title;
+  }
+
+  &__entry {
+    color: $color__black;
+
+    @include font-size(16px);
+  }
+}
+
+@include breakpoint($break: 'medium', $dir: 'max-width') {
+  .tippy-popper {
+    position: fixed !important;
+    top: 0;
+    transform: translate3d(0, 0, 0) !important;
+
+    .tippy-tooltip {
+      transform: translateY(0) !important;
+    }
+  }
+}
+
+.tooltip {
+  border-bottom: 2px dashed $color__ltgray-dark;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $color__ltgray-dark;
+  }
+
+  &:focus {
+    outline: 0;
+    @extend %focus--border;
+  }
+}
+
+.tippy-popper[x-placement^='top'] .tippy-tooltip.light-theme .tippy-arrow {
+  border-top-color: $color__slate-lightest;
+}
+
+.tippy-popper[x-placement^='bottom'] .tippy-tooltip.light-theme .tippy-arrow {
+  border-bottom-color: $color__slate-lightest;
+}
+
+.tippy-popper[x-placement^='left'] .tippy-tooltip.light-theme .tippy-arrow {
+  border-left-color: $color__slate-lightest;
+}
+
+.tippy-popper[x-placement^='right'] .tippy-tooltip.light-theme .tippy-arrow {
+  border-right-color: $color__slate-lightest;
+}

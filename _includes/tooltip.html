@@ -1,0 +1,5 @@
+{%- if include.title and include.description -%}
+  <span data-content='{"title":{{ include.title | jsonify }},"entry":{{ include.description | jsonify }}}' class="tooltip">{{ include.title }}</span>
+{%- else -%}
+  {{ include.title }}
+{%- endif -%}
