@@ -9,7 +9,6 @@
 
   &__label {
     @extend %post-content__caption-label;
-    display: block;
   }
 
   &__caption {
@@ -58,24 +57,16 @@
 ===========================*/
 
 .reference-link {
-  display: inline;
 
   @include breakpoint('medium') {
     text-align: left;
   }
 
   &__icon {
-    text-align: center;
-
-    @include breakpoint('medium') {
-      float: left;
-      padding-right: 0.5rem;
-    }
-
     i {
-      padding: 0.3rem 0.25rem;
-      color: var(--accent-color)
-      border-radius: 50%;
+      width: 0.2rem;
+      height: 0.2rem;
+      color: var(--accent-color);
 
       &:hover {
         opacity: 0.8;

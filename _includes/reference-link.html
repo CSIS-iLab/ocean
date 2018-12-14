@@ -7,7 +7,7 @@
 {%- if include.url and include.title and align_class != null -%}
 <div class="spotlight-component reference-link {{ align_class }} {{ size_class }}">
   <span class="spotlight-component__label">{{ include.title }}</span>
-  <a href="{{ include.url }}" class="reference__icon"><i class="icon-external"></i></a>
+  <a href="{{ include.url }}" class="reference-link__icon"><i class="icon-external"></i></a>
   <span class="spotlight-component__caption">{{ include.caption }}</span>
 </div>
 {%- endif -%}
