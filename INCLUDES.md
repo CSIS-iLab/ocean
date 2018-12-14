@@ -20,3 +20,8 @@ Displays a list of social share options
 `{% include post-block.html minimal=true  %}`
 
 - `minimal`: Set to `true` to hide the post excerpt, photo, and authors
+- `class`: Add additional classes to block. Useful for specifying a featured post. Default is null.
+
+## spotlights
+- `align`: Set to 'left' to align left. Set to 'right' to align right
+- 'width': Set 'small' 'large' 'full' or 'max' width
