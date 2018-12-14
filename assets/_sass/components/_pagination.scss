@@ -97,18 +97,18 @@
 
   @include breakpoint('large') {
     &:nth-last-child(3).ais-pagination--item__active
-      + &:not(.ais-pagination--item__page):not(.ais-pagination--item__disabled) {
+    + &:not(.ais-pagination--item__page):not(.ais-pagination--item__disabled) {
       margin-right: -3rem;
     }
 
     &:nth-last-child(3).ais-pagination--item__page
-      ~ .ais-pagination--item__next:not(.ais-pagination--item__disabled) {
+    ~ .ais-pagination--item__next:not(.ais-pagination--item__disabled) {
       margin-right: -3rem;
     }
 
     &:nth-last-child(3).ais-pagination--item__page
-      + .ais-pagination--item__previous:not(.ais-pagination--item__disabled)
-      + .ais-pagination--item__next:not(.ais-pagination--item__disabled) {
+    + .ais-pagination--item__previous:not(.ais-pagination--item__disabled)
+    + .ais-pagination--item__next:not(.ais-pagination--item__disabled) {
       margin-right: -6rem;
     }
   }

@@ -1,10 +1,5 @@
-$color: $color__medblue;
-
 :root {
-  $red: red($color);
-  $green: green($color);
-  $blue: blue($color);
-  --accent-color: #{$red}, #{$green}, #{$blue};
+  --accent-color: #{$color__medblue};
   --footer-bg-min-height: 400px;
   --scroll-progress: 0;
 }
