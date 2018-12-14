@@ -8,11 +8,7 @@
   border: 1px solid $color__ltgray-dark;
 
   @include breakpoint($break: 'medium', $dir: 'max-width') {
-    max-width: 88%;
-  }
-
-  @include breakpoint('medium') {
-    margin-top: calc(3vw - 16px);
+    margin-right: calc((100vw - 100%) / 2);
   }
 
   &--reset-wrapper {

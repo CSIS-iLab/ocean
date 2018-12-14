@@ -184,9 +184,9 @@
   }
 
   &__cutout {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     @include structure($size__content-padding--archive, 'padding-right');
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 
     > p {
       @extend %body-text__med;
