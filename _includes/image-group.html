@@ -50,7 +50,7 @@
 
 <div class="image-group spotlight-component {{ align_class}} {{ width_class}}">
 
-  <div class="image-group__images">
+  <figure role="group" class="image-group__images">
     {%- for image in images -%}
 
       {%- assign caption = captions[forloop.index0] -%}
@@ -64,8 +64,8 @@
         class="image-group__image"
         -%}
     {%- endfor -%}
-  </div>
-  <div class="image-group__caption">
-    {{ group_caption }}
-  </div>
+    <figcaption class="image-group__caption">
+      {{ group_caption }}
+    </figcaption>
+  </figure>
 </div>
