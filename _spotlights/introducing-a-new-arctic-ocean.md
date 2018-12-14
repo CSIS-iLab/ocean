@@ -92,9 +92,9 @@ related_commentary:
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 {%- assign three_images="
-https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.43.40%20AM.png~
-https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.44.13%20AM.png~
-https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-12-12%20at%2010.44.10%20PM.png
+https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/yannis-papanastasopoulos-340526-unsplash.jpg~
+https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/cristian-palmer-481520-unsplash.jpg~
+https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/jared-poledna-465006-unsplash.jpg
 " -%}
 
 {%- assign three_captions="
@@ -110,8 +110,9 @@ National Geographic.
 " -%}
 
 {%- assign two_images="
-https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.44.13%20AM.png~
-https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-12-12%20at%2010.44.10%20PM.png
+https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg~
+https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg
+
 " -%}
 
 {%- assign two_captions="
