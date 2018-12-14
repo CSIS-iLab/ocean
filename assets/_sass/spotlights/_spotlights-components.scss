@@ -5,20 +5,36 @@
 ===========================*/
 
 .spotlight-component {
+  text-align: center;
+
+  &__label {
+    @extend %post-content__caption-label;
+    display: block;
+  }
+
+  &__caption {
+    @extend %post-content__caption-desc--sm;
+    display: block;
+  }
+
   &__caption-serif {
     @extend %post-content__caption;
+  }
+
+  &__description {
+    @extend %post-content__caption;
+    display: block;
   }
 }
 
 /*===========================
 =                           =
-=         Statistic         =
+=        Statistic          =
 =                           =
 ===========================*/
 
 .statistic {
   text-align: center;
-
   @include breakpoint('medium') {
     text-align: left;
   }
@@ -29,9 +45,42 @@
     @include font-size(50px);
     font-weight: 600;
     line-height: 1;
-
     @include breakpoint('medium') {
       @include font-size(64px);
+    }
+  }
+}
+
+/*============================
+=                           =
+=     Reference Link        =
+=                           =
+===========================*/
+
+.reference-link {
+  display: inline;
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+
+  &__icon {
+    text-align: center;
+
+    @include breakpoint('medium') {
+      float: left;
+      padding-right: 0.5rem;
+    }
+
+    i {
+      padding: 0.3rem 0.25rem;
+      color: var(--accent-color)
+      border-radius: 50%;
+
+      &:hover {
+        opacity: 0.8;
+        transition: inherit;
+      }
     }
   }
 }
