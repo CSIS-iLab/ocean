@@ -1,0 +1,9 @@
+{% assign align_class = include.align | default: 'left' | prepend: 'sc--float-' %}
+
+{%- if include.url and include.label -%}
+<div class="spotlight-component document sc--float-small {{ align_class }}">
+  <a href="{{ include.url }}" class="document__icon"><i class="icon-paperclip"></i></a>
+  <div class="spotlight-component__label">{{ include.label }}</div>
+  <div class="spotlight-component__caption">{{ include.caption }}</div>
+</div>
+{%- endif -%}

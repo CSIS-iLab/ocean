@@ -5,8 +5,58 @@
 ===========================*/
 
 .spotlight-component {
+  &__label {
+    @extend %post-content__caption-label;
+    margin-bottom: 0.2rem;
+  }
+
+  &__caption {
+    @extend %post-content__caption-desc--sm;
+  }
+
+  i {
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: var(--accent-color);
+  }
+
   &__caption-serif {
     @extend %post-content__caption;
+  }
+}
+
+/*===========================
+=                           =
+=          Document         =
+=                           =
+===========================*/
+
+.document {
+  text-align: center;
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+
+  &__icon {
+    text-align: center;
+    vertical-align: middle;
+
+    @include breakpoint('medium') {
+      float: left;
+      padding-right: 0.5rem;
+    }
+
+    i {
+      padding: 0.3rem 0.25rem;
+      color: $color__white;
+      border-radius: 50%;
+
+      &:hover {
+        opacity: 0.8;
+        transition: inherit;
+      }
+    }
   }
 }
 
