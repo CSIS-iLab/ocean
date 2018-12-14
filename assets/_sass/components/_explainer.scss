@@ -1,4 +1,4 @@
-.explainer {
+.sc__explainer {
   @include breakpoint($break: 'medium', $dir: 'max-width') {
     display: inline;
     float: none;
@@ -24,10 +24,11 @@
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       position: absolute;
       top: 8px;
-      right: 8px;
+      right: 1rem;
       display: block;
       color: $color__slate;
       font-size: 0.75rem;
+      text-align: center;
       cursor: pointer;
     }
 
@@ -42,19 +43,20 @@
       top: 0;
       left: 0;
       z-index: 10;
+      margin: 0;
       padding: 1.4rem 1rem 1rem;
       background-color: $color__slate-lightest;
       box-shadow: 0 10px 30px 0 rgba(0, 20, 29, 0.2);
     }
   }
 
-  &:not(.is-active) &__content {
+  &:not(.is-active) &-content {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       display: none;
     }
   }
 
-  &__trigger {
+  &-trigger {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       position: relative;
       bottom: 0.3rem;
@@ -94,14 +96,12 @@
     }
   }
 
-  &__title {
-    display: block;
+  &-title {
     margin-bottom: 0.5rem;
     @extend %post-content__table-title;
   }
 
-  &__body {
-    display: block;
+  &-body {
     @extend %body-text__med;
   }
 }

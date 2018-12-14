@@ -9,16 +9,16 @@ module Jekyll
 
     def render(context)
       body = super
-      "<div class=\"explainer spotlight-component sc--float-small sc--float-#{@align}\">
-        <button class=\"explainer__trigger\" aria-expanded=\"false\" aria-label=\"Toggle Explainer\">
+      "<aside class=\"sc__explainer spotlight-component sc--float-small sc--float-#{@align}\">
+        <button class=\"sc__explainer-trigger\" aria-expanded=\"false\" aria-label=\"Toggle Explainer\">
           <i class=\"ellipse\">…</i>
         </button>
-        <span class=\"explainer__content\">
+        <div class=\"sc__explainer-content\">
           <i class=\"icon-x\"></i>
-          <span class=\"explainer__title\">#{@title}</span>
-          <span class=\"explainer__body\">#{body}</span>
-        </span>
-      </div>"
+          <div class=\"sc__explainer-title\">#{@title}</div>
+          <div class=\"sc__explainer-body\">#{body}</div>
+        </div>
+      </aside>"
     end
 
   end
