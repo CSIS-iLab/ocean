@@ -18,37 +18,16 @@ layout: default
   </header>
   <section class="post__content e-content" itemprop="articleBody">
 
-    {%- if page.name != 'about.md' -%}
-      <p class="post-lede">{{ page.lede }}</p>
-      <div class="post__content-aside">
-        {%- include date.html -%}
-        {%- include authors-block.html -%}
-      </div>
-    {%- endif %}
-
-
     <div class="post__content-body post-content">{{ content }}</div>
   </section>
   <footer class="post__footer">
     <section class="post__footer-top">
-
-      {%- if page.name != 'about.md' -%}
-        <div class="keywords">{% include keywords.html %}</div>
-      {%- endif %}
-
+      <div class="keywords">{% include keywords.html %}</div>
       {%- include social-share.html class="post__footer"  -%}
     </section>
     <section class="post__footer-middle js-footer-bg js-footer-bg-switch">
       {% include further-reading.html %}
     </section>
-
-    {%- if page.name != 'about.md' -%}
-      <section class="post__footer-end">
-        {% include related-posts.html %}
-      </section>
-      {% include view-all-link.html %}
-    {%- endif %}
-
   </footer>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
