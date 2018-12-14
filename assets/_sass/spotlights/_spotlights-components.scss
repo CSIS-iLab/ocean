@@ -63,9 +63,10 @@
   }
 
   &__icon {
+    width: 0.2rem;
+    height: 0.2rem;
+    
     i {
-      width: 0.2rem;
-      height: 0.2rem;
       color: var(--accent-color);
 
       &:hover {
