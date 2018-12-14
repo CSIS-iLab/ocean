@@ -75,6 +75,7 @@ figure {
   }
 
   &__caption {
+    max-width: calc(100vw - 40px);
     grid-column: 1 / -1;
 
     &-label::before {
@@ -183,8 +184,7 @@ figure {
 
   &__image {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
-      width: auto;
-      height: 50vw;
+      // height: 50vw;
     }
 
     @include breakpoint('medium') {
@@ -215,11 +215,13 @@ figure {
     }
 
     img {
-      width: auto;
-      max-width: unset;
-      // position: absolute;
-      // object-fit: cover;
-      height: 100%;
+      @include breakpoint('medium') {
+        width: auto;
+        max-width: unset;
+        // position: absolute;
+        // object-fit: cover;
+        height: 100%;
+      }
     }
   }
 

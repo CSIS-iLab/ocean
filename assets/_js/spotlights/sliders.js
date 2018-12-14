@@ -16,7 +16,7 @@ const Sliders = () => {
     lazyload: true,
     mouseDrag: true,
     nav: false,
-    autoWidth: true
+    autoWidth: Breakpoints.isMobile() ? false : true
   })
 
   const caption_slider = tns({
@@ -26,7 +26,7 @@ const Sliders = () => {
     center: true,
     edgePadding: Breakpoints.isMobile() ? 0 : 105,
     nav: false,
-    autoWidth: true
+    autoWidth: Breakpoints.isMobile() ? false : true
   })
 
   let index = 0
