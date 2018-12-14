@@ -183,15 +183,15 @@ figure {
 
   &__image {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
-      height: 50vw;
       width: auto;
+      height: 50vw;
     }
 
     @include breakpoint('medium') {
+      width: auto;
       height: 65vh;
       min-height: 300px;
       max-height: 750px;
-      width: auto;
     }
 
     &.tns-slide-active {
@@ -207,19 +207,19 @@ figure {
       opacity: 0.5;
 
       img {
-        // left: 1rem;
-        margin: auto;
         display: block;
         width: calc(100% - 2rem);
+        // left: 1rem;
+        margin: auto;
       }
     }
 
     img {
+      width: auto;
+      max-width: unset;
       // position: absolute;
       // object-fit: cover;
       height: 100%;
-      width: auto;
-      max-width: unset;
     }
   }
 
