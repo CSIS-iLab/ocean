@@ -4,6 +4,10 @@
   {%- assign image_name = include.path | split: "/upload/" | last -%}
 
   <img
+  sizes="(max-width: 300px) 300px,
+      (max-width: 500px) 500px,
+      (max-width: 700px) 700px,
+      1360px"
   srcset="{{ site.cloudinary_url }}f_auto,q_70,w_300/{{ image_name }} 300w,
           {{ site.cloudinary_url }}f_auto,q_70,w_500/{{ image_name }} 500w,
           {{ site.cloudinary_url }}f_auto,q_70,w_700/{{ image_name }} 700w,
