@@ -8,6 +8,7 @@
 
 @import 'vendors/fontello';
 @import 'vendors/normalize';
+@import 'vendors/tippy';
 
 @import 'base/typography';
 @import 'base/base';
@@ -24,12 +25,12 @@
 @import 'components/header-search';
 @import 'components/keywords';
 @import 'components/post-block';
-
 @import 'components/pagination';
 @import 'components/post-meta';
 @import 'components/related-posts';
-@import 'components/view-all-link';
 @import 'components/social-share';
+@import 'components/tooltip';
+@import 'components/view-all-link';
 
 @import 'layout/footer';
 @import 'layout/header';
