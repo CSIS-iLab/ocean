@@ -64,7 +64,7 @@
       justify-content: center;
       width: 2rem;
       padding: 0.2rem 0;
-      background-color: rgba($color__medblue, 0.3);
+      background-color: $color__bluegray-light;
       border: 0;
       border-radius: 12px;
       cursor: pointer;
@@ -75,11 +75,11 @@
     }
 
     &:hover {
-      background-color: rgba($color__medblue, 0.6);
+      background-color: $color__slate;
     }
 
     &:focus {
-      background-color: rgba($color__medblue, 0.3);
+      background-color: $color__bluegray-light;
       outline: 0;
       @extend %focus--border;
     }
