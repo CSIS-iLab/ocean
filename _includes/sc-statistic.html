@@ -1,3 +1,5 @@
+{%- assign align_class = null -%}
+
 {% assign align_class = include.align | default: 'left' | prepend: 'sc--float-' %}
 
 {%- if include.number -%}
@@ -7,5 +9,3 @@
   {%- if include.post -%}<div class="spotlight-component__caption-serif">{{ include.post }}</div>{%- endif -%}
 </div>
 {%- endif -%}
-
-{%- assign align_class = null -%}

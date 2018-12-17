@@ -1,3 +1,4 @@
+{%- assign align_class = null -%}
 {% assign align_class = include.align | default: 'left' | prepend: 'sc--float-' %}
 
 {%- if include.url and include.label -%}
@@ -7,5 +8,3 @@
   <div class="spotlight-component__caption">{{ include.caption }}</div>
 </div>
 {%- endif -%}
-
-{%- assign align_class = null -%}

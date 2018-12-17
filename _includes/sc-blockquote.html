@@ -1,3 +1,6 @@
+{%- assign size_class = null -%}
+{%- assign align_class = null -%}
+
 {% assign size_class = include.sizing | default: 'large' | prepend: 'sc--' %}
 
 {% if include.align and size_class != 'sc--large' %}
@@ -12,6 +15,3 @@
   {%- endif -%}
 </blockquote>
 {%- endif -%}
-
-{%- assign size_class = null -%}
-{%- assign align_class = null -%}
