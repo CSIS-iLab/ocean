@@ -9,15 +9,8 @@
     }
   }
 
-  @include breakpoint('medium') {
-    &::before {
-      content: '';
-      display: block;
-      width: 33%;
-      height: 2px;
-      margin-bottom: 1rem;
-      border-top: 2px solid $color__bluegray-light;
-    }
+  &::before {
+    @extend %spotlight-component__border;
   }
 
   .icon-x {

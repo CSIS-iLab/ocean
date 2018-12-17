@@ -9,7 +9,7 @@
   margin-bottom: 1rem;
 
   &__label {
-    @extend %post-content__caption-label;
+    @extend %spotlight-component__label;
     margin-bottom: 0.2rem;
   }
 
@@ -57,6 +57,48 @@
         transition: inherit;
       }
     }
+  }
+}
+
+/*===========================
+=                           =
+=         Reference         =
+=                           =
+===========================*/
+
+.sc-reference {
+  position: relative;
+  text-align: center;
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+
+  &::before {
+    @extend %spotlight-component__border;
+  }
+
+  a {
+    &:hover {
+      color: var(--accent-color);
+
+      i {
+        color: var(--accent-color--hover);
+      }
+    }
+  }
+
+  i {
+    position: relative;
+    top: -2px;
+    margin-left: 0.25rem;
+    color: var(--accent-color);
+    font-size: 0.8em;
+    transition: inherit;
+  }
+
+  p {
+    @extend %body-text__med;
   }
 }
 
