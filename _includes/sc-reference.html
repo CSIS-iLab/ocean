@@ -1,5 +1,8 @@
-{% assign align_class = include.align | default: 'left' | prepend: 'sc--float-'
-%} {%- if include.url and include.label -%}
+{%- assign align_class = null -%}
+
+{% assign align_class = include.align | default: 'left' | prepend: 'sc--float-' %}
+
+{%- if include.url and include.label -%}
 <div class="spotlight-component sc-reference sc--float-small {{ align_class }}">
   <a href="{{ include.url }}" class="spotlight-component__label sc-link">
     {{ include.label }}

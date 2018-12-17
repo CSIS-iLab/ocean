@@ -1,3 +1,5 @@
+{%- assign align_class = null -%}
+
 {% assign align_class = include.align | default: 'left' | prepend: 'sc--float-' %}
 
 {%- if include.number -%}
