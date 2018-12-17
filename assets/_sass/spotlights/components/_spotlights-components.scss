@@ -53,7 +53,7 @@
       border-radius: 50%;
 
       &:hover {
-        opacity: 0.8;
+        background-color: var(--accent-color--hover);
         transition: inherit;
       }
     }

@@ -1,5 +1,6 @@
 :root {
-  --accent-color: #{$color__medblue};
+  --accent-color: #{$color__default-accent};
+  --accent-color--hover: #{$color__default-accent--hover};
   --footer-bg-min-height: 400px;
   --scroll-progress: 0;
 }
