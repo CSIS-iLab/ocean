@@ -17,6 +17,10 @@
     padding-right: 5vw;
   }
 
+  .home__commentary & {
+    margin-bottom: 1rem;
+  }
+
   &--img {
     $body-width: minmax(auto, $size__post-body-max-width);
     display: grid;
@@ -51,6 +55,10 @@
     grid-area: header;
     padding-bottom: 0.75rem;
 
+    .home__commentary & {
+      padding-bottom: 0;
+    }
+
     #{$post}__title {
       margin-bottom: 0.5rem;
       @extend %post-block__title;
@@ -67,12 +75,24 @@
       .archive__featured & {
         @extend %post-block__title--featured;
       }
+
+      .home__spotlights & {
+        @extend %post-block__title--home;
+      }
+
+      .home__commentary & {
+        margin-bottom: 0.25rem;
+        @extend %post-block__title--related;
+      }
     }
   }
 
   &__content {
     grid-area: content;
-    // grid-area: header;
+
+    .layout-home & {
+      padding-bottom: 1rem;
+    }
 
     p {
       margin-bottom: 0;
@@ -80,8 +100,37 @@
     }
   }
 
+  &__footer {
+    .layout-home & {
+      padding-bottom: 0.25rem;
+
+      .post-meta {
+        margin-bottom: 0.5rem;
+      }
+
+      .post-meta__label {
+        display: block;
+      }
+    }
+  }
+
+  &__content,
+  &__footer {
+    .layout-home & {
+      margin: 0 0.5rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      border-left: 1px solid $color__gray-58;
+    }
+  }
+
   &__img {
     grid-area: img;
+
+    .layout-home & {
+      display: block;
+      margin-bottom: 1rem;
+    }
 
     img {
       display: block;
@@ -89,6 +138,12 @@
       width: 100%;
       @include structure($size__post-block-img--height, 'height');
       line-height: 1;
+
+      .layout-home & {
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+      }
     }
   }
 

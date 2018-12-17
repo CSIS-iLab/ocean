@@ -15,24 +15,31 @@ layout: default
       <a href="/about">Learn More</a>
     </section>
   </section>
-  <section class="home__spotlights">
+  <section class="home__spotlights js-footer-bg">
     <section class="home__spotlights-intro">
-      <div class="home__spotlights-subheading">Featured Essays</div>
+      <div class="home__subheading">Featured Essays</div>
       <h2 class="section-title">Spotlights</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
       aliqua.</p>
     </section>
     <section class="home__spotlights-posts">
-      Posts
+      {% for posts in page.featured_spotlights limit: 2 %}
+      {% assign post = site.spotlights | where: "relative_path", posts | first %}
+      {% include post-block-home.html %}
+      {% endfor %}
     </section>
     <section class="home__spotlights-more home__button">
       <a href="/spotlights">All Spotlights</a>
     </section>
   </section>
   <section class="home__commentary">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2 class="home__subheading">Latest Commentary</h2>
+    {% assign latest_posts = site.posts | sort: date %}
+    {% for post in latest_posts limit: 3 %}
+    {% include post-block-related.html class="post-block" %}
+    {% endfor %}
+  </section>
+  <section class="home__commentary-more">
+    <a href="/commentary">View All</a>
   </section>
 </section>

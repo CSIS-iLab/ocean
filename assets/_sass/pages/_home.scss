@@ -27,6 +27,12 @@
     }
   }
 
+  &__subheading {
+    margin-bottom: 0.5rem;
+    @extend %post-block__type--related;
+    text-transform: uppercase;
+  }
+
   &__about {
     position: relative;
     margin-right: $padding-offset;
@@ -85,15 +91,9 @@
   }
 
   &__spotlights {
-    padding-top: 3rem;
+    padding: 3rem 0 2rem;
     background-color: $color__white;
     @include full-width-background($color__white);
-
-    &-subheading {
-      margin-bottom: 0.5rem;
-      @extend %post-block__type--related;
-      text-transform: uppercase;
-    }
 
     .section-title {
       margin-bottom: 0.5rem;
@@ -114,12 +114,22 @@
     }
 
     &-more {
-      position: relative;
+      position: absolute;
+      top: 100%;
       margin-left: -$padding-offset;
+      background-color: transparent;
     }
   }
 
   &__commentary {
+    margin-top: 6rem;
+    padding: 2rem 1.5rem 0.5rem;
     background-color: $color__white;
+
+    &-more {
+      margin-top: 0.5rem;
+      @extend %post__view-all;
+      text-align: right;
+    }
   }
 }
