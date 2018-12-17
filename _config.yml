@@ -32,12 +32,14 @@ defaults:
   values:
     layout: post
     permalink: "/commentary/:slug/"
+    content_type: Commentary
 - scope:
     path: ''
     type: 'spotlights'
   values:
     layout: spotlight
     permalink: "/spotlights/:slug/"
+    content_type: Spotlights
 - scope:
     path: ''
     type: 'authors'

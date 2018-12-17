@@ -8,7 +8,7 @@
   {%- capture html -%}{%- include post-block.html -%}{%- endcapture -%}
   {
     "objectID": "{{ post.title | slugify }}",
-    "content_type": "{{ post.collection }}",
+    "content_type": "{{ post.content_type }}",
     "title": "{{ post.title | escape }}",
     "url": "{{ post.url }}",
     "authors": {{ authors_list }},
