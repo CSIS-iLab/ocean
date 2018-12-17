@@ -1,9 +1,9 @@
 {% assign align_class = include.align | default: 'left' | prepend: 'sc--float-' %}
 
 {%- if include.number -%}
-<div class="spotlight-component sc__statistic sc--float-small {{ align_class }}">
+<div class="spotlight-component sc-statistic sc--float-small {{ align_class }}">
   {%- if include.pre -%}<div class="spotlight-component__caption-serif">{{ include.pre }}</div>{%- endif -%}
-  <div class="sc__statistic__number">{{ include.number }}</div>
+  <div class="sc-statistic__number">{{ include.number }}</div>
   {%- if include.post -%}<div class="spotlight-component__caption-serif">{{ include.post }}</div>{%- endif -%}
 </div>
 {%- endif -%}

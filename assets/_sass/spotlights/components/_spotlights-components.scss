@@ -28,14 +28,14 @@
 =                           =
 ===========================*/
 
-.sc__document {
+.sc-document {
   text-align: center;
 
   @include breakpoint('medium') {
     text-align: left;
   }
 
-  &-icon {
+  &__icon {
     text-align: center;
     vertical-align: middle;
 
@@ -53,7 +53,7 @@
       border-radius: 50%;
 
       &:hover {
-        opacity: 0.8;
+        background-color: var(--accent-color--hover);
         transition: inherit;
       }
     }
@@ -66,7 +66,7 @@
 =                           =
 ===========================*/
 
-.sc__statistic {
+.sc-statistic {
   text-align: center;
 
   @include breakpoint('medium') {

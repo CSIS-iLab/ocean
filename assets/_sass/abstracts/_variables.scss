@@ -47,6 +47,9 @@ $color__gray-58: rgba(155, 155, 155, 0.58);
 $color__bluegray: #6aa2c7;
 $color__orange: rgba(#f5a623, 0.3);
 
+$color__default-accent: $color__medblue;
+$color__default-accent--hover: rgba($color__default-accent, 0.8);
+
 $color__background-body: $color__white;
 $color__background-screen: $color__white;
 $color__background-pre: #eee;
