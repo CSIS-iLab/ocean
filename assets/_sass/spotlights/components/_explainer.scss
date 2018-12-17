@@ -1,4 +1,4 @@
-.sc__explainer {
+.sc-explainer {
   @include breakpoint($break: 'medium', $dir: 'max-width') {
     display: inline;
     float: none;
@@ -56,7 +56,7 @@
     }
   }
 
-  &-trigger {
+  &__trigger {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       position: relative;
       bottom: 0.3rem;
@@ -96,12 +96,12 @@
     }
   }
 
-  &-title {
+  &__title {
     margin-bottom: 0.5rem;
     @extend %post-content__table-title;
   }
 
-  &-body {
+  &__body {
     @extend %body-text__med;
   }
 }
