@@ -54,6 +54,12 @@ body {
   @include structure($size__container-padding, 'padding');
 }
 
+.wrapper--home {
+  @include structure($size__container-max-width, 'max-width');
+  margin: 0 auto;
+  @include structure($size__container-padding--home, 'padding', ('small', 'large'));
+}
+
 .content-overlay {
   position: absolute;
   top: 0;

@@ -32,13 +32,8 @@
 %body-text__med {
   color: $color__black-light;
   font-family: $font__proxima;
-  line-height: 1.35;
-  @include font-size(14px);
-
-  @include breakpoint('large') {
-    @include font-size(16px);
-    line-height: 1.44;
-  }
+  @include font-size(16px);
+  line-height: 1.44;
 }
 
 %button {
