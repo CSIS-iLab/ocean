@@ -18,12 +18,9 @@
     > *:not(.spotlight-component) {
       @include breakpoint('large') {
         width: $size__spotlight-body-width;
-        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
       }
     }
-  }
-
-  &-component {
-    // background-color: $color__test;
   }
 }

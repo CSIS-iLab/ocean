@@ -50,7 +50,7 @@
     }
   }
 
-  &:not(.is-active) &-content {
+  &:not(.is-active) &__content {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       display: none;
     }
