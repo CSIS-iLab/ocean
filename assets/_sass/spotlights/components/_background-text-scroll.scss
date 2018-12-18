@@ -1,8 +1,8 @@
 .sc-background-text-scroll {
   position: relative;
+  min-height: calc(100vh - 4rem);
   margin-top: 2rem;
   margin-bottom: 2rem;
-  min-height: calc(100vh - 4rem);
 
   @include breakpoint('medium') {
     margin-top: 4rem;
@@ -10,12 +10,12 @@
   }
 
   &__background {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     position: sticky;
     top: 0;
     height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
     @include breakpoint('medium') {
       position: absolute;
