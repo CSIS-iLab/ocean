@@ -23,6 +23,20 @@ fields:
   template: post-meta-secondary
 - type: include
   template: image-upload
+- type: textarea
+  name: methodology
+  label: Methodology
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: field_group_list
+  name: contributors
+  label: Contributors
+  fields:
+  - type: text
+    name: label
+    label: label
 pages:
 - _spotlights/south-china-sea.md
 - _spotlights/introducing-a-new-arctic-ocean.md
