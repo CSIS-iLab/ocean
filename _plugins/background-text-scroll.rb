@@ -20,4 +20,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('_background_text_scroll', Jekyll::RenderBackgroundTextScrollBlock)
+Liquid::Template.register_tag('background_text_scroll', Jekyll::RenderBackgroundTextScrollBlock)
