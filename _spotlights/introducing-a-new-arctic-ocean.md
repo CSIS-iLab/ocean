@@ -22,7 +22,7 @@ further_reading: |-
   * Ut tristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
   * Leo a diam sollicitudin tempor id eu nisl nunc mi. Nascetur ridiculus mus mauris vitae ultricies. Sagittis eu volutpat.
 related_content:
-- _posts/2018-11-19-test-post.md
+  - _posts/2018-11-19-test-post.md
 is_featured: false
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.43.31%20AM.png
 image_caption: image caption
