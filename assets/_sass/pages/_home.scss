@@ -7,8 +7,6 @@
 }
 
 .home {
-  $padding-offset: 20px;
-
   &__button {
     color: $color__white;
     font-weight: 600;
@@ -35,7 +33,17 @@
 
   &__about {
     position: relative;
-    margin-right: $padding-offset;
+    margin-right: var(--home-padding-offset);
+
+    @include breakpoint('large') {
+      display: grid;
+      grid-template-areas:
+        'video info'
+        'video learn';
+      grid-template-columns: calc(50% - var(--home-padding-offset)) 1fr;
+      grid-template-rows: auto max-content;
+      margin-right: 0;
+    }
 
     &::after {
       content: '';
@@ -44,7 +52,7 @@
       left: 100%;
       z-index: -1;
       display: block;
-      width: calc((100vw - 100%) / 2 + (#{$padding-offset} / 2));
+      width: calc((100vw - 100%) / 2 + (var(--home-padding-offset) / 2));
       height: 100%;
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #002d71);
     }
@@ -52,21 +60,51 @@
     &-info {
       padding: 1.5rem 1.5rem 1.5rem 0;
       background-color: $color__slate-lightest;
-      @include full-width-background($color__slate-lightest, 'left', true);
+
+      @include breakpoint($break: 'large', $dir: 'max-width') {
+        @include full-width-background($color__slate-lightest, 'left', true);
+      }
+
+      @include breakpoint('large') {
+        position: relative;
+        grid-area: info;
+        padding: 0 2rem 2rem;
+      }
+
+      &::before {
+        @include breakpoint('large') {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: 100%;
+          left: calc(var(--home-padding-offset) * -2);
+          height: 4rem;
+          background-color: $color__slate-lightest;
+        }
+      }
     }
 
     &-video {
       height: 350px;
-      margin-left: -$padding-offset;
+      margin-left: calc(var(--home-padding-offset) * -1);
       background-color: $color__test;
+
+      @include breakpoint('large') {
+        grid-area: video;
+      }
     }
 
     &-learn {
       @include full-width-background($color__white, 'right');
-      margin-left: -$padding-offset;
+      margin-left: calc(var(--home-padding-offset) * -1);
+
+      @include breakpoint('large') {
+        grid-area: learn;
+        margin-left: 0;
+      }
 
       &::after {
-        width: calc((100vw - 100%) / 2 + (#{$padding-offset}));
+        width: calc((100vw - 100%) / 2 + var(--home-padding-offset));
       }
     }
 
@@ -87,6 +125,10 @@
     p {
       @extend %body-text__med;
       margin: 0;
+
+      @include breakpoint('large') {
+        margin: 0 0.25rem;
+      }
     }
   }
 
@@ -95,6 +137,12 @@
     background-color: $color__white;
     @include full-width-background($color__white);
 
+    &::before {
+      @include breakpoint('large') {
+        background-image: linear-gradient(to bottom, #002d72, #01172a);
+      }
+    }
+
     .section-title {
       margin-bottom: 0.5rem;
       font-weight: 600;
@@ -102,21 +150,37 @@
       line-height: 0.8;
       letter-spacing: 1px;
       text-transform: uppercase;
+
+      @include breakpoint('large') {
+        margin-bottom: 1rem;
+        @include font-size(50px);
+        line-height: 0.64;
+        letter-spacing: 1.3px;
+      }
     }
 
     &-intro {
       margin-bottom: 2rem;
 
+      @include breakpoint('large') {
+        margin-right: 5rem;
+        margin-left: 5rem;
+      }
+
       p {
         margin: 0 1rem;
         @extend %body-text__med;
+
+        @include breakpoint('large') {
+          margin-left: 7rem;
+        }
       }
     }
 
     &-more {
       position: absolute;
       top: 100%;
-      margin-left: -$padding-offset;
+      margin-left: calc(var(--home-padding-offset) * -1);
       background-color: transparent;
     }
   }
@@ -125,6 +189,25 @@
     margin-top: 6rem;
     padding: 2rem 1.5rem 0.5rem;
     background-color: $color__white;
+
+    @include breakpoint('large') {
+      display: grid;
+      grid-column-gap: 4rem;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-rows: repeat(2, auto);
+    }
+
+    .home__subheading {
+      @include breakpoint('large') {
+        grid-row: 1;
+      }
+    }
+
+    .post-block {
+      @include breakpoint('large') {
+        grid-row: 2;
+      }
+    }
 
     &-more {
       margin-top: 0.5rem;

@@ -1,8 +1,15 @@
 :root {
   --accent-color: #{$color__default-accent};
   --accent-color--hover: #{$color__default-accent--hover};
+  --home-padding-offset: 20px;
   --footer-bg-min-height: 400px;
   --scroll-progress: 0;
+}
+
+@include breakpoint('large') {
+  :root {
+    --home-padding-offset: 50px;
+  }
 }
 
 html {
