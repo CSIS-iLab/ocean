@@ -13,28 +13,24 @@
     margin-right: 0.5rem;
 
     @include breakpoint('medium') {
-      top: 50%;
       margin-right: 1rem;
-      transform: translateY(-50%);
     }
   }
 
   button {
     position: absolute;
+    top: 100%;
     display: flex;
     justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: $color__white;
     border-color: rgba(0, 0, 0, 0.23);
     border-radius: 50%;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.23);
+    transform: translateY(-100%);
     cursor: pointer;
-
-    @include breakpoint($break: 'medium', $dir: 'max-width') {
-      top: 100%;
-      width: 2.5rem;
-      height: 2.5rem;
-      transform: translateY(-100%);
-    }
+    transition: all 0.3s ease-in-out;
 
     @include breakpoint('medium') {
       top: 50%;
@@ -65,9 +61,7 @@
     }
 
     &:not(.next) {
-      @include breakpoint($break: 'medium', $dir: 'max-width') {
-        left: 20px;
-      }
+      left: 20px;
 
       @include breakpoint('medium') {
         left: 4rem;
@@ -79,9 +73,7 @@
     }
 
     &:not(.previous) {
-      @include breakpoint($break: 'medium', $dir: 'max-width') {
-        right: 20px;
-      }
+      right: 20px;
 
       @include breakpoint('medium') {
         right: 4rem;
@@ -105,20 +97,7 @@
     justify-content: center;
     height: 0;
     margin: auto;
-    transform: translate3d(0, 50px, 0);
     visibility: hidden;
-    opacity: 0;
-    filter: blur(10px);
-
-    &.active {
-      position: relative;
-      height: auto;
-      transform: translate3d(0, 0, 0);
-      visibility: visible;
-      opacity: 1;
-      filter: blur(0);
-      transition: all 0.3s ease-in-out;
-    }
 
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       flex-wrap: wrap;
@@ -128,6 +107,12 @@
     @include breakpoint('medium') {
       padding: 1rem 0 0.5rem;
       border-bottom: 2px solid $color__ltgray;
+    }
+
+    &.active {
+      position: relative;
+      height: auto;
+      visibility: visible;
     }
 
     &__label {
@@ -141,11 +126,21 @@
 
     &__text {
       padding-bottom: 0.5rem;
+      transform: translate3d(0, 50px, 0);
+      opacity: 0;
+      filter: blur(10px);
       @extend %post-content__caption-desc;
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         max-width: calc(100vw - 40px);
         border-bottom: 2px solid $color__ltgray;
+      }
+
+      .active & {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        filter: blur(0);
+        transition: all 0.3s ease-in-out;
       }
 
       &-source {

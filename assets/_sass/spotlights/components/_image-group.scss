@@ -22,12 +22,10 @@
       overflow: hidden;
 
       &:not(:last-of-type) {
-        @include breakpoint($break: 'medium', $dir: 'max-width') {
-          margin-bottom: 0.5rem;
-        }
+        margin-bottom: 0.5rem;
 
         @include breakpoint('medium') {
-          margin-bottom: 2%;
+          margin-bottom: 1rem;
         }
       }
 
@@ -40,10 +38,6 @@
   &:not(.sc--float-left):not(.sc--float-right) &__images {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       flex-direction: column;
-    }
-
-    @include breakpoint('medium') {
-      max-height: 65vh;
     }
 
     &-single {
@@ -61,7 +55,7 @@
         }
 
         @include breakpoint('medium') {
-          margin-right: 2%;
+          margin-right: 1rem;
         }
       }
 
