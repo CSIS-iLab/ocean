@@ -1,14 +1,12 @@
-#{$spotlight}-timeline {
+.timeline {
   margin-bottom: 2rem;
 
   &__indicator {
     display: flex;
     align-items: center;
 
-    &-date {
-      letter-spacing: 0.3px;
+    .post-meta {
       white-space: nowrap;
-      @include font-size(13px);
 
       &:first-of-type {
         margin-right: 1rem;
@@ -29,69 +27,60 @@
       &:hover {
         color: $color__default-accent--hover;
       }
+    }
 
-      &:focus {
-        @extend %focus--bg;
+    &__progress {
+      position: relative;
+      width: 100%;
+      height: 0.2rem;
+      background-color: #b3b3b3;
+
+      &-marker {
+        position: absolute;
+        top: -100%;
+        left: -0.3rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: #000;
+        border-radius: 50%;
+      }
+
+      &-ticks {
+        position: relative;
+        top: -150%;
+        display: flex;
+        justify-content: space-between;
+        height: 0.8rem;
+      }
+
+      .tick {
+        &:nth-child(even) {
+          border-right: 1px #000 solid;
+        }
+
+        &:nth-child(odd) {
+          position: relative;
+          top: 10%;
+          height: 0.6rem;
+          border-right: 1.4px dotted #000;
+        }
+
+        &:first-child {
+          border-left: 1px #000 solid;
+        }
       }
     }
   }
 
-  &__indicator__progress {
-    width: 100%;
-    height: 6px;
-    background-color: $color__ltgray-light;
-    border-radius: 3px;
-
-    &-marker {
-      position: relative;
-      top: -200%;
-      width: 0;
-      height: 100%;
-      background-color: $color__default-accent--hover;
-      border-radius: 3px;
-    }
-
-    &-ticks {
-      position: relative;
-      top: -50%;
-      display: flex;
-      justify-content: space-between;
-      height: 0.8rem;
-    }
-
-    .tick:not(:first-child) {
-      border-left: 1px $color__ltgray solid;
-    }
-
-    &-labels {
-      position: relative;
-      top: -100%;
-      display: flex;
-      justify-content: space-between;
-      height: 0.8rem;
-    }
-
-    .label {
-      @include font-size(11px);
-      color: $color__dkgray-light;
-      letter-spacing: 0.2px;
-      text-align: center;
-      transform: translateX(-50%);
-    }
-  }
-
-  &__scroll-container {
+  &__graphic {
     position: relative;
     width: 100%;
-    margin-top: 1rem;
+    height: 404px;
+    margin: 1rem 0;
+    overflow: hidden;
 
-    &__graphic {
+    img {
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-size: 100%;
     }
   }
 }
