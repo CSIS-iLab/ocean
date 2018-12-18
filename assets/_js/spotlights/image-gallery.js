@@ -1,4 +1,4 @@
-import Flickity from 'flickity-imagesloaded'
+import Flickity from 'flickity'
 import Breakpoints from '../breakpoints'
 
 const ImageGallery = () => {
