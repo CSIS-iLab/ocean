@@ -1,5 +1,9 @@
+$color__default-accent: $color__red;
+$color__default-accent--hover: rgba($color__red, 0.8);
+
 :root {
-  --accent-color: #{$color__medblue};
+  --accent-color: #{$color__default-accent};
+  --accent-color--hover: #{$color__default-accent--hover};
 }
 
 body {

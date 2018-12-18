@@ -1,4 +1,4 @@
-.sc__explainer {
+.sc-explainer {
   @include breakpoint($break: 'medium', $dir: 'max-width') {
     display: inline;
     float: none;
@@ -9,15 +9,8 @@
     }
   }
 
-  @include breakpoint('medium') {
-    &::before {
-      content: '';
-      display: block;
-      width: 33%;
-      height: 2px;
-      margin-bottom: 1rem;
-      border-top: 2px solid $color__bluegray-light;
-    }
+  &::before {
+    @extend %spotlight-component__border;
   }
 
   .icon-x {
@@ -50,13 +43,13 @@
     }
   }
 
-  &:not(.is-active) &-content {
+  &:not(.is-active) &__content {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       display: none;
     }
   }
 
-  &-trigger {
+  &__trigger {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       position: relative;
       bottom: 0.3rem;
@@ -64,7 +57,7 @@
       justify-content: center;
       width: 2rem;
       padding: 0.2rem 0;
-      background-color: rgba($color__medblue, 0.3);
+      background-color: $color__bluegray-light;
       border: 0;
       border-radius: 12px;
       cursor: pointer;
@@ -75,11 +68,11 @@
     }
 
     &:hover {
-      background-color: rgba($color__medblue, 0.6);
+      background-color: $color__slate;
     }
 
     &:focus {
-      background-color: rgba($color__medblue, 0.3);
+      background-color: $color__bluegray-light;
       outline: 0;
       @extend %focus--border;
     }
@@ -96,12 +89,12 @@
     }
   }
 
-  &-title {
+  &__title {
     margin-bottom: 0.5rem;
     @extend %post-content__table-title;
   }
 
-  &-body {
+  &__body {
     @extend %body-text__med;
   }
 }

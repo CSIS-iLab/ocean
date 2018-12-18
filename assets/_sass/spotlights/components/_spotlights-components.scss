@@ -9,7 +9,7 @@
   margin-bottom: 1rem;
 
   &__label {
-    @extend %post-content__caption-label;
+    @extend %spotlight-component__label;
     margin-bottom: 0.2rem;
   }
 
@@ -22,20 +22,47 @@
   }
 }
 
+/*=============================
+=                             =
+=          Blockquotes        =
+=                             =
+=============================*/
+
+.sc-blockquote {
+  position: relative;
+  @extend %post-content__caption;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin-top: 0.25rem;
+    border-top: 2px solid var(--accent-color);
+  }
+
+  cite {
+    margin-bottom: 0.5rem;
+    text-transform: none;
+
+    &::before { display: none; }
+  }
+}
+
 /*===========================
 =                           =
 =          Document         =
 =                           =
 ===========================*/
 
-.sc__document {
+.sc-document {
   text-align: center;
 
   @include breakpoint('medium') {
     text-align: left;
   }
 
-  &-icon {
+  &__icon {
     text-align: center;
     vertical-align: middle;
 
@@ -53,10 +80,52 @@
       border-radius: 50%;
 
       &:hover {
-        opacity: 0.8;
+        background-color: var(--accent-color--hover);
         transition: inherit;
       }
     }
+  }
+}
+
+/*===========================
+=                           =
+=         Reference         =
+=                           =
+===========================*/
+
+.sc-reference {
+  position: relative;
+  text-align: center;
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+
+  &::before {
+    @extend %spotlight-component__border;
+  }
+
+  a {
+    &:hover {
+      color: var(--accent-color);
+
+      i {
+        color: var(--accent-color--hover);
+      }
+    }
+  }
+
+  i {
+    position: relative;
+    top: -2px;
+    margin-left: 0.25rem;
+    color: var(--accent-color);
+    font-size: 0.8em;
+    transition: inherit;
+  }
+
+  p {
+    @extend %body-text__med;
   }
 }
 
@@ -66,7 +135,7 @@
 =                           =
 ===========================*/
 
-.sc__statistic {
+.sc-statistic {
   text-align: center;
 
   @include breakpoint('medium') {
