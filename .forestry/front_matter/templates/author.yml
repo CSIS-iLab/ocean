@@ -12,6 +12,9 @@ fields:
 - type: text
   name: byline
   label: Byline
+- type: file
+  name: headshot
+  label: headshot
 pages:
 - _authors/monica-medina.md
 - _authors/dan-myers.md
