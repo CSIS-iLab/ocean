@@ -1,6 +1,6 @@
-{%- assign images = include.images | strip_newlines | split: "~"  -%}
-{%- assign captions = include.captions | strip_newlines | split: "~"  -%}
-{%- assign credits_array = include.credits | strip_newlines | split: "~"  -%}
+{%- assign images = include.images | map: "url"  -%}
+{%- assign captions = include.images | map: "caption"  -%}
+{%- assign credits_array = include.images | map: "credit"  -%}
 {%- assign credits = '' | split: ',' -%}
 
 {%- for item in credits_array -%}

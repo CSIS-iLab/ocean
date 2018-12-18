@@ -34,9 +34,50 @@ related_spotlight:
 related_commentary:
   - _posts/2018-12-10-harmonizing-enforcement-would-make-the-oceans-more-secure.md
   - _posts/2018-11-19-test-post.md
+image_galleries:
+image_groups:
+  right_three:
+  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg"
+    caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    credit: Getty
+  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg"
+    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
+    credit:
+  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg"
+    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
+    credit: National Geographic
+  left_two:
+  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg"
+    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
+    credit: Getty
+  - url: "https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg"
+    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
+    credit: National Geographic
+  max_three:
+  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg"
+    caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    credit: Getty
+  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg"
+    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
+    credit:
+    mode: portrait
+  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg"
+    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
+    credit: National Geographic
+    mode: landscape
+  max_two:
+  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg"
+    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
+    credit: Getty
+    mode: portrait
+  - url: "https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg"
+    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
+    credit: National Geographic
+    mode: landscape
 ---
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p>!Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 {% include_relative arctic/test-arctic.html %}
 
@@ -90,148 +131,36 @@ related_commentary:
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-{%- assign three_images="
-https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/a.jpg~
-https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/b.jpg~
-https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/c.jpg
-" -%}
-
-{%- assign three_modes="~portrait~landscape" -%}
-
-{%- assign three_captions="
-Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.~
-Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.~
-Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
-" -%}
-
-{%- assign three_credits="
-Getty~
- ~
-National Geographic.
-" -%}
-
-{%- assign two_images="
-https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/annie-spratt-977061-unsplash.jpg~
-https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg
-
-" -%}
-
-{%- assign two_modes="portrait~landscape" -%}
-
-{%- assign two_captions="
-Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.~
-Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
-" -%}
-
-{%- assign two_credits="
-Getty~
-National Geographic.
-" -%}
-
-{%- assign five_images=three_images | prepend: '~' | prepend: two_images -%}
-
-{%- assign five_modes=three_modes | prepend: '~' | prepend: two_modes -%}
-
-{%- assign five_captions=three_captions | prepend: '~' | prepend: two_captions -%}
-
-{%- assign five_credits=three_credits | prepend: '~' | prepend: two_credits -%}
-
-{%- include sc-image-group.html
-  images=three_images
-  captions=three_captions
-  credits=three_credits
-  modes=three_modes
-  align="right"
-  -%}
+{%- include sc-image-group.html images=page.image_groups.right_three align="right" -%}
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-{%- include sc-image-group.html
-  images=two_images
-  captions=two_captions
-  credits=two_credits
-  modes=two_modes
-  align="left"
-  -%}
+{%- include sc-image-group.html images=page.image_groups.left_two align="left" -%}
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-{%- include sc-image-group.html
-  images=three_images
-  captions=three_captions
-  credits=three_credits
-  modes=three_modes
-  width="max"
-  -%}
+{%- include sc-image-group.html images=page.image_groups.max_three width="max" -%}
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-{%- include sc-image-group.html
-  images=three_images
-  captions=three_captions
-  credits=three_credits
-  modes=three_modes
-  width="max"
-  -%}
+{%- include sc-image-group.html images=page.image_groups.max_two width="max" -%}
+
+
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-{%- include sc-image-group.html
-  images=three_images
-  captions=three_captions
-  credits=three_credits
-  modes=three_modes
-  width="max"
-  -%}
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-{%- include sc-image-group.html
-  images=two_images
-  captions=two_captions
-  credits=two_credits
-  modes=two_modes
-  width="max"
-  -%}
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-{%- include sc-image-group.html
-  images=two_images
-  captions=two_captions
-  credits=two_credits
-  modes=two_modes
-  width="max"
-  -%}
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-{%- include sc-image-group.html
-  images=two_images
-  captions=two_captions
-  credits=two_credits
-  modes=two_modes
-  width="full"
-  -%}
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+{%- assign gallery_images = page.image_groups.max_two | concat: page.image_groups.max_three -%}
 
 <h2 class="test-header">Image Gallery</h2>
-{%- include sc-image-gallery.html
-  images=five_images
-  captions=five_captions
-  credits=five_credits
-  modes=five_modes
-  -%}
+
+{%- include sc-image-gallery.html images=gallery_images  -%}
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-{%- include sc-image-gallery.html
-  images=five_images
-  captions=five_captions
-  credits=five_credits
-  modes=five_modes
-  -%}
+
+{%- include sc-image-gallery.html images=gallery_images -%}
+
 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
