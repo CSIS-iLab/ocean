@@ -177,11 +177,34 @@
       }
     }
 
+    &-posts {
+      @include breakpoint('large') {
+        margin-right: calc(var(--home-padding-offset) * -1);
+      }
+    }
+
     &-more {
       position: absolute;
       top: 100%;
       margin-left: calc(var(--home-padding-offset) * -1);
       background-color: transparent;
+
+      @include breakpoint('large') {
+        margin-left: 0;
+      }
+
+      &::before {
+        @include breakpoint('large') {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: calc(var(--home-padding-offset) * -1);
+          display: block;
+          width: var(--home-padding-offset);
+          background-color: $color__red-dark;
+        }
+      }
     }
   }
 
