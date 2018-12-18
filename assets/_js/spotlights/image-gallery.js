@@ -1,4 +1,4 @@
-import Flickity from 'flickity'
+import Flickity from 'flickity-imagesloaded'
 import Breakpoints from '../breakpoints'
 
 const ImageGallery = () => {
@@ -17,7 +17,8 @@ const ImageGallery = () => {
       prevNextButtons: true,
       wrapAround: true,
       dragThreshold: 20,
-      lazyLoad: 2,
+      lazyLoad: 3,
+      imagesLoaded: true,
       on: {
         ready: () => {
           captions[0].classList.add('active')

@@ -37,7 +37,7 @@
       {%- assign credit = credits[forloop.index0] -%}
 
     <div class="sc-image-gallery__captions-single">
-      <span class="sc-image-gallery__captions-single__label">{{ forloop.index }} of 3</span>
+      <span class="sc-image-gallery__captions-single__label">{{ forloop.index }} of {{ images.size }}</span>
       <span class="sc-image-gallery__captions-single__text">{{ captions[forloop.index0] }} {{ credits[forloop.index0] }}</span>
     </div>
 

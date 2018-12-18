@@ -5,9 +5,7 @@
     }
 
     @include breakpoint('medium') {
-      height: 65vh;
-      min-height: 300px;
-      max-height: 750px;
+      height: 75vh;
     }
   }
 
@@ -97,11 +95,8 @@
 
   &__captions {
     @include structure($size__spotlight-container-width, 'width');
+    max-width: $size__spotlight-body-width;
     margin: auto;
-
-    @include breakpoint('large') {
-      width: $size__spotlight-body-width;
-    }
   }
 
   &__captions-single {
@@ -149,7 +144,7 @@
       @extend %post-content__caption-desc;
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
-        max-width: calc(100vw-40px);
+        max-width: calc(100vw - 40px);
         border-bottom: 2px solid $color__ltgray;
       }
 
@@ -157,19 +152,5 @@
         @extend %post-content__caption-desc--sm;
       }
     }
-  }
-}
-
-@keyframes fade {
-  0% {
-    transform: translate3d(0, 50px, 0);
-    opacity: 0;
-    filter: blur(10px);
-  }
-
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-    filter: blur(0);
   }
 }
