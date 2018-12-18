@@ -1,7 +1,7 @@
 import ScrollMagic from 'scrollmagic'
 
 const Timeline = () => {
-  let timelines = [...document.querySelectorAll('.timeline')]
+  let timelines = [...document.querySelectorAll('.scs-timeline')]
   let intervals = []
 
   timelines.forEach(timeline => {
@@ -13,14 +13,14 @@ const Timeline = () => {
       rate = 12
 
     let tickContainer = timeline.querySelector(
-      '.timeline__indicator__progress-ticks'
+      '.scs-timeline__indicator__progress-ticks'
     )
 
     let progressDisplay = timeline.querySelector(
-      '.timeline__indicator__progress-marker'
+      '.scs-timeline__indicator__progress-marker'
     )
 
-    let graphic = timeline.querySelector('.timeline__graphic img')
+    let graphic = timeline.querySelector('.scs-timeline__graphic img')
 
     Array.from(Array(rate * 2)).forEach(i => {
       tickContainer.innerHTML += `<div class="tick" style="flex-basis: calc(100% / ${rate})"> </div>`
@@ -30,14 +30,16 @@ const Timeline = () => {
 
     let scene = new ScrollMagic.Scene({
       offset: 0,
-      triggerElement: '.timeline'
+      triggerElement: '.scs-timeline'
     })
       .addTo(controller)
       .on('enter', e => start(duration))
 
-    timeline.querySelector('.timeline button').addEventListener('click', () => {
-      start(duration)
-    })
+    timeline
+      .querySelector('.scs-timeline button')
+      .addEventListener('click', () => {
+        start(duration)
+      })
 
     const start = i => {
       top = 0

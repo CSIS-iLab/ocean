@@ -27,6 +27,7 @@ related_spotlight:
 related_commentary:
 - _posts/2018-11-19-test-post.md
 - _posts/2018-02-14-welcome-to-jekyll.markdown
+prefix: scs
 ---
 
 
