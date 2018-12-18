@@ -1,0 +1,56 @@
+.sc-background-text-scroll {
+  position: relative;
+  min-height: 100vh;
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  @include breakpoint('medium') {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  &__background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      position: sticky;
+      top: 0;
+      height: 40vh;
+    }
+
+    @include breakpoint('medium') {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    position: relative;
+    background-color: rgba($color__white, 0.85);
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      z-index: -1;
+      min-height: 40vh;
+      max-height: calc(100vh - 4rem);
+    }
+
+    @include breakpoint('medium') {
+      width: 40%;
+      height: 100vh;
+      padding: 2.5rem;
+    }
+
+    > * {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        max-width: calc(100vw - 40px);
+        margin: auto;
+      }
+    }
+  }
+}
