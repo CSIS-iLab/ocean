@@ -3,6 +3,7 @@
   {%- assign align_class = include.align | prepend: 'sc--float-' -%}
   {%- assign width_class = 'sc--float-large' -%}
 {%- endif -%}
+{%- assign width_class = null -%}
 {%- if include.width -%}
   {%- assign width_class = 'sc--max' -%}
 {%- endif -%}
@@ -29,19 +30,10 @@
 {%- assign labels="top,middle,bottom" | split: "," -%}
 
 {%- capture group_caption -%}
-  {%- if images.size == 2 %}
-    <span class="sc-image-group__caption-label {{ labels[0] }}"> </span>
-    {{ captions[0] }} {{ credits[0] }}
-    <span class="sc-image-group__caption-label {{ labels[2] }}"> </span>
-    {{ captions[1] }} {{ credits[1] }}
-  {%- elsif images.size == 3 %}
-    <span class="sc-image-group__caption-label {{ labels[0] }}"> </span>
-    {{ captions[0] }} {{ credits[0] }}
-    <span class="sc-image-group__caption-label {{ labels[1] }}"> </span>
-    {{ captions[1] }} {{ credits[1] }}
-    <span class="sc-image-group__caption-label {{ labels[2] }}"> </span>
-    {{ captions[2] }} {{ credits[2] }}
-  {%- endif -%}
+  {%- for image in images -%}
+    <span class="sc-image-group__caption-label {{ labels[forloop.index0] }}"> </span>
+    {{ captions[forloop.index0] }} {{ credits[forloop.index0] }} &nbsp;
+{%- endfor -%}
 {%- endcapture -%}
 
 
@@ -65,6 +57,7 @@
         credit=credit
         class='sc-image-group__images-single'
         mode=mode
+        height=include.height
         -%}
     {%- endfor -%}
     </figure>

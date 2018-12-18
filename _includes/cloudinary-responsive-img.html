@@ -2,10 +2,15 @@
 <figure class="{{ include.classes | default: post__image }}">
 
 
+{%- if include.height.size > 0 -%}
+  {%- assign height = '"' | prepend: include.height | prepend: ' style="max-height:' -%}
+{%- endif -%}
+
 {%- if include.path contains 'cloudinary' -%}
   {%- assign image_name = include.path | split: "/upload/" | last -%}
 
   <img
+  {{ height }}
   sizes="(max-width: 300px) 300px,
       (max-width: 500px) 500px,
       (max-width: 700px) 700px,
@@ -14,7 +19,7 @@
           {{ site.cloudinary_url }}f_auto,q_70,w_500/{{ image_name }} 500w,
           {{ site.cloudinary_url }}f_auto,q_70,w_700/{{ image_name }} 700w,
           {{ site.cloudinary_url }}f_auto,q_70,w_1360/{{ image_name }} 1360w"
-  src="{{ site.cloudinary_url }}f_auto,q_70,w_300/{{ image_name }}" title="{{ include.title }}"
+  src="{{ site.cloudinary_url }}f_auto,q_70,w_700/{{ image_name }}" title="{{ include.title }}"
   alt="{{ include.title }}" />
 {%- else -%}
   <img src="{{ include.path }}" title="{{ include.title }}" alt="{{ include.title }}" />
