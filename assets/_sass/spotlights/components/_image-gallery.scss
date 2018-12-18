@@ -1,11 +1,11 @@
 .sc-image-gallery {
   img {
     @include breakpoint($break: 'medium', $dir: 'max-width') {
-      height: 50vh;
+      height: calc(50vh - 48px);
     }
 
     @include breakpoint('medium') {
-      height: 75vh;
+      height: calc(65vh - 64px);
     }
   }
 
