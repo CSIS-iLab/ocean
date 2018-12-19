@@ -26,11 +26,11 @@
 
   &__text {
     position: relative;
+    min-height: 40vh;
     background-color: rgba($color__white, 0.85);
 
     @include breakpoint($break: 'medium', $dir: 'max-width') {
       z-index: -1;
-      min-height: 40vh;
     }
 
     @include breakpoint('medium') {
