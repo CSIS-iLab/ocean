@@ -1,0 +1,43 @@
+<footer class="spotlight__footer">
+  {%- if page.methodology -%}
+  <section id="methodology">
+    <h2 class="spotlight__footer-heading">{{ site.data.language.methodology }}</h2>
+    <div class="spotlight__footer-text">
+      {{ page.methodology | markdownify }}
+    </div>
+  </section>
+  {%- endif -%}
+
+  {%- if page.further_reading -%}
+  <section id="further-reading">
+    {%- include further-reading.html -%}
+  </section>
+  {%- endif -%}
+
+  <section id="credits" class="spotlight__footer__credits">
+    <h2 class="spotlight__footer-heading">{{ site.data.language.credits }}</h2>
+
+
+    <h3 class="spotlight__footer-subheading">{{ site.data.language.authors }}</h3>
+    {%- for author in page.authors -%}
+    {%- assign author_info = site.authors | where: "relative_path", author | first -%}
+      <div class="authors-block">
+        {%- if author_info.headshot.size > 0 -%}
+          <img class="authors-block__photo" src="{{ author_info.headshot }}" />
+        {%- endif -%}
+        <div class="authors-block__bio spotlight__footer-text">
+          {{ author_info.content }}
+        </div>
+      </div>
+
+    {%- endfor -%}
+
+    {%- for contributor in page.contributors -%}
+      <div class="spotlight__footer-subheading">{{ contributor.label }}</div>
+      <div class="spotlight__footer-text">
+        {{ contributor.content }}
+      </div>
+    {%- endfor -%}
+
+  </section>
+</footer>

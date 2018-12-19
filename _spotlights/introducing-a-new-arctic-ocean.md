@@ -33,15 +33,17 @@ related_spotlight:
 related_commentary:
 - _posts/2018-12-10-harmonizing-enforcement-would-make-the-oceans-more-secure.md
 - _posts/2018-11-19-test-post.md
-methodology: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+methodology: |-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut tristique et egestas quis.
   Interdum velit euismod in pellentesque massa placerat. Leo a diam sollicitudin tempor
   id eu nisl nunc mi. Nascetur ridiculus mus mauris vitae ultricies. Sagittis eu volutpat.
-  \n\nTristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
+
+  Tristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
   Leo a diam sollicitudin.Massa massa ultricies mi quis hendrerit dolor magna eget
   est. Tristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
   Leo a diam sollicitudin.Massa massa ultricies mi quis hendrerit dolor magna eget
-  est. Tristique et egestas quis. Interdum velit euismod."
+  est. Tristique et egestas quis. Interdum velit euismod.
 contributors:
 - label: satellite imagery
   content: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
