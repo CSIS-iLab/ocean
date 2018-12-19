@@ -1,9 +1,9 @@
 {%- assign align_class = null -%}
+{%- assign width_class = null -%}
 {%- if include.align -%}
   {%- assign align_class = include.align | prepend: 'sc--float-' -%}
   {%- assign width_class = 'sc--float-large' -%}
 {%- endif -%}
-{%- assign width_class = null -%}
 {%- if include.width -%}
   {%- assign width_class = 'sc--max' -%}
 {%- endif -%}
@@ -31,8 +31,15 @@
 
 {%- capture group_caption -%}
   {%- for image in images -%}
+  {%- unless forloop.last -%}
     <span class="sc-image-group__caption-label {{ labels[forloop.index0] }}"> </span>
     {{ captions[forloop.index0] }} {{ credits[forloop.index0] }} &nbsp;
+  {%- endunless -%}
+  {%- if forloop.last -%}
+    {%- assign last_index = labels.size | minus: 1 -%}
+    <span class="sc-image-group__caption-label {{ labels[last_index] }}"> </span>
+    {{ captions[forloop.index0] }} {{ credits[forloop.index0] }} &nbsp;
+  {%- endif -%}
 {%- endfor -%}
 {%- endcapture -%}
 
