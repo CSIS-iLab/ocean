@@ -22,6 +22,10 @@
       width: 200px;
       padding: 1rem;
       background-color: $color__red;
+
+      &:hover {
+        background-color: $color__red-dark;
+      }
     }
   }
 
@@ -91,6 +95,7 @@
 
       @include breakpoint('large') {
         grid-area: video;
+        height: unset;
       }
     }
 
@@ -105,6 +110,10 @@
 
       &::after {
         width: calc((100vw - 100%) / 2 + var(--home-padding-offset));
+
+        @include breakpoint('xlarge') {
+          width: calc(200% + 40px);
+        }
       }
     }
 
@@ -139,6 +148,13 @@
 
     &::before {
       @include breakpoint('large') {
+        background-image: linear-gradient(to bottom, #002d72, #01172a);
+      }
+    }
+
+    &::after {
+      @include breakpoint('xlarge') {
+        left: calc(100% + 1px);
         background-image: linear-gradient(to bottom, #002d72, #01172a);
       }
     }
@@ -181,6 +197,10 @@
       @include breakpoint('large') {
         margin-right: calc(var(--home-padding-offset) * -1);
       }
+
+      @include breakpoint('xlarge') {
+        margin-right: 0;
+      }
     }
 
     &-more {
@@ -218,6 +238,9 @@
       grid-column-gap: 4rem;
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       grid-template-rows: repeat(2, auto);
+      max-width: 950px;
+      margin-right: auto;
+      margin-left: auto;
     }
 
     .home__subheading {
@@ -236,6 +259,21 @@
       margin-top: 0.5rem;
       @extend %post__view-all;
       text-align: right;
+
+      @include breakpoint('large') {
+        max-width: 950px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      &:hover {
+        color: $color__white;
+      }
+
+      &:focus {
+        background-color: transparent;
+        @extend %focus--border;
+      }
     }
   }
 }

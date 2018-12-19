@@ -25,7 +25,7 @@
       position: relative;
       z-index: 2;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, auto);
 
       &:first-of-type {
         grid-template-areas:
@@ -175,6 +175,12 @@
     .layout-home & {
       display: block;
       margin-bottom: 1rem;
+    }
+
+    .home__spotlights & {
+      @include breakpoint('xlarge') {
+        max-width: 422px;
+      }
     }
 
     img {
