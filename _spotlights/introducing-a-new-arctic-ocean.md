@@ -71,15 +71,17 @@ image_groups:
     caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
     credit: National Geographic
     mode: landscape
-methodology: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+methodology: |-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut tristique et egestas quis.
   Interdum velit euismod in pellentesque massa placerat. Leo a diam sollicitudin tempor
   id eu nisl nunc mi. Nascetur ridiculus mus mauris vitae ultricies. Sagittis eu volutpat.
-  \n\nTristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
+
+  Tristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
   Leo a diam sollicitudin.Massa massa ultricies mi quis hendrerit dolor magna eget
   est. Tristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
   Leo a diam sollicitudin.Massa massa ultricies mi quis hendrerit dolor magna eget
-  est. Tristique et egestas quis. Interdum velit euismod."
+  est. Tristique et egestas quis. Interdum velit euismod.
 contributors:
 - label: satellite imagery
   content: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -95,6 +97,18 @@ contributors:
 <h2 class="test-header">Section one</h2>
 {% include sc-tooltip.html title="Lorem"  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." %} _ipsum_ dolor sit amet, **consectetur** adipiscing elit, sed do [eiusmod tempor](https://google.com) incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. {% include sc-tooltip.html title="Duis"  description=" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." %} aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+{% background_text_scroll image="https://aerospace.csis.org/wp-content/uploads/2018/04/ChinaLongMarchLaunch_cropped.jpg" %}
+
+<div><strong>Content of the background_text_scroll goes here.</strong> This should be able to process HTML.</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+{% endbackground_text_scroll %}
+
+<div class="spotlight-component sc--float-right sc--float-small">This is a float small component.</div>
 
 <p>!Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -136,6 +150,16 @@ contributors:
   credit="Likely Getty"
   width="full"
   -%}
+  
+{% background_text_scroll image="https://aerospace.csis.org/wp-content/uploads/2018/04/ChinaLongMarchLaunch_cropped.jpg" %}
+
+<div><strong>Content of the background_text_scroll goes here.</strong> This should be able to process HTML.</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+{% endbackground_text_scroll %}
+
+<h3 class="include-toc">Subsection One</h3>
+{% include sc-statistic.html align='right' number='33%' post='and this is the text after.' %}
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 

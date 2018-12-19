@@ -3,8 +3,8 @@ module Jekyll
 
     def initialize(tag_name, text, tokens)
        super
-       a, @title, c = text.match(/(title=\")([\w|\s]*)(")/i).captures
-       a, @align, c = text.match(/(align=\")([\w|\s]*)(")/i).captures
+       @title = text.match(/(title=\")([\w|\s]*)(")/i).captures[1]
+       @align = text.match(/(align=\")([\w|\s]*)(")/i).captures[1]
      end
 
     def render(context)
