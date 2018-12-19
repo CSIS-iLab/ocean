@@ -17,7 +17,8 @@ keywords:
 - legal
 further_reading: ''
 related_spotlight: []
-related_commentary: []
+related_commentary:
+- _posts/2018-12-10-making-the-oceans-more-secure.md
 is_featured: false
 image: ''
 image_caption: ''
