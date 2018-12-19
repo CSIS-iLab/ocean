@@ -2,6 +2,7 @@
 
 @import 'abstracts/abstracts';
 
+@import 'vendors/flickity';
 @import 'vendors/tippy';
 
 @import 'base/helpers-spotlights';
@@ -9,5 +10,8 @@
 @import 'spotlights/components/background-text-scroll';
 @import 'spotlights/components/explainer';
 @import 'spotlights/components/footer';
+@import 'spotlights/components/image-gallery';
+@import 'spotlights/components/image-group';
+@import 'spotlights/components/single-image';
 @import 'spotlights/components/spotlights-components';
 @import 'spotlights/components/tooltip';

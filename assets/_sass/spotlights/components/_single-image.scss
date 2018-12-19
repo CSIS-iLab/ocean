@@ -1,0 +1,19 @@
+.sc-single-image {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .img-caption {
+    margin: auto;
+    @extend %post-content__caption-desc;
+
+    &-label {
+      @extend %post-content__caption-label;
+    }
+
+    &__source {
+      @extend %post-content__caption-desc--sm;
+    }
+  }
+}
