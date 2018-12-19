@@ -1,5 +1,5 @@
 ---
-title: Rare Bipartisan Agreement on Combating Illegal Fishing
+title: Taking a Bi-Partisan Approach to Combatting Illegal Fishing
 date: 2018-12-10 14:34:57 +0000
 excerpt: When most Americans think about seafood, they don’t associate this healthy
   source of protein with global conflict.  But in the future, access to seafood may
@@ -8,7 +8,9 @@ excerpt: When most Americans think about seafood, they don’t associate this he
 authors:
 - _authors/monica-medina.md
 - _authors/carolyn-weis.md
-lede: ''
+lede: Illicit fishing poses a global challenge to sustainability and security.  Harmonizing
+  the U.S. Government’s broad legal and authorities and enforcement capabilities is
+  a needed step to effectively counter this threat.
 keywords:
 - IUU
 - fishing
