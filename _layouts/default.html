@@ -7,7 +7,12 @@
 
     {%- include header.html -%}
 
-    <main class="page-content wrapper" aria-label="Content">
+    {%- assign site_wrapper_class = 'wrapper' -%}
+    {%- if page.layout == 'home' -%}
+    {% assign site_wrapper_class = 'wrapper--home' %}
+    {%- endif -%}
+
+    <main class="page-content {{ site_wrapper_class }}" aria-label="Content">
       {{ content }}
     </main>
 

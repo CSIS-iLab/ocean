@@ -21,8 +21,8 @@ further_reading: |-
   * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   * Ut tristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
   * Leo a diam sollicitudin tempor id eu nisl nunc mi. Nascetur ridiculus mus mauris vitae ultricies. Sagittis eu volutpat.
-is_featured: false
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/Screen%20Shot%202018-11-28%20at%2011.43.31%20AM.png
+is_featured: true
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1544801874/ocean/mathieu-perrier-722789-unsplash.jpg
 image_caption: image caption
 image_source: image source
 related_spotlight:
@@ -34,43 +34,43 @@ related_commentary:
 image_galleries:
 image_groups:
   right_three:
-  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg"
-    caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    credit: Getty
-  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg"
-    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
-    credit:
-  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg"
-    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
-    credit: National Geographic
+    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg'
+      caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      credit: Getty
+    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg'
+      caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
+      ? credit
+    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg'
+      caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
+      credit: National Geographic
   left_two:
-  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg"
-    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
-    credit: Getty
-  - url: "https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg"
-    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
-    credit: National Geographic
+    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg'
+      caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
+      credit: Getty
+    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg'
+      caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
+      credit: National Geographic
   max_three:
-  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg"
-    caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    credit: Getty
-  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg"
-    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
-    credit:
-    mode: portrait
-  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg"
-    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
-    credit: National Geographic
-    mode: landscape
+    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg'
+      caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      credit: Getty
+    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg'
+      caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
+      ? credit
+      mode: portrait
+    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg'
+      caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
+      credit: National Geographic
+      mode: landscape
   max_two:
-  - url: "https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg"
-    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
-    credit: Getty
-    mode: portrait
-  - url: "https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg"
-    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
-    credit: National Geographic
-    mode: landscape
+    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg'
+      caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
+      credit: Getty
+      mode: portrait
+    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg'
+      caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
+      credit: National Geographic
+      mode: landscape
 methodology: |-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut tristique et egestas quis.
@@ -150,7 +150,7 @@ contributors:
   credit="Likely Getty"
   width="full"
   -%}
-  
+
 {% background_text_scroll image="https://aerospace.csis.org/wp-content/uploads/2018/04/ChinaLongMarchLaunch_cropped.jpg" %}
 
 <div><strong>Content of the background_text_scroll goes here.</strong> This should be able to process HTML.</div>
@@ -189,8 +189,6 @@ contributors:
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 {%- include sc-image-group.html  height="500px" images=page.image_groups.max_two width="max" -%}
-
-
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 

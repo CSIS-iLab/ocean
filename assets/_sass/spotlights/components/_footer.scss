@@ -14,14 +14,14 @@
     justify-content: center;
 
     @include breakpoint($break: 'medium', $dir: 'max-width') {
-      flex-wrap: wrap;
       flex-direction: column;
+      flex-wrap: wrap;
     }
 
     &__photo {
-      border-radius: 50%;
       width: 80px;
       height: 80px;
+      border-radius: 50%;
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         margin: 0 auto 0.5rem;
@@ -46,8 +46,8 @@
   .spotlight__footer-subheading {
     @extend %post-block__type--related;
     margin-bottom: 0.5rem;
-    text-transform: uppercase;
     color: $color__black;
+    text-transform: uppercase;
   }
 
   .spotlight__footer-text {

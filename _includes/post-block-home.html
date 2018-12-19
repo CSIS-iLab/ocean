@@ -1,0 +1,27 @@
+<article
+  class="post-block"
+  role="article"
+  data-content-type="{{ post.collection | slugify }}"
+>
+  {% if post.image.size > 0 %}
+  <a href="{{ post.url | relative_url }}" class="post-block__img">
+    <img
+      src="{{ post.image | relative_url }}"
+      alt="{{ post.title | escape }}"
+      title="{{ post.title | escape }}"
+    />
+  </a>
+  {% endif %}
+
+  <header class="post-block__header">
+    <h3 class="post-block__title">
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h3>
+  </header>
+  <section class="post-block__content">
+    <p>{{ post.excerpt }}</p>
+  </section>
+  <footer class="post-block__footer">
+    {%- include date.html -%} {%- include authors-list.html -%}
+  </footer>
+</article>

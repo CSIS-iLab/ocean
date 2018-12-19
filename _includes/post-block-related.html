@@ -1,0 +1,8 @@
+<article class="{{ include.class }}" role="article">
+  <header class="{{ include.class }}__header">
+    <h3 class="{{ include.class }}__title">
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h3>
+    {%- include date.html -%}
+  </header>
+</article>

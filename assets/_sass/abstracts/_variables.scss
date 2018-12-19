@@ -84,13 +84,11 @@ $font__line-height-pre: 1.6;
 $sizes__default: ('small', 'medium', 'large', 'xlarge');
 
 $breakpoints: (
-  'small': 0,
-  // 0
-    'medium': 37.5em,
-  // 600px
-    'large': 56.25em,
-  // 900px
-    'xlarge': 80em// 1280px
+  'small': 0, // 0
+  'medium': 37.5em, // 600px
+  'large': 56.25em, // 900px
+  'large-2': 68.75em, // 1050px
+  'xlarge': 80em// 1280px
 );
 
 // prettier-ignore
@@ -109,6 +107,11 @@ $size__container-padding: (
   'medium': 20px,
   'large': 32px,
   'xlarge': (64px, 32px)
+);
+
+$size__container-padding--home: (
+  'small': 20px,
+  'large': 50px
 );
 
 // prettier-ignore
