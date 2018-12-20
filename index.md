@@ -1,5 +1,6 @@
 ---
 layout: home
+wrapper: home
 featured_spotlights:
   - _spotlights/introducing-a-new-arctic-ocean.md
   - _spotlights/south-china-sea.md

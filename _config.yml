@@ -26,30 +26,31 @@ collections:
     output: true
 
 defaults:
-- scope:
-    path: ''
-    type: 'posts'
-  values:
-    layout: post
-    permalink: "/commentary/:slug/"
-    content_type: Commentary
-- scope:
-    path: ''
-    type: 'spotlights'
-  values:
-    layout: spotlight
-    permalink: "/spotlights/:slug/"
-    content_type: Spotlights
-- scope:
-    path: ''
-    type: 'authors'
-  values:
-    layout: search
-    is_search: true
-    permalink: "/authors/:slug/"
-    post_list_collection: authors
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: post
+      permalink: '/commentary/:slug/'
+      content_type: Commentary
+  - scope:
+      path: ''
+      type: 'spotlights'
+    values:
+      layout: spotlight
+      wrapper: spotlight
+      permalink: '/spotlights/:slug/'
+      content_type: Spotlights
+  - scope:
+      path: ''
+      type: 'authors'
+    values:
+      layout: search
+      is_search: true
+      permalink: '/authors/:slug/'
+      post_list_collection: authors
 
-  # Build settings
+    # Build settings
 markdown: kramdown
 
 plugins:
