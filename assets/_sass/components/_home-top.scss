@@ -1,4 +1,12 @@
 .layout-home {
+  .home__hero {
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 100vw;
+    margin: 0 -50vw;
+  }
+  
   #px-render {
     width: 100%;
     height: 100%;
@@ -89,6 +97,7 @@
   #protect-svg {
     z-index: 5;
     width: 100%;
+    font-family: $font__freight;
     font-size: 120px;
     text-align: center;
   }
@@ -133,7 +142,7 @@
       padding-bottom: 10px;
       overflow: hidden;
       color: $color__white;
-      font-family: sans-serif;
+      font-family: $font__proxima;
       text-align: center;
       transition: opacity 1s;
     }
