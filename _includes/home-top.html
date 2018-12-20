@@ -1,0 +1,83 @@
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+
+<div id="hero_top">
+  <div id="protect-svg">
+    <svg height="0" xmlns="http://www.w3.org/2000/svg">
+      <div id="protect">
+        <span>P</span>
+        <span>r</span>
+        <span>o</span>
+        <span>t</span>
+        <span>e</span>
+        <span>c</span>
+        <span>t</span>
+      </div>
+      <defs>
+        <filter id="blur-filter" x="0" y="0">
+          <feGaussianBlur
+            id="gaussian-blur"
+            in="SourceGraphic"
+            stdDeviation="10"
+          />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+
+  <div id="sky">
+    <div id="sky_color"></div>
+    <div id="clouds">
+      <div id="clouds_1"></div>
+      <div id="clouds_2"></div>
+      <div id="clouds_3"></div>
+    </div>
+  </div>
+
+  <div id="home-scroll-container">
+    <div class="scroll-text">SCROLL</div>
+    <span class="scroll-line"></span>
+  </div>
+  <div id="water" data-per="0" data-wave="0"></div>
+</div>
+<div id="hero_bottom">
+  <div id="preserve-svg">
+    <svg width="538" height="190" viewBox="0 0 600 200">
+      <defs>
+        <filter id="turb">
+          <feTurbulence
+            id="turbwave"
+            type="fractalNoise"
+            baseFrequency="0.03"
+            numOctaves="2"
+            result="turbulence_3"
+            data-filterId="3"
+          />
+          <feDisplacementMap
+            id="diswave"
+            xChannelSelector="R"
+            yChannelSelector="G"
+            in="SourceGraphic"
+            in2="turbulence_3"
+            scale="40"
+          />
+        </filter>
+      </defs>
+      <div id="preserve">Preserve</div>
+    </svg>
+  </div>
+
+  <div id="wave" data-per="0"></div>
+  <div id="underwater-container">
+    <div class="ray-container">
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+    </div>
+  </div>
+</div>
+<div id="home_bottom"></div>

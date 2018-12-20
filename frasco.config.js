@@ -61,6 +61,7 @@ module.exports = {
       'bundle.js',
       'spotlights.js',
       'archives.js',
+      'home.js',
       'spotlights/arctic/arctic.js'
     ]
   },
@@ -82,6 +83,10 @@ module.exports = {
           ? 'spotlights/[name].js'
           : '[name].js'
       }
+    },
+    externals: {
+      'pixi.js': 'PIXI',
+      'pixi-projection': 'pixi-projection'
     },
     module: {
       rules: []
