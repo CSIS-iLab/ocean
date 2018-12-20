@@ -62,7 +62,6 @@
     @include breakpoint('medium') {
       grid-column-gap: 2rem;
       grid-template-columns: $body-width 190px;
-      grid-template-rows: 1fr 2fr;
       max-height: min-content;
       padding-right: 0;
     }
