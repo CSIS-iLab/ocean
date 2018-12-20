@@ -9,6 +9,10 @@ const Header = () => {
     return
   }
 
+  if (scrollPos > header_height) {
+    minimalHeader()
+  }
+
   window.addEventListener('scroll', function() {
     if (document.documentElement.classList.contains('js-no-scroll')) {
       return false
@@ -21,14 +25,17 @@ const Header = () => {
     }
 
     if (scrollPos > header_height) {
-      offsetScroll = false
-
-      header.classList.add(minimal_class)
+      minimalHeader()
     } else {
       offsetScroll = true
       header.classList.remove(minimal_class)
     }
   })
+
+  function minimalHeader() {
+    offsetScroll = false
+    header.classList.add(minimal_class)
+  }
 }
 
 export default Header
