@@ -5,7 +5,3 @@ $color__default-accent--hover: rgba($color__red, 0.8);
   --accent-color: #{$color__default-accent};
   --accent-color--hover: #{$color__default-accent--hover};
 }
-
-body {
-  background-color: #f1f1f1;
-}

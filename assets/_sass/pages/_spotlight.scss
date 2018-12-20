@@ -12,6 +12,7 @@
   &__content {
     @include structure($size__spotlight-container-width, 'width');
     margin: 0 auto;
+    padding-bottom: 3rem;
   }
 
   &__content-body {
@@ -22,5 +23,12 @@
         margin-left: auto;
       }
     }
+  }
+
+  &__footer {
+    margin-top: 3rem;
+    padding: 3rem 0;
+    background-color: $color__ltgray-lighter;
+    @include full-width-background($color__ltgray-lighter);
   }
 }
