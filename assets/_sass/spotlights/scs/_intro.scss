@@ -7,18 +7,12 @@
   margin: 0 -50vw;
 
   &-bg {
-    position: sticky;
-    top: 0;
-    height: 40vh;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
-    @include breakpoint('medium') {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
   }
 
   &-video,
@@ -30,7 +24,6 @@
     opacity: 0;
     transition: all 0.5s linear;
 
-
     &.is-active {
       visibility: visible;
       opacity: 1;
@@ -41,6 +34,18 @@
     position: absolute;
     top: 0;
     background-color: $color__test;
+
+    &.is-active {
+      position: fixed;
+    }
+
+    &-player {
+      object-fit: cover;
+      width: 100vw;
+      height: 100%;
+      object-position: center top;
+      transform: translate3d(0, 0, 0);
+    }
   }
 
   &-map {
@@ -51,14 +56,20 @@
     background-image: url('https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
 
   &-prose {
     position: relative;
-    width: 50%;
+    width: 100%;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 1px 0;
+    padding: 1px 1rem;
+
+    @include breakpoint('medium') {
+      width: 50%;
+      padding: 1px 0;
+    }
   }
 
   &-trigger {
