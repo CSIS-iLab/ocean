@@ -40,12 +40,25 @@ prefix: scs
 
  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-
- {% include_relative scs/timeline.html %}
+ {% include_relative scs/timeline.html
+    start_date="Jan 2013"
+    end_date="Nov 2018"
+    image="https://graphics.thomsonreuters.com/testfiles/xinjiang-camp-final/images/sprite2.jpg"
+    height=404
+    width=1200
+    steps=34
+    %}
 
   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
- {% include_relative scs/timeline.html %}
+ {% include_relative scs/timeline.html
+    start_date="Aug 2011"
+    end_date="Jan 2013"
+    image="https://res.cloudinary.com/csisideaslab/image/upload/v1545327763/ocean/yty2018_sprites.jpg"
+    height=540.96
+    width=700
+    steps=9
+    %}
 
  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
  {% _explainer title="Title here" align="right" %}

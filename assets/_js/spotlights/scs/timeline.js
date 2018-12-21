@@ -5,12 +5,20 @@ const Timeline = () => {
   let intervals = []
 
   timelines.forEach(timeline => {
-    let progressPercent,
-      count,
-      top,
-      interval,
-      duration = 10000,
-      rate = 12
+    let interval,
+      position = 0
+
+    let graphicHeight = timeline.dataset.height
+    let graphicWidth = timeline.dataset.width
+    let graphicSteps = parseInt(timeline.dataset.steps, 10)
+
+    let container = timeline.querySelector('.scs-timeline__scroll-container')
+
+    let graphic = container.querySelector(
+      '.scs-timeline__scroll-container__graphic'
+    )
+
+    container.style.paddingTop = `${(graphicHeight / graphicWidth) * 100.0}%`
 
     let tickContainer = timeline.querySelector(
       '.scs-timeline__indicator__progress-ticks'
@@ -20,10 +28,66 @@ const Timeline = () => {
       '.scs-timeline__indicator__progress-marker'
     )
 
-    let graphic = timeline.querySelector('.scs-timeline__graphic img')
+    let startLabel = timeline.querySelector('.startDate')
+    let endLabel = timeline.querySelector('.endDate')
 
-    Array.from(Array(rate * 2)).forEach(i => {
-      tickContainer.innerHTML += `<div class="tick" style="flex-basis: calc(100% / ${rate})"> </div>`
+    let startDate = new Date(startLabel.innerHTML)
+    let endDate = new Date(endLabel.innerHTML)
+
+    let labelContainer = timeline.querySelector(
+      '.scs-timeline__indicator__progress-labels'
+    )
+
+    let monthDiff = endDate.getMonth() - startDate.getMonth()
+    let yearDiff = endDate.getYear() - startDate.getYear()
+
+    let diff = yearDiff * 12 + monthDiff
+
+    let yearWidth = Math.ceil(100 / diff)
+
+    let partialYearWidth = Math.ceil(
+      ((endDate.getMonth() + 1) / 12) * 10 * yearWidth
+    )
+    Array.from(Array(diff)).forEach((x, i) => {
+      let monthNum = Math.abs(startDate.getMonth() + i),
+        newYear = i % 12 === 0,
+        monthDate,
+        yearNum,
+        label
+
+      if (newYear) {
+        yearNum = Math.abs(startDate.getFullYear() + (i % 12))
+      }
+
+      if (yearNum) {
+        monthDate = new Date(yearNum, monthNum, 1)
+
+        label = monthDate.toLocaleDateString('en-US', {
+          year: 'numeric'
+        })
+
+        if (i === yearDiff * 12) {
+          labelContainer.innerHTML += `<div class="label" style="flex-basis:${partialYearWidth}%">${label}</div>`
+
+          tickContainer.innerHTML += `<div class="tick" style="flex-basis:${partialYearWidth}%"> </div>`
+        } else if (startDate.getMonth() !== 0 && i === 0) {
+          labelContainer.innerHTML += `<div class="label" style="flex-basis:${partialYearWidth}%"> </div>`
+
+          tickContainer.innerHTML += `<div class="tick" style="flex-basis:${partialYearWidth}%"> </div>`
+        } else if (startDate.getMonth() === 0 && i === 0) {
+          labelContainer.innerHTML += `<div class="label" style="flex-basis: ${yearWidth *
+            12}%"></div>`
+
+          tickContainer.innerHTML += `<div class="tick" style="flex-basis: ${yearWidth *
+            12}%"> </div>`
+        } else {
+          labelContainer.innerHTML += `<div class="label" style="flex-basis: ${yearWidth *
+            12}%">${label}</div>`
+
+          tickContainer.innerHTML += `<div class="tick" style="flex-basis: ${yearWidth *
+            12}%"> </div>`
+        }
+      }
     })
 
     let controller = new ScrollMagic.Controller()
@@ -33,42 +97,33 @@ const Timeline = () => {
       triggerElement: '.scs-timeline'
     })
       .addTo(controller)
-      .on('enter', e => start(duration))
+      .on('enter', e => start())
 
-    timeline
-      .querySelector('.scs-timeline button')
-      .addEventListener('click', () => {
-        start(duration)
-      })
+    const update = () => {
+      position++
 
-    const start = i => {
-      top = 0
-      count = 1
-      progressPercent = 0
+      if (graphicSteps === position) {
+        clearInterval(interval)
+        return
+      }
 
-      progressDisplay.style.left = `calc(${progressPercent}% - 0.3333rem)`
-      graphic.style.top = `${top}px`
+      let positionPercentage = (100.0 / (graphicSteps - 1)) * position
 
+      graphic.style.backgroundPositionY = `${positionPercentage}%`
+
+      progressDisplay.style.width = `${positionPercentage}%`
+    }
+
+    const start = () => {
+      position = 0
       intervals.forEach(clearInterval)
-      interval = setInterval(() => update(i), duration / rate)
+      interval = setInterval(update, 750)
       intervals.push(interval)
     }
 
-    const update = i => {
-      progressPercent += i / rate / 100
-
-      progressPercent = Math.min(progressPercent, 100)
-
-      let imageHeight = -1 * graphic.offsetHeight
-
-      if (count++ === rate + 1 || imageHeight > top) {
-        clearInterval(interval)
-      } else {
-        top -= 404
-        graphic.style.top = `${top}px`
-      }
-      progressDisplay.style.left = `calc(${progressPercent}% - 0.3333rem)`
-    }
+    timeline
+      .querySelector('.scs-timeline button')
+      .addEventListener('click', start)
   })
 }
 
