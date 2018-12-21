@@ -19,7 +19,7 @@ vTl
   .to('#clouds_1', 5, { y: '20' }, 0)
   .to('#clouds_2', 5, { y: '15' }, '-=4')
 vT2.to('#turbwave', 4, { attr: { baseFrequency: 0.0 } }, 0)
-$(window).on('load', function() {
+window.addEventListener('load', function() {
   let ctrl = new ScrollMagic.Controller({
     globalSceneOptions: {}
   })
