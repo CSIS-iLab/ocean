@@ -18,10 +18,6 @@ const Intro = () => {
     src = videoPlayer.getAttribute('data-src-mobile')
   }
 
-  // videoPlayerSource.src = src
-  // videoPlayer.load()
-  // videoPlayer.play()
-
   setTimeout(() => {
     videoPlayerSource.src = src
     videoPlayer.load()
