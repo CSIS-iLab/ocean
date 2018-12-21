@@ -61,6 +61,7 @@ module.exports = {
       'bundle.js',
       'spotlights.js',
       'archives.js',
+      'home.js',
       'spotlights/arctic/arctic.js'
     ]
   },
@@ -76,6 +77,7 @@ module.exports = {
 
   webpack: {
     mode: 'production',
+    // devtool: 'source-map',
     output: {
       filename: chunkData => {
         return chunkData.chunk.entryModule._identifier.includes('spotlights/')
@@ -83,8 +85,26 @@ module.exports = {
           : '[name].js'
       }
     },
+    externals: {
+      'pixi.js': 'PIXI',
+      ScrollMagic: 'ScrollMagic',
+      TimelineMax: 'TimelineMax',
+      TweenMax: 'TweenMax'
+    },
     module: {
       rules: []
+    },
+    resolve: {
+      modules: ['node_modules'],
+      alias: {
+        TweenLite: 'gsap/src/minified/TweenLite.min.js',
+        TweenMax: 'gsap/src/minified/TweenMax.min.js',
+        TimelineLite: 'gsap/src/minified/TimelineLite.min.js',
+        TimelineMax: 'gsap/src/minified/TimelineMax.min.js',
+        ScrollMagic: 'scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+        'animation.gsap':
+          'scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js'
+      }
     }
   }
 }

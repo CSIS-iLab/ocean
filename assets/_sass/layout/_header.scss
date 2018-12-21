@@ -7,7 +7,7 @@
 
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   width: 100vw;
   @include structure($size__header-height, 'height', ('small', 'large'));
   // prettier-ignore

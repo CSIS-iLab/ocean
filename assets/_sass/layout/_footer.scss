@@ -14,10 +14,15 @@
     display: block;
     width: 100vw;
     height: var(--footer-bg-min-height);
+    max-height: 1000px;
     background-color: $color__dkblue-darker;
     @include bg-images('footer');
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include breakpoint('large') {
+      max-height: 800px;
+    }
   }
 
   .wrapper {

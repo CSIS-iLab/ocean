@@ -72,7 +72,10 @@
     "algoliasearch": "^3.30.0",
     "algoliasearch-helper": "^2.26.1",
     "flickity": "^2.1.2",
+    "gsap": "^2.0.2",
     "instantsearch.js": "^2.10.4",
+    "pixi.js": "^4.8.4",
+    "scrollmagic": "^2.0.6",
     "stylelint-config-sass-guidelines": "^5.2.0",
     "stylelint-scss": "^3.3.2",
     "tippy.js": "^3.3.0"
