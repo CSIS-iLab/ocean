@@ -65,6 +65,10 @@
     min-height: 100vh;
     margin: 0 auto;
     padding: 1px 1rem;
+    color: $color__white;
+    text-shadow: 1px 1px 6px rgba($color__black, 0.6);
+    @include font-size(24px);
+
 
     @include breakpoint('medium') {
       width: 50%;
