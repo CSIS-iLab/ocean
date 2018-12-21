@@ -3,7 +3,10 @@ const TableOfContents = () => {
   const include_toc = '.include-toc'
   const toc_container = document.getElementById('toc')
   const headings = document.querySelectorAll(
-    '.post__content h2:not(' + exclude_toc + '), .post__content ' + include_toc
+    '.spotlight__content h2:not(' +
+      exclude_toc +
+      '), .spotlight__content ' +
+      include_toc
   )
   const current_section = document.querySelector('.site-header__section')
   const title = current_section.innerHTML

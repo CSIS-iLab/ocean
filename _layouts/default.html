@@ -8,8 +8,8 @@
     {%- include header.html -%}
 
     {%- assign site_wrapper_class = 'wrapper' -%}
-    {%- if page.layout == 'home' -%}
-    {% assign site_wrapper_class = 'wrapper--home' %}
+    {%- if page.wrapper -%}
+    {% assign site_wrapper_class = page.wrapper | prepend: 'wrapper--' %}
     {%- endif -%}
 
     <main class="page-content {{ site_wrapper_class }}" aria-label="Content">
