@@ -91,7 +91,8 @@ module.exports = {
       'pixi.js': 'PIXI',
       ScrollMagic: 'ScrollMagic',
       TimelineMax: 'TimelineMax',
-      TweenMax: 'TweenMax'
+      TweenMax: 'TweenMax',
+      Highcharts: 'Highcharts'
     },
     module: {
       rules: []
