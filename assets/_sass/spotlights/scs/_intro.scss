@@ -1,0 +1,84 @@
+#{$spotlight}__intro {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  min-height: calc(100vh - 4rem);
+  margin: 0 -50vw;
+
+  &-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  &-video,
+  &-map {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+
+    &.is-active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &-video {
+    position: absolute;
+    top: 0;
+    background-color: $color__test;
+
+    &.is-active {
+      position: fixed;
+    }
+
+    &-player {
+      object-fit: cover;
+      width: 100vw;
+      height: 100%;
+      object-position: center top;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &-map {
+    position: relative;
+    top: calc(100% - 100vh);
+    height: 100vh;
+    background-color: var(--accent-color);
+    background-image: url('https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  &-prose {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1px 1rem;
+    color: $color__white;
+    text-shadow: 1px 1px 6px rgba($color__black, 0.6);
+    @include font-size(24px);
+
+
+    @include breakpoint('medium') {
+      width: 50%;
+      padding: 1px 0;
+    }
+  }
+
+  &-trigger {
+    $header-height: map-get($size__header-height, 'small');
+    height: 50vh;
+    margin-top: calc(50vh - #{$header-height});
+  }
+}

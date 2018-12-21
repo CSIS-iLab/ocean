@@ -23,6 +23,7 @@ gulp.task('watch', function() {
         '!' + config.jekyll.dest + '/**/*',
         '_config*.yml',
         '*.html',
+        './**/*.html',
         './**/*.md',
         './**/*.markdown',
         '*.json',

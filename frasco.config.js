@@ -62,7 +62,8 @@ module.exports = {
       'spotlights.js',
       'archives.js',
       'home.js',
-      'spotlights/arctic/arctic.js'
+      'spotlights/arctic/arctic.js',
+      'spotlights/scs/scs.js'
     ]
   },
 
