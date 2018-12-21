@@ -1,8 +1,10 @@
 ---
 title: Illuminating the South China Sea’s Dark Fishing Fleets
 date: 2018-11-13 15:56:34 +0000
-js_files: []
-css_files: []
+js_files:
+  - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
+  - scs
+css_files: scs
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '
 authors:
@@ -67,15 +69,17 @@ image_groups:
       mode: landscape
 ---
 
-*Scrollytelling Intro*
-The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade.  With China’s expansion and militarization of its holdings in the disputed Spratly Islands in late 2013, tensions are brewing.
+{% include_relative scs/intro.html %}
+
+_Scrollytelling Intro_
+The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade. With China’s expansion and militarization of its holdings in the disputed Spratly Islands in late 2013, tensions are brewing.
 
 The South China Sea is home to two sets of disputes.
 
 One is over territory. China, Taiwan, Brunei, Malaysia, the Philippines, and Vietnam are making claims to various islands, rocks, and reefs around the sea.
 
-The other, involves those parties as well as Indonesia, and the sea itself. Southeast Asian claimants are asserting rights to overlapping maritime zones under international law, while China and Taiwan demand ambiguous rights throughout the entire sea. 
-*End*
+The other, involves those parties as well as Indonesia, and the sea itself. Southeast Asian claimants are asserting rights to overlapping maritime zones under international law, while China and Taiwan demand ambiguous rights throughout the entire sea.
+_End_
 
 The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse.
 
@@ -83,7 +87,7 @@ The security implications of these disputes receive significant attention, and t
 
 The South China Sea accounted for 12 percent of global fish catch in 2015, and more than half of the fishing vessels in the world are estimated to operate there. Its fisheries officially employ around 3.7 million people and unofficially many more. But the South China Sea has been dangerously overfished. Total stocks have been depleted by 70-95 percent since the 1950s, and catch rates have declined by 66-75 percent over the last 20 years.
 
-Coral reefs, on which much of these fish depend, have been declining by 16 percent per decade. And that decline rapidly accelerated over the last five years in which giant clam harvesting, dredging, and artificial island building have severely damaged or destroyed over 40,000 acres, or about 160 square kilometers, of reefs. 
+Coral reefs, on which much of these fish depend, have been declining by 16 percent per decade. And that decline rapidly accelerated over the last five years in which giant clam harvesting, dredging, and artificial island building have severely damaged or destroyed over 40,000 acres, or about 160 square kilometers, of reefs.
 
 {% include sc-image-group.html  height="65vh" images=page.image_groups.max_three width="max" %}
 
@@ -101,6 +105,7 @@ To provide a clearer picture of the size and activities of these important playe
 The results tell a worrying story about the scale of unseen fishing activity in the region, massive overcapacity in the Spratlys, especially on the Chinese side, and the stunning scale and expense of the maritime militia.
 
 ## Tracking the Boats
+
 Conducting accurate stock assessments and managing fisheries in the South China Sea is all but impossible because of the overlapping territorial and maritime disputes, which prevent effective enforcement of domestic fishery laws or cooperation among regional states. In fact, some states actively encourage and even subsidize fishing in disputed waters to assert their claims.
 
 Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. For a region that sees so much reported fishing, many parts of the South China Sea, and the Spratly Islands, in particular, are surprisingly devoid of {% include sc-tooltip.html title="Automatic Identification System (AIS)" description="All oceangoing vessels over 300 tons are required to carry AIS transceivers which regularly broadcast identifying information including heading, speed, and other details." %} signals. Much of this lack of information is due to the small size and age of many fishing vessels, especially in the Philippines and Vietnam. But there are many vessels operating in the Spratlys that have transceivers and should be using them but choose not to so that they can hide their activities. This means that it is necessary to turn to other technologies for a better idea of the size and activities of fishing fleets in the South China Sea.
@@ -122,17 +127,17 @@ VIIRS data shows a significant amount of fishing in the South China Sea year-rou
 
 For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurate count of vessels at a given time and location. Anything metallic, like the hull and superstructure of most modern fishing vessels as small as six meters, can be readily identified by satellite-based SAR. Again, the disconnect between the level of activity and the number of AIS signals being broadcast was staggering. For instance, SAR data collected on eight occasions between September 30 and October 5 provided 264 vessel detections, only 8 of which were broadcasting AIS.
 
-*Scrollytelling Starts*
+_Scrollytelling Starts_
 
-SAR tell much the same story as VIIRS, indicating a significant amount of fishing activity in and around the Spratly Islands. Taken together, they also begin to show the patterns of behavior of fishing vessels in the area. For instance, SAR and VIIRS data suggest that very little activity occurs around those reefs in the southeastern portion of the Spratlys occupied by Malaysia. 
+SAR tell much the same story as VIIRS, indicating a significant amount of fishing activity in and around the Spratly Islands. Taken together, they also begin to show the patterns of behavior of fishing vessels in the area. For instance, SAR and VIIRS data suggest that very little activity occurs around those reefs in the southeastern portion of the Spratlys occupied by Malaysia.
 
 They also show little activity in the unoccupied reefs on the eastern side of the Spratlys, which are near the coast of Palawan in the Philippines. This does not say much about the Filipino fishing fleet that operates in those waters because most of its vessels are small wooden trimarans, called bancas, which would not appear in either VIIRS or SAR. But the absence of returns suggests that other nations’ vessels, which are generally larger and more modern, are not operating around those reefs in large numbers.
 
-On the other hand, SAR and VIIRS indicate a significant amount of activity around the Vietnamese-occupied reefs in the southwest and central Spratlys, as well as in the area to the northeast where both Vietnam and the Philippines occupy numerous features. 
+On the other hand, SAR and VIIRS indicate a significant amount of activity around the Vietnamese-occupied reefs in the southwest and central Spratlys, as well as in the area to the northeast where both Vietnam and the Philippines occupy numerous features.
 
-The biggest story, however, is the massive presence of vessels in and around China’s outposts, particularly its two largest at Subi and Mischief Reefs. Two passes over Subi in August revealed 117 SAR returns within the reef’s lagoon and another 61 in waters nearby, including around Philippine-occupied Thitu Island just over 12 nautical miles away. Two passes in October showed an even larger but more dispersed number of returns, with 19 in the lagoon and 190 in waters nearby. 
+The biggest story, however, is the massive presence of vessels in and around China’s outposts, particularly its two largest at Subi and Mischief Reefs. Two passes over Subi in August revealed 117 SAR returns within the reef’s lagoon and another 61 in waters nearby, including around Philippine-occupied Thitu Island just over 12 nautical miles away. Two passes in October showed an even larger but more dispersed number of returns, with 19 in the lagoon and 190 in waters nearby.
 
-*End*
+_End_
 
 ## Fishers and Those Not Fishing
 
@@ -149,14 +154,14 @@ Just as SAR suggests, most of these congregate in the lagoons at Subi and Mischi
 
 **Mischief/Subi Chart here**
 
-An analysis of historical imagery shows that the numbers of Chinese ships at Subi and Mischief were much higher in 2018 than in 2017. In August, which appears to have been the busiest month, there were about 300 ships anchored at the two reefs at any given time. Over 90 percent of these were fishing vessels with an average length of 51 meters and a projected displacement of about 550 tons. 
+An analysis of historical imagery shows that the numbers of Chinese ships at Subi and Mischief were much higher in 2018 than in 2017. In August, which appears to have been the busiest month, there were about 300 ships anchored at the two reefs at any given time. Over 90 percent of these were fishing vessels with an average length of 51 meters and a projected displacement of about 550 tons.
 
 {% assign gallery_images = page.image_groups.max_two | concat: page.image_groups.max_three %}
 {% include sc-image-gallery.html images=gallery_images height="65vh" %}
 
 In almost every case, the Chinese fishing boats captured in imagery are riding at anchor or transiting without fishing. Occasionally, imagery revealed a falling net vessel, a common type of Chinese ship observed, engaged in fishing, but such instances were rare.
 
-In addition to the fleets at Subi and Mischief, clusters of around 10 large Chinese fishing vessels were seen gathered around Philippine-occupied Thitu and Loaita Islands and Taiwan-occupied Itu Aba Island. These clusters remained for weeks at a time and only a few vessels showed signs of fishing during the time period imagery was collected. Overall, the Chinese fleet in the Spratlys spends far less time fishing and far more time at anchor than is typical of vessels elsewhere. 
+In addition to the fleets at Subi and Mischief, clusters of around 10 large Chinese fishing vessels were seen gathered around Philippine-occupied Thitu and Loaita Islands and Taiwan-occupied Itu Aba Island. These clusters remained for weeks at a time and only a few vessels showed signs of fishing during the time period imagery was collected. Overall, the Chinese fleet in the Spratlys spends far less time fishing and far more time at anchor than is typical of vessels elsewhere.
 
 {% include sc-single-image.html
   path="https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg"
@@ -179,7 +184,7 @@ The activities of the militia are well-documented—they engage in patrol, surve
 
 The story of one set of these militia ships, the Yue Tai Yu fleet, is instructive and highlights just how much Beijing has invested in the militia in recent years.
 
-The nine vessels named Yue Tai Yu 18000 through 18999 are each 62.8-meter trawlers. They were built by Guangxin Shipbuilding & Heavy Industry in 2017. 
+The nine vessels named Yue Tai Yu 18000 through 18999 are each 62.8-meter trawlers. They were built by Guangxin Shipbuilding & Heavy Industry in 2017.
 
 {% include sc-image-group.html  height="65vh" images=page.image_groups.max_two width="max" %}
 
@@ -192,6 +197,7 @@ The vessels have made lengthy stays at Subi and Mischief Reefs and visited China
 The Yue Tai Yu vessels have been captured in satellite imagery on several occasions, and neither these images nor the patterns seen in their intermittent AIS transmissions indicate that the ships spend much, if any, time fishing. That means these large modern trawlers, which likely cost $100 million or more to build, are not producing much commercial benefit to their owners. If they are any indication, Beijing is sinking a stunning amount of money into subsidizing the operations of a massive and largely unproductive fishing fleet in the Spratly Islands.
 
 ## Conclusion
+
 The fisheries and fishers of the South China Sea warrant much more attention. The disputes over the islands, reefs, and waters in the area have made effective fisheries management impossible even as a calamitous stock collapse threatens livelihoods around the region. Tools like VIIRS and SAR show that the number of fishing vessels operating in the disputed Spratly Islands is exponentially higher than AIS transmissions suggest. Improving the monitoring of these fleets will be critical if the claimants hope to save the South China Sea fisheries and reduce the frequency of unlooked-for incidents between vessels.
 
 Meanwhile, a different kind of fishing fleet, one engaged in paramilitary work on behalf of the state rather than the commercial enterprise of fishing, has emerged as the largest force in the Spratlys. The numbers of militia vessels operating in the area on behalf of China is much larger and more persistent than is generally understood. Experts and policymakers focused on the South China Sea will need to devote a proportionate amount of their attention to these actors and the role they play in the area.
