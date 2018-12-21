@@ -23,24 +23,34 @@
 
   &-video,
   &-map {
-    position: absolute;
-    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s linear;
+
 
     &.is-active {
-      display: block;
+      visibility: visible;
+      opacity: 1;
     }
   }
 
   &-video {
+    position: absolute;
+    top: 0;
     background-color: $color__test;
   }
 
   &-map {
+    position: relative;
+    top: calc(100% - 100vh);
+    height: 100vh;
     background-color: var(--accent-color);
+    background-image: url('https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &-prose {
