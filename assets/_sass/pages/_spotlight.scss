@@ -1,17 +1,14 @@
 .layout-spotlight {
   .page-content {
-    @include structure($size__header-height, 'margin-top', ('small', 'large'));
+    @include structure($size__header-height, 'margin-top', ('small'));
   }
 }
 
 .spotlight {
-  &__header {
-    height: 800px;
-  }
-
   &__content {
     @include structure($size__spotlight-container-width, 'width');
     margin: 0 auto;
+    padding-top: 3rem;
     padding-bottom: 3rem;
   }
 

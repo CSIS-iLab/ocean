@@ -10,9 +10,7 @@ layout: default
   <header class="post__header">
     <div class="post__header-content">
       {%- include content-type.html -%}
-      <h1 class="post-title p-name" itemprop="name headline">
-        {{ page.title | escape }}
-      </h1>
+      {%- include post-title.html -%}
     </div>
     {%- include social-share.html class="post__header" -%}
   </header>

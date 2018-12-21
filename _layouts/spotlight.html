@@ -3,19 +3,16 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  {% if page.include_header %}
+  {% include_relative {{ page.include_header }} %}
+  {% else %}
+
   <header class="spotlight__header">
-    {%- include content-type.html -%}
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-        {%- include date.html -%}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+    {% include post-title.html %}
+    {%- include authors-list.html -%}
+    {%- include date.html -%}
   </header>
+  {% endif %}
 
   <section class="spotlight__content e-content" itemprop="articleBody">
     <div class="spotlight__content-body post-content">{{ content }}</div>

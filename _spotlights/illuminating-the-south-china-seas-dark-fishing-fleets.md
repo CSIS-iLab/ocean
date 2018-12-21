@@ -5,6 +5,7 @@ js_files:
   - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
   - scs
 css_files: scs
+include_header: scs/intro.html
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '
 authors:
@@ -68,18 +69,6 @@ image_groups:
       credit: National Geographic
       mode: landscape
 ---
-
-{% include_relative scs/intro.html %}
-
-_Scrollytelling Intro_
-The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade. With China’s expansion and militarization of its holdings in the disputed Spratly Islands in late 2013, tensions are brewing.
-
-The South China Sea is home to two sets of disputes.
-
-One is over territory. China, Taiwan, Brunei, Malaysia, the Philippines, and Vietnam are making claims to various islands, rocks, and reefs around the sea.
-
-The other, involves those parties as well as Indonesia, and the sea itself. Southeast Asian claimants are asserting rights to overlapping maritime zones under international law, while China and Taiwan demand ambiguous rights throughout the entire sea.
-_End_
 
 The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse.
 

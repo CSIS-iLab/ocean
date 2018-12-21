@@ -1,21 +1,25 @@
-<section class="spotlight-component scs__intro sc--full">
+<header class="spotlight__header scs__intro">
   <div class="scs__intro-bg">
     <div class="scs__intro-video is-active"></div>
     <div class="scs__intro-map"></div>
   </div>
   <div class="scs__intro-prose">
-    <p class="scs__intro-trigger" data-step="0">
-      Step 1 in the graphic. It triggers in the middle of the viewport. For this
-      graphic, it is the same as the initial state so the reader doesn&rsquo;t
-      miss anything.
-    </p>
+    <div class="scs__intro-trigger" data-step="0">
+      {%- include post-title.html -%}
+      {%- include authors-list.html -%}
+      {%- include date.html -%}
+    </div>
     <p class="scs__intro-trigger" data-step="1">
-      Step 2 arrives. The graphic should be locking into a fixed position right
-      about now. We could have a whole bunch of these &ldquo;fixed&rdquo; steps.
+      The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade. With China’s expansion and militarization of its holdings in the disputed Spratly Islands in late 2013, tensions are brewing.
     </p>
     <p class="scs__intro-trigger" data-step="2">
-      Step 3 concludes our brief tour. The graphic should now go back to its
-      original in-flow position, elegantly snapping back into place.
+      The South China Sea is home to two sets of disputes.
+    </p>
+    <p class="scs__intro-trigger" data-step="3">
+      One is over territory. China, Taiwan, Brunei, Malaysia, the Philippines, and Vietnam are making claims to various islands, rocks, and reefs around the sea.
+    </p>
+    <p class="scs__intro-trigger" data-step="4">
+      The other, involves those parties as well as Indonesia, and the sea itself. Southeast Asian claimants are asserting rights to overlapping maritime zones under international law, while China and Taiwan demand ambiguous rights throughout the entire sea.
     </p>
   </div>
-</section>
+</header>
