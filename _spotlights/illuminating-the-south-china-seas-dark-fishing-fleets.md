@@ -5,6 +5,7 @@ js_files:
   - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
   - scs
 css_files: scs
+prefix: scs
 include_header: scs/intro.html
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 '
@@ -70,6 +71,16 @@ image_groups:
       mode: landscape
 ---
 
+*Scrollytelling Intro*
+The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade.  With China’s expansion and militarization of its holdings in the disputed Spratly Islands in late 2013, tensions are brewing.
+
+The South China Sea is home to two sets of disputes.
+
+One is over territory. China, Taiwan, Brunei, Malaysia, the Philippines, and Vietnam are making claims to various islands, rocks, and reefs around the sea.
+
+The other, involves those parties as well as Indonesia, and the sea itself. Southeast Asian claimants are asserting rights to overlapping maritime zones under international law, while China and Taiwan demand ambiguous rights throughout the entire sea.
+*End*
+
 The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse.
 
 {% include sc-statistic.html align='right' number='50%' pre='More than' post='of the fishing vessels in the world are estimated to operate in the South China Sea.' %}
@@ -108,11 +119,25 @@ Attempting to monitor fishing activity remotely is uniquely difficult in the Sou
 
 One of the most helpful sources of data on fishing in the South China Sea, and around the world, is the {% include sc-tooltip.html title="Visible Infrared Imaging Radiometer Suite (VIIRS) Boat Detection" description="The VIIRS sensor, which was developed by the National Aeronautics and Space Administration and National Oceanic and Atmospheric Administration, is mounted on a weather satellite and collects a wide array of data. VIIRS generally does not pick up weaker light sources such as those aboard shipping vessels, only the bright lights used to attract fish during night fishing. It cannot provide a perfect count of the number of fishing boats in a certain area (though it can usually come close) but does provide an accurate assessment of the overall level of night fishing activity." %} product, which can detect bright light sources at sea. It reveals a huge amount of fishing activity takes place in the South China Sea, including in and around the Spratly Islands, despite its invisibility in the AIS record.
 
-**VIIRS TIMELINE GOES HERE**
+ {% include_relative scs/timeline.html
+    start_date="Jan 2013"
+    end_date="Nov 2018"
+    image="https://graphics.thomsonreuters.com/testfiles/xinjiang-camp-final/images/sprite2.jpg"
+    height=404
+    width=1200
+    steps=34
+    %}
 
 VIIRS data shows a significant amount of fishing in the South China Sea year-round, with the most active months being March through June. Within the Spratlys, the peak fishing season is March-April. There is also an increase in activity along the coasts of China and Vietnam in August, coinciding with the end of a unilateral three-month fishing ban that Beijing imposes each year in the northern portion of the South China Sea. But most importantly, VIIRS shows that the overall level of activity, regardless of season, has been steadily increasing year to year.
 
-**SAR/AIS TIMELINE GOES HERE**
+ {% include_relative scs/timeline.html
+    start_date="Aug 2011"
+    end_date="Jan 2013"
+    image="https://res.cloudinary.com/csisideaslab/image/upload/v1545327763/ocean/yty2018_sprites.jpg"
+    height=540.96
+    width=700
+    steps=9
+    %}
 
 For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurate count of vessels at a given time and location. Anything metallic, like the hull and superstructure of most modern fishing vessels as small as six meters, can be readily identified by satellite-based SAR. Again, the disconnect between the level of activity and the number of AIS signals being broadcast was staggering. For instance, SAR data collected on eight occasions between September 30 and October 5 provided 264 vessel detections, only 8 of which were broadcasting AIS.
 
