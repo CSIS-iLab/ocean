@@ -56,7 +56,6 @@
     {%- if modes[forloop.index0].size > 0 -%}
       {%- assign mode=modes[forloop.index0] | prepend: '--' | prepend: 'sc-image-group__images-single' -%}
     {%- endif -%}
-
       {%- include sc-single-image.html
         path=image
         figcaption=false
@@ -64,7 +63,7 @@
         credit=credit
         class='sc-image-group__images-single'
         mode=mode
-        height=include.height
+        max_height=include.height
         -%}
     {%- endfor -%}
     </figure>

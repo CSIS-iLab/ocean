@@ -1,12 +1,4 @@
 .sc-image-gallery {
-  img {
-    height: calc(50vh - 48px);
-
-    @include breakpoint('medium') {
-      height: calc(65vh - 64px);
-    }
-  }
-
   &__image-single {
     margin-right: 0.5rem;
 
