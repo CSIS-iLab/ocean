@@ -67,8 +67,14 @@
   }
 
   /*===============================
-  =             Home              =
+  =             About              =
   ================================*/
+  .about-person {
+    display: grid;
+    grid-gap: 0 1.25rem;
+    grid-template-columns: minmax(90px, 150px) minmax(180px, auto);
+    grid-template-rows: auto 1fr;
+  }
 
   /*===============================
   =             Headers              =
