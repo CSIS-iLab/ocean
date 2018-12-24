@@ -1,67 +1,64 @@
 import ScrollMagic from 'scrollmagic'
 
 const Timeline = () => {
-  console.log('yes')
-  let timelines = [...document.querySelectorAll('.scs-timeline')]
+  const timelines = [...document.querySelectorAll('.scs-timeline')]
   let intervals = []
 
   timelines.forEach(timeline => {
-    let interval,
-      position = 0
+    let interval, position
 
-    let graphicHeight = timeline.dataset.height
-    let graphicWidth = timeline.dataset.width
-    let graphicSteps = parseInt(timeline.dataset.steps, 10)
+    const graphicHeight = timeline.dataset.height
+    const graphicWidth = timeline.dataset.width
+    const graphicSteps = parseInt(timeline.dataset.steps, 10)
 
-    let container = timeline.querySelector('.scs-timeline__scroll-container')
+    const container = timeline.querySelector('.scs-timeline__scroll-container')
 
-    let graphic = container.querySelector(
+    const graphic = container.querySelector(
       '.scs-timeline__scroll-container__graphic'
     )
 
     container.style.paddingTop = `${(graphicHeight / graphicWidth) * 100.0}%`
 
-    let tickContainer = timeline.querySelector(
+    const tickContainer = timeline.querySelector(
       '.scs-timeline__indicator__progress-ticks'
     )
 
-    let progressDisplay = timeline.querySelector(
+    const progressDisplay = timeline.querySelector(
       '.scs-timeline__indicator__progress-marker'
     )
 
-    let startLabel = timeline.querySelector('.startDate')
-    let endLabel = timeline.querySelector('.endDate')
+    const startLabel = timeline.querySelector('.startDate')
+    const endLabel = timeline.querySelector('.endDate')
 
-    let startDate = new Date(startLabel.innerHTML)
-    let endDate = new Date(endLabel.innerHTML)
+    const startDate = new Date(startLabel.innerHTML)
+    const endDate = new Date(endLabel.innerHTML)
 
-    let labelContainer = timeline.querySelector(
+    const labelContainer = timeline.querySelector(
       '.scs-timeline__indicator__progress-labels'
     )
 
-    let monthDiff = endDate.getMonth() - startDate.getMonth()
-    let yearDiff = endDate.getYear() - startDate.getYear()
+    const monthDiff = endDate.getMonth() - startDate.getMonth()
+    const yearDiff = endDate.getYear() - startDate.getYear()
 
-    let diff = yearDiff * 12 + monthDiff
+    const diff = yearDiff * 12 + monthDiff
 
-    let yearWidth = Math.ceil(100 / diff)
+    const yearWidth = Math.ceil(100 / diff)
 
-    let partialYearWidth = Math.ceil(
+    const partialYearWidth = Math.ceil(
       ((endDate.getMonth() + 1) / 12) * 10 * yearWidth
     )
     Array.from(Array(diff)).forEach((x, i) => {
-      let monthNum = Math.abs(startDate.getMonth() + i),
-        newYear = i % 12 === 0,
-        monthDate,
-        yearNum,
-        label
+      let monthNum = Math.abs(startDate.getMonth() + i)
+      let newYear = i % 12 === 0
+
+      let yearNum, label
 
       if (newYear) {
         yearNum = Math.abs(startDate.getFullYear() + (i % 12))
       }
 
       if (yearNum) {
-        monthDate = new Date(yearNum, monthNum, 1)
+        const monthDate = new Date(yearNum, monthNum, 1)
 
         label = monthDate.toLocaleDateString('en-US', {
           year: 'numeric'
@@ -91,15 +88,6 @@ const Timeline = () => {
       }
     })
 
-    let controller = new ScrollMagic.Controller()
-
-    let scene = new ScrollMagic.Scene({
-      offset: 0,
-      triggerElement: '.scs-timeline'
-    })
-      .addTo(controller)
-      .on('enter', e => start())
-
     const update = () => {
       position++
 
@@ -108,7 +96,7 @@ const Timeline = () => {
         return
       }
 
-      let positionPercentage = (100.0 / (graphicSteps - 1)) * position
+      const positionPercentage = (100.0 / (graphicSteps - 1)) * position
 
       graphic.style.backgroundPositionY = `${positionPercentage}%`
 
@@ -118,9 +106,19 @@ const Timeline = () => {
     const start = () => {
       position = 0
       intervals.forEach(clearInterval)
+      intervals = []
       interval = setInterval(update, 750)
       intervals.push(interval)
     }
+
+    let controller = new ScrollMagic.Controller()
+
+    const scene = new ScrollMagic.Scene({
+      offset: 0,
+      triggerElement: '.scs-timeline'
+    })
+      .addTo(controller)
+      .on('enter', start)
 
     timeline
       .querySelector('.scs-timeline button')
