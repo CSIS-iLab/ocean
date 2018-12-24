@@ -1,0 +1,111 @@
+/*=========================================
+=            Print Stylesheets            =
+=========================================*/
+@media print {
+  *,
+  *:not(li)::before,
+  *::after {
+    color: #000 !important; // Black prints faster: h5bp.com/s
+    text-shadow: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+  }
+
+  body {
+    margin: 25mm;
+    padding: 0 !important;
+    font-size: 12pt;
+
+    &::before {
+      display: block;
+      font-size: 3rem;
+      content: 'Stephenson Ocean Security Project';
+    }
+
+    &::after {
+      margin-top: 1cm;
+      font-size: 12pt;
+      content: 'Printed from The CSIS Stephenson Ocean Security Project, ©2018 by the Center for Strategic and International Studies. All rights reserved.';
+    }
+  }
+
+  .printable,
+  .printable * {
+    visibility: visible;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+
+  .share,
+  .view-all,
+  .home__commentary-more,
+  .home__spotlights-more,
+  .site-footer__mailing,
+  .ais-root,
+  .archive__footer,
+  .site-header,
+  .spotlight__header .scs__intro-bg,
+  .home__hero {
+    display: none !important;
+  }
+
+  .wrapper {
+    padding: initial !important;
+  }
+
+  a:link,
+  a:visited {
+    color: #000 !important;
+  }
+
+  /*===============================
+  =             Home              =
+  ================================*/
+
+  /*===============================
+  =             Headers              =
+  ================================*/
+  .archive__header,
+  .post__header::before {
+    height: initial !important;
+  }
+
+  .archive__content {
+    margin-top: initial !important;
+  }
+
+  .spotlight__header {
+    right: 0 !important;
+    left: 0 !important;
+    width: initial !important;
+    height: initial !important;
+    min-height: initial !important;
+    margin: initial !important;
+
+    .scs__intro-prose,
+    .scs__intro-trigger {
+      height: initial !important;
+      min-height: initial !important;
+      margin-top: initial !important;
+    }
+
+    p {
+      height: initial !important;
+      margin: 0 0 1rem !important;
+    }
+  }
+  /*===============================
+  =             Footer               =
+  ================================*/
+  .site-footer {
+    padding-top: initial !important;
+  }
+}
