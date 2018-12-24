@@ -1,4 +1,12 @@
 .sc-image-gallery {
+  overflow-x: hidden;
+
+  // img {
+  //   @include breakpoint($break: 'medium', $dir: 'max-width') {
+  //     height: calc(50vh - 48px);
+  //   }
+  // }
+
   &__image-single {
     margin-right: 0.5rem;
 
