@@ -12,6 +12,28 @@ layout: default
   </header>
   <section class="post__content e-content" itemprop="articleBody">
     <div class="post__content-body post-content">{{ content }}</div>
+
+    {%-if page.name=="about.md" -%}
+    <div class="about">
+
+      <h2>{{ site.data.language.the_team }}</h2>
+        {%- for person in page.team -%}
+        <div class="about-person">
+
+          <h2 class="about-heading">{{ person.name }}</h2>
+          <h3 class="about-subheading">{{ person.title }}</h3>
+          <img src="{{ person.headshot | relative_url }}" alt="{{ person.name | escape }}" title="{{ person.name | escape }}" />
+
+          <p class="about-bio">{{ person.bio }}</p>
+
+        </div>
+        {%- endfor -%}
+      <h3>{{ site.data.language.development_team }}</h3>
+      <p>{{ site.data.language.ilab | markdownify }}</p>
+    </div>
+
+    {%- endif -%}
+    
   </section>
   <footer class="post__footer">
     <section class="post__footer-top">

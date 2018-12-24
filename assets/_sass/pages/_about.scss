@@ -1,0 +1,52 @@
+.about {
+  order: 4;
+
+  h2:not(.about-heading) {
+    @extend %post-content__h2;
+  }
+
+  h3:not(.about-subheading) {
+    @extend %post-content__h3;
+  }
+
+  &-person {
+    margin: 1rem 0 2rem;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      text-align: center;
+    }
+
+    @include breakpoint('medium') {
+      display: grid;
+      grid-gap: 0 1.25rem;
+      grid-template-columns: minmax(90px, 150px) minmax(180px, auto);
+      grid-template-rows: auto 1fr;
+    }
+
+    img {
+      width: 100%;
+      max-width: 224px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-heading {
+    grid-column: 1 / -1;
+    @extend %section-heading;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  &-subheading {
+    grid-column: 1 / -1;
+    @extend %post-block__type--related;
+    margin-bottom: 0.5rem;
+    color: $color__black;
+    text-transform: uppercase;
+  }
+
+  &-bio {
+    @extend %body-text__med;
+    text-align: left;
+  }
+}
