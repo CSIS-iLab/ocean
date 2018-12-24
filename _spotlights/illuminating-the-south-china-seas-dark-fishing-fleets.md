@@ -2,7 +2,10 @@
 title: Illuminating the South China Sea’s Dark Fishing Fleets
 date: 2018-11-13 15:56:34 +0000
 js_files:
+  - https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.2.0/highcharts.js
   - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
+  - https://code.highcharts.com/modules/data.js
+  - https://code.highcharts.com/modules/pattern-fill.js
   - scs
 css_files: scs
 include_header: scs/intro.html
@@ -141,7 +144,8 @@ While SAR can provide an estimate of fleet size, it cannot reveal much detail ab
 
 Just as SAR suggests, most of these congregate in the lagoons at Subi and Mischief Reefs, and in nearby waters including around the Philippine-held islets close by. In fact, imagery shows that the numbers of fishing vessels at Subi and Mischief Reefs are even higher than SAR would suggest because they often tie up side by side in large groups, which appear to be a single vessel in SAR.
 
-**Mischief/Subi Chart here**
+{% include_relative scs/chartCatch.html %}
+{% include_relative scs/chartVessels.html %}
 
 An analysis of historical imagery shows that the numbers of Chinese ships at Subi and Mischief were much higher in 2018 than in 2017. In August, which appears to have been the busiest month, there were about 300 ships anchored at the two reefs at any given time. Over 90 percent of these were fishing vessels with an average length of 51 meters and a projected displacement of about 550 tons.
 

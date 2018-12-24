@@ -1,8 +1,8 @@
 import chartVessels from './chartVessels'
-import chartTest from './chartTest'
+import chartCatch from './chartCatch'
 import Intro from './intro'
 
 chartVessels()
-chartTest()
+chartCatch()
 
-// Intro()
+Intro()
