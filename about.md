@@ -5,7 +5,7 @@ permalink: "/about/"
 team:
   - name: Dr. Whitley Saumweber
     title: Director
-    headshot: https://res.cloudinary.com/csisideaslab/image/upload/c_limit,h_512,w_512/v1545148645/ocean/Anon.jpg
+    headshot: https://res.cloudinary.com/csisideaslab/image/upload/c_limit,h_512,w_512/v1545689230/ocean/5Whit_9.jpg
     bio: "Dr. Whitley Saumweber is director of the Stephenson Ocean Security Project at the Center for Strategic and International Studies. He has worked extensively across the federal government, academia, and private sector developing practical approaches for integrating marine science with pressing policy needs. He has been a visiting fellow with Stanford University’s Center for Ocean Solutions and served as President Obama’s associate director for Ocean and Coastal Policy in the White House Council on Environmental Quality. In this latter capacity, he led the development and implementation of President Obama’s agenda for marine conservation and stewardship on behalf of the White House. This included leading teams responsible for the creation of multiple marine reserves of global significance; development of the first U.S. seafood traceability program to combat illegal fishing; directing our National Ocean and Arctic policies; and oversight of national sustainable fisheries policy. Previously, Dr. Saumweber has served as a senior adviser to the National Oceanic and Atmospheric Administration (NOAA) administrator, worked as an adviser to the late Senator Daniel K. Inouye (D-HI), overseen a national research and monitoring program at the NOAA, and worked as an ocean scientist and educator. Dr. Saumweber holds a Ph.D. in biological oceanography from the University of Rhode Island."
   - name: Monica Medina
     title: Senior Affiliate
