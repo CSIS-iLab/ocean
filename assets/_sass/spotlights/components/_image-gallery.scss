@@ -87,6 +87,19 @@
     @include structure($size__spotlight-container-width, 'width');
     max-width: $size__spotlight-body-width;
     margin: auto;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        width: calc(100vw - 40px);
+        border-bottom: 2px solid #cecece;
+      }
+    }
   }
 
   &__captions-single {
@@ -131,7 +144,6 @@
 
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         max-width: calc(100vw - 40px);
-        border-bottom: 2px solid $color__ltgray;
       }
 
       .active & {
