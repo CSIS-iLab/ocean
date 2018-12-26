@@ -96,7 +96,7 @@ water_bg.on('update', function() {
 const water_front = new PIXI.Sprite.fromImage('/assets/images/home/water2.png')
 water_front.width = waterApp[0] //renderer.width * 0.35;
 water_front.height = waterApp[1] / 1.5
-water_front.anchor.set(0.5, 1.0)
+water_front.anchor.set(0.5, 1)
 water_front.x = waterApp[3].screen.width / 2
 water_front.y = waterApp[3].screen.height
 
@@ -114,7 +114,7 @@ wave_front.on('update', function() {
   wave_mesh = new PIXI.mesh.Plane(this, 20, 5)
 
   wave_mesh.width = waterApp[0] //renderer.width * 0.35;
-  wave_mesh.height = 400 //renderer.width * 0.5;
+  wave_mesh.height = 300 //renderer.width * 0.5;
   container_wave.addChild(wave_mesh) //, 0);
   //t_mesh.pivot.x = t_mesh.width * 0.4;
   wave_mesh.pivot.y = wave_mesh.height * -0.3
@@ -200,7 +200,7 @@ window.addEventListener('load', () => {
     triggerHook: 'onEnter',
     triggerElement: '#hero_bottom',
     duration: '100%',
-    offset: 10
+    offset: 0
   })
     .addTo(ctrl)
     .setTween(vT5)
@@ -209,7 +209,7 @@ window.addEventListener('load', () => {
     triggerHook: 'onLeave',
     triggerElement: '#hero_top',
     duration: '20%',
-    offset: 10
+    offset: 0
   })
     .setPin('#hero_top')
     .setTween(vTl)
@@ -224,17 +224,17 @@ window.addEventListener('load', () => {
     .on('leave', function(event) {
       if (event.scrollDirection == 'FORWARD') {
         vT2.restart()
-        TweenMax.to(window, windowDur, {
-          scrollTo: {
-            y: '#hero_bottom',
-            autoKill: false,
-            offsetY: -50
-          },
-          ease: Sine.easeOut
-        })
-        TweenMax.to('#protect', 1, { y: '300%', rotation: 0.001 })
+        // TweenMax.to(window, windowDur, {
+        //   scrollTo: {
+        //     y: '#hero_bottom',
+        //     autoKill: false,
+        //     offsetY: -50
+        //   },
+        //   ease: Sine.easeOut
+        // })
+        // TweenMax.to('#protect', 1, { y: '300%', rotation: 0.001 })
         document.getElementById('home-scroll-container').classList.add('active')
-        TweenMax.to('#hero_top', 1, { y: '35%', rotation: 0.001 }, '-=4')
+        // TweenMax.to('#hero_top', 1, { y: '35%', rotation: 0.001 }, '-=4')
       } else {
         vT2.stop()
         document
@@ -266,15 +266,15 @@ window.addEventListener('load', () => {
         .getElementById('home-scroll-container')
         .classList.remove('active')
       if (event.scrollDirection == 'REVERSE') {
-        TweenMax.to(window, windowDur, {
-          scrollTo: {
-            y: 0,
-            autoKill: false
-          },
-          ease: Sine.easeOut
-        })
-        TweenMax.to('#hero_top', 1, { y: '0%', rotation: 0.001 })
-        TweenMax.to('#protect', 1, { y: '0%', rotation: 0.001 })
+        // TweenMax.to(window, windowDur, {
+        //   scrollTo: {
+        //     y: 0,
+        //     autoKill: false
+        //   },
+        //   ease: Sine.easeOut
+        // })
+        // TweenMax.to('#hero_top', 1, { y: '0%', rotation: 0.001 })
+        // TweenMax.to('#protect', 1, { y: '0%', rotation: 0.001 })
       }
     })
     .on('start', function(event) {
