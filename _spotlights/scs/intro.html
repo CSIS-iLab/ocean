@@ -1,11 +1,13 @@
 <header class="spotlight__header scs__intro">
   <div class="scs__intro-bg">
     <div class="scs__intro-video is-active">
-      <video preload="auto" playsinline="true" loop muted autoplay poster="https://res.cloudinary.com/csisideaslab/image/upload/e_blur:1000/v1544812068/ocean/c.jpg" data-src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" data-src-mobile="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148422/Vienna-SD.mp4" class="scs__intro-video-player">
+      <video preload="auto" playsinline="true" loop muted autoplay poster="https://res.cloudinary.com/csisideaslab/image/upload/e_blur:1000/v1544812068/ocean/c.jpg" data-src="https://res.cloudinary.com/csisideaslab/video/upload/v1546466142/ocean/scs-widescreen.mp4" data-src-mobile="https://res.cloudinary.com/csisideaslab/video/upload/v1546466142/ocean/scs-mobile.mp4" class="scs__intro-video-player">
         <source type="video/mp4">
         </video>
       </div>
-    <div class="scs__intro-map"></div>
+    <div class="scs__intro-map">
+      {% include_relative scs/intro-svg.html %}
+    </div>
   </div>
   <div class="scs__intro-prose">
     <div class="scs__intro-trigger" data-step="0">
@@ -17,13 +19,16 @@
       The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade. With China’s expansion and militarization of its holdings in the disputed Spratly Islands in late 2013, tensions are brewing.
     </p>
     <p class="scs__intro-trigger" data-step="2">
-      The South China Sea is home to two sets of disputes.
+      One is over sovereignty. China, Taiwan, Brunei, Malaysia, the Philippines, and Vietnam are making claims to various islands, rocks, and reefs—resources—around the sea.
     </p>
     <p class="scs__intro-trigger" data-step="3">
-      One is over territory. China, Taiwan, Brunei, Malaysia, the Philippines, and Vietnam are making claims to various islands, rocks, and reefs around the sea.
+      The other, involves those parties and Indonesia. The dispute is over how to divide the sea itself.
     </p>
     <p class="scs__intro-trigger" data-step="4">
-      The other, involves those parties as well as Indonesia, and the sea itself. Southeast Asian claimants are asserting rights to overlapping maritime zones under international law, while China and Taiwan demand ambiguous rights throughout the entire sea.
+      Southeast Asian claimants assert rights to overlapping maritime zones under international law.
+    </p>
+    <p class="scs__intro-trigger" data-step="5">
+      China and Taiwan, however, lay claim to the sea through a contested demarcation. China defines and calls it the Nine-Dash Line.
     </p>
   </div>
 </header>

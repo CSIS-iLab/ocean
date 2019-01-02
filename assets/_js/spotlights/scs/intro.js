@@ -11,8 +11,13 @@ const Intro = () => {
     graphicEl.querySelectorAll('.scs__intro-trigger')
   )
   const stepNum = triggerEls.length
+  const penultimate = triggerEls[stepNum - 2]
   const ultimate = triggerEls[stepNum - 1]
   let src = videoPlayer.getAttribute('data-src')
+
+  console.log(stepNum)
+  console.log(penultimate)
+  console.log(ultimate)
 
   if (Breakpoints.isMobile()) {
     src = videoPlayer.getAttribute('data-src-mobile')
@@ -28,7 +33,7 @@ const Intro = () => {
   const controller = new ScrollMagic.Controller()
 
   new ScrollMagic.Scene({
-    triggerElement: ultimate,
+    triggerElement: penultimate,
     triggerHook: 'onEnter'
   })
     .setClassToggle('.scs__intro-map', 'is-active')
