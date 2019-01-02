@@ -18,10 +18,14 @@ authors:
 keywords:
 - South China Sea
 - oil
-further_reading: |-
-  * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  * Ut tristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
-  * Leo a diam sollicitudin tempor id eu nisl nunc mi. Nascetur ridiculus mus mauris vitae ultricies. Sagittis eu volutpat.
+further_reading: "* Asia Maritime Transparency Initiative, https://amti.csis.org/
+  \n* China’s Third Sea Force, The People’s Armed Forces Maritime Militia: Tethered
+  to the PLA, http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf
+  \n* Boom or Bust: The Future of Fish in the South China Sea, https://www.oceanrecov.org/news/ocean-recovery-alliance-news/boom-or-bust-the-future-of-fish-in-the-south-china-sea.html
+  \n* Defusing the South China Sea Disputes: A Regional Blueprint, https://www.csis.org/analysis/defusing-south-china-sea-disputes\n*
+  Illegal, Unregulated, and Unreported Fishing as a National Security Threat, https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat\n*
+  An Accounting of China’s Deployments to the Spratly Islands, https://amti.csis.org/accounting-chinas-deployments-spratly-islands/\n*
+  Confirming the Chinese Flotilla Near Thitu Island, https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/ "
 methodology: Vulcan, Inc. undertook the analysis of AIS, VIIRS, SAR, and high-resolution
   satellite imagery for this project. AIS was provided by ORBCOMM. At the start of
   the project, CSIS and Vulcan identified several areas of interest in the Spratlys
