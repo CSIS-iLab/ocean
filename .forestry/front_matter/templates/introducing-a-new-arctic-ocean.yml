@@ -4,7 +4,7 @@ hide_body: true
 is_partial: false
 fields:
 - type: include
-  template: post-meta-spotlights
+  template: post-meta-primary
 - name: js_files
   label: Js files
   type: list
