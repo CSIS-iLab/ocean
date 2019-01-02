@@ -87,7 +87,7 @@ const chartVessels = () => {
           data: dataArray[0].data,
           borderWidth: 0,
           className: 'highcharts-series-subi-column',
-          color: '#f7941d'
+          color: '#0663a1'
         },
         {
           type: 'column',
@@ -95,7 +95,7 @@ const chartVessels = () => {
           data: dataArray[1].data,
           borderWidth: 0,
           className: 'highcharts-series-mischief-column',
-          color: '#8dc540'
+          color: '#ef4723'
         },
         {
           type: 'area',
@@ -103,7 +103,7 @@ const chartVessels = () => {
           showInLegend: false,
           data: dataArray[0].data,
           className: 'highcharts-series-subi-area',
-          color: '#f7941d'
+          color: '#0663a1'
         },
         {
           type: 'area',
@@ -111,7 +111,7 @@ const chartVessels = () => {
           data: dataArray[1].data,
           showInLegend: false,
           className: 'highcharts-series-mischief-area',
-          color: '#8dc540'
+          color: '#ef4723'
         }
       ]
     })

@@ -12,9 +12,14 @@ const chartCatch = () => {
       type: 'column'
     },
     title: {
-      x: 25,
+      // x: 25,
       align: 'left',
-      text: 'South China Sea Catch Estimates'
+      text: 'Estimated Chinese Annual Catch in Spratly Islands'
+    },
+    subtitle: {
+      align: 'left',
+      text:
+        'The Spratly Island values represent 12% of the entire South China Sea estimated catch of 10 million (low) or 20 million (high) tons.'
     },
     credits: {
       position: {
@@ -25,7 +30,7 @@ const chartCatch = () => {
       text: 'Vulcan'
     },
     yAxis: {
-      title: { text: 'Catch Estimate (million metric tons)' },
+      title: { text: 'Catch Estimate (million tons)' },
       endOnTick: false
     },
     legend: {
@@ -83,9 +88,8 @@ const chartCatch = () => {
 
         let percentOfSpratleys = (this.y / spratlys) * 100
 
-        console.log(percentOfSpratleys)
         return this.series.name.toLowerCase().indexOf(`catch`) < 0
-          ? `${this.y} million metric tons`
+          ? `${this.y} million tons`
           : `${percentOfSpratleys}% of catch in Spratlys`
       }
     }
