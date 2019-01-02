@@ -21,6 +21,11 @@ fields:
 - type: list
   name: authors
   label: Authors
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: authors
 - name: methodology
   label: Methodology
   type: textarea
