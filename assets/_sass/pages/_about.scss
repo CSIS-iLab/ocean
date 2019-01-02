@@ -1,11 +1,12 @@
 .about {
   order: 4;
+  margin-top: 2.5rem;
 
-  h2:not(.about-heading) {
+  h2 {
     @extend %post-content__h2;
   }
 
-  h3:not(.about-subheading) {
+  h3:not(.about-heading) {
     @extend %post-content__h3;
   }
 

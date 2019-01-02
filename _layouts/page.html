@@ -15,13 +15,12 @@ layout: default
 
     {%-if page.name=="about.md" -%}
     <div class="about">
-
       <h2>{{ site.data.language.the_team }}</h2>
         {%- for person in page.team -%}
         <div class="about-person">
 
-          <h2 class="about-heading">{{ person.name }}</h2>
-          <h3 class="about-subheading">{{ person.title }}</h3>
+          <h3 class="about-heading">{{ person.name }}</h3>
+          <div class="about-subheading">{{ person.title }}</div>
           <img src="{{ person.headshot | relative_url }}" alt="{{ person.name | escape }}" title="{{ person.name | escape }}" />
 
           <p class="about-bio">{{ person.bio }}</p>
