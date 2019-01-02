@@ -4,7 +4,7 @@ hide_body: true
 is_partial: false
 fields:
 - type: include
-  template: post-meta-spotlights
+  template: post-meta-primary
 - name: js_files
   label: Js files
   type: list
@@ -45,6 +45,5 @@ fields:
   config:
     labelField: label
 pages:
-- _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets
 - _spotlights/introducing-a-new-arctic-ocean.md
 - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
