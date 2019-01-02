@@ -2,8 +2,11 @@
 <figure class="{{ include.classes | default: post__image }}">
 
 
+{%- assign height=null -%}
 {%- if include.height.size > 0 -%}
-  {%- assign height = '"' | prepend: include.height | prepend: ' style="max-height:' -%}
+  {%- assign height = '"' | prepend: include.height | prepend: ' style="height:' -%}
+{%- elsif include.max_height.size > 0 -%}
+  {%- assign height = '"' | prepend: include.max_height | prepend: ' style="max-height:' -%}
 {%- endif -%}
 
 {%- if include.path contains 'cloudinary' -%}
