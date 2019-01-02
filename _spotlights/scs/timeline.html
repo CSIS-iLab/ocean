@@ -1,0 +1,19 @@
+<div id="{{ include.id }}" class="{{ page.prefix }}-timeline spotlight-component sc--large" data-width="{{ include.width }}" data-height="{{ include.height }}" data-steps="{{ include.steps }}">
+  <div class="{{ page.prefix }}-timeline__indicator">
+    <span class="{{ page.prefix }}-timeline__indicator-date startDate">{{ include.start_date }}</span>
+    <div class="{{ page.prefix }}-timeline__indicator__progress">
+      <div class="{{ page.prefix }}-timeline__indicator__progress-ticks"></div>
+      <div class="{{ page.prefix }}-timeline__indicator__progress-marker"></div>
+      <div class="{{ page.prefix }}-timeline__indicator__progress-labels">
+      </div>
+    </div>
+    <span class="{{ page.prefix }}-timeline__indicator-date endDate">{{ include.end_date }}</span>
+    <button><i class="icon-restart"></i></button>
+  </div>
+
+  <div class="{{ page.prefix }}-timeline__scroll-container">
+    <div class="{{ page.prefix }}-timeline__scroll-container__graphic"
+        style="background-image: url('{{ include.image }}')"
+        ></div>
+  </div>
+</div>
