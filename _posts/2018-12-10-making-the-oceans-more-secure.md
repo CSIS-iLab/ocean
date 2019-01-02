@@ -1,15 +1,15 @@
 ---
 title: Making the Oceans More Secure
 date: 2018-12-10 14:43:28 +0000
-excerpt: Updating and harmonizing enforcement laws and practices may not be as flashy
-  as high tech tools or as muscular as adding manpower, but make no mistake, these
-  legal and policy improvements are “force multipliers.”
+excerpt: 'Combatting illicit fishing will require countries to develop common regional
+  approaches to legal authorities and adjudication in order to fully take advantage
+  of new enforcement capabilities.    '
 authors:
 - _authors/monica-medina.md
 - _authors/dan-myers.md
-lede: Updating and harmonizing enforcement laws and practices may not be as flashy
-  as high tech tools or as muscular as adding manpower, but make no mistake, these
-  legal and policy improvements are “force multipliers.”
+lede: Combatting illicit fishing will require countries to develop common regional
+  approaches to legal authorities and adjudication in order to fully take advantage
+  of new enforcement capabilities.
 keywords:
 - IUU
 - fishing
