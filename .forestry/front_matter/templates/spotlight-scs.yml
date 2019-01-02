@@ -26,6 +26,8 @@ fields:
     source:
       type: pages
       section: authors
+  default:
+  - _authors/gregory-b-poling.md
 - name: methodology
   label: Methodology
   type: textarea
