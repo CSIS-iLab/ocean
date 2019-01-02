@@ -102,23 +102,28 @@ image_groups:
       mi quis hendrerit dolor magna eget est.
     credit: National Geographic
     mode: landscape
+contributors:
+- label: Jenna Thomas
+  content: Vulcan, Inc.
+- label: " Mark Powell"
+- label: " James DePoy"
 
 ---
 The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade.  With China’s expansion and militarization of its holdings in the disputed Spratly Islands from late 2013, tensions have escalated rapidly.
 
 The South China Sea is home to two sets of disputes.
 
-One is over territory. China, Taiwan, Brunei, Malaysia, the Philippines, and Vietnam are making claims to various islands, rocks, and reefs around the sea. 
+One is over territory. China, Taiwan, Brunei, Malaysia, the Philippines, and Vietnam are making claims to various islands, rocks, and reefs around the sea.
 
-The other, involves those parties as well as Indonesia, and the sea itself. Southeast Asian claimants are asserting rights to overlapping maritime zones under international law, while China and Taiwan demand ambiguous rights throughout the entire sea. 
+The other, involves those parties as well as Indonesia, and the sea itself. Southeast Asian claimants are asserting rights to overlapping maritime zones under international law, while China and Taiwan demand ambiguous rights throughout the entire sea.
 
-The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse. 
+The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse.
 
 {% include sc-statistic.html align='right' number='50%' pre='More than' post='of the fishing vessels in the world are estimated to operate in the South China Sea.' %}
 
 The South China Sea accounted for 12 percent of global fish catch in 2015, and more than half of the fishing vessels in the world are estimated to operate there. Its fisheries officially employ around 3.7 million people and unofficially many more. But the South China Sea has been dangerously overfished. Total stocks have been depleted by 70-95 percent since the 1950s, and catch rates have declined by 66-75 percent over the last 20 years.
 
-Coral reefs, on which much of these fish depend, have been declining by 16 percent per decade. And that decline rapidly accelerated over the last five years in which giant clam harvesting, dredging, and artificial island building have severely damaged or destroyed over 40,000 acres, or about 160 square kilometers, of reefs. 
+Coral reefs, on which much of these fish depend, have been declining by 16 percent per decade. And that decline rapidly accelerated over the last five years in which giant clam harvesting, dredging, and artificial island building have severely damaged or destroyed over 40,000 acres, or about 160 square kilometers, of reefs.
 
 {% include sc-image-group.html  height="65vh" images=page.image_groups.max_three width="max" %}
 
@@ -139,7 +144,7 @@ The results tell a worrying story about the scale of unseen fishing activity in 
 
 Conducting accurate stock assessments and managing fisheries in the South China Sea is all but impossible because of the overlapping territorial and maritime disputes, which prevent effective enforcement of domestic fishery laws or cooperation among regional states. In fact, some states actively encourage and even subsidize fishing in disputed waters to assert their claims.
 
-Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. For a region that sees so much reported fishing, many parts of the South China Sea, and the Spratly Islands, in particular, are surprisingly devoid of {% include sc-tooltip.html title="Automatic Identification System (AIS) signals" description="All oceangoing vessels over 300 tons are required to carry AIS transceivers which regularly broadcast identifying information including heading, speed, and other details." %}. Much of this lack of information is due to the small size and age of many fishing vessels, especially in the Philippines and Vietnam. But there are many vessels operating in the Spratlys that have transceivers and should be using them but choose not to so that they can hide their activities. This means that it is necessary to turn to other technologies for a better idea of the size and activities of fishing fleets in the South China Sea.
+Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. For a region that sees so much reported fishing, many parts of the South China Sea, and the Spratly Islands, in particular, are surprisingly devoid of {% include sc-tooltip.html title="Automatic Identification System (AIS)" description="All oceangoing vessels over 300 tons are required to carry AIS transceivers which regularly broadcast identifying information including heading, speed, and other details." %} signals. Much of this lack of information is due to the small size and age of many fishing vessels, especially in the Philippines and Vietnam. But there are many vessels operating in the Spratlys that have transceivers and should be using them but choose not to so that they can hide their activities. This means that it is necessary to turn to other technologies for a better idea of the size and activities of fishing fleets in the South China Sea.
 
 {% include sc-single-image.html
 path="https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg"
@@ -148,7 +153,7 @@ credit="Likely Getty"
 align="left"
 %}
 
-One of the most helpful sources of data on fishing in the South China Sea, and around the world, is the {% include sc-tooltip.html title="Visible Infrared Imaging Radiometer Suite (VIIRS)" description="The VIIRS sensor, which was developed by the National Aeronautics and Space Administration and National Oceanic and Atmospheric Administration, is mounted on a weather satellite and collects a wide array of data. VIIRS generally does not pick up weaker light sources such as those aboard shipping vessels, only the bright lights used to attract fish during night fishing. It cannot provide a perfect count of the number of fishing boats in a certain area (though it can usually come close) but does provide an accurate assessment of the overall level of night fishing activity." %} Boat Detection product, which can detect bright light sources at sea. It reveals a huge amount of fishing activity takes place in the South China Sea, including in and around the Spratly Islands, despite its invisibility in the AIS record.
+One of the most helpful sources of data on fishing in the South China Sea, and around the world, is the {% include sc-tooltip.html title="Visible Infrared Imaging Radiometer Suite (VIIRS) Boat Detection" description="The VIIRS sensor, which was developed by the National Aeronautics and Space Administration and National Oceanic and Atmospheric Administration, is mounted on a weather satellite and collects a wide array of data. VIIRS generally does not pick up weaker light sources such as those aboard shipping vessels, only the bright lights used to attract fish during night fishing. It cannot provide a perfect count of the number of fishing boats in a certain area (though it can usually come close) but does provide an accurate assessment of the overall level of night fishing activity." %}  product, which can detect bright light sources at sea. It reveals a huge amount of fishing activity takes place in the South China Sea, including in and around the Spratly Islands, despite its invisibility in the AIS record.
 
 **VIIRS TIMELINE GOES HERE**
 
@@ -162,11 +167,11 @@ For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurat
 
 _Scrollytelling Starts_
 
-SAR tell much the same story as VIIRS, indicating a significant amount of fishing activity in and around the Spratly Islands. Taken together, they also begin to show the patterns of behavior of fishing vessels in the area. For instance, SAR and VIIRS data suggest that very little activity occurs around those reefs in the southeastern portion of the Spratlys occupied by Malaysia. 
+SAR tell much the same story as VIIRS, indicating a significant amount of fishing activity in and around the Spratly Islands. Taken together, they also begin to show the patterns of behavior of fishing vessels in the area. For instance, SAR and VIIRS data suggest that very little activity occurs around those reefs in the southeastern portion of the Spratlys occupied by Malaysia.
 
 They also show little activity in the unoccupied reefs on the eastern side of the Spratlys, which are near the coast of Palawan in the Philippines. This does not say much about the Filipino fishing fleet that operates in those waters because most of its vessels are small wooden trimarans, called bancas, which would not appear in either VIIRS or SAR. But the absence of returns suggests that other nations’ vessels, which are generally larger and more modern, are not operating around those reefs in large numbers.
 
-On the other hand, SAR and VIIRS indicate a significant amount of activity around the Vietnamese-occupied reefs in the southwest, the  central Spratlys where both China and Vietnam have outposts, as well as in the area to the northeast where both Vietnam and the Philippines occupy numerous features. 
+On the other hand, SAR and VIIRS indicate a significant amount of activity around the Vietnamese-occupied reefs in the southwest, the  central Spratlys where both China and Vietnam have outposts, as well as in the area to the northeast where both Vietnam and the Philippines occupy numerous features.
 
 The biggest story, however, is the massive presence of vessels in and around China’s outposts, particularly its two largest at Subi and Mischief Reefs. Two passes over Subi in August revealed 117 SAR returns within the reef’s lagoon and another 61 in waters nearby, including around Philippine-occupied Thitu Island just over 12 nautical miles away. Two passes in October showed an even larger but more dispersed number of returns, with 19 in the lagoon and 190 in waters nearby.
 
@@ -181,9 +186,9 @@ credit="Likely Getty"
 align="left"
 %}
 
-While SAR can provide an estimate of fleet size, it cannot reveal much detail about individual ships. For that, the best tool in the absence of AIS is high-resolution satellite imagery, which provides important context. This imagery shows that Chinese fishing ships account for the largest number of vessels operating in the Spratlys by far. 
+While SAR can provide an estimate of fleet size, it cannot reveal much detail about individual ships. For that, the best tool in the absence of AIS is high-resolution satellite imagery, which provides important context. This imagery shows that Chinese fishing ships account for the largest number of vessels operating in the Spratlys by far.
 
-Just as SAR suggests, most of these congregate in the lagoons at Subi and Mischief Reefs, and in nearby waters including around the Philippine-held islets close by. In fact, imagery shows that the numbers of fishing vessels at Subi and Mischief Reefs are even higher than SAR would suggest because they often tie up side by side in large groups, which appear to be a single vessel in SAR. 
+Just as SAR suggests, most of these congregate in the lagoons at Subi and Mischief Reefs, and in nearby waters including around the Philippine-held islets close by. In fact, imagery shows that the numbers of fishing vessels at Subi and Mischief Reefs are even higher than SAR would suggest because they often tie up side by side in large groups, which appear to be a single vessel in SAR.
 
 **Mischief/Subi Chart here**
 
