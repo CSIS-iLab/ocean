@@ -16,6 +16,10 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-- type: text
+- type: textarea
   name: authors
   label: Authors
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
