@@ -2,7 +2,7 @@
 title: Carolyn Weis
 date: 2018-12-10 14:33:02 +0000
 role: Program Director, Ocean Caucus Foundation
-byline: Program Director, Oceans Caucus Foundation
+byline: Program Director, Ocean Caucus Foundation
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1544462781/ocean/weis-headshot-test.jpg
 headshot: https://res.cloudinary.com/csisideaslab/image/upload/v1544462781/ocean/weis-headshot-test.jpg
 
