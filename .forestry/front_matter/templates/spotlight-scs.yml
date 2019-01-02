@@ -1,7 +1,7 @@
 ---
 label: Spotlight SCS
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
@@ -18,11 +18,13 @@ fields:
   type: textarea
   hidden: false
   default: ''
-- name: authors
+- type: textarea
+  config:
+    wysiwyg: false
+    schema:
+      format: markdown
+  name: authors
   label: Authors
-  type: list
-  hidden: false
-  default: ''
 - name: methodology
   label: Methodology
   type: textarea
