@@ -2,12 +2,13 @@
 title: Illuminating the South China Sea’s Dark Fishing Fleets
 date: 2019-01-09 14:00:00 +0000
 js_files:
-  - https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.2.0/highcharts.js
-  - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
-  - https://code.highcharts.com/modules/data.js
-  - https://code.highcharts.com/modules/pattern-fill.js
-  - scs
-css_files: scs
+- https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.2.0/highcharts.js
+- https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
+- https://code.highcharts.com/modules/data.js
+- https://code.highcharts.com/modules/pattern-fill.js
+- scs
+css_files:
+- scs
 include_header: scs/intro.html
 excerpt: Too little attention has focused on a key set of actors in the South China
   Sea disputes—the fishers who serve on the frontlines of the contest. CSIS undertook
@@ -16,12 +17,8 @@ excerpt: Too little attention has focused on a key set of actors in the South Ch
   story about the scale of unseen fishing activity in the region, massive overcapacity
   in the Spratlys, especially on the Chinese side, and the stunning scale and expense
   of the maritime militia.
-authors: "Author: Gregory B. Poling\nGregory B. Poling is director of the Asia Maritime
-  Transparency Initiative and a fellow with the Southeast Asia Program at CSIS. He
-  oversees research on U.S. foreign policy in the Asia Pacific, with a particular
-  focus on the maritime domain and the countries of Southeast Asia. \nResearch and
-  Other Assistance: James DePoy, Mark Powell, and Jenna Thomas from Vulcan, Inc.,
-  and Conor Cronin from CSIS."
+authors:
+- _authors/gregory-b-poling.md
 keywords:
 - South China Sea
 - Maritime Militia
@@ -106,10 +103,12 @@ image_groups:
     credit: National Geographic
     mode: landscape
 contributors:
+- label: " James DePoy"
+- label: " Mark Powell"
 - label: Jenna Thomas
   content: Vulcan, Inc.
-- label: " Mark Powell"
-- label: " James DePoy"
+- label: Conor Cronin
+  content: CSIS
 
 ---
 The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade.  With China’s expansion and militarization of its holdings in the disputed Spratly Islands from late 2013, tensions have escalated rapidly.
