@@ -7,6 +7,7 @@ const Timeline = () => {
   timelines.forEach(timeline => {
     let interval, position
 
+    const graphicID = timeline.getAttribute('id')
     const graphicHeight = timeline.dataset.height
     const graphicWidth = timeline.dataset.width
     const graphicSteps = parseInt(timeline.dataset.steps, 10)
@@ -115,7 +116,7 @@ const Timeline = () => {
 
     const scene = new ScrollMagic.Scene({
       offset: 0,
-      triggerElement: '.scs-timeline'
+      triggerElement: '#' + graphicID
     })
       .addTo(controller)
       .on('enter', start)

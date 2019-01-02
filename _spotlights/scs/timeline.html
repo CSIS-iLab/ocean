@@ -1,4 +1,4 @@
-<div class="{{ page.prefix }}-timeline" data-width="{{ include.width }}" data-height="{{ include.height }}" data-steps="{{ include.steps }}">
+<div id="{{ include.id }}" class="{{ page.prefix }}-timeline spotlight-component sc--large" data-width="{{ include.width }}" data-height="{{ include.height }}" data-steps="{{ include.steps }}">
   <div class="{{ page.prefix }}-timeline__indicator">
     <span class="{{ page.prefix }}-timeline__indicator-date startDate">{{ include.start_date }}</span>
     <div class="{{ page.prefix }}-timeline__indicator__progress">
@@ -14,7 +14,6 @@
   <div class="{{ page.prefix }}-timeline__scroll-container">
     <div class="{{ page.prefix }}-timeline__scroll-container__graphic"
         style="background-image: url('{{ include.image }}')"
-        >
-
-    </div>
+        ></div>
+  </div>
 </div>

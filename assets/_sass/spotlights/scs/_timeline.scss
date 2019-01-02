@@ -6,20 +6,30 @@
     align-items: center;
 
     &-date {
+      color: $color__black;
       letter-spacing: 0.3px;
       white-space: nowrap;
       @include font-size(13px);
 
       &:first-of-type {
-        margin-right: 1rem;
+        margin-right: 0.5rem;
+
+        @include breakpoint('medium') {
+          margin-right: 1rem;
+        }
       }
 
       &:last-of-type {
-        margin-left: 1rem;
+        margin-left: 0.5rem;
+
+        @include breakpoint('medium') {
+          margin-left: 1rem;
+        }
       }
     }
 
     button {
+      margin: 0 0 0 0.5rem;
       padding: 0;
       color: $color__default-accent;
       background-color: transparent;
@@ -37,14 +47,15 @@
   }
 
   &__indicator__progress {
+    position: relative;
     width: 100%;
     height: 6px;
     background-color: $color__ltgray-light;
     border-radius: 3px;
 
     &-marker {
-      position: relative;
-      top: -200%;
+      position: absolute;
+      top: 0;
       width: 0;
       height: 100%;
       background-color: $color__default-accent--hover;
