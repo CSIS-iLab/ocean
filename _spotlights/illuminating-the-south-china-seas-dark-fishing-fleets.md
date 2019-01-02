@@ -26,14 +26,14 @@ keywords:
 - Maritime Domain Awareness
 - Remote Sensing
 - Fishing
-further_reading: "* Asia Maritime Transparency Initiative, https://amti.csis.org/
-  \n* China’s Third Sea Force, The People’s Armed Forces Maritime Militia: Tethered
-  to the PLA, http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf
-  \n* Boom or Bust: The Future of Fish in the South China Sea, https://www.oceanrecov.org/news/ocean-recovery-alliance-news/boom-or-bust-the-future-of-fish-in-the-south-china-sea.html
-  \n* Defusing the South China Sea Disputes: A Regional Blueprint, https://www.csis.org/analysis/defusing-south-china-sea-disputes\n*
-  Illegal, Unregulated, and Unreported Fishing as a National Security Threat, https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat\n*
-  An Accounting of China’s Deployments to the Spratly Islands, https://amti.csis.org/accounting-chinas-deployments-spratly-islands/\n*
-  Confirming the Chinese Flotilla Near Thitu Island, https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/ "
+further_reading: |-
+  * Asia Maritime Transparency Initiative, [https://amti.csis.org/](https://amti.csis.org/)
+  * China’s Third Sea Force, The People’s Armed Forces Maritime Militia: Tethered to the PLA, [http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf](http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf)
+  * Boom or Bust: The Future of Fish in the South China Sea, [https://www.oceanrecov.org/news/ocean-recovery-alliance-news/boom-or-bust-the-future-of-fish-in-the-south-china-sea.html](https://www.oceanrecov.org/news/ocean-recovery-alliance-news/boom-or-bust-the-future-of-fish-in-the-south-china-sea.html)
+  * Defusing the South China Sea Disputes: A Regional Blueprint, [https://www.csis.org/analysis/defusing-south-china-sea-disputes](https://www.csis.org/analysis/defusing-south-china-sea-disputes)
+  * Illegal, Unregulated, and Unreported Fishing as a National Security Threat, [https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat](https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat)
+  * An Accounting of China’s Deployments to the Spratly Islands, [https://amti.csis.org/accounting-chinas-deployments-spratly-islands/](https://amti.csis.org/accounting-chinas-deployments-spratly-islands/)
+  * Confirming the Chinese Flotilla Near Thitu Island, [https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/](https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/)
 methodology: Vulcan, Inc. undertook the analysis of AIS, VIIRS, SAR, and high-resolution
   satellite imagery for this project. AIS was provided by ORBCOMM. At the start of
   the project, CSIS and Vulcan identified several areas of interest in the Spratlys
@@ -107,6 +107,10 @@ contributors:
 - label: Research and Other Assistance
   content: James DePoy, Mark Powell, and Jenna Thomas from Vulcan, Inc., and Conor
     Cronin from CSIS.
+- label: Development and Design
+  content: This article is a product of the [Andreas C. Dracopoulos iDeas Lab](https://www.csis.org/programs/dracopoulos-ideas-lab),
+    the in-house digital, multimedia, and design agency at the Center for Strategic
+    and International Studies.
 
 ---
 The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade.  With China’s expansion and militarization of its holdings in the disputed Spratly Islands from late 2013, tensions have escalated rapidly.
