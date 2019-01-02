@@ -14,8 +14,7 @@ excerpt: Too little attention has focused on a key set of actors in the South Ch
   in the Spratlys, especially on the Chinese side, and the stunning scale and expense
   of the maritime militia.
 authors:
-- Gregory B. Poling
-- _authors/test-jr.md
+- Gregory Poling
 keywords:
 - South China Sea
 - Maritime Militia
