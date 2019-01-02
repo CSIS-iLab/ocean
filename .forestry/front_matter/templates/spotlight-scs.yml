@@ -185,3 +185,5 @@ fields:
     default: ''
   hidden: false
   default: ''
+pages:
+- _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md

@@ -13,8 +13,12 @@ excerpt: Too little attention has focused on a key set of actors in the South Ch
   story about the scale of unseen fishing activity in the region, massive overcapacity
   in the Spratlys, especially on the Chinese side, and the stunning scale and expense
   of the maritime militia.
-authors:
-- Gregory Poling
+authors: "Author: Gregory B. Poling\nGregory B. Poling is director of the Asia Maritime
+  Transparency Initiative and a fellow with the Southeast Asia Program at CSIS. He
+  oversees research on U.S. foreign policy in the Asia Pacific, with a particular
+  focus on the maritime domain and the countries of Southeast Asia. \nResearch and
+  Other Assistance: James DePoy, Mark Powell, and Jenna Thomas from Vulcan, Inc.,
+  and Conor Cronin from CSIS."
 keywords:
 - South China Sea
 - Maritime Militia
