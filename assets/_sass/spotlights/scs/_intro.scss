@@ -33,7 +33,7 @@
   &-video {
     position: absolute;
     top: 0;
-    background-color: $color__test;
+    background-color: #20485a;
 
     &.is-active {
       position: fixed;
@@ -72,16 +72,23 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    margin: 0 auto;
+    margin: 0 1rem 0 auto;
     padding: 1px 1rem;
     color: $color__white;
     text-shadow: 1px 1px 6px rgba($color__black, 0.6);
     @include font-size(24px);
 
-
     @include breakpoint('medium') {
       width: 50%;
       padding: 1px 0;
+    }
+
+    .post-meta {
+      color: $color__white;
+
+      &__label {
+        color: $color__ltblue-lighter;
+      }
     }
   }
 
