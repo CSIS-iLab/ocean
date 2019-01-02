@@ -104,12 +104,9 @@ image_groups:
     credit: National Geographic
     mode: landscape
 contributors:
-- label: " James DePoy"
-- label: " Mark Powell"
-- label: Jenna Thomas
-  content: Vulcan, Inc.
-- label: Conor Cronin
-  content: CSIS
+- label: Research and Other Assistance
+  content: James DePoy, Mark Powell, and Jenna Thomas from Vulcan, Inc., and Conor
+    Cronin from CSIS.
 
 ---
 The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade.  With China’s expansion and militarization of its holdings in the disputed Spratly Islands from late 2013, tensions have escalated rapidly.
