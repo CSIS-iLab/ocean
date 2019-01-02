@@ -18,7 +18,10 @@ authors:
 - _authors/test-jr.md
 keywords:
 - South China Sea
-- oil
+- Maritime Militia
+- Maritime Domain Awareness
+- Remote Sensing
+- Fishing
 further_reading: "* Asia Maritime Transparency Initiative, https://amti.csis.org/
   \n* China’s Third Sea Force, The People’s Armed Forces Maritime Militia: Tethered
   to the PLA, http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf
