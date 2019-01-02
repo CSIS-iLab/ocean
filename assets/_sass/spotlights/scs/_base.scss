@@ -1,6 +1,8 @@
 $spotlight: '.scs';
-$color__default-accent: $color__red;
-$color__default-accent--hover: rgba($color__red, 0.8);
+$color__green: #b0cb9d;
+
+$color__default-accent: $color__green;
+$color__default-accent--hover: rgba($color__green, 0.8);
 
 :root {
   --accent-color: #{$color__default-accent};

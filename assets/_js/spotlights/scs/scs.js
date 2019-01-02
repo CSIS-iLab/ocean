@@ -1,5 +1,8 @@
+import chartVessels from './chartVessels'
+import chartCatch from './chartCatch'
 import Intro from './intro'
 
-window.addEventListener('DOMContentLoaded', () => {
-  Intro()
-})
+chartVessels()
+chartCatch()
+
+Intro()
