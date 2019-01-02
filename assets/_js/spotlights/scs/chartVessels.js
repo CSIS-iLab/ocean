@@ -44,14 +44,7 @@ const chartVessels = () => {
       title: {
         x: 25,
         align: 'left',
-        text:
-          'Vessel presence in Subi Reef and Mischief Reef has spiked to unprecedented levels'
-      },
-      subtitle: {
-        x: 25,
-        align: 'left',
-        text:
-          'About 300 vessels were in Subi and Mischief Reef in August. Over 90% are fishing vessels, average size 51 meters'
+        text: 'Vessel Presence in Subi Reef and Mischief Reef'
       },
       credits: {
         position: {
@@ -62,13 +55,11 @@ const chartVessels = () => {
         text: 'Vulcan'
       },
       legend: {
-        y: -15,
         align: 'center',
         verticalAlign: 'bottom',
         layout: 'horizontal',
-        symbolHeight: 2,
-        symbolWidth: 16,
-        squareSymbol: false
+        symbolRadius: 0,
+        squareSymbol: true
       },
       tooltip: {
         headerFormat: `<span style="font-size: 10px;color:{point.color}">⬤ </span>   <b>{point.series.name}</b><br/>`,
@@ -87,18 +78,7 @@ const chartVessels = () => {
         tickInterval: 50
       },
       xAxis: {
-        type: 'datetime',
-
-        labels: {
-          formatter: function(d) {
-            let date = new Date(d.value).toLocaleDateString('en-US', {
-              month: 'long',
-              year: 'numeric'
-            })
-
-            return date
-          }
-        }
+        type: 'datetime'
       },
       series: [
         {

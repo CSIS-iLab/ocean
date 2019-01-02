@@ -1,5 +1,3 @@
-@import '../../abstracts/abstracts';
-
 /*===========================
 =                           =
 =          Vessels          =
@@ -13,6 +11,7 @@
 
   .highcharts-title {
     @extend %post-content__table-title;
+    fill: $color__black;
   }
 
   .highcharts-subtitle {
@@ -23,8 +22,13 @@
     opacity: 0;
   }
 
-  .highcharts-axis-labels {
+  .highcharts-axis-labels,
+  .highcharts-legend-item {
     @extend %spotlight-component__label;
+  }
+
+  .highcharts-legend-item {
+    font-weight: normal;
   }
 
   .highcharts-root {
@@ -33,9 +37,9 @@
 }
 
 #chartCatch {
-  $china: #c2273f;
-  $spratly: #f7941d;
-  $scs: #8dc540;
+  $china: $color__red;
+  $spratly: $color__medblue;
+  $scs: $color__ltblue-lighter;
 
   @extend %scs-chart;
 
@@ -45,8 +49,8 @@
 }
 
 #chartVessels {
-  $subi: #f7941d;
-  $mischief: #8dc540;
+  $subi: $color__medblue;
+  $mischief: $color__red;
 
   @extend %scs-chart;
 

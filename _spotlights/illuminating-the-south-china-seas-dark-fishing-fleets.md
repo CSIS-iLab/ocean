@@ -144,7 +144,6 @@ While SAR can provide an estimate of fleet size, it cannot reveal much detail ab
 
 Just as SAR suggests, most of these congregate in the lagoons at Subi and Mischief Reefs, and in nearby waters including around the Philippine-held islets close by. In fact, imagery shows that the numbers of fishing vessels at Subi and Mischief Reefs are even higher than SAR would suggest because they often tie up side by side in large groups, which appear to be a single vessel in SAR.
 
-{% include_relative scs/chartCatch.html %}
 {% include_relative scs/chartVessels.html %}
 
 An analysis of historical imagery shows that the numbers of Chinese ships at Subi and Mischief were much higher in 2018 than in 2017. In August, which appears to have been the busiest month, there were about 300 ships anchored at the two reefs at any given time. Over 90 percent of these were fishing vessels with an average length of 51 meters and a projected displacement of about 550 tons.
@@ -167,7 +166,7 @@ Not only does imagery analysis show that most Chinese fishing vessels in the Spr
 
 Based on published Chinese catch levels, a 550-ton light falling net fishing vessel could catch about 12 metric tons per day. That means the more than 270 fishing boats present at Subi and Mischief Reefs in August could catch about 3,240 metric tons per day or nearly 1.2 million metric tons per year. That is between 50 and 100 percent of the {% include sc-tooltip.html title="total estimated catch" description="The total reported fish catch for the entire South China Sea is about 10 million tons per year, and some estimates place the number as high as 20 million tons when including IUU fishing. The total annual catch in the Spratlys, which cover about 12 percent of the South China Sea, can be estimated at between 1.2 and 2.4 million tons, assuming an even distribution of catch throughout the South China Sea. This is a conservative assumption because productivity and catch per area are actually believed to be lower in the Spratlys." %} in the Spratly Islands.
 
-**Catch Estimate Data Viz**
+{% include_relative scs/chartCatch.html %}
 
 This gross overcapacity combined with their tendency to congregate around both Chinese-occupied reefs and those held by other claimants leads to the conclusion that most of these vessels serve, at least part-time, in China’s maritime militia.
 

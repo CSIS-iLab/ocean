@@ -25,12 +25,10 @@ const chartCatch = () => {
       text: 'Vulcan'
     },
     yAxis: {
-      title: { text: 'Catch Estimate (millions)' },
-      endOnTick: false,
-      type: 'logarithmic'
+      title: { text: 'Catch Estimate (million metric tons)' },
+      endOnTick: false
     },
     legend: {
-      y: -15,
       align: 'center',
       verticalAlign: 'bottom',
       layout: 'horizontal',
@@ -46,13 +44,13 @@ const chartCatch = () => {
     series: [
       {
         className: 'highcharts-series-scs',
-        color: '#8dc540'
+        color: '#82c0de'
       },
       {
         className: 'highcharts-series-spratly',
         color: {
           pattern: {
-            color: '#f7941d',
+            color: '#0663a1',
             path: {
               d: 'M 0 0 L 3 3'
             },
@@ -66,7 +64,7 @@ const chartCatch = () => {
         className: 'highcharts-series-china',
         color: {
           pattern: {
-            color: '#c2273f',
+            color: '#ef4723',
             path: {
               d: 'M 0 0 L 10 10 M 9 -1 L 11 1 M -1 9 L 1 11',
               strokeWidth: 3
@@ -87,7 +85,7 @@ const chartCatch = () => {
 
         console.log(percentOfSpratleys)
         return this.series.name.toLowerCase().indexOf(`catch`) < 0
-          ? `${this.y} million fish`
+          ? `${this.y} million metric tons`
           : `${percentOfSpratleys}% of catch in Spratlys`
       }
     }
