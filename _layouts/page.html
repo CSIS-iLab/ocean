@@ -11,6 +11,7 @@ layout: default
     {%- include social-share.html class="post__header" -%}
   </header>
   <section class="post__content e-content" itemprop="articleBody">
+    <p class="post-lede">{{ page.mission_statement | replace: '***', "</br></br>" }}</p>
     <div class="post__content-body post-content">{{ content }}</div>
 
     {%-if page.name=="about.md" -%}
@@ -22,17 +23,15 @@ layout: default
           <h3 class="about-heading">{{ person.name }}</h3>
           <div class="about-subheading">{{ person.title }}</div>
           <img src="{{ person.headshot | relative_url }}" alt="{{ person.name | escape }}" title="{{ person.name | escape }}" />
-
-          <p class="about-bio">{{ person.bio }}</p>
+          {{ person.bio | markdownify }}
 
         </div>
         {%- endfor -%}
       <h3>{{ site.data.language.development_team }}</h3>
       <p>{{ site.data.language.ilab | markdownify }}</p>
     </div>
-
     {%- endif -%}
-    
+
   </section>
   <footer class="post__footer">
     <section class="post__footer-top">
