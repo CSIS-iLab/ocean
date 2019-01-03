@@ -42,9 +42,8 @@ team:
     and the Service Women’s Action Network, that supports women service members and
     veterans.'
 mission_statement: |-
-  The Stephenson Ocean Security Project will examine the links between ocean health and global security while proposing policy solutions that support sustainable development and reduce conflict.  
-
-  The project will focus on the ways in which ecological and socioeconomic changes interact to drive competition for marine resources and how this competition contributes to instability and geopolitical risk.  Proposed solutions will emphasize the ways in which effective ocean governance can moderate this risk and increase the resilience of both ecosystems and states to destabilizing forces of change.
+  * The Stephenson Ocean Security Project will examine the links between ocean health and global security while proposing policy solutions that support sustainable development and reduce conflict.
+  * The project will focus on the ways in which ecological and socioeconomic changes interact to drive competition for marine resources and how this competition contributes to instability and geopolitical risk.  Proposed solutions will emphasize the ways in which effective ocean governance can moderate this risk and increase the resilience of both ecosystems and states to destabilizing forces of change.
 
 ---
 The competition for ocean resources is increasing rapidly as coastal nations expand their economies and the global population continues its growth towards eleven billion people by the end of the century.  More than three billion people already depend on fish for a critical portion of their daily protein intake and this number is expected to grow in the years to come, even as 90 percent of global fish stocks are already fished at or above sustainable levels.  This crush of supply and demand is a growing cause of instability in key regions of the globe including the western Pacific, the Gulf of Guinea, and the Arctic.  Conflicts in these regions have the potential to arise from and be exacerbated by resource competition.
