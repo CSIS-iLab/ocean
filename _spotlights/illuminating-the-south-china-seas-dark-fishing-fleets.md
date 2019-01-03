@@ -104,7 +104,7 @@ contributors:
   content: James DePoy, Mark Powell, and Jenna Thomas from Vulcan, Inc., and Conor
     Cronin from CSIS.
 - label: Development and Design
-  content: This article is a product of the Andreas C. Dracopoulos iDeas Lab, the
+  content: This Spotlight is a product of the Andreas C. Dracopoulos iDeas Lab, the
     in-house digital, multimedia, and design agency at the Center for Strategic and
     International Studies.
 
