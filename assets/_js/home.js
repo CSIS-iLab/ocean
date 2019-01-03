@@ -2,6 +2,7 @@ import * as PIXI from 'pixi.js'
 import TweenMax from 'TweenMax'
 import TimelineMax from 'TimelineMax'
 import { PixiPlugin, ScrollToPlugin, Sine } from 'gsap/all'
+import Plyr from 'plyr'
 import ScrollMagic from 'ScrollMagic'
 import 'animation.gsap'
 
@@ -279,4 +280,6 @@ window.addEventListener('load', () => {
     .on('start', function(event) {
       //$("#preserve-svg").removeClass("pover");
     }) // scene end
+
+  const player = new Plyr('#home-video')
 }) //window onload

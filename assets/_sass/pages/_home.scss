@@ -125,6 +125,8 @@
       }
     }
 
+    .plyr.plyr--stopped .plyr__controls { display: none; }
+
     &-learn {
       width: calc(100% + (var(--home-padding-offset) * 3));
       margin-left: calc(var(--home-padding-offset) * -1);
@@ -157,10 +159,14 @@
 
     p {
       @extend %body-text__med;
-      margin: 0;
+      margin: 0 0 1rem;
 
       @include breakpoint('large') {
-        margin: 0 0.25rem;
+        margin: 0 0.25rem 1rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0 !important;
       }
     }
   }
