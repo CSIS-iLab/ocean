@@ -5,7 +5,7 @@ permalink: "/about/"
 team:
 - name: Dr. Whitley Saumweber
   title: Director
-  headshot: https://res.cloudinary.com/csisideaslab/image/upload/v1545689230/ocean/5Whit_9.jpg
+  headshot: https://res.cloudinary.com/csisideaslab/image/upload/v1546549798/ocean/saumweber-headshot.jpg
   bio: Dr. [**Whitley Saumweber**](https://www.csis.org/people/whitley-saumweber) is director of the Stephenson Ocean Security Project
     at the Center for Strategic and International Studies. He has worked extensively
     across the federal government, academia, and private sector developing practical
@@ -26,7 +26,7 @@ team:
     Rhode Island.
 - name: Monica Medina
   title: Senior Associate
-  headshot: https://res.cloudinary.com/csisideaslab/image/upload/v1546548140/ocean/Monica_Medina-1.jpg
+  headshot: https://res.cloudinary.com/csisideaslab/image/upload/v1546547720/ocean/medina-headshot.jpg
   bio: '[**Monica Medina**](https://www.csis.org/people/monica-medina) is the founder and publisher of Our Daily Planet, an environmental e-mail newsletter, and an independent consultant. She is also an adjunct professor in the School of Foreign Service at Georgetown University. Previously, Ms. Medina served as deputy director of the Environment Program at the Walton Family Foundation, and she was senior director of ocean policy at the National Geographic Society. From 2012 to 2013, she served as special assistant to the secretary of defense. Earlier, she served as principal deputy undersecretary of commerce for oceans and atmosphere at the National Oceanic and Atmospheric Administration, where she led efforts on Arctic conservation and restoration of the Gulf of Mexico after the Deepwater Horizon oil spill.'
 mission_statement: |-
   The Stephenson Ocean Security (SOS) Project examines the intersection of ocean health and global security. It proposes policy solutions that support sustainable development and reduce conflict.
