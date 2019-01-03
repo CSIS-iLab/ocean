@@ -47,5 +47,9 @@ fields:
 - type: textarea
   label: Mission Statement
   name: mission_statement
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
 pages:
 - about.md
