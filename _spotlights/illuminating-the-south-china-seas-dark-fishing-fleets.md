@@ -1,28 +1,28 @@
 ---
 title: Illuminating the South China Sea’s Dark Fishing Fleets
-date: 2019-01-02 14:00:00 +0000
+date: 2019-01-09 14:00:00 +0000
 prefix: scs
 js_files:
-  - https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.2.0/highcharts.js
-  - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
-  - https://code.highcharts.com/modules/data.js
-  - https://code.highcharts.com/modules/pattern-fill.js
-  - scs
+- https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.2.0/highcharts.js
+- https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
+- https://code.highcharts.com/modules/data.js
+- https://code.highcharts.com/modules/pattern-fill.js
+- scs
 css_files:
-  - scs
+- scs
 include_header: scs/intro.html
 excerpt: Unseen fishing activity. Maritime militias in the Spratlys. Fishers have
   often been overlooked in the South China Sea disputes. CSIS in cooperation with
   Vulcan, Inc., unveil a worrying narrative about the impact fishers and their fleets
   play in the region.
 authors:
-  - _authors/gregory-b-poling.md
+- _authors/gregory-b-poling.md
 keywords:
-  - South China Sea
-  - Maritime Militia
-  - Maritime Domain Awareness
-  - Remote Sensing
-  - Fishing
+- South China Sea
+- Maritime Militia
+- Maritime Domain Awareness
+- Remote Sensing
+- Fishing
 further_reading: |-
   * Asia Maritime Transparency Initiative, [https://amti.csis.org/](https://amti.csis.org/)
   * China’s Third Sea Force, The People’s Armed Forces Maritime Militia: Tethered to the PLA, [http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf](http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf)
@@ -31,8 +31,7 @@ further_reading: |-
   * Illegal, Unregulated, and Unreported Fishing as a National Security Threat, [https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat](https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat)
   * An Accounting of China’s Deployments to the Spratly Islands, [https://amti.csis.org/accounting-chinas-deployments-spratly-islands/](https://amti.csis.org/accounting-chinas-deployments-spratly-islands/)
   * Confirming the Chinese Flotilla Near Thitu Island, [https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/](https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/)
-methodology:
-  Vulcan, Inc. undertook the analysis of AIS, VIIRS, SAR, and high-resolution
+methodology: Vulcan, Inc. undertook the analysis of AIS, VIIRS, SAR, and high-resolution
   satellite imagery for this project. AIS was provided by ORBCOMM. At the start of
   the project, CSIS and Vulcan identified several areas of interest in the Spratlys
   and requested that satellite imagery provider MDA collect SAR data for them twice
@@ -42,68 +41,73 @@ methodology:
   of activity. High-resolution imagery of those areas from DigitalGlobe was then analyzed
   to identify vessel details.
 related_content:
-  - _posts/2018-11-19-test-post.md
+- _posts/2018-11-19-test-post.md
 is_featured: true
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1546471516/ocean/Chinese-vessels-Mischief-Reef-6-19-18.jpg
 image_caption: Chinese fishing vessels at Mischief Reef on June 19, 2018.
 image_source: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC."
 related_spotlight:
-  - _spotlights/introducing-a-new-arctic-ocean.md
+- _spotlights/introducing-a-new-arctic-ocean.md
 related_commentary:
-  - _posts/2018-11-19-test-post.md
-  - _posts/2018-02-14-welcome-to-jekyll.markdown
+- _posts/2018-11-19-test-post.md
+- _posts/2018-02-14-welcome-to-jekyll.markdown
 image_groups:
   reefs:
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/healthy-reef-taiping.jpg
-      caption: A relatively healthy reef flat around Itu Aba Island, occupied by Taiwan.
-      credit: Taiwan Ministry of Internal Affairs
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/Overfished-Spratly-Reef-Feb-2016.jpg
-      caption: An overfished reef flat surrounding Thitu Island, occupied by the Philippines.
-      credit: John McManus, February 2016
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/Destroyed-Spratly-Reef-Feb-2016.jpg
-      caption: A reef flat, approximately 1.5 nautical miles away from Thitu Island, destroyed by Chinese clam harvesters.
-      credit: John McManus, February 2016
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/healthy-reef-taiping.jpg
+    caption: A relatively healthy reef flat around Itu Aba Island, occupied by Taiwan.
+    credit: Taiwan Ministry of Internal Affairs
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/Overfished-Spratly-Reef-Feb-2016.jpg
+    caption: An overfished reef flat surrounding Thitu Island, occupied by the Philippines.
+    credit: John McManus, February 2016
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/Destroyed-Spratly-Reef-Feb-2016.jpg
+    caption: A reef flat, approximately 1.5 nautical miles away from Thitu Island,
+      destroyed by Chinese clam harvesters.
+    credit: John McManus, February 2016
   ships:
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-falling-net-vessel-Mischief-11-1-18.jpg
-      caption: A Chinese light falling net vessel at Mischief Reef on November 1, 2018.
-      credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-trawlers-mischief-6-19-18.jpg
-      caption: Chinese trawlers at Mischief Reef on June 19, 2018.
-      credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-blue-boats-Ladd-Reef_3-18-18.jpg
-      caption: Vietnamese blue boats at Ladd Reef on March 18, 2018.
-      credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-squid-jigger-SW-Cay-8-15-18.jpg
-      caption: A Vietnamese squid jigger near Southwest Cay on August 15, 2018.
-      credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Filipino-bancas-lg-med-sm-Scarborough-3-1-17.jpg
-      caption: Filipino bancas near Scarborough Shoal on March 1, 2017.
-      credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-falling-net-vessel-Mischief-11-1-18.jpg
+    caption: A Chinese light falling net vessel at Mischief Reef on November 1, 2018.
+    credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-trawlers-mischief-6-19-18.jpg
+    caption: Chinese trawlers at Mischief Reef on June 19, 2018.
+    credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-blue-boats-Ladd-Reef_3-18-18.jpg
+    caption: Vietnamese blue boats at Ladd Reef on March 18, 2018.
+    credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-squid-jigger-SW-Cay-8-15-18.jpg
+    caption: A Vietnamese squid jigger near Southwest Cay on August 15, 2018.
+    credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Filipino-bancas-lg-med-sm-Scarborough-3-1-17.jpg
+    caption: Filipino bancas near Scarborough Shoal on March 1, 2017.
+    credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
   yue_tai_yu:
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-vessels-5-25-18.jpg
-      caption: Six of the Yue Tai Yu vessels near Hughes Reef on May 25, 2018.
-      credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-      mode: portrait
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-18_-under-construction-8-26-17.jpg
-      caption: The nine vessels of the Yue Tai Yu fleet under construction at Guangxin Shipbuilding & Heavy Industry Co., Ltd on August 26, 2017.
-      credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-      mode: landscape
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-vessels-5-25-18.jpg
+    caption: Six of the Yue Tai Yu vessels near Hughes Reef on May 25, 2018.
+    credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
+    mode: portrait
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-18_-under-construction-8-26-17.jpg
+    caption: The nine vessels of the Yue Tai Yu fleet under construction at Guangxin
+      Shipbuilding & Heavy Industry Co., Ltd on August 26, 2017.
+    credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
+    mode: landscape
   yue_tai_yu_composite:
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuyaiyu_composite.jpg
-      caption: AIS signals show that the Yue Tai Yu ships sailed from the shipyard to the port of Shadi in December 2017 and then on to the Spratly Islands.
-      credit: CSIS
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuetaitu_composite_zoomed.jpg
-      caption: AIS signals show that from January to September 2018, the Yue Tai Yu vessels have operated near Chinese outposts in the Spratlys with no apparent signs of fishing.
-      credit: CSIS
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuyaiyu_composite.jpg
+    caption: AIS signals show that the Yue Tai Yu ships sailed from the shipyard to
+      the port of Shadi in December 2017 and then on to the Spratly Islands.
+    credit: CSIS
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuetaitu_composite_zoomed.jpg
+    caption: AIS signals show that from January to September 2018, the Yue Tai Yu
+      vessels have operated near Chinese outposts in the Spratlys with no apparent
+      signs of fishing.
+    credit: CSIS
 contributors:
-  - label: Research and Other Assistance
-    content:
-      James DePoy, Mark Powell, and Jenna Thomas from Vulcan, Inc., and Conor
-      Cronin from CSIS.
-  - label: Development and Design
-    content:
-      This article is a product of the Andreas C. Dracopoulos iDeas Lab, the in-house digital, multimedia, and design agency at the Center for Strategic
-      and International Studies.
+- label: Research and Other Assistance
+  content: James DePoy, Mark Powell, and Jenna Thomas from Vulcan, Inc., and Conor
+    Cronin from CSIS.
+- label: Development and Design
+  content: This article is a product of the Andreas C. Dracopoulos iDeas Lab, the
+    in-house digital, multimedia, and design agency at the Center for Strategic and
+    International Studies.
+
 ---
 The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse.
 
