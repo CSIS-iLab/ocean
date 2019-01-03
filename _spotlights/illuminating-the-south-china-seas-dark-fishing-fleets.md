@@ -141,6 +141,7 @@ path="https://res.cloudinary.com/csisideaslab/image/upload/v1546474832/ocean/loc
 caption="The Spratly Islands are claimed in whole or in part by China, Taiwan, Vietnam, Brunei, Malaysia, and the Philippines."
 credit="CSIS"
 align="right"
+size="small"
 %}
 
 To provide a clearer picture of the size and activities of these important players, CSIS undertook a six-month-long project in cooperation with Vulcan, Inc. to leverage previously underused technologies and data sources to analyze the size and behavior of fishing fleets in the most hotly-contested part of the South China Sea, the Spratly Islands.
@@ -180,7 +181,6 @@ For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurat
 path="https://res.cloudinary.com/csisideaslab/image/upload/v1546474772/ocean/sar_aiscorr.svg"
 caption="AIS signals detected in the South China Sea in June 2018."
 credit="CSIS"
-width="small"
 %}
 
 {% include_relative scs/map-scrollytelling.html %}
