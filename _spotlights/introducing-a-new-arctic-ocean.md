@@ -29,48 +29,58 @@ related_spotlight:
 - _spotlights/introducing-a-new-arctic-ocean.md
 - _spotlights/arctic/test-arctic.html
 related_commentary:
-  - _posts/2018-12-10-harmonizing-enforcement-would-make-the-oceans-more-secure.md
-  - _posts/2018-11-19-test-post.md
-image_galleries:
+- _posts/2018-12-10-harmonizing-enforcement-would-make-the-oceans-more-secure.md
+- _posts/2018-11-19-test-post.md
+image_galleries: 
 image_groups:
   right_three:
-    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg'
-      caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      credit: Getty
-    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg'
-      caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
-      ? credit
-    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg'
-      caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
-      credit: National Geographic
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg
+    caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua.
+    credit: Getty
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg
+    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
+      a diam maecenas sed enim ut sem viverra aliquet.
+    credit: 
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg
+    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
+      mi quis hendrerit dolor magna eget est.
+    credit: National Geographic
   left_two:
-    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg'
-      caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
-      credit: Getty
-    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg'
-      caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
-      credit: National Geographic
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg
+    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
+      a diam maecenas sed enim ut sem viverra aliquet.
+    credit: Getty
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg
+    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
+      mi quis hendrerit dolor magna eget est.
+    credit: National Geographic
   max_three:
-    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg'
-      caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      credit: Getty
-    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg'
-      caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
-      ? credit
-      mode: portrait
-    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg'
-      caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
-      credit: National Geographic
-      mode: landscape
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg
+    caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua.
+    credit: Getty
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg
+    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
+      a diam maecenas sed enim ut sem viverra aliquet.
+    credit: 
+    mode: portrait
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg
+    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
+      mi quis hendrerit dolor magna eget est.
+    credit: National Geographic
+    mode: landscape
   max_two:
-    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg'
-      caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris a diam maecenas sed enim ut sem viverra aliquet.
-      credit: Getty
-      mode: portrait
-    - url: 'https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg'
-      caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies mi quis hendrerit dolor magna eget est.
-      credit: National Geographic
-      mode: landscape
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg
+    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
+      a diam maecenas sed enim ut sem viverra aliquet.
+    credit: Getty
+    mode: portrait
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg
+    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
+      mi quis hendrerit dolor magna eget est.
+    credit: National Geographic
+    mode: landscape
 methodology: |-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut tristique et egestas quis.
@@ -92,6 +102,7 @@ contributors:
 - label: development & design
   content: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
     deserunt mollit anim id est laborum.
+published: false
 
 ---
 <h2 class="test-header">Section one</h2>
