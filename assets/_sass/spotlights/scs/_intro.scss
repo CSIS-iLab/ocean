@@ -33,7 +33,7 @@
   &-video {
     position: absolute;
     top: 0;
-    background-color: $color__test;
+    background-color: #20485a;
 
     &.is-active {
       position: fixed;
@@ -50,29 +50,45 @@
 
   &-map {
     position: relative;
-    top: calc(100% - 100vh);
-    height: 100vh;
-    background-color: var(--accent-color);
-    background-image: url('https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    top: calc(100% - 200vh);
+    height: 200vh;
+    background-color: $color__white;
+    // background-image: url('https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+
+    svg {
+      position: sticky;
+      @include structure($size__header-height--minimal, 'top', ('small', 'large'));
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100vh;
+    }
   }
 
   &-prose {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    margin: 0 auto;
+    margin: 0 1rem 0 auto;
     padding: 1px 1rem;
     color: $color__white;
     text-shadow: 1px 1px 6px rgba($color__black, 0.6);
     @include font-size(24px);
 
-
     @include breakpoint('medium') {
       width: 50%;
       padding: 1px 0;
+    }
+
+    .post-meta {
+      color: $color__white;
+
+      &__label {
+        color: $color__ltblue-lighter;
+      }
     }
   }
 

@@ -11,13 +11,7 @@ js_files:
 css_files:
 - scs
 include_header: scs/intro.html
-excerpt: Too little attention has focused on a key set of actors in the South China
-  Sea disputes—the fishers who serve on the frontlines of the contest. CSIS undertook
-  a six-month-long project in cooperation with Vulcan, Inc. to analyze the size and
-  behavior of these key players in the Spratly Islands. The results tell a worrying
-  story about the scale of unseen fishing activity in the region, massive overcapacity
-  in the Spratlys, especially on the Chinese side, and the stunning scale and expense
-  of the maritime militia.
+excerpt: Unseen fishing activity. Maritime militias in the Spratlys. Fishers have often been overlooked in the South China Sea disputes. CSIS in cooperation with Vulcan, Inc., unveil a worrying narrative about the impact fishers and their fleets play in the region.
 authors:
 - _authors/gregory-b-poling.md
 keywords:
@@ -129,23 +123,6 @@ contributors:
     and International Studies.
 
 ---
-The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade.  With China’s expansion and militarization of its holdings in the disputed Spratly Islands from late 2013, tensions have escalated rapidly.
-
-The South China Sea is home to two sets of disputes.
-
-One is over territory. China, Taiwan, Brunei, Malaysia, the Philippines, and Vietnam are making claims to various islands, rocks, and reefs around the sea.
-
-The other, involves those parties as well as Indonesia, and the sea itself. Southeast Asian claimants are asserting rights to overlapping maritime zones under international law, while China and Taiwan demand ambiguous rights throughout the entire sea.
-
-*Scrollytelling Intro*
-The South China Sea has emerged as one of the most dangerous flashpoints in the Indo-Pacific over the last decade.  With China’s expansion and militarization of its holdings in the disputed Spratly Islands in late 2013, tensions are brewing.
-
-The South China Sea is home to two sets of disputes.
-
-One is over territory. China, Taiwan, Brunei, Malaysia, the Philippines, and Vietnam are making claims to various islands, rocks, and reefs around the sea.
-
-The other, involves those parties as well as Indonesia, and the sea itself. Southeast Asian claimants are asserting rights to overlapping maritime zones under international law, while China and Taiwan demand ambiguous rights throughout the entire sea.
-*End*
 
 The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse.
 
