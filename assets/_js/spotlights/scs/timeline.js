@@ -108,7 +108,7 @@ const Timeline = () => {
       position = 0
       intervals.forEach(clearInterval)
       intervals = []
-      interval = setInterval(update, 750)
+      interval = setInterval(update, 400)
       intervals.push(interval)
     }
 

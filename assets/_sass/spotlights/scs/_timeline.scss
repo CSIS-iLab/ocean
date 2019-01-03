@@ -60,6 +60,7 @@
       height: 100%;
       background-color: $color__default-accent--hover;
       border-radius: 3px;
+      transition: width 0.1s linear;
     }
 
     &-ticks {

@@ -165,23 +165,13 @@ One of the most helpful sources of data on fishing in the South China Sea, and a
 VIIRS data shows a significant amount of fishing in the South China Sea year-round, with the most active months being March through June. Within the Spratlys, the peak fishing season is March-April. There is also an increase in activity along the coasts of China and Vietnam in August, coinciding with the end of a unilateral three-month fishing ban that Beijing imposes each year in the northern portion of the South China Sea. But most importantly, VIIRS shows that the overall level of activity, regardless of season, has been steadily increasing year to year.
 
 {% include_relative scs/timeline.html
-  id="timeline-viirs"
-  start_date="Aug 2011"
-  end_date="Jan 2013"
-  image="https://res.cloudinary.com/csisideaslab/image/upload/v1545327763/ocean/yty2018_sprites.jpg"
-  height=540.96
-  width=700
-  steps=9
-  %}
-
-{% include_relative scs/timeline.html
-    id="timeline-yui"
+    id="timeline-viirs"
     start_date="Jan 2013"
-    end_date="Nov 2018"
-    image="https://graphics.thomsonreuters.com/testfiles/xinjiang-camp-final/images/sprite2.jpg"
-    height=404
-    width=1200
-    steps=34
+    end_date="Dec 2016"
+    image="https://res.cloudinary.com/csisideaslab/image/upload/v1546486388/ocean/VIIRS_gif.jpg"
+    height=540.96
+    width=700
+    steps=48
     %}
 
 For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurate count of vessels at a given time and location. Anything metallic, like the hull and superstructure of most modern fishing vessels as small as six meters, can be readily identified by satellite-based SAR. Again, the disconnect between the level of activity and the number of AIS signals being broadcast was staggering. For instance, SAR data collected on eight occasions between September 30 and October 5 provided 264 vessel detections, only 8 of which were broadcasting AIS.
