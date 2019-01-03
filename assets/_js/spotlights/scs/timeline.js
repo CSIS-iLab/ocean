@@ -8,15 +8,21 @@ const Timeline = () => {
     let interval, position
 
     const graphicID = timeline.getAttribute('id')
-    const graphicHeight = timeline.dataset.height
-    const graphicWidth = timeline.dataset.width
-    const graphicSteps = parseInt(timeline.dataset.steps, 10)
-
     const container = timeline.querySelector('.scs-timeline__scroll-container')
-
     const graphic = container.querySelector(
       '.scs-timeline__scroll-container__graphic'
     )
+
+    const imageSrc = graphic.style.backgroundImage
+      .replace(/url\((['"])?(.*?)\1\)/gi, '$2')
+      .split(',')[0]
+
+    const image = new Image()
+    image.src = imageSrc
+
+    const graphicSteps = parseInt(timeline.dataset.steps, 10)
+    const graphicWidth = image.width
+    const graphicHeight = image.height / graphicSteps
 
     container.style.paddingTop = `${(graphicHeight / graphicWidth) * 100.0}%`
 
@@ -48,6 +54,7 @@ const Timeline = () => {
     const partialYearWidth = Math.ceil(
       ((endDate.getMonth() + 1) / 12) * 10 * yearWidth
     )
+
     Array.from(Array(diff)).forEach((x, i) => {
       let monthNum = Math.abs(startDate.getMonth() + i)
       let newYear = i % 12 === 0

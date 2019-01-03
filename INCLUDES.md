@@ -71,8 +71,6 @@ Use front matter to specify url, caption, credit, and mode. Mode options are por
   start_date="Jan 2013"
   end_date="Nov 2018"
   image="https://...jpg"
-  height=404
-  width=1200
   steps=34
   size="large"
   %}
