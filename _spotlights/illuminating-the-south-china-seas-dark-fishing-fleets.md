@@ -11,7 +11,10 @@ js_files:
 css_files:
 - scs
 include_header: scs/intro.html
-excerpt: Unseen fishing activity. Maritime militias in the Spratlys. Fishers have often been overlooked in the South China Sea disputes. CSIS in cooperation with Vulcan, Inc., unveil a worrying narrative about the impact fishers and their fleets play in the region.
+excerpt: Unseen fishing activity. Maritime militias in the Spratlys. Fishers have
+  often been overlooked in the South China Sea disputes. CSIS in cooperation with
+  Vulcan, Inc., unveil a worrying narrative about the impact fishers and their fleets
+  play in the region.
 authors:
 - _authors/gregory-b-poling.md
 keywords:
@@ -46,19 +49,9 @@ image_source: image source
 related_spotlight:
 - _spotlights/introducing-a-new-arctic-ocean.md
 related_commentary:
-- _posts/2018-11-19-test-post.md
-- _posts/2018-02-14-welcome-to-jekyll.markdown
+- _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
+- _posts/2018-12-10-making-the-oceans-more-secure.md
 image_groups:
-  reefs:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/healthy-reef-taiping.jpg
-    caption: A relatively healthy reef flat around Itu Aba Island, occupied by Taiwan.
-    credit: Taiwan Ministry of Internal Affairs
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/Overfished-Spratly-Reef-Feb-2016.jpg
-    caption: An overfished reef flat surrounding Thitu Island, occupied by the Philippines. 
-    credit: John McManus, February 2016
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/Destroyed-Spratly-Reef-Feb-2016.jpg
-    caption: A reef flat, approximately 1.5 nautical miles away from Thitu Island, destroyed by Chinese clam harvesters. 
-    credit: John McManus, February 2016
   right_three:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg
     caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -81,38 +74,32 @@ image_groups:
     caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
       mi quis hendrerit dolor magna eget est.
     credit: National Geographic
-  ships:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-falling-net-vessel-Mischief-11-1-18.jpg
-    caption: A Chinese light falling net vessel at Mischief Reef on November 1, 2018.
-    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-trawlers-mischief-6-19-18.jpg
-    caption: Chinese trawlers at Mischief Reef on June 19, 2018. 
-    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-blue-boats-Ladd-Reef_3-18-18.jpg
-    caption: Vietnamese blue boats at Ladd Reef on March 18, 2018.  
-    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-squid-jigger-SW-Cay-8-15-18.jpg
-    caption: A Vietnamese squid jigger near Southwest Cay on August 15, 2018.   
-    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Filipino-bancas-lg-med-sm-Scarborough-3-1-17.jpg
-    caption: Filipino bancas near Scarborough Shoal on March 1, 2017.
-    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
-  yue_tai_yu:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-vessels-5-25-18.jpg
-    caption: Six of the Yue Tai Yu vessels near Hughes Reef on May 25, 2018.
-    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
+  max_three:
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg
+    caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua.
+    credit: Getty
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg
+    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
+      a diam maecenas sed enim ut sem viverra aliquet.
+    credit: 
     mode: portrait
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-18_-under-construction-8-26-17.jpg
-    caption: The nine vessels of the Yue Tai Yu fleet under construction at Guangxin Shipbuilding & Heavy Industry Co., Ltd on August 26, 2017.
-    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg
+    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
+      mi quis hendrerit dolor magna eget est.
+    credit: National Geographic
     mode: landscape
-  yue_tai_yu_composite:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuyaiyu_composite.jpg
-    caption: AIS signals show that the Yue Tai Yu ships sailed from the shipyard to the port of Shadi in December 2017 and then on to the Spratly Islands.
-    credit: CSIS
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuetaitu_composite_zoomed.jpg
-    caption: AIS signals show that from January to September 2018, the Yue Tai Yu vessels have operated near Chinese outposts in the Spratlys with no apparent signs of fishing.
-    credit: CSIS
+  max_two:
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg
+    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
+      a diam maecenas sed enim ut sem viverra aliquet.
+    credit: Getty
+    mode: portrait
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg
+    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
+      mi quis hendrerit dolor magna eget est.
+    credit: National Geographic
+    mode: landscape
 contributors:
 - label: Research and Other Assistance
   content: James DePoy, Mark Powell, and Jenna Thomas from Vulcan, Inc., and Conor
@@ -123,7 +110,6 @@ contributors:
     and International Studies.
 
 ---
-
 The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse.
 
 {% include sc-statistic.html align='right' number='50%' pre='More than' post='of the fishing vessels in the world are estimated to operate in the South China Sea.' %}
