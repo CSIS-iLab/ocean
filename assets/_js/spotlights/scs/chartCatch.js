@@ -9,7 +9,8 @@ const chartCatch = () => {
     },
     chart: {
       zoomType: false,
-      type: 'column'
+      type: 'column',
+      height: '500px'
     },
     title: {
       // x: 25,
@@ -22,12 +23,10 @@ const chartCatch = () => {
         'The Spratly Island values represent 12% of the entire South China Sea estimated catch of 10 million (low) or 20 million (high) tons.'
     },
     credits: {
-      position: {
-        y: -15
-      },
       enabled: true,
       href: false,
-      text: 'Vulcan'
+      text:
+        'Developed based on information or analysis provided by Vulcan Technologies LLC.'
     },
     yAxis: {
       title: { text: 'Catch Estimate (million tons)' },
