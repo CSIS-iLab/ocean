@@ -11,10 +11,11 @@ layout: default
     {%- include social-share.html class="post__header" -%}
   </header>
   <section class="post__content e-content" itemprop="articleBody">
+    <p class="post-lede">{{ page.mission_statement | markdownify }}</p>
     <div class="post__content-body post-content">{{ content }}</div>
 
     {%-if page.name=="about.md" -%}
-    <div class="about">
+    <div class=" about">
       <h2>{{ site.data.language.the_team }}</h2>
         {%- for person in page.team -%}
         <div class="about-person">
@@ -30,9 +31,8 @@ layout: default
       <h3>{{ site.data.language.development_team }}</h3>
       <p>{{ site.data.language.ilab | markdownify }}</p>
     </div>
-
     {%- endif -%}
-    
+
   </section>
   <footer class="post__footer">
     <section class="post__footer-top">

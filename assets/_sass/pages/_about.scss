@@ -1,6 +1,9 @@
 .about {
   order: 4;
   margin-top: 2.5rem;
+  @include breakpoint('large') {
+    width: calc(100% - #{$size__post-sidebar-width});
+  }
 
   h2 {
     @extend %post-content__h2;
