@@ -105,9 +105,9 @@ contributors:
   content: James DePoy, Mark Powell, and Jenna Thomas from Vulcan, Inc., and Conor
     Cronin from CSIS.
 - label: Development and Design
-  content: This article is a product of the [Andreas C. Dracopoulos iDeas Lab](https://www.csis.org/programs/dracopoulos-ideas-lab),
-    the in-house digital, multimedia, and design agency at the Center for Strategic
-    and International Studies.
+  content: This article is a product of the Andreas C. Dracopoulos iDeas Lab, the
+    in-house digital, multimedia, and design agency at the Center for Strategic and
+    International Studies.
 
 ---
 The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse.
