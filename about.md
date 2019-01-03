@@ -41,14 +41,10 @@ team:
     SkyTruth, Inc., which uses satellite imagery to monitor environmental threats;
     and the Service Women’s Action Network, that supports women service members and
     veterans.'
-mission_statement: The Stephenson Ocean Security Project will examine the links between
-  ocean health and global security while proposing policy solutions that support sustainable
-  development and reduce conflict.  The project will focus on the ways in which ecological
-  and socioeconomic changes interact to drive competition for marine resources and
-  how this competition contributes to instability and geopolitical risk.  Proposed
-  solutions will emphasize the ways in which effective ocean governance can moderate
-  this risk and increase the resilience of both ecosystems and states to destabilizing
-  forces of change.
+mission_statement: |-
+  The Stephenson Ocean Security Project will examine the links between ocean health and global security while proposing policy solutions that support sustainable development and reduce conflict.  
+
+  The project will focus on the ways in which ecological and socioeconomic changes interact to drive competition for marine resources and how this competition contributes to instability and geopolitical risk.  Proposed solutions will emphasize the ways in which effective ocean governance can moderate this risk and increase the resilience of both ecosystems and states to destabilizing forces of change.
 
 ---
 ## Mission Statement
