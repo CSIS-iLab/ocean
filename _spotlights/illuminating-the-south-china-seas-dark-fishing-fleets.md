@@ -11,7 +11,10 @@ js_files:
 css_files:
   - scs
 include_header: scs/intro.html
-excerpt: Unseen fishing activity. Maritime militias in the Spratlys. Fishers have often been overlooked in the South China Sea disputes. CSIS in cooperation with Vulcan, Inc., unveil a worrying narrative about the impact fishers and their fleets play in the region.
+excerpt: Unseen fishing activity. Maritime militias in the Spratlys. Fishers have
+  often been overlooked in the South China Sea disputes. CSIS in cooperation with
+  Vulcan, Inc., unveil a worrying narrative about the impact fishers and their fleets
+  play in the region.
 authors:
   - _authors/gregory-b-poling.md
 keywords:
@@ -41,9 +44,9 @@ methodology:
 related_content:
   - _posts/2018-11-19-test-post.md
 is_featured: true
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1544742472/ocean/photo-1529928750697-1d9646312221.jpg
-image_caption: image caption
-image_source: image source
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1546471516/ocean/Chinese-vessels-Mischief-Reef-6-19-18.jpg
+image_caption: Chinese fishing vessels at Mischief Reef on June 19, 2018.
+image_source: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC."
 related_spotlight:
   - _spotlights/introducing-a-new-arctic-ocean.md
 related_commentary:
@@ -103,7 +106,6 @@ contributors:
       the in-house digital, multimedia, and design agency at the Center for Strategic
       and International Studies.
 ---
-
 The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse.
 
 {% include sc-statistic.html align='right' number='50%' pre='More than' post='of the fishing vessels in the world are estimated to operate in the South China Sea.' %}
