@@ -6,6 +6,7 @@
   $site-header: '.site-header';
   $header-active: '.site-header--menu-active';
   $site-nav: '.site-header__nav';
+  $about-width: 325px;
 
   display: flex;
   align-items: center;
@@ -63,11 +64,22 @@
     &.is-active {
       transform: translateY(0);
       visibility: visible;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 100%;
+        display: block;
+        width: calc((100vw - 100%)/2);
+        height: 100%;
+        background-color: $color__dkblue;
+      }
     }
 
     &-site {
       @include breakpoint('large') {
-        width: 325px;
+        width: $about-width;
       }
     }
 
@@ -100,6 +112,10 @@
 
   #{$site-header}__panel-spotlight {
     background-color: $color__dkblue;
+
+    @include breakpoint('large') {
+      width: calc(100% - #{$about-width});
+    }
 
     &-title {
       margin-bottom: 2rem;
