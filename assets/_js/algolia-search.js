@@ -151,7 +151,7 @@ const addResults = () => {
           return `${hit.html}`
         },
         empty:
-          dataset.collectionTitle === 'all'
+          dataset.collectionTitle !== 'all'
             ? ``
             : `${
                 dataset.collectionTitle !== 'authors'
