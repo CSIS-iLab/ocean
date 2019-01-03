@@ -44,8 +44,8 @@ fields:
     default: ''
   hidden: false
   default: ''
-- type: text
+- type: textarea
   name: mission_statement
-  label: mission_statement
+  label: Mission Statement
 pages:
 - about.md
