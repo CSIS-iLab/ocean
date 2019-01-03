@@ -32,6 +32,12 @@
       rgba(158, 179, 208, 1) 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f2f6', endColorstr='#9eb3d0', GradientType=1);
+
+    .hero-logo {
+      display: block;
+      max-width: 500px;
+      margin: auto;
+    }  
   }
 
   #hero_bottom {
