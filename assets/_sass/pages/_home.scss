@@ -125,6 +125,8 @@
       }
     }
 
+    .plyr.plyr--stopped .plyr__controls { display: none; }
+
     &-learn {
       width: calc(100% + (var(--home-padding-offset) * 3));
       margin-left: calc(var(--home-padding-offset) * -1);

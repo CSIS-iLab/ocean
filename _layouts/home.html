@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% include home-top.html %}
 <section class="home">
   <section class="home__about">
@@ -10,38 +11,65 @@ layout: default
       <p>{{ site.data.language.home.about_desc_two }}</p>
     </section>
     <section class="home__about-video">
-      <div class="video-wrapper"><iframe src="https://player.vimeo.com/video/309173739?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen
-          mozallowfullscreen allowfullscreen></iframe></div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://player.vimeo.com/video/309173739?title=0&byline=0&portrait=0"
+          frameborder="0"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+        ></iframe>
+      </div>
       <script src="https://player.vimeo.com/api/player.js"></script>
+      <!-- <div class="plyr__video-embed" id="home-video">
+        <iframe
+          src="https://www.youtube.com/embed/d3wua5gfK50?&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+          allowfullscreen
+          allowtransparency
+          allow="autoplay"
+        ></iframe>
+      </div> -->
     </section>
     <section class="home__about-learn home__button">
-      <a href="/about" aria-label="{{ site.data.language.learn_more }}">{{ site.data.language.learn_more }}</a>
+      <a href="/about" aria-label="{{ site.data.language.learn_more }}">{{
+        site.data.language.learn_more
+      }}</a>
     </section>
   </section>
   <section class="home__spotlights js-footer-bg">
     <section class="home__spotlights-intro">
-      <div class="home__subheading">{{ site.data.language.featured_essays }}</div>
-      <h2 class="section-title">{{ site.data.language.home.spotlights_title }}</h2>
+      <div class="home__subheading">
+        {{ site.data.language.featured_essays }}
+      </div>
+      <h2 class="section-title">
+        {{ site.data.language.home.spotlights_title }}
+      </h2>
       <p>{{ site.data.language.home.spotlights_desc }}</p>
     </section>
     <section class="home__spotlights-posts">
-      {% for posts in page.featured_spotlights limit: 2 %}
-      {% assign post = site.spotlights | where: "relative_path", posts | first %}
-      {% include post-block-home.html %}
-      {% endfor %}
+      {% for posts in page.featured_spotlights limit: 2 %} {% assign post =
+      site.spotlights | where: "relative_path", posts | first %} {% include
+      post-block-home.html %} {% endfor %}
     </section>
     <section class="home__spotlights-more home__button">
-      <a href="/spotlights" aria-label="{{ site.data.language.view_all_spotlights }}">{{ site.data.language.all_spotlights }}</a>
+      <a
+        href="/spotlights"
+        aria-label="{{ site.data.language.view_all_spotlights }}"
+        >{{ site.data.language.all_spotlights }}</a
+      >
     </section>
   </section>
   <section class="home__commentary">
     <h2 class="home__subheading">{{ site.data.language.latest_commentary }}</h2>
-    {% assign latest_posts = site.posts | sort: date %}
-    {% for post in latest_posts limit: 3 %}
-    {% include post-block-related.html class="post-block" %}
-    {% endfor %}
+    {% assign latest_posts = site.posts | sort: date %} {% for post in
+    latest_posts limit: 3 %} {% include post-block-related.html
+    class="post-block" %} {% endfor %}
   </section>
   <section class="home__commentary-more">
-    <a href="/commentary" aria-label="{{ site.data.language.view_all_commentaries }}">{{ site.data.language.view_all }}</a>
+    <a
+      href="/commentary"
+      aria-label="{{ site.data.language.view_all_commentaries }}"
+      >{{ site.data.language.view_all }}</a
+    >
   </section>
 </section>

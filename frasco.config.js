@@ -100,6 +100,7 @@ module.exports = {
     resolve: {
       modules: ['node_modules'],
       alias: {
+        Plyr: 'plyr',
         TweenLite: 'gsap/src/minified/TweenLite.min.js',
         TweenMax: 'gsap/src/minified/TweenMax.min.js',
         TimelineLite: 'gsap/src/minified/TimelineLite.min.js',

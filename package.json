@@ -75,6 +75,7 @@
     "gsap": "^2.0.2",
     "instantsearch.js": "^2.10.4",
     "pixi.js": "^4.8.4",
+    "plyr": "^3.4.7",
     "scrollmagic": "^2.0.6",
     "stylelint-config-sass-guidelines": "^5.2.0",
     "stylelint-scss": "^3.3.2",
