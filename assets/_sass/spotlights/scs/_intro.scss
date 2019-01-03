@@ -74,14 +74,37 @@
     width: 100%;
     min-height: 100vh;
     margin: 0 1rem 0 auto;
-    padding: 1px 1rem;
+    padding: 1px 20px;
     color: $color__white;
     text-shadow: 1px 1px 6px rgba($color__black, 0.6);
     @include font-size(24px);
 
     @include breakpoint('medium') {
       width: 50%;
-      padding: 1px 0;
+    }
+
+    .post-title {
+      margin-bottom: 2rem;
+      font-family: $font__freight;
+      font-weight: 400;
+      @include font-size(56px);
+      line-height: 1.3;
+
+      @include breakpoint('medium') {
+        margin-left: -25%;
+      }
+    }
+
+    .spotlight__header-desc {
+      padding-left: 1rem;
+      border-left: 1px solid hsla(0,0%,60.8%,.58);
+
+      p {
+        margin-bottom: 2rem;
+        @include font-size(20px);
+        line-height: 1.44;
+        font-weight: 300;
+      }
     }
 
     .post-meta {
@@ -96,6 +119,6 @@
   &-trigger {
     $header-height: map-get($size__header-height, 'small');
     height: 50vh;
-    margin-top: calc(50vh - #{$header-height});
+    margin-top: calc(40vh - #{$header-height});
   }
 }
