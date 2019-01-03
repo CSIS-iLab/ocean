@@ -41,7 +41,8 @@ layout: default
 
     </div>
     <div class="archive__listing">
-      {%- for post in posts -%}
+      {%- assign other_posts = posts | where: 'is_featured', 'false' -%}
+      {%- for post in other_posts -%}
         {%- include post-block.html -%}
       {%- endfor -%}
     </div>
