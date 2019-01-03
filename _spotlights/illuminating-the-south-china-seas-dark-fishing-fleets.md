@@ -43,9 +43,9 @@ methodology: Vulcan, Inc. undertook the analysis of AIS, VIIRS, SAR, and high-re
 related_content:
 - _posts/2018-11-19-test-post.md
 is_featured: true
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1544742472/ocean/photo-1529928750697-1d9646312221.jpg
-image_caption: image caption
-image_source: image source
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1546471516/ocean/Chinese-vessels-Mischief-Reef-6-19-18.jpg
+image_caption: Chinese fishing vessels at Mischief Reef on June 19, 2018.
+image_source: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC."
 related_spotlight:
 - _spotlights/introducing-a-new-arctic-ocean.md
 related_commentary:
