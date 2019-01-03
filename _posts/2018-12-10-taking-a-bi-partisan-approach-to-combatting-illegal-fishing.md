@@ -1,6 +1,6 @@
 ---
 title: Taking a Bi-Partisan Approach to Combatting Illegal Fishing
-date: 2018-12-10 14:34:57 +0000
+date: 2019-01-09 14:00:57 +0000
 excerpt: Combatting illicit fishing will require countries to develop common regional
   approaches to legal authorities and adjudication in order to fully take advantage
   of new enforcement capabilities.
