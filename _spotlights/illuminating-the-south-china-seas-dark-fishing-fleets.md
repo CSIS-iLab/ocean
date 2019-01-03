@@ -102,8 +102,7 @@ contributors:
       Cronin from CSIS.
   - label: Development and Design
     content:
-      This article is a product of the [Andreas C. Dracopoulos iDeas Lab](https://www.csis.org/programs/dracopoulos-ideas-lab),
-      the in-house digital, multimedia, and design agency at the Center for Strategic
+      This article is a product of the Andreas C. Dracopoulos iDeas Lab, the in-house digital, multimedia, and design agency at the Center for Strategic
       and International Studies.
 ---
 The security implications of these disputes receive significant attention, and the disputants’ navies, air forces, and coast guards are studied closely to assess the balance of power and risk of escalation. But too little attention has focused on another key set of actors in the South China Sea—the fishers who serve on the frontlines of this contest. Those fishers face a dire threat to their livelihoods and food security as the South China Sea fisheries teeter on the brink of collapse.
@@ -123,6 +122,7 @@ path="https://res.cloudinary.com/csisideaslab/image/upload/v1546474832/ocean/loc
 caption="The Spratly Islands are claimed in whole or in part by China, Taiwan, Vietnam, Brunei, Malaysia, and the Philippines."
 credit="CSIS"
 align="right"
+width="small"
 %}
 
 To provide a clearer picture of the size and activities of these important players, CSIS undertook a six-month-long project in cooperation with Vulcan, Inc. to leverage previously underused technologies and data sources to analyze the size and behavior of fishing fleets in the most hotly-contested part of the South China Sea, the Spratly Islands.
@@ -138,6 +138,7 @@ path="https://res.cloudinary.com/csisideaslab/image/upload/v1546470965/ocean/jun
 caption="AIS signals detected in the South China Sea in June 2018."
 credit="CSIS"
 align="left"
+width="large"
 %}
 
 Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. For a region that sees so much reported fishing, many parts of the South China Sea, and the Spratly Islands, in particular, are surprisingly devoid of {% include sc-tooltip.html title="Automatic Identification System (AIS)" description="All oceangoing vessels over 300 tons are required to carry AIS transceivers which regularly broadcast identifying information including heading, speed, and other details." %} signals. Much of this lack of information is due to the small size and age of many fishing vessels, especially in the Philippines and Vietnam. But there are many vessels operating in the Spratlys that have transceivers and should be using them but choose not to so that they can hide their activities. This means that it is necessary to turn to other technologies for a better idea of the size and activities of fishing fleets in the South China Sea.
@@ -173,6 +174,7 @@ path="https://res.cloudinary.com/csisideaslab/image/upload/v1546471428/ocean/Chi
 caption="Chinese fishing vessels at Subi Reef on August 12, 2018."
 credit="© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
 align="right"
+width="large"
 %}
 
 While SAR can provide an estimate of fleet size, it cannot reveal much detail about individual ships. For that, the best tool in the absence of AIS is high-resolution satellite imagery, which provides important context. This imagery shows that Chinese fishing ships account for the largest number of vessels operating in the Spratlys by far.
@@ -194,6 +196,7 @@ path="https://res.cloudinary.com/csisideaslab/image/upload/v1546471516/ocean/Chi
 caption="Chinese fishing vessels at Mischief Reef on June 19, 2018."
 credit="© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
 align="right"
+width="large"
 %}
 
 Not only does imagery analysis show that most Chinese fishing vessels in the Spratlys are not fishing very often but that they could not do so sustainably. The size and quantity of Chinese vessels observed in the Spratlys suggests a massive overcapacity.
