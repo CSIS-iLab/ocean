@@ -44,13 +44,14 @@
 {%- endcapture -%}
 
 
-<div class="sc-image-group spotlight-component {{ align_class}} {{ width_class}}">
+<div id="{{ include.id | prepend: 'img-' }}" class="sc-image-group spotlight-component {{ align_class}} {{ width_class}}">
 
   <figure role="figure">
     <figure role="group" class="sc-image-group__images">
     {%- for image in images -%}
     {%- assign caption = captions[forloop.index0] -%}
     {%- assign credit = credits[forloop.index0] -%}
+    {%- assign img_index = forloop.index -%}
 
     {%- assign mode = null -%}
     {%- if modes[forloop.index0].size > 0 -%}

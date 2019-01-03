@@ -55,6 +55,16 @@ related_commentary:
 - _posts/2018-11-19-test-post.md
 - _posts/2018-02-14-welcome-to-jekyll.markdown
 image_groups:
+  reefs:
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/healthy-reef-taiping.jpg
+    caption: A relatively healthy reef flat around Itu Aba Island, occupied by Taiwan.
+    credit: Taiwan Ministry of Internal Affairs
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/Overfished-Spratly-Reef-Feb-2016.jpg
+    caption: An overfished reef flat surrounding Thitu Island, occupied by the Philippines. 
+    credit: John McManus, February 2016
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/Destroyed-Spratly-Reef-Feb-2016.jpg
+    caption: A reef flat, approximately 1.5 nautical miles away from Thitu Island, destroyed by Chinese clam harvesters. 
+    credit: John McManus, February 2016
   right_three:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg
     caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -77,32 +87,38 @@ image_groups:
     caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
       mi quis hendrerit dolor magna eget est.
     credit: National Geographic
-  max_three:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg
-    caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua.
-    credit: Getty
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg
-    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
-      a diam maecenas sed enim ut sem viverra aliquet.
-    credit: 
+  ships:
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-falling-net-vessel-Mischief-11-1-18.jpg
+    caption: A Chinese light falling net vessel at Mischief Reef on November 1, 2018.
+    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-trawlers-mischief-6-19-18.jpg
+    caption: Chinese trawlers at Mischief Reef on June 19, 2018. 
+    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-blue-boats-Ladd-Reef_3-18-18.jpg
+    caption: Vietnamese blue boats at Ladd Reef on March 18, 2018.  
+    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-squid-jigger-SW-Cay-8-15-18.jpg
+    caption: A Vietnamese squid jigger near Southwest Cay on August 15, 2018.   
+    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Filipino-bancas-lg-med-sm-Scarborough-3-1-17.jpg
+    caption: Filipino bancas near Scarborough Shoal on March 1, 2017.
+    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
+  yue_tai_yu:
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-vessels-5-25-18.jpg
+    caption: Six of the Yue Tai Yu vessels near Hughes Reef on May 25, 2018.
+    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
     mode: portrait
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg
-    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
-      mi quis hendrerit dolor magna eget est.
-    credit: National Geographic
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-18_-under-construction-8-26-17.jpg
+    caption: The nine vessels of the Yue Tai Yu fleet under construction at Guangxin Shipbuilding & Heavy Industry Co., Ltd on August 26, 2017.
+    credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
     mode: landscape
-  max_two:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg
-    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
-      a diam maecenas sed enim ut sem viverra aliquet.
-    credit: Getty
-    mode: portrait
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg
-    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
-      mi quis hendrerit dolor magna eget est.
-    credit: National Geographic
-    mode: landscape
+  yue_tai_yu_composite:
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuyaiyu_composite.jpg
+    caption: AIS signals show that the Yue Tai Yu ships sailed from the shipyard to the port of Shadi in December 2017 and then on to the Spratly Islands.
+    credit: CSIS
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuetaitu_composite_zoomed.jpg
+    caption: AIS signals show that from January to September 2018, the Yue Tai Yu vessels have operated near Chinese outposts in the Spratlys with no apparent signs of fishing.
+    credit: CSIS
 contributors:
 - label: Research and Other Assistance
   content: James DePoy, Mark Powell, and Jenna Thomas from Vulcan, Inc., and Conor
@@ -139,14 +155,14 @@ The South China Sea accounted for 12 percent of global fish catch in 2015, and m
 
 Coral reefs, on which much of these fish depend, have been declining by 16 percent per decade. And that decline rapidly accelerated over the last five years in which giant clam harvesting, dredging, and artificial island building have severely damaged or destroyed over 40,000 acres, or about 160 square kilometers, of reefs.
 
-{% include sc-image-group.html  height="65vh" images=page.image_groups.max_three width="max" %}
+{% include sc-image-group.html  height="65vh" images=page.image_groups.reefs width="max" %}
 
 As they race to pull the last fish from the South China Sea, fishers stand at least as much chance of triggering a violent clash as do the region’s armed forces. And that has become even more likely as a significant number of fishing vessels in the area forgo fishing full-time to serve as a direct arm of the state through official maritime militia.
 
 {% include sc-single-image.html
-path="https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg"
-caption="This is a float large component"
-credit="Likely Getty"
+path="https://res.cloudinary.com/csisideaslab/image/upload/v1546474832/ocean/loc-of-spratlys.jpg"
+caption="The Spratly Islands are claimed in whole or in part by China, Taiwan, Vietnam, Brunei, Malaysia, and the Philippines."
+credit="CSIS"
 align="right"
 %}
 
@@ -159,9 +175,9 @@ The results tell a worrying story about the scale of unseen fishing activity in 
 Conducting accurate stock assessments and managing fisheries in the South China Sea is all but impossible because of the overlapping territorial and maritime disputes, which prevent effective enforcement of domestic fishery laws or cooperation among regional states. In fact, some states actively encourage and even subsidize fishing in disputed waters to assert their claims.
 
 {% include sc-single-image.html
-path="https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg"
-caption="This is a float large component"
-credit="Likely Getty"
+path="https://res.cloudinary.com/csisideaslab/image/upload/v1546470965/ocean/june_ais_aggregate.svg"
+caption="AIS signals detected in the South China Sea in June 2018."
+credit="CSIS"
 align="left"
 %}
 
@@ -181,9 +197,24 @@ VIIRS data shows a significant amount of fishing in the South China Sea year-rou
   steps=9
   %}
 
+{% include_relative scs/timeline.html
+    id="timeline-yui"
+    start_date="Jan 2013"
+    end_date="Nov 2018"
+    image="https://graphics.thomsonreuters.com/testfiles/xinjiang-camp-final/images/sprite2.jpg"
+    height=404
+    width=1200
+    steps=34
+    %}
+
 For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurate count of vessels at a given time and location. Anything metallic, like the hull and superstructure of most modern fishing vessels as small as six meters, can be readily identified by satellite-based SAR. Again, the disconnect between the level of activity and the number of AIS signals being broadcast was staggering. For instance, SAR data collected on eight occasions between September 30 and October 5 provided 264 vessel detections, only 8 of which were broadcasting AIS.
 
-**IMAGE: Map of SAR and AIS correlations**
+{% include sc-single-image.html
+path="https://res.cloudinary.com/csisideaslab/image/upload/v1546474772/ocean/sar_aiscorr.svg"
+caption="AIS signals detected in the South China Sea in June 2018."
+credit="CSIS"
+width="large"
+%}
 
 _Scrollytelling Starts_
 
@@ -200,9 +231,9 @@ _End_
 ## Fishers and Those Not Fishing
 
 {% include sc-single-image.html
-path="https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg"
-caption="This is a float large component"
-credit="Likely Getty"
+path="https://res.cloudinary.com/csisideaslab/image/upload/v1546471428/ocean/Chinese-vessels-Subi-Reef-8-12-18.jpg"
+caption="Chinese fishing vessels at Subi Reef on August 12, 2018."
+credit="© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
 align="left"
 %}
 
@@ -214,17 +245,16 @@ Just as SAR suggests, most of these congregate in the lagoons at Subi and Mischi
 
 An analysis of historical imagery shows that the numbers of Chinese ships at Subi and Mischief were much higher in 2018 than in 2017. In August, which appears to have been the busiest month, there were about 300 ships anchored at the two reefs at any given time. Over 90 percent of these were fishing vessels with an average length of 51 meters and a projected displacement of about 550 tons.
 
-{% assign gallery_images = page.image_groups.max_two | concat: page.image_groups.max_three %}
-{% include sc-image-gallery.html images=gallery_images height="65vh" %}
+{% include sc-image-gallery.html images=page.image_groups.ships height="50vh" %}
 
 In almost every case, the Chinese fishing boats captured in imagery are riding at anchor or transiting without fishing. Occasionally, imagery revealed a falling net vessel, a common type of Chinese ship observed, engaged in fishing, but such instances were rare.
 
 In addition to the fleets at Subi and Mischief, clusters of around 10 large Chinese fishing vessels were seen gathered around Philippine-occupied Thitu and Loaita Islands and Taiwan-occupied Itu Aba Island. These clusters remained for weeks at a time and only a few vessels showed signs of fishing during the time period imagery was collected. Overall, the Chinese fleet in the Spratlys spends far less time fishing and far more time at anchor than is typical of vessels elsewhere.
 
 {% include sc-single-image.html
-path="https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg"
-caption="This is a float large component"
-credit="Likely Getty"
+path="https://res.cloudinary.com/csisideaslab/image/upload/v1546471516/ocean/Chinese-vessels-Mischief-Reef-6-19-18.jpg"
+caption="Chinese fishing vessels at Mischief Reef on June 19, 2018."
+credit="© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
 align="right"
 %}
 
@@ -244,21 +274,13 @@ The story of one set of these militia ships, the Yue Tai Yu fleet, is instructiv
 
 The nine vessels named Yue Tai Yu 18000 through 18999 are each 62.8-meter trawlers. They were built by Guangxin Shipbuilding & Heavy Industry in 2017.
 
-{% include sc-image-group.html  height="65vh" images=page.image_groups.max_two width="max" %}
+{% include sc-image-group.html  height="50vh" images=page.image_groups.yue_tai_yu width="max" id="yue_tai_yu" %}
 
 Like most Chinese fishing ships in the South China Sea, they rarely transmit AIS data, despite being legally required to do so. But they have transmitted enough to determine that they left Guangxin, traveled to the coastal port of Shadi, and spent the intervening year traveling back and forth between this homeport and the Spratly Islands.
 
 The vessels have made lengthy stays at Subi and Mischief Reefs and visited China’s facilities at Gaven, Johnson, and Hughes Reefs. But their maritime militia status seems apparent from time spent loitering in the waters around Philippine-occupied Thitu and Loaita Islands.
 
- {% include_relative scs/timeline.html
-    id="timeline-yui"
-    start_date="Jan 2013"
-    end_date="Nov 2018"
-    image="https://graphics.thomsonreuters.com/testfiles/xinjiang-camp-final/images/sprite2.jpg"
-    height=404
-    width=1200
-    steps=34
-    %}
+{% include sc-image-group.html  height="50vh" images=page.image_groups.yue_tai_yu_composite width="max" id="yue_tai_yu_composite" %}
 
 The Yue Tai Yu vessels have been captured in satellite imagery on several occasions, and neither these images nor the patterns seen in their intermittent AIS transmissions indicate that the ships spend much, if any, time fishing. That means these large modern trawlers, which likely cost $100 million or more to build, are not producing much commercial benefit to their owners. If they are any indication, Beijing is sinking a stunning amount of money into subsidizing the operations of a massive and largely unproductive fishing fleet in the Spratly Islands.
 
