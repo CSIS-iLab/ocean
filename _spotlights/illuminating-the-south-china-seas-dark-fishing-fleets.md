@@ -163,6 +163,7 @@ For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurat
 path="https://res.cloudinary.com/csisideaslab/image/upload/v1546474772/ocean/sar_aiscorr.svg"
 caption="AIS signals detected in the South China Sea in June 2018."
 credit="CSIS"
+width="large"
 %}
 
 {% include_relative scs/map-scrollytelling.html %}
