@@ -205,7 +205,8 @@ a {
     outline: 0;
   }
 
-  .post-content &:not(.btn):not(.reversefootnote):not(.sc-link) {
+  .post-content &:not(.btn):not(.reversefootnote):not(.sc-link),
+  .about & {
     @include box-shadow(0, -2px, 0, 0, $color__medblue, true);
     color: inherit;
 
