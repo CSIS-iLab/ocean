@@ -103,8 +103,14 @@
       right: 0;
       bottom: 0;
       left: 0;
+      z-index: 5;
       width: 100vw;
-      height: 100vh;
+      background-color: $color__map-bg;
+
+      @include breakpoint('medium') {
+        z-index: 0;
+        height: 100vh;
+      }
 
       .st1 {fill: none;}
       .st2 {fill: #2b394f;}
@@ -193,6 +199,10 @@
   &-trigger {
     $header-height: map-get($size__header-height, 'small');
     height: 50vh;
-    margin-top: calc(40vh - #{$header-height});
+    margin-top: calc(50vh - #{$header-height});
+
+    @include breakpoint('medium') {
+      margin-top: calc(40vh - #{$header-height});
+    }
   }
 }
