@@ -193,17 +193,7 @@ credit="CSIS"
 width="large"
 %}
 
-_Scrollytelling Starts_
-
-SAR tell much the same story as VIIRS, indicating a significant amount of fishing activity in and around the Spratly Islands. Taken together, they also begin to show the patterns of behavior of fishing vessels in the area. For instance, SAR and VIIRS data suggest that very little activity occurs around those reefs in the southeastern portion of the Spratlys occupied by Malaysia.
-
-They also show little activity in the unoccupied reefs on the eastern side of the Spratlys, which are near the coast of Palawan in the Philippines. This does not say much about the Filipino fishing fleet that operates in those waters because most of its vessels are small wooden trimarans, called bancas, which would not appear in either VIIRS or SAR. But the absence of returns suggests that other nations’ vessels, which are generally larger and more modern, are not operating around those reefs in large numbers.
-
-On the other hand, SAR and VIIRS indicate a significant amount of activity around the Vietnamese-occupied reefs in the southwest, the  central Spratlys where both China and Vietnam have outposts, as well as in the area to the northeast where both Vietnam and the Philippines occupy numerous features.
-
-The biggest story, however, is the massive presence of vessels in and around China’s outposts, particularly its two largest at Subi and Mischief Reefs. Two passes over Subi in August revealed 117 SAR returns within the reef’s lagoon and another 61 in waters nearby, including around Philippine-occupied Thitu Island just over 12 nautical miles away. Two passes in October showed an even larger but more dispersed number of returns, with 19 in the lagoon and 190 in waters nearby.
-
-_End_
+{% include_relative scs/map-scrollytelling.html %}
 
 ## Fishers and Those Not Fishing
 
