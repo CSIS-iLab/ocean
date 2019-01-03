@@ -27,21 +27,24 @@ const TableOfContents = () => {
     }
     header.id = hash
 
-    let list_class = ''
-    if (i == 0) {
-      list_class = 'is-current'
-    }
+    // let list_class = ''
+    // if (i == 0) {
+    //   list_class = 'is-current'
+    // }
 
-    toc_items += `<li class="${list_class}" data-target="${hash}"><a href="#${hash}">${text}</a></li>`
+    toc_items += `<li data-target="${hash}"><a href="#${hash}">${text}</a></li>`
 
     observer.observe(header)
 
     counter++
   })
 
-  toc_container.innerHTML = toc_items
+  toc_container.innerHTML += toc_items
 
   const toc_links = toc_container.querySelectorAll('li')
+
+  console.log(toc_links)
+
   let previous_section
 
   function handleObserver(entries, observer) {

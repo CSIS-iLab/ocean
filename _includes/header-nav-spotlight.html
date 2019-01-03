@@ -13,15 +13,26 @@
   <div class="site-header__panel">
     <div class="site-header__panel-spotlight">
       <div class="site-header__panel-spotlight-title">{{ page.title }}</div>
-      <ul id="toc" class="site-header__nav-spotlight-menu spotlight-nav"></ul>
+      <ul id="toc" class="site-header__nav-spotlight-menu spotlight-nav">
+        <li class="is-current" data-target="#spotlight__intro">
+          <a href="#spotlight__intro">Introduction</a>
+        </li>
+      </ul>
       <ul class="site-header__nav-spotlight-submenu spotlight-nav">
         {%- if page.methodology -%}
-        <li><a href="#methodology">{{ site.data.language.methodology }}</a></li>
+        <li>
+          <a href="#methodology">{{ site.data.language.methodology }}</a>
+        </li>
+        {%- endif -%} {%- if page.further_reading -%}
+        <li>
+          <a href="#further-reading">{{
+            site.data.language.further_reading
+          }}</a>
+        </li>
         {%- endif -%}
-        {%- if page.further_reading -%}
-        <li><a href="#further-reading">{{ site.data.language.further_reading }}</a></li>
-        {%- endif -%}
-        <li><a href="#credits">{{ site.data.language.credits }}</a></li>
+        <li>
+          <a href="#credits">{{ site.data.language.credits }}</a>
+        </li>
       </ul>
     </div>
     <div class="site-header__panel-site">
