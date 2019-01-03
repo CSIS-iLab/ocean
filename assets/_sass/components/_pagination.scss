@@ -54,7 +54,7 @@
     background-color: $color__white;
   }
 
-  &:not(:first-child):not(:last-child) {
+  &:not(:last-child) {
     margin-left: 0.5rem;
 
     &:not(.ais-pagination--item__previous) {

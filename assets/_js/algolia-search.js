@@ -26,11 +26,13 @@ const client = algoliasearch('7UNKAH6RMH', 'b9011cf7f49e60630161fcacf0e37d02')
 const indexName = dataset.collectionTitle === 'authors' ? 'ocean' : 'ocean_desc'
 
 const searchParameters = {
-  hitsPerPage: 1
+  hitsPerPage: 10
 }
 
 if (!['all', 'authors'].includes(dataset.collectionTitle)) {
-  searchParameters.filters = `content_type:'${dataset.collectionTitle}'`
+  searchParameters.filters = `content_type:'${
+    dataset.collectionTitle
+  }' AND is_featured: false`
 }
 
 if (dataset.collectionTitle === 'authors') {
@@ -148,13 +150,16 @@ const addResults = () => {
         item: hit => {
           return `${hit.html}`
         },
-        empty: `${
-          dataset.collectionTitle !== 'authors'
-            ? `<h2 class="section-title">Nothing Found</h2>
+        empty:
+          dataset.collectionTitle === 'all'
+            ? ``
+            : `${
+                dataset.collectionTitle !== 'authors'
+                  ? `<h2 class="section-title">Nothing Found</h2>
           <p>Sorry, but nothing matched your search terms. Please try again with different keywords.</p>
           <a href="." class="btn">Clear All Filters</a>`
-            : ``
-        }`
+                  : ``
+              }`
       }
     })
   )
