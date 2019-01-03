@@ -36,6 +36,16 @@ const Intro = () => {
     .addTo(controller)
 
   new ScrollMagic.Scene({
+    triggerElement: ultimate,
+    triggerHook: 'onEnter'
+  })
+    .setClassToggle('.scs__intro-map', 'is-last')
+    .on('enter', function() {
+      console.log('enter')
+    })
+    .addTo(controller)
+
+  new ScrollMagic.Scene({
     triggerElement: contentEl,
     triggerHook: 'onEnter'
   })

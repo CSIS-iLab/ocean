@@ -52,11 +52,50 @@
     position: relative;
     top: calc(100% - 200vh);
     height: 200vh;
-    background-color: $color__white;
-    // background-image: url('https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-attachment: fixed;
+    background-color: $color__map-bg;
+
+    &.is-active:not(.is-last) {
+      #country-labels,
+      #intro__slide2,
+      #intro__slide3 {
+        opacity: 1;
+      }
+
+      #intro__slide2 {
+        transition-delay: 1s;
+      }
+
+      #intro__slide3 {
+        transition-delay: 2s;
+      }
+    }
+
+    &.is-active.is-last {
+      #intro__slide4 {
+        opacity: 1;
+      }
+
+      #intro__slide2,
+      #intro__slide3 {
+        opacity: 0.6;
+      }
+
+      #country-labels {
+        opacity: 0;
+      }
+    }
+
+    #intro__slide2,
+    #intro__slide3,
+    #intro__slide4,
+    #country-labels {
+      opacity: 0;
+      transition: all 0.5s linear;
+    }
+
+    #faded {
+      display: none;
+    }
 
     svg {
       position: sticky;
@@ -66,6 +105,41 @@
       left: 0;
       width: 100vw;
       height: 100vh;
+
+      .st1 {fill: none;}
+      .st2 {fill: #2b394f;}
+      .st3 {fill: #1f2d3a;}
+      .st4 {display: none;}
+      .st6 {fill: #0d85ff;}
+      .st7 {fill: #5eb546;}
+      .st8 {fill: #973f98;}
+      .st9 {fill: #00aab0;}
+      .st10 {fill: #e23627;}
+      .st11 {fill: #fd0;}
+      .st12 {fill: #f18c21;}
+      .st14 {opacity: 0.22;}
+      .st16 {opacity: 0.15;}
+      .st22 {fill: #0d70d3;}
+      .st23 {fill: #4f963f;}
+      .st24 {fill: #7d3881;}
+      .st25 {fill: #c57622;}
+      .st26 {fill: #028e94;}
+      .st27 {fill: #d0b607;}
+      .st28 {fill: #b93126;}
+
+      .st29 {
+        stroke: #fff;
+        stroke-width: 6;
+      }
+
+      .st29,
+      .st30 {fill: #fff;}
+      .st32 {font-size: 21px;}
+      .st33 {font-size: 21.0849px;}
+      .st35 {font-size: 21.0671px;}
+      .st36 {opacity: 0.6;}
+      .st37 {fill: #c7c8ca;}
+      .st38 {fill: #fff;}
     }
   }
 
