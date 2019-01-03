@@ -27,18 +27,22 @@ team:
 - name: Monica Medina
   title: Senior Associate
   headshot: https://res.cloudinary.com/csisideaslab/image/upload/c_limit,h_512,w_512/v1544462781/ocean/medina-headshot-test.png
-  bio: Monica Medina is the founder and publisher of Our Daily Planet, an environmental
-    e-mail newsletter, and an independent consultant. She is also an adjunct professor
-    in the School of Foreign Service at Georgetown University. Previously, Ms. Medina
-    served as deputy director of the Environment Program at the Walton Family Foundation,
-    and she was senior director of ocean policy at the National Geographic Society.
-    From 2012 to 2013, she served as special assistant to the secretary of defense.
-    Earlier, she served as principal deputy undersecretary of commerce for oceans
-    and atmosphere at the National Oceanic and Atmospheric Administration, where she
-    led efforts on Arctic conservation and restoration of the Gulf of Mexico after
-    the Deepwater Horizon oil spill.
+  bio: 'Monica Medina is a small business owner; she is the Founder and Publisher
+    or Our Daily Planet, an environmental e-mail newsletter, and an independent consultant.  Medina
+    is also an Adjunct Professor in the School of Foreign Service at Georgetown University.
+    Previously Medina served as the Deputy Director of the Environment Program at
+    the Walton Family Foundation, and she was the Senior Director of Ocean Policy
+    at the National Geographic Society.  From 2012-2013, Ms. Medina served as Special
+    Assistant to the Secretary of Defense. Previously, Ms. Medina served as the Principal
+    Deputy Undersecretary of Commerce for Oceans and Atmosphere at the National Oceanic
+    and Atmospheric Administration, where she led efforts on Arctic conservation and
+    restoration of the Gulf of Mexico after the Deepwater Horizon oil spill.  She
+    also currently serves on the boards of directors of two non-profit organizations:
+    SkyTruth, Inc., which uses satellite imagery to monitor environmental threats;
+    and the Service Women’s Action Network, that supports women service members and
+    veterans.'
 mission_statement: |-
-  The Stephenson Ocean Security Project will examine the links between ocean health and global security while proposing policy solutions that support sustainable development and reduce conflict.
+  The Stephenson Ocean Security Project will examine the links between ocean health and global security while proposing policy solutions that support sustainable development and reduce conflict.  
 
   The project will focus on the ways in which ecological and socioeconomic changes interact to drive competition for marine resources and how this competition contributes to instability and geopolitical risk.  Proposed solutions will emphasize the ways in which effective ocean governance can moderate this risk and increase the resilience of both ecosystems and states to destabilizing forces of change.
 
@@ -51,7 +55,7 @@ Compounding these disruptive forces is the continuing shift in marine ecosystems
 
 In addition to fisheries conflicts, ongoing debates about access to oil and gas resources on the Arctic outer continental shelf and in disputed waters in the South China Sea have the potential to exacerbate existing political tensions.  On the high seas, the developing debate over management of sea bed mining and conserving biodiversity beyond national jurisdiction (BBNJ) will serve as practical demonstrations of the ability of the UN Convention on the Law of the Sea and its subsidiary agreements to serve as effective modes of ocean governance.
 
-The Stephenson Ocean Security Project is a new initiative of the [Center for Strategic and International Studies](https://www.csis.org) that aims to highlight these challenges and promote solutions that support sustainable development, coalition building, and the need for American leadership.
+The Stephenson Ocean Security Project is a new initiative of the [Center for Strategic and International Studies](https://csis.org) that aims to highlight these challenges and promote solutions that support sustainable development, coalition building, and the need for American leadership.
 
 ### Key Issues
 
