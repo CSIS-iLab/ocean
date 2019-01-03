@@ -54,10 +54,10 @@ image_groups:
     caption: A relatively healthy reef flat around Itu Aba Island, occupied by Taiwan.
     credit: Taiwan Ministry of Internal Affairs
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/Overfished-Spratly-Reef-Feb-2016.jpg
-    caption: An overfished reef flat surrounding Thitu Island, occupied by the Philippines. 
+    caption: An overfished reef flat surrounding Thitu Island, occupied by the Philippines.
     credit: John McManus, February 2016
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/Destroyed-Spratly-Reef-Feb-2016.jpg
-    caption: A reef flat, approximately 1.5 nautical miles away from Thitu Island, destroyed by Chinese clam harvesters. 
+    caption: A reef flat, approximately 1.5 nautical miles away from Thitu Island, destroyed by Chinese clam harvesters.
     credit: John McManus, February 2016
   right_three:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg
@@ -67,7 +67,7 @@ image_groups:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg
     caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
       a diam maecenas sed enim ut sem viverra aliquet.
-    credit: 
+    credit:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg
     caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
       mi quis hendrerit dolor magna eget est.
@@ -86,7 +86,7 @@ image_groups:
     caption: A Chinese light falling net vessel at Mischief Reef on November 1, 2018.
     credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-trawlers-mischief-6-19-18.jpg
-    caption: Chinese trawlers at Mischief Reef on June 19, 2018. 
+    caption: Chinese trawlers at Mischief Reef on June 19, 2018.
     credit: © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-blue-boats-Ladd-Reef_3-18-18.jpg
     caption: Vietnamese blue boats at Ladd Reef on March 18, 2018.  
@@ -180,7 +180,7 @@ For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurat
 path="https://res.cloudinary.com/csisideaslab/image/upload/v1546474772/ocean/sar_aiscorr.svg"
 caption="AIS signals detected in the South China Sea in June 2018."
 credit="CSIS"
-width="large"
+width="small"
 %}
 
 {% include_relative scs/map-scrollytelling.html %}
@@ -191,7 +191,7 @@ width="large"
 path="https://res.cloudinary.com/csisideaslab/image/upload/v1546471428/ocean/Chinese-vessels-Subi-Reef-8-12-18.jpg"
 caption="Chinese fishing vessels at Subi Reef on August 12, 2018."
 credit="© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
-align="left"
+align="right"
 %}
 
 While SAR can provide an estimate of fleet size, it cannot reveal much detail about individual ships. For that, the best tool in the absence of AIS is high-resolution satellite imagery, which provides important context. This imagery shows that Chinese fishing ships account for the largest number of vessels operating in the Spratlys by far.
