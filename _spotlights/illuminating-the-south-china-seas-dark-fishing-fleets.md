@@ -145,7 +145,13 @@ align="left"
 width="large"
 %}
 
-Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. For a region that sees so much reported fishing, many parts of the South China Sea, and the Spratly Islands, in particular, are surprisingly devoid of {% include sc-tooltip.html title="Automatic Identification System (AIS)" description="All oceangoing vessels over 300 tons are required to carry AIS transceivers which regularly broadcast identifying information including heading, speed, and other details." %} signals. Much of this lack of information is due to the small size and age of many fishing vessels, especially in the Philippines and Vietnam. But there are many vessels operating in the Spratlys that have transceivers and should be using them but choose not to so that they can hide their activities. This means that it is necessary to turn to other technologies for a better idea of the size and activities of fishing fleets in the South China Sea.
+### Automatic Identification System (AIS)
+
+Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. Several different technologies are used to detect this activity–AIS, SAR, and VIIRS–and each tells a different story.
+
+For a region where so much fishing is reported, boats are surprisingly difficult to identify in the South China Sea. The Spratly Islands, in particular, are devoid of {% include sc-tooltip.html title="Automatic Identification System (AIS)" description="All oceangoing vessels over 300 tons are required to carry AIS transceivers which regularly broadcast identifying information including heading, speed, and other details." %} signals. The absence of signals is due in large part to the small size and age of many fishing vessels, especially in the Philippines and Vietnam. But many vessels operating in the Spratlys have transceivers and should be using them but choose not to so that they can hide their activities. This necessitates turning to other technologies for a clearer picture of the size and activities of fishing fleets in the South China Sea.
+
+### Visible Infrared Imaging Radiometer Suite (VIIRS)
 
 One of the most helpful sources of data on fishing in the South China Sea, and around the world, is the {% include sc-tooltip.html title="Visible Infrared Imaging Radiometer Suite (VIIRS) Boat Detection" description="The VIIRS sensor, which was developed by the National Aeronautics and Space Administration and National Oceanic and Atmospheric Administration, is mounted on a weather satellite and collects a wide array of data. VIIRS generally does not pick up weaker light sources such as those aboard shipping vessels, only the bright lights used to attract fish during night fishing. It cannot provide a perfect count of the number of fishing boats in a certain area (though it can usually come close) but does provide an accurate assessment of the overall level of night fishing activity." %} product, which can detect bright light sources at sea. It reveals a huge amount of fishing activity takes place in the South China Sea, including in and around the Spratly Islands, despite its invisibility in the AIS record.
 
@@ -161,6 +167,8 @@ VIIRS data shows a significant amount of fishing in the South China Sea year-rou
     steps=48
     component_width="medium"
     %}
+
+### Synthetic Aperture Radar (SAR)
 
 For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurate count of vessels at a given time and location. Anything metallic, like the hull and superstructure of most modern fishing vessels as small as six meters, can be readily identified by satellite-based SAR. Again, the disconnect between the level of activity and the number of AIS signals being broadcast was staggering. For instance, SAR data collected on eight occasions between September 30 and October 5 provided 264 vessel detections, only 8 of which were broadcasting AIS.
 
