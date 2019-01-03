@@ -155,6 +155,7 @@ VIIRS data shows a significant amount of fishing in the South China Sea year-rou
     height=540.96
     width=700
     steps=48
+    component_width="medium"
     %}
 
 For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurate count of vessels at a given time and location. Anything metallic, like the hull and superstructure of most modern fishing vessels as small as six meters, can be readily identified by satellite-based SAR. Again, the disconnect between the level of activity and the number of AIS signals being broadcast was staggering. For instance, SAR data collected on eight occasions between September 30 and October 5 provided 264 vessel detections, only 8 of which were broadcasting AIS.

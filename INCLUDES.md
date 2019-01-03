@@ -71,6 +71,7 @@ Use front matter to specify url, caption, credit, and mode. Mode options are por
    height=404
    width=1200
    steps=34
+   size="large"
    %}
 
 - `start_date`: Date of first image
@@ -79,3 +80,4 @@ Use front matter to specify url, caption, credit, and mode. Mode options are por
 - `height`: Height of each frame
 - `width`: Width of sprite/images
 - `steps`: Number of frames/steps for timeline
+- `component_width`: Component width (large, max, or full)

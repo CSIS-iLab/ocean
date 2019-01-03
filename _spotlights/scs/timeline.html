@@ -1,4 +1,11 @@
-<div id="{{ include.id }}" class="{{ page.prefix }}-timeline spotlight-component sc--large" data-width="{{ include.width }}" data-height="{{ include.height }}" data-steps="{{ include.steps }}">
+{%- assign width_class = null -%}
+{%- if include.component_width -%}
+  {%- assign width_class = include.component_width | prepend: ' sc--' -%}
+{%- elsif include.width==700 -%}
+  {%- assign width_class = ' sc--large' -%}
+{%- endif -%}
+
+<div id="{{ include.id }}" class="{{ page.prefix }}-timeline spotlight-component {{ width_class }}" data-width="{{ include.width }}" data-height="{{ include.height }}" data-steps="{{ include.steps }}">
   <div class="{{ page.prefix }}-timeline__indicator">
     <span class="{{ page.prefix }}-timeline__indicator-date startDate">{{ include.start_date }}</span>
     <div class="{{ page.prefix }}-timeline__indicator__progress">

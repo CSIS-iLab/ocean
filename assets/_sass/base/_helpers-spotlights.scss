@@ -22,6 +22,11 @@
   @include structure($size__sc--float-large, 'width');
 }
 
+.sc--medium {
+  @include structure($size__sc--medium, 'width');
+  margin: 3rem auto !important;
+}
+
 .sc--large {
   @include structure($size__sc--large, 'width');
   margin: 3rem auto !important;
