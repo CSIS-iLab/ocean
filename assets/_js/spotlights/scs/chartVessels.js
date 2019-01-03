@@ -47,12 +47,10 @@ const chartVessels = () => {
         text: 'Vessel Presence in Subi Reef and Mischief Reef'
       },
       credits: {
-        position: {
-          y: -15
-        },
         enabled: true,
         href: false,
-        text: 'Vulcan'
+        text:
+          'Developed based on information or analysis provided by Vulcan Technologies LLC.'
       },
       legend: {
         align: 'center',
