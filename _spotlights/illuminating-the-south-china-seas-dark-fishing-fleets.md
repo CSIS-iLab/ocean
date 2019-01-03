@@ -145,9 +145,9 @@ align="left"
 width="large"
 %}
 
-### Automatic Identification System (AIS)
-
 Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. Several different technologies are used to detect this activity–AIS, SAR, and VIIRS–and each tells a different story.
+
+### Automatic Identification System (AIS)
 
 For a region where so much fishing is reported, boats are surprisingly difficult to identify in the South China Sea. The Spratly Islands, in particular, are devoid of {% include sc-tooltip.html title="Automatic Identification System (AIS)" description="All oceangoing vessels over 300 tons are required to carry AIS transceivers which regularly broadcast identifying information including heading, speed, and other details." %} signals. The absence of signals is due in large part to the small size and age of many fishing vessels, especially in the Philippines and Vietnam. But many vessels operating in the Spratlys have transceivers and should be using them but choose not to so that they can hide their activities. This necessitates turning to other technologies for a clearer picture of the size and activities of fishing fleets in the South China Sea.
 
