@@ -26,8 +26,9 @@
     z-index: 5;
 
     @include breakpoint('medium') {
+      $header-height: map-get($size__header-height--minimal, 'large');
       z-index: 1;
-      height: 100vh;
+      height: calc(100vh - #{$header-height});
     }
   }
 
@@ -36,7 +37,7 @@
     z-index: 1;
     width: 100%;
     min-height: 100vh;
-    margin: 0 1rem 0 auto;
+    margin: 0 2rem 0 auto;
     padding: 1px 1rem;
 
     @include breakpoint('medium') {
@@ -63,7 +64,7 @@
     background-color: #131e24;
 
     @include breakpoint('medium') {
-      height: 100vh;
+      height: 100%;
     }
 
     .key {
