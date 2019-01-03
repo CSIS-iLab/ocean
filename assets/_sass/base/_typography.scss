@@ -40,7 +40,11 @@ p {
     p + h#{$i},
     ul + h#{$i},
     ol + h#{$i} {
-      margin-top: 2.5rem;
+      @if $i == 2 {
+        margin-top: 4.5rem;
+      } @else {
+        margin-top: 2.5rem;
+      }
     }
 
     h#{$i} {
