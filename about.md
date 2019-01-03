@@ -25,7 +25,7 @@ team:
     Dr. Saumweber holds a Ph.D. in biological oceanography from the University of
     Rhode Island.
 - name: Monica Medina
-  title: Senior Affiliate
+  title: Senior Associate
   headshot: https://res.cloudinary.com/csisideaslab/image/upload/c_limit,h_512,w_512/v1544462781/ocean/medina-headshot-test.png
   bio: Monica Medina is the founder and publisher of Our Daily Planet, an environmental
     e-mail newsletter, and an independent consultant. She is also an adjunct professor
