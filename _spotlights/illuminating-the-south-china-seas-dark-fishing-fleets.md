@@ -149,6 +149,8 @@ VIIRS data shows a significant amount of fishing in the South China Sea year-rou
 
 {% include_relative scs/timeline.html
     id="timeline-viirs"
+    title="Title"
+    description="Description"
     start_date="Jan 2013"
     end_date="Dec 2016"
     image="https://res.cloudinary.com/csisideaslab/image/upload/v1546486388/ocean/VIIRS_gif.jpg"

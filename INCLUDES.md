@@ -64,16 +64,20 @@ Use front matter to specify url, caption, credit, and mode. Mode options are por
 - `description`: description of term for popup
 
 ## timeline
-{% include_relative scs/timeline.html
-   start_date="Jan 2013"
-   end_date="Nov 2018"
-   image="https://...jpg"
-   height=404
-   width=1200
-   steps=34
-   size="large"
-   %}
+{% include_relative scs/timeline.html  
+  id="timeline-viirs"
+  title="Title"
+  description="Description"
+  start_date="Jan 2013"
+  end_date="Nov 2018"
+  image="https://...jpg"
+  height=404
+  width=1200
+  steps=34
+  size="large"
+  %}
 
+- `id`: Unique id required for scrollmagic.js library
 - `start_date`: Date of first image
 - `end_date`: Date of last image
 - `image`: Full image path for sprite

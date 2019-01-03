@@ -1,6 +1,14 @@
 #{$spotlight}-timeline {
   margin-bottom: 2rem;
 
+  &__title {
+    @extend %post-content__table-title;
+  }
+
+  &__description {
+    @extend %post-content__caption-desc;
+  }
+
   &__indicator {
     display: flex;
     align-items: center;

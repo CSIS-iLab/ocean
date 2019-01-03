@@ -6,6 +6,9 @@
 {%- endif -%}
 
 <div id="{{ include.id }}" class="{{ page.prefix }}-timeline spotlight-component {{ width_class }}" data-width="{{ include.width }}" data-height="{{ include.height }}" data-steps="{{ include.steps }}">
+  <div class="{{ page.prefix }}-timeline__title">{{ include.title }}</div>
+  <div class="{{ page.prefix }}-timeline__description">{{ include.description }}</div>
+
   <div class="{{ page.prefix }}-timeline__indicator">
     <span class="{{ page.prefix }}-timeline__indicator-date startDate">{{ include.start_date }}</span>
     <div class="{{ page.prefix }}-timeline__indicator__progress">
