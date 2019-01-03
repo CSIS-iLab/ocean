@@ -15,10 +15,6 @@ const Intro = () => {
   const ultimate = triggerEls[stepNum - 1]
   let src = videoPlayer.getAttribute('data-src')
 
-  console.log(stepNum)
-  console.log(penultimate)
-  console.log(ultimate)
-
   if (Breakpoints.isMobile()) {
     src = videoPlayer.getAttribute('data-src-mobile')
   }
