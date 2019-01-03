@@ -64,21 +64,21 @@ image_groups:
       destroyed by Chinese clam harvesters.
     credit: John McManus, February 2016
   ships:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-falling-net-vessel-Mischief-11-1-18.jpg
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/chinese-falling-net-vessel-mischief-11-1-18.jpg
     caption: A Chinese light falling net vessel at Mischief Reef on November 1, 2018.
     credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Chinese-trawlers-mischief-6-19-18.jpg
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/chinese-trawlers-mischief-6-19-18.jpg
     caption: Chinese trawlers at Mischief Reef on June 19, 2018.
     credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-blue-boats-Ladd-Reef_3-18-18.jpg
-    caption: Vietnamese blue boats at Ladd Reef on March 18, 2018.
-    credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-squid-jigger-SW-Cay-8-15-18.jpg
-    caption: A Vietnamese squid jigger near Southwest Cay on August 15, 2018.
-    credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Filipino-bancas-lg-med-sm-Scarborough-3-1-17.jpg
-    caption: Filipino bancas near Scarborough Shoal on March 1, 2017.
-    credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-blue-boats.jpg
+    caption: "<span class=\"sc-image-gallery__captions-single__text-label\">LEFT:</span> Vietnamese blue boats at Ladd Reef on March 18, 2018. <span class=\"sc-image-gallery__captions-single__text-label\">RIGHT:</span> Blue boats in port at Nha Trang, Vietnam in January 2014."
+    credit: "<span class=\"sc-image-gallery__captions-single__text-label--credit\">LEFT:</span> © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved <span class=\"sc-image-gallery__captions-single__text-label--credit\">RIGHT:</span> Photo courtesy of gavindeas's Flickr feed. Used under Creative Commons."
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Vietnamese-squid-jiggers.jpg
+    caption: "<span class=\"sc-image-gallery__captions-single__text-label\">LEFT:</span> A Vietnamese squid jigger near Southwest Cay on August 15, 2018. <span class=\"sc-image-gallery__captions-single__text-label\">RIGHT:</span> A Vietnamese squid jigger in Quang Nam Province. The vessel was later reportedly sunk by the China Coast Guard in the Paracel Islands in 2016."
+    credit: "<span class=\"sc-image-gallery__captions-single__text-label--credit\">LEFT:</span> © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved <span class=\"sc-image-gallery__captions-single__text-label--credit\">RIGHT:</span> Photo courtesy of Thanh Nien newspaper."
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546471940/ocean/Filipino-bancas.jpg
+    caption: "<span class=\"sc-image-gallery__captions-single__text-label\">LEFT:</span> Filipino bancas near Scarborough Shoal on March 1, 2017. <span class=\"sc-image-gallery__captions-single__text-label\">RIGHT:</span> A Filipino banca near Infanta, Pangasinan province in June 2016."
+    credit: "<span class=\"sc-image-gallery__captions-single__text-label--credit\">LEFT:</span> © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved <span class=\"sc-image-gallery__captions-single__text-label--credit\">RIGHT:</span> TED ALJIBE / AFP/Getty Images"
   yue_tai_yu:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-vessels-5-25-18.jpg
     caption: Six of the Yue Tai Yu vessels near Hughes Reef on May 25, 2018.
@@ -191,7 +191,7 @@ Just as SAR suggests, most of these congregate in the lagoons at Subi and Mischi
 
 An analysis of historical imagery shows that the numbers of Chinese ships at Subi and Mischief were much higher in 2018 than in 2017. In August, which appears to have been the busiest month, there were about 300 ships anchored at the two reefs at any given time. Over 90 percent of these were fishing vessels with an average length of 51 meters and a projected displacement of about 550 tons.
 
-{% include sc-image-gallery.html images=page.image_groups.ships height="50vh" %}
+{% include sc-image-gallery.html images=page.image_groups.ships height="25vh" %}
 
 In almost every case, the Chinese fishing boats captured in imagery are riding at anchor or transiting without fishing. Occasionally, imagery revealed a falling net vessel, a common type of Chinese ship observed, engaged in fishing, but such instances were rare.
 
