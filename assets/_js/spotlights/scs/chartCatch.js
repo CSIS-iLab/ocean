@@ -20,7 +20,7 @@ const chartCatch = () => {
     subtitle: {
       align: 'left',
       text:
-        'The Spratly Island values represent 12% of the entire South China Sea estimated catch of 10 million (low) or 20 million (high) tons.'
+        "The Spratly Islands' values represent 12% of the South China Sea entire fishing capacity, which is estimated to range between 10 and 20 million tons."
     },
     credits: {
       enabled: true,
