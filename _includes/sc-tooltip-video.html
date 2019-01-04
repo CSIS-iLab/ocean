@@ -1,0 +1,26 @@
+{%- assign width_class = null -%}
+{%- if include.width -%}
+  {%- assign width_class = include.width | prepend: ' sc--' -%}
+{%- endif -%}
+{%- assign align_class = null -%}
+{%- if include.align -%}
+  {%- assign align_class = include.align | prepend: ' sc--float-' -%}
+  {%- assign width_class = include.width | prepend: ' sc--float-' -%}
+{%- endif -%}
+
+{%- assign component_class = 'spotlight-component sc-tooltip-video' -%}
+
+{%- assign classes = align_class | prepend: width_class | prepend: ' ' | prepend: component_class -%}
+
+{%- if include.url -%}
+  <div class="{{ classes }}">
+    <button class="sc-tooltip-video__btn" data-content='{"video":{{ include.url | jsonify }}}'></button>
+    <div class="sc-tooltip-video__content">
+      <div  class="sc-tooltip-video__content__text">
+        <span class="sc-tooltip-video__content__text-name">{{ include.name }}</span>
+        <span class="sc-tooltip-video__content__text-duration">({{ include.duration }} min)</span>
+      </div>
+      <img class="sc-tooltip-video__content-thumbnail" src="{{ include.thumbnail }}"/>
+    </div>
+</div>
+{%- endif -%}

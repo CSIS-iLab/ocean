@@ -18,6 +18,10 @@
   @include structure($size__sc--float-small, 'width');
 }
 
+.sc--float-medium {
+  @include structure($size__sc--float-medium, 'width');
+}
+
 .sc--float-large {
   @include structure($size__sc--float-large, 'width');
 }
