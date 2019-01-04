@@ -12,11 +12,29 @@
   &__text {
     ul {
       padding-left: 0;
+    }
 
-      li {
-        margin-bottom: 1rem;
-        list-style-type: none;
-        @extend %body-text__med;
+    li {
+      margin-bottom: 1rem;
+      list-style-type: none;
+      @extend %body-text__med;
+
+      &::after {
+        content: ' \e812 ';
+        color: $color__dkblue;
+        font-family: 'sos';
+        @include font-size(12px);
+        word-break: normal;
+        visibility: visible;
+
+        &:hover {
+          color: $color__dkblue-darker;
+        }
+      }
+
+      &:hover {
+        color: $color__dkblue;
+        transition: inherit;
       }
     }
   }
