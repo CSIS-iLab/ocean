@@ -84,6 +84,7 @@ const chartVessels = () => {
           name: dataArray[0].name,
           data: dataArray[0].data,
           borderWidth: 0,
+          borderRadius: 3,
           className: 'highcharts-series-subi-column',
           color: '#0663a1',
           events: {
@@ -100,6 +101,7 @@ const chartVessels = () => {
           name: dataArray[1].name,
           data: dataArray[1].data,
           borderWidth: 0,
+          borderRadius: 3,
           className: 'highcharts-series-mischief-column',
           color: '#ef4723',
           events: {
