@@ -164,8 +164,7 @@
     &::after {
       @extend %content-side-gradient;
       top: calc(var(--archive-cutout-height) - 2rem);
-      // bottom: -2.5rem;
-      bottom: 0;
+      bottom: -2.5rem;
       display: block;
 
       @include breakpoint('large') {
@@ -176,6 +175,11 @@
       @include breakpoint('xlarge') {
         $width_offset: nth(map-get($map: $size__content-margin--archive, $key: 'xlarge'), 2) * 3;
         width: calc((100vw - 100%) / 2 + #{$width_offset} - 1px);
+      }
+
+
+      #{$a}--spotlights & {
+        bottom: 0;
       }
     }
 
@@ -339,13 +343,17 @@
 
   &__footer {
     position: relative;
-    // height: 3rem;
+    height: 3rem;
     @include structure($size__archive-footer-margin-right, 'margin-right');
     margin-left: auto;
     background-color: $color__red;
 
     @include breakpoint('medium') {
       width: fit-content;
+    }
+
+    #{$a}--spotlights & {
+      height: initial;
     }
   }
 }
