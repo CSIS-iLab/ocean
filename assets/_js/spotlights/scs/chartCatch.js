@@ -29,7 +29,9 @@ const chartCatch = () => {
         'Developed based on information or analysis provided by Vulcan Technologies LLC.'
     },
     yAxis: {
-      title: { text: 'Fishing Capacity (million tons)' },
+      title: {
+        text: 'Fishing Capacity (million tons)'
+      },
       endOnTick: false
     },
     legend: {
