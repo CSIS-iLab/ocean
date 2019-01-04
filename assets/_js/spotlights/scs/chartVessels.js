@@ -60,7 +60,7 @@ const chartVessels = () => {
         squareSymbol: true,
         title: {
           text:
-            '<span style="font-size: 10px; color: #808080; font-weight: normal">(Click to hide)</span>'
+            '<span style="font-size: 10px; color: #808080; font-weight: normal">Click to hide</span>'
         }
       },
       tooltip: {
