@@ -35,10 +35,14 @@ const chartCatch = () => {
       endOnTick: false
     },
     legend: {
-      align: 'center',
+      align: 'left',
       verticalAlign: 'bottom',
       layout: 'horizontal',
-      symbolRadius: 0
+      symbolRadius: 0,
+      title: {
+        text:
+          '<span style="font-size: 10px; color: #808080; font-weight: normal">Click to hide</span>'
+      }
     },
     plotOptions: {
       column: {
