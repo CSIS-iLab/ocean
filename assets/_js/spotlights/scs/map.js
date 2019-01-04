@@ -3,7 +3,6 @@ import ScrollMagic from 'ScrollMagic'
 
 const Map = () => {
   const graphicEl = document.querySelector('.scs__map')
-  const contentEl = document.querySelector('.spotlight__content')
   const triggerEls = Array.from(graphicEl.querySelectorAll('.scs__map-trigger'))
 
   // init controller

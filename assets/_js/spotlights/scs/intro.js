@@ -40,9 +40,6 @@ const Intro = () => {
     triggerHook: 'onEnter'
   })
     .setClassToggle('.scs__intro-map', 'is-last')
-    .on('enter', function() {
-      console.log('enter')
-    })
     .addTo(controller)
 
   new ScrollMagic.Scene({
