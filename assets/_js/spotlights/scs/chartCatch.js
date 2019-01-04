@@ -107,7 +107,10 @@ const chartCatch = () => {
           },
           chartOptions: {
             chart: {
-              spacingBottom: 30
+              spacingBottom: 15
+            },
+            legend: {
+              y: -15
             },
             credits: {
               style: {
@@ -115,7 +118,7 @@ const chartCatch = () => {
               },
               position: {
                 align: 'right',
-                y: -20
+                y: -15
               }
             },
             plotOptions: {
