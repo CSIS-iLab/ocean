@@ -2,8 +2,7 @@
 title: Monica Medina
 date: 2018-12-10 14:29:58 +0000
 role: Senior Associate (non-resident) at CSIS
-byline: Monica Medina, Senior Associate, Stephenson Ocean Security Project and Founder
-  and Publisher, Our Daily Planet
+byline: Monica Medina, Senior Associate, Stephenson Ocean Security Project
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1544462781/ocean/medina-headshot-test.png
 headshot: https://res.cloudinary.com/csisideaslab/image/upload/v1544462781/ocean/medina-headshot-test.png
 
