@@ -53,11 +53,15 @@ const chartVessels = () => {
           'Developed based on information or analysis provided by Vulcan Technologies LLC.'
       },
       legend: {
-        align: 'center',
+        align: 'left',
         verticalAlign: 'bottom',
         layout: 'horizontal',
         symbolRadius: 0,
-        squareSymbol: true
+        squareSymbol: true,
+        title: {
+          text:
+            '<span style="font-size: 10px; color: #808080; font-weight: normal">Click to hide</span>'
+        }
       },
       tooltip: {
         headerFormat: `<span style="font-size: 10px;color:{point.color}">⬤ </span>   <b>{point.series.name}</b><br/>`,
@@ -84,16 +88,34 @@ const chartVessels = () => {
           name: dataArray[0].name,
           data: dataArray[0].data,
           borderWidth: 0,
+          borderRadius: 3,
           className: 'highcharts-series-subi-column',
-          color: '#0663a1'
+          color: '#0663a1',
+          events: {
+            legendItemClick: function(e) {
+              let match = this.chart.series.find(
+                s => s.name === this.name && s.userOptions.type === 'area'
+              )
+              match.visible ? match.hide() : match.show()
+            }
+          }
         },
         {
           type: 'column',
           name: dataArray[1].name,
           data: dataArray[1].data,
           borderWidth: 0,
+          borderRadius: 3,
           className: 'highcharts-series-mischief-column',
-          color: '#ef4723'
+          color: '#ef4723',
+          events: {
+            legendItemClick: function(e) {
+              let match = this.chart.series.find(
+                s => s.name === this.name && s.userOptions.type === 'area'
+              )
+              match.visible ? match.hide() : match.show()
+            }
+          }
         },
         {
           type: 'area',
