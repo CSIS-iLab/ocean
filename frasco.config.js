@@ -72,7 +72,7 @@ module.exports = {
     dest: 'css',
     outputStyle: 'compressed',
     autoprefixer: {
-      // grid: true,
+      grid: "autoplace",
       browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
     }
   },
