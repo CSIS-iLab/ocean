@@ -1,4 +1,6 @@
+import '@babel/polyfill'
 import Breakpoints from './breakpoints'
+
 import * as PIXI from 'pixi.js'
 import TweenMax from 'TweenMax'
 import TimelineMax from 'TimelineMax'

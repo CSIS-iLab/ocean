@@ -1,3 +1,5 @@
+import '@babel/polyfill'
+
 import Explainer from './spotlights/explainer'
 import HeaderShare from './spotlights/header-share'
 import ImageGallery from './spotlights/image-gallery'
