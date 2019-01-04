@@ -1,8 +1,9 @@
+---
 csis: Center for Strategic and International Studies
 tagline: 'The Stephenson Ocean Security Project: Maritime security through sustainability.'
 author_list: 'By '
 related_topics: Related Topics
-related_commentary: Related Commentary
+related_commentary: Related Content
 further_reading: Further Reading
 view_all: View All
 view_all_commentaries: View All Commentaries
@@ -17,10 +18,19 @@ methodology: Methodology
 about_the: About the
 home:
   about_title: About this project
-  about_desc_one: The Stephenson Ocean Security (SOS) Project examines the intersection of ocean health and global security. It proposes policy solutions that support sustainable development and reduce conflict.
-  about_desc_two: This project focuses on the ways ecological and socioeconomic changes interact to drive competition for marine resources and how such competition contributes to instability and geopolitical risk. Proposed policy solutions emphasize the ways effective ocean governance can moderate these risks and increase the resilience of both ecosystems and states against the destabilizing forces of change.
+  about_desc_one: The Stephenson Ocean Security (SOS) Project examines the intersection
+    of ocean health and global security. It proposes policy solutions that support
+    sustainable development and reduce conflict.
+  about_desc_two: This project focuses on the ways ecological and socioeconomic changes
+    interact to drive competition for marine resources and how such competition contributes
+    to instability and geopolitical risk. Proposed policy solutions emphasize the
+    ways effective ocean governance can moderate these risks and increase the resilience
+    of both ecosystems and states against the destabilizing forces of change.
   spotlights_title: Spotlights
-  spotlights_desc: SOS Spotlight projects provide in depth analysis and novel research on regionally specific marine resource and security challenges. These deep dives are meant to examine particularly complex issues and advance the global dialog towards solutions.
+  spotlights_desc: SOS Spotlight projects provide in depth analysis and novel research
+    on regionally specific marine resource and security challenges. These deep dives
+    are meant to examine particularly complex issues and advance the global dialog
+    towards solutions.
 footer:
   mailing_list: Mailing List
   mailing_desc: Sign up for regular news and updates.
@@ -35,6 +45,11 @@ is_featured: 'Featured '
 search_placeholder: Search
 search_title: Search result for
 authors_title: 'Articles by: '
-ilab: "The Stephenson Ocean Security Project is a product of the [**Andreas C. Dracopoulos iDeas Lab**](https://www.csis.org/programs/dracopoulos-ideas-lab), the in-house digital, multimedia, and design agency at the Center for Strategic and International Studies. \ Special thanks to creative leads [**Jacque Schrag**](https://www.csis.org/people/jacqueline-schrag) and [**Tucker Harris**](https://www.csis.org/people/tucker-harris), and for their work developing and designing the website."
+ilab: The Stephenson Ocean Security Project is a product of the [**Andreas C. Dracopoulos
+  iDeas Lab**](https://www.csis.org/programs/dracopoulos-ideas-lab), the in-house
+  digital, multimedia, and design agency at the Center for Strategic and International
+  Studies.  Special thanks to creative leads [**Jacque Schrag**](https://www.csis.org/people/jacqueline-schrag)
+  and [**Tucker Harris**](https://www.csis.org/people/tucker-harris), and for their
+  work developing and designing the website.
 the_team: The Team
 development_team: Creative and Development Team
