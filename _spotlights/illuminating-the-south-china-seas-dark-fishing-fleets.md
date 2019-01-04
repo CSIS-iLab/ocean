@@ -137,6 +137,16 @@ The results tell a worrying story about the scale of unseen fishing activity in 
 
 Conducting accurate stock assessments and managing fisheries in the South China Sea is all but impossible because of the overlapping territorial and maritime disputes, which prevent effective enforcement of domestic fishery laws or cooperation among regional states. In fact, some states actively encourage and even subsidize fishing in disputed waters to assert their claims.
 
+
+{% include sc-tooltip-video.html
+name="How to read  AIS, VIIRS, and SARS data" url="https://player.vimeo.com/video/309369486" duration="2:09"
+thumbnail="https://res.cloudinary.com/csisideaslab/image/upload/v1546463269/ocean/poling-headshot.jpg"
+width="medium"
+align="right"
+ %}
+Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. Several different technologies are used to detect this activity–AIS, SAR, and VIIRS–and each tells a different story.
+
+### Automatic Identification System (AIS)
 {% include sc-single-image.html
 path="https://res.cloudinary.com/csisideaslab/image/upload/v1546470965/ocean/june_ais_aggregate.svg"
 caption="AIS signals detected in the South China Sea in June 2018."
@@ -144,11 +154,6 @@ credit="CSIS"
 align="left"
 width="large"
 %}
-
-Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. Several different technologies are used to detect this activity–AIS, SAR, and VIIRS–and each tells a different story.
-
-### Automatic Identification System (AIS)
-
 For a region where so much fishing is reported, boats are surprisingly difficult to identify in the South China Sea. The Spratly Islands, in particular, are devoid of {% include sc-tooltip.html title="Automatic Identification System (AIS)" description="All oceangoing vessels over 300 tons are required to carry AIS transceivers which regularly broadcast identifying information including heading, speed, and other details." %} signals. The absence of signals is due in large part to the small size and age of many fishing vessels, especially in the Philippines and Vietnam. But many vessels operating in the Spratlys have transceivers and should be using them but choose not to so that they can hide their activities. This necessitates turning to other technologies for a clearer picture of the size and activities of fishing fleets in the South China Sea.
 
 ### Visible Infrared Imaging Radiometer Suite (VIIRS)
@@ -241,12 +246,6 @@ The Yue Tai Yu vessels have been captured in satellite imagery on several occasi
 
 ## Conclusion
 
-{% include sc-tooltip-video.html
-  name="How to read  AIS, VIIRS, and SARS data" url="https://player.vimeo.com/video/309369486" duration="2:09"
-  thumbnail="https://res.cloudinary.com/csisideaslab/image/upload/v1546463269/ocean/poling-headshot.jpg"
-  width="large"
-  align="right"
-   %}
 The fisheries and fishers of the South China Sea warrant much more attention. The disputes over the islands, reefs, and waters in the area have made effective fisheries management impossible even as a calamitous stock collapse threatens livelihoods around the region. Tools like VIIRS and SAR show that the number of fishing vessels operating in the disputed Spratly Islands is exponentially higher than AIS transmissions suggest. Improving the monitoring of these fleets will be critical if the claimants hope to save the South China Sea fisheries and reduce the frequency of unlooked-for incidents between vessels.
 
 Meanwhile, a different kind of fishing fleet, one engaged in paramilitary work on behalf of the state rather than the commercial enterprise of fishing, has emerged as the largest force in the Spratlys. The numbers of militia vessels operating in the area on behalf of China is much larger and more persistent than is generally understood. Experts and policymakers focused on the South China Sea will need to devote a proportionate amount of their attention to these actors and the role they play in the area.

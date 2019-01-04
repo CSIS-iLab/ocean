@@ -68,8 +68,7 @@
       padding: 0.5rem 0.5rem 0.5rem 1rem;
 
       &-name {
-        @extend %post-content__table-title;
-        // @extend %post-content__caption-label;
+        @extend %post-content__caption-label;
       }
 
       &-duration {
@@ -90,6 +89,8 @@
     width: 6rem;
     font-size: 2rem;
     background-color: var(--accent-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       background-color: var(--accent-color--hover);

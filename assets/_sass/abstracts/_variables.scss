@@ -96,8 +96,9 @@ $breakpoints: (
   // 900px
     'large-2': 68.75em,
   // 1050px
-    'xlarge': 80em, // 1280px
-    'xlarge-2': 90em // 1440px
+    'xlarge': 80em,
+  // 1280px
+    'xlarge-2': 90em// 1440px
 );
 
 // prettier-ignore
@@ -283,6 +284,13 @@ $size__sc--float-small: (
   'medium': 300px,
   'large': 250px,
   'xlarge': 300px
+);
+
+$size__sc--float-medium: (
+  'small': 100%,
+  'medium': 350px,
+  'large': 50%,
+  'xlarge': 400px
 );
 
 $size__sc--float-large: (
