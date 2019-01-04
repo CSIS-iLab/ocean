@@ -111,7 +111,31 @@ const chartVessels = () => {
           className: 'highcharts-series-mischief-area',
           color: '#ef4723'
         }
-      ]
+      ],
+      responsive: {
+        rules: [
+          {
+            condition: {
+              maxWidth: 400,
+              minWidth: 250
+            },
+            chartOptions: {
+              chart: {
+                spacingBottom: 50
+              },
+              credits: {
+                style: {
+                  width: 200
+                },
+                position: {
+                  align: 'right',
+                  y: -15
+                }
+              }
+            }
+          }
+        ]
+      }
     })
   }
 }
