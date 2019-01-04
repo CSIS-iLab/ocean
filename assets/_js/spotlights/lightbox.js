@@ -72,7 +72,10 @@ const Lightbox = () => {
   ]
   const images = [...scSingleImages, ...scGroupImages, ...scGalleryImages]
 
-  images.forEach(img => new Luminous(img, options))
+  images.forEach(img => {
+    img.style.cursor = 'pointer'
+    new Luminous(img, options)
+  })
 }
 
 export default Lightbox
