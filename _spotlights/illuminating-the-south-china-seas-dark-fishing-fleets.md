@@ -168,7 +168,7 @@ VIIRS data shows a significant amount of fishing in the South China Sea year-rou
     description="Visible Infrared Imaging Radiometer Suite (VIIRS) sensor reveals bright light sources at sea, providing insight into the overall level of night fishing activity in the South China Sea."
     start_date="Jan 2013"
     end_date="Dec 2016"
-    image="https://res.cloudinary.com/csisideaslab/image/upload/v1546486388/ocean/VIIRS_gif.jpg"
+    image="https://res.cloudinary.com/csisideaslab/image/upload/v1546542381/ocean/VIIRS_gif.jpg"
     steps=48
     component_width="medium"
     %}
