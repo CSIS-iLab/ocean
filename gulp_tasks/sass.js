@@ -17,6 +17,7 @@ gulp.task('sass', ['styleLint'], function() {
     .pipe(
       postcss([
         autoprefixer(config.sass.autoprefixer),
+        require('postcss-object-fit-images'),
         postcssCustomProperties(),
         mqpacker({
           sort: true
