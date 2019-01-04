@@ -3,8 +3,12 @@
 
 {%- assign height=null -%}
 {%- if include.height.size > 0 -%}
-  {%- assign height = include.height | prepend: 'height:' | append: ';' -%}
-{%- elsif include.max_height.size > 0 -%}
+  {%- assign height = include.height | prepend: '--gallery-image-height:' | append: ';' -%}
+{%- endif -%}
+{%- if include.mobile_height.size > 0 -%}
+  {%- assign height = include.mobile_height | prepend: '--gallery-image-mobile-height:' | append: ';' | append: height -%}
+{%- endif -%}
+{%- if include.max_height.size > 0 -%}
   {%- assign height = include.max_height | prepend: 'max-height:' | append: ';' -%}
 {%- endif -%}
 

@@ -1,11 +1,13 @@
 .sc-image-gallery {
   overflow: hidden;
 
-  // img {
-  //   @include breakpoint($break: 'medium', $dir: 'max-width') {
-  //     height: calc(50vh - 48px);
-  //   }
-  // }
+  img {
+    height: var(--gallery-image-mobile-height);
+
+    @include breakpoint('medium') {
+      height: var(--gallery-image-height);
+    }
+  }
 
   &__image-single {
     margin-right: 0.5rem;

@@ -208,7 +208,11 @@ Just as SAR suggests, most of these congregate in the lagoons at Subi and Mischi
 
 An analysis of historical imagery shows that the numbers of Chinese ships at Subi and Mischief were much higher in 2018 than in 2017. In August, which appears to have been the busiest month, there were about 300 ships anchored at the two reefs at any given time. Over 90 percent of these were fishing vessels with an average length of 51 meters and a projected displacement of about 550 tons.
 
-{% include sc-image-gallery.html images=page.image_groups.ships height="500px" %}
+{% include sc-image-gallery.html
+  images=page.image_groups.ships
+  height="500px"
+  mobile_height="20vh"
+ %}
 
 In almost every case, the Chinese fishing boats captured in imagery are riding at anchor or transiting without fishing. Occasionally, imagery revealed a falling net vessel, a common type of Chinese ship observed, engaged in fishing, but such instances were rare.
 
