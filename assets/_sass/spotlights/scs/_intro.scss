@@ -113,17 +113,15 @@
 
       @include breakpoint('medium') {
         z-index: 0;
+        width: unset;
+        max-width: 100vw;
         height: 100vh;
-      }
-
-      @include breakpoint('xlarge') {
-        width: auto;
       }
 
       .st1 {
         fill: none;
       }
-
+      
       .st2 {
         fill: #2b394f;
       }
