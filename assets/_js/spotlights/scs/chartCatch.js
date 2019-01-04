@@ -10,8 +10,7 @@ const chartCatch = () => {
     chart: {
       zoomType: false,
       type: 'column',
-      height: '500px',
-      spacingBottom: 30
+      height: '500px'
     },
     title: {
       // x: 25,
@@ -27,14 +26,7 @@ const chartCatch = () => {
       enabled: true,
       href: false,
       text:
-        'Developed based on information or analysis provided by Vulcan Technologies LLC.',
-      style: {
-        width: 200
-      },
-      position: {
-        align: 'right',
-        y: -20
-      }
+        'Developed based on information or analysis provided by Vulcan Technologies LLC.'
     },
     yAxis: {
       title: { text: 'Catch Estimate (million tons)' },
@@ -49,7 +41,7 @@ const chartCatch = () => {
     plotOptions: {
       column: {
         groupPadding: 0.5,
-        pointWidth: 120,
+        pointWidth: 150,
         borderWidth: 0
       }
     },
@@ -99,6 +91,47 @@ const chartCatch = () => {
           ? `${this.y} million tons`
           : `${percentOfSpratleys}% of catch in Spratlys`
       }
+    },
+    responsive: {
+      rules: [
+        {
+          condition: {
+            maxWidth: 400,
+            minWidth: 250
+          },
+          chartOptions: {
+            chart: {
+              spacingBottom: 30
+            },
+            credits: {
+              style: {
+                width: 200
+              },
+              position: {
+                align: 'right',
+                y: -20
+              }
+            },
+            plotOptions: {
+              column: {
+                pointWidth: 90
+              }
+            }
+          }
+        },
+        {
+          condition: {
+            minWidth: 400
+          },
+          chartOptions: {
+            plotOptions: {
+              column: {
+                pointWidth: 150
+              }
+            }
+          }
+        }
+      ]
     }
   })
 }
