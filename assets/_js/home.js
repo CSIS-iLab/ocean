@@ -1,3 +1,5 @@
+import '@babel/polyfill'
+
 import * as PIXI from 'pixi.js'
 import TweenMax from 'TweenMax'
 import TimelineMax from 'TimelineMax'

@@ -36,6 +36,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/preset-env": "^7.1.0",
     "autoprefixer": "^9.4.3",
     "browser-sync": "^2.26.3",
@@ -68,6 +69,8 @@
     "yargs": "^12.0.2"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "@babel/runtime": "^7.2.0",
     "@threespot/freeze-scroll": "^1.0.3",
     "algoliasearch": "^3.30.0",
     "algoliasearch-helper": "^2.26.1",
