@@ -14,7 +14,7 @@ include_header: scs/intro.html
 excerpt: Unseen fishing activity. Maritime militias in the Spratlys. Fishers have
   often been overlooked in the South China Sea disputes. CSIS in cooperation with
   Vulcan, Inc., unveil a worrying narrative about the impact fishers and their fleets
-  play in the region.
+  have in the region.
 authors:
 - _authors/gregory-b-poling.md
 keywords:
@@ -28,7 +28,7 @@ further_reading: |-
   * [China’s Third Sea Force, The People’s Armed Forces Maritime Militia: Tethered to the PLA](http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf)
   * [Boom or Bust: The Future of Fish in the South China Sea](https://www.oceanrecov.org/news/ocean-recovery-alliance-news/boom-or-bust-the-future-of-fish-in-the-south-china-sea.html)
   * [Defusing the South China Sea Disputes: A Regional Blueprint](https://www.csis.org/analysis/defusing-south-china-sea-disputes)
-  * [Illegal, Unregulated, and Unreported Fishing as a National Security Threat](https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat)
+  * [Illegal, Unreported, and Unregulated Fishing as a National Security Threat](https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat)
   * [An Accounting of China’s Deployments to the Spratly Islands](https://amti.csis.org/accounting-chinas-deployments-spratly-islands/)
   * [Confirming the Chinese Flotilla Near Thitu Island](https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/)
 methodology: Vulcan, Inc. undertook the analysis of AIS, VIIRS, SAR, and high-resolution
@@ -81,7 +81,7 @@ image_groups:
     credit: "<span class=\"sc-image-gallery__captions-single__text-label--credit\">LEFT:</span> © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved <span class=\"sc-image-gallery__captions-single__text-label--credit\">RIGHT:</span> TED ALJIBE / AFP/Getty Images"
   yue_tai_yu:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-vessels-5-25-18.jpg
-    caption: Six of the Yue Tai Yu vessels near Hughes Reef on May 25, 2018.
+    caption: Yue Tai Yu vessels near Hughes Reef on May 25, 2018.
     credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
     mode: portrait
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-18_-under-construction-8-26-17.jpg
@@ -234,7 +234,7 @@ Based on published Chinese catch levels, a 550-ton light falling net fishing ves
 
 This gross overcapacity combined with their tendency to congregate around both Chinese-occupied reefs and those held by other claimants leads to the conclusion that most of these vessels serve, at least part-time, in China’s maritime militia.
 
-The activities of the militia are well-documented—they engage in patrol, surveillance, resupply, and other missions to bolster China’s presence in contested waters in the South and East China Seas. Beijing makes no secret of their existence, and some of the best-trained and best-equipped members engage in overt paramilitary activities such as the harassment of foreign vessels operating near Chinese-held islets or in dangerous standoffs with vessels from neighboring states as occurred in 2014 when China deployed an oil rig in waters claimed by Vietnam. But this analysis indicates that their numbers in the Spratly Islands are much larger and much more persistent than is generally understood.
+The activities of the militia are well-documented—they engage in patrol, surveillance, resupply, and other missions to bolster China’s presence in contested waters in the South and East China Seas. Beijing makes no secret of their existence, and some of the best-trained and best-equipped members engage in overt paramilitary activities such as the harassment of foreign vessels operating near Chinese-held islets or dangerous standoffs with vessels from neighboring states as occurred in 2014 when China deployed an oil rig in waters claimed by Vietnam. But this analysis indicates that their numbers in the Spratly Islands are much larger and much more persistent than is generally understood.
 
 ## The Yue Tai Yu Fleet
 
@@ -250,7 +250,7 @@ The vessels have made lengthy stays at Subi and Mischief Reefs and visited China
 
 {% include sc-image-group.html  height="50vh" images=page.image_groups.yue_tai_yu_composite width="max" id="yue_tai_yu_composite" %}
 
-The Yue Tai Yu vessels have been captured in satellite imagery on several occasions, and neither these images nor the patterns seen in their intermittent AIS transmissions indicate that the ships spend much, if any, time fishing. That means these large modern trawlers, which likely cost $100 million or more to build, are not producing much commercial benefit to their owners. If they are any indication, Beijing is sinking a stunning amount of money into subsidizing the operations of a massive and largely unproductive fishing fleet in the Spratly Islands.
+The Yue Tai Yu vessels have been captured in satellite imagery on several occasions, and neither these images nor the patterns seen in their intermittent AIS transmissions show that the ships spend much, if any, time fishing. That means these large modern trawlers, which likely cost $100 million or more to build, are not producing much commercial benefit to their owners. If they are any indication, Beijing is sinking a stunning amount of money into subsidizing the operations of a massive and largely unproductive fishing fleet in the Spratly Islands.
 
 ## Conclusion
 
