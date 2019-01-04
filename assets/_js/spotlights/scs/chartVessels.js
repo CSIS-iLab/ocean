@@ -85,7 +85,15 @@ const chartVessels = () => {
           data: dataArray[0].data,
           borderWidth: 0,
           className: 'highcharts-series-subi-column',
-          color: '#0663a1'
+          color: '#0663a1',
+          events: {
+            legendItemClick: function(e) {
+              let match = this.chart.series.find(
+                s => s.name === this.name && s.userOptions.type === 'area'
+              )
+              match.visible ? match.hide() : match.show()
+            }
+          }
         },
         {
           type: 'column',
@@ -93,7 +101,15 @@ const chartVessels = () => {
           data: dataArray[1].data,
           borderWidth: 0,
           className: 'highcharts-series-mischief-column',
-          color: '#ef4723'
+          color: '#ef4723',
+          events: {
+            legendItemClick: function(e) {
+              let match = this.chart.series.find(
+                s => s.name === this.name && s.userOptions.type === 'area'
+              )
+              match.visible ? match.hide() : match.show()
+            }
+          }
         },
         {
           type: 'area',
