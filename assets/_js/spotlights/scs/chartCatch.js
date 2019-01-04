@@ -35,10 +35,14 @@ const chartCatch = () => {
       endOnTick: false
     },
     legend: {
-      align: 'center',
+      align: 'left',
       verticalAlign: 'bottom',
       layout: 'horizontal',
-      symbolRadius: 0
+      symbolRadius: 0,
+      title: {
+        text:
+          '<span style="font-size: 10px; color: #808080; font-weight: normal">Click to hide</span>'
+      }
     },
     plotOptions: {
       column: {
@@ -103,7 +107,10 @@ const chartCatch = () => {
           },
           chartOptions: {
             chart: {
-              spacingBottom: 30
+              spacingBottom: 15
+            },
+            legend: {
+              y: -15
             },
             credits: {
               style: {
@@ -111,7 +118,7 @@ const chartCatch = () => {
               },
               position: {
                 align: 'right',
-                y: -20
+                y: -15
               }
             },
             plotOptions: {
