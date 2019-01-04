@@ -1,4 +1,5 @@
 {%- assign images = include.images | map: "url"  -%}
+{%- assign mobile_images = include.images | map: "mobile_url"  -%}
 {%- assign captions = include.images | map: "caption"  -%}
 {%- assign credits_array = include.images | map: "credit"  -%}
 {%- assign credits = '' | split: ',' -%}
@@ -18,11 +19,13 @@
   <div class="sc-image-gallery__images">
     {%- for image in images -%}
 
+      {%- assign mobile_image = mobile_images[forloop.index0] -%}
       {%- assign caption = captions[forloop.index0] | markdownify -%}
       {%- assign credit = credits[forloop.index0] -%}
 
       {%- include sc-single-image.html
-        path=image
+        url=image
+        mobile_url=mobile_image
         figcaption=false
         caption=caption
         credit=credit

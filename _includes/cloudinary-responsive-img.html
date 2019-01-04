@@ -11,16 +11,22 @@
 {%- if include.path contains 'cloudinary' -%}
   {%- assign image_name = include.path | split: "/upload/" | last -%}
 
+  {%- if include.mobile_path.size > 0 -%}
+    {%- assign mobile_image_name = include.mobile_path | split: "/upload/" | last -%}
+  {%- else -%}
+      {%- assign mobile_image_name = image_name -%}
+  {%- endif -%}
+
   <img
   sizes="(max-width: 300px) 300px,
       (max-width: 500px) 500px,
       (max-width: 700px) 700px,
       (max-width: 100%) 1360px"
-  srcset="{{ site.cloudinary_url }}f_auto,q_70,w_300/{{ image_name }} 300w,
-          {{ site.cloudinary_url }}f_auto,q_70,w_500/{{ image_name }} 500w,
-          {{ site.cloudinary_url }}f_auto,q_70,w_700/{{ image_name }} 700w,
+  srcset="{{ site.cloudinary_url }}f_auto,q_70,w_300/{{  mobile_image_name }} 300w,
+          {{ site.cloudinary_url }}f_auto,q_70,w_500/{{  mobile_image_name }} 500w,
+          {{ site.cloudinary_url }}f_auto,q_70,w_700/{{  mobile_image_name }} 700w,
           {{ site.cloudinary_url }}f_auto,q_70,w_1360/{{ image_name }} 1360w"
-  src="{{ site.cloudinary_url }}f_auto,q_70,w_700/{{ image_name }}" title="{{ include.title  | strip_html }}"
+  src="{{ site.cloudinary_url }}f_auto,q_70,w_700/{{  mobile_image_name }}" title="{{ include.title  | strip_html }}"
   alt="{{ include.title | strip_html }}" style="{{ height }}" />
 {%- else -%}
   <img src="{{ include.path }}" title="{{ include.title | strip_html  }}" alt="{{ include.title | strip_html  }}" />
