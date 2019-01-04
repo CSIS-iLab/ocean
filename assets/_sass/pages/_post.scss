@@ -53,6 +53,11 @@
       @include breakpoint('xlarge') {
         width: calc(100vw + (#{$width-offset}) / 2);
       }
+
+      .layout-page & {
+        @include bg-images('hero_about');
+        background-position: center;
+      }
     }
 
     &-content {
