@@ -99,7 +99,11 @@
 
     svg {
       position: sticky;
-      @include structure($size__header-height--minimal, 'top', ('small', 'large'));
+      @include structure(
+        $size__header-height--minimal,
+        'top',
+        ('small', 'large')
+      );
       right: 0;
       bottom: 0;
       left: 0;
@@ -112,30 +116,89 @@
         height: 100vh;
       }
 
-      @include breakpoint('xlarge-2') {
+      @include breakpoint('xlarge') {
         width: auto;
       }
 
-      .st1 {fill: none;}
-      .st2 {fill: #2b394f;}
-      .st3 {fill: #1f2d3a;}
-      .st4 {display: none;}
-      .st6 {fill: #0d85ff;}
-      .st7 {fill: #5eb546;}
-      .st8 {fill: #973f98;}
-      .st9 {fill: #00aab0;}
-      .st10 {fill: #e23627;}
-      .st11 {fill: #fd0;}
-      .st12 {fill: #f18c21;}
-      .st14 {opacity: 0.22;}
-      .st16 {opacity: 0.15;}
-      .st22 {fill: #0d70d3;}
-      .st23 {fill: #4f963f;}
-      .st24 {fill: #7d3881;}
-      .st25 {fill: #c57622;}
-      .st26 {fill: #028e94;}
-      .st27 {fill: #d0b607;}
-      .st28 {fill: #b93126;}
+      .st1 {
+        fill: none;
+      }
+
+      .st2 {
+        fill: #2b394f;
+      }
+
+      .st3 {
+        fill: #1f2d3a;
+      }
+
+      .st4 {
+        display: none;
+      }
+
+      .st6 {
+        fill: #0d85ff;
+      }
+
+      .st7 {
+        fill: #5eb546;
+      }
+
+      .st8 {
+        fill: #973f98;
+      }
+
+      .st9 {
+        fill: #00aab0;
+      }
+
+      .st10 {
+        fill: #e23627;
+      }
+
+      .st11 {
+        fill: #fd0;
+      }
+
+      .st12 {
+        fill: #f18c21;
+      }
+
+      .st14 {
+        opacity: 0.22;
+      }
+
+      .st16 {
+        opacity: 0.15;
+      }
+
+      .st22 {
+        fill: #0d70d3;
+      }
+
+      .st23 {
+        fill: #4f963f;
+      }
+
+      .st24 {
+        fill: #7d3881;
+      }
+
+      .st25 {
+        fill: #c57622;
+      }
+
+      .st26 {
+        fill: #028e94;
+      }
+
+      .st27 {
+        fill: #d0b607;
+      }
+
+      .st28 {
+        fill: #b93126;
+      }
 
       .st29 {
         stroke: #fff;
@@ -143,13 +206,33 @@
       }
 
       .st29,
-      .st30 {fill: #fff;}
-      .st32 {font-size: 21px;}
-      .st33 {font-size: 21.0849px;}
-      .st35 {font-size: 21.0671px;}
-      .st36 {opacity: 0.6;}
-      .st37 {fill: #c7c8ca;}
-      .st38 {fill: #fff;}
+      .st30 {
+        fill: #fff;
+      }
+      
+      .st32 {
+        font-size: 21px;
+      }
+
+      .st33 {
+        font-size: 21.0849px;
+      }
+
+      .st35 {
+        font-size: 21.0671px;
+      }
+
+      .st36 {
+        opacity: 0.6;
+      }
+
+      .st37 {
+        fill: #c7c8ca;
+      }
+
+      .st38 {
+        fill: #fff;
+      }
     }
   }
 
