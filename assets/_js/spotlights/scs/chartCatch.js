@@ -10,7 +10,8 @@ const chartCatch = () => {
     chart: {
       zoomType: false,
       type: 'column',
-      height: '500px'
+      height: '500px',
+      spacingBottom: 30
     },
     title: {
       // x: 25,
@@ -26,7 +27,14 @@ const chartCatch = () => {
       enabled: true,
       href: false,
       text:
-        'Developed based on information or analysis<br/>provided by Vulcan Technologies LLC.'
+        'Developed based on information or analysis provided by Vulcan Technologies LLC.',
+      style: {
+        width: 200
+      },
+      position: {
+        align: 'right',
+        y: -20
+      }
     },
     yAxis: {
       title: { text: 'Catch Estimate (million tons)' },
