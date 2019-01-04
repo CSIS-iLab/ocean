@@ -15,7 +15,7 @@ const chartCatch = () => {
     title: {
       // x: 25,
       align: 'left',
-      text: 'Estimated Chinese Annual Catch in Spratly Islands'
+      text: 'Estimated Chinese Annual Fishing Capacity in Spratly Islands'
     },
     subtitle: {
       align: 'left',
@@ -29,7 +29,9 @@ const chartCatch = () => {
         'Developed based on information or analysis provided by Vulcan Technologies LLC.'
     },
     yAxis: {
-      title: { text: 'Catch Estimate (million tons)' },
+      title: {
+        text: 'Fishing Capacity (million tons)'
+      },
       endOnTick: false
     },
     legend: {
