@@ -130,7 +130,7 @@
       visibility: visible;
     }
 
-    &__label {
+    &__indicator {
       white-space: nowrap;
       @extend %post-content__table-title;
 
@@ -155,6 +155,15 @@
         opacity: 1;
         filter: blur(0);
         transition: all 0.3s ease-in-out;
+      }
+
+      &-label {
+        @extend %post-content__caption-label;
+      }
+
+      &-label--credit {
+        color: $color__ltgray-dark;
+        font-weight: bold;
       }
 
       &-source {

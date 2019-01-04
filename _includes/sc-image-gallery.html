@@ -18,7 +18,7 @@
   <div class="sc-image-gallery__images">
     {%- for image in images -%}
 
-      {%- assign caption = captions[forloop.index0] -%}
+      {%- assign caption = captions[forloop.index0] | markdownify -%}
       {%- assign credit = credits[forloop.index0] -%}
 
       {%- include sc-single-image.html
@@ -38,7 +38,7 @@
       {%- assign credit = credits[forloop.index0] -%}
 
     <div class="sc-image-gallery__captions-single">
-      <span class="sc-image-gallery__captions-single__label">{{ forloop.index }} of {{ images.size }}</span>
+      <span class="sc-image-gallery__captions-single__indicator">{{ forloop.index }} of {{ images.size }}</span>
       <span class="sc-image-gallery__captions-single__text">{{ captions[forloop.index0] }} {{ credits[forloop.index0] }}</span>
     </div>
 

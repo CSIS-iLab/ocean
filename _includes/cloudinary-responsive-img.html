@@ -20,10 +20,10 @@
           {{ site.cloudinary_url }}f_auto,q_70,w_500/{{ image_name }} 500w,
           {{ site.cloudinary_url }}f_auto,q_70,w_700/{{ image_name }} 700w,
           {{ site.cloudinary_url }}f_auto,q_70,w_1360/{{ image_name }} 1360w"
-  src="{{ site.cloudinary_url }}f_auto,q_70,w_700/{{ image_name }}" title="{{ include.title }}"
-  alt="{{ include.title }}" style="{{ height }}" />
+  src="{{ site.cloudinary_url }}f_auto,q_70,w_700/{{ image_name }}" title="{{ include.title  | strip_html }}"
+  alt="{{ include.title | strip_html }}" style="{{ height }}" />
 {%- else -%}
-  <img src="{{ include.path }}" title="{{ include.title }}" alt="{{ include.title }}" />
+  <img src="{{ include.path }}" title="{{ include.title | strip_html  }}" alt="{{ include.title | strip_html  }}" />
 {%- endif -%}
   {%- if include.title and include.figcaption != false -%}
     <figcaption class="img-caption">{{ include.title }} <span class="img-caption__source">{{ include.alt }}</span></figcaption>
