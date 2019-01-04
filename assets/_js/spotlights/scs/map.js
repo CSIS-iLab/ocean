@@ -28,11 +28,14 @@ const Map = () => {
   })
 
   function setActiveStep(step) {
-    document.querySelector('#slide' + step).classList.add('is-active')
+    document.querySelector('#scsmap__slide' + step).classList.add('is-active')
 
-    document.querySelectorAll('.slide:not(#slide' + step + ')').forEach(el => {
-      el.classList.remove('is-active')
-    })
+    document
+      .querySelectorAll('.slide:not(#scsmap__slide' + step + ')')
+      .forEach(el => {
+        console.log(el)
+        el.classList.remove('is-active')
+      })
   }
 }
 
