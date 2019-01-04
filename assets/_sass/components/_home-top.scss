@@ -368,6 +368,7 @@
       color: $color__white;
       font-family: $font__freight;
       @include font-size(40px);
+      font-style: italic;
       line-height: 1.3;
       text-align: center;
     }
