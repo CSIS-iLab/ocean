@@ -55,7 +55,7 @@ const Timeline = () => {
       ((endDate.getMonth() + 1) / 12) * 10 * yearWidth
     )
 
-    Array.from(Array(diff)).forEach((x, i) => {
+    for (let i = 0; i < diff; i++) {
       let monthNum = Math.abs(startDate.getMonth() + i)
       let newYear = i % 12 === 0
 
@@ -94,7 +94,7 @@ const Timeline = () => {
             12}%"> </div>`
         }
       }
-    })
+    }
 
     const update = () => {
       position++
