@@ -81,12 +81,10 @@ image_groups:
     credit: "<span class=\"sc-image-gallery__captions-single__text-label--credit\">LEFT:</span> © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved <span class=\"sc-image-gallery__captions-single__text-label--credit\">RIGHT:</span> TED ALJIBE / AFP/Getty Images"
   yue_tai_yu:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-vessels-5-25-18.jpg
-    mobile_url: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
     caption: Six of the Yue Tai Yu vessels near Hughes Reef on May 25, 2018.
     credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
     mode: portrait
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-18_-under-construction-8-26-17.jpg
-    mobile_url: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
     caption: The nine vessels of the Yue Tai Yu fleet under construction at Guangxin
       Shipbuilding & Heavy Industry Co., Ltd on August 26, 2017.
     credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
@@ -127,7 +125,6 @@ As they race to pull the last fish from the South China Sea, fishers stand at le
 
 {% include sc-single-image.html
 url="https://res.cloudinary.com/csisideaslab/image/upload/v1546474832/ocean/loc-of-spratlys.png"
-mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg"
 caption="The Spratly Islands are claimed in whole or in part by China, Taiwan, Vietnam, Brunei, Malaysia, and the Philippines."
 credit="CSIS"
 align="right"
@@ -197,7 +194,6 @@ width="large"
 
 {% include sc-single-image.html
 url="https://res.cloudinary.com/csisideaslab/image/upload/v1546471428/ocean/Chinese-vessels-Subi-Reef-8-12-18.jpg"
-mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg"
 caption="Chinese fishing vessels at Subi Reef on August 12, 2018."
 credit="© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
 align="right"
@@ -224,7 +220,6 @@ In addition to the fleets at Subi and Mischief, clusters of around 10 large Chin
 
 {% include sc-single-image.html
 url="https://res.cloudinary.com/csisideaslab/image/upload/v1546471516/ocean/Chinese-vessels-Mischief-Reef-6-19-18.jpg"
-mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg"
 caption="Chinese fishing vessels at Mischief Reef on June 19, 2018."
 credit="© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
 align="right"
