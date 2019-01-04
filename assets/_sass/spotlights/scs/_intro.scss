@@ -112,6 +112,10 @@
         height: 100vh;
       }
 
+      @include breakpoint('xlarge-2') {
+        width: auto;
+      }
+
       .st1 {fill: none;}
       .st2 {fill: #2b394f;}
       .st3 {fill: #1f2d3a;}
@@ -161,6 +165,7 @@
 
     @include breakpoint('medium') {
       width: 50%;
+      max-width: 700px;
     }
 
     .post-title {
