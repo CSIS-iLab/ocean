@@ -241,6 +241,12 @@ The Yue Tai Yu vessels have been captured in satellite imagery on several occasi
 
 ## Conclusion
 
+{% include sc-tooltip-video.html
+  name="How to read  AIS, VIIRS, and SARS data" url="https://player.vimeo.com/video/309369486" duration="2:09"
+  thumbnail="https://res.cloudinary.com/csisideaslab/image/upload/v1546463269/ocean/poling-headshot.jpg"
+  width="large"
+  align="right"
+   %}
 The fisheries and fishers of the South China Sea warrant much more attention. The disputes over the islands, reefs, and waters in the area have made effective fisheries management impossible even as a calamitous stock collapse threatens livelihoods around the region. Tools like VIIRS and SAR show that the number of fishing vessels operating in the disputed Spratly Islands is exponentially higher than AIS transmissions suggest. Improving the monitoring of these fleets will be critical if the claimants hope to save the South China Sea fisheries and reduce the frequency of unlooked-for incidents between vessels.
 
 Meanwhile, a different kind of fishing fleet, one engaged in paramilitary work on behalf of the state rather than the commercial enterprise of fishing, has emerged as the largest force in the Spratlys. The numbers of militia vessels operating in the area on behalf of China is much larger and more persistent than is generally understood. Experts and policymakers focused on the South China Sea will need to devote a proportionate amount of their attention to these actors and the role they play in the area.

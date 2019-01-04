@@ -2,38 +2,56 @@ import tippy from 'tippy.js'
 import Breakpoints from '../breakpoints'
 
 const Tippy = () => {
-  tippy.setDefaults({
-    theme: 'light',
-    arrow: Breakpoints.isMobile() ? false : true,
-    hideOnClick: true,
-    interactive: false, //errors if true
-    trigger: 'click',
-    showOnInit: true,
-    onMount(tip) {
-      exitListener(tip)
-    }
-  })
-
   document.querySelector('.spotlight__content').addEventListener('click', e => {
-    if (e.target.classList.contains('tooltip')) {
-      const virtualReference = {
-        getBoundingClientRect() {
-          const rect = e.target.getBoundingClientRect()
+    const virtualReference = {
+      getBoundingClientRect() {
+        const rect = e.target.getBoundingClientRect()
 
-          return {
-            top: rect.top - 64,
-            right: rect.right,
-            bottom: rect.bottom - 64,
-            left: rect.left,
-            width: rect.width,
-            height: rect.height,
-            x: rect.x,
-            y: rect.y - 64
-          }
-        },
-        clientHeight: window.innerHeight,
-        clientWidth: window.innerWidth
-      }
+        return {
+          top: rect.top - 64,
+          right: rect.right,
+          bottom: rect.bottom - 64,
+          left: rect.left,
+          width: rect.width,
+          height: rect.height,
+          x: rect.x,
+          y: rect.y - 64
+        }
+      },
+      clientHeight: window.innerHeight,
+      clientWidth: window.innerWidth
+    }
+
+    if (e.target.classList.contains('tooltip')) {
+      tippy.setDefaults({
+        theme: 'light',
+        maxWidth: '290px',
+        arrow: Breakpoints.isMobile() ? false : true,
+        hideOnClick: true,
+        interactive: false, //errors if true
+        trigger: 'click',
+        showOnInit: true,
+        onMount(tip) {
+          console.log(tip)
+          exitListener(tip)
+        }
+      })
+
+      tippy(virtualReference, { content: formatContent(e.target.dataset) })
+    } else if (e.target.classList.contains('sc-tooltip-video__btn')) {
+      tippy.setDefaults({
+        theme: 'light',
+        maxWidth: '700px',
+        arrow: false,
+        hideOnClick: true,
+        interactive: true,
+        trigger: 'click',
+        showOnInit: true,
+        onMount(tip) {
+          console.log(tip)
+          exitListener(tip)
+        }
+      })
 
       tippy(virtualReference, { content: formatContent(e.target.dataset) })
     }
@@ -41,19 +59,37 @@ const Tippy = () => {
 }
 
 const formatContent = reference => {
-  let content = JSON.parse(reference.content)
-  let title = `<div class="tooltipped__title">${content.title}</div>`
-  let entry = `<div class="tooltipped__entry">${content.entry}</div>`
+  let entry,
+    title,
+    content = JSON.parse(reference.content)
 
-  let textContent = Breakpoints.isMobile()
-    ? `<div class="tooltipped"><i class="icon-x"></i>${title}${entry}</div>`
-    : `<div class="tooltipped">${entry}</div>`
+  if (content.entry) {
+    title = `<div class="tooltipped__title">${content.title}</div>`
+    entry = `<div class="tooltipped__entry">${content.entry}</div>`
+  }
+
+  if (content.video) {
+    entry = `<div class="tooltipped__entry">  <iframe src="${
+      content.video
+    }?title=0&byline=0&portrait=0" ${
+      Breakpoints.isMobile()
+        ? `width="100%" style="height:50vw; margin-top: 0.5rem;"`
+        : `width="640px" height="360px"`
+    }frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>`
+  }
+
+  let textContent =
+    Breakpoints.isMobile() && title
+      ? `<div class="tooltipped"><i class="icon-x"></i>${title}${entry}</div>`
+      : Breakpoints.isMobile()
+        ? `<div class="tooltipped"><i class="icon-x"></i>${entry}</div>`
+        : `<div class="tooltipped">${entry}</div>`
 
   return textContent
 }
 
 const exitListener = tip => {
-  let close = document.querySelector('.tooltipped .icon-close')
+  let close = document.querySelector('.tooltipped .icon-x')
 
   if (!close) return
   close.addEventListener('click', () => {

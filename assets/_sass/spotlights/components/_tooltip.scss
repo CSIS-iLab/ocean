@@ -27,11 +27,15 @@
 @include breakpoint($break: 'medium', $dir: 'max-width') {
   .tippy-popper {
     position: fixed !important;
-    top: 0;
+    right: 0;
     transform: translate3d(0, 0, 0) !important;
 
     .tippy-tooltip {
       transform: translateY(0) !important;
+    }
+
+    #player {
+      height: 56% !important;
     }
   }
 }
@@ -48,6 +52,59 @@
   &:focus {
     outline: 0;
     @extend %focus--border;
+  }
+}
+
+.sc-tooltip-video {
+  display: flex;
+  height: 5rem;
+
+  &__content {
+    display: flex;
+    background-color: $color__slate-lightest;
+    border-radius: 0 2.5rem 2.5rem 0;
+
+    &__text {
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+      &-name {
+        @extend %post-content__table-title;
+        // @extend %post-content__caption-label;
+      }
+
+      &-duration {
+        @extend %post-content__caption-desc--sm;
+      }
+    }
+
+    &-thumbnail {
+      width: auto;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    font-size: 2rem;
+    background-color: var(--accent-color);
+
+    &:hover {
+      background-color: var(--accent-color--hover);
+    }
+
+    &:focus {
+      outline: 0;
+      @extend %focus--border;
+    }
+
+    &::after {
+      content: '\e820';
+      color: $color__white;
+      font-family: sos;
+    }
   }
 }
 
