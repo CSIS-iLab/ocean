@@ -81,20 +81,24 @@ image_groups:
     credit: "<span class=\"sc-image-gallery__captions-single__text-label--credit\">LEFT:</span> © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved <span class=\"sc-image-gallery__captions-single__text-label--credit\">RIGHT:</span> TED ALJIBE / AFP/Getty Images"
   yue_tai_yu:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-vessels-5-25-18.jpg
+    mobile_url: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
     caption: Six of the Yue Tai Yu vessels near Hughes Reef on May 25, 2018.
     credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
     mode: portrait
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-18_-under-construction-8-26-17.jpg
+    mobile_url: https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg
     caption: The nine vessels of the Yue Tai Yu fleet under construction at Guangxin
       Shipbuilding & Heavy Industry Co., Ltd on August 26, 2017.
     credit: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
     mode: landscape
   yue_tai_yu_composite:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuyaiyu_composite.jpg
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuethaiyu_composite_lg%402x-80.jpg
+    mobile_url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuethaiyu_composite_sm%402x-80.jpg
     caption: AIS signals show that the Yue Tai Yu ships sailed from the shipyard to
       the port of Shadi in December 2017 and then on to the Spratly Islands.
     credit: CSIS
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuetaitu_composite_zoomed.jpg
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuethaiyu_zoom_lg%402x-80.jpg
+    mobile_url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuethaiyu_zoom_sm%402x-80.jpg
     caption: AIS signals show that from January to September 2018, the Yue Tai Yu
       vessels have operated near Chinese outposts in the Spratlys with no apparent
       signs of fishing.
@@ -122,7 +126,8 @@ Coral reefs, on which much of these fish depend, have been declining by 16 perce
 As they race to pull the last fish from the South China Sea, fishers stand at least as much chance of triggering a violent clash as do the region’s armed forces. And that has become even more likely as a significant number of fishing vessels in the area forgo fishing full-time to serve as a direct arm of the state through official maritime militia.
 
 {% include sc-single-image.html
-path="https://res.cloudinary.com/csisideaslab/image/upload/v1546474832/ocean/loc-of-spratlys.png"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1546474832/ocean/loc-of-spratlys.png"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg"
 caption="The Spratly Islands are claimed in whole or in part by China, Taiwan, Vietnam, Brunei, Malaysia, and the Philippines."
 credit="CSIS"
 align="right"
@@ -148,7 +153,8 @@ Attempting to monitor fishing activity remotely is uniquely difficult in the Sou
 
 ### Automatic Identification System (AIS)
 {% include sc-single-image.html
-path="https://res.cloudinary.com/csisideaslab/image/upload/v1546470965/ocean/june_ais_aggregate.svg"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1546470965/ocean/june_ais_aggregate_lg%402x-80.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1546470965/ocean/june_ais_aggregate_sm%402x-80.jpg"
 caption="AIS signals detected in the South China Sea in June 2018."
 credit="CSIS"
 align="left"
@@ -178,7 +184,8 @@ VIIRS data shows a significant amount of fishing in the South China Sea year-rou
 For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurate count of vessels at a given time and location. Anything metallic, like the hull and superstructure of most modern fishing vessels as small as six meters, can be readily identified by satellite-based SAR. Again, the disconnect between the level of activity and the number of AIS signals being broadcast was staggering. For instance, SAR data collected on eight occasions between September 30 and October 5 provided 264 vessel detections, only 8 of which were broadcasting AIS.
 
 {% include sc-single-image.html
-path="https://res.cloudinary.com/csisideaslab/image/upload/v1546474772/ocean/sar_aiscorr.svg"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1546617603/ocean/sar%20ais_corr_lg%402x-80.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1546617603/ocean/sar%20ais_corr_sm%402x-80.jpg"
 caption="AIS signals detected in the South China Sea in June 2018."
 credit="CSIS"
 width="large"
@@ -189,7 +196,8 @@ width="large"
 ## Fishers and Those Not Fishing
 
 {% include sc-single-image.html
-path="https://res.cloudinary.com/csisideaslab/image/upload/v1546471428/ocean/Chinese-vessels-Subi-Reef-8-12-18.jpg"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1546471428/ocean/Chinese-vessels-Subi-Reef-8-12-18.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg"
 caption="Chinese fishing vessels at Subi Reef on August 12, 2018."
 credit="© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
 align="right"
@@ -211,7 +219,8 @@ In almost every case, the Chinese fishing boats captured in imagery are riding a
 In addition to the fleets at Subi and Mischief, clusters of around 10 large Chinese fishing vessels were seen gathered around Philippine-occupied Thitu and Loaita Islands and Taiwan-occupied Itu Aba Island. These clusters remained for weeks at a time and only a few vessels showed signs of fishing during the time period imagery was collected. Overall, the Chinese fleet in the Spratlys spends far less time fishing and far more time at anchor than is typical of vessels elsewhere.
 
 {% include sc-single-image.html
-path="https://res.cloudinary.com/csisideaslab/image/upload/v1546471516/ocean/Chinese-vessels-Mischief-Reef-6-19-18.jpg"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1546471516/ocean/Chinese-vessels-Mischief-Reef-6-19-18.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1541004113/on-the-radar/GettyImages-1054021808.jpg"
 caption="Chinese fishing vessels at Mischief Reef on June 19, 2018."
 credit="© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved"
 align="right"
