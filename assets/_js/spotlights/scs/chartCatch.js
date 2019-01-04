@@ -91,6 +91,47 @@ const chartCatch = () => {
           ? `${this.y} million tons`
           : `${percentOfSpratleys}% of catch in Spratlys`
       }
+    },
+    responsive: {
+      rules: [
+        {
+          condition: {
+            maxWidth: 400,
+            minWidth: 250
+          },
+          chartOptions: {
+            chart: {
+              spacingBottom: 30
+            },
+            credits: {
+              style: {
+                width: 200
+              },
+              position: {
+                align: 'right',
+                y: -20
+              }
+            },
+            plotOptions: {
+              column: {
+                pointWidth: 90
+              }
+            }
+          }
+        },
+        {
+          condition: {
+            minWidth: 400
+          },
+          chartOptions: {
+            plotOptions: {
+              column: {
+                pointWidth: 150
+              }
+            }
+          }
+        }
+      ]
     }
   })
 }
