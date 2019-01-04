@@ -28,11 +28,10 @@ const Tippy = () => {
         maxWidth: '290px',
         arrow: Breakpoints.isMobile() ? false : true,
         hideOnClick: true,
-        interactive: false, //errors if true
+        interactive: false,
         trigger: 'click',
         showOnInit: true,
         onMount(tip) {
-          console.log(tip)
           exitListener(tip)
         }
       })
@@ -48,7 +47,6 @@ const Tippy = () => {
         trigger: 'click',
         showOnInit: true,
         onMount(tip) {
-          console.log(tip)
           exitListener(tip)
         }
       })
