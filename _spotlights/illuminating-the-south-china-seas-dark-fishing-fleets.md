@@ -139,7 +139,7 @@ Conducting accurate stock assessments and managing fisheries in the South China 
 
 
 {% include sc-tooltip-video.html
-name="How to read  AIS, VIIRS, and SARS data" url="https://player.vimeo.com/video/309369486" duration="2:09"
+name="How to read  AIS, VIIRS, and SAR data" url="https://player.vimeo.com/video/309369486" duration="2:09"
 thumbnail="https://res.cloudinary.com/csisideaslab/image/upload/v1546463269/ocean/poling-headshot.jpg"
 width="medium"
 align="right"
