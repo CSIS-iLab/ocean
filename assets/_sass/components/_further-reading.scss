@@ -19,22 +19,22 @@
       list-style-type: none;
       @extend %body-text__med;
 
-      &::after {
-        content: ' \e812 ';
-        color: $color__dkblue;
-        font-family: 'sos';
-        @include font-size(12px);
-        word-break: normal;
-        visibility: visible;
-
-        &:hover {
-          color: $color__dkblue-darker;
-        }
-      }
-
       &:hover {
         color: $color__dkblue;
         transition: inherit;
+      }
+    }
+
+    a::after {
+      content: ' \e812 ';
+      color: $color__dkblue;
+      font-family: 'sos';
+      @include font-size(12px);
+      word-break: normal;
+      visibility: visible;
+
+      &:hover {
+        color: $color__dkblue-darker;
       }
     }
   }
