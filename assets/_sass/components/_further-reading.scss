@@ -12,11 +12,33 @@
   &__text {
     ul {
       padding-left: 0;
+    }
 
-      li {
-        margin-bottom: 1rem;
-        list-style-type: none;
-        @extend %body-text__med;
+    li {
+      width: fit-content;
+      margin-bottom: 1rem;
+      list-style-type: none;
+      @extend %body-text__med;
+
+      &:hover {
+        color: $color__medblue;
+        transition: inherit;
+      }
+    }
+
+    a::after {
+      content: '\e812';
+      position: relative;
+      top: -1px;
+      left: 5px;
+      color: $color__medblue;
+      font-family: 'sos';
+      @include font-size(12px);
+      word-break: normal;
+      visibility: visible;
+
+      &:hover {
+        color: $color__medblue-darker;
       }
     }
   }
