@@ -27,5 +27,11 @@
     padding: 3rem 0;
     background-color: $color__ltgray-lighter;
     @include full-width-background($color__ltgray-lighter);
+
+    @include breakpoint('large') {
+      width: $size__spotlight-body-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }
