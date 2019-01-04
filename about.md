@@ -52,7 +52,7 @@ Compounding these disruptive forces is the continuing shift in marine ecosystems
 
 In addition to fisheries conflicts, ongoing debates about access to oil and gas resources on the Arctic outer continental shelf and in disputed waters in the South China Sea have the potential to exacerbate existing political tensions.  On the high seas, the developing debate over management of sea bed mining and conserving biodiversity beyond national jurisdiction (BBNJ) will serve as practical demonstrations of the ability of the UN Convention on the Law of the Sea and its subsidiary agreements to serve as effective modes of ocean governance.
 
-The Stephenson Ocean Security Project is a new initiative of the [Center for Strategic and International Studies](https://www.csis.org) that highlights global security challenges that arise from marine resource competition and promotes solutions that support sustainable development, coalition building, and the need for American leadership.
+The Stephenson Ocean Security Project is a new initiative of the [Center for Strategic and International Studies](https://www.csis.org) that highlights global security challenges that arise from marine resource competition and promotes solutions that support sustainable development, coalition building, and the need for American leadership. 
 
 ### Key Issues
 
