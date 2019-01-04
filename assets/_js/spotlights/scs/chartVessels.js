@@ -53,11 +53,15 @@ const chartVessels = () => {
           'Developed based on information or analysis provided by Vulcan Technologies LLC.'
       },
       legend: {
-        align: 'center',
+        align: 'left',
         verticalAlign: 'bottom',
         layout: 'horizontal',
         symbolRadius: 0,
-        squareSymbol: true
+        squareSymbol: true,
+        title: {
+          text:
+            '<span style="font-size: 10px; color: #808080; font-weight: normal">(Click to hide)</span>'
+        }
       },
       tooltip: {
         headerFormat: `<span style="font-size: 10px;color:{point.color}">⬤ </span>   <b>{point.series.name}</b><br/>`,
