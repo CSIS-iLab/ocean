@@ -66,13 +66,9 @@
     background-color: #131e24;
 
     @include breakpoint('medium') {
+      width: unset;
+      max-width: 100vw;
       height: 100%;
-    }
-
-    @include breakpoint('xlarge-2') {
-      position: relative;
-      left: 0;
-      width: auto;
     }
 
     .key {
