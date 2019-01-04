@@ -290,5 +290,12 @@
     @include breakpoint('medium') {
       margin-top: calc(40vh - #{$header-height});
     }
+
+    &[data-step='0'] {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        margin-top: 0;
+        margin-bottom: 75vh;
+      }
+    }
   }
 }
