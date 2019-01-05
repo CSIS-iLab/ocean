@@ -51,7 +51,9 @@
       }
 
       > *:last-child {
-        @include breakpoint($break: 'large', $dir: 'max-width') {
+        padding-bottom: 2rem;
+        
+        @include breakpoint('medium') {
           padding-bottom: 6rem;
         }
       }
