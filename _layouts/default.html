@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body class="{{ page.layout | slugify | prepend: 'layout-'}}">
+  <body class="{{ page.layout | slugify | prepend: 'layout-'}} {% if page.is_404 %}layout-404{% endif %}">
 
     {%- include header.html -%}
 

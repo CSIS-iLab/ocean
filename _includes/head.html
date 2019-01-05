@@ -10,6 +10,8 @@
   {%- if page.layout == 'home' -%}
   <link rel="stylesheet" href="https://cdn.plyr.io/3.4.7/plyr.css">
   <link rel="stylesheet" href="{{ "/assets/css/home.css" | relative_url }}">
+  {%- elsif page.is_404 -%}
+  <link rel="stylesheet" href="{{ "/assets/css/404.css" | relative_url }}">
   {%- endif -%}
   {% include head-spotlights.html %}
   {%- feed_meta -%}
