@@ -47,10 +47,10 @@ image: https://res.cloudinary.com/csisideaslab/image/upload/v1546471516/ocean/Ch
 image_caption: Chinese fishing vessels at Mischief Reef on June 19, 2018.
 image_source: "© DigitalGlobe, Inc. and © Vulcan Technologies LLC."
 related_spotlight:
-- _spotlights/introducing-a-new-arctic-ocean.md
+-
 related_commentary:
-- _posts/2018-11-19-test-post.md
-- _posts/2018-02-14-welcome-to-jekyll.markdown
+- _posts/2018-12-10-making-the-oceans-more-secure.md
+- _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
 image_groups:
   reefs:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546470443/ocean/healthy-reef-taiping.jpg

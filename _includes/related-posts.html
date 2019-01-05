@@ -15,7 +15,7 @@
     {% if related_posts_full.size == 2 %}{% break %}{% endif %}
   {% endfor %}
   <div class="related-posts">
-    <div class="related-posts__header">{{ site.data.language.related_commentary }}</div>
+    <div class="related-posts__header">{{ site.data.language.related_content }}</div>
       {% for post in related_posts_full %}
       {% include post-block-related.html class="related-posts__block" %}
       {% endfor %}
