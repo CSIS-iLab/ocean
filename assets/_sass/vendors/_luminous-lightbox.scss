@@ -295,10 +295,4 @@
   }
 }
 
-@include breakpoint('medium') {
-  .lum-lightbox-inner img {
-    max-width: none;
-    max-height: none;
-  }
-}
 /* stylelint-enable */
