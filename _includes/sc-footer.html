@@ -1,43 +1,58 @@
 <footer class="spotlight__footer js-footer-bg">
-  {%- if page.methodology -%}
-  <section id="methodology">
-    <h2 class="spotlight__footer-heading">{{ site.data.language.methodology }}</h2>
-    <div class="spotlight__footer-text">
-      {{ page.methodology | markdownify }}
-    </div>
-  </section>
-  {%- endif -%}
-
-  {%- if page.further_reading -%}
-  <section id="further-reading">
-    {%- include further-reading.html -%}
-  </section>
-  {%- endif -%}
-
-  <section id="credits" class="spotlight__footer__credits">
-    <h2 class="spotlight__footer-heading">{{ site.data.language.credits }}</h2>
-
-
-    <h3 class="spotlight__footer-subheading">{{ site.data.language.authors }}</h3>
-    {%- for author in page.authors -%}
-    {%- assign author_info = site.authors | where: "relative_path", author | first -%}
-      <div class="authors-block">
-        {%- if author_info.headshot.size > 0 -%}
-          <img class="authors-block__photo" src="{{ author_info.headshot }}" />
-        {%- endif -%}
-        <div class="authors-block__bio spotlight__footer-text">
-          {{ author_info.content }}
-        </div>
-      </div>
-
-    {%- endfor -%}
-
-    {%- for contributor in page.contributors -%}
-      <div class="spotlight__footer-subheading">{{ contributor.label }}</div>
+  <section class="spotlight__footer-top">
+    {%- if page.methodology -%}
+    <section id="methodology">
+      <h2 class="spotlight__footer-heading">{{ site.data.language.methodology }}</h2>
       <div class="spotlight__footer-text">
-        {{ contributor.content | markdownify }}
+        {{ page.methodology | markdownify }}
       </div>
-    {%- endfor -%}
+    </section>
+    {%- endif -%}
+
+    {%- if page.further_reading -%}
+    <section id="further-reading">
+      {%- include further-reading.html -%}
+    </section>
+    {%- endif -%}
+
+    <section id="credits" class="spotlight__footer__credits">
+      <h2 class="spotlight__footer-heading">{{ site.data.language.credits }}</h2>
+
+
+      <h3 class="spotlight__footer-subheading">{{ site.data.language.authors }}</h3>
+      {%- for author in page.authors -%}
+      {%- assign author_info = site.authors | where: "relative_path", author | first -%}
+        <div class="authors-block">
+          {%- if author_info.headshot.size > 0 -%}
+            <img class="authors-block__photo" src="{{ author_info.headshot }}" />
+          {%- endif -%}
+          <div class="authors-block__bio spotlight__footer-text">
+            {{ author_info.content }}
+          </div>
+        </div>
+
+      {%- endfor -%}
+
+      {%- for contributor in page.contributors -%}
+        <div class="spotlight__footer-subheading">{{ contributor.label }}</div>
+        <div class="spotlight__footer-text">
+          {{ contributor.content | markdownify }}
+        </div>
+      {%- endfor -%}
+
+    </section>
 
   </section>
+
+  <section class="spotlight__footer-middle">
+      <div class="keywords">{% include keywords.html %}</div>
+      {%- include social-share.html class="post__footer"  -%}
+  </section>
+
+  <section class="spotlight__footer-end">
+    {% include related-posts.html %}
+  </section>
+
+  {% include view-all-link.html %}
+
 </footer>

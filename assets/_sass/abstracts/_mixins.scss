@@ -71,7 +71,7 @@
 @mixin full-width-background($background, $direction: '', $excludeMargin: false) {
   $width_forumula: calc((100vw - 100%) / 2);
   position: relative;
-  
+
   @if $excludeMargin != true {
     margin: 0 auto;
   }
@@ -190,6 +190,44 @@
     } @else {
       @include breakpoint($size) {
         padding: $top $sides;
+      }
+    }
+  }
+}
+
+
+@mixin spotlight-footer-middle-padding {
+  @each $size in $sizes__default {
+    $values: return-map-value($size__related-content-margin, $size);
+    $top: nth($values, 1);
+    $bottom: nth($values, 2);
+
+    @if $size == 'small' {
+      padding-bottom: calc(#{$top} * -1 + 5rem);
+    } @else {
+      @include breakpoint($size) {
+        padding-bottom: calc(#{$top} * -1);
+      }
+    }
+  }
+}
+
+@mixin spotlight-footer-end-margin {
+  @each $size in $sizes__default {
+    $values: return-map-value($size__related-content-margin, $size);
+    $top: nth($values, 1);
+    $bottom: nth($values, 2);
+
+    @if $size == 'small' {
+      margin-top: calc(#{$top} - 8rem);
+      margin-bottom: $bottom;
+    } @else if $size == 'large' {
+      margin-top: calc(#{$top} - 4rem);
+      margin-bottom: $bottom;
+    } @else {
+      @include breakpoint($size) {
+        margin-top: calc(#{$top} - 4rem);
+        margin-bottom: $bottom;
       }
     }
   }

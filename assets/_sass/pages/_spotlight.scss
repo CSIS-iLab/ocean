@@ -23,15 +23,81 @@
   }
 
   &__footer {
-    margin-top: 3rem;
-    padding: 3rem 0;
-    background-color: $color__ltgray-lighter;
-    @include full-width-background($color__ltgray-lighter);
+    &-top {
+      margin-top: 3rem;
+      padding: 3rem 0;
+      background-color: $color__ltgray-lighter;
+      @include full-width-background($color__ltgray-lighter);
 
-    @include breakpoint('large') {
-      width: $size__spotlight-body-width;
-      margin-right: auto;
-      margin-left: auto;
+      @include breakpoint('large') {
+        width: $size__spotlight-body-width;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      > *:not(:last-of-type) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &-middle {
+      margin-bottom: 1rem;
+      @include spotlight-footer-middle-padding;
+      background-color: $color__ltgray-lighter;
+      @include full-width-background($color__ltgray-lighter);
+
+      @include breakpoint('large') {
+        display: flex;
+      }
+
+      > *:last-child {
+        padding-bottom: 2rem;
+        
+        @include breakpoint('medium') {
+          padding-bottom: 6rem;
+        }
+      }
+
+      > *:first-child {
+        @include breakpoint('large') {
+          padding-bottom: 6rem;
+        }
+      }
+    }
+
+    .keywords {
+      margin-bottom: 1rem;
+      @include structure(
+        $size__post-body-padding-right,
+        'padding-right',
+        ('large', 'xlarge')
+      );
+
+      @include breakpoint('large') {
+        flex: 0 0 auto;
+        width: calc(100% - #{$size__post-sidebar-width});
+        margin-bottom: 0;
+      }
+    }
+
+    .share {
+      @include breakpoint('large') {
+        flex: 1 1 auto;
+        justify-content: flex-end;
+      }
+    }
+
+    &-end {
+      position: relative;
+      @include spotlight-footer-end-margin;
+      @include related-content-padding;
+      background-color: $color__white;
+      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.14);
+
+      &:empty {
+        display: none;
+      }
     }
   }
 }
