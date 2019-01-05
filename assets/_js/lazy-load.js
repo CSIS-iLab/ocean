@@ -1,3 +1,3 @@
-import lazySizes from 'lazySizes'
+import lazySizes from 'lazysizes'
 
 lazySizes.init()
