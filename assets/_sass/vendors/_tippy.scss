@@ -579,12 +579,6 @@
 .tippy-backdrop + .tippy-content[data-state='hidden'] {
   opacity: 0;
 }
-@media (max-width: 360px) {
-  .tippy-popper {
-    max-width: 96%;
-    max-width: calc(100% - 20px);
-  }
-}
 
 .tippy-popper[x-placement^='top'] .tippy-tooltip.light-theme .tippy-arrow {
   border-top: 8px solid #fff;

@@ -25,7 +25,7 @@ const Tippy = () => {
     if (e.target.classList.contains('tooltip')) {
       tippy.setDefaults({
         theme: 'light',
-        maxWidth: '290px',
+        maxWidth: Breakpoints.isMobile() ? '' : '350px',
         arrow: Breakpoints.isMobile() ? false : true,
         hideOnClick: true,
         interactive: false,
@@ -40,7 +40,7 @@ const Tippy = () => {
     } else if (e.target.classList.contains('sc-tooltip-video__btn')) {
       tippy.setDefaults({
         theme: 'light',
-        maxWidth: '700px',
+        maxWidth: Breakpoints.isMobile() ? '' : '700px',
         arrow: false,
         hideOnClick: true,
         interactive: true,
