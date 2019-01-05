@@ -11,9 +11,9 @@
     &-label {
       @extend %post-content__caption-label;
     }
-
-    &__source {
-      @extend %post-content__caption-desc--sm;
-    }
   }
+}
+
+.img-caption__source {
+  @extend %post-content__caption-desc--sm;
 }
