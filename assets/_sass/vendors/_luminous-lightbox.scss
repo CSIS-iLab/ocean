@@ -99,10 +99,15 @@
 }
 
 .lum-lightbox-inner {
-  top: 2.5%;
+  $header-height: map-get($size__header-height--minimal, 'small');
+  top: calc(#{$header-height} + 2.5%);
   right: 2.5%;
   bottom: 2.5%;
   left: 2.5%;
+
+  @include breakpoint('medium') {
+    top: 2.5%;
+  }
 }
 
 .lum-lightbox-inner img {
@@ -209,7 +214,7 @@
 .lum-close-button {
   position: absolute;
   right: 10px;
-  top: 90px;
+  top: 75px;
   width: 32px;
   height: 32px;
   opacity: 0.5;
