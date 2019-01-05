@@ -26,7 +26,7 @@
     &::after {
       margin-top: 1cm;
       font-size: 12pt;
-      content: 'Printed from The CSIS Stephenson Ocean Security Project, ©2018 by the Center for Strategic and International Studies. All rights reserved.';
+      content: 'Printed from The CSIS Stephenson Ocean Security Project, ©2019 by the Center for Strategic and International Studies. All rights reserved.';
     }
   }
 
@@ -53,7 +53,12 @@
   .archive__footer,
   .site-header,
   .spotlight__header .scs__intro-bg,
-  .home__hero {
+  .home__hero,
+  .home__about-video,
+  .home__about-learn,
+  .sc-tooltip-video,
+  #timeline-viirs,
+  .scs__map-bg {
     display: none !important;
   }
 
@@ -96,22 +101,51 @@
     min-height: initial !important;
     margin: initial !important;
 
-    .scs__intro-prose,
-    .scs__intro-trigger {
-      height: initial !important;
-      min-height: initial !important;
-      margin-top: initial !important;
+    .spotlight__header-desc {
+      margin-bottom: 2rem;
     }
 
     p {
       height: initial !important;
       margin: 0 0 1rem !important;
+      font-size: 18px !important;
     }
   }
+
+  .spotlight__content {
+    padding-top: 0;
+  }
+
+  .layout-spotlight {
+    .scs__intro-prose,
+    .scs__intro-trigger,
+    .scs__map-prose,
+    .scs__map-trigger {
+      height: initial !important;
+      min-height: initial !important;
+      margin-top: initial !important;
+      margin-right: 0 !important;
+      margin-bottom: initial !important;
+      margin-left: 0 !important;
+      padding: 0 !important;
+    }
+  }
+
   /*===============================
-  =             Footer               =
-  ================================*/
+  =             Footer            =
+  ===============================*/
   .site-footer {
     padding-top: initial !important;
+  }
+
+  /*=====================================
+  =             Spotlights              =
+  =====================================*/
+  .scs__map {
+    position: static !important;
+    width: initial !important;
+    height: initial !important;
+    min-height: initial !important;
+    margin: initial !important;
   }
 }
