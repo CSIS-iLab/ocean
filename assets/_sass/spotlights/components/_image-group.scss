@@ -1,8 +1,14 @@
 .sc-image-group {
   img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+
+    @include breakpoint('medium') {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__images {
@@ -17,9 +23,12 @@
     &-single {
       position: relative;
       flex-basis: 100%;
-      height: 0;
-      padding-bottom: 56.25%;
-      overflow: hidden;
+
+      @include breakpoint('medium') {
+        height: 0;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+      }
 
       &:not(:last-of-type) {
         margin-bottom: 0.5rem;
@@ -30,7 +39,9 @@
       }
 
       img {
-        position: absolute;
+        @include breakpoint('medium') {
+          position: absolute;
+        }
       }
     }
   }
@@ -43,11 +54,11 @@
     &-single {
       flex-basis: 100%;
 
-      @include breakpoint($break: 'medium', $dir: 'max-width') {
-        position: relative;
-        height: 0;
-        padding-bottom: 56.25%;
-      }
+      // @include breakpoint($break: 'medium', $dir: 'max-width') {
+      //   position: relative;
+      //   height: 0;
+      //   padding-bottom: 56.25%;
+      // }
 
       &:not(:last-of-type) {
         @include breakpoint($break: 'medium', $dir: 'max-width') {
@@ -68,9 +79,9 @@
       }
 
       img {
-        @include breakpoint($break: 'medium', $dir: 'max-width') {
-          position: absolute;
-        }
+        // @include breakpoint($break: 'medium', $dir: 'max-width') {
+        //   position: absolute;
+        // }
       }
     }
   }

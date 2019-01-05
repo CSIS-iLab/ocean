@@ -13,9 +13,10 @@ const Timeline = () => {
       '.scs-timeline__scroll-container__graphic'
     )
 
-    const imageSrc = graphic.style.backgroundImage
-      .replace(/url\((['"])?(.*?)\1\)/gi, '$2')
-      .split(',')[0]
+    const imageSrc = graphic.style.backgroundImage.replace(
+      /url\((['"])?(.*?)\1\)/gi,
+      '$2'
+    )
 
     const image = new Image()
     image.src = imageSrc

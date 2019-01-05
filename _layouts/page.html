@@ -22,7 +22,7 @@ layout: default
 
           <h3 class="about-heading">{{ person.name }}</h3>
           <div class="about-subheading">{{ person.title }}</div>
-          <img src="{{ person.headshot | relative_url }}" alt="{{ person.name | escape }}" title="{{ person.name | escape }}" />
+          <img data-src="{{ person.headshot | relative_url }}" alt="{{ person.name | escape }}" title="{{ person.name | escape }}" class="lazyload" />
           {{ person.bio | markdownify }}
 
         </div>

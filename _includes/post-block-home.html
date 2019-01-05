@@ -7,8 +7,11 @@
   <a href="{{ post.url | relative_url }}" class="post-block__img">
     <img
       src="{{ post.image | relative_url }}"
+      srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      data-srcset="{{ post.image | relative_url }}"
       alt="{{ post.title | escape }}"
       title="{{ post.title | escape }}"
+      class="lazyload"
     />
   </a>
   {% endif %}
