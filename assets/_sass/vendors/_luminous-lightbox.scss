@@ -113,15 +113,14 @@
   margin: 0 auto;
   max-width: 700px;
   text-align: center;
+  color: white;
 }
 
+.lum-lightbox-caption span {
+  color: rgba(255, 255, 255, 0.8);
+}
 .lum-lightbox-caption > * {
   border: none !important;
-}
-
-.lum-lightbox-caption figcaption,
-.lum-lightbox-caption span {
-  color: white;
 }
 
 .lum-loading .lum-lightbox-loader {
@@ -157,6 +156,10 @@
   right: 0;
   animation: lum-loader-after 1800ms infinite linear;
   animation-delay: -900ms;
+}
+
+.lum-lightbox.lum-open {
+  z-index: 1;
 }
 
 .lum-lightbox.lum-opening {
@@ -276,15 +279,17 @@
 
   .lum-lightbox-caption {
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    // position: absolute;
+    // bottom: 0;
   }
 
   /* Used to centre the image in the container, respecting overflow: https://stackoverflow.com/a/33455342/515634 */
   .lum-lightbox-position-helper {
     margin: auto;
   }
+}
 
+@include breakpoint('medium') {
   .lum-lightbox-inner img {
     max-width: none;
     max-height: none;
