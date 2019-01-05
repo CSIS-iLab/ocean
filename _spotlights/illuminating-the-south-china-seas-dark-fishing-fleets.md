@@ -185,7 +185,7 @@ url="https://res.cloudinary.com/csisideaslab/image/upload/v1546617603/ocean/sar%
 mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1546617603/ocean/sar%20ais_corr_sm%402x-80.jpg"
 caption="AIS signals detected in the South China Sea in June 2018."
 credit="CSIS"
-width="large"
+width="medium"
 %}
 
 {% include_relative scs/map-scrollytelling.html %}
