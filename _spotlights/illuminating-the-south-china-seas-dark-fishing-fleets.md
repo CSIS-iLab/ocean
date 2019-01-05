@@ -121,15 +121,16 @@ Coral reefs, on which much of these fish depend, have been declining by 16 perce
 
 {% include sc-image-group.html  height="65vh" images=page.image_groups.reefs width="max" %}
 
-As they race to pull the last fish from the South China Sea, fishers stand at least as much chance of triggering a violent clash as do the region’s armed forces. And that has become even more likely as a significant number of fishing vessels in the area forgo fishing full-time to serve as a direct arm of the state through official maritime militia.
 
 {% include sc-single-image.html
-url="https://res.cloudinary.com/csisideaslab/image/upload/v1546474832/ocean/loc-of-spratlys.png"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1546651800/ocean/spratly-islands-location.jpg"
 caption="The Spratly Islands are claimed in whole or in part by China, Taiwan, Vietnam, Brunei, Malaysia, and the Philippines."
 credit="CSIS"
 align="right"
 width="small"
 %}
+
+As they race to pull the last fish from the South China Sea, fishers stand at least as much chance of triggering a violent clash as do the region’s armed forces. And that has become even more likely as a significant number of fishing vessels in the area forgo fishing full-time to serve as a direct arm of the state through official maritime militia.
 
 To provide a clearer picture of the size and activities of these important players, CSIS undertook a six-month-long project in cooperation with Vulcan, Inc. to leverage previously underused technologies and data sources to analyze the size and behavior of fishing fleets in the most hotly-contested part of the South China Sea, the Spratly Islands.
 
