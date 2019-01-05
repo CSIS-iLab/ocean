@@ -106,7 +106,8 @@
   left: 2.5%;
 
   @include breakpoint('medium') {
-    top: 2.5%;
+    $header-height: map-get($size__header-height--minimal, 'large');
+    top: calc(#{$header-height} + 2.5%);
   }
 }
 
