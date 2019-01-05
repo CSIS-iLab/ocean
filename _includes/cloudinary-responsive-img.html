@@ -1,7 +1,7 @@
 {%- if include.path.size > 0 -%}
 <figure class="{{ include.classes | default: post__image }}">
 {%- if include.mobile_path.size > 0 -%}
-  <picture>
+  <picture class="sc-image-picture">
 {%- endif -%}
 
 {%- assign height=null -%}
@@ -28,16 +28,17 @@
       data-srcset="{{ site.cloudinary_url }}f_auto,q_auto,w_auto/{{  lg_image_name }}" />
     <!--[if IE 9]></video><![endif]-->
     <img 
-    data-src="{{ site.cloudinary_url }}f_auto,q_auto,w_600/{{  sm_image_name }}" class="lazyload" 
+    data-src="{{ site.cloudinary_url }}f_auto,q_auto,w_auto/{{  lg_image_name }}" class="lazyload" 
     alt="{{ include.title | strip_html }}" style="{{ height }}" />
   </picture>
   {%- else -%}
     <img
     data-sizes="auto" 
-    src="{{ site.cloudinary_url }}f_auto,q_10,w_auto,e_blur:1000/{{ lg_image_name }}" 
+    src="{{ site.cloudinary_url }}f_auto,q_10,w_auto,e_blur:1000/{{ lg_image_name }}"
+    data-src="{{ site.cloudinary_url }}f_auto,q_auto,w_auto/{{ lg_image_name }}" 
     data-srcset="{{ site.cloudinary_url }}f_auto,q_auto,w_300/{{  lg_image_name }} 300w,
     {{ site.cloudinary_url }}f_auto,q_auto,w_600/{{  lg_image_name }} 600w,
-      {{ site.cloudinary_url }}f_auto,q_auto,w_900/{{ lg_image_name }} 900w"
+      {{ site.cloudinary_url }}f_auto,q_auto,w_auto/{{ lg_image_name }} 900w"
     class="lazyload"
     alt="{{ include.title | strip_html }}"
     style="{{ height }}" />

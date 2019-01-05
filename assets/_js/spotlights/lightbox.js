@@ -13,15 +13,21 @@ const Lightbox = () => {
     // prefixed classes will always be added as well.
     namespace: null,
     // Which attribute to pull the lightbox image source from.
-    sourceAttribute: 'src',
+    sourceAttribute: 'data-src',
     // Captions can be a literal string, or a function that receives the Luminous instance's trigger element as an argument and returns a string. Supports HTML, so use caution when dealing with user input.
     caption: e => {
-      if (e.parentNode.classList.contains('sc-single-image')) {
-        const caption = e.parentNode.querySelector('figcaption').innerHTML
+      let parentNode = e.parentNode
+
+      if (parentNode.classList.contains('sc-image-picture')) {
+        parentNode = e.parentNode.parentNode
+      }
+
+      if (parentNode.classList.contains('sc-single-image')) {
+        const caption = parentNode.querySelector('figcaption').innerHTML
 
         return `<div class="img-caption">${caption}</div>`
       } else if (
-        e.parentNode.classList.contains('sc-image-group__images-single')
+        parentNode.classList.contains('sc-image-group__images-single')
       ) {
         const component = e.closest('.sc-image-group')
 
@@ -37,7 +43,7 @@ const Lightbox = () => {
 
         return `<div class="img-caption">${caption}</div>`
       } else if (
-        e.parentNode.classList.contains('sc-image-gallery__image-single')
+        parentNode.classList.contains('sc-image-gallery__image-single')
       ) {
         const component = e.closest('.sc-image-gallery')
 
