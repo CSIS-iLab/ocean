@@ -248,6 +248,20 @@
   }
 }
 
+@mixin bg-footer() {
+  @each $size in $sizes__default {
+    $img: map-get($img__footer, $size);
+    $value: url('#{$img}');
+    @if $size == 'small' {
+      background-image: $value;
+    } @else {
+      @include breakpoint($break: $size, $breakpoints-map: $breakpoints--bg-img) {
+        background-image: $value;
+      }
+    }
+  }
+}
+
 @mixin site-header-white() {
   background-color: $color__white;
   background-image: none;

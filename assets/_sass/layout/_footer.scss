@@ -16,7 +16,7 @@
     height: var(--footer-bg-min-height);
     max-height: 1000px;
     background-color: $color__dkblue-darker;
-    @include bg-images('footer');
+    @include bg-footer;
     background-repeat: no-repeat;
     background-size: cover;
 
