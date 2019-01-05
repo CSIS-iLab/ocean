@@ -62,6 +62,7 @@ module.exports = {
       'spotlights.js',
       'archives.js',
       'home.js',
+      'lazy-load.js',
       'spotlights/arctic/arctic.js',
       'spotlights/scs/scs.js'
     ]
@@ -72,7 +73,7 @@ module.exports = {
     dest: 'css',
     outputStyle: 'compressed',
     autoprefixer: {
-      grid: "autoplace",
+      grid: 'autoplace',
       browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
     }
   },

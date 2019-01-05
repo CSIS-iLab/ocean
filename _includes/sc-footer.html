@@ -24,7 +24,7 @@
       {%- assign author_info = site.authors | where: "relative_path", author | first -%}
         <div class="authors-block">
           {%- if author_info.headshot.size > 0 -%}
-            <img class="authors-block__photo" src="{{ author_info.headshot }}" />
+            <img class="authors-block__photo lazyload" data-src="{{ author_info.headshot }}" alt="" />
           {%- endif -%}
           <div class="authors-block__bio spotlight__footer-text">
             {{ author_info.content }}

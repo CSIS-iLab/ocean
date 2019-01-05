@@ -20,7 +20,7 @@
         <span class="sc-tooltip-video__content__text-name">{{ include.name }}</span>
         <span class="sc-tooltip-video__content__text-duration">({{ include.duration }} min)</span>
       </div>
-      <img class="sc-tooltip-video__content-thumbnail" src="{{ include.thumbnail }}"/>
+      <img class="sc-tooltip-video__content-thumbnail lazyload" data-src="{{ include.thumbnail }}" alt="" />
     </div>
 </div>
 {%- endif -%}

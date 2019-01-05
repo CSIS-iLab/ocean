@@ -1,5 +1,8 @@
 {%- if include.path.size > 0 -%}
 <figure class="{{ include.classes | default: post__image }}">
+{%- if include.mobile_path.size > 0 -%}
+  <picture>
+{%- endif -%}
 
 {%- assign height=null -%}
 {%- if include.height.size > 0 -%}
@@ -17,21 +20,28 @@
 
   {%- if include.mobile_path.size > 0 -%}
     {%- assign sm_image_name = include.mobile_path | split: "/upload/" | last -%}
+    <!--[if IE 9]><video style="display: none;><![endif]-->
+    <source
+      data-srcset="{{ site.cloudinary_url }}f_auto,q_auto,w_600/{{  sm_image_name }}"
+      media="(max-width: 900px)" />
+    <source
+      data-srcset="{{ site.cloudinary_url }}f_auto,q_auto,w_auto/{{  lg_image_name }}" />
+    <!--[if IE 9]></video><![endif]-->
+    <img 
+    data-src="{{ site.cloudinary_url }}f_auto,q_auto,w_600/{{  sm_image_name }}" class="lazyload" 
+    alt="{{ include.title | strip_html }}" style="{{ height }}" />
+  </picture>
   {%- else -%}
-      {%- assign sm_image_name = lg_image_name -%}
+    <img
+    data-sizes="auto" 
+    src="{{ site.cloudinary_url }}f_auto,q_10,w_auto,e_blur:1000/{{ lg_image_name }}" 
+    data-srcset="{{ site.cloudinary_url }}f_auto,q_auto,w_300/{{  lg_image_name }} 300w,
+    {{ site.cloudinary_url }}f_auto,q_auto,w_600/{{  lg_image_name }} 600w,
+      {{ site.cloudinary_url }}f_auto,q_auto,w_900/{{ lg_image_name }} 900w"
+    class="lazyload"
+    alt="{{ include.title | strip_html }}"
+    style="{{ height }}" />
   {%- endif -%}
-
-  <img
-  sizes="(max-width: 300px) 300px,
-      (max-width: 500px) 500px,
-      (max-width: 700px) 700px,
-      (max-width: 100%) 1360px"
-  srcset="{{ site.cloudinary_url }}f_auto,q_70,w_300/{{  sm_image_name }} 300w,
-          {{ site.cloudinary_url }}f_auto,q_70,w_500/{{  sm_image_name }} 500w,
-          {{ site.cloudinary_url }}f_auto,q_70,w_700/{{  sm_image_name }} 700w,
-          {{ site.cloudinary_url }}f_auto,q_70,w_1360/{{ lg_image_name }} 1360w"
-  src="{{ site.cloudinary_url }}f_auto,q_70,w_700/{{  sm_image_name }}" title="{{ include.title  | strip_html }}"
-  alt="{{ include.title | strip_html }}" style="{{ height }}" />
 {%- else -%}
   <img src="{{ include.path }}" title="{{ include.title | strip_html  }}" alt="{{ include.title | strip_html  }}" />
 {%- endif -%}
