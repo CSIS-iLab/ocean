@@ -249,7 +249,7 @@ Like most Chinese fishing ships in the South China Sea, they rarely transmit AIS
 
 The vessels have made lengthy stays at Subi and Mischief Reefs and visited China’s facilities at Gaven, Johnson, and Hughes Reefs. But their maritime militia status seems apparent from time spent loitering in the waters around Philippine-occupied Thitu and Loaita Islands.
 
-{% include sc-image-group.html  height="50vh" images=page.image_groups.yue_tai_yu_composite width="max" id="yue_tai_yu_composite" %}
+{% include sc-image-group.html images=page.image_groups.yue_tai_yu_composite width="max" id="yue_tai_yu_composite" %}
 
 The Yue Tai Yu vessels have been captured in satellite imagery on several occasions, and neither these images nor the patterns seen in their intermittent AIS transmissions show that the ships spend much, if any, time fishing. That means these large modern trawlers, which likely cost $100 million or more to build, are not producing much commercial benefit to their owners. If they are any indication, Beijing is sinking a stunning amount of money into subsidizing the operations of a massive and largely unproductive fishing fleet in the Spratly Islands.
 
