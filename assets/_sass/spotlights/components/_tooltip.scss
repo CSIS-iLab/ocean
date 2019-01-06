@@ -1,6 +1,9 @@
 .tooltipped {
-  padding: 1.4rem 1rem 1rem;
+  padding: 1.4rem 20px 1.4rem;
   background-color: $color__slate-lightest;
+  @include breakpoint('medium') {
+    padding: 1.4rem 2rem;
+  }
 
   .icon-x {
     position: absolute;
@@ -46,7 +49,8 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: $color__ltgray-dark;
+    cursor: help;
+    color: $color__medblue;
   }
 
   &:focus {
