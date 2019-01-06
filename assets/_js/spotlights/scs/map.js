@@ -33,7 +33,7 @@ const Map = () => {
     document
       .querySelectorAll('.slide:not(#scsmap__slide' + step + ')')
       .forEach(el => {
-        console.log(el)
+        //console.log(el)
         el.classList.remove('is-active')
       })
   }
