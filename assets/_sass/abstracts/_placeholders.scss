@@ -212,6 +212,11 @@
   line-height: 1.06;
   @include font-size(36px);
 
+  @include breakpoint('medium') {
+    @include font-size(50px);
+    line-height: 1.03;
+  }
+
   @include breakpoint('large') {
     @include font-size(72px);
     line-height: 1.03;
