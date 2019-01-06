@@ -112,12 +112,15 @@
   }
 
   #preserve {
-    @include font-size(60px);
+    @include font-size(80px);
     text-anchor: middle;
-    transform: translate(50%, 50%);
     filter: url('#turb');
     dominant-baseline: hanging;
     fill: $color__white;
+
+    @include breakpoint('medium') {
+      @include font-size(60px);
+    }
   }
 
   #preserve-svg,
@@ -388,12 +391,18 @@
     p {
       max-width: 800px;
       margin: 0 auto;
+      padding: 0 20px;
       color: $color__white;
       font-family: $font__freight;
-      @include font-size(40px);
+      @include font-size(30px);
       font-style: italic;
       line-height: 1.3;
       text-align: center;
+
+      @include breakpoint('medium') {
+        @include font-size(40px);
+        padding: 0;
+      }
     }
   }
 
