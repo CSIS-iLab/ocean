@@ -17,9 +17,9 @@
     li {
       width: fit-content;
       margin-bottom: 0.75rem;
+      line-height: 1.3;
       list-style-type: none;
       @extend %body-text__med;
-      line-height: 1.3;
 
       &:hover {
         color: $color__medblue;

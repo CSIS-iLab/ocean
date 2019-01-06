@@ -44,14 +44,15 @@ p {
       @if $i == 2 {
         clear: both;
         margin-top: 4.5rem;
-        &:before {
+
+        &::before {
           display: block;
           content: '';
           width: 10rem;
           height: 10px;
-          background-color: $color__slate-lightest;
-          margin-left: -2rem;
           margin-bottom: 1rem;
+          margin-left: -2rem;
+          background-color: $color__slate-lightest;
         }
       } @else {
         margin-top: 3rem;

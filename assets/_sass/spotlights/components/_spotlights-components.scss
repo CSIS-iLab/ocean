@@ -142,8 +142,8 @@
   font-family: $font__proxima;
   @include font-size(18px);
   font-weight: 600;
-  letter-spacing: 0.05rem;
   line-height: 1;
+  letter-spacing: 0.05rem;
   text-align: center;
 
   @include breakpoint('medium') {

@@ -1,5 +1,5 @@
 .tooltipped {
-  padding: 1.4rem 20px 1.4rem;
+  padding: 1.4rem 20px;
   background-color: $color__slate-lightest;
   @include breakpoint('medium') {
     padding: 1.4rem 2rem;
@@ -49,8 +49,8 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    cursor: help;
     color: $color__medblue;
+    cursor: help;
   }
 
   &:focus {
