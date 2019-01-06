@@ -181,22 +181,22 @@ function InitWebGl() {
 
   count = count2 = blurcount = 0
 }
-
-let windowDur = 1
-const vTl = new TimelineMax(),
-  vT2 = new TimelineMax(),
-  vT3 = new TimelineMax(),
-  vT4 = new TimelineMax(),
-  vT5 = new TimelineMax(),
-  tl = new TimelineMax()
-let waterID = document.getElementById('water').offsetHeight
-const waterY = waterID + 100
-vTl
-  // .from(water_front, 5, { pixi: { alpha: 0, positionY: waterY }, delay: 4 }, 0)
-  .to('#clouds_1', 5, { y: '20' }, 0)
-  .to('#clouds_2', 5, { y: '15' }, '-=4')
-vT2.to('#turbwave', 4, { attr: { baseFrequency: 0.0 } }, 0)
 window.addEventListener('load', () => {
+  let windowDur = 1
+  const vTl = new TimelineMax(),
+    vT2 = new TimelineMax(),
+    vT3 = new TimelineMax(),
+    vT4 = new TimelineMax(),
+    vT5 = new TimelineMax(),
+    tl = new TimelineMax()
+  let waterID = document.getElementById('water').offsetHeight
+  const waterY = waterID + 100
+  vTl
+    // .from(water_front, 5, { pixi: { alpha: 0, positionY: waterY }, delay: 4 }, 0)
+    .to('#clouds_1', 5, { y: '20' }, 0)
+    .to('#clouds_2', 5, { y: '15' }, '-=4')
+  vT2.to('#turbwave', 4, { attr: { baseFrequency: 0.0 } }, 0)
+
   let ctrl = new ScrollMagic.Controller({
     globalSceneOptions: {}
   })
@@ -254,17 +254,17 @@ window.addEventListener('load', () => {
     .on('leave', function(event) {
       if (event.scrollDirection == 'FORWARD') {
         vT2.restart()
-        // TweenMax.to(window, windowDur, {
-        //   scrollTo: {
-        //     y: '#hero_bottom',
-        //     autoKill: false,
-        //     offsetY: -50
-        //   },
-        //   ease: Sine.easeOut
-        // })
-        // TweenMax.to('#protect', 1, { y: '300%', rotation: 0.001 })
+        TweenMax.to(window, windowDur, {
+          scrollTo: {
+            y: '#hero_bottom',
+            autoKill: false,
+            offsetY: -50
+          },
+          ease: Sine.easeOut
+        })
+        TweenMax.to('#protect', 1, { y: '300%', rotation: 0.001 })
         document.getElementById('home-scroll-container').classList.add('active')
-        // TweenMax.to('#hero_top', 1, { y: '35%', rotation: 0.001 }, '-=4')
+        TweenMax.to('#hero_top', 1, { y: '35%', rotation: 0.001 }, '-=4')
       } else {
         vT2.stop()
         document
@@ -288,7 +288,7 @@ window.addEventListener('load', () => {
     reverse: true // small offset added to prevent overscrolling accidentally triggering
   })
     .addTo(ctrl)
-    //.setTween(vT3)
+    .setTween(vT3)
     .on('leave', function(event) {
       vT2.stop()
       document.getElementById('preserve-svg').classList.remove('pactive')
@@ -296,15 +296,15 @@ window.addEventListener('load', () => {
         .getElementById('home-scroll-container')
         .classList.remove('active')
       if (event.scrollDirection == 'REVERSE') {
-        // TweenMax.to(window, windowDur, {
-        //   scrollTo: {
-        //     y: 0,
-        //     autoKill: false
-        //   },
-        //   ease: Sine.easeOut
-        // })
-        // TweenMax.to('#hero_top', 1, { y: '0%', rotation: 0.001 })
-        // TweenMax.to('#protect', 1, { y: '0%', rotation: 0.001 })
+        TweenMax.to(window, windowDur, {
+          scrollTo: {
+            y: 0,
+            autoKill: false
+          },
+          ease: Sine.easeOut
+        })
+        TweenMax.to('#hero_top', 1, { y: '0%', rotation: 0.001 })
+        TweenMax.to('#protect', 1, { y: '0%', rotation: 0.001 })
       }
     })
     .on('start', function(event) {

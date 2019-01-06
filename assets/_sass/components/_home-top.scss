@@ -1,4 +1,3 @@
-
 .layout-home {
   .home__hero {
     position: relative;
@@ -44,7 +43,7 @@
       @include breakpoint('large') {
         max-width: 500px;
       }
-    }  
+    }
   }
 
   #hero_bottom {
@@ -104,8 +103,12 @@
   }
 
   #preserve {
-    color: $color__white;
+    @include font-size(60px);
+    text-anchor: middle;
+    transform: translate(50%, 50%);
     filter: url('#turb');
+    dominant-baseline: hanging;
+    fill: $color__white;
   }
 
   #preserve-svg,
@@ -138,7 +141,7 @@
 
     &.pactive {
       position: absolute;
-      top: -40%;
+      top: 20%;
       opacity: 1;
       transition: opacity 3s, top 1s;
     }
@@ -146,14 +149,14 @@
 
   #protect-svg {
     position: fixed;
-    top: 0;
+    top: 33%;
     letter-spacing: -0.75rem;
     opacity: 1;
     transition: opacity 2s, top 2s;
 
-    @media screen and (min-height: 800px) {
-      top: 15vh;
-    }    
+    // @media screen and (min-height: 800px) {
+    //   top: 15vh;
+    // }
   }
 
   #hero_bottom::before {
@@ -215,6 +218,7 @@
 
   #underwater-container {
     height: 80vh;
+    min-height: 800px;
     background: #0e2764;
     background: linear-gradient(
       75deg,
@@ -227,7 +231,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e2764', endColorstr='#1d509b', GradientType=1);
     // filter: blur(6px);
     // animation: Gradient 5s ease infinite;
-  
 
     &::after {
       position: absolute;
@@ -307,7 +310,7 @@
   @for $i from 1 through 4 {
     $time: ($i / 2 + 2);
     $time1: $time + s;
-    
+
     .ray:nth-child(#{$i}):not(.disable-animation) {
       animation: move-#{$i} $time1 linear infinite alternate;
     }
