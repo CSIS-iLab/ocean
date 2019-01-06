@@ -450,7 +450,7 @@
   font-weight: 400;
   line-height: 1.13;
   letter-spacing: 0.5px;
-  @include font-size(32px);
+  @include font-size(28px);
 }
 
 %post-content__h4 {
@@ -458,7 +458,7 @@
   font-family: $font__proxima;
   font-weight: normal;
   line-height: 1.17;
-  @include font-size(24px);
+  @include font-size(22px);
 }
 
 %post-content__h5 {

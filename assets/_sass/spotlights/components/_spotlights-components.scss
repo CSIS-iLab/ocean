@@ -138,18 +138,25 @@
 ===========================*/
 
 .sc-statistic {
+  color: var(--accent-color);
+  font-family: $font__proxima;
+  @include font-size(18px);
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  line-height: 1;
   text-align: center;
 
   @include breakpoint('medium') {
+    @include font-size(20px);
     text-align: left;
   }
 
+  &__pre {
+    text-transform: uppercase;
+  }
+
   &__number {
-    color: var(--accent-color);
-    font-family: $font__proxima;
     @include font-size(50px);
-    font-weight: 600;
-    line-height: 1;
 
     @include breakpoint('medium') {
       @include font-size(64px);
