@@ -1,7 +1,3 @@
-.site-footer {
-  z-index: 2;
-  position: relative;
-}
 
 .layout-home {
   .home__hero {
@@ -37,8 +33,8 @@
       rgba(208, 216, 224, 1) 51%,
       rgba(158, 179, 208, 1) 100%
     );
-<<<<<<< HEAD
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f2f6', endColorstr='#9eb3d0', GradientType=1);
+
+    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f2f6', endColorstr='#9eb3d0', GradientType=1);
 
     .hero-logo {
       display: block;
@@ -49,9 +45,6 @@
         max-width: 500px;
       }
     }  
-=======
-    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f2f6', endColorstr='#9eb3d0', GradientType=1);
->>>>>>> no-webgl/slow-fps fallback
   }
 
   #hero_bottom {
@@ -132,19 +125,16 @@
 
   #preserve-svg {
     position: absolute;
-<<<<<<< HEAD
     top: -60%;
     letter-spacing: 0.25rem;
     opacity: 0;
     transition: opacity 0.5s, top 1s;
-=======
 
     &:not(.disable-animation) {
       top: -20%;
       opacity: 0;
       transition: opacity 0.5s, top 1s;
     }
->>>>>>> no-webgl/slow-fps fallback
 
     &.pactive {
       position: absolute;
@@ -224,7 +214,6 @@
   }
 
   #underwater-container {
-    filter: blur(6px);
     height: 80vh;
     background: #0e2764;
     background: linear-gradient(
@@ -236,7 +225,9 @@
       #1d509b 93%
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e2764', endColorstr='#1d509b', GradientType=1);
+    // filter: blur(6px);
     // animation: Gradient 5s ease infinite;
+  
 
     &::after {
       position: absolute;
@@ -316,6 +307,7 @@
   @for $i from 1 through 4 {
     $time: ($i / 2 + 2);
     $time1: $time + s;
+    
     .ray:nth-child(#{$i}):not(.disable-animation) {
       animation: move-#{$i} $time1 linear infinite alternate;
     }
