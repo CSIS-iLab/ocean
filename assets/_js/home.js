@@ -1,3 +1,4 @@
+import Breakpoints from './breakpoints'
 import * as PIXI from 'pixi.js'
 import TweenMax from 'TweenMax'
 import TimelineMax from 'TimelineMax'
@@ -49,22 +50,22 @@ let webglSupported =
   !!canvas.getContext('webgl') || !!canvas.getContext('experimental-webgl')
 
 water_bg = document.querySelector('#water')
-water_bg.style.backgroundImage = `url("/assets/images/home/water2.png"),url("/assets/images/home/water.png")`
-water_bg.style.backgroundPositionY = `120%,0%`
-water_bg.style.backgroundRepeat = `no-repeat`
+// water_bg.style.backgroundImage = `url("/assets/images/home/water2.png"),url("/assets/images/home/water.png")`
+// water_bg.style.backgroundPositionY = `120%,0%`
+// water_bg.style.backgroundRepeat = `no-repeat`
 
 wave_front = document.querySelector('#wave')
-wave_front.style.backgroundImage = `url(/assets/images/home/wave.png)`
-wave_front.style.backgroundPositionY = `15%`
-wave_front.style.backgroundRepeat = `no-repeat`
+// wave_front.style.backgroundImage = `url(/assets/images/home/wave.png)`
+// wave_front.style.backgroundPositionY = `15%`
+// wave_front.style.backgroundRepeat = `no-repeat`
 
 setTimeout(() => {
   cancelAnimationFrame(req)
 
   if (smoothRendering && webglSupported) {
     InitWebGl()
-    document.querySelector('#water').style.backgroundImage = `none`
-    document.querySelector('#wave').style.backgroundImage = `none`
+    // document.querySelector('#water').style.backgroundImage = `none`
+    // document.querySelector('#wave').style.backgroundImage = `none`
   } else {
     document.querySelector('#preserve').style.filter = 'none'
     document.querySelector('#preserve-svg').classList.add('disable-animation')
@@ -81,9 +82,13 @@ setTimeout(() => {
       element.classList.add('disable-animation')
     })
   }
-}, 2000)
+}, 500)
 
 function InitWebGl() {
+  if (Breakpoints.isMobile()) {
+    return
+  }
+
   loader = PIXI.loader
 
   loader

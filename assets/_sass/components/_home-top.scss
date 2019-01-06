@@ -88,6 +88,12 @@
 
   #water {
     height: 60vh;
+    background: url('#{$img__home}water2.png'), url('#{$img__home}water.png');
+    background-repeat: no-repeat;
+
+    @include breakpoint('medium') {
+      background-position-y: 120%, 0%;
+    }
   }
 
   #wave {
@@ -99,6 +105,9 @@
     height: 100vh;
     margin-top: -20vh;
     overflow: hidden;
+    background: url('#{$img__home}wave.png');
+    background-repeat: no-repeat;
+    background-position-y: 15%;
     transition: left 1s ease-in-out;
   }
 
