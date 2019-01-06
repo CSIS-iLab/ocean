@@ -101,11 +101,13 @@
       transition: opacity 0.1s cubic-bezier(0.42, 0, 1, 1);
 
       &::placeholder {
-        color: $color__ltgray-lighter;
+        color: $color__bluegray;
       }
 
       &:focus {
         @extend %focus--outline;
+        outline: none;
+        border-bottom: 1px solid $color__bluegray;
       }
     }
   }
