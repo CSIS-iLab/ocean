@@ -5,9 +5,27 @@
 
       @if $dir == 'right' {
         margin-right: 0;
-        margin-left: 1.5rem;
+        margin-left: 2rem;
       } @else {
-        margin-right: 1.5rem;
+        margin-right: 2rem;
+        margin-left: 0;
+      }
+    }
+    @include breakpoint('large') {
+      @if $dir == 'right' {
+        margin-right: 0;
+        margin-left: 2.5rem;
+      } @else {
+        margin-right: 2.5rem;
+        margin-left: 0;
+      }
+    }
+    @include breakpoint('xlarge') {
+      @if $dir == 'right' {
+        margin-right: 0;
+        margin-left: 3rem;
+      } @else {
+        margin-right: 3rem;
         margin-left: 0;
       }
     }
@@ -24,6 +42,7 @@
 
 .sc--float-large {
   @include structure($size__sc--float-large, 'width');
+  max-width: 500px;
 }
 
 .sc--medium {
