@@ -233,6 +233,8 @@
 
   &__img {
     grid-area: img;
+    height: 100%;
+    min-height: 70%;
 
     .layout-home & {
       display: block;
@@ -246,11 +248,13 @@
     }
 
     img {
+      $sizes: ('small', 'medium', 'large');
       display: block;
-      object-fit: cover;
       width: 100%;
-      @include structure($size__post-block-img--height, 'height');
+      max-height: 100%;
       line-height: 1;
+      object-fit: cover;
+      @include structure($size__post-block-img--height, 'height', $sizes);
 
       .layout-home & {
         width: 100%;
