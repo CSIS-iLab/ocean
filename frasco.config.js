@@ -1,3 +1,6 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
+
 module.exports = {
   port: 4000,
 
@@ -81,6 +84,7 @@ module.exports = {
   webpack: {
     mode: 'production',
     // devtool: 'source-map',
+    // plugins: [new BundleAnalyzerPlugin()],
     output: {
       filename: chunkData => {
         return chunkData.chunk.entryModule._identifier.includes('spotlights/')
@@ -92,12 +96,12 @@ module.exports = {
       algoliasearch: 'algoliasearch',
       Flickity: 'flickity',
       LuminousLightbox: 'luminous-lightbox',
-      instantsearch: 'instantsearch',
+      'instantsearch.js/es': 'instantsearch',
       'pixi.js': 'PIXI',
       Plyr: 'plyr',
       ScrollMagic: 'ScrollMagic',
       TimelineMax: 'TimelineMax',
-      tippy: 'tippy.js',
+      'tippy.js': 'tippy',
       TweenMax: 'TweenMax',
       Highcharts: 'Highcharts'
     },
