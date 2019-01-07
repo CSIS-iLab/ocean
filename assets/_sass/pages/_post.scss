@@ -41,13 +41,13 @@
       margin-left: -50vw;
       @include bg-images('hero_commentary');
       background-repeat: no-repeat;
-      background-position: center 25%;
+      background-position: top;
       background-size: cover;
 
       @include breakpoint('medium') {
         position: absolute;
         height: unset;
-        background-position-y: bottom;
+        background-position-y: top;
       }
 
       @include breakpoint('xlarge') {
