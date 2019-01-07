@@ -26,7 +26,7 @@
     text-align: left;
 
     @include breakpoint($break: 'medium', $dir: 'max-width') {
-      text-align: center;
+      text-align: left;
     }
 
     @include breakpoint('medium') {
