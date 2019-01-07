@@ -97,7 +97,7 @@ const Lightbox = () => {
   const components = [...scGroups, ...scGalleries]
 
   single_images.forEach(img => {
-    img.style.cursor = 'pointer'
+    img.style.cursor = 'zoom-in'
     new Luminous(img, luminousOpts)
   })
 
@@ -105,7 +105,7 @@ const Lightbox = () => {
     const component_images = component.querySelectorAll('img')
 
     component_images.forEach(img => {
-      img.style.cursor = 'pointer'
+      img.style.cursor = 'zoom-in'
     })
 
     new LuminousGallery(component_images, galleryOpts, luminousOpts)

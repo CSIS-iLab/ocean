@@ -39,17 +39,33 @@ p {
   .post-content {
     p + h#{$i},
     ul + h#{$i},
-    ol + h#{$i} {
+    ol + h#{$i},
+    section + h#{$i} {
       @if $i == 2 {
+        clear: both;
         margin-top: 4.5rem;
+
+        &::before {
+          display: block;
+          content: '';
+          width: 10rem;
+          height: 10px;
+          margin-bottom: 1rem;
+          margin-left: -2rem;
+          background-color: $color__slate-lightest;
+        }
       } @else {
-        margin-top: 2.5rem;
+        margin-top: 3rem;
       }
     }
 
     h#{$i} {
       @extend %#{$placeholder} !optional;
-      margin-bottom: 1rem;
+      @if $i == 2 {
+        margin-bottom: 2rem;
+      } @else {
+        margin-bottom: 1rem;
+      }
     }
   }
 }

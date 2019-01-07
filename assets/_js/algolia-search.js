@@ -1,5 +1,4 @@
 import algoliasearch from 'algoliasearch'
-
 import instantsearch from 'instantsearch.js/es'
 
 import {
