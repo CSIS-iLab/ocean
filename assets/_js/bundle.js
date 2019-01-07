@@ -1,5 +1,3 @@
-import '@babel/polyfill'
-
 import FooterBgHeight from './footer-bg-height'
 import Header from './header'
 import HeaderSearch from './header-search'
