@@ -18,10 +18,11 @@
     background-color: $color__dkblue-darker;
     @include bg-footer;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     @include breakpoint('large') {
       max-height: 800px;
+      background-size: cover;
     }
 
     .layout-archive & {
