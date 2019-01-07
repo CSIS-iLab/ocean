@@ -63,6 +63,7 @@ module.exports = {
       'archives.js',
       'home.js',
       'lazy-load.js',
+      'newsletter.js',
       'spotlights/arctic/arctic.js',
       'spotlights/scs/scs.js'
     ]
