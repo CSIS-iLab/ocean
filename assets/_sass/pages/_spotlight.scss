@@ -6,7 +6,8 @@
 
 .spotlight {
   &__content {
-    @include structure($size__spotlight-container-width, 'width');
+    @include structure($size__spotlight-container-width, 'max-width');
+    width: 100%;
     margin: 0 auto;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -52,7 +53,7 @@
 
       > *:last-child {
         padding-bottom: 2rem;
-        
+
         @include breakpoint('medium') {
           padding-bottom: 6rem;
         }

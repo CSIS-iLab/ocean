@@ -84,10 +84,14 @@ $font__line-height-pre: 1.6;
 $img__home: '../images/home/';
 
 $img__footer: (
-  'small': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-small.jpg',
-  'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-medium.jpg',
-  'large': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-large.jpg',
-  'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-xlarge.jpg'
+  'small':
+  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-small.jpg',
+  'medium':
+  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-medium.jpg',
+  'large':
+  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-large.jpg',
+  'xlarge':
+  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-xlarge.jpg'
 );
 
 /*----------  Structure  ----------*/
@@ -279,39 +283,39 @@ $size__archive-footer-margin-right: (
 
 $size__spotlight-container-width: (
   'small': 100%,
-  'medium': 560px,
-  'large': 800px,
-  'xlarge': 1157px
+  'medium': 90vw,
+  'large': 90vw,
+  'xlarge': 100%
 );
 
 $size__spotlight-body-width: 625px;
 
 $size__sc--float-small: (
   'small': 100%,
-  'medium': 300px,
+  'medium': 225px,
   'large': 250px,
-  'xlarge': 300px
+  'xlarge': 250px
 );
 
 $size__sc--float-medium: (
   'small': 100%,
   'medium': 350px,
-  'large': 50%,
+  'large': 400px,
   'xlarge': 400px
 );
 
 $size__sc--float-large: (
   'small': 100%,
   'medium': 350px,
-  'large': 50%,
+  'large': 40%,
   'xlarge': 500px
 );
 
 $size__sc--medium: (
   'small': 100%,
-  'medium': 100%,
-  'large': 625px,
-  'xlarge': 625px
+  'medium': 525px,
+  'large': 525px,
+  'xlarge': 550px
 );
 
 $size__sc--large: (

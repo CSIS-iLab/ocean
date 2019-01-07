@@ -1,6 +1,9 @@
 .tooltipped {
-  padding: 1.4rem 1rem 1rem;
+  padding: 1.4rem 20px;
   background-color: $color__slate-lightest;
+  @include breakpoint('medium') {
+    padding: 1.4rem 2rem;
+  }
 
   .icon-x {
     position: absolute;
@@ -46,7 +49,8 @@
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: $color__ltgray-dark;
+    color: $color__medblue;
+    cursor: help;
   }
 
   &:focus {
@@ -57,14 +61,17 @@
 
 .sc-tooltip-video {
   display: flex;
-  height: 5rem;
+  flex-grow: 1;
+  height: 4rem;
 
   &__content {
     display: flex;
+    flex-grow: 1;
     background-color: $color__slate-lightest;
     border-radius: 0 2.5rem 2.5rem 0;
 
     &__text {
+      flex-grow: 1;
       align-self: center;
       padding: 0.5rem 0.5rem 0.5rem 1rem;
       line-height: 1.2;
@@ -80,7 +87,7 @@
 
     &-thumbnail {
       width: auto;
-      height: 100%;
+      height: 4rem;
       border-radius: 50%;
     }
   }
@@ -89,7 +96,7 @@
     display: flex;
     justify-content: center;
     width: 6rem;
-    font-size: 2rem;
+    font-size: 1.25rem;
     background-color: var(--accent-color);
     border: 0;
     cursor: pointer;
