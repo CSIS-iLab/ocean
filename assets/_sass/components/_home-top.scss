@@ -19,7 +19,6 @@
   }
 
   #hero_top {
-    // position: relative !important;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -34,7 +33,7 @@
       rgba(158, 179, 208, 1) 100%
     );
 
-    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f2f6', endColorstr='#9eb3d0', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f2f6', endColorstr='#9eb3d0', GradientType=1);
 
     .hero-logo {
       display: block;
@@ -106,9 +105,10 @@
         display: block;
         width: 1500px;
         height: 100%;
-        background: url('#{$img__home}water2.png'), url('#{$img__home}water.png');
-        background-repeat: no-repeat;
-        background-position-y: 120%,0;
+        background: url('#{$img__home}water2.png'),
+          url('#{$img__home}water.png');
+        background-repeat: repeat-x;
+        background-position-y: 120%, 0;
         transform: scaleX(-1);
       }
     }
@@ -138,7 +138,7 @@
         width: 1500px;
         height: 100%;
         background: url('#{$img__home}wave.png');
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
         background-position-y: 15%;
         transform: scaleX(-1);
         transition: left 1s ease-in-out;
@@ -253,7 +253,7 @@
 
   #protect-svg span {
     display: inline-block;
-    // text-shadow: 0 0 0 $color__white;
+    text-shadow: 0 0 0 $color__white;
     transform: matrix(0.9, 0.3, 0, 0.4, -100, -100);
     transform-origin: 0 0;
     opacity: 0;
@@ -274,8 +274,7 @@
       #1d509b 93%
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e2764', endColorstr='#1d509b', GradientType=1);
-    // filter: blur(6px);
-    // animation: Gradient 5s ease infinite;
+    animation: Gradient 5s ease infinite;
 
     &::after {
       position: absolute;
@@ -301,6 +300,7 @@
     height: 70%;
     margin-top: 10vh;
     overflow: hidden;
+    filter: blur(6px);
   }
 
   .ray {
@@ -319,8 +319,16 @@
     transform: scale(1) rotate(0) translateX(0) translateY(0) skewX(30deg)
       skewY(0deg);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=0);
-    // filter: blur(6px);
     transition: all 1000ms ease;
+
+    &:not(.disable-animation) {
+      filter: blur(6px);
+
+      &::before,
+      &::after {
+        filter: blur(10px);
+      }
+    }
   }
 
   .ray::before,
@@ -338,7 +346,6 @@
       rgba(255, 255, 255, 0) 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=0); /* IE6-9 */
-    // filter: blur(10px);
     content: '';
   }
 
