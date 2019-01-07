@@ -101,7 +101,9 @@ module.exports = {
     resolve: {
       modules: ['node_modules'],
       alias: {
+        objectFitImages: 'object-fit-images',
         Plyr: 'plyr',
+        SmoothScroll: 'smooth-scroll',
         TweenLite: 'gsap/src/minified/TweenLite.min.js',
         TweenMax: 'gsap/src/minified/TweenMax.min.js',
         TimelineLite: 'gsap/src/minified/TimelineLite.min.js',
