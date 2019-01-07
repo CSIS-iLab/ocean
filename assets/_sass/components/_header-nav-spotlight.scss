@@ -50,6 +50,7 @@
     flex-direction: column;
     max-width: 500px;
     height: 100vh;
+    overflow-y: scroll;
     background-color: $color__dkblue-dark;
     transform: translateX(-150%);
     visibility: hidden;
@@ -104,18 +105,22 @@
     }
 
     &-desc {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
       @extend %header-nav__logo-desc;
+
+      @include breakpoint('large') {
+        margin-bottom: 4rem;
+      }
     }
 
     &-copyright {
-      position: absolute;
-      bottom: calc(100vh - 100% + #{$header-height-small} + 20px);
       @extend %copyright;
-      margin-bottom: 0;
+      margin-bottom: 3rem;
 
       @include breakpoint('large') {
+        position: absolute;
         bottom: calc(100vh - 100% + #{$header-height-large} + 20px);
+        margin-bottom: 0;
       }
     }
   }
@@ -164,12 +169,11 @@
   }
 
   #{$site-nav}-menu--spotlight {
-    position: absolute;
-    bottom: calc(100vh - 100% + #{$header-height-small} + 20px);
     margin-bottom: 1rem;
     padding: 0;
 
     @include breakpoint('large') {
+      position: absolute;
       bottom: calc(100vh - 100% + #{$header-height-large} + 20px);
     }
 
