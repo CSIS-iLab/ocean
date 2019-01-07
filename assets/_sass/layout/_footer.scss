@@ -13,7 +13,7 @@
     z-index: -1;
     display: block;
     width: 100vw;
-    height: calc(var(--footer-bg-min-height) + 100px);
+    height: var(--footer-bg-min-height);
     max-height: 1000px;
     background-color: $color__dkblue-darker;
     @include bg-footer;
