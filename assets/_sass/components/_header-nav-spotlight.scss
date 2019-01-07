@@ -57,21 +57,21 @@
 
     @include breakpoint('large') {
       flex-direction: row;
-      max-width: 600px;
+      max-width: 800px;
       height: auto;
     }
 
     &.is-active {
       transform: translateY(0);
       visibility: visible;
-      
+
       &::before {
         content: '';
         position: absolute;
         top: 0;
         right: 100%;
         display: block;
-        width: calc((100vw - 100%)/2);
+        width: calc((100vw - 100%) / 2);
         height: 100%;
         background-color: $color__dkblue;
       }
