@@ -13,8 +13,8 @@ css_files:
 include_header: scs/intro.html
 excerpt:
   Unseen fishing activity. Maritime militias in the Spratlys. Fishers have
-  often been overlooked in the South China Sea disputes. CSIS in cooperation with
-  Vulcan, Inc., unveil a worrying narrative about the impact fishers and their fleets
+  often been overlooked in the South China Sea disputes. CSIS, in cooperation with
+  Vulcan, Inc., unveils a worrying narrative about the impact fishers and their fleets
   have in the region.
 authors:
   - _authors/gregory-b-poling.md
