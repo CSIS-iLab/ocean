@@ -217,7 +217,7 @@
 
 .lum-gallery-button {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 60px;
   height: 100px;
   max-height: 100%;
@@ -229,7 +229,7 @@
   background: transparent;
   border: 0;
   outline: 0;
-  transform: translateY(-50%);
+  transform: translateY(-45%);
   cursor: pointer;
 }
 
@@ -302,6 +302,8 @@
 /* This media query makes screens less than 460px wide display in a "fullscreen"-esque mode. Users can then scroll around inside the lightbox to see the entire image. */
 @media (max-width: 460px) {
   .lum-lightbox-image-wrapper {
+    height: 100vh !important;
+    max-height: unset !important;
     display: flex;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
