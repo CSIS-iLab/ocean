@@ -131,8 +131,8 @@ Coral reefs, on which much of these fish depend, have been declining by 16 perce
 
 {% include sc-single-image.html
 url="https://res.cloudinary.com/csisideaslab/image/upload/v1546704680/ocean/spratly-islands-location.jpg"
-caption="The Spratly Islands are claimed in whole or in part by China, Taiwan, Vietnam, Brunei, Malaysia, and the Philippines."
-credit="CSIS"
+caption=""
+credit=""
 align="right"
 width="small"
 %}
