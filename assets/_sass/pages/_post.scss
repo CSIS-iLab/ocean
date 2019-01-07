@@ -41,13 +41,14 @@
       margin-left: -50vw;
       @include bg-images('hero_commentary');
       background-repeat: no-repeat;
-      background-position: center 25%;
+      background-position: top;
       background-size: cover;
 
       @include breakpoint('medium') {
         position: absolute;
         height: unset;
-        background-position-y: bottom;
+        margin-bottom: -6.75rem;
+        background-position-y: top;
       }
 
       @include breakpoint('xlarge') {
@@ -98,6 +99,7 @@
     @include breakpoint('medium') {
       margin-bottom: 2rem;
       padding-top: 2rem;
+      background-color: $color__white;
       border-left: 1px solid $color__gray-58;
     }
 
@@ -106,9 +108,20 @@
     }
 
     &::after {
-      @extend %content-side-gradient;
-      top: -10px;
-      bottom: -5rem;
+      @include breakpoint('medium') {
+        content: '';
+        position: absolute;
+        top: -10px;
+        bottom: -20rem;
+        left: 100%;
+        width: calc((100vw - 100%) / 2 - 1px);
+        // prettier-ignore
+        background-image: linear-gradient(180deg, rgba(14, 26, 44, 0), rgba(14, 26, 44, 0.8) 80px, #081324 120px, #081324 95%, rgba(0, 11, 14, 0.01));
+      }
+
+      @include breakpoint('large') {
+        bottom: -18rem;
+      }
     }
 
     &::before {
@@ -121,7 +134,10 @@
       background-color: $color__ltgray;
 
       @include breakpoint('medium') {
-        display: none;
+        right: calc(100% + 1px);
+        width: calc((100vw - 100%) / 2);
+        height: 100%;
+        background-color: $color__white;
       }
     }
   }
