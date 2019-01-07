@@ -46,6 +46,7 @@
       'top',
       ('small', 'large')
     );
+    bottom: 0;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -58,7 +59,6 @@
     @include breakpoint('large') {
       flex-direction: row;
       max-width: 800px;
-      height: auto;
     }
 
     &.is-active {
