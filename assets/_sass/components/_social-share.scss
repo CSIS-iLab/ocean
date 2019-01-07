@@ -61,7 +61,8 @@
   background-color: $color__white;
   transform: translateX(100%);
   visibility: hidden;
-  transition: transform 0.5s linear, visibility 0s linear 0.1s;
+  transition: transform 0.5s linear, visibility 0.5s linear 0.1s,
+    z-index 0.5s linear 0.1s;
 
   &::before {
     position: absolute;
@@ -70,10 +71,11 @@
     bottom: 0;
     display: block;
     width: 100vw;
-    height: 0;
-    background-color: transparent;
-    transition: background-color 0.3s linear;
+    height: 100%;
+    background-color: $color__white;
     content: '';
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.1s;
 
     @include breakpoint('large') {
       display: none;
@@ -86,8 +88,7 @@
     visibility: visible;
 
     &::before {
-      height: 100%;
-      background-color: $color__white;
+      opacity: 1;
     }
   }
 
