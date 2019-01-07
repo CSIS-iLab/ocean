@@ -9,7 +9,7 @@ const TableOfContents = () => {
       include_toc
   )
   const current_section = document.querySelector('.site-header__section')
-  const title = current_section.innerHTML
+  const title = document.querySelector('.spotlight__header h1')
   const observer_config = {
     rootMargin: '0px',
     threshold: 0
@@ -18,8 +18,9 @@ const TableOfContents = () => {
   let toc_items = ''
 
   const observer = new IntersectionObserver(handleObserver, observer_config)
-
+  observer.observe(title)
   observer.observe(document.querySelector('#spotlight__intro'))
+
   headings.forEach((header, i) => {
     const text = header.innerHTML
     let hash = 'toc-' + counter
@@ -48,14 +49,21 @@ const TableOfContents = () => {
         l => l.getAttribute('data-target') === href
       )
 
-      if (entry.isIntersecting && entry.intersectionRatio > 0) {
-        link.classList.add('is-visible')
+      console.log(entry.target, entry.intersectionRatio)
+      if (link) {
+        if (entry.isIntersecting && entry.intersectionRatio > 0) {
+          link.classList.add('is-visible')
+          previous_section = entry.target.getAttribute('id')
+        } else {
+          link.classList.remove('is-visible')
+        }
+        highlightFirstActive()
+      } else if (!link && entry.isIntersecting && entry.intersectionRatio > 0) {
+        current_section.innerHTML = document.querySelector(
+          'h1.post-title'
+        ).textContent
         previous_section = entry.target.getAttribute('id')
-      } else {
-        link.classList.remove('is-visible')
       }
-
-      highlightFirstActive()
     })
   }
 
@@ -78,7 +86,7 @@ const TableOfContents = () => {
 
     let current = toc_container.querySelector('.is-current a')
     if (!current) {
-      current_section.innerHTML = title
+      current_section.innerHTML = title.textContent
     } else {
       current_section.innerHTML = current.innerHTML
     }
