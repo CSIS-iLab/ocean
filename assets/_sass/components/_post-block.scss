@@ -132,6 +132,10 @@
     grid-area: header;
     padding-bottom: 0.75rem;
 
+    @supports not (display: grid) {
+      -ms-grid-column: 1;
+    }
+
     .home__commentary & {
       padding-bottom: 0;
     }
@@ -232,9 +236,14 @@
   }
 
   &__img {
+    display: block;
     grid-area: img;
     height: 100%;
     min-height: 70%;
+
+    @supports not (display: grid) {
+      -ms-grid-column: 2;
+    }
 
     .layout-home & {
       display: block;
