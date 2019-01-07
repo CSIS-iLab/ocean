@@ -25,13 +25,13 @@ keywords:
   - Remote Sensing
   - Fishing
 further_reading: |-
-  * [Asia Maritime Transparency Initiative](https://amti.csis.org/)
-  * [China’s Third Sea Force, The People’s Armed Forces Maritime Militia: Tethered to the PLA](http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf)
-  * [Boom or Bust: The Future of Fish in the South China Sea](https://www.oceanrecov.org/news/ocean-recovery-alliance-news/boom-or-bust-the-future-of-fish-in-the-south-china-sea.html)
-  * [Defusing the South China Sea Disputes: A Regional Blueprint](https://www.csis.org/analysis/defusing-south-china-sea-disputes)
-  * [Illegal, Unreported, and Unregulated Fishing as a National Security Threat](https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat)
-  * [An Accounting of China’s Deployments to the Spratly Islands](https://amti.csis.org/accounting-chinas-deployments-spratly-islands/)
-  * [Confirming the Chinese Flotilla Near Thitu Island](https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/)
+  * [Asia Maritime Transparency Initiative](https://amti.csis.org/){:target="_blank"}
+  * [China’s Third Sea Force, The People’s Armed Forces Maritime Militia: Tethered to the PLA](http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf){:target="_blank"}
+  * [Boom or Bust: The Future of Fish in the South China Sea](https://www.oceanrecov.org/news/ocean-recovery-alliance-news/boom-or-bust-the-future-of-fish-in-the-south-china-sea.html){:target="_blank"}
+  * [Defusing the South China Sea Disputes: A Regional Blueprint](https://www.csis.org/analysis/defusing-south-china-sea-disputes){:target="_blank"}
+  * [Illegal, Unreported, and Unregulated Fishing as a National Security Threat](https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat){:target="_blank"}
+  * [An Accounting of China’s Deployments to the Spratly Islands](https://amti.csis.org/accounting-chinas-deployments-spratly-islands/){:target="_blank"}
+  * [Confirming the Chinese Flotilla Near Thitu Island](https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/){:target="_blank"}
 methodology:
   Vulcan, Inc. undertook the analysis of AIS, VIIRS, SAR, and high-resolution
   satellite imagery for this project. AIS was provided by ORBCOMM. At the start of
@@ -83,11 +83,11 @@ image_groups:
       caption: '<span class="sc-image-gallery__captions-single__text-label">LEFT:</span> Filipino bancas near Scarborough Shoal on March 1, 2017. <span class="sc-image-gallery__captions-single__text-label">RIGHT:</span> A Filipino banca near Infanta, Pangasinan province in June 2016.'
       credit: '<span class="sc-image-gallery__captions-single__text-label--credit">LEFT:</span> © DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved <span class="sc-image-gallery__captions-single__text-label--credit">RIGHT:</span> TED ALJIBE / AFP/Getty Images'
   yue_tai_yu:
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-vessels-5-25-18.jpg
+    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546878655/ocean/Yue-Tai-Yu-vessels-5-25-18.jpg
       caption: Yue Tai Yu vessels near Hughes Reef on May 25, 2018.
       credit: '© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved'
       mode: portrait
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546472554/ocean/Yue-Tai-Yu-18_-under-construction-8-26-17.jpg
+    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546878655/ocean/Yue-Tai-Yu-18_-under-construction-8-26-17.jpg
       caption:
         The nine vessels of the Yue Tai Yu fleet under construction at Guangxin
         Shipbuilding & Heavy Industry Co., Ltd on August 26, 2017.
@@ -153,7 +153,7 @@ thumbnail="https://res.cloudinary.com/csisideaslab/image/upload/v1546463269/ocea
 width="medium"
 align="right"
  %}
-Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. Several different technologies are used to detect this activity–AIS, SAR, and VIIRS–and each tells a different story.
+Attempting to monitor fishing activity remotely is uniquely difficult in the South China Sea. But several different technologies—AIS, VIIRS, SAR, and optical satellite imagery—can be combined to monitor this activity.
 
 ### Automatic Identification System (AIS)
 
@@ -186,12 +186,12 @@ VIIRS data shows a significant amount of fishing in the South China Sea year-rou
 
 ### Synthetic Aperture Radar (SAR)
 
-For a more granular analysis, Synthetic Aperture Radar (SAR) provides an accurate count of vessels at a given time and location. Anything metallic, like the hull and superstructure of most modern fishing vessels as small as six meters, can be readily identified by satellite-based SAR. Again, the disconnect between the level of activity and the number of AIS signals being broadcast was staggering. For instance, SAR data collected on eight occasions between September 30 and October 5 provided 264 vessel detections, only 8 of which were broadcasting AIS.
+For a more granular analysis, Synthetic Aperture Radar (SAR) provides an approximate count of vessels at a given time and location. Anything metallic, like the hull and superstructure of most modern fishing vessels as small as six meters, can be readily identified by satellite-based SAR. Again, the disconnect between the level of activity and the number of AIS signals being broadcast was staggering. For instance, SAR data collected on eight occasions between September 30 and October 5 provided 264 vessel detections, only 8 of which were broadcasting AIS.
 
 {% include sc-single-image.html
 url="https://res.cloudinary.com/csisideaslab/image/upload/v1546884058/ocean/sar_aiscorr_lg.jpg"
 mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1546884058/ocean/sar_aiscorr_sm.jpg"
-caption="AIS signals detected in the South China Sea in June 2018."
+caption="SAR detections and correlated AIS signals in the Spratly Islands from September 30 to October 5, 2018."
 credit="CSIS"
 width="medium"
 %}

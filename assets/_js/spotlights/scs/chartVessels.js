@@ -50,7 +50,7 @@ const chartVessels = () => {
         enabled: true,
         href: false,
         text:
-          'Developed based on information or analysis provided by Vulcan Technologies LLC.'
+          'Developed based on information or analysis provided by Vulcan Technologies LLC. | CSIS'
       },
       legend: {
         align: 'left',
@@ -90,7 +90,7 @@ const chartVessels = () => {
           borderWidth: 0,
           borderRadius: 3,
           className: 'highcharts-series-subi-column',
-          color: '#0663a1',
+          color: '#ef4723',
           events: {
             legendItemClick: function(e) {
               let match = this.chart.series.find(
@@ -107,7 +107,7 @@ const chartVessels = () => {
           borderWidth: 0,
           borderRadius: 3,
           className: 'highcharts-series-mischief-column',
-          color: '#ef4723',
+          color: '#68c8d2',
           events: {
             legendItemClick: function(e) {
               let match = this.chart.series.find(
@@ -123,7 +123,7 @@ const chartVessels = () => {
           showInLegend: false,
           data: dataArray[0].data,
           className: 'highcharts-series-subi-area',
-          color: '#0663a1'
+          color: '#ef4723'
         },
         {
           type: 'area',
@@ -131,7 +131,7 @@ const chartVessels = () => {
           data: dataArray[1].data,
           showInLegend: false,
           className: 'highcharts-series-mischief-area',
-          color: '#ef4723'
+          color: '#68c8d2'
         }
       ],
       responsive: {

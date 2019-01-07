@@ -32,8 +32,8 @@
 
 #chartCatch {
   $china: $color__red;
-  $spratly: $color__medblue;
-  $scs: $color__ltblue-lighter;
+  $spratly: $color__default-accent-dkr;
+  $scs: $color__default-accent;
 
   @extend %scs-chart;
 
@@ -43,8 +43,8 @@
 }
 
 #chartVessels {
-  $subi: $color__medblue;
-  $mischief: $color__red;
+  $subi: $color__red-medlight;
+  $mischief: $color__default-accent;
 
   @extend %scs-chart;
 
