@@ -12,13 +12,14 @@ const TableOfContents = () => {
   const title = current_section.innerHTML
   const observer_config = {
     rootMargin: '0px',
-    threshold: 1
+    threshold: 0
   }
   let counter = 0
   let toc_items = ''
 
   const observer = new IntersectionObserver(handleObserver, observer_config)
 
+  observer.observe(document.querySelector('#spotlight__intro'))
   headings.forEach((header, i) => {
     const text = header.innerHTML
     let hash = 'toc-' + counter
@@ -26,11 +27,6 @@ const TableOfContents = () => {
       hash = header.id
     }
     header.id = hash
-
-    // let list_class = ''
-    // if (i == 0) {
-    //   list_class = 'is-current'
-    // }
 
     toc_items += `<li data-target="${hash}"><a href="#${hash}">${text}</a></li>`
 
@@ -43,8 +39,6 @@ const TableOfContents = () => {
 
   const toc_links = toc_container.querySelectorAll('li')
 
-  console.log(toc_links)
-
   let previous_section
 
   function handleObserver(entries, observer) {
@@ -54,7 +48,7 @@ const TableOfContents = () => {
         l => l.getAttribute('data-target') === href
       )
 
-      if (entry.isIntersecting && entry.intersectionRatio === 1) {
+      if (entry.isIntersecting && entry.intersectionRatio > 0) {
         link.classList.add('is-visible')
         previous_section = entry.target.getAttribute('id')
       } else {
