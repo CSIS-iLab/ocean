@@ -76,7 +76,7 @@
       transform-origin: center bottom;
 
       @include breakpoint('medium') {
-        transform: translate(-120px, 0);
+        transform: translate(-120px, 59px) scale(0.8);
         transform-origin: center center;
       }
     }
