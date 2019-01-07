@@ -34,6 +34,12 @@ const Navigation = () => {
       closeMenu(trigger, target)
     })
 
+    document
+      .querySelector('.page-content')
+      .addEventListener('click', function() {
+        closeMenu(trigger, target)
+      })
+
     if (is_spotlight) {
       // Set a delay to give the ToC time to populate
       setTimeout(function() {

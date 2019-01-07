@@ -109,41 +109,44 @@ $site-nav: '.site-header__nav';
 }
 
 #{$site-nav}-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: -1;
   display: flex;
   flex-direction: column;
-  width: 80%;
-  height: 100vh;
   margin: 0;
-  padding: 1.5rem;
   list-style: none;
-  background-color: $color__dkblue;
-  transform: translateX(-150%);
-  visibility: hidden;
-  transition: transform 0.5s linear, visibility 0s linear 0.3s;
 
-  @include breakpoint('large') {
-    position: static;
-    top: unset;
-    left: unset;
-    z-index: initial;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    background-color: transparent;
-    transform: none;
-    visibility: visible;
-  }
+  &:not(.site-header__nav-menu--spotlight) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    width: 80%;
+    height: 100vh;
+    padding: 1.5rem;
+    background-color: $color__dkblue;
+    transform: translateX(-150%);
+    visibility: hidden;
+    transition: transform 0.5s linear, visibility 0s linear 0.3s;
 
-  &.is-active {
-    transform: translateY(0);
-    visibility: visible;
+    @include breakpoint('large') {
+      position: static;
+      top: unset;
+      left: unset;
+      z-index: initial;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      background-color: transparent;
+      transform: none;
+      visibility: visible;
+    }
+
+    &.is-active {
+      transform: translateY(0);
+      visibility: visible;
+    }
   }
 
   li {

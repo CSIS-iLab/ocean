@@ -9,15 +9,17 @@ const TableOfContents = () => {
       include_toc
   )
   const current_section = document.querySelector('.site-header__section')
-  const title = current_section.innerHTML
+  const title = document.querySelector('.spotlight__header h1')
   const observer_config = {
     rootMargin: '0px',
-    threshold: 1
+    threshold: 0
   }
   let counter = 0
   let toc_items = ''
 
   const observer = new IntersectionObserver(handleObserver, observer_config)
+  observer.observe(title)
+  observer.observe(document.querySelector('#spotlight__intro'))
 
   headings.forEach((header, i) => {
     const text = header.innerHTML
@@ -27,21 +29,17 @@ const TableOfContents = () => {
     }
     header.id = hash
 
-    let list_class = ''
-    if (i == 0) {
-      list_class = 'is-current'
-    }
-
-    toc_items += `<li class="${list_class}" data-target="${hash}"><a href="#${hash}">${text}</a></li>`
+    toc_items += `<li data-target="${hash}"><a href="#${hash}">${text}</a></li>`
 
     observer.observe(header)
 
     counter++
   })
 
-  toc_container.innerHTML = toc_items
+  toc_container.innerHTML += toc_items
 
   const toc_links = toc_container.querySelectorAll('li')
+
   let previous_section
 
   function handleObserver(entries, observer) {
@@ -51,14 +49,20 @@ const TableOfContents = () => {
         l => l.getAttribute('data-target') === href
       )
 
-      if (entry.isIntersecting && entry.intersectionRatio === 1) {
-        link.classList.add('is-visible')
+      if (link) {
+        if (entry.isIntersecting && entry.intersectionRatio > 0) {
+          link.classList.add('is-visible')
+          previous_section = entry.target.getAttribute('id')
+        } else {
+          link.classList.remove('is-visible')
+        }
+        highlightFirstActive()
+      } else if (!link && entry.isIntersecting && entry.intersectionRatio > 0) {
+        current_section.innerHTML = document.querySelector(
+          'h1.post-title'
+        ).textContent
         previous_section = entry.target.getAttribute('id')
-      } else {
-        link.classList.remove('is-visible')
       }
-
-      highlightFirstActive()
     })
   }
 
@@ -81,7 +85,7 @@ const TableOfContents = () => {
 
     let current = toc_container.querySelector('.is-current a')
     if (!current) {
-      current_section.innerHTML = title
+      current_section.innerHTML = title.textContent
     } else {
       current_section.innerHTML = current.innerHTML
     }

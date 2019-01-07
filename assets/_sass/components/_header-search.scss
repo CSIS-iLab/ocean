@@ -49,6 +49,7 @@
   }
 
   &-form {
+    @include structure($size__container-max-width, 'max-width');
     display: flex;
     justify-content: flex-end;
     align-items: center;
