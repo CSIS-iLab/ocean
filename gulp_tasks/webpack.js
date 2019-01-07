@@ -22,30 +22,7 @@ gulp.task('webpack', function() {
     .src(entry)
     .pipe(plumber())
     .pipe(named())
-    .pipe(
-      babel({
-        plugins: ['@babel/plugin-transform-runtime'],
-        presets: [
-          [
-            '@babel/preset-env',
-            {
-              useBuiltIns: 'entry',
-              debug: true,
-              targets: {
-                android: '4.2',
-                chrome: '41',
-                edge: '17',
-                firefox: '52',
-                ie: '11',
-                ios: '9.3',
-                opera: '56',
-                safari: '10.1'
-              }
-            }
-          ]
-        ]
-      })
-    )
+    .pipe(babel())
     .pipe(webpackStream(config.webpack, webpack))
     .pipe(gulp.dest(config.assets + '/' + config.js.dest))
 })
