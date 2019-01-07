@@ -169,23 +169,23 @@
 
       @include breakpoint('large') {
         $width_offset: nth(
-            map-get(
-              $map: $size__content-margin--archive,
-              $key: 'large'
-            ),
-            2
-          ) * 2;
+          map-get(
+            $map: $size__content-margin--archive,
+            $key: 'large'
+          ),
+          2
+        ) * 2;
         width: calc((100vw - 100%) / 2 + #{$width_offset});
       }
 
       @include breakpoint('xlarge') {
         $width_offset: nth(
-            map-get(
-              $map: $size__content-margin--archive,
-              $key: 'xlarge'
-            ),
-            2
-          ) * 3;
+          map-get(
+            $map: $size__content-margin--archive,
+            $key: 'xlarge'
+          ),
+          2
+        ) * 3;
         width: calc((100vw - 100%) / 2 + #{$width_offset} - 1px);
       }
 

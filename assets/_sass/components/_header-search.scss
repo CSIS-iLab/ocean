@@ -106,8 +106,8 @@
 
       &:focus {
         @extend %focus--outline;
-        outline: none;
         border-bottom: 1px solid $color__bluegray;
+        outline: none;
       }
     }
   }
