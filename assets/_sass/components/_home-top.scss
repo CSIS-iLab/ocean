@@ -5,6 +5,7 @@
     left: 50%;
     width: 100vw;
     margin: 0 -50vw;
+    background-color: #f0f2f6;
   }
 
   #px-render {
@@ -87,12 +88,29 @@
   }
 
   #water {
+    position: relative;
     height: 60vh;
     background: url('#{$img__home}water2.png'), url('#{$img__home}water.png');
     background-repeat: no-repeat;
 
     @include breakpoint('medium') {
       background-position-y: 120%, 0%;
+    }
+
+    &::after {
+      @include breakpoint('xlarge-2') {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 1499px;
+        display: block;
+        width: 1500px;
+        height: 100%;
+        background: url('#{$img__home}water2.png'), url('#{$img__home}water.png');
+        background-repeat: no-repeat;
+        background-position-y: 120%,0;
+        transform: scaleX(-1);
+      }
     }
   }
 
@@ -109,6 +127,23 @@
     background-repeat: no-repeat;
     background-position-y: 15%;
     transition: left 1s ease-in-out;
+
+    &::after {
+      @include breakpoint('xlarge-2') {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 1499px;
+        display: block;
+        width: 1500px;
+        height: 100%;
+        background: url('#{$img__home}wave.png');
+        background-repeat: no-repeat;
+        background-position-y: 15%;
+        transform: scaleX(-1);
+        transition: left 1s ease-in-out;
+      }
+    }
   }
 
   #preserve {
