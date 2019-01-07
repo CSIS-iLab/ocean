@@ -63,28 +63,31 @@
   visibility: hidden;
   transition: transform 0.5s linear, visibility 0s linear 0.1s;
 
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    display: block;
+    width: 100vw;
+    height: 0;
+    background-color: transparent;
+    transition: background-color 0.3s linear;
+    content: '';
+
+    @include breakpoint('large') {
+      display: none;
+    }
+  }
+
   &.is-active {
     z-index: 0;
     transform: translateX(0);
     visibility: visible;
 
     &::before {
-      position: absolute;
-      top: 0;
-      // left: calc(100% + 2px);
-
-      right: 100%;
-      bottom: 0;
-      display: block;
-      width: 100vw;
       height: 100%;
       background-color: $color__white;
-      transition: background-color 0.2s linear;
-      content: '';
-
-      @include breakpoint('large') {
-        display: none;
-      }
     }
   }
 
