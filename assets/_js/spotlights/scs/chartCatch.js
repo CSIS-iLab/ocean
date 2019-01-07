@@ -54,7 +54,7 @@ const chartCatch = () => {
     series: [
       {
         className: 'highcharts-series-scs',
-        color: '#82c0de'
+        color: '#0663a1'
       },
       {
         className: 'highcharts-series-spratly',

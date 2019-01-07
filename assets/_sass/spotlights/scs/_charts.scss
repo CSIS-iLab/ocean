@@ -33,7 +33,7 @@
 #chartCatch {
   $china: $color__red;
   $spratly: $color__medblue;
-  $scs: $color__ltblue-lighter;
+  $scs: $color__medblue;
 
   @extend %scs-chart;
 
@@ -43,8 +43,8 @@
 }
 
 #chartVessels {
-  $subi: $color__medblue;
-  $mischief: $color__red;
+  $subi: $color__red;
+  $mischief: $color__medblue;
 
   @extend %scs-chart;
 
