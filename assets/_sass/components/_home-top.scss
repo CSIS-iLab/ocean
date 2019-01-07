@@ -147,15 +147,9 @@
   }
 
   #preserve {
-    @include font-size(80px);
-    text-anchor: middle;
+    color: $color__white;
     filter: url('#turb');
-    dominant-baseline: hanging;
     fill: $color__white;
-
-    @include breakpoint('medium') {
-      @include font-size(60px);
-    }
   }
 
   #preserve-svg,
@@ -170,6 +164,10 @@
 
     @include breakpoint('large') {
       @include font-size(120px);
+    }
+
+    svg {
+      display: none;
     }
   }
 
