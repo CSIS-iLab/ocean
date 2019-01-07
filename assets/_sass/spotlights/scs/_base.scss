@@ -9,6 +9,10 @@ $color__map-bg: #131e24;
   --accent-color--hover: #{$color__default-accent--hover};
 }
 
-#img-yue_tai_yu .sc-image-group__images-single:nth-of-type(2) img {
-  object-position: right center;
+#img-yue_tai_yu .sc-image-group__images-single--landscape {
+  flex-basis: 175%;
 }
+
+// #img-yue_tai_yu .sc-image-group__images-single:nth-of-type(2) img {
+//   object-position: right center;
+// }
