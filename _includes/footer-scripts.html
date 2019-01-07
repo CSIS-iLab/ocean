@@ -9,6 +9,8 @@
 </script>
 <script src="{{ "/assets/js/bundle.js" | relative_url }}" type="text/javascript"></script>
 {%- if page.layout == 'archive' or page.layout == 'search' -%}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.32.0/algoliasearch.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/3.0.0/instantsearch.production.min.js" type="text/javascript"></script>
 <script src="{{ "/assets/js/archives.js" | relative_url }}" type="text/javascript"></script>
 {%- endif -%}
 {% include footer-home.html %}

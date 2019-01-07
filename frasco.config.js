@@ -101,7 +101,12 @@ module.exports = {
     resolve: {
       modules: ['node_modules'],
       alias: {
+        AlgoliaSearch: 'algoliasearch',
+        Flickity: 'flickity',
+        LuminousLightbox: 'luminous-lightbox',
+        InstantSearch: 'instantsearch.js/es',
         Plyr: 'plyr',
+        Tippy: 'tippy.js',
         TweenLite: 'gsap/src/minified/TweenLite.min.js',
         TweenMax: 'gsap/src/minified/TweenMax.min.js',
         TimelineLite: 'gsap/src/minified/TimelineLite.min.js',
