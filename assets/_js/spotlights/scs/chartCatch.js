@@ -60,7 +60,7 @@ const chartCatch = () => {
         className: 'highcharts-series-spratly',
         color: {
           pattern: {
-            color: '#68c8d2',
+            color: '#499ca2',
             path: {
               d: 'M 0 0 L 3 3'
             },
