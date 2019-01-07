@@ -6,7 +6,7 @@ url: 'https://ocean.csis.org' # the base hostname & protocol for your site, e.g.
 
 email: ocean@csis.org
 address: 1616 Rhode Island Avenue, NW Washington, DC 20036
-newsletter_url: https://
+newsletter_url: subscribe
 google_analytics: UA-131754705-1
 
 date_format: '%B %-d, %Y'

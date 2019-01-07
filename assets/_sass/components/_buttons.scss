@@ -16,6 +16,20 @@
     @extend %focus--border;
   }
 
+  &--blue {
+    color: $color__white;
+    background-color: $color__medblue;
+
+    &:hover {
+      background-color: $color__medblue-darker;
+    }
+
+    &:focus {
+      color: $color__white;
+      background-color: $color__medblue;
+    }
+  }
+
   &--dkblue {
     color: $color__white;
     background-color: $color__dkblue-light;
