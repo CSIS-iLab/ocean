@@ -36,7 +36,7 @@
       z-index: -1;
       display: block;
       width: 100vw;
-      height: $size__page-header-height--archive;
+      height: calc(#{$size__page-header-height--archive} + 200px);
       margin-right: -50vw;
       margin-left: -50vw;
       @include bg-images('hero_commentary');
