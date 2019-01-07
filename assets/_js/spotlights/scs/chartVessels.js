@@ -50,7 +50,7 @@ const chartVessels = () => {
         enabled: true,
         href: false,
         text:
-          'Developed based on information or analysis provided by Vulcan Technologies LLC.'
+          'Developed based on information or analysis provided by Vulcan Technologies LLC. | CSIS'
       },
       legend: {
         align: 'left',
