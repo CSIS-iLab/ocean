@@ -94,14 +94,14 @@ image_groups:
       credit: '© DigitalGlobe, Inc. and © Vulcan Technologies LLC. All Rights Reserved'
       mode: landscape
   yue_tai_yu_composite:
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuethaiyu_composite_lg%402x-80.jpg
-      mobile_url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuethaiyu_composite_sm%402x-80.jpg
+    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546884058/ocean/yuyaiyu_composite_lg.jpg
+      mobile_url: https://res.cloudinary.com/csisideaslab/image/upload/v1546884058/ocean/yuyaiyu_composite_sm.jpg
       caption:
         AIS signals show that the Yue Tai Yu ships sailed from the shipyard to
         the port of Shadi in December 2017 and then on to the Spratly Islands.
       credit: CSIS
-    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuethaiyu_zoom_lg%402x-80.jpg
-      mobile_url: https://res.cloudinary.com/csisideaslab/image/upload/v1546474414/ocean/yuethaiyu_zoom_sm%402x-80.jpg
+    - url: https://res.cloudinary.com/csisideaslab/image/upload/v1546884058/ocean/yuyaiyu_zoomed_lg.jpg
+      mobile_url: https://res.cloudinary.com/csisideaslab/image/upload/v1546884058/ocean/yuyaiyzoomed_sm.jpg
       caption:
         AIS signals show that from January to September 2018, the Yue Tai Yu
         vessels have operated near Chinese outposts in the Spratlys with no apparent
@@ -158,8 +158,8 @@ Attempting to monitor fishing activity remotely is uniquely difficult in the Sou
 ### Automatic Identification System (AIS)
 
 {% include sc-single-image.html
-url="https://res.cloudinary.com/csisideaslab/image/upload/v1546470965/ocean/june_ais_aggregate_lg%402x-80.jpg"
-mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1546470965/ocean/june_ais_aggregate_sm%402x-80.jpg"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1546884058/ocean/june_ais_aggregate_lg.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1546884058/ocean/june_ais_aggregate_sm.jpg"
 caption="AIS signals detected in the South China Sea in June 2018."
 credit="CSIS"
 align="left"
@@ -190,8 +190,8 @@ VIIRS data shows a significant amount of fishing in the South China Sea year-rou
 For a more granular analysis, Synthetic Aperture Radar (SAR) provides an approximate count of vessels at a given time and location. Anything metallic, like the hull and superstructure of most modern fishing vessels as small as six meters, can be readily identified by satellite-based SAR. Again, the disconnect between the level of activity and the number of AIS signals being broadcast was staggering. For instance, SAR data collected on eight occasions between September 30 and October 5 provided 264 vessel detections, only 8 of which were broadcasting AIS.
 
 {% include sc-single-image.html
-url="https://res.cloudinary.com/csisideaslab/image/upload/v1546617603/ocean/sar%20ais_corr_lg%402x-80.jpg"
-mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1546617603/ocean/sar%20ais_corr_sm%402x-80.jpg"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1546884058/ocean/sar_aiscorr_lg.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1546884058/ocean/sar_aiscorr_sm.jpg"
 caption="SAR detections and correlated AIS signals in the Spratly Islands from September 30 to October 5, 2018."
 credit="CSIS"
 width="medium"
