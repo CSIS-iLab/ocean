@@ -9,7 +9,16 @@
 </script>
 <script src="{{ "/assets/js/bundle.js" | relative_url }}" type="text/javascript"></script>
 {%- if page.layout == 'archive' or page.layout == 'search' -%}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.32.0/algoliasearch.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instantsearch.js/3.0.0/instantsearch.production.min.js" type="text/javascript"></script>
 <script src="{{ "/assets/js/archives.js" | relative_url }}" type="text/javascript"></script>
+{%- elsif page.name == 'newsletter.md' -%}
+<script src="{{ "/assets/js/newsletter.js" | relative_url }}" type="text/javascript" async></script>
+<script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/wforms.js?v=512-13" async></script>
+<script type="text/javascript" async>
+        wFORMS.behaviors.prefill.skip = false;
+</script>
+<script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/localization-en_US.js?v=512-13" async></script>
 {%- endif -%}
 {% include footer-home.html %}
 {% include footer-spotlights.html %}

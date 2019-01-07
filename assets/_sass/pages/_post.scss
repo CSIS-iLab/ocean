@@ -150,6 +150,10 @@
     @include breakpoint('large') {
       margin-bottom: 2rem;
     }
+
+    &:empty {
+      margin: 0;
+    }
   }
 
   &__content-aside {

@@ -144,3 +144,32 @@ select {
     }
   }
 }
+
+.form-label {
+  font-weight: bold;
+}
+
+.form--newsletter {
+  display: flex;
+  flex-wrap: wrap;
+
+  .form-label {
+    flex: 1 0 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .input {
+    flex: 1;
+    width: 100%;
+    padding: 0 5px;
+
+    &:focus {
+      @extend %focus--border;
+      outline: 0;
+    }
+  }
+
+  .btn {
+    min-width: unset;
+  }
+}

@@ -1,3 +1,6 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
+
 module.exports = {
   port: 4000,
 
@@ -63,6 +66,7 @@ module.exports = {
       'archives.js',
       'home.js',
       'lazy-load.js',
+      'newsletter.js',
       'spotlights/arctic/arctic.js',
       'spotlights/scs/scs.js'
     ]
@@ -81,6 +85,7 @@ module.exports = {
   webpack: {
     mode: 'production',
     // devtool: 'source-map',
+    // plugins: [new BundleAnalyzerPlugin()],
     output: {
       filename: chunkData => {
         return chunkData.chunk.entryModule._identifier.includes('spotlights/')
@@ -89,9 +94,15 @@ module.exports = {
       }
     },
     externals: {
+      algoliasearch: 'algoliasearch',
+      Flickity: 'flickity',
+      LuminousLightbox: 'luminous-lightbox',
+      'instantsearch.js/es': 'instantsearch',
       'pixi.js': 'PIXI',
+      Plyr: 'plyr',
       ScrollMagic: 'ScrollMagic',
       TimelineMax: 'TimelineMax',
+      'tippy.js': 'tippy',
       TweenMax: 'TweenMax',
       Highcharts: 'Highcharts'
     },
@@ -101,7 +112,6 @@ module.exports = {
     resolve: {
       modules: ['node_modules'],
       alias: {
-        Plyr: 'plyr',
         TweenLite: 'gsap/src/minified/TweenLite.min.js',
         TweenMax: 'gsap/src/minified/TweenMax.min.js',
         TimelineLite: 'gsap/src/minified/TimelineLite.min.js',

@@ -71,16 +71,23 @@
     }
 
     &.is-active.is-last {
-      #intro__slide2 {
+      #intro__slide0,
+      #intro__slide2,
+      .intro__ninedash {
         opacity: 1;
       }
 
-      #intro__slide0,
+      #intro__slide0 > *:not(.intro__ninedash),
       #intro__slide1 {
         opacity: 0.4;
       }
 
-      #country-labels {
+      #intro__slide1 .intro__ninedash {
+        opacity: 1;
+      }
+
+      #country-labels,
+      #south-china-sea {
         opacity: 0;
       }
 
@@ -94,8 +101,13 @@
     #intro__slide1,
     #intro__slide2,
     #country-labels,
+    #south-china-sea,
     #nine-dash-crosshatch {
       opacity: 0;
+      transition: all 0.5s linear;
+    }
+
+    .intro__ninedash {
       transition: all 0.5s linear;
     }
 
