@@ -43,6 +43,7 @@
       justify-content: flex-end;
 
       .layout-spotlight & {
+        position: static;
         justify-content: flex-start;
       }
     }
@@ -148,7 +149,6 @@
   }
 }
 
-
 .layout-spotlight {
   .site-header {
     &::after {
@@ -165,7 +165,7 @@
 
   .site-header__title {
     margin-right: -1rem;
-    
+
     @include breakpoint('large') {
       margin-right: 0;
     }
