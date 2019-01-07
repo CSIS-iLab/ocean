@@ -49,7 +49,6 @@ const TableOfContents = () => {
         l => l.getAttribute('data-target') === href
       )
 
-      console.log(entry.target, entry.intersectionRatio)
       if (link) {
         if (entry.isIntersecting && entry.intersectionRatio > 0) {
           link.classList.add('is-visible')
