@@ -84,10 +84,14 @@ $font__line-height-pre: 1.6;
 $img__home: '../images/home/';
 
 $img__footer: (
-  'small': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-small.jpg',
-  'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-medium.jpg',
-  'large': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-large.jpg',
-  'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-xlarge.jpg'
+  'small':
+  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-small.jpg',
+  'medium':
+  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-medium.jpg',
+  'large':
+  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-large.jpg',
+  'xlarge':
+  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-xlarge.jpg'
 );
 
 /*----------  Structure  ----------*/
@@ -262,8 +266,7 @@ $size__content-padding--archive: map-merge($size__content-padding, ('xlarge': 32
 $size__post-block-img--height: (
   'small': 80px,
   'medium': 135px,
-  'large': calc(100% * 0.7),
-  'xlarge': 203px
+  'large': unset
 );
 
 $size__search-header-cutout-height: 100px;
