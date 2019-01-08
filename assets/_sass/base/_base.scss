@@ -38,6 +38,14 @@ body {
     --breakpoint: 'medium';
   }
 
+  @include breakpoint('large') {
+    --breakpoint: 'large';
+  }
+
+  @include breakpoint('xlarge') {
+    --breakpoint: 'xlarge';
+  }
+
   @include breakpoint('xlarge-2') {
     --breakpoint: 'xlarge-2';
   }

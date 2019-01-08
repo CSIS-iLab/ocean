@@ -39,7 +39,7 @@
       height: calc(#{$size__page-header-height--archive} + 200px);
       margin-right: -50vw;
       margin-left: -50vw;
-      @include bg-images('hero_commentary');
+      @include bg-images($img__commentary);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -50,7 +50,7 @@
 
       #{$search} & {
         height: 100%;
-        @include bg-images('hero_search');
+        @include bg-images($img__search);
 
         @include breakpoint(
           $break: 'medium',
@@ -62,7 +62,7 @@
       }
 
       #{$a}--spotlights & {
-        @include bg-images('hero_spotlights');
+        @include bg-images($img__spotlight);
       }
     }
 
@@ -86,6 +86,7 @@
 
       #{$search} &::before {
         @extend %header-border;
+        height: 100%;
       }
     }
 
@@ -168,7 +169,7 @@
     &::after {
       @extend %content-side-gradient;
       top: calc(var(--archive-cutout-height) - 2rem);
-      bottom: -2.5rem;
+      bottom: -3.5rem;
       display: block;
 
       @include breakpoint('large') {
@@ -196,7 +197,7 @@
       }
 
       #{$a}--spotlights & {
-        bottom: 0;
+        bottom: -1.5rem;
       }
 
       #{$a}--search & {
