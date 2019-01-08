@@ -14,9 +14,11 @@
   display: flex;
   align-items: center;
   order: 1;
+  width: 40px;
 
   @include breakpoint('large') {
     order: 2;
+    width: auto;
     margin: 0 auto 0 2rem;
   }
 
