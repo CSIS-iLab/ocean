@@ -6,19 +6,19 @@
 
 <ul class="share-{{ include.class }} share">
   <li>
-    <a href="https://www.facebook.com/sharer.php?u={{ shareLink }}" rel="nofollow" target="_blank" title="Share on Facebook" rel="noopener"><i class="icon icon-facebook-1"></i></a>
+    <a href="https://www.facebook.com/sharer.php?u={{ shareLink }}" rel="nofollow" target="_blank" aria-label="Share on Facebook" rel="noopener"><i class="icon icon-facebook-1"></i></a>
   </li>
   <li>
-    <a href="https://twitter.com/intent/tweet?text={{ page.title | escape }}&url={{ shareLink }}&via=CSIS&related=CSIS" rel="nofollow" target="_blank" title="Share on Twitter" rel="noopener"><i class="icon icon-twitter-1"></i></a>
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | escape }}&url={{ shareLink }}&via=CSIS&related=CSIS" rel="nofollow" target="_blank" aria-label="Share on Twitter" rel="noopener"><i class="icon icon-twitter-1"></i></a>
   </li>
   <li>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ shareLink }}&summary={{ page.title | escape }}&source=CSIS" rel="nofollow" target="_blank" title="Share on LinkedIn" rel="noopener"><i class="icon icon-linkedin-1"></i></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ shareLink }}&summary={{ page.title | escape }}&source=CSIS" rel="nofollow" target="_blank" aria-label="Share on LinkedIn" rel="noopener"><i class="icon icon-linkedin-1"></i></a>
   </li>
   <li>
-    <a href="mailto:?subject={{ site.title | escape }}: {{ page.title | escape }}&amp;body={{ shareLink }}" name="Email link to {{ page.title | escape }}"><i class="icon icon-email"></i></a>
+    <a href="mailto:?subject={{ site.title | escape }}: {{ page.title | escape }}&amp;body={{ shareLink }}" aria-label="Email link to {{ page.title | escape }}"><i class="icon icon-email"></i></a>
   </li>
   <li>
-    <a href="javascript:window.print()" name="Print {{ page.title | escape }}"><i class="icon-print"></i></a>
+    <a href="javascript:window.print()" aria-label="Print {{ page.title | escape }}"><i class="icon-print"></i></a>
   </li>
   <li>
     <a href="#content"><i class="icon-arrow-large_scroll"></i></a>
