@@ -1,7 +1,10 @@
 import Breakpoints from '../../breakpoints'
 import ScrollMagic from 'ScrollMagic'
+import Stickyfill from 'stickyfilljs'
 
 const Map = () => {
+  Stickyfill.add(document.querySelector('.scs__map-map'))
+
   const graphicEl = document.querySelector('.scs__map')
   const triggerEls = Array.from(graphicEl.querySelectorAll('.scs__map-trigger'))
 

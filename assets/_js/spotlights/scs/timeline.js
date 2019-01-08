@@ -38,8 +38,29 @@ const Timeline = () => {
     const startLabel = timeline.querySelector('.startDate')
     const endLabel = timeline.querySelector('.endDate')
 
-    const startDate = new Date(startLabel.innerHTML)
-    const endDate = new Date(endLabel.innerHTML)
+    const startArray = startLabel.innerHTML.split(' ')
+    const endArray = endLabel.innerHTML.split(' ')
+
+    const months = [
+      'Jan',
+      'Feb',
+      'Mar',
+      'Apr',
+      'May',
+      'Jun',
+      'Jul',
+      'Aug',
+      'Sep',
+      'Oct',
+      'Nov',
+      'Dec'
+    ]
+
+    const startMonth = months.indexOf(startArray[0])
+    const endMonth = months.indexOf(endArray[0])
+
+    const startDate = new Date(startArray[1], startMonth)
+    const endDate = new Date(endArray[1], endMonth)
 
     const labelContainer = timeline.querySelector(
       '.scs-timeline__indicator__progress-labels'

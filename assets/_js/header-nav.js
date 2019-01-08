@@ -3,7 +3,7 @@ import scroll from '@threespot/freeze-scroll'
 const Navigation = () => {
   const overlay = document.querySelector('.content-overlay')
   const header = document.querySelector('.site-header')
-  const triggers = document.querySelectorAll('.menu-trigger')
+  const triggers = [...document.querySelectorAll('.menu-trigger')]
   let is_spotlight = false
 
   if (document.body.classList.contains('layout-spotlight')) {
