@@ -317,7 +317,14 @@ window.addEventListener('load', () => {
       //$("#preserve-svg").removeClass("pover");
     }) // scene end
 
-  const player = new Plyr('#home-video')
+  const player = new Plyr('#home-video', {
+    captions: {
+      active: false,
+      language: window.navigator.language
+        ? window.navigator.language.split('-')[0]
+        : 'en'
+    }
+  })
 }) //window onload
 
 function loadProgressHandler(loader, resource) {
