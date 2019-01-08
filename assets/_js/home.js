@@ -368,22 +368,3 @@ function start() {
   container_water.addChild(water_filter)
   wavesApp[3].stage.addChild(container_wave)
 }
-
-// Post Block Animation
-window.addEventListener('DOMContentLoaded', () => {
-  const posts = Array.from(
-    document.querySelectorAll('.home__spotlights-posts .post-block')
-  )
-
-  const postsController = new ScrollMagic.Controller()
-
-  let scenes = posts.map(function(el) {
-    let scene = new ScrollMagic.Scene({
-      triggerElement: el,
-      triggerHook: 0.75
-      // reverse: false
-    })
-      .setClassToggle(el, 'is-visible')
-      .addTo(postsController)
-  })
-})
