@@ -132,11 +132,12 @@
     grid-area: header;
     padding-bottom: 0.75rem;
 
-    @supports not (display: grid) {
-      /* stylelint-disable */
-      -ms-grid-column: 1;
-      /* stylelint-enable */
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      max-width: 700px !important;
+      -ms-grid-column: 1 !important;
     }
+    /* stylelint-enable */
 
     .home__commentary & {
       padding-bottom: 0;
@@ -194,6 +195,12 @@
   &__content {
     grid-area: content;
 
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      max-width: 700px !important;
+    }
+    /* stylelint-enable */
+
     .layout-home & {
       padding-bottom: 1rem;
     }
@@ -248,6 +255,13 @@
       -ms-grid-column: 2;
       /* stylelint-enable */
     }
+
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      display: none !important;
+      -ms-grid-column: 3 !important;
+    }
+    /* stylelint-enable */
 
     .layout-home & {
       display: block;
