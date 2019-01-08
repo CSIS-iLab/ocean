@@ -92,6 +92,10 @@
     background: url('#{$img__home}water2.png'), url('#{$img__home}water.png');
     background-repeat: no-repeat;
 
+    @include breakpoint($break: 'medium', $until: 'xlarge-2') {
+      background: none;
+    }
+
     @include breakpoint('medium') {
       background-position-y: 120%, 0%;
     }
@@ -127,6 +131,10 @@
     background-repeat: no-repeat;
     background-position-y: 15%;
     transition: left 1s ease-in-out;
+
+    @include breakpoint($break: 'medium', $until: 'xlarge-2') {
+      background: none;
+    }
 
     &::after {
       @include breakpoint('xlarge-2') {
