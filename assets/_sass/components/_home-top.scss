@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 105vh;
     overflow: hidden;
     background: rgba(240, 242, 246, 1);
     background: radial-gradient(
@@ -51,6 +51,39 @@
     bottom: -100%;
     z-index: 15;
     width: 100vw;
+    height: 60vh;
+    min-height: 500px;
+    background: #0e2764;
+    background: linear-gradient(
+      75deg,
+      #0e2764 1%,
+      #1a4593 13%,
+      #447bb5 33%,
+      #447bb5 70%,
+      #1d509b 93%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e2764', endColorstr='#1d509b', GradientType=1);
+    animation: Gradient 5s ease infinite;
+
+    @include breakpoint('large') {
+      height: 800px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 100vw;
+      height: 101%;
+      background: rgb(10, 63, 131);
+      background: linear-gradient(
+        0deg,
+        rgba(10, 63, 131, 1) 0%,
+        rgba(10, 63, 131, 0) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a3f83', endColorstr='#0a3f83', GradientType=1);
+      content: '';
+    }
   }
 
   #sky {
@@ -120,7 +153,7 @@
     left: 0;
     z-index: 5;
     width: 100vw;
-    height: 100vh;
+    height: 55vh;
     margin-top: -20vh;
     overflow: hidden;
     background: url('#{$img__home}wave.png');
@@ -171,31 +204,43 @@
     }
   }
 
+  #protect {
+    display: inline-flex;
+  }
+
   #preserve-svg {
-    position: absolute;
-    top: -60%;
+    position: relative;
+    top: -200px;
     letter-spacing: 0.25rem;
     opacity: 0;
     transition: opacity 0.5s, top 1s;
 
     &:not(.disable-animation) {
-      top: -20%;
+      top: -200px;
       opacity: 0;
       transition: opacity 0.5s, top 1s;
     }
 
     &.pactive {
-      position: absolute;
-      top: 20%;
+      position: relative;
+      top: 0;
       opacity: 1;
       transition: opacity 3s, top 1s;
     }
   }
 
+  #hero-bottom_intro {
+    position: absolute;
+    top: 60%;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
   #protect-svg {
     position: fixed;
     top: 33%;
-    letter-spacing: -0.75rem;
     opacity: 1;
     transition: opacity 2s, top 2s;
 
@@ -262,35 +307,8 @@
   }
 
   #underwater-container {
-    height: 80vh;
-    min-height: 800px;
-    background: #0e2764;
-    background: linear-gradient(
-      75deg,
-      #0e2764 1%,
-      #1a4593 13%,
-      #447bb5 33%,
-      #447bb5 70%,
-      #1d509b 93%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e2764', endColorstr='#1d509b', GradientType=1);
-    animation: Gradient 5s ease infinite;
-
-    &::after {
-      position: absolute;
-      top: 0;
-      display: block;
-      width: 100vw;
-      height: 101%;
-      background: rgb(10, 63, 131);
-      background: linear-gradient(
-        0deg,
-        rgba(10, 63, 131, 1) 0%,
-        rgba(10, 63, 131, 0) 100%
-      );
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a3f83', endColorstr='#0a3f83', GradientType=1);
-      content: '';
-    }
+    position: relative;
+    height: 100%;
   }
 
   .ray-container {
@@ -422,8 +440,7 @@
   }
 
   #intro-desc {
-    position: absolute;
-    bottom: 25%;
+    position: relative;
     z-index: 1;
     display: block;
     width: 100%;
@@ -432,7 +449,7 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 0 20px;
-      color: $color__white;
+      color: $color__ltgray-light;
       font-family: $font__freight;
       @include font-size(30px);
       font-style: italic;
