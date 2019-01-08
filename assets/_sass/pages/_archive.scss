@@ -192,6 +192,11 @@
       #{$a}--spotlights & {
         bottom: 0;
       }
+
+      #{$a}--search & {
+        top: calc(var(--archive-cutout-height) - 7.25rem);
+        bottom: -5rem;
+      }
     }
 
     #{$search} & {
