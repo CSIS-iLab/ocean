@@ -103,6 +103,7 @@ module.exports = {
       objectFitImages: 'object-fit-images',
       ScrollMagic: 'ScrollMagic',
       SmoothScroll: 'smooth-scroll',
+      Stickyfill: 'stickyfilljs',
       TimelineMax: 'TimelineMax',
       'tippy.js': 'tippy',
       TweenMax: 'TweenMax',
@@ -110,7 +111,7 @@ module.exports = {
     },
     module: {
       rules: [
-        { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+        { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
       ]
     },
     resolve: {

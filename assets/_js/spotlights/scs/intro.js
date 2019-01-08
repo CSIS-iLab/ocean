@@ -1,7 +1,10 @@
 import Breakpoints from '../../breakpoints'
 import ScrollMagic from 'ScrollMagic'
+import Stickyfill from 'stickyfilljs'
 
 const Intro = () => {
+  Stickyfill.add(document.querySelector('.scs__intro-map svg'))
+
   const graphicEl = document.querySelector('.scs__intro')
   const videoEl = document.querySelector('.scs__intro-video')
   const videoPlayer = videoEl.querySelector('.scs__intro-video-player')

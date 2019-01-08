@@ -3,6 +3,7 @@ import HeaderShare from './spotlights/header-share'
 import ImageGallery from './spotlights/image-gallery'
 import Lightbox from './spotlights/lightbox'
 import ProgressBar from './spotlights/progress-bar'
+import Stickyfill from 'stickyfilljs'
 import TableOfContents from './spotlights/tableofcontents'
 import Tippy from './spotlights/tippy'
 
@@ -12,6 +13,9 @@ window.addEventListener('DOMContentLoaded', () => {
   ImageGallery()
   Lightbox()
   ProgressBar()
+  Stickyfill.add(
+    document.querySelector('.sc-background-text-scroll__background')
+  )
   TableOfContents()
   Tippy()
 })
