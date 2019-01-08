@@ -15,10 +15,11 @@ $site-nav: '.site-header__nav';
 
   @include breakpoint('large') {
     order: 2;
+    max-width: none;
   }
 
   .layout-spotlight & {
-    max-width: unset;
+    max-width: none;
 
     @include breakpoint('large') {
       margin-left: 2rem;
