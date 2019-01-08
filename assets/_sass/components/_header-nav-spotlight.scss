@@ -52,7 +52,7 @@
     flex-direction: column;
     max-width: 500px;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     background-color: $color__dkblue-dark;
     transform: translateX(-150%);
     visibility: hidden;
