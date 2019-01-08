@@ -41,6 +41,14 @@ body {
   @include breakpoint('large') {
     --breakpoint: 'large';
   }
+
+  @include breakpoint('xlarge') {
+    --breakpoint: 'xlarge';
+  }
+
+  @include breakpoint('xlarge-2') {
+    --breakpoint: 'xlarge-2';
+  }
 }
 
 .js-no-scroll,
@@ -63,7 +71,11 @@ body {
   &--home {
     @include structure($size__container-max-width, 'max-width');
     margin: 0 auto;
-    @include structure($size__container-padding--home, 'padding', ('small', 'large'));
+    @include structure(
+      $size__container-padding--home,
+      'padding',
+      ('small', 'large')
+    );
   }
 
   &--spotlight {

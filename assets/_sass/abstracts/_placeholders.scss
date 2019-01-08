@@ -197,7 +197,11 @@
   color: $color__ltgray-light;
   font-family: $font__proxima;
   line-height: 1.4;
-  @include font-size(20px);
+  @include font-size(16px);
+
+  @include breakpoint('medium') {
+    @include font-size(20px);
+  }
 
   @include breakpoint('large') {
     @include font-size(23px);

@@ -68,7 +68,11 @@
 
     &-content {
       position: relative;
-      padding: 3rem 0 2rem;
+      padding: 0 0 4rem;
+
+      @include breakpoint('medium') {
+        padding: 3rem 0 2rem;
+      }
 
       @include breakpoint('large') {
         padding: 4.5rem 0 3rem;
@@ -101,7 +105,6 @@
       position: relative;
       box-sizing: content-box;
       @include structure($size__content-margin--post, 'margin');
-      @extend %page-desc;
 
       @each $size in ('medium', 'large', 'xlarge') {
         @include breakpoint($size) {
@@ -125,6 +128,7 @@
 
       p {
         margin-bottom: 0;
+        @extend %page-desc;
       }
     }
   }
@@ -164,10 +168,11 @@
     &::after {
       @extend %content-side-gradient;
       top: calc(var(--archive-cutout-height) - 2rem);
-      bottom: -2.5rem;
+      bottom: -3.5rem;
       display: block;
 
       @include breakpoint('large') {
+        // prettier-ignore
         $width_offset: nth(
           map-get(
             $map: $size__content-margin--archive,
@@ -179,6 +184,7 @@
       }
 
       @include breakpoint('xlarge') {
+        // prettier-ignore
         $width_offset: nth(
           map-get(
             $map: $size__content-margin--archive,
@@ -190,7 +196,12 @@
       }
 
       #{$a}--spotlights & {
-        bottom: 0;
+        bottom: -1.5rem;
+      }
+
+      #{$a}--search & {
+        top: calc(var(--archive-cutout-height) - 7.25rem);
+        bottom: -5rem;
       }
     }
 
