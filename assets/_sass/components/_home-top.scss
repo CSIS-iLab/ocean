@@ -133,7 +133,7 @@
       background-position-y: 120%, 0%;
     }
 
-    &.enable-animation::after {
+    &::after {
       @include breakpoint('xlarge-2') {
         content: '';
         position: absolute;
@@ -147,6 +147,12 @@
         background-repeat: no-repeat;
         background-position-y: 120%, 0;
         transform: scaleX(-1);
+      }
+    }
+
+    &.enable-animation::after {
+      @include breakpoint('xlarge-2') {
+        background: none;
       }
     }
   }
@@ -169,7 +175,7 @@
       background: none;
     }
 
-    &.enable-animation::after {
+    &::after {
       @include breakpoint('xlarge-2') {
         content: '';
         position: absolute;
@@ -183,6 +189,12 @@
         background-position-y: 15%;
         transform: scaleX(-1);
         transition: left 1s ease-in-out;
+      }
+    }
+
+    &.enable-animation::after {
+      @include breakpoint('xlarge-2') {
+        background: none;
       }
     }
   }

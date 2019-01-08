@@ -61,8 +61,8 @@ setTimeout(() => {
     InitWebGl()
     document.querySelector('#water').style.backgroundImage = `none`
     document.querySelector('#wave').style.backgroundImage = `none`
-    document.querySelector('#water').classList.add = `enable-animation`
-    document.querySelector('#wave').classList.add = `enable-animation`
+    document.querySelector('#water').classList.add(`enable-animation`)
+    document.querySelector('#wave').classList.add(`enable-animation`)
   } else {
     document.querySelector('.ray-container').style.filter = 'none'
     document.querySelector('#preserve').style.filter = 'none'
