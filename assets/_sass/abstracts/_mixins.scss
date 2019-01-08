@@ -233,6 +233,7 @@
   }
 }
 
+/* example: @include bg-images($img__about); */
 @mixin bg-images($type) {
   @each $size in $sizes__default {
     $img: map-get($type, $size);
