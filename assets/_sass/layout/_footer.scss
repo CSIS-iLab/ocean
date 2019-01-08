@@ -22,7 +22,7 @@
     height: calc(var(--footer-bg-min-height) + #{$footer-padding-bottom});
     max-height: 600px;
     background-color: $color__dkblue-darker;
-    @include bg-footer;
+    @include bg-images('footer');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;

@@ -39,7 +39,7 @@
       height: return-map-value($size__page-header-height--post, 'small');
       margin-right: -50vw;
       margin-left: -50vw;
-      @include bg-images('hero_commentary');
+      @include bg-images('commentary');
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover;
@@ -56,7 +56,7 @@
       }
 
       .layout-page & {
-        @include bg-images('hero_about');
+        @include bg-images('about');
         background-position: center;
       }
     }

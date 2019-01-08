@@ -233,24 +233,38 @@
   }
 }
 
-// Returns a property: value pair for each breakpoint
-/* @include structure($size__container-max-width, 'max-width'); */
-@mixin bg-images($name, $dir: '/assets/images/', $subdir: 'site/', $ext: '.jpg') {
-  @each $size in $sizes__default {
-    $value: url('#{$dir}#{$subdir}#{$name}-#{$size}#{$ext}');
-    @if $size == 'small' {
-      background-image: $value;
-    } @else {
-      @include breakpoint($break: $size, $breakpoints-map: $breakpoints--bg-img) {
-        background-image: $value;
-      }
-    }
-  }
-}
+// // Returns a property: value pair for each breakpoint
+// /* @include structure($size__container-max-width, 'max-width'); */
+// @mixin bg-images($name, $dir: '/assets/images/', $subdir: 'site/', $ext: '.jpg') {
+//   @each $size in $sizes__default {
+//     $value: url('#{$dir}#{$subdir}#{$name}-#{$size}#{$ext}');
+//     @if $size == 'small' {
+//       background-image: $value;
+//     } @else {
+//       @include breakpoint($break: $size, $breakpoints-map: $breakpoints--bg-img) {
+//         background-image: $value;
+//       }
+//     }
+//   }
+// }
+//
+// @mixin bg-search() {
+//   @each $size in $sizes__default {
+//     $img: map-get($img__search, $size);
+//     $value: url('#{$img}');
+//     @if $size == 'small' {
+//       background-image: $value;
+//     } @else {
+//       @include breakpoint($break: $size, $breakpoints-map: $breakpoints--bg-img) {
+//         background-image: $value;
+//       }
+//     }
+//   }
+// }
 
-@mixin bg-footer() {
+@mixin bg-images($name) {
   @each $size in $sizes__default {
-    $img: map-get($img__footer, $size);
+    $img: map-get($img__#{$name}, $size);
     $value: url('#{$img}');
     @if $size == 'small' {
       background-image: $value;

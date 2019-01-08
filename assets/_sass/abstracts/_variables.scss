@@ -84,14 +84,38 @@ $font__line-height-pre: 1.6;
 $img__home: '../images/home/';
 
 $img__footer: (
-  'small':
-  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-small.jpg',
-  'medium':
-  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-medium.jpg',
-  'large':
-  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-large.jpg',
-  'xlarge':
-  'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546722799/ocean/footer-xlarge.jpg'
+  'small': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546962125/ocean/footer-sm.jpg',
+  'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546962125/ocean/footer-med.jpg',
+  'large': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546962125/ocean/footer-lg.jpg',
+  'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546962125/ocean/footer-xlg.jpg'
+);
+
+$img__search: (
+  'small': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546962127/ocean/hero_search-sm.jpg',
+  'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546962126/ocean/hero_search-med.jpg',
+  'large': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546962126/ocean/hero_search-lg.jpg',
+  'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546962127/ocean/hero_search-xlg.jpg'
+);
+
+$img__about: (
+  'small': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968399/ocean/hero_about-small.jpg',
+  'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968399/ocean/hero_about-medium.jpg',
+  'large': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968399/ocean/hero_about-large.jpg',
+  'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968400/ocean/hero_about-xlarge.jpg'
+);
+
+$img__commentary: (
+  'small': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968400/ocean/hero_commentary-small.jpg',
+  'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968400/ocean/hero_commentary-medium.jpg',
+  'large': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968400/ocean/hero_commentary-large.jpg',
+  'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968401/ocean/hero_commentary-xlarge.jpg'
+);
+
+$img__spotlight: (
+  'small': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968401/ocean/hero_spotlights-small.jpg',
+  'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968401/ocean/hero_spotlights-medium.jpg',
+  'large': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968401/ocean/hero_spotlights-large.jpg',
+  'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/v1546968402/ocean/hero_spotlights-xlarge.jpg'
 );
 
 /*----------  Structure  ----------*/
