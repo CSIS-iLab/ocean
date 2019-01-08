@@ -101,6 +101,7 @@ module.exports = {
       'pixi.js': 'PIXI',
       Plyr: 'plyr',
       objectFitImages: 'object-fit-images',
+      objectFitVideos: 'object-fit-videos',
       ScrollMagic: 'ScrollMagic',
       SmoothScroll: 'smooth-scroll',
       Stickyfill: 'stickyfilljs',
