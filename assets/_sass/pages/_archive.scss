@@ -168,9 +168,6 @@
 
     &::after {
       @extend %content-side-gradient;
-      top: calc(var(--archive-cutout-height) - 2rem);
-      bottom: -3.5rem;
-      display: block;
 
       @include breakpoint('large') {
         // prettier-ignore
@@ -197,7 +194,9 @@
       }
 
       #{$a}--spotlights & {
-        bottom: -1.5rem;
+        @include breakpoint('medium') {
+          bottom: -1.5rem;
+        }
       }
 
       #{$a}--search & {
