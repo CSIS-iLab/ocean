@@ -47,7 +47,7 @@
 
 <div id="{{ include.id | prepend: 'img-' }}" class="sc-image-group spotlight-component {{ align_class}} {{ width_class}}">
 
-  <figure role="figure">
+  <figure>
     <figure role="group" class="sc-image-group__images">
     {%- for image in images -%}
     {%- assign mobile_image = mobile_images[forloop.index0] -%}
