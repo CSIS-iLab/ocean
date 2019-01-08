@@ -86,6 +86,7 @@
 
       #{$search} &::before {
         @extend %header-border;
+        height: 100%;
       }
     }
 
