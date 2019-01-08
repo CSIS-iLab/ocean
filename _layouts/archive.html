@@ -16,40 +16,48 @@ layout: default
 
 <article class="archive archive--{{ page.title | slugify }}" data-collection-title="{{ collection }}" itemscope itemtype="http://schema.org/BlogPosting">
 
+<article
+  class="archive archive--{{ page.title | slugify }}"
+  data-collection-title="{{ collection }}"
+  role="content"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
   <header class="archive__header">
     <div class="archive__header-content">
-      <h1 class="archive__title">{{ page.title | escape }}</h1>
+      <h1 class="archive__title js-transition--slide js-transition--slide-root">
+        {{ page.title | escape }}
+      </h1>
       {%- if page.is_search != true -%}
-      <div class="archive__desc">{{ content }}</div>
+      <div class="archive__desc js-transition--slide js-transition--slide-child">{{ content }}</div>
       {%- endif -%}
     </div>
     {%- include social-share.html class="post__header" -%}
   </header>
-  <section id="content" class="archive__content js-footer-bg e-content" itemprop="articleBody">
+  <section
+    id="content"
+    class="archive__content js-footer-bg e-content"
+    itemprop="articleBody"
+  >
     {% if page.archive_has_featured -%}
     <div class="archive__featured">
-      {%- assign featured_posts = posts | where: 'is_featured', 'true' -%}
-        {%- for post in featured_posts -%}
-      {%- include post-block.html class="post-block--featured" -%}
-      {%- endfor -%}
+      {%- assign featured_posts = posts | where: 'is_featured', 'true' -%} {%-
+      for post in featured_posts -%} {%- include post-block.html
+      class="post-block--featured" -%} {%- endfor -%}
     </div>
     {%- else -%}
     <div class="archive__cutout js-cutout"></div>
     {%- endif -%}
     <div class="archive__content-filter">
       <div class="archive__result-summary algolia--hide-no-results"></div>
-
     </div>
     <div class="archive__listing">
-      {%- assign other_posts = posts | where: 'is_featured', 'false' -%}
-      {%- for post in other_posts -%}
-        {%- include post-block.html -%}
-      {%- endfor -%}
+      {%- assign other_posts = posts | where: 'is_featured', 'false' -%} {%- for
+      post in other_posts -%} {%- include post-block.html -%} {%- endfor -%}
     </div>
   </section>
-  <footer class="archive__footer">
-    <div class="pagination">
-      </div>
+  <footer class="archive__footer" role="footer">
+    <div class="pagination"></div>
   </footer>
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

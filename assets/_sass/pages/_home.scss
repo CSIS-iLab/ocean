@@ -125,7 +125,9 @@
       }
     }
 
-    .plyr.plyr--stopped .plyr__controls { display: none; }
+    .plyr.plyr--stopped .plyr__controls {
+      display: none;
+    }
 
     &-learn {
       width: calc(100% + (var(--home-padding-offset) * 3));
@@ -172,12 +174,15 @@
   }
 
   &__spotlights {
+    position: relative;
+    z-index: 1;
     padding: 3rem 0 2rem;
     background-color: $color__white;
     @include full-width-background($color__white);
 
     &::before {
       @include breakpoint('large') {
+        z-index: 5;
         background: rgb(1, 23, 43);
         // prettier-ignore
         background: linear-gradient(0deg, rgba(1, 23, 43, 1) 0%, rgba(1, 28, 56, 1) 22%, rgba(10, 63, 131, 1) 100%);
