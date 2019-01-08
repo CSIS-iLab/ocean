@@ -8,6 +8,10 @@ const CalcHeight = el => {
   let height =
     document.documentElement.scrollHeight - el.offsetTop - el.offsetHeight
 
+  if (Breakpoints.isMobile() || Breakpoints.calculate() === 'medium') {
+    height -= document.querySelector('.site-footer').offsetHeight
+  }
+
   // On single posts page, calculate from top of element instead of bottom.
   if (el.classList.contains('js-footer-bg-switch') && !Breakpoints.isMobile()) {
     height = height + el.offsetHeight
@@ -21,6 +25,7 @@ const CalcHeight = el => {
 
 const FooterBgHeight = () => {
   const el = document.querySelector('.js-footer-bg')
+  let breakpoint = Breakpoints.calculate()
 
   if (!el) {
     return
@@ -29,7 +34,13 @@ const FooterBgHeight = () => {
   CalcHeight(el)
 
   window.addEventListener('resize', () => {
-    CalcHeight(el)
+    let newBreakpoint = Breakpoints.calculate()
+    if (breakpoint !== newBreakpoint) {
+      breakpoint = newBreakpoint
+      CalcHeight(el)
+    } else if (newBreakpoint == 'large') {
+      CalcHeight(el)
+    }
   })
 }
 
