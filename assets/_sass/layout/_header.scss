@@ -57,6 +57,9 @@
     text-align: center;
 
     @include breakpoint('large') {
+      @supports (-ms-ime-align: auto) {
+        display: table;
+      }
       flex-shrink: 1;
       justify-content: flex-start;
       order: 1;

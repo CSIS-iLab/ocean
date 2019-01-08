@@ -133,7 +133,9 @@
     padding-bottom: 0.75rem;
 
     @supports not (display: grid) {
+      /* stylelint-disable */
       -ms-grid-column: 1;
+      /* stylelint-enable */
     }
 
     .home__commentary & {
@@ -242,7 +244,9 @@
     min-height: 70%;
 
     @supports not (display: grid) {
+      /* stylelint-disable */
       -ms-grid-column: 2;
+      /* stylelint-enable */
     }
 
     .layout-home & {

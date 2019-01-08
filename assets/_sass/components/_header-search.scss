@@ -19,6 +19,10 @@
 
     .layout-spotlight & {
       margin-left: 1rem;
+
+      @supports (-ms-ime-align: auto) {
+        display: table;
+      }
     }
   }
 
@@ -60,6 +64,13 @@
     &::after {
       height: 0;
       transition: background-color 0.3s linear;
+    }
+
+    @supports (-ms-ime-align: auto) {
+      &:not(.is-active) {
+        display: table-cell;
+        vertical-align: middle;
+      }
     }
 
     &.is-active {
