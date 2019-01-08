@@ -96,7 +96,7 @@
     display: flex;
     justify-content: center;
     width: 6rem;
-    font-size: 1.25rem;
+    font-size: 2rem;
     background-color: var(--accent-color);
     border: 0;
     cursor: pointer;
@@ -112,9 +112,10 @@
     }
 
     &::after {
-      content: '\e820';
+      content: '\e82d';
       color: $color__white;
       font-family: sos;
+      -webkit-font-smoothing: antialiased;
     }
   }
 }
