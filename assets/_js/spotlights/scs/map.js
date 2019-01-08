@@ -31,14 +31,30 @@ const Map = () => {
   })
 
   function setActiveStep(step) {
-    document.querySelector('#scsmap__slide' + step).classList.add('is-active')
+    let stepClassList = document.querySelector('#scsmap__slide' + step)
+      .classList
 
-    document
-      .querySelectorAll('.slide:not(#scsmap__slide' + step + ')')
-      .forEach(el => {
-        //console.log(el)
-        el.classList.remove('is-active')
-      })
+    if (stepClassList) {
+      stepClassList.add('is-active')
+    } else {
+      document
+        .querySelector('#scsmap__slide' + step)
+        .setAttribute('class', 'slide is-active')
+    }
+
+    Array.from(
+      document.querySelectorAll(
+        '.scs__map .slide:not(#scsmap__slide' + step + ')'
+      )
+    ).forEach(el => {
+      let elClassList = el.classList
+
+      if (elClassList) {
+        elClassList.remove('is-active')
+      } else {
+        el.setAttribute('class', 'slide')
+      }
+    })
   }
 }
 

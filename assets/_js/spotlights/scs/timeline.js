@@ -1,7 +1,7 @@
 import ScrollMagic from 'scrollmagic'
 
 const Timeline = () => {
-  const timelines = [...document.querySelectorAll('.scs-timeline')]
+  const timelines = Array.from(document.querySelectorAll('.scs-timeline'))
   let intervals = []
 
   timelines.forEach(timeline => {

@@ -293,7 +293,9 @@ const render = () => {
     parent.insertBefore(prev, next)
   }
 
-  let selects = [...document.querySelectorAll('.archive__filters select')]
+  let selects = Array.from(
+    document.querySelectorAll('.archive__filters select')
+  )
 
   selects.forEach(select => {
     calcSelectWidth(select)

@@ -2,14 +2,14 @@ import Flickity from 'flickity'
 import Breakpoints from '../breakpoints'
 
 const ImageGallery = () => {
-  let galleries = [...document.querySelectorAll('.sc-image-gallery__images')]
+  let galleries = Array.from(
+    document.querySelectorAll('.sc-image-gallery__images')
+  )
 
   galleries.forEach(gallery => {
-    let captions = [
-      ...gallery.parentNode.querySelectorAll(
-        '.sc-image-gallery__captions-single'
-      )
-    ]
+    let captions = Array.from(
+      gallery.parentNode.querySelectorAll('.sc-image-gallery__captions-single')
+    )
 
     let image_gallery_images = new Flickity(gallery, {
       cellAlign: 'center',

@@ -90,11 +90,13 @@ const Lightbox = () => {
     injectBaseStyles: true
   }
 
-  const scSingleImages = [...document.querySelectorAll('.sc-single-image img')]
-  const scGroups = [...document.querySelectorAll('.sc-image-group')]
-  const scGalleries = [...document.querySelectorAll('.sc-image-gallery')]
-  const single_images = [...scSingleImages]
-  const components = [...scGroups, ...scGalleries]
+  const scSingleImages = Array.from(
+    document.querySelectorAll('.sc-single-image img')
+  )
+  const scGroups = Array.from(document.querySelectorAll('.sc-image-group'))
+  const scGalleries = Array.from(document.querySelectorAll('.sc-image-gallery'))
+  const single_images = Array.from(scSingleImages)
+  const components = scGroups.concat(scGalleries)
 
   single_images.forEach(img => {
     img.style.cursor = 'zoom-in'
@@ -102,7 +104,7 @@ const Lightbox = () => {
   })
 
   components.forEach(component => {
-    const component_images = component.querySelectorAll('img')
+    const component_images = Array.from(component.querySelectorAll('img'))
 
     component_images.forEach(img => {
       img.style.cursor = 'zoom-in'

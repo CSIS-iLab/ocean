@@ -1,11 +1,13 @@
 const Explainer = () => {
-  const triggers = [...document.querySelectorAll('.sc-explainer__trigger')]
+  const triggers = Array.from(
+    document.querySelectorAll('.sc-explainer__trigger')
+  )
 
   triggers.forEach(trigger => {
     let parent = trigger.parentNode
 
     trigger.addEventListener('click', function() {
-      let explainers = [...document.querySelectorAll('.sc-explainer')]
+      let explainers = Array.from(document.querySelectorAll('.sc-explainer'))
       explainers.forEach(explainer => explainer.classList.remove('is-active'))
 
       if (parent.classList.contains('is-active')) {
@@ -18,7 +20,7 @@ const Explainer = () => {
     })
   })
 
-  let exits = [...document.querySelectorAll('.icon-x')]
+  let exits = Array.from(document.querySelectorAll('.icon-x'))
 
   exits.forEach(exit => {
     exit.addEventListener('click', () =>
