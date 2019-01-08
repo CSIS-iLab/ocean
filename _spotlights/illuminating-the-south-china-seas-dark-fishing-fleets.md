@@ -139,7 +139,7 @@ width="small"
 
 As they race to pull the last fish from the South China Sea, fishers stand at least as much chance of triggering a violent clash as do the region’s armed forces. And that has become even more likely as a significant number of fishing vessels in the area forgo fishing full-time to serve as a direct arm of the state through official maritime militia.
 
-To provide a clearer picture of the size and activities of these important players, CSIS undertook a six-month-long project in cooperation with Vulcan, Inc. to leverage previously underused technologies and data sources to analyze the size and behavior of fishing fleets in the most hotly-contested part of the South China Sea, the Spratly Islands.
+To provide a clearer picture of the size and activities of these important players, CSIS undertook a six-month-long project in cooperation with Vulcan's [Skylight Maritime Initiative](https://skylight.global){:target="_blank"}{:rel="noopener"}. to leverage previously underused technologies and data sources to analyze the size and behavior of fishing fleets in the most hotly-contested part of the South China Sea, the Spratly Islands.
 
 The results tell a worrying story about the scale of unseen fishing activity in the region, massive overcapacity in the Spratlys, especially on the Chinese side, and the stunning scale and expense of the maritime militia.
 
