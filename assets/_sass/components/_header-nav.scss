@@ -10,7 +10,7 @@ $site-nav: '.site-header__nav';
 #{$site-nav} {
   flex: 1 0 auto;
   order: 1;
-  max-width: fit-content;
+  max-width: 40px;
   @extend %header-nav__section;
 
   @include breakpoint('large') {
