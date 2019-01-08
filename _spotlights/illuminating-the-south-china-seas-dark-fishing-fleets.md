@@ -130,7 +130,7 @@ Coral reefs, on which much of these fish depend, have been declining by 16 perce
 {% include sc-image-group.html  height="65vh" images=page.image_groups.reefs width="max" %}
 
 {% include sc-single-image.html
-url="https://res.cloudinary.com/csisideaslab/image/upload/v1546704680/ocean/spratly-islands-location.jpg"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1546960489/ocean/spratly-islands-zoomed.jpg"
 caption=""
 credit=""
 align="right"
