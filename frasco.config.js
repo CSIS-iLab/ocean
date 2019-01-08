@@ -109,7 +109,9 @@ module.exports = {
       Highcharts: 'Highcharts'
     },
     module: {
-      rules: []
+      rules: [
+        { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+      ]
     },
     resolve: {
       modules: ['node_modules'],
