@@ -133,7 +133,7 @@
       background-position-y: 120%, 0%;
     }
 
-    &::after {
+    &.enable-animation::after {
       @include breakpoint('xlarge-2') {
         content: '';
         position: absolute;
@@ -169,7 +169,7 @@
       background: none;
     }
 
-    &::after {
+    &.enable-animation::after {
       @include breakpoint('xlarge-2') {
         content: '';
         position: absolute;

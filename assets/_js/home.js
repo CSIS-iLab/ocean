@@ -57,8 +57,12 @@ wave_front = document.querySelector('#wave')
 setTimeout(() => {
   cancelAnimationFrame(req)
 
-  if (smoothRendering && webglSupported) {
+  if (smoothRendering && webglSupported && !Breakpoints.isMobile()) {
     InitWebGl()
+    document.querySelector('#water').style.backgroundImage = `none`
+    document.querySelector('#wave').style.backgroundImage = `none`
+    document.querySelector('#water').classList.add = `enable-animation`
+    document.querySelector('#wave').classList.add = `enable-animation`
   } else {
     document.querySelector('.ray-container').style.filter = 'none'
     document.querySelector('#preserve').style.filter = 'none'
@@ -79,10 +83,6 @@ setTimeout(() => {
 }, 500)
 
 function InitWebGl() {
-  if (Breakpoints.isMobile() || Breakpoints.calculate() === 'xlarge-2') {
-    return
-  }
-
   loader = PIXI.loader
 
   loader
