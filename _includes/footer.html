@@ -2,7 +2,7 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
   <div class="wrapper">
     <section class="site-footer__logo">
-      <a href="https://csis.org" target="_blank"><img class="csis-logo" src="{{ 'assets/images/csis_logo_white.svg' | relative_url }}" alt="{{ site.data.language.csis }}"
+      <a href="https://csis.org" target="_blank" rel="noopener"><img class="csis-logo" src="{{ 'assets/images/csis_logo_white.svg' | relative_url }}" alt="{{ site.data.language.csis }}"
         title="{{ site.data.language.csis }}" /></a>
     </section>
     <section class="site-footer__desc">
@@ -11,7 +11,7 @@
     <section class="site-footer__mailing">
       <p class="site-footer__heading">{{ site.data.language.footer.mailing_list }}</p>
       <p>{{ site.data.language.footer.mailing_desc }}</p>
-      <a class="btn btn--dkblue" href="{{ site.newsletter_url | relative_url }}" target="_blank">{{ site.data.language.footer.mailing_signup }}</a>
+      <a class="btn btn--dkblue" href="{{ site.newsletter_url | relative_url }}" target="_blank" rel="noopener">{{ site.data.language.footer.mailing_signup }}</a>
     </section>
     <section class="site-footer__contact">
       <p class="site-footer__heading">{{ site.data.language.footer.contact_heading }}</p>
@@ -24,7 +24,7 @@
     </section>
     {% include site-nav.html class="footer__nav" location="inFooter" %}
     <section class="site-footer__copyright">
-      &copy;{{ site.time | date: '%Y' }} {{ site.data.language.footer.copyright }} <a href="https://www.csis.org/privacy-policy" target="_blank">{{ site.data.language.footer.privacy }}</a>
+      &copy;{{ site.time | date: '%Y' }} {{ site.data.language.footer.copyright }} <a href="https://www.csis.org/privacy-policy" target="_blank" rel="noopener">{{ site.data.language.footer.privacy }}</a>
     </section>
   </div>
 </footer>

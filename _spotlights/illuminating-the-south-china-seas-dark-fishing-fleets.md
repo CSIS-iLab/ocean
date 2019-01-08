@@ -25,13 +25,13 @@ keywords:
   - Remote Sensing
   - Fishing
 further_reading: |-
-  * [Asia Maritime Transparency Initiative](https://amti.csis.org/){:target="_blank"}
-  * [China’s Third Sea Force, The People’s Armed Forces Maritime Militia: Tethered to the PLA](http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf){:target="_blank"}
-  * [Boom or Bust: The Future of Fish in the South China Sea](https://www.oceanrecov.org/news/ocean-recovery-alliance-news/boom-or-bust-the-future-of-fish-in-the-south-china-sea.html){:target="_blank"}
-  * [Defusing the South China Sea Disputes: A Regional Blueprint](https://www.csis.org/analysis/defusing-south-china-sea-disputes){:target="_blank"}
-  * [Illegal, Unreported, and Unregulated Fishing as a National Security Threat](https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat){:target="_blank"}
-  * [An Accounting of China’s Deployments to the Spratly Islands](https://amti.csis.org/accounting-chinas-deployments-spratly-islands/){:target="_blank"}
-  * [Confirming the Chinese Flotilla Near Thitu Island](https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/){:target="_blank"}
+  * [Asia Maritime Transparency Initiative](https://amti.csis.org/){:target="_blank"}{:rel="noopener"}
+  * [China’s Third Sea Force, The People’s Armed Forces Maritime Militia: Tethered to the PLA](http://www.andrewerickson.com/wp-content/uploads/2017/03/Naval-War-College_CMSI_China-Maritime-Report_No-1_People%E2%80%99s-Armed-Forces-Maritime-Militia-Tethered-to-the-PLA_Kennedy-Erickson_201703.pdf){:target="_blank"}{:rel="noopener"}
+  * [Boom or Bust: The Future of Fish in the South China Sea](https://www.oceanrecov.org/news/ocean-recovery-alliance-news/boom-or-bust-the-future-of-fish-in-the-south-china-sea.html){:target="_blank"}{:rel="noopener"}
+  * [Defusing the South China Sea Disputes: A Regional Blueprint](https://www.csis.org/analysis/defusing-south-china-sea-disputes){:target="_blank"}{:rel="noopener"}
+  * [Illegal, Unreported, and Unregulated Fishing as a National Security Threat](https://www.csis.org/analysis/illegal-unreported-and-unregulated-fishing-national-security-threat){:target="_blank"}{:rel="noopener"}
+  * [An Accounting of China’s Deployments to the Spratly Islands](https://amti.csis.org/accounting-chinas-deployments-spratly-islands/){:target="_blank"}{:rel="noopener"}
+  * [Confirming the Chinese Flotilla Near Thitu Island](https://amti.csis.org/confirming-chinese-flotilla-near-thitu-island/){:target="_blank"}{:rel="noopener"}
 methodology:
   Vulcan, Inc. undertook the analysis of AIS, VIIRS, SAR, and high-resolution
   satellite imagery for this project. AIS was provided by ORBCOMM. At the start of
@@ -130,7 +130,7 @@ Coral reefs, on which much of these fish depend, have been declining by 16 perce
 {% include sc-image-group.html  height="65vh" images=page.image_groups.reefs width="max" %}
 
 {% include sc-single-image.html
-url="https://res.cloudinary.com/csisideaslab/image/upload/v1546704680/ocean/spratly-islands-location.jpg"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1546960489/ocean/spratly-islands-zoomed.jpg"
 caption=""
 credit=""
 align="right"

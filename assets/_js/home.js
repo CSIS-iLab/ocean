@@ -33,7 +33,7 @@ function fpsMeasureLoop(timestamp) {
     timeDiff = timestamp - last
   }
 
-  if (timeDiff > 55) {
+  if (timeDiff > 50) {
     // change to 0 instead of 55 to see hero without pixi activated
     smoothRendering = false
   } else {
@@ -51,23 +51,16 @@ let webglSupported =
   !!canvas.getContext('webgl') || !!canvas.getContext('experimental-webgl')
 
 water_bg = document.querySelector('#water')
-// water_bg.style.backgroundImage = `url("/assets/images/home/water2.png"),url("/assets/images/home/water.png")`
-// water_bg.style.backgroundPositionY = `120%,0%`
-// water_bg.style.backgroundRepeat = `no-repeat`
 
 wave_front = document.querySelector('#wave')
-// wave_front.style.backgroundImage = `url(/assets/images/home/wave.png)`
-// wave_front.style.backgroundPositionY = `15%`
-// wave_front.style.backgroundRepeat = `no-repeat`
 
 setTimeout(() => {
   cancelAnimationFrame(req)
 
   if (smoothRendering && webglSupported) {
     InitWebGl()
-    // document.querySelector('#water').style.backgroundImage = `none`
-    // document.querySelector('#wave').style.backgroundImage = `none`
   } else {
+    document.querySelector('.ray-container').style.filter = 'none'
     document.querySelector('#preserve').style.filter = 'none'
     document.querySelector('#preserve-svg').classList.add('disable-animation')
 
@@ -86,7 +79,7 @@ setTimeout(() => {
 }, 500)
 
 function InitWebGl() {
-  if (Breakpoints.isMobile()) {
+  if (Breakpoints.isMobile() || Breakpoints.calculate() === 'xlarge-2') {
     return
   }
 
@@ -123,7 +116,7 @@ function InitWebGl() {
       container_water.removeChild(water_mesh)
     }
     water_mesh = new PIXI.mesh.Plane(this, 2, 4)
-    water_mesh.width = this.width //renderer.width * 0.35;
+    water_mesh.width = waterApp[0] //renderer.width * 0.35;
     water_mesh.height = this.height //renderer.width * 0.5;
     //console.log(this.height + " " + this.width);
     container_water.addChildAt(water_mesh, 0)
@@ -197,10 +190,19 @@ window.addEventListener('load', () => {
     tl = new TimelineMax()
   let waterID = document.getElementById('water').offsetHeight
   const waterY = waterID + 100
-  vTl
-    // .from(water_front, 5, { pixi: { alpha: 0, positionY: waterY }, delay: 4 }, 0)
-    .to('#clouds_1', 5, { y: '20' }, 0)
-    .to('#clouds_2', 5, { y: '15' }, '-=4')
+
+  if (water_front) {
+    vTl
+      .from(
+        water_front,
+        5,
+        { pixi: { alpha: 0, positionY: waterY }, delay: 4 },
+        0
+      )
+      .to('#clouds_1', 5, { y: '20' }, 0)
+      .to('#clouds_2', 5, { y: '15' }, '-=4')
+  }
+
   vT2.to('#turbwave', 4, { attr: { baseFrequency: 0.0 } }, 0)
 
   let ctrl = new ScrollMagic.Controller({
@@ -255,7 +257,8 @@ window.addEventListener('load', () => {
       document
         .getElementById('water')
         .setAttribute('data-per', e.progress.toFixed(3))
-      // water_bg.update()
+
+      if (water_bg.Texture) water_bg.update()
     })
     .on('leave', function(event) {
       if (event.scrollDirection == 'FORWARD') {
@@ -317,7 +320,14 @@ window.addEventListener('load', () => {
       //$("#preserve-svg").removeClass("pover");
     }) // scene end
 
-  const player = new Plyr('#home-video')
+  const player = new Plyr('#home-video', {
+    captions: {
+      active: false,
+      language: window.navigator.language
+        ? window.navigator.language.split('-')[0]
+        : 'en'
+    }
+  })
 }) //window onload
 
 function loadProgressHandler(loader, resource) {

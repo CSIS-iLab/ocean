@@ -101,8 +101,10 @@ module.exports = {
       'pixi.js': 'PIXI',
       Plyr: 'plyr',
       objectFitImages: 'object-fit-images',
+      objectFitVideos: 'object-fit-videos',
       ScrollMagic: 'ScrollMagic',
       SmoothScroll: 'smooth-scroll',
+      Stickyfill: 'stickyfilljs',
       TimelineMax: 'TimelineMax',
       'tippy.js': 'tippy',
       TweenMax: 'TweenMax',
@@ -110,7 +112,7 @@ module.exports = {
     },
     module: {
       rules: [
-        { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+        { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
       ]
     },
     resolve: {

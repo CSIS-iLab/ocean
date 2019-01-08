@@ -1,31 +1,51 @@
 .site-footer {
+  position: relative;
   @include structure($size__container-max-width, 'max-width');
   margin-right: auto;
   margin-left: auto;
   @include structure($size__footer-padding-top, 'padding-top');
 
+  @include breakpoint('large') {
+    position: static;
+  }
+
   &::before {
+    $footer-padding-bottom: map-get($size__footer-padding-top, 'small');
     content: '';
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: calc(100% - #{$footer-padding-bottom});
     left: 0;
     z-index: -1;
     display: block;
     width: 100vw;
-    height: var(--footer-bg-min-height);
-    max-height: 1000px;
+    height: calc(var(--footer-bg-min-height) + #{$footer-padding-bottom});
+    max-height: 600px;
     background-color: $color__dkblue-darker;
-    @include bg-footer;
+    @include bg-images($img__footer);
     background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
 
+    @include breakpoint('medium') {
+      $footer-padding-bottom: map-get($size__footer-padding-top, 'medium');
+      bottom: calc(100% - #{$footer-padding-bottom});
+      height: calc(
+        var(--footer-bg-min-height) + #{$footer-padding-bottom}
+      );
+    }
+
     @include breakpoint('large') {
+      bottom: 0;
+      height: var(--footer-bg-min-height);
       max-height: 800px;
     }
 
     .layout-archive & {
-      height: calc(var(--footer-bg-min-height) + 100px);
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        $footer-padding-bottom: map-get($size__footer-padding-top, 'small');
+        height: calc(var(--footer-bg-min-height) + #{$footer-padding-bottom} + 100px);
+      }
     }
   }
 

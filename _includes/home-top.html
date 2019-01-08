@@ -36,32 +36,6 @@
     <div id="water" data-per="0" data-wave="0"></div>
   </div>
   <div id="hero_bottom">
-    <div id="preserve-svg">
-      <svg viewBox="0 0 600 200">
-        <defs>
-          <filter id="turb">
-            <feTurbulence
-              id="turbwave"
-              type="fractalNoise"
-              baseFrequency="0.03"
-              numOctaves="2"
-              result="turbulence_3"
-              data-filterId="3"
-            />
-            <feDisplacementMap
-              id="diswave"
-              xChannelSelector="R"
-              yChannelSelector="G"
-              in="SourceGraphic"
-              in2="turbulence_3"
-              scale="40"
-            />
-          </filter>
-        </defs>
-        <!-- <text id="preserve" x="50%" y="50%">Preserve</text> -->
-      </svg>
-      <div id="preserve">Preserve</div>
-    </div>
 
     <div id="wave" data-per="0"></div>
     <div id="underwater-container">
@@ -71,9 +45,37 @@
         <div class="ray"></div>
         <div class="ray"></div>
       </div>
+      <div id="hero-bottom_intro">
+      <div id="preserve-svg">
+        <svg viewBox="0 0 600 200">
+          <defs>
+            <filter id="turb">
+              <feTurbulence
+                id="turbwave"
+                type="fractalNoise"
+                baseFrequency="0.03"
+                numOctaves="2"
+                result="turbulence_3"
+                data-filterId="3"
+              />
+              <feDisplacementMap
+                id="diswave"
+                xChannelSelector="R"
+                yChannelSelector="G"
+                in="SourceGraphic"
+                in2="turbulence_3"
+                scale="40"
+              />
+            </filter>
+          </defs>
+          <!-- <text id="preserve" x="50%" y="50%">Preserve</text> -->
+        </svg>
+        <div id="preserve">Preserve</div>
+      </div>
       <div id="intro-desc">
         <p>Explore the intersection of ocean conservation and national security.</p>
       </div>
+    </div>
     </div>
   </div>
 </section>
