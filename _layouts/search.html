@@ -37,6 +37,7 @@ layout: default
       {%- if collection == 'authors' -%}
       {{ content}}
       {% else %}
+      <label for="search-input" class="visually-hidden">Search</label>
       <input id="search-input" class="archive__search-input" placeholder="{{ site.data.language.search_placeholder }}">
       {%- endif -%}
     </div>
@@ -45,9 +46,9 @@ layout: default
       <div class="archive__result-summary algolia--hide-no-results"></div>
       <div class="archive__filters">
         <div class="selectCalc"></div>
-        <div class="archive__filters-sort"> </div>
-        <div class="archive__filters-content_type"> </div>
-        <div class="archive__filters-keywords"> </div>
+        <label class="archive__filters-sort"> </label>
+        <label class="archive__filters-content_type"> </label>
+        <label class="archive__filters-keywords"> </label>
         <div class="archive__filters-clear_all"></div>
       </div>
     </div>
