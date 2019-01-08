@@ -14,6 +14,10 @@ date_format: '%B %-d, %Y'
 cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 cloudinary_folder: ocean
 
+twitter:
+  card: summary
+logo: /assets/images/sos-twitter-preview.jpg
+
 keyword_url: /search/?dFR[keywords][0]=
 collections:
   posts:
