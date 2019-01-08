@@ -28,7 +28,7 @@
     }
 
     a::after {
-      content: '\e812';
+      content: '\e821';
       position: relative;
       top: -1px;
       left: 5px;
@@ -37,6 +37,7 @@
       @include font-size(12px);
       word-break: normal;
       visibility: visible;
+      -webkit-font-smoothing: antialiased;
 
       &:hover {
         color: $color__medblue-darker;
