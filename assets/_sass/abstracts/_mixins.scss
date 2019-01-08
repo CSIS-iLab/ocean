@@ -262,9 +262,9 @@
 //   }
 // }
 
-@mixin bg-images($name) {
+@mixin bg-images($type) {
   @each $size in $sizes__default {
-    $img: map-get($img__#{$name}, $size);
+    $img: map-get($type, $size);
     $value: url('#{$img}');
     @if $size == 'small' {
       background-image: $value;

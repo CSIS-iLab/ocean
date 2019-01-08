@@ -39,7 +39,7 @@
       height: calc(#{$size__page-header-height--archive} + 200px);
       margin-right: -50vw;
       margin-left: -50vw;
-      @include bg-images('commentary');
+      @include bg-images($img__commentary);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -50,7 +50,7 @@
 
       #{$search} & {
         height: 100%;
-        @include bg-images('search');
+        @include bg-images($img__search);
 
         @include breakpoint(
           $break: 'medium',
@@ -62,7 +62,7 @@
       }
 
       #{$a}--spotlights & {
-        @include bg-images('spotlight');
+        @include bg-images($img__spotlight);
       }
     }
 
