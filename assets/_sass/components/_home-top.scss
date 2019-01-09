@@ -149,6 +149,12 @@
         transform: scaleX(-1);
       }
     }
+
+    &.enable-animation::after {
+      @include breakpoint('xlarge-2') {
+        background: none;
+      }
+    }
   }
 
   #wave {
@@ -183,6 +189,12 @@
         background-position-y: 15%;
         transform: scaleX(-1);
         transition: left 1s ease-in-out;
+      }
+    }
+
+    &.enable-animation::after {
+      @include breakpoint('xlarge-2') {
+        background: none;
       }
     }
   }
