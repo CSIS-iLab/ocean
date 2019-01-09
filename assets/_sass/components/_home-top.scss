@@ -229,6 +229,13 @@
       transition: opacity 0.5s, top 1s;
     }
 
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    /* stylelint-enable */
+
     &.pactive {
       position: relative;
       top: 0;
@@ -312,6 +319,13 @@
     opacity: 0;
     filter: blur(0);
     transition: opacity 4;
+
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    /* stylelint-enable */
   }
 
   #underwater-container {

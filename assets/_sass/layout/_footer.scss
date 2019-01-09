@@ -9,6 +9,14 @@
     position: static;
   }
 
+  /* stylelint-disable */
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    padding-top: 0 !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+  /* stylelint-enable */
+
   &::before {
     $footer-padding-bottom: map-get($size__footer-padding-top, 'small');
     content: '';
@@ -27,24 +35,50 @@
     background-position: center top;
     background-size: cover;
 
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      height: 600px !important;
+    }
+    /* stylelint-enable */
+
     @include breakpoint('medium') {
       $footer-padding-bottom: map-get($size__footer-padding-top, 'medium');
       bottom: calc(100% - #{$footer-padding-bottom});
-      height: calc(
-        var(--footer-bg-min-height) + #{$footer-padding-bottom}
-      );
+      height: calc(var(--footer-bg-min-height) + #{$footer-padding-bottom});
+      /* stylelint-disable */
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 700px !important;
+      }
+      /* stylelint-enable */
     }
 
     @include breakpoint('large') {
       bottom: 0;
       height: var(--footer-bg-min-height);
       max-height: 800px;
+      /* stylelint-disable */
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 800px !important;
+      }
+      /* stylelint-enable */
+    }
+
+    @include breakpoint('xlarge') {
+      bottom: 0;
+      max-height: 1000px;
+      /* stylelint-disable */
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 1000px !important;
+      }
+      /* stylelint-enable */
     }
 
     .layout-archive & {
       @include breakpoint($break: 'medium', $dir: 'max-width') {
         $footer-padding-bottom: map-get($size__footer-padding-top, 'small');
-        height: calc(var(--footer-bg-min-height) + #{$footer-padding-bottom} + 100px);
+        height: calc(
+          var(--footer-bg-min-height) + #{$footer-padding-bottom} + 100px
+        );
       }
     }
   }
