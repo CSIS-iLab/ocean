@@ -61,9 +61,9 @@
     }
 
     &::before {
+      align-self: center;
       font-family: sos;
       text-align: center;
-      align-self: center;
     }
 
     &:not(.next) {
