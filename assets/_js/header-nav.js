@@ -3,7 +3,7 @@ import scroll from '@threespot/freeze-scroll'
 const Navigation = () => {
   const overlay = document.querySelector('.content-overlay')
   const header = document.querySelector('.site-header')
-  const triggers = [...document.querySelectorAll('.menu-trigger')]
+  const triggers = Array.from(document.querySelectorAll('.menu-trigger'))
   let is_spotlight = false
 
   if (document.body.classList.contains('layout-spotlight')) {
@@ -43,7 +43,9 @@ const Navigation = () => {
     if (is_spotlight) {
       // Set a delay to give the ToC time to populate
       setTimeout(function() {
-        const toc_links = document.querySelectorAll('.spotlight-nav a')
+        const toc_links = Array.from(
+          document.querySelectorAll('.spotlight-nav a')
+        )
 
         toc_links.forEach(link => {
           link.addEventListener('click', function() {

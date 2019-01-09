@@ -57,9 +57,6 @@
     text-align: center;
 
     @include breakpoint('large') {
-      @supports (-ms-ime-align: auto) {
-        display: table;
-      }
       flex-shrink: 1;
       justify-content: flex-start;
       order: 1;
@@ -67,6 +64,10 @@
       max-width: fit-content;
       margin: 0 auto 0 0;
       text-align: left;
+    }
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      display: table !important;
     }
 
     .layout-spotlight & {

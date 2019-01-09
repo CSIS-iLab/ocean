@@ -18,11 +18,11 @@
 
     .layout-spotlight & {
       margin-left: 1rem;
-
-      @supports (-ms-ime-align: auto) {
-        display: table;
-      }
     }
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display: table !important;
   }
 
   &-open {
@@ -65,7 +65,7 @@
       transition: background-color 0.3s linear;
     }
 
-    @supports (-ms-ime-align: auto) {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       &:not(.is-active) {
         display: table-cell;
         vertical-align: middle;

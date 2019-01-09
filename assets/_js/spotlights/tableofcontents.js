@@ -2,12 +2,15 @@ const TableOfContents = () => {
   const exclude_toc = '.exclude-toc'
   const include_toc = '.include-toc'
   const toc_container = document.getElementById('toc')
-  const headings = document.querySelectorAll(
-    '.spotlight__content h2:not(' +
-      exclude_toc +
-      '), .spotlight__content ' +
-      include_toc
+  const headings = Array.from(
+    document.querySelectorAll(
+      '.spotlight__content h2:not(' +
+        exclude_toc +
+        '), .spotlight__content ' +
+        include_toc
+    )
   )
+
   const current_section = document.querySelector('.site-header__section')
   const title = document.querySelector('.spotlight__header h1')
   const observer_config = {
@@ -38,7 +41,7 @@ const TableOfContents = () => {
 
   toc_container.innerHTML += toc_items
 
-  const toc_links = toc_container.querySelectorAll('li')
+  const toc_links = Array.from(toc_container.querySelectorAll('li'))
 
   let previous_section
 

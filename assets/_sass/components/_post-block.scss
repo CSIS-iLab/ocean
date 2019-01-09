@@ -39,6 +39,10 @@
       //     'img footer';
       // }
 
+      /* stylelint-disable */
+      -ms-grid-template-columns: auto 1.25rem auto !important;
+      /* stylelint-enable */
+
       &:last-of-type {
         grid-template-areas:
           'header img'
@@ -132,11 +136,12 @@
     grid-area: header;
     padding-bottom: 0.75rem;
 
-    @supports not (display: grid) {
-      /* stylelint-disable */
-      -ms-grid-column: 1;
-      /* stylelint-enable */
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      max-width: 700px !important;
+      -ms-grid-column: 1 !important;
     }
+    /* stylelint-enable */
 
     .home__commentary & {
       padding-bottom: 0;
@@ -146,6 +151,10 @@
       @include breakpoint('large') {
         margin-right: 3rem;
         margin-left: 3rem;
+
+        /* stylelint-disable */
+        -ms-grid-row: 1 !important;
+        /* stylelint-enable */
       }
 
       &::before {
@@ -194,8 +203,18 @@
   &__content {
     grid-area: content;
 
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      max-width: 700px !important;
+    }
+    /* stylelint-enable */
+
     .layout-home & {
       padding-bottom: 1rem;
+
+      /* stylelint-disable */
+      -ms-grid-row: 2 !important;
+      /* stylelint-enable */
     }
 
     p {
@@ -209,6 +228,10 @@
 
     .layout-home & {
       padding-bottom: 0.25rem;
+
+      /* stylelint-disable */
+      -ms-grid-row: 3 !important;
+      /* stylelint-enable */
 
       .post-meta {
         margin-bottom: 0.5rem;
@@ -249,9 +272,20 @@
       /* stylelint-enable */
     }
 
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      display: none !important;
+      -ms-grid-column: 3 !important;
+    }
+    /* stylelint-enable */
+
     .layout-home & {
       display: block;
       margin-bottom: 1rem;
+
+      /* stylelint-disable */
+      -ms-grid-column: 3 !important;
+      /* stylelint-enable */
     }
 
     .home__spotlights & {
