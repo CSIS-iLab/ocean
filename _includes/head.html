@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% include favicons.html %}
   {%- seo -%}
-  {% unless page.image %}
+  {% unless page.image.size > 0 %}
   <meta property="og:image" content="{{ site.logo | relative_url }}" />
   {% endunless %}
   <script src="{{ "/assets/js/lazy-load.js" | relative_url }}" type="text/javascript" async=""></script>
