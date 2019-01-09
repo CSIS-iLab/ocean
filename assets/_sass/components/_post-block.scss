@@ -260,6 +260,12 @@
       }
     }
 
+    .post-block--featured & {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        min-height: 150px;
+      }
+    }
+
     img {
       $sizes: ('small', 'medium', 'large');
       display: block;
