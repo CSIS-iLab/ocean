@@ -47,7 +47,7 @@
 %content-side-gradient {
   content: '';
   position: absolute;
-  top: 0;
+  top: var(--archive-cutout-height);
   bottom: 0;
   left: 100%;
   display: block;
