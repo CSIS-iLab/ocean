@@ -234,6 +234,8 @@
     }
 
     &-posts {
+      overflow: hidden;
+      
       @include breakpoint('large') {
         margin-right: calc(var(--home-padding-offset) * -1);
       }
