@@ -2,13 +2,15 @@
 title: Launch of the Stephenson Ocean Security Project
 date: 2019-01-15 05:00:00 +0000
 excerpt: The Stephenson Ocean Security Project launched Wednesday, January 9, 2019.
-  Senator Sheldon Whitehouse (D-RI) provided keynote remarks. The event also featured
-  expert panels that explored the intersection of fisheries and security risk in the
-  South China Sea and the challenge and opportunity presented by marine resources
-  in the new Arctic Ocean.
+  Senator Sheldon Whitehouse (D-RI) provided keynote remarks. The event featured expert
+  panels that explored the intersection of fisheries and security risk in the South
+  China Sea and the challenge and opportunity presented by marine resources in the
+  new Arctic Ocean.
 authors: []
-lede: ''
-keywords: []
+lede: The Stephenson Ocean Security Project launched Wednesday, January 9, 2019. Senator
+  Sheldon Whitehouse (D-RI) provided keynote remarks.
+keywords:
+- Event
 further_reading: ''
 related_commentary:
 - _posts/2018-12-10-making-the-oceans-more-secure.md
