@@ -41,22 +41,7 @@ p {
     ul + h#{$i},
     ol + h#{$i},
     section + h#{$i} {
-      @if $i == 2 {
-        clear: both;
-        margin-top: 4.5rem;
-
-        &::before {
-          display: block;
-          content: '';
-          width: 10rem;
-          height: 10px;
-          margin-bottom: 1rem;
-          margin-left: -2rem;
-          background-color: $color__slate-lightest;
-        }
-      } @else {
-        margin-top: 3rem;
-      }
+      margin-top: 3rem;
     }
 
     h#{$i} {
@@ -67,6 +52,21 @@ p {
         margin-bottom: 1rem;
       }
     }
+  }
+}
+
+.spotlight__content-body.post-content h2 {
+  clear: both;
+  margin-top: 4.5rem;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 10rem;
+    height: 10px;
+    margin-bottom: 1rem;
+    margin-left: -2rem;
+    background-color: $color__slate-lightest;
   }
 }
 
