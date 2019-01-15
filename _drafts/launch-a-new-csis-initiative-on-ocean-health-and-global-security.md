@@ -1,5 +1,5 @@
 ---
-title: 'Launch: A New CSIS Initiative on Ocean Health and Global Security.'
+title: Launch of the Stephenson Ocean Security Project
 date: 2019-01-15 05:00:00 +0000
 excerpt: The Stephenson Ocean Security Project launched Wednesday, January 9, 2019.
   Senator Sheldon Whitehouse (D-RI) provided keynote remarks. The event also featured
