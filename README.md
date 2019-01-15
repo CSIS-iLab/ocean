@@ -89,4 +89,4 @@ When creating a [Jekyll include](https://jekyllrb.com/docs/includes/) that accep
 
 ## Copyright / License
 
-Copyright © 2018 CSIS iDeas Lab under the [MIT License](https://github.com/CSIS-iLab/on-the-radar/blob/master/LICENSE).
+Copyright © 2019 CSIS iDeas Lab under the [MIT License](https://github.com/CSIS-iLab/on-the-radar/blob/master/LICENSE).
