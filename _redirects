@@ -1,0 +1,2 @@
+# Redirect domain aliases to primary domain
+https://oceans.csis.org/* https://ocean.csis.org/:splat 301!
