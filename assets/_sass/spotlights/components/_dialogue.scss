@@ -1,0 +1,10 @@
+.sc-dialogue {
+  padding-left: 2rem;
+  @extend %post-content__body;
+
+  .cite {
+    @extend %post-content__caption-label;
+    text-transform: uppercase;
+    color: $color__black;
+  }
+}
