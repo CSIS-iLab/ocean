@@ -102,8 +102,6 @@ contributors:
 - label: development & design
   content: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
     deserunt mollit anim id est laborum.
-published: false
-
 ---
 <div id="spotlight__intro">Adding a spotlight intro since tableofcontents.js now requires it</div>
 
@@ -176,10 +174,10 @@ published: false
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<div class="dialogue">
+<div class="sc-dialogue">
 <blockquote>
 <cite>Speaker One</cite>
-Speaker one says something here
+Speaker one says something here about something something while something something. Something! Speaker one says something here.
 </blockquote>
 
 <blockquote>
