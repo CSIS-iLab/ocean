@@ -96,8 +96,9 @@ contributors:
   content: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
     ut aliquip ex ea commodo consequat.
 - label: development & design
-  content: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-    deserunt mollit anim id est laborum.
+  content: This Spotlight is a product of the Andreas C. Dracopoulos iDeas Lab, the
+    in-house digital, multimedia, and design agency at the Center for Strategic and
+    International Studies.
 published: false
 
 ---
