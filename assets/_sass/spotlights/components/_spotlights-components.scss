@@ -163,3 +163,31 @@
     }
   }
 }
+
+/*===========================
+=                           =
+=          Dialogue         =
+=                           =
+===========================*/
+
+.sc-dialogue {
+  padding: 0 2rem;
+  text-align: left;
+
+  cite {
+    @extend %post-content__caption-label;
+    margin: 0;
+    padding: 0;
+    color: $color__black;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      display: none;
+    }
+  }
+
+  blockquote {
+    @extend %post-content__body;
+  }
+}
