@@ -1,22 +1,20 @@
 ---
-title: Introducing a New Arctic Ocean
+title: Charting a New Arctic Ocean
 date: 2018-11-13 15:56:34 +0000
 js_files:
 - arctic
 css_files:
 - arctic
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-  nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-  nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-  officia deserunt mollit anim id est laborum. '
+excerpt: 'Welcome to new and largely uncharted maritime space: the Arctic Ocean. Only
+  2 percent of its waters are charted to international standards. Its rapid emergence
+  is the result of dramatic environmental changes. How will nations govern this changing
+  ocean and preserve its most distinct features? How will they protect its biodiversity?'
 authors:
-- _authors/test-sr.md
-- _authors/test-jr.md
+- _authors/monica-medina.md
+- _authors/carolyn-weis.md
 keywords:
-- fishing
 - Arctic
+- fishing
 further_reading: |-
   * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   * Ut tristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
@@ -26,12 +24,10 @@ image: https://res.cloudinary.com/csisideaslab/image/upload/v1544801874/ocean/ma
 image_caption: image caption
 image_source: image source
 related_spotlight:
-- _spotlights/introducing-a-new-arctic-ocean.md
-- _spotlights/arctic/test-arctic.html
+- _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
 related_commentary:
-- _posts/2018-12-10-harmonizing-enforcement-would-make-the-oceans-more-secure.md
-- _posts/2018-11-19-test-post.md
-image_galleries:
+- _posts/2018-12-10-making-the-oceans-more-secure.md
+image_galleries: 
 image_groups:
   right_three:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg
@@ -41,7 +37,7 @@ image_groups:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg
     caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
       a diam maecenas sed enim ut sem viverra aliquet.
-    credit:
+    credit: 
   - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg
     caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
       mi quis hendrerit dolor magna eget est.
@@ -63,7 +59,7 @@ image_groups:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg
     caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
       a diam maecenas sed enim ut sem viverra aliquet.
-    credit:
+    credit: 
     mode: portrait
   - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg
     caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
@@ -174,21 +170,7 @@ published: false
 <h3 class="include-toc">Subsection One</h3>
 {% include sc-statistic.html align='right' number='33%' post='and this is the text after.' %}
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<div class="sc-dialogue">
-<blockquote>
-<cite>Speaker One</cite>
-Speaker one says something here about something something while something something. Something! Speaker one says something here.
-</blockquote>
-
-<blockquote>
-<cite>Speaker One</cite>
-Speaker one says something here
-</blockquote>
-</div>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 {%- include sc-single-image.html
   path="https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/jay-ruzesky-91049-unsplash.jpg"
