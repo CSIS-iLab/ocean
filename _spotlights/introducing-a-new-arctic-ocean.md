@@ -27,56 +27,6 @@ related_spotlight:
 - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
 related_commentary:
 - _posts/2018-12-10-making-the-oceans-more-secure.md
-image_galleries:
-image_groups:
-  right_three:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg
-    caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua.
-    credit: Getty
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg
-    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
-      a diam maecenas sed enim ut sem viverra aliquet.
-    credit:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg
-    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
-      mi quis hendrerit dolor magna eget est.
-    credit: National Geographic
-  left_two:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg
-    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
-      a diam maecenas sed enim ut sem viverra aliquet.
-    credit: Getty
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg
-    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
-      mi quis hendrerit dolor magna eget est.
-    credit: National Geographic
-  max_three:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/a.jpg
-    caption: Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-      et dolore magna aliqua.
-    credit: Getty
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/b.jpg
-    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
-      a diam maecenas sed enim ut sem viverra aliquet.
-    credit:
-    mode: portrait
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/c.jpg
-    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
-      mi quis hendrerit dolor magna eget est.
-    credit: National Geographic
-    mode: landscape
-  max_two:
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_70,w_1360/v1543423540/ocean/annie-spratt-977061-unsplash.jpg
-    caption: Sagittis eu volutpat odio facilisis mauris sit amet massa vitae. Mauris
-      a diam maecenas sed enim ut sem viverra aliquet.
-    credit: Getty
-    mode: portrait
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1543423540/ocean/mathieu-perrier-722789-unsplash.jpg
-    caption: Est ante in nibh mauris cursus mattis molestie a. Massa massa ultricies
-      mi quis hendrerit dolor magna eget est.
-    credit: National Geographic
-    mode: landscape
 methodology: |-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut tristique et egestas quis.
@@ -95,14 +45,14 @@ contributors:
 - label: illustration
   content: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
     ut aliquip ex ea commodo consequat.
-- label: development & design
+- label: development and design
   content: This Spotlight is a product of the Andreas C. Dracopoulos iDeas Lab, the
     in-house digital, multimedia, and design agency at the Center for Strategic and
     International Studies.
-published: false
+published: true
 
 ---
-Welcome to a new and largely uncharted ocean: the Arctic Ocean. Only 2 percent of its waters are charted to international standards, but what is truly unchartered is its rapid transformation.   The Arctic is warming at twice the rate of the rest of the planet and has been warmer over the past five years than at any time since records began in 1900.[^1] A warming Arctic is now home to a substantially diminished Greenland ice sheet and polar ice cap, ocean acidification, algae blooms, and dramatic changes to sensitive Arctic ecosystems crucial to sustaining sea life.  
+Welcome to a new and largely uncharted ocean: the Arctic Ocean. Only 2 percent of its waters are charted to international standards, but what is truly unchartered is its rapid transformation. The Arctic is warming at twice the rate of the rest of the planet and has been warmer over the past five years than at any time since records began in 1900.[^1] A warming Arctic is now home to a substantially diminished Greenland ice sheet and polar ice cap, ocean acidification, algae blooms, and dramatic changes to sensitive Arctic ecosystems crucial to sustaining sea life.  
 
 ------ START background image scrolling // map of the Arctic, with a line drawn for the ice extend in January 2018
 
@@ -128,6 +78,8 @@ In 2017, Arctic sea ice extent reached its [maximum at 5.59 million square miles
 
 Record findings are also being reported for summer sea ice extent. This past September, sea ice extent reached an [annual minimum of 1.79 million square miles](https://nsidc.org/arcticseaicenews/2017/09/arctic-sea-ice-at-minimum-extent-2/){:target="_blank"}{:rel="noopener"}, 1.58 million square miles below the 1981 to 2010 median extent. It is the eighth lowest retreat since monitoring began.  
 
+------ END
+
 ## Governing an Unchartered Ocean
 
 How do nations effectively govern this rapidly changing ocean? Since 1982, the United Nations Convention on the Law of the Sea (UNCLOS) has governed the international maritime environment. UNCLOS created obligations for safeguarding the marine environment, established norms for activity on the high seas, and founded a legal regime for regulating mineral resource exploitation in deep seabed areas beyond national jurisdiction.
@@ -141,9 +93,7 @@ UNCLOS outlined norms for both {% include sc-tooltip.html title="territorial wat
 
 The International Maritime Organization (IMO) also helps govern the maritime environment and in 2014 approved a mandatory Polar Code which sets mandatory standards for ships operating in the polar regions. In force since January 2017, the Polar Code Regulations seek to protect Arctic waters by promoting enhanced safety and environmental standards in Arctic waters through the International Convention for the Safety of Life at SEA ([SOLAS](http://www.imo.org/en/About/conventions/listofconventions/pages/international-convention-for-the-safety-of-life-at-sea-(solas),-1974.aspx){:target="_blank"}{:rel="noopener"}) and the International Convention for the Prevention of Pollution from Ships [MARPOL](http://www.imo.org/en/about/conventions/listofconventions/pages/international-convention-for-the-prevention-of-pollution-from-ships-(marpol).aspx){:target="_blank"}{:rel="noopener"}).
 
-SOLAS specifies minimum standards for the construction, equipment, and operation of ships at sea, while MARPOL addresses pollution prevention in sensitive marine environments and includes regulations controlling toxic discharges from ships. Amendments have been added to both conventions in recent years to further enhance safety for both seafarers and passengers in an unpredictable environment.[^2]  
-
-[Visualize? Any study showing that HFOs accelerate sea ice?]
+SOLAS specifies minimum standards for the construction, equipment, and operation of ships at sea, while MARPOL addresses pollution prevention in sensitive marine environments and includes regulations controlling toxic discharges from ships. Amendments have been added to both conventions in recent years to further enhance safety for both seafarers and passengers in an unpredictable environment.[^2] [Visualize? Any study showing that HFOs accelerate sea ice?]
 
 Most recently, IMO member states renewed efforts to ban the use of heavy fuel oil (HFO) in the Arctic.[^3] States including Finland, Germany, Iceland, Netherlands, New Zealand, Norway, Sweden, and the United States have called for a full HFO prohibition on a rapid timetable. One of the dirtiest fossil fuels, HFOs and the impact of soot emissions accelerate sea ice melt and threaten fragile Arctic ecosystems.  
 
@@ -171,11 +121,10 @@ Some of the Council’s most effective bodies are its working groups. The Protec
 
 The rapid loss of sea ice and changes in ocean chemistry increasingly threatens sensitive ecosystems and Arctic biodiversity. Since Arctic life does not recognize international borders, an international network of MPAs across the Arctic would protect marine biodiversity, preserve cultural heritage and subsistence resources, and strengthen marine ecosystem resilience that ultimately underpins human well-being.[^4]    
 
-{% include sc-blockquote.html cite="Arctic life does not recognize international borders" %}
+{% include sc-blockquote.html content="Arctic life does not recognize international borders" %}
 
 Unfortunately, countries have only embraced national MPAs rather than an integrated approach. An estimated [11.4 percent of the Arctic, or about 3.7 million square kilometers](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="_blank"}{:rel="noopener"}, is currently under protected status. Within U.S. waters, federally protected waters include the Arctic Management Area encompassing the Chukchi and Beaufort
 Seas and the Northern Bering Sea Research Area, just south of the Arctic Circle and the Bering Strait.
-
 
 ## Charting the Future of Arctic Biodiversity
 
