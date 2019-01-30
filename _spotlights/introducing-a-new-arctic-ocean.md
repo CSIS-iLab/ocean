@@ -49,7 +49,7 @@ contributors:
   content: This Spotlight is a product of the Andreas C. Dracopoulos iDeas Lab, the
     in-house digital, multimedia, and design agency at the Center for Strategic and
     International Studies.
-published: false
+published: true
 
 ---
 Welcome to a new and largely uncharted ocean: the Arctic Ocean. Only 2 percent of its waters are charted to international standards, but what is truly unchartered is its rapid transformation. The Arctic is warming at twice the rate of the rest of the planet and has been warmer over the past five years than at any time since records began in 1900.[^1] A warming Arctic is now home to a substantially diminished Greenland ice sheet and polar ice cap, ocean acidification, algae blooms, and dramatic changes to sensitive Arctic ecosystems crucial to sustaining sea life.  
@@ -86,10 +86,9 @@ How do nations effectively govern this rapidly changing ocean? Since 1982, the U
 
 UNCLOS outlined norms for both {% include sc-tooltip.html title="territorial waters" description="12 nautical miles" %} and {% include sc-tooltip.html title="exclusive economic zones" description="200 nautical miles" %} (EEZs) and included provisions to extend a nation’s outer continental shelf. UNCLOS even provided special regulations for human activities in ice-covered waters (Article 234). One hundred sixty-eight parties have ratified the treaty but notably missing from the list is the United States, which views UNCLOS as customary international law.
 
-<aside class="sc-explainer spotlight-component sc--float-small sc--float-right">
-<div class="sc-explainer__title">Polar Code</div>
-<a href="http://www.imo.org/en/MediaCentre/HotTopics/polar/Documents/POLAR%20CODE%20TEXT%20AS%20ADOPTED.pdf" target="_blank" rel="noopener">The Polar Code</a> has been developed to supplement existing IMO instruments to increase the safety of ships’ operation and mitigate the impact on the people and environment in the remote, vulnerable, and potentially harsh polar waters. It covers the <a href="http://www.imo.org/en/mediacentre/hottopics/polar/pages/default.aspx">full range of shipping-related matters</a> relevant to navigation in water surrounding the two poles – ship design, construction and equipment; operational and training concerns; search and rescue; and, equally important, the protection of the unique environment and eco-systems of the polar regions.
-</aside>
+{% _explainer title="Polar Code" align="right" %}
+<p><a href="http://www.imo.org/en/MediaCentre/HotTopics/polar/Documents/POLAR%20CODE%20TEXT%20AS%20ADOPTED.pdf" target="_blank" rel="noopener">The Polar Code</a> has been developed to supplement existing IMO instruments to increase the safety of ships’ operation and mitigate the impact on the people and environment in the remote, vulnerable, and potentially harsh polar waters. It covers the <a href="http://www.imo.org/en/mediacentre/hottopics/polar/pages/default.aspx">full range of shipping-related matters</a> relevant to navigation in water surrounding the two poles – ship design, construction and equipment; operational and training concerns; search and rescue; and, equally important, the protection of the unique environment and eco-systems of the polar regions.</p>
+{% end_explainer %}
 
 The International Maritime Organization (IMO) also helps govern the maritime environment and in 2014 approved a mandatory Polar Code which sets mandatory standards for ships operating in the polar regions. In force since January 2017, the Polar Code Regulations seek to protect Arctic waters by promoting enhanced safety and environmental standards in Arctic waters through the International Convention for the Safety of Life at SEA ([SOLAS](http://www.imo.org/en/About/conventions/listofconventions/pages/international-convention-for-the-safety-of-life-at-sea-(solas),-1974.aspx){:target="_blank"}{:rel="noopener"}) and the International Convention for the Prevention of Pollution from Ships [MARPOL](http://www.imo.org/en/about/conventions/listofconventions/pages/international-convention-for-the-prevention-of-pollution-from-ships-(marpol).aspx){:target="_blank"}{:rel="noopener"}).
 
