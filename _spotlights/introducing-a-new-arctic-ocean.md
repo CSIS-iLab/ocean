@@ -68,7 +68,7 @@ For nearly 40 years, scientists have monitored this ebb and flow.
 
 ------ Add a second line to show median maximum for the past 40 years to show comparison (1981-2010 median extent line)
 
-In 2017, Arctic sea ice extent reached its [maximum at 5.59 million square miles](https://nsidc.org/arcticseaicenews/2018/03/arctic-sea-ice-maximum-second-lowest/){:target="_blank"}{:rel="noopener"}, which is the second lowest ever recorded confirming that the Arctic continues to melt on an annual basis and at a record pace.
+In 2018, Arctic sea ice extent reached its [maximum at 5.59 million square miles](https://nsidc.org/arcticseaicenews/2018/03/arctic-sea-ice-maximum-second-lowest/){:target="_blank"}{:rel="noopener"}, which is the second lowest ever recorded confirming that the Arctic continues to melt on an annual basis and at a record pace.
 
 ------ Add the additional 3 lines of seasonal maxima for 2017, 2016, 2015
 
@@ -76,7 +76,7 @@ In 2017, Arctic sea ice extent reached its [maximum at 5.59 million square miles
 
 ------ Animate the line to the 2018 minimum and show the 1981-2010 median extent line to show comparison
 
-Record findings are also being reported for summer sea ice extent. This past September, sea ice extent reached an [annual minimum of 1.79 million square miles](https://nsidc.org/arcticseaicenews/2017/09/arctic-sea-ice-at-minimum-extent-2/){:target="_blank"}{:rel="noopener"}, 1.58 million square miles below the 1981 to 2010 median extent. It is the eighth lowest retreat since monitoring began.  
+Record findings are also being reported for summer sea ice extent. This past September, sea ice extent reached an [annual minimum of 1.77 million square miles](https://nsidc.org/arcticseaicenews/2017/09/arctic-sea-ice-at-minimum-extent-2/){:target="_blank"}{:rel="noopener"}, 629,000 square miles below the 1981 to 2010 median extent. It is the sixth lowest retreat since monitoring began.  
 
 ------ END
 
