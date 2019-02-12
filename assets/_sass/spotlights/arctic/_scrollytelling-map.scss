@@ -1,0 +1,83 @@
+#{$spotlight}__map {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  min-height: calc(100vh - 4rem);
+  margin: 2rem -50vw;
+
+  &-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $color__map-bg;
+  }
+
+  &-map {
+    position: sticky;
+    @include structure(
+      $size__header-height--minimal,
+      'top',
+      ('small', 'large')
+    );
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+
+    @include breakpoint('medium') {
+      $header-height: map-get($size__header-height--minimal, 'large');
+      z-index: 1;
+      height: calc(100vh - #{$header-height});
+    }
+  }
+
+  &-prose {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 2rem 0 auto;
+    padding: 1px 1rem;
+
+    @include breakpoint('medium') {
+      width: 33%;
+      max-width: 700px;
+      padding: 1px 0;
+    }
+
+    h3,
+    p {
+      color: $color__white;
+      text-shadow: 1px 1px 6px rgba($color__black, 0.6);
+    }
+  }
+
+  &-trigger {
+    $header-height: map-get($size__header-height, 'small');
+    margin-top: calc(50vh - #{$header-height});
+    margin-bottom: 50vh;
+    padding: 1rem;
+    background-color: rgba($color__map-bg, 0.87);
+  }
+
+  svg {
+    width: 100vw;
+    background-color: $color__map-bg;
+
+    @include breakpoint('medium') {
+      width: unset;
+      max-width: 100vw;
+      height: 100%;
+    }
+
+    .slide {
+      opacity: 0;
+      transition: all 0.3s linear;
+
+      &.is-active {
+        opacity: 1;
+      }
+    }
+  }
+}

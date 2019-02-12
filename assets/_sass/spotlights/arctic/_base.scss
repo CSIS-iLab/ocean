@@ -1,5 +1,8 @@
-$color__default-accent: $color__red;
-$color__default-accent--hover: rgba($color__red, 0.8);
+$spotlight: '.arctic';
+$color__default-accent: #647899;
+$color__default-accent--hover: rgba($color__default-accent, 0.8);
+
+$color__map-bg: #647899;
 
 :root {
   --accent-color: #{$color__default-accent};

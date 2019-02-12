@@ -1,7 +1,9 @@
 ---
 title: Charting a New Arctic Ocean
 date: 2018-11-13 15:56:34 +0000
+prefix: arctic
 js_files:
+  - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
   - arctic
 css_files:
   - arctic
@@ -46,31 +48,7 @@ published: true
 <div id="spotlight__intro"></div>
 Welcome to new and largely uncharted maritime space: the Arctic Ocean. Only 2 percent of its waters are charted to international standards, but what is truly unchartered is its rapid transformation. The Arctic is warming at twice the rate of the rest of the planet and has been warmer over the past five years than at any time since records began in 1900.[^1] A warming Arctic is now home to a substantially diminished Greenland ice sheet and polar ice cap, ocean acidification, algae blooms, and dramatic changes to sensitive Arctic ecosystems crucial to sustaining sea life.
 
------- START background image scrolling // map of the Arctic, with a line drawn for the ice extend in January 2018
-
-Of course, one of the most distinctive features of the Arctic is its sea ice.
-
------- Animate the line each month over the course of 2018, to establish the growth/receding that takes place in a year
-
-Both newer and thinner (young) ice as well as thicker, multi-year (old) ice grows and diminishes, extending to a maximum in the fall and winter months before slowly receding as temperatures warm in the spring and summer (its minimum).
-
------- Animate the line to the 2018 maximum.
-
-For nearly 40 years, scientists have monitored this ebb and flow.
-
------- Add a second line to show median maximum for the past 40 years to show comparison (1981-2010 median extent line)
-
-In 2018, Arctic sea ice extent reached its [maximum at 5.59 million square miles](https://nsidc.org/arcticseaicenews/2018/03/arctic-sea-ice-maximum-second-lowest/){:target="\_blank"}{:rel="noopener"}, which is the second lowest ever recorded confirming that the Arctic continues to melt on an annual basis and at a record pace.
-
------- Add the additional 3 lines of seasonal maxima for 2017, 2016, 2015
-
-[The four lowest seasonal maxima](https://nsidc.org/arcticseaicenews/2018/03/arctic-sea-ice-maximum-second-lowest/){:target="\_blank"}{:rel="noopener"} have all occurred during the last four years.
-
------- Animate the line to the 2018 minimum and show the 1981-2010 median extent line to show comparison
-
-Record findings are also being reported for summer sea ice extent. This past September, sea ice extent reached an [annual minimum of 1.77 million square miles](https://nsidc.org/arcticseaicenews/2017/09/arctic-sea-ice-at-minimum-extent-2/){:target="\_blank"}{:rel="noopener"}, 629,000 square miles below the 1981 to 2010 median extent. It is the sixth lowest retreat since monitoring began.
-
------- END
+{% include_relative arctic/map-scrollytelling.html %}
 
 ## Governing an Unchartered Ocean
 
