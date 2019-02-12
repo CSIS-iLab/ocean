@@ -11,15 +11,17 @@ excerpt:
   is the result of dramatic environmental changes. How will nations govern this changing
   ocean and preserve its most distinct features? How will they protect its biodiversity?'
 authors:
-  - _authors/monica-medina.md
-  - _authors/carolyn-weis.md
+  - _authors/heather-conley.md
+  - _authors/matthew-melino.md
 keywords:
   - Arctic
   - fishing
 further_reading: |-
-  * Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  * Ut tristique et egestas quis. Interdum velit euismod in pellentesque massa placerat.
-  * Leo a diam sollicitudin tempor id eu nisl nunc mi. Nascetur ridiculus mus mauris vitae ultricies. Sagittis eu volutpat.
+  * [China’s Arctic Dream](https://www.csis.org/analysis/chinas-arctic-dream){:target="_blank"}{:rel="noopener"}
+  * [Maritime Futures: The Arctic and the Bering Strait Region](https://www.csis.org/analysis/maritime-futures){:target="_blank"}{:rel="noopener"}
+  * [Economically Connecting the Arctic: A Belt, a Road, and a Circle](https://www.csis.org/analysis/economically-connecting-arctic-belt-road-and-circle){:target="_blank"}{:rel="noopener"}
+  * [An Arctic Redesign: Recommendations to Rejuvenate the Arctic Council](https://www.csis.org/analysis/arctic-redesign){:target="_blank"}{:rel="noopener"}
+  * [The New Ice Curtain: Russia’s Strategic Reach to the Arctic](https://csis-prod.s3.amazonaws.com/s3fs-public/legacy_files/files/publication/150826_Conley_NewIceCurtain_Web.pdf){:target="_blank"}{:rel="noopener"}
 is_featured: true
 image: https://res.cloudinary.com/csisideaslab/image/upload/v1544801874/ocean/mathieu-perrier-722789-unsplash.jpg
 image_caption: image caption
