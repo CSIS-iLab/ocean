@@ -1,0 +1,39 @@
+.post-content > ul {
+  margin: -1rem 0 0;
+  padding-left: 20px;
+
+  + * {
+    clear: both;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  > .list-heading {
+    font-weight: bold;
+
+    &:not(:only-child) {
+      float: left;
+      width: fit-content;
+
+      &:not(:first-child) {
+        margin-left: 4rem;
+      }
+    }
+  }
+
+  li:not(.list-heading) {
+    margin-bottom: 0;
+    font-weight: normal;
+    list-style: none;
+
+    &::before {
+      position: relative;
+      padding-right: 0.7rem;
+      color: $color__medblue;
+      font-size: 2rem;
+      content: '\2022';
+    }
+  }
+}
