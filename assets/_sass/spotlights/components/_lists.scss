@@ -1,8 +1,7 @@
 .artic-council {
-  padding-left: 20px;
-
-  + * {
-    clear: both;
+  @include breakpoint('medium') {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   li {
@@ -11,15 +10,6 @@
 
   > .artic-council__heading {
     font-weight: bold;
-
-    &:not(:only-child) {
-      float: left;
-      width: fit-content;
-
-      &:not(:first-child) {
-        margin-left: 4rem;
-      }
-    }
   }
 
   li:not(.artic-council__heading) {
