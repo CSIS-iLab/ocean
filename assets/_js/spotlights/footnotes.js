@@ -1,25 +1,36 @@
 const Footnotes = () => {
   if (!document.querySelector('.footnotes')) return
 
-  const fifth = document.querySelector('.footnotes ol li:nth-child(6)')
+  const footnotes = document.querySelector('.footnotes ol')
 
   const readMore = document.createElement('button')
   readMore.classList.add('read-more')
 
-  fifth.parentNode.insertBefore(readMore, fifth)
+  footnotes.parentNode.insertBefore(readMore, footnotes.nextSibling)
 
-  const hiddenFootnotes = document.querySelectorAll('.read-more ~ li')
+  const hiddenFootnotes = document.querySelectorAll(
+    '.footnotes ol li:nth-child(5) ~ li'
+  )
 
-  const initializeButton = () => {
-    hiddenFootnotes.forEach(footnote => {
-      footnote.style.display = 'none'
-    })
-    readMore.innerText = 'Read More'
-    readMore.classList.remove('is-active')
-    readMore.setAttribute('aria-expanded', 'true')
+  const toggle = ariaExpanded => {
+    if (ariaExpanded) {
+      hiddenFootnotes.forEach(footnote => {
+        footnote.style.display = 'list-item'
+      })
+      readMore.innerText = 'Read Less'
+      readMore.classList.add('is-active')
+      readMore.setAttribute('aria-expanded', 'false')
+    } else {
+      hiddenFootnotes.forEach(footnote => {
+        footnote.style.display = 'none'
+      })
+      readMore.innerText = 'Read More'
+      readMore.classList.remove('is-active')
+      readMore.setAttribute('aria-expanded', 'true')
+    }
   }
 
-  initializeButton()
+  toggle()
 
   readMore.addEventListener('click', function() {
     let ariaExpanded =
@@ -27,16 +38,7 @@ const Footnotes = () => {
         return attribute.nodeName === 'aria-expanded'
       }).nodeValue === 'true'
 
-    if (ariaExpanded) {
-      hiddenFootnotes.forEach(footnote => {
-        footnote.style.display = 'block'
-      })
-      readMore.innerText = 'Read Less'
-      readMore.classList.add('is-active')
-      readMore.setAttribute('aria-expanded', 'false')
-    } else {
-      initializeButton()
-    }
+    toggle(ariaExpanded)
   })
 }
 

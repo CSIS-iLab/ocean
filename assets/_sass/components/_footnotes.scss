@@ -37,6 +37,8 @@
     white-space: nowrap;
     border-width: 3px 0 0;
     border-color: $color__bluegray-light;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
       color: $color__black;
@@ -48,8 +50,8 @@
     }
 
     @include breakpoint($break: 'medium', $dir: 'max-width') {
-      margin: auto;
       display: block;
+      margin: auto;
     }
 
     &::after {
