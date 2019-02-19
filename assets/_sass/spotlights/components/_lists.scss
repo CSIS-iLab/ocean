@@ -1,4 +1,4 @@
-.post-content > ul {
+.artic-council {
   padding-left: 20px;
 
   + * {
@@ -9,7 +9,7 @@
     list-style: none;
   }
 
-  > .list-heading {
+  > .artic-council__heading {
     font-weight: bold;
 
     &:not(:only-child) {
@@ -22,7 +22,7 @@
     }
   }
 
-  li:not(.list-heading) {
+  li:not(.artic-council__heading) {
     margin-bottom: 0;
     font-weight: normal;
     list-style: none;

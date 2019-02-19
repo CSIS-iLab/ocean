@@ -86,8 +86,8 @@ SOLAS specifies minimum standards for the construction, equipment, and operation
 Most recently, IMO member states renewed efforts to ban the use of heavy fuel oil (HFO) in the Arctic.[^3] States including Finland, Germany, Iceland, Netherlands, New Zealand, Norway, Sweden, and the United States have called for a full HFO prohibition on a rapid timetable. One of the dirtiest fossil fuels, HFOs and the impact of soot emissions accelerate sea ice melt and threaten fragile Arctic ecosystems.
 
 At the regional level, the Arctic Council was formed in 1996 as an intergovernmental forum that brings the five Arctic coastal nations together with Arctic nations, and Arctic indigenous communities (called the Permanent Participants) to protect the Arctic environment and support sustainable development.
-<ul>
-  <li class="list-heading">Arctic coastal nations
+<ul class="spotlight-component artic-council">
+  <li class="artic-council__heading">Arctic coastal nations
     <ul>
       <li>United States</li>
       <li>Canada</li>
@@ -97,7 +97,7 @@ At the regional level, the Arctic Council was formed in 1996 as an intergovernme
     </ul>
   </li>
 
-  <li class="list-heading">Arctic nations
+  <li class="artic-council__heading">Arctic nations
     <ul>
       <li>Iceland,</li>
       <li>Sweden, and</li>
@@ -106,22 +106,7 @@ At the regional level, the Arctic Council was formed in 1996 as an intergovernme
   </li>
 
 </ul>
----
-<ul>
-  <li class="list-heading">Arctic nations
-    <ul>
-      <li>Iceland,</li>
-      <li>Sweden, and</li>
-      <li>Finland</li>
-    </ul>
-  </li>
-</ul>
----
-<ul>
-  <li>Iceland,</li>
-  <li>Sweden, and</li>
-  <li>Finland</li>
-</ul>
+
 Some of the Council’s most effective bodies are its working groups. The Protection of the Arctic Marine Environment (PAME) Working Group has produced ground-breaking assessments such as the Arctic Marine Shipping Assessment (AMSA), which led to the creation of the Polar Code. The working group also proposed, in 2015, a framework to preserve Arctic waters through a network of marine protected areas (MPAs) across the circumpolar Arctic.
 
 ---------STATIC IMAGE MPAs Map
