@@ -8,8 +8,18 @@
     list-style: none;
   }
 
-  > .artic-council__heading {
+  .artic-council__heading {
     font-weight: bold;
+
+    /* stylelint-disable */
+    &:nth-child(1) {
+      -ms-grid-column: 1;
+    }
+
+    &:nth-child(2) {
+      -ms-grid-column: 2;
+    }
+    /* stylelint-enable */
   }
 
   li:not(.artic-council__heading) {
