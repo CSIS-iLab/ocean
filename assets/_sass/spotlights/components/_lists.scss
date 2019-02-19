@@ -30,7 +30,7 @@
     &::before {
       position: relative;
       padding-right: 0.7rem;
-      color: $color__medblue;
+      color: var(--accent-color);
       font-size: 2rem;
       content: '\2022';
     }
