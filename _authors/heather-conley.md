@@ -2,7 +2,7 @@
 title: Heather Conley
 role: Senior Vice President for Europe, Eurasia, and the Arctic; and Director, Europe Program
 byline: Senior Vice President for Europe, Eurasia, and the Arctic; and Director, Europe Program
-headshot:
+headshot: https://res.cloudinary.com/csisideaslab/image/upload/v1550760759/conley-headshot.jpg
 date: 2018-12-10 14:29:58 +0000
 
 ---
