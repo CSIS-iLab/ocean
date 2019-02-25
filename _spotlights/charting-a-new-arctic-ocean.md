@@ -86,8 +86,8 @@ SOLAS specifies minimum standards for the construction, equipment, and operation
 Most recently, IMO member states renewed efforts to ban the use of heavy fuel oil (HFO) in the Arctic.[^3] States including Finland, Germany, Iceland, Netherlands, New Zealand, Norway, Sweden, and the United States have called for a full HFO prohibition on a rapid timetable. One of the dirtiest fossil fuels, HFOs and the impact of soot emissions accelerate sea ice melt and threaten fragile Arctic ecosystems.
 
 At the regional level, the Arctic Council was formed in 1996 as an intergovernmental forum that brings the five Arctic coastal nations together with Arctic nations, and Arctic indigenous communities (called the Permanent Participants) to protect the Arctic environment and support sustainable development.
-<ul class="artic-council">
-  <li class="artic-council__heading">Arctic coastal nations
+<ul class="arctic-council">
+  <li class="arctic-council__heading">Arctic coastal nations
     <ul>
       <li>United States</li>
       <li>Canada</li>
@@ -97,7 +97,7 @@ At the regional level, the Arctic Council was formed in 1996 as an intergovernme
     </ul>
   </li>
 
-  <li class="artic-council__heading">Arctic nations
+  <li class="arctic-council__heading">Arctic nations
     <ul>
       <li>Iceland,</li>
       <li>Sweden, and</li>
