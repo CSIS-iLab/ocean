@@ -1,14 +1,18 @@
-.artic-council {
+.arctic-council {
   @include breakpoint('medium') {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  ul {
+    padding-left: 1rem;
   }
 
   li {
     list-style: none;
   }
 
-  .artic-council__heading {
+  .arctic-council__heading {
     font-weight: bold;
 
     /* stylelint-disable */
@@ -22,7 +26,7 @@
     /* stylelint-enable */
   }
 
-  li:not(.artic-council__heading) {
+  li:not(.arctic-council__heading) {
     margin-bottom: 0;
     font-weight: normal;
     list-style: none;
@@ -31,7 +35,7 @@
       position: relative;
       padding-right: 0.7rem;
       color: var(--accent-color);
-      font-size: 2rem;
+      font-size: 24px;
       content: '\2022';
     }
   }
