@@ -13,24 +13,24 @@ const Footnotes = () => {
   )
 
   const toggle = ariaExpanded => {
-    if (ariaExpanded) {
+    if (!ariaExpanded) {
       hiddenFootnotes.forEach(footnote => {
         footnote.style.display = 'list-item'
       })
       readMore.innerText = 'Read Less'
       readMore.classList.add('is-active')
-      readMore.setAttribute('aria-expanded', 'false')
+      readMore.setAttribute('aria-expanded', 'true')
     } else {
       hiddenFootnotes.forEach(footnote => {
         footnote.style.display = 'none'
       })
       readMore.innerText = 'Read More'
       readMore.classList.remove('is-active')
-      readMore.setAttribute('aria-expanded', 'true')
+      readMore.setAttribute('aria-expanded', 'false')
     }
   }
 
-  toggle()
+  toggle(true)
 
   readMore.addEventListener('click', function() {
     let ariaExpanded =
