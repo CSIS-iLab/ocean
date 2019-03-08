@@ -1,0 +1,42 @@
+.arctic-council {
+  @include breakpoint('medium') {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .arctic-council__heading {
+    font-weight: bold;
+
+    /* stylelint-disable */
+    &:nth-child(1) {
+      -ms-grid-column: 1;
+    }
+
+    &:nth-child(2) {
+      -ms-grid-column: 2;
+    }
+    /* stylelint-enable */
+  }
+
+  li:not(.arctic-council__heading) {
+    margin-bottom: 0;
+    font-weight: normal;
+    list-style: none;
+
+    &::before {
+      position: relative;
+      padding-right: 0.7rem;
+      color: var(--accent-color);
+      font-size: 24px;
+      content: '\2022';
+    }
+  }
+}
