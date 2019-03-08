@@ -89,22 +89,24 @@ Most recently, IMO member states renewed efforts to ban the use of heavy fuel oi
 
 At the regional level, the Arctic Council was formed in 1996 as an intergovernmental forum that brings the five Arctic coastal nations together with Arctic nations, and Arctic indigenous communities (called the Permanent Participants) to protect the Arctic environment and support sustainable development.
 
-Arctic coastal nations
+<ul class="arctic-council">
+  <li class="arctic-council__heading">Arctic coastal nations
+    <ul>
+      <li>United States</li>
+      <li>Canada</li>
+      <li>Russia</li>
+      <li>Norway</li>
+      <li>Denmark</li>
+    </ul>
+  </li>
 
-<ul>
-  <li>United States</li>
-  <li>Canada</li>
-  <li>Russia</li>
-  <li>Norway</li>
-  <li>Denmark</li>
-</ul>
-
-Arctic nations
-
-<ul>
-  <li>Iceland,</li>
-  <li>Sweden, and</li>
-  <li>Finland</li>
+  <li class="arctic-council__heading">Arctic nations
+    <ul>
+      <li>Iceland,</li>
+      <li>Sweden, and</li>
+      <li>Finland</li>
+    </ul>
+  </li>
 </ul>
 
 Some of the Council’s most effective bodies are its working groups. The Protection of the Arctic Marine Environment (PAME) Working Group has produced ground-breaking assessments such as the Arctic Marine Shipping Assessment (AMSA), which led to the creation of the Polar Code. The working group also proposed, in 2015, a framework to preserve Arctic waters through a network of marine protected areas (MPAs) across the circumpolar Arctic.
