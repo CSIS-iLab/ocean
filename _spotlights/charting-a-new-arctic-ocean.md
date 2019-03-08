@@ -111,7 +111,13 @@ At the regional level, the Arctic Council was formed in 1996 as an intergovernme
 
 Some of the Council’s most effective bodies are its working groups. The Protection of the Arctic Marine Environment (PAME) Working Group has produced ground-breaking assessments such as the Arctic Marine Shipping Assessment (AMSA), which led to the creation of the Polar Code. The working group also proposed, in 2015, a framework to preserve Arctic waters through a network of marine protected areas (MPAs) across the circumpolar Arctic.
 
----------STATIC IMAGE MPAs Map
+{% include sc-single-image.html
+url="https://res.cloudinary.com/csisideaslab/image/upload/c_limit,h_512,w_512/v1552068340/ocean/SOS_Arctic_static_MPA.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/c_limit,h_512,w_512/v1552068346/ocean/SOS_Arctic_static_MPA-mobile.jpg"
+caption="Marine Protected Areas"
+credit="CSIS"
+width="medium"
+%}
 
 The rapid loss of sea ice and changes in ocean chemistry increasingly threatens sensitive ecosystems and Arctic biodiversity. Since Arctic life does not recognize international borders, an international network of MPAs across the Arctic would protect marine biodiversity, preserve cultural heritage and subsistence resources, and strengthen marine ecosystem resilience that ultimately underpins human well-being.[^4]
 
@@ -128,7 +134,13 @@ Despite there being no known fishing stocks in this area, the agreement creates 
 
 Another important new area is scientifically-based marine conservation provisions for Areas Beyond National Jurisdiction (ABNJ). [ABNJ](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} refers to “the high seas” or those areas of the ocean where no one nation has sole responsibility for management. ABNJs do not fall under any one nation’s jurisdiction.
 
------ STATIC IMAGE Map showing territorial waters, EEZs, & ABNJ
+{% include sc-single-image.html
+url="https://res.cloudinary.com/csisideaslab/image/upload/c_limit,h_512,w_512/v1552068290/ocean/SOS_Arctic_static_Territories.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/c_limit,h_512,w_512/v1552068321/ocean/SOS_Arctic_static_Territories-mobile.jpg"
+caption="Artic Static Territories"
+credit="CSIS"
+width="medium"
+%}
 
 ABNJ make up approximately [40 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the planet, comprising [64 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the oceans and nearly [95 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of its volume. These waters represent the largest and most diverse cache of biodiversity on earth. These vital living resources are collectively referred to as Biodiversity Beyond National Jurisdiction (BBNJ).
 
