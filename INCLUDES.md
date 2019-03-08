@@ -63,6 +63,37 @@ Use front matter to specify url, caption, credit, and mode. Mode options are por
 - `title`: term to trigger tooltip
 - `description`: description of term for popup
 
+## sc-tooltip-video
+`{% include sc-tooltip-video.html
+name="How to read  AIS, VIIRS, and SAR data" url="https://player.vimeo.com/video/309369486" duration="2:09"
+thumbnail="https://res.cloudinary.com/csisideaslab/image/upload/v1546463269/ocean/poling-headshot.jpg"
+width="medium"
+align="right"
+ %}`
+ - `title`: component header
+ - `url`: video embed url
+ - `thumbnail`: headshot for speaker
+
+## background text scroll
+`{% background_text_scroll image="https://aerospace.csis.org/wp-content/uploads/2018/04/ChinaLongMarchLaunch_cropped.jpg" %}
+<div><strong>Content of the background_text_scroll goes here.</strong> This should be able to process HTML.</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+{% endbackground_text_scroll %}`
+
+- `image`: image featured in component
+- content, or markup to display within component
+
+
+##  explainer
+`{% _explainer title="Polar Code" align="right" %}
+<p><a href="http://www.imo.org/en/MediaCentre/HotTopics/polar/Documents/POLAR%20CODE%20TEXT%20AS%20ADOPTED.pdf" target="_blank" rel="noopener">The Polar Code</a> has been developed to supplement existing IMO instruments to increase the safety of ships’ operation and mitigate the impact on the people and environment in the remote, vulnerable, and potentially harsh polar waters. It covers the <a href="http://www.imo.org/en/mediacentre/hottopics/polar/pages/default.aspx" target="_blank" rel="noopener">full range of shipping-related matters</a> relevant to navigation in water surrounding the two poles – ship design, construction and equipment; operational and training concerns; search and rescue; and, equally important, the protection of the unique environment and eco-systems of the polar regions.</p>
+{% end_explainer %}`
+
+- `title`: explainer header
+- `align`: left or right
+- content, or markup to display within component
+
+
 ## timeline
 {% include_relative scs/timeline.html  
   id="timeline-viirs"

@@ -7,9 +7,9 @@ excerpt: 'Illicit fishing poses a global challenge to sustainability and securit
 authors:
 - _authors/monica-medina.md
 - _authors/carolyn-weis.md
-lede: Combatting illicit fishing will require countries to develop common regional
-  approaches to legal authorities and adjudication in order to fully take advantage
-  of new enforcement capabilities.
+lede: Illicit fishing poses a global challenge to sustainability and security.  Harmonizing
+  the U.S. Government’s broad legal and authorities and enforcement capabilities is
+  a needed step to effectively counter this threat.
 keywords:
 - IUU
 - fishing
