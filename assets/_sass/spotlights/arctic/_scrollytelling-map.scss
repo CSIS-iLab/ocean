@@ -70,14 +70,30 @@
       max-width: 100vw;
       height: 100%;
     }
+  }
 
-    .slide {
-      opacity: 0;
-      transition: all 0.3s linear;
+  .slide {
+    opacity: 0;
+    transition: all 0.3s linear;
 
-      &.is-active {
-        opacity: 1;
-      }
+    &.is-active {
+      opacity: 1;
     }
+  }
+
+  #sc_slide1 > * {
+    opacity: 0;
+
+    &.is-active {
+      opacity: 1;
+    }
+
+    // @for $i from 0 through 10 {
+    //   $child: $i + 1;
+
+    //   &:nth-child(#{$child}) {
+    //     transition-delay: #{$i}s;
+    //   }
+    // }
   }
 }
