@@ -42,6 +42,7 @@ contributors:
       International Studies.
 published: true
 ---
+
 <div id="spotlight__intro"></div>
 Welcome to new and largely uncharted maritime space: the Arctic Ocean. Only 2 percent of its waters are charted to international standards, but what is truly unchartered is its rapid transformation. The Arctic is warming at twice the rate of the rest of the planet and has been warmer over the past five years than at any time since records began in 1900.[^1] A warming Arctic is now home to a substantially diminished Greenland ice sheet and polar ice cap, ocean acidification, algae blooms, and dramatic changes to sensitive Arctic ecosystems crucial to sustaining sea life.
 
@@ -78,6 +79,7 @@ How do nations effectively govern this rapidly changing ocean? Since 1982, the U
 UNCLOS outlined norms for both {% include sc-tooltip.html title="territorial waters" description="Territorial waters is a maritime zone extending a single state’s sovereign territory up to 12 nautical miles (22km) off their coast. The state has full jurisdiction over nearly all (including foreign) activities on the water, as well as the seabed, subsoil, and airspace." %} and {% include sc-tooltip.html title="exclusive economic zones" description="An Exclusive Economic Zone (EEZ) is adjacent to a state’s territorial waters and extends up to 200 nautical miles (370 kilometers) off a country’s coast. The state has exclusive rights for exploration and exploitation of marine resources in this zone and exercises jurisdiction over marine research and conservation. Foreign vessels (and aircraft) can operate freely through this zone as long as they do not infringe upon the coastal state’s economic rights." %} (EEZs) and included provisions to extend a nation’s outer continental shelf. UNCLOS even provided special regulations for human activities in ice-covered waters (Article 234). One hundred sixty-eight parties have ratified the treaty but notably missing from the list is the United States, which views UNCLOS as customary international law.
 
 {% _explainer title="Polar Code" align="right" %}
+
 <p><a href="http://www.imo.org/en/MediaCentre/HotTopics/polar/Documents/POLAR%20CODE%20TEXT%20AS%20ADOPTED.pdf" target="_blank" rel="noopener">The Polar Code</a> has been developed to supplement existing IMO instruments to increase the safety of ships’ operation and mitigate the impact on the people and environment in the remote, vulnerable, and potentially harsh polar waters. It covers the <a href="http://www.imo.org/en/mediacentre/hottopics/polar/pages/default.aspx" target="_blank" rel="noopener">full range of shipping-related matters</a> relevant to navigation in water surrounding the two poles – ship design, construction and equipment; operational and training concerns; search and rescue; and, equally important, the protection of the unique environment and eco-systems of the polar regions.</p>
 {% end_explainer %}
 
@@ -111,7 +113,13 @@ At the regional level, the Arctic Council was formed in 1996 as an intergovernme
 
 Some of the Council’s most effective bodies are its working groups. The Protection of the Arctic Marine Environment (PAME) Working Group has produced ground-breaking assessments such as the Arctic Marine Shipping Assessment (AMSA), which led to the creation of the Polar Code. The working group also proposed, in 2015, a framework to preserve Arctic waters through a network of marine protected areas (MPAs) across the circumpolar Arctic.
 
----------STATIC IMAGE MPAs Map
+{% include sc-single-image.html
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/SOS_Arctic_static_MPA.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068346/ocean/SOS_Arctic_static_MPA-mobile.jpg"
+caption="Marine Protected Areas in the Arctic"
+credit="CSIS"
+width="medium"
+%}
 
 The rapid loss of sea ice and changes in ocean chemistry increasingly threatens sensitive ecosystems and Arctic biodiversity. Since Arctic life does not recognize international borders, an international network of MPAs across the Arctic would protect marine biodiversity, preserve cultural heritage and subsistence resources, and strengthen marine ecosystem resilience that ultimately underpins human well-being.[^4]
 
@@ -128,7 +136,13 @@ Despite there being no known fishing stocks in this area, the agreement creates 
 
 Another important new area is scientifically-based marine conservation provisions for Areas Beyond National Jurisdiction (ABNJ). [ABNJ](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} refers to “the high seas” or those areas of the ocean where no one nation has sole responsibility for management. ABNJs do not fall under any one nation’s jurisdiction.
 
------ STATIC IMAGE Map showing territorial waters, EEZs, & ABNJ
+{% include sc-single-image.html
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068290/ocean/SOS_Arctic_static_Territories.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068321/ocean/SOS_Arctic_static_Territories-mobile.jpg"
+caption="Exclusive Economic Zones and the Areas Beyond National Jurisdiction in the Arctic. Note: EEZs are approximate."
+credit="CSIS"
+width="medium"
+%}
 
 ABNJ make up approximately [40 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the planet, comprising [64 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the oceans and nearly [95 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of its volume. These waters represent the largest and most diverse cache of biodiversity on earth. These vital living resources are collectively referred to as Biodiversity Beyond National Jurisdiction (BBNJ).
 
@@ -141,16 +155,23 @@ In July 2017, the United Nations agreed that negotiations for an international l
 
 If the United Nations is successful in its efforts to ensure biodiversity in the high seas area of the Central Arctic Ocean for future generations, it will chart a new course for a new ocean.
 
+<!-- prettier-ignore -->
 [^1]: John Schwartz and Henry Fountain, “Warming in Arctic Raises Fears of a ‘Rapid Unraveling’ of the Region,” New York Times, December 11, 2018, [https://www.nytimes.com/2018/12/11/climate/arctic-warming.html](https://www.nytimes.com/2018/12/11/climate/arctic-warming.html){:target="\_blank"}{:rel="noopener"}.
 
+<!-- prettier-ignore -->
 [^2]: Heather A. Conley, Matthew Melino, and Andreas Osthagen, Maritime Futures: The Arctic and the Bering Strait Region (Washington, D.C.: CSIS, 2017), [https://csis-prod.s3.amazonaws.com/s3fs-public/publication/171027_Conley_MaritimeFutures_Web.pdf?mHPGy0uKqRMcek0zw6av5jI332MeELk5](https://csis-prod.s3.amazonaws.com/s3fs-public/publication/171027_Conley_MaritimeFutures_Web.pdf?mHPGy0uKqRMcek0zw6av5jI332MeELk5){:target="\_blank"}{:rel="noopener"}.
 
+<!-- prettier-ignore -->
 [^3]: MAREX, “IMO Moves Towards Ban on HFO in the Arctic,” The Maritime Executive, April 13, 2018, [https://www.maritime-executive.com/article/imo-moves-towards-ban-on-hfo-in-the-arctic](https://www.maritime-executive.com/article/imo-moves-towards-ban-on-hfo-in-the-arctic){:target="\_blank"}{:rel="noopener"}.
 
+<!-- prettier-ignore -->
 [^4]: Protection of the Arctic Marine Environment (PAME) and the Arctic Council, Framework for a Pan-Arctic Network of Marine Protected Areas (The Arctic Council, 2015), [https://oaarchive.arctic-council.org/handle/11374/417](https://oaarchive.arctic-council.org/handle/11374/417){:target="\_blank"}{:rel="noopener"}.
 
+<!-- prettier-ignore -->
 [^5]: Levon Sevunts, Radio Canada International, “Arctic nations and fishing powers sign ‘historic’ agreement on fishery,” The Barents Observer, December 1, 2017, [https://thebarentsobserver.com/en/ecology/2017/12/arctic-nations-and-fishing-powers-sign-historic-agreement-fishery](https://thebarentsobserver.com/en/ecology/2017/12/arctic-nations-and-fishing-powers-sign-historic-agreement-fishery){:target="\_blank"}{:rel="noopener"}.
 
+<!-- prettier-ignore -->
 [^6]: Kamrul Hossain, “Arctic Marine Biodiversity in Areas Beyond National Jurisdiction: Framing A Legally Binding MPA Regime?” American Society of International Law 20, no. 14 (August 2016), [https://www.asil.org/insights/volume/20/issue/14/arctic-marine-biodiversity-areas-beyond-national-jurisdiction-framing](https://www.asil.org/insights/volume/20/issue/14/arctic-marine-biodiversity-areas-beyond-national-jurisdiction-framing){:target="\_blank"}{:rel="noopener"}.
 
+<!-- prettier-ignore -->
 [^7]: “Countries agree to recommend elements for new treaty on marine biodiversity of areas beyond national jurisdiction,” United Nations, July 24, 2017, [https://www.un.org/sustainabledevelopment/blog/2017/07/countries-agree-to-recommend-elements-for-new-treaty-on-marine-biodiversity-of-areas-beyond-national-jurisdiction/](https://www.un.org/sustainabledevelopment/blog/2017/07/countries-agree-to-recommend-elements-for-new-treaty-on-marine-biodiversity-of-areas-beyond-national-jurisdiction/){:target="\_blank"}{:rel="noopener"}.
