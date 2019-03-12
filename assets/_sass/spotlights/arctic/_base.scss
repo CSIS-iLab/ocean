@@ -3,6 +3,8 @@ $color__default-accent: #647899;
 $color__default-accent--hover: rgba($color__default-accent, 0.8);
 
 $color__map-bg: #647899;
+$color__map-ice: #b6c2d1;
+$color__map-median: #d8ab52;
 
 :root {
   --accent-color: #{$color__default-accent};

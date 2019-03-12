@@ -9,46 +9,50 @@ const Map = () => {
   const triggerEls = Array.from(
     graphicEl.querySelectorAll('.arctic__map-trigger')
   )
+  const labelEl = document.querySelector('.arctic__legend-curr')
 
   const stepActions = {
     s0() {
       console.log('step 0')
       document.getElementById('sc_jan18').classList.add('is-active')
+      labelEl.innerHTML = 'January'
       document.getElementById('sc_slide1').classList.remove('is-active')
     },
     s1() {
       console.log('step 1')
       document.getElementById('sc_slide1').classList.add('is-active')
       document.getElementById('sc_dec18').classList.remove('is-active')
-      const months = [
-        'jan',
-        'feb',
-        'mar',
-        'apr',
-        'may',
-        'jun',
-        'jul',
-        'aug',
-        'sep',
-        'oct',
-        'nov',
-        'dec'
-      ]
+      const months = {
+        jan: 'January',
+        feb: 'February',
+        mar: 'March',
+        apr: 'April',
+        may: 'May',
+        jun: 'June',
+        jul: 'July',
+        aug: 'August',
+        sep: 'September',
+        oct: 'October',
+        nov: 'November',
+        dec: 'December'
+      }
+
+      const months_short = Object.keys(months)
 
       const interval = 750 // how much time should the delay between two iterations be (in milliseconds)?
       let promise = Promise.resolve()
-      months.forEach((month, i) => {
+      months_short.forEach((month, i) => {
         promise = promise.then(function() {
-          console.log(month)
           document
             .getElementById('sc_' + month + '18')
             .classList.add('is-active')
+          labelEl.innerHTML = months[month]
 
           if (i == 0) {
             return
           }
 
-          const prevMonth = months[i - 1]
+          const prevMonth = months_short[i - 1]
           document
             .getElementById('sc_' + prevMonth + '18')
             .classList.remove('is-active')
@@ -59,15 +63,16 @@ const Map = () => {
         })
       })
 
-      promise.then(function() {
-        console.log('Loop finished.')
-      })
+      // promise.then(function() {
+      //   console.log('Loop finished.')
+      // })
 
       return
     },
     s2() {
       console.log('step 2: Need March AV line')
       document.getElementById('sc_mar18').classList.add('is-active')
+      labelEl.innerHTML = 'March'
       document.getElementById('sc_dec18').classList.remove('is-active')
       document.getElementById('sc_slide4').classList.remove('is-active')
       return
@@ -75,6 +80,7 @@ const Map = () => {
     s3() {
       console.log('step 3')
       document.getElementById('sc_mar18').classList.add('is-active')
+      labelEl.innerHTML = 'March'
       document.getElementById('sc_slide4').classList.add('is-active')
       document.getElementById('sc_slide5').classList.remove('is-active')
       document.getElementById('sc_sep18').classList.remove('is-active')
@@ -83,6 +89,7 @@ const Map = () => {
       console.log('step 4')
       document.getElementById('sc_slide5').classList.add('is-active')
       document.getElementById('sc_sep18').classList.add('is-active')
+      labelEl.innerHTML = 'September'
       document.getElementById('sc_mar18').classList.remove('is-active')
       document.getElementById('sc_slide4').classList.remove('is-active')
     }
@@ -96,16 +103,14 @@ const Map = () => {
 
     let scene = new ScrollMagic.Scene({
       triggerElement: el,
-      triggerHook: 1
+      triggerHook: 0.8
     })
 
     scene
       .on('enter', function(event) {
-        console.log(event)
         stepActions['s' + step]()
       })
       .on('leave', function(event) {
-        console.log('leave step:' + step)
         let prevStep = Math.max(0, step - 1)
         stepActions['s' + prevStep]()
       })
