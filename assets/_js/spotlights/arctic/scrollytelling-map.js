@@ -13,11 +13,13 @@ const Map = () => {
   const stepActions = {
     s0() {
       console.log('step 0')
-      document.getElementById('sc_slide0').classList.add('is-active')
+      document.getElementById('sc_jan18').classList.add('is-active')
+      document.getElementById('sc_slide1').classList.remove('is-active')
     },
     s1() {
       console.log('step 1')
       document.getElementById('sc_slide1').classList.add('is-active')
+      document.getElementById('sc_dec18').classList.remove('is-active')
       const months = [
         'jan',
         'feb',
@@ -61,30 +63,28 @@ const Map = () => {
         console.log('Loop finished.')
       })
 
-      // months.forEach((month, i) => {
-      //   document.getElementById('sc_' + month + '18').classList.add('is-active')
-
-      //   if (i > 0) {
-      //     const prevMonth = months[i - 1]
-      //     document
-      //       .getElementById('sc_' + prevMonth + '18')
-      //       .classList.remove('is-active')
-      //   }
-      // })
       return
     },
     s2() {
-      console.log('step 2')
+      console.log('step 2: Need March AV line')
+      document.getElementById('sc_mar18').classList.add('is-active')
+      document.getElementById('sc_dec18').classList.remove('is-active')
+      document.getElementById('sc_slide4').classList.remove('is-active')
       return
     },
     s3() {
       console.log('step 3')
+      document.getElementById('sc_mar18').classList.add('is-active')
+      document.getElementById('sc_slide4').classList.add('is-active')
+      document.getElementById('sc_slide5').classList.remove('is-active')
+      document.getElementById('sc_sep18').classList.remove('is-active')
     },
     s4() {
       console.log('step 4')
-    },
-    s5() {
-      console.log('step 5')
+      document.getElementById('sc_slide5').classList.add('is-active')
+      document.getElementById('sc_sep18').classList.add('is-active')
+      document.getElementById('sc_mar18').classList.remove('is-active')
+      document.getElementById('sc_slide4').classList.remove('is-active')
     }
   }
 
@@ -96,46 +96,21 @@ const Map = () => {
 
     let scene = new ScrollMagic.Scene({
       triggerElement: el,
-      triggerHook: 'onEnter'
+      triggerHook: 1
     })
 
     scene
       .on('enter', function(event) {
+        console.log(event)
         stepActions['s' + step]()
       })
       .on('leave', function(event) {
-        let nextStep = Math.max(0, step - 1)
-        stepActions['s' + nextStep]()
+        console.log('leave step:' + step)
+        let prevStep = Math.max(0, step - 1)
+        stepActions['s' + prevStep]()
       })
     scene.addTo(controller)
   })
-
-  function setActiveStep(step) {
-    console.log(step)
-    let stepClassList = document.querySelector('#sc_slide' + step).classList
-
-    if (stepClassList) {
-      stepClassList.add('is-active')
-    } else {
-      document
-        .querySelector('#sc_slide' + step)
-        .setAttribute('class', 'slide is-active')
-    }
-
-    Array.from(
-      document.querySelectorAll(
-        '.arctic__map .slide:not(#sc_slide' + step + ')'
-      )
-    ).forEach(el => {
-      let elClassList = el.classList
-
-      if (elClassList) {
-        elClassList.remove('is-active')
-      } else {
-        el.setAttribute('class', 'slide')
-      }
-    })
-  }
 }
 
 export default Map
