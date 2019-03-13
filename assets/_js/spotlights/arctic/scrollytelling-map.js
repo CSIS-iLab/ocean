@@ -11,17 +11,23 @@ const Map = () => {
   )
   const labelEl = document.querySelector('.arctic__legend-curr')
 
+  const interval = 750
+
+  let monthsTimer
+  let yearTimer
+
   const stepActions = {
     s0() {
-      console.log('step 0')
+      clearTimeout(monthsTimer)
       document.getElementById('sc_jan18').classList.add('is-active')
       labelEl.innerHTML = 'January'
       document.getElementById('sc_slide1').classList.remove('is-active')
     },
     s1() {
-      console.log('step 1')
       document.getElementById('sc_slide1').classList.add('is-active')
       document.getElementById('sc_dec18').classList.remove('is-active')
+      document.getElementById('sc_mar18').classList.remove('is-active')
+      document.getElementById('sc_slide2').classList.remove('is-active')
       const months = {
         jan: 'January',
         feb: 'February',
@@ -37,61 +43,76 @@ const Map = () => {
         dec: 'December'
       }
 
-      const months_short = Object.keys(months)
+      const monthsShort = Object.keys(months)
 
-      const interval = 750 // how much time should the delay between two iterations be (in milliseconds)?
-      let promise = Promise.resolve()
-      months_short.forEach((month, i) => {
-        promise = promise.then(function() {
-          document
-            .getElementById('sc_' + month + '18')
-            .classList.add('is-active')
-          labelEl.innerHTML = months[month]
+      let counter = 0
+      monthsTimer = setTimeout(function tick() {
+        let month = monthsShort[counter]
+        document.getElementById('sc_' + month + '18').classList.add('is-active')
+        labelEl.innerHTML = months[month]
 
-          if (i == 0) {
-            return
-          }
-
-          const prevMonth = months_short[i - 1]
+        if (counter > 0) {
+          const prevMonth = monthsShort[counter - 1]
           document
             .getElementById('sc_' + prevMonth + '18')
             .classList.remove('is-active')
+        }
 
-          return new Promise(resolve => {
-            setTimeout(resolve, interval)
-          })
-        })
-      })
+        if (counter === monthsShort.length - 1) {
+          clearTimeout(monthsTimer)
+          return
+        }
 
-      // promise.then(function() {
-      //   console.log('Loop finished.')
-      // })
+        counter++
+        monthsTimer = setTimeout(tick, interval) // (*)
+      }, interval)
 
       return
     },
     s2() {
-      console.log('step 2: Need March AV line')
+      clearTimeout(monthsTimer)
+      clearTimeout(yearTimer)
       document.getElementById('sc_mar18').classList.add('is-active')
+      document.getElementById('sc_slide2').classList.add('is-active')
+      document.getElementById('sc_mar18-av').classList.add('is-active')
       labelEl.innerHTML = 'March'
       document.getElementById('sc_dec18').classList.remove('is-active')
-      document.getElementById('sc_slide4').classList.remove('is-active')
+      document.getElementById('sc_slide3').classList.remove('is-active')
       return
     },
     s3() {
-      console.log('step 3')
       document.getElementById('sc_mar18').classList.add('is-active')
       labelEl.innerHTML = 'March'
-      document.getElementById('sc_slide4').classList.add('is-active')
-      document.getElementById('sc_slide5').classList.remove('is-active')
+      document.getElementById('sc_slide2').classList.add('is-active')
+      document.getElementById('sc_slide3').classList.remove('is-active')
       document.getElementById('sc_sep18').classList.remove('is-active')
+
+      const years = ['18', '17', '16', '15']
+
+      let counter = 0
+      yearTimer = setTimeout(function tick() {
+        let year = years[counter]
+        document
+          .getElementById('sc_mar' + year + '-av')
+          .classList.add('is-active')
+
+        if (counter === years.length - 1) {
+          clearTimeout(yearTimer)
+          return
+        }
+
+        counter++
+        yearTimer = setTimeout(tick, interval) // (*)
+      }, interval)
+      return
     },
     s4() {
-      console.log('step 4')
-      document.getElementById('sc_slide5').classList.add('is-active')
+      clearTimeout(yearTimer)
+      document.getElementById('sc_slide3').classList.add('is-active')
       document.getElementById('sc_sep18').classList.add('is-active')
       labelEl.innerHTML = 'September'
       document.getElementById('sc_mar18').classList.remove('is-active')
-      document.getElementById('sc_slide4').classList.remove('is-active')
+      document.getElementById('sc_slide2').classList.remove('is-active')
     }
   }
 
