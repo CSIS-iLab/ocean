@@ -56,7 +56,7 @@
   &-trigger {
     $header-height: map-get($size__header-height, 'small');
     margin-top: calc(50vh - #{$header-height});
-    margin-bottom: 50vh;
+    margin-bottom: 75vh;
     padding: 1rem;
     background-color: rgba($color__map-bg, 0.87);
   }
@@ -85,13 +85,14 @@
 
 #{$spotlight}__legend {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  left: 1rem;
+  top: 0;
+  left: 0;
+  padding: 1rem;
   color: $color__white;
+  background-color: rgba($color__map-bg, 0.87);
 
   @include breakpoint('medium') {
-    max-width: 300px;
+    max-width: 325px;
   }
 
   &-title {
@@ -105,18 +106,37 @@
   p {
     margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
-    color: $color__map-ice;
+    color: $color__map-ice-base;
     @include font-size(16px);
     line-height: 1.5rem;
   }
 
   &-curr {
     margin-bottom: 0.5rem;
+    font-weight: 300;
     @include font-size(20px);
-    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  #layer-selector {
+    color: $color__white;
+    font-weight: 300;
+    @include font-size(20px);
+    letter-spacing: 1px;
+
+    &:not(:disabled) {
+      font-weight: 400;
+      /* stylelint-disable */
+      -webkit-appearance: menulist-button;
+      -moz-appearance: menulist-button;
+    }
   }
 
   ul {
+    display: grid;
+    grid-row-gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
     margin: 0;
     padding: 0;
     font-weight: 300;
@@ -127,29 +147,69 @@
     display: flex;
     align-items: center;
 
-    &::before {
-      content: '';
-      display: inline-block;
-      width: 2rem;
-      margin-right: 1rem;
+    &.arctic__legend-key--median {
+      grid-column: span 2;
+      display: none;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 3px;
+        margin-right: 1rem;
+        background-color: $color__map-median;
+      }
+    }
+
+    $hidden-years: (2015, 2016, 2017);
+    @each $year in $hidden-years {
+      &.ice--#{$year} {
+        display: none;
+      }
     }
 
     &.is-active {
-      display: list-item;
+      display: flex;
     }
+  }
+}
 
-    &.arctic__legend-key--median {
-      display: none;
-    }
+// Checkbox
+.checkbox-container {
+  position: relative;
 
-    &.arctic__legend-key--ice::before {
-      align-self: stretch;
-      background-color: $color__map-ice;
-    }
+  input[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+  }
 
-    &.arctic__legend-key--median::before {
-      height: 3px;
-      background-color: $color__map-median;
+  input[type='checkbox'] + label {
+    display: flex;
+    opacity: 0.7;
+  }
+
+  input[type='checkbox'] + label::before {
+    content: '';
+    align-self: stretch;
+    display: inline-block;
+    width: 2rem;
+    margin-right: 0.5rem;
+    transition: 0.2s;
+  }
+
+  @each $year, $color in $color__map-ice {
+    &.ice--#{$year} input[type='checkbox'] + label::before {
+      background-color: $color;
     }
+  }
+
+  input[type='checkbox']:checked + label {
+    opacity: 1;
+  }
+
+  input[type='checkbox']:focus + label::before,
+  input[type='checkbox']:checked:focus + label::before,
+  input[type='checkbox']:hover:not(:disabled) + label::before {
+    outline: 1px solid $color__white;
   }
 }
