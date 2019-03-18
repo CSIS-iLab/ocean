@@ -1,2 +1,5 @@
-console.log('Test Spotlights JS')
-console.log('arctic test')
+import Map from './scrollytelling-map'
+
+window.addEventListener('DOMContentLoaded', () => {
+  Map()
+})
