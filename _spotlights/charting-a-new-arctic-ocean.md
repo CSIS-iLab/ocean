@@ -82,8 +82,8 @@ At the regional level, the Arctic Council was formed in 1996 as an intergovernme
 
   <li class="arctic-council__heading">Arctic nations
     <ul>
-      <li>Iceland,</li>
-      <li>Sweden, and</li>
+      <li>Iceland</li>
+      <li>Sweden</li>
       <li>Finland</li>
     </ul>
   </li>
@@ -101,7 +101,7 @@ width="medium"
 
 The rapid loss of sea ice and changes in ocean chemistry increasingly threatens sensitive ecosystems and Arctic biodiversity. Since Arctic life does not recognize international borders, an international network of MPAs across the Arctic would protect marine biodiversity, preserve cultural heritage and subsistence resources, and strengthen marine ecosystem resilience that ultimately underpins human well-being.[^4]
 
-{% include sc-blockquote.html content="Arctic life does not recognize international borders" %}
+{% include sc-blockquote.html content="Arctic life does not recognize international borders" width="medium" %}
 
 Unfortunately, countries have only embraced national MPAs rather than an integrated approach. An estimated [11.4 percent of the Arctic, or about 3.7 million square kilometers](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, is currently under protected status. Within U.S. waters, federally protected waters include the Arctic Management Area encompassing the Chukchi and Beaufort
 Seas and the Northern Bering Sea Research Area, just south of the Arctic Circle and the Bering Strait.
@@ -131,7 +131,7 @@ The high seas of the Central Arctic Ocean might prove to be the most contentious
 
 In July 2017, the United Nations agreed that negotiations for an international legally binding instrument on BBNJ (under UNCLOS) should move forward.[^7] The first session to discuss this instrument occurred in September 2018 where positions were put forward and elements of a working draft were discussed.
 
-If the United Nations is successful in its efforts to ensure biodiversity in the high seas area of the Central Arctic Ocean for future generations, it will chart a new course for a new ocean.
+If the United Nations is successful in its efforts to ensure biodiversity in the high seas area of the Central Arctic Ocean for future generations, it will chart a new course for a new ocean. {% logo %}
 
 <!-- prettier-ignore -->
 [^1]: John Schwartz and Henry Fountain, “Warming in Arctic Raises Fears of a ‘Rapid Unraveling’ of the Region,” New York Times, December 11, 2018, [https://www.nytimes.com/2018/12/11/climate/arctic-warming.html](https://www.nytimes.com/2018/12/11/climate/arctic-warming.html){:target="\_blank"}{:rel="noopener"}.

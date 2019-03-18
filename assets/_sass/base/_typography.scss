@@ -221,7 +221,7 @@ a {
     outline: 0;
   }
 
-  .post-content &:not(.btn):not(.reversefootnote):not(.sc-link),
+  .post-content &:not(.btn):not(.reversefootnote):not(.sc-link):not(.footnote),
   .about & {
     @include box-shadow(0, -2px, 0, 0, $color__medblue, true);
     color: inherit;
@@ -235,5 +235,9 @@ a {
       color: inherit;
       box-shadow: none;
     }
+  }
+  &.footnote {
+    color: $color__medblue;
+    box-shadow: none;
   }
 }
