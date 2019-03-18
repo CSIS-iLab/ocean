@@ -1,0 +1,8 @@
+<header class="spotlight__header arctic__intro">
+  {%- include post-title.html -%}
+  <div id="spotlight__intro" class="spotlight__header-desc">
+    {{ page.excerpt | prepend: '
+    <p>' | append: '</p>
+    ' }} {%- include authors-list.html -%} {%- include date.html -%}
+  </div>
+</header>

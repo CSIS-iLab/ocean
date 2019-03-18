@@ -7,6 +7,7 @@ js_files:
   - arctic
 css_files:
   - arctic
+include_header: arctic/intro.html
 excerpt:
   'Welcome to new and largely uncharted maritime space: the Arctic Ocean. Only
   2 percent of its waters are charted to international standards. Its rapid emergence
