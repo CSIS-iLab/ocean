@@ -103,10 +103,19 @@ The rapid loss of sea ice and changes in ocean chemistry increasingly threatens 
 
 {% include sc-blockquote.html content="Arctic life does not recognize international borders" width="medium" %}
 
-Unfortunately, countries have only embraced national MPAs rather than an integrated approach. An estimated [11.4 percent of the Arctic, or about 3.7 million square kilometers](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, is currently under protected status. Within U.S. waters, federally protected waters include the Arctic Management Area encompassing the Chukchi and Beaufort
+Unfortunately, countries have only embraced national MPAs rather than an integrated approach. An estimated [11.4 percent of the Arctic](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, or about 3.7 million square kilometers, is currently under protected status. Within U.S. waters, federally protected waters include the Arctic Management Area encompassing the Chukchi and Beaufort
 Seas and the Northern Bering Sea Research Area, just south of the Arctic Circle and the Bering Strait.
 
 ## Charting the Future of Arctic Biodiversity
+
+{% include sc-single-image.html
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1552932101/ocean/gettyimages-929759672-594x594.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552932101/ocean/gettyimages-929759672-594x594.jpg"
+caption="Workers hang arctic cods heads on wood high tables in Tangstad on the Norwegian northern Lofoten islands, within Arctic Circle."
+credit="OLIVIER MORIN/AFP/Getty Images"
+width="medium"
+align="right"
+%}
 
 Arctic and non-Arctic states are beginning to creatively charter new norms and regulations for managing Arctic biodiversity, namely valuable fishing stocks. The most notable example is the 2017 Agreement to Prevent Unregulated High Seas Fisheries in the Central Arctic Ocean. The five Arctic coastal states, led by the United States and Russia, negotiated the outlines of the precautionary fisheries agreement in 2015 before inviting four states—China (the largest fishing nation), Japan, South Korea, Iceland, along with the European Union—that have significant fishing interest in the region, to join the negotiating framework.
 
@@ -132,6 +141,14 @@ The high seas of the Central Arctic Ocean might prove to be the most contentious
 In July 2017, the United Nations agreed that negotiations for an international legally binding instrument on BBNJ (under UNCLOS) should move forward.[^7] The first session to discuss this instrument occurred in September 2018 where positions were put forward and elements of a working draft were discussed.
 
 If the United Nations is successful in its efforts to ensure biodiversity in the high seas area of the Central Arctic Ocean for future generations, it will chart a new course for a new ocean. {% logo %}
+
+{% include sc-single-image.html
+url="hhttps://res.cloudinary.com/csisideaslab/image/upload/v1552934533/ocean/4371016084_ee729bb5ee_b.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552934533/ocean/4371016084_ee729bb5ee_b.jpg"
+caption="The Canadian Coast Guard Ship Louis S. St-Laurent trails the Coast Guard Cutter Healy as the two ships work their way farther north to research the floor of the Arctic Ocean Sept. 2, 2009."
+credit="Patrick Kelley, U.S. Coast Guard"
+width="large"
+%}
 
 <!-- prettier-ignore -->
 [^1]: John Schwartz and Henry Fountain, “Warming in Arctic Raises Fears of a ‘Rapid Unraveling’ of the Region,” New York Times, December 11, 2018, [https://www.nytimes.com/2018/12/11/climate/arctic-warming.html](https://www.nytimes.com/2018/12/11/climate/arctic-warming.html){:target="\_blank"}{:rel="noopener"}.
