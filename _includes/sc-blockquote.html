@@ -3,7 +3,7 @@
 
 {% assign size_class = include.sizing | default: 'large' | prepend: 'sc--' %}
 
-{% if include.align and size_class != 'sc--large' %}
+{% if include.align and size_class != 'sc--large' and size_class != 'sc--medium' %}
   {% assign align_class = include.align | prepend: 'sc--float-' %}
 {% endif %}
 

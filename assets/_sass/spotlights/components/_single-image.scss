@@ -7,7 +7,7 @@
   }
 
   .img-caption {
-    margin: auto;
+    margin: 0.5rem auto 0;
     @extend %post-content__caption-desc;
 
     &-label {
