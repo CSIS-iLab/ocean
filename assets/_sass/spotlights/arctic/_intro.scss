@@ -74,23 +74,11 @@
 }
 
 #spotlight__intro {
-  margin-bottom: 2rem;
-  font-weight: 300;
-  @include font-size(20px);
-  line-height: 1.44;
+  margin-bottom: 4rem;
 
-  @include breakpoint('large') {
-    width: 70%;
-    max-width: 800px;
-  }
-
-  #spotlight__intro {
-    margin-bottom: 4rem;
-
-    .spotlight__header-desc {
-      padding-left: 1rem;
-      border-left: 1px solid hsla(0, 0%, 60.8%, 0.58);
-    }
+  .spotlight__header-desc {
+    padding-left: 1rem;
+    border-left: 1px solid hsla(0, 0%, 60.8%, 0.58);
   }
 }
 
@@ -101,6 +89,6 @@
   line-height: 1.44;
 
   @include breakpoint('large') {
-    width: 800px%;
+    width: 800px;
   }
 }
