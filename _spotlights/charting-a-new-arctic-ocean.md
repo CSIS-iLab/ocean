@@ -3,10 +3,13 @@ title: Charting a New Arctic Ocean
 date: 2018-11-13 15:56:34 +0000
 prefix: arctic
 js_files:
+  - https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js
   - arctic
 css_files:
   - arctic
+include_header: arctic/intro.html
 excerpt:
   'Welcome to new and largely uncharted maritime space: the Arctic Ocean. Only
   2 percent of its waters are charted to international standards. Its rapid emergence
@@ -45,8 +48,9 @@ contributors:
 published: true
 ---
 
-<div id="spotlight__intro"></div>
-Welcome to new and largely uncharted maritime space: the Arctic Ocean. Only 2 percent of its waters are charted to international standards, but what is truly unchartered is its rapid transformation. The Arctic is warming at twice the rate of the rest of the planet and has been warmer over the past five years than at any time since records began in 1900.[^1] A warming Arctic is now home to a substantially diminished Greenland ice sheet and polar ice cap, ocean acidification, algae blooms, and dramatic changes to sensitive Arctic ecosystems crucial to sustaining sea life.
+<div id="spotlight__intro-p">Welcome to new and largely uncharted maritime space: the Arctic Ocean. Only 2 percent of its waters are charted to international standards, but what is truly unchartered is its rapid transformation.</div>
+
+The Arctic is warming at twice the rate of the rest of the planet and has been warmer over the past five years than at any time since records began in 1900.[^1] A warming Arctic is now home to a substantially diminished Greenland ice sheet and polar ice cap, ocean acidification, algae blooms, and dramatic changes to sensitive Arctic ecosystems crucial to sustaining sea life.
 
 {% include_relative arctic/map-scrollytelling.html %}
 
