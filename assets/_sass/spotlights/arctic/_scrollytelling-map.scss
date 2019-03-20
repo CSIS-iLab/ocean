@@ -6,6 +6,20 @@
   min-height: calc(100vh - 4rem);
   margin: 2rem -50vw;
 
+  &::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 150px;
+    margin-top: 5rem;
+    background: linear-gradient(
+      180deg,
+      rgba(100, 120, 153, 0),
+      rgba(100, 120, 153, 0.8) 50%,
+      rgba(100, 120, 153, 1)
+    );
+  }
+
   &-bg {
     position: absolute;
     width: 100%;
