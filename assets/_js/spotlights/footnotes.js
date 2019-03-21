@@ -9,7 +9,7 @@ const Footnotes = () => {
   footnotes.parentNode.insertBefore(readMore, footnotes.nextSibling)
 
   const hiddenFootnotes = document.querySelectorAll(
-    '.footnotes ol li:nth-child(5) ~ li'
+    '.footnotes ol li:nth-child(3) ~ li'
   )
 
   const toggle = ariaExpanded => {
