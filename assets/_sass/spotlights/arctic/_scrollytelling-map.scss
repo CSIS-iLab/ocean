@@ -179,10 +179,22 @@
     }
 
     &:not(:disabled) {
+      /* stylelint-enable */
+      padding-right: 1.5rem;
+      color: $color__black;
       font-weight: 400;
+      background-image: linear-gradient(
+        45deg,
+        transparent 50%,
+        $color__white 50%
+      ),
+        linear-gradient(135deg, $color__white 50%, transparent 50%);
+      background-repeat: no-repeat;
+      background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%;
+      background-size: 5px 5px, 5px 5px;
       /* stylelint-disable */
-      -webkit-appearance: menulist-button;
-      -moz-appearance: menulist-button;
+      -webkit-appearance: none;
+      -moz-appearance: none;
     }
   }
 
@@ -205,16 +217,16 @@
     margin-bottom: 0 !important;
 
     &.arctic__legend-key--median {
-      grid-column: span 2;
       display: none;
+      grid-column: span 2;
 
       &::before {
-        content: '';
         display: inline-block;
         width: 2rem;
         height: 3px;
         margin-right: 1rem;
         background-color: $color__map-median;
+        content: '';
       }
     }
 
@@ -254,12 +266,12 @@
   }
 
   input[type='checkbox'] + label::before {
-    content: '';
-    align-self: stretch;
     display: inline-block;
+    align-self: stretch;
     width: 2rem;
     margin-right: 0.5rem;
     transition: 0.2s;
+    content: '';
   }
 
   @each $year, $color in $color__map-ice {
