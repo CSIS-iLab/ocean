@@ -222,7 +222,6 @@
       }
     }
 
-    $hidden-years: (2015, 2016, 2017);
     @each $year in $hidden-years {
       &.ice--#{$year} {
         display: none;
