@@ -36,10 +36,6 @@ related_spotlight:
 related_commentary:
   - _posts/2018-12-10-making-the-oceans-more-secure.md
 contributors:
-  - label: illustration
-    content:
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequat.
   - label: development and design
     content:
       This Spotlight is a product of the Andreas C. Dracopoulos iDeas Lab, the

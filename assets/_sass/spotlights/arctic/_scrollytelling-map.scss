@@ -179,10 +179,14 @@
     }
 
     &:not(:disabled) {
-      font-weight: 400;
       /* stylelint-disable */
       -webkit-appearance: menulist-button;
       -moz-appearance: menulist-button;
+      /* stylelint-enable */
+
+      option {
+        color: $color__black;
+      }
     }
   }
 
@@ -205,20 +209,19 @@
     margin-bottom: 0 !important;
 
     &.arctic__legend-key--median {
-      grid-column: span 2;
       display: none;
+      grid-column: span 2;
 
       &::before {
-        content: '';
         display: inline-block;
         width: 2rem;
         height: 3px;
         margin-right: 1rem;
         background-color: $color__map-median;
+        content: '';
       }
     }
 
-    $hidden-years: (2015, 2016, 2017);
     @each $year in $hidden-years {
       &.ice--#{$year} {
         display: none;
@@ -231,6 +234,14 @@
   }
 }
 
+#{$spotlight}__map-source {
+  position: relative;
+  top: -64px;
+  padding: 1rem 1rem 0;
+  @extend %post-content__caption-desc--sm;
+  color: $color__white;
+  line-height: 1.33;
+}
 // Checkbox
 .checkbox-container {
   position: relative;
@@ -246,12 +257,12 @@
   }
 
   input[type='checkbox'] + label::before {
-    content: '';
-    align-self: stretch;
     display: inline-block;
+    align-self: stretch;
     width: 2rem;
     margin-right: 0.5rem;
     transition: 0.2s;
+    content: '';
   }
 
   @each $year, $color in $color__map-ice {
