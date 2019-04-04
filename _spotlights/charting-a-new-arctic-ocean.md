@@ -94,8 +94,8 @@ Some of the Council’s most effective bodies are its working groups. The Protec
 {% include sc-single-image.html
 url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/SOS_Arctic_static_MPA.jpg"
 mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068346/ocean/SOS_Arctic_static_MPA-mobile.jpg"
-caption="Marine Protected Areas in the Arctic"
-credit="CSIS"
+caption="Marine Protected Areas in the Arctic as defined by the Arctic Council’s working group for the Protection of the Marine Environment"
+credit="Based on PAME's 2017 Indicator Report"
 width="medium"
 %}
 
@@ -109,12 +109,11 @@ Seas and the Northern Bering Sea Research Area, just south of the Arctic Circle 
 ## Charting the Future of Arctic Biodiversity
 
 {% include sc-single-image.html
-url="https://res.cloudinary.com/csisideaslab/image/upload/v1552932101/ocean/gettyimages-929759672-594x594.jpg"
-mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552932101/ocean/gettyimages-929759672-594x594.jpg"
-caption="Workers hang arctic cods heads on wood high tables in Tangstad on the Norwegian northern Lofoten islands, within Arctic Circle."
-credit="OLIVIER MORIN/AFP/Getty Images"
+url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068290/ocean/SOS_Arctic_static_Territories.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068321/ocean/SOS_Arctic_static_Territories-mobile.jpg"
+caption="Exclusive Economic Zones and the Areas Beyond National Jurisdiction in the Arctic. Note: EEZs are approximate."
+credit="Based on EEZ boundaries from the Arctic Portal"
 width="medium"
-align="right"
 %}
 
 Arctic and non-Arctic states are beginning to creatively charter new norms and regulations for managing Arctic biodiversity, namely valuable fishing stocks. The most notable example is the 2017 Agreement to Prevent Unregulated High Seas Fisheries in the Central Arctic Ocean. The five Arctic coastal states, led by the United States and Russia, negotiated the outlines of the precautionary fisheries agreement in 2015 before inviting four states—China (the largest fishing nation), Japan, South Korea, Iceland, along with the European Union—that have significant fishing interest in the region, to join the negotiating framework.
@@ -122,14 +121,6 @@ Arctic and non-Arctic states are beginning to creatively charter new norms and r
 Despite there being no known fishing stocks in this area, the agreement creates a Joint Program of Scientific Research and Monitoring, which seeks to develop a greater scientific understanding of the Arctic marine ecosystem in the Central Arctic Ocean. Also known as the “5+5 fisheries agreement,” it places a moratorium on fishing in the Central Arctic Ocean, 40 percent of which is currently open water.[^5] The moratorium would last for 16 years while scientific research is conducted to better understand whether future fish stocks could be harvested on a sustainable basis. The agreement protects 2.8 million square kilometers of international waters in the Arctic.
 
 Another important new area is scientifically-based marine conservation provisions for Areas Beyond National Jurisdiction (ABNJ). [ABNJ](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} refers to “the high seas” or those areas of the ocean where no one nation has sole responsibility for management. ABNJs do not fall under any one nation’s jurisdiction.
-
-{% include sc-single-image.html
-url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068290/ocean/SOS_Arctic_static_Territories.jpg"
-mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068321/ocean/SOS_Arctic_static_Territories-mobile.jpg"
-caption="Exclusive Economic Zones and the Areas Beyond National Jurisdiction in the Arctic. Note: EEZs are approximate."
-credit="CSIS"
-width="medium"
-%}
 
 ABNJ make up approximately [40 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the planet, comprising [64 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the oceans and nearly [95 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of its volume. These waters represent the largest and most diverse cache of biodiversity on earth. These vital living resources are collectively referred to as Biodiversity Beyond National Jurisdiction (BBNJ).
 
