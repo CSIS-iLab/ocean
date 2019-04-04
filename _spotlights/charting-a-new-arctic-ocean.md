@@ -35,6 +35,23 @@ related_spotlight:
   - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
 related_commentary:
   - _posts/2018-12-10-making-the-oceans-more-secure.md
+image_groups:
+  marine:
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/SOS_Arctic_static_MPA.jpg
+    caption: Marine Protected Areas in the Arctic as defined by the Arctic Council’s working group for the Protection of the Marine Environment
+    credit: "Based on PAME's 2017 Indicator Report"
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/FJ3_4073.jpg
+    caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    credit: "National Geographic"
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/FJ3_1460.jpg
+    caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    credit: "National Geographic"
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/FJ2_0232LO.jpg
+    caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    credit: "National Geographic"
+  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/FJ1_6097.jpg
+    caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    credit: "National Geographic"
 contributors:
   - label: development and design
     content:
@@ -100,13 +117,11 @@ At the regional level, the Arctic Council was formed in 1996 as an intergovernme
 
 Some of the Council’s most effective bodies are its working groups. The Protection of the Arctic Marine Environment (PAME) Working Group has produced ground-breaking assessments such as the Arctic Marine Shipping Assessment (AMSA), which led to the creation of the Polar Code. The working group also proposed, in 2015, a framework to preserve Arctic waters through a network of marine protected areas (MPAs) across the circumpolar Arctic.
 
-{% include sc-single-image.html
-url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/SOS_Arctic_static_MPA.jpg"
-mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068346/ocean/SOS_Arctic_static_MPA-mobile.jpg"
-caption="Marine Protected Areas in the Arctic as defined by the Arctic Council’s working group for the Protection of the Marine Environment"
-credit="Based on PAME's 2017 Indicator Report"
-width="medium"
-%}
+{% include sc-image-gallery.html
+  images=page.image_groups.marine
+  height="500px"
+  mobile_height="20vh"
+  %}
 
 The rapid loss of sea ice and changes in ocean chemistry increasingly threatens sensitive ecosystems and Arctic biodiversity. Since Arctic life does not recognize international borders, an international network of MPAs across the Arctic would protect marine biodiversity, preserve cultural heritage and subsistence resources, and strengthen marine ecosystem resilience that ultimately underpins human well-being.[^4]
 
