@@ -52,6 +52,15 @@ The Arctic is warming at twice the rate of the rest of the planet and has been w
 
 ## Governing an Unchartered Ocean
 
+{% include sc-single-image.html
+url="hhttps://res.cloudinary.com/csisideaslab/image/upload/v1552934533/ocean/noaa_unmanned_aircraft_recovery.jpg"
+mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552934533/ocean/noaa_unmanned_aircraft_recovery.jpg"
+caption="The Puma operator aboard the U.S. Coast Guard zodiak recovers the small unmanned aircraft after demonstrating its capabilities for detecting oil from the air during Arctic Shield 2013."
+credit="NOAA"
+width="medium"
+align="right"
+%}
+
 How do nations effectively govern this rapidly changing ocean? Since 1982, the United Nations Convention on the Law of the Sea (UNCLOS) has governed the international maritime environment. UNCLOS created obligations for safeguarding the marine environment, established norms for activity on the high seas, and founded a legal regime for regulating mineral resource exploitation in deep seabed areas beyond national jurisdiction.
 
 UNCLOS outlined norms for both {% include sc-tooltip.html title="territorial waters" description="Territorial waters is a maritime zone extending a single state’s sovereign territory up to 12 nautical miles (22km) off their coast. The state has full jurisdiction over nearly all (including foreign) activities on the water, as well as the seabed, subsoil, and airspace." %} and {% include sc-tooltip.html title="exclusive economic zones" description="An Exclusive Economic Zone (EEZ) is adjacent to a state’s territorial waters and extends up to 200 nautical miles (370 kilometers) off a country’s coast. The state has exclusive rights for exploration and exploitation of marine resources in this zone and exercises jurisdiction over marine research and conservation. Foreign vessels (and aircraft) can operate freely through this zone as long as they do not infringe upon the coastal state’s economic rights." %} (EEZs) and included provisions to extend a nation’s outer continental shelf. UNCLOS even provided special regulations for human activities in ice-covered waters (Article 234). One hundred sixty-eight parties have ratified the treaty but notably missing from the list is the United States, which views UNCLOS as customary international law.
