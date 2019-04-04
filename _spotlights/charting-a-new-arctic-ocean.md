@@ -127,6 +127,8 @@ The rapid loss of sea ice and changes in ocean chemistry increasingly threatens 
 
 {% include sc-blockquote.html content="Arctic life does not recognize international borders" sizing="medium" %}
 
+{% include sc-statistic.html align='left' number='11.4%' pre='An estimated' post='of the Arctic is currently under protected status.' %}
+
 Unfortunately, countries have only embraced national MPAs rather than an integrated approach. An estimated [11.4 percent of the Arctic](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, or about 3.7 million square kilometers, is currently under protected status. Within U.S. waters, federally protected waters include the Arctic Management Area encompassing the Chukchi and Beaufort
 Seas and the Northern Bering Sea Research Area, just south of the Arctic Circle and the Bering Strait.
 
@@ -148,10 +150,12 @@ Another important new area is scientifically-based marine conservation provision
 
 ABNJ make up approximately [40 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the planet, comprising [64 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the oceans and nearly [95 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of its volume. These waters represent the largest and most diverse cache of biodiversity on earth. These vital living resources are collectively referred to as Biodiversity Beyond National Jurisdiction (BBNJ).
 
-{% include sc-statistic.html align='right' number='40%' pre="The ‘high seas’ make up approximately" post='of the surface of the planet
+{% include sc-statistic.html align='right' number='40%' pre="The ‘high seas’ make up approximately" post='of the surface of the planet.
 ' %}
 
 The high seas of the Central Arctic Ocean might prove to be the most contentious region in the current BBNJ debate. Its marine area totals some 14 million square kilometers, of which 2.8 million square kilometers are the high seas. It is also home to some of the most unique and fragile ecosystems on earth. Around 21,000 species inhabit the Arctic Ocean, including 5,000 animal species such as marine mammals, birds, fish, and other higher organisms; 2,000 types of algae; and tens of thousands of ecologically critical microbes.[^6]
+
+{% include sc-statistic.html align='left' number='21,000' pre='Around' post='species inhabit the Arctic Ocean, including 5,000 animal species.' %}
 
 In July 2017, the United Nations agreed that negotiations for an international legally binding instrument on BBNJ (under UNCLOS) should move forward.[^7] The first session to discuss this instrument occurred in September 2018 where positions were put forward and elements of a working draft were discussed.
 
