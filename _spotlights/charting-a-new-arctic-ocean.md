@@ -112,7 +112,7 @@ At the regional level, the Arctic Council was formed in 1996 as an intergovernme
   </li>
 </ul>
 
-Some of the Council’s most effective bodies are its working groups. The Protection of the Arctic Marine Environment (PAME) Working Group has produced ground-breaking assessments such as the Arctic Marine Shipping Assessment (AMSA), which led to the creation of the Polar Code. The working group also proposed, in 2015, a framework to preserve Arctic waters through a network of marine protected areas (MPAs)[^8] across the circumpolar Arctic.
+Some of the Council’s most effective bodies are its working groups. The Protection of the Arctic Marine Environment (PAME) Working Group has produced ground-breaking assessments such as the Arctic Marine Shipping Assessment (AMSA), which led to the creation of the Polar Code. The working group also proposed, in 2015, a framework to preserve Arctic waters through a network of marine protected areas (MPAs) across the circumpolar Arctic.
 
 {% include sc-image-gallery.html
   images=page.image_groups.marine
@@ -124,10 +124,12 @@ The rapid loss of sea ice and changes in ocean chemistry increasingly threatens 
 
 {% include sc-blockquote.html content="Arctic life does not recognize international borders" sizing="medium" %}
 
-{% include sc-statistic.html align='left' number='11.4%' pre='An estimated' post='of the Arctic is currently under some form of protected status.' %}
+{% include sc-statistic.html align='right' number='11.4%' pre='An estimated' post='of the Arctic is currently under some form of protected status.' %}
 
 Unfortunately, countries have only embraced national MPAs rather than an integrated approach. An estimated [11.4 percent of the Arctic](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, or about 3.7 million square kilometers, is currently under some form of protected status. Within U.S. waters, federally protected waters include the Arctic Management Area encompassing the Chukchi and Beaufort
 Seas and the Northern Bering Sea Research Area, just south of the Arctic Circle and the Bering Strait.
+
+PAME has defined Arctic MPAs using the IUCNs general definition of an MPA as “A clearly defined geographical space recognized, dedicated, and managed, through legal or other effective means, to achieve the long-term conservation of nature with associated ecosystem services and cultural values”. This definition has been [criticized for being overly broad](https://www.sciencedirect.com/science/article/pii/S0308597X17307686){:target="_blank"}{:rel="noopener"} as it allows for the inclusion of special management and use areas for fisheries or other resources and should not be construed to represent only areas that are fully protected. This is the case for most of the U.S. waters included in the PAME estimates which represent an array of zones with varying restrictions on fishing, navigation, or other resource use but typically do not restrict all commercial use. A range of management approaches, including both fully conserved areas and special management zones, are necessary to support sustainable use and development. However, [only fully protected areas](https://www.pewtrusts.org/-/media/assets/2018/02/recommendations-to-iucn-on-implementing-mpa-categories-for-printing.pdf){:target="_blank"}{:rel="noopener"} effectively conserve biodiversity and provide the most direct benefits to ecosystem resilience in the face of climate change
 
 ## Charting the Future of Arctic Biodiversity
 
@@ -186,5 +188,3 @@ width="large"
 
 <!-- prettier-ignore -->
 [^7]: “Countries agree to recommend elements for new treaty on marine biodiversity of areas beyond national jurisdiction,” United Nations, July 24, 2017, [https://www.un.org/sustainabledevelopment/blog/2017/07/countries-agree-to-recommend-elements-for-new-treaty-on-marine-biodiversity-of-areas-beyond-national-jurisdiction/](https://www.un.org/sustainabledevelopment/blog/2017/07/countries-agree-to-recommend-elements-for-new-treaty-on-marine-biodiversity-of-areas-beyond-national-jurisdiction/){:target="\_blank"}{:rel="noopener"}.
-
-[^8]: PAME has defined Arctic MPAs using the IUCNs general definition of an MPA as “A clearly defined geographical space recognized, dedicated, and managed, through legal or other effective means, to achieve the long-term conservation of nature with associated ecosystem services and cultural values”. This definition has been [criticized for being overly broad](https://www.sciencedirect.com/science/article/pii/S0308597X17307686){:target="_blank"}{:rel="noopener"} as it allows for the inclusion of special management and use areas for fisheries or other resources and should not be construed to represent only areas that are fully protected. This is the case for most of the U.S. waters included in the PAME estimates which represent an array of zones with varying restrictions on fishing, navigation, or other resource use but typically do not restrict all commercial use. A range of management approaches, including both fully conserved areas and special management zones, are necessary to support sustainable use and development. However, [only fully protected areas](https://www.pewtrusts.org/-/media/assets/2018/02/recommendations-to-iucn-on-implementing-mpa-categories-for-printing.pdf){:target="_blank"}{:rel="noopener"} effectively conserve biodiversity and provide the most direct benefits to ecosystem resilience in the face of climate change
