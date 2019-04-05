@@ -124,9 +124,9 @@ The rapid loss of sea ice and changes in ocean chemistry increasingly threatens 
 
 {% include sc-blockquote.html content="Arctic life does not recognize international borders" sizing="medium" %}
 
-{% include sc-statistic.html align='left' number='11.4%' pre='An estimated' post='of the Arctic is currently under protected status.' %}
+{% include sc-statistic.html align='left' number='11.4%' pre='An estimated' post='of the Arctic is currently under some form of protected status.' %}
 
-Unfortunately, countries have only embraced national MPAs rather than an integrated approach. An estimated [11.4 percent of the Arctic](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, or about 3.7 million square kilometers, is currently under protected status. Within U.S. waters, federally protected waters include the Arctic Management Area encompassing the Chukchi and Beaufort
+Unfortunately, countries have only embraced national MPAs rather than an integrated approach. An estimated [11.4 percent of the Arctic](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, or about 3.7 million square kilometers, is currently under some form of protected status. Within U.S. waters, federally protected waters include the Arctic Management Area encompassing the Chukchi and Beaufort
 Seas and the Northern Bering Sea Research Area, just south of the Arctic Circle and the Bering Strait.
 
 ## Charting the Future of Arctic Biodiversity
