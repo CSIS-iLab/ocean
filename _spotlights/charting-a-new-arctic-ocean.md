@@ -40,9 +40,6 @@ image_groups:
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/SOS_Arctic_static_MPA.jpg
     caption: Marine Protected Areas in the Arctic as defined by the Arctic Council’s working group for the Protection of the Marine Environment
     credit: "Based on PAME's 2017 Indicator Report"
-  - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/FJ3_4073.jpg
-    caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    credit: "National Geographic"
   - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/FJ3_1460.jpg
     caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     credit: "National Geographic"
@@ -115,7 +112,7 @@ At the regional level, the Arctic Council was formed in 1996 as an intergovernme
   </li>
 </ul>
 
-Some of the Council’s most effective bodies are its working groups. The Protection of the Arctic Marine Environment (PAME) Working Group has produced ground-breaking assessments such as the Arctic Marine Shipping Assessment (AMSA), which led to the creation of the Polar Code. The working group also proposed, in 2015, a framework to preserve Arctic waters through a network of marine protected areas (MPAs) across the circumpolar Arctic.
+Some of the Council’s most effective bodies are its working groups. The Protection of the Arctic Marine Environment (PAME) Working Group has produced ground-breaking assessments such as the Arctic Marine Shipping Assessment (AMSA), which led to the creation of the Polar Code. The working group also proposed, in 2015, a framework to preserve Arctic waters through a network of marine protected areas (MPAs)[^8] across the circumpolar Arctic.
 
 {% include sc-image-gallery.html
   images=page.image_groups.marine
@@ -134,6 +131,8 @@ Seas and the Northern Bering Sea Research Area, just south of the Arctic Circle 
 
 ## Charting the Future of Arctic Biodiversity
 
+Arctic and non-Arctic states are beginning to creatively charter new norms and regulations for managing Arctic biodiversity, namely valuable fishing stocks. The most notable example is the 2017 Agreement to Prevent Unregulated High Seas Fisheries in the Central Arctic Ocean. The five Arctic coastal states, led by the United States and Russia, negotiated the outlines of the precautionary fisheries agreement in 2015 before inviting four states—China (the largest fishing nation), Japan, South Korea, Iceland, along with the European Union—that have significant fishing interest in the region, to join the negotiating framework.
+
 {% include sc-single-image.html
 url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068290/ocean/SOS_Arctic_static_Territories.jpg"
 mobile_url="https://res.cloudinary.com/csisideaslab/image/upload/v1552068321/ocean/SOS_Arctic_static_Territories-mobile.jpg"
@@ -141,8 +140,6 @@ caption="Exclusive Economic Zones and the Areas Beyond National Jurisdiction in 
 credit="Based on EEZ boundaries from the Arctic Portal"
 width="medium"
 %}
-
-Arctic and non-Arctic states are beginning to creatively charter new norms and regulations for managing Arctic biodiversity, namely valuable fishing stocks. The most notable example is the 2017 Agreement to Prevent Unregulated High Seas Fisheries in the Central Arctic Ocean. The five Arctic coastal states, led by the United States and Russia, negotiated the outlines of the precautionary fisheries agreement in 2015 before inviting four states—China (the largest fishing nation), Japan, South Korea, Iceland, along with the European Union—that have significant fishing interest in the region, to join the negotiating framework.
 
 Despite there being no known fishing stocks in this area, the agreement creates a Joint Program of Scientific Research and Monitoring, which seeks to develop a greater scientific understanding of the Arctic marine ecosystem in the Central Arctic Ocean. Also known as the “5+5 fisheries agreement,” it places a moratorium on fishing in the Central Arctic Ocean, 40 percent of which is currently open water.[^5] The moratorium would last for 16 years while scientific research is conducted to better understand whether future fish stocks could be harvested on a sustainable basis. The agreement protects 2.8 million square kilometers of international waters in the Arctic.
 
@@ -189,3 +186,5 @@ width="large"
 
 <!-- prettier-ignore -->
 [^7]: “Countries agree to recommend elements for new treaty on marine biodiversity of areas beyond national jurisdiction,” United Nations, July 24, 2017, [https://www.un.org/sustainabledevelopment/blog/2017/07/countries-agree-to-recommend-elements-for-new-treaty-on-marine-biodiversity-of-areas-beyond-national-jurisdiction/](https://www.un.org/sustainabledevelopment/blog/2017/07/countries-agree-to-recommend-elements-for-new-treaty-on-marine-biodiversity-of-areas-beyond-national-jurisdiction/){:target="\_blank"}{:rel="noopener"}.
+
+[^8]: PAME has defined Arctic MPAs using the IUCNs general definition of an MPA as “A clearly defined geographical space recognized, dedicated, and managed, through legal or other effective means, to achieve the long-term conservation of nature with associated ecosystem services and cultural values”. This definition has been [criticized for being overly broad](https://www.sciencedirect.com/science/article/pii/S0308597X17307686){:target="_blank"}{:rel="noopener"} as it allows for the inclusion of special management and use areas for fisheries or other resources and should not be construed to represent only areas that are fully protected. This is the case for most of the U.S. waters included in the PAME estimates which represent an array of zones with varying restrictions on fishing, navigation, or other resource use but typically do not restrict all commercial use. A range of management approaches, including both fully conserved areas and special management zones, are necessary to support sustainable use and development. However, [only fully protected areas](https://www.pewtrusts.org/-/media/assets/2018/02/recommendations-to-iucn-on-implementing-mpa-categories-for-printing.pdf){:target="_blank"}{:rel="noopener"} effectively conserve biodiversity and provide the most direct benefits to ecosystem resilience in the face of climate change
