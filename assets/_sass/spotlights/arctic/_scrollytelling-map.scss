@@ -4,10 +4,10 @@
   left: 50%;
   width: 100vw;
   min-height: calc(100vh - 4rem);
-  margin: 2rem -50vw;
+  margin: 6rem -50vw 2rem;
 
   &::before {
-    content: '';
+    //content: '';
     display: block;
     width: 100vw;
     height: 150px;
@@ -25,6 +25,10 @@
     width: 100%;
     height: 100%;
     background-color: $color__map-bg;
+
+    @include breakpoint('large') {
+      background-color: #fff;
+    }
   }
 
   &-map {
@@ -42,11 +46,16 @@
     @include breakpoint('medium') {
       $header-height: map-get($size__header-height--minimal, 'large');
       z-index: 1;
+      min-height: calc(100vh - #{$header-height});
+    }
+    @include breakpoint('large') {
+      $header-height: map-get($size__header-height--minimal, 'large');
+      z-index: 1;
       height: calc(100vh - #{$header-height});
     }
 
     &::after {
-      content: '';
+      //content: '';
       position: relative;
       top: -64px;
       left: -200px;
@@ -77,11 +86,23 @@
       max-width: 700px;
       padding: 1px 0;
     }
+    @include breakpoint('large') {
+      margin: 0 0 0 auto;
+      padding: 1px 2rem;
+      background-color: #fff;
+    }
+    @include breakpoint('xlarge') {
+      width: 40%;
+    }
 
     h3,
     p {
       color: $color__white;
       text-shadow: 1px 1px 6px rgba($color__black, 0.6);
+      @include breakpoint('large') {
+        color: $color__black;
+        text-shadow: none;
+      }
     }
   }
 
@@ -96,6 +117,9 @@
       margin-top: calc(50vh - #{$header-height});
       margin-bottom: 75vh;
       padding: 1rem;
+    }
+    @include breakpoint('large') {
+      background-color: unset;
     }
   }
 
