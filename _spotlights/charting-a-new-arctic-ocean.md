@@ -28,9 +28,9 @@ further_reading: |-
   * [An Arctic Redesign: Recommendations to Rejuvenate the Arctic Council](https://www.csis.org/analysis/arctic-redesign){:target="_blank"}{:rel="noopener"}
   * [The New Ice Curtain: Russia’s Strategic Reach to the Arctic](https://csis-prod.s3.amazonaws.com/s3fs-public/legacy_files/files/publication/150826_Conley_NewIceCurtain_Web.pdf){:target="_blank"}{:rel="noopener"}
 is_featured: true
-image: https://res.cloudinary.com/csisideaslab/image/upload/v1544801874/ocean/mathieu-perrier-722789-unsplash.jpg
-image_caption: image caption
-image_source: image source
+image: https://res.cloudinary.com/csisideaslab/image/upload/v1552934533/ocean/noaa_unmanned_aircraft_recovery.jpg
+image_caption: The Puma operator aboard the U.S. Coast Guard zodiak recovers the small unmanned aircraft after demonstrating its capabilities for detecting oil from the air during Arctic Shield 2013.
+image_source: NOAA
 related_spotlight:
   - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
 related_commentary:
