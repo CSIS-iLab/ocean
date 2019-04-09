@@ -6,20 +6,6 @@
   min-height: calc(100vh - 4rem);
   margin: 6rem -50vw 2rem;
 
-  &::before {
-    //content: '';
-    display: block;
-    width: 100vw;
-    height: 150px;
-    margin-top: 5rem;
-    background: linear-gradient(
-      180deg,
-      rgba(100, 120, 153, 0),
-      rgba(100, 120, 153, 0.8) 50%,
-      rgba(100, 120, 153, 1)
-    );
-  }
-
   &-bg {
     position: absolute;
     width: 100%;
@@ -27,7 +13,7 @@
     background-color: $color__map-bg;
 
     @include breakpoint('large') {
-      background-color: #fff;
+      background-color: $color__white;
     }
   }
 
@@ -48,29 +34,6 @@
       z-index: 1;
       min-height: calc(100vh - #{$header-height});
     }
-    @include breakpoint('large') {
-      $header-height: map-get($size__header-height--minimal, 'large');
-      z-index: 1;
-      height: calc(100vh - #{$header-height});
-    }
-
-    &::after {
-      //content: '';
-      position: relative;
-      top: -64px;
-      left: -200px;
-      z-index: 5;
-      display: block;
-      float: left;
-      width: 200px;
-      height: 100%;
-      background: linear-gradient(
-        to right,
-        rgba(100, 120, 153, 0) 0%,
-        rgba(100, 120, 153, 0.5) 50%,
-        rgba(100, 120, 153, 1) 100%
-      );
-    }
   }
 
   &-prose {
@@ -89,7 +52,7 @@
     @include breakpoint('large') {
       margin: 0 0 0 auto;
       padding: 1px 2rem;
-      background-color: #fff;
+      background-color: $color__white;
     }
     @include breakpoint('xlarge') {
       width: 40%;
