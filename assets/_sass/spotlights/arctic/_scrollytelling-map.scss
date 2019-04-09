@@ -224,11 +224,22 @@
 
 #{$spotlight}__map-source {
   position: relative;
-  top: -64px;
-  padding: 1rem 1rem 0;
+  top: -1.5rem;
+  padding: 0.5rem 1rem;
   @extend %post-content__caption-desc--sm;
   color: $color__white;
   line-height: 1.33;
+  background-color: $color__map-bg;
+
+  @include breakpoint('medium') {
+    top: 0;
+    padding: 1rem 1rem 0;
+    background-color: transparent;
+  }
+
+  @include breakpoint('large') {
+    top: -1.5rem;
+  }
 }
 // Checkbox
 .checkbox-container {
