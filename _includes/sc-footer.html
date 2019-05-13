@@ -35,7 +35,7 @@
 
       {%- for contributor in page.contributors -%}
         <div class="spotlight__footer-subheading">{{ contributor.label }}</div>
-        <div class="spotlight__footer-text contributors-text">
+        <div class="spotlight__footer-text">
           {{ contributor.content | markdownify }}
         </div>
       {%- endfor -%}
