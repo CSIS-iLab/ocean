@@ -39,7 +39,7 @@ related_commentary:
 image_groups:
   marine:
     - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/SOS_Arctic_static_MPA.jpg
-      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds, untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
+      caption: Marine Protected Areas in the Arctic as defined by the Arctic Council’s working group for the Protection of the Marine Environment
       credit: Based on PAME's 2017 Indicator Report
     - url: https://res.cloudinary.com/csisideaslab/image/upload/v1554398849/ocean/Arctic_diverse_underwater_ecosystem.jpg
       caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds, untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
@@ -140,7 +140,7 @@ A range of management approaches, including both fully conserved areas and speci
 
 Despite a lack of progress on supporting a trans-national MPA framework, Arctic and select non-Arctic states have taken some important first steps towards regional action to creatively charter new norms and regulations for managing Arctic biodiversity. Among the most important and recent of these steps is the 2017 Agreement to Prevent Unregulated High Seas Fisheries in the Central Arctic Ocean. The five Arctic coastal states, led by the United States and Russia, negotiated the outlines of the precautionary fisheries agreement in 2015 before inviting four states—China (the largest fishing nation), Japan, South Korea, Iceland, along with the European Union—that have significant fishing interest in the region, to join the negotiating framework.
 
-Despite there being no known fishing stocks in this area, the agreement creates a Joint Program of Scientific Research and Monitoring, which seeks to develop a greater scientific understanding of the Arctic marine ecosystem in the Central Arctic Ocean. Also known as the “5+5 fisheries agreement,” it places a moratorium on fishing in the Central Arctic Ocean, 40 percent of which is currently open water.[^5] The moratorium would last for 16 years while scientific research is conducted to better understand whether future fish stocks could be harvested on a sustainable basis. The agreement protects 2.8 million square kilometers of international waters in the Arctic. It will be crucial for signatory states, including the U.S. to support the framework and its scientific mission as both a management tool and to foster the future multi-lateral approaches to resource management.
+Despite there being no known fishing stocks in this area, the agreement creates a Joint Program of Scientific Research and Monitoring, which seeks to develop a greater scientific understanding of the Arctic marine ecosystem in the Central Arctic Ocean. Also known as the “5+5 fisheries agreement,” it places a moratorium on fishing in the Central Arctic Ocean, 40 percent of which is currently open water.[^5] The moratorium would last for 16 years while scientific research is conducted to better understand whether future fish stocks could be harvested on a sustainable basis. The agreement protects 2.8 million square kilometers of international waters in the Arctic. It will be crucial for signatory states, including the U.S., to support the framework and its scientific mission as both a management tool and to foster the future multi-lateral approaches to resource management.
 
 {% include sc-statistic.html align='right' number='40%' pre="The ‘high seas’ make up approximately" post='of the surface of the planet.
 ' %}
@@ -161,9 +161,7 @@ credit="Based on EEZ boundaries from the Arctic Portal"
 width="medium"
 %}
 
-In July 2017, the United Nations agreed that negotiations for an international legally binding instrument on BBNJ (under UNCLOS) should move forward.[^7] Two of four BBNJ negotiating sessions have concluded to date with the goal having a final agreed document by 2020. The world’s commitment to international norms for marine resource management and conservation will be tested by these negotiations and their outcome. If successful, we have the opportunity to chart a hopeful course for a new ocean. 
-
-If the United Nations is successful in its efforts to ensure biodiversity in the high seas area of the Central Arctic Ocean for future generations, it will chart a new course for a new ocean. {% logo %}
+In July 2017, the United Nations agreed that negotiations for an international legally binding instrument on BBNJ (under UNCLOS) should move forward.[^7] Two of four BBNJ negotiating sessions have concluded to date with the goal having a final agreed document by 2020. The world’s commitment to international norms for marine resource management and conservation will be tested by these negotiations and their outcome. If successful, we have the opportunity to chart a hopeful course for a new ocean. {% logo %}
 
 {% include sc-single-image.html
 url="https://res.cloudinary.com/csisideaslab/image/upload/v1552934533/ocean/Coast_Guard_boast_through_arctic_ice.jpg"
