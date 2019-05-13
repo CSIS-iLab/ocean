@@ -1,7 +1,6 @@
 ---
 label: Image Upload
 hide_body: false
-is_partial: true
 fields:
 - type: file
   name: image

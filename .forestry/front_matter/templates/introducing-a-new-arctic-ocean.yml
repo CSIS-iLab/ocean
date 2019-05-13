@@ -1,7 +1,6 @@
 ---
 label: Spotlights
 hide_body: true
-is_partial: false
 fields:
 - type: include
   template: post-meta-primary
@@ -45,5 +44,5 @@ fields:
   config:
     labelField: label
 pages:
-- _spotlights/introducing-a-new-arctic-ocean.md
 - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
+- _spotlights/introducing-a-new-arctic-ocean.md
