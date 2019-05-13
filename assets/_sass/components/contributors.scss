@@ -1,0 +1,27 @@
+/*====================================
+=          Contributors           =
+===================================*/
+
+.contributors-text {
+  a:hover {
+    color: $color__medblue;
+    transition: inherit;
+  }
+
+  a::after {
+    content: '\e821';
+    position: relative;
+    top: -1px;
+    left: 5px;
+    color: $color__medblue;
+    font-family: 'sos';
+    @include font-size(12px);
+    word-break: normal;
+    visibility: visible;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+        color: $color__medblue-darker;
+      }
+  }
+}
