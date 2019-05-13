@@ -18,6 +18,7 @@ excerpt:
 authors:
   - _authors/heather-conley.md
   - _authors/matthew-melino.md
+  - _authors/whitley-saumweber.md
 keywords:
   - Arctic
   - fishing
@@ -39,16 +40,16 @@ image_groups:
   marine:
     - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/SOS_Arctic_static_MPA.jpg
       caption: Marine Protected Areas in the Arctic as defined by the Arctic Council’s working group for the Protection of the Marine Environment
-      credit: "Based on PAME's 2017 Indicator Report"
+      credit: Based on PAME's 2017 Indicator Report
     - url: https://res.cloudinary.com/csisideaslab/image/upload/v1554398849/ocean/Arctic_diverse_underwater_ecosystem.jpg
-      caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      credit: 'National Geographic'
+      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds, untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
+      credit: National Geographic
     - url: https://res.cloudinary.com/csisideaslab/image/upload/v1554398849/ocean/Arctic_polar_bear_on_ice.jpg
-      caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      credit: 'National Geographic'
+      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds, untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
+      credit: National Geographic
     - url: https://res.cloudinary.com/csisideaslab/image/upload/v1554398849/ocean/Arctic_walruses_on_beach.jpg
-      caption: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      credit: 'National Geographic'
+      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds, untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
+      credit: National Geographic
 contributors:
   - label: development and design
     content:
@@ -126,23 +127,27 @@ The rapid loss of sea ice and changes in ocean chemistry increasingly threatens 
 
 {% include sc-statistic.html align='right' number='11.4%' pre='An estimated' post='of the Arctic is currently under some form of protected status.' %}
 
-Unfortunately, countries have only embraced national MPAs rather than an integrated approach. An estimated [11.4 percent of the Arctic](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, or about 3.7 million square kilometers, is currently under some form of protected status. Within U.S. waters, federally protected waters include the Arctic Management Area encompassing the Chukchi and Beaufort
+Unfortunately, countries have only embraced national MPAs rather than an integrated approach. Within U.S. waters, federally protected areas include the Arctic Management Area encompassing the Chukchi and Beaufort
 Seas and the Northern Bering Sea Research Area, just south of the Arctic Circle and the Bering Strait.
 
-PAME has defined Arctic MPAs using the IUCNs general definition of an MPA as “A clearly defined geographical space recognized, dedicated, and managed, through legal or other effective means, to achieve the long-term conservation of nature with associated ecosystem services and cultural values”. This definition has been [criticized for being overly broad](https://www.sciencedirect.com/science/article/pii/S0308597X17307686){:target="\_blank"}{:rel="noopener"} as it allows for the inclusion of special management and use areas for fisheries or other resources and should not be construed to represent only areas that are fully protected. This is the case for most of the U.S. waters included in the PAME estimates which represent an array of zones with varying restrictions on fishing, navigation, or other resource use but typically do not restrict all commercial use. A range of management approaches, including both fully conserved areas and special management zones, are necessary to support sustainable use and development. However, [only fully protected areas](https://www.pewtrusts.org/-/media/assets/2018/02/recommendations-to-iucn-on-implementing-mpa-categories-for-printing.pdf){:target="\_blank"}{:rel="noopener"} effectively conserve biodiversity and provide the most direct benefits to ecosystem resilience in the face of climate change
+An estimated [11.4 percent of the Arctic](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, or about 3.7 million square kilometers, is currently under some form of protected status but the degree of conservation in these areas can vary widely. PAME has defined Arctic MPAs using the IUCNs general definition of an MPA as “A clearly defined geographical space recognized, dedicated, and managed, through legal or other effective means, to achieve the long-term conservation of nature with associated ecosystem services and cultural values”. 
+
+PAME's definition is useful for its support of multiple management approaches but it has also been [criticized for being overly broad](https://www.sciencedirect.com/science/article/pii/S0308597X17307686){:target="\_blank"}{:rel="noopener"}. As a result, PAME’s Arctic MPA estimates includes special management and use areas for fisheries or other resources as well as some that are more fully protected.  Most of the U.S. waters included in the estimates represent an array of zones with varying restrictions on fishing, navigation, or other resource use but typically do not restrict all commercial use.
+
+A range of management approaches, including both fully conserved areas and special management zones, are necessary to support sustainable use and development. However, [only fully protected areas](https://www.pewtrusts.org/-/media/assets/2018/02/recommendations-to-iucn-on-implementing-mpa-categories-for-printing.pdf){:target="\_blank"}{:rel="noopener"}  effectively conserve biodiversity and provide the most direct benefits to ecosystem resilience in the face of climate change.
 
 ## Charting the Future of Arctic Biodiversity
 
-Arctic and non-Arctic states are beginning to creatively charter new norms and regulations for managing Arctic biodiversity, namely valuable fishing stocks. The most notable example is the 2017 Agreement to Prevent Unregulated High Seas Fisheries in the Central Arctic Ocean. The five Arctic coastal states, led by the United States and Russia, negotiated the outlines of the precautionary fisheries agreement in 2015 before inviting four states—China (the largest fishing nation), Japan, South Korea, Iceland, along with the European Union—that have significant fishing interest in the region, to join the negotiating framework.
+Despite a lack of progress on supporting a trans-national MPA framework, Arctic and select non-Arctic states have taken some important first steps towards regional action to creatively charter new norms and regulations for managing Arctic biodiversity. Among the most important and recent of these steps is the 2017 Agreement to Prevent Unregulated High Seas Fisheries in the Central Arctic Ocean. The five Arctic coastal states, led by the United States and Russia, negotiated the outlines of the precautionary fisheries agreement in 2015 before inviting four states—China (the largest fishing nation), Japan, South Korea, Iceland, along with the European Union—that have significant fishing interest in the region, to join the negotiating framework.
 
-Despite there being no known fishing stocks in this area, the agreement creates a Joint Program of Scientific Research and Monitoring, which seeks to develop a greater scientific understanding of the Arctic marine ecosystem in the Central Arctic Ocean. Also known as the “5+5 fisheries agreement,” it places a moratorium on fishing in the Central Arctic Ocean, 40 percent of which is currently open water.[^5] The moratorium would last for 16 years while scientific research is conducted to better understand whether future fish stocks could be harvested on a sustainable basis. The agreement protects 2.8 million square kilometers of international waters in the Arctic.
+Despite there being no known fishing stocks in this area, the agreement creates a Joint Program of Scientific Research and Monitoring, which seeks to develop a greater scientific understanding of the Arctic marine ecosystem in the Central Arctic Ocean. Also known as the “5+5 fisheries agreement,” it places a moratorium on fishing in the Central Arctic Ocean, 40 percent of which is currently open water.[^5] The moratorium would last for 16 years while scientific research is conducted to better understand whether future fish stocks could be harvested on a sustainable basis. The agreement protects 2.8 million square kilometers of international waters in the Arctic. It will be crucial for signatory states, including the U.S., to support the framework and its scientific mission as both a management tool and to foster the future multi-lateral approaches to resource management.
 
 {% include sc-statistic.html align='right' number='40%' pre="The ‘high seas’ make up approximately" post='of the surface of the planet.
 ' %}
 
-Another important new area is scientifically-based marine conservation provisions for Areas Beyond National Jurisdiction (ABNJ). [ABNJ](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} refers to “the high seas” or those areas of the ocean where no one nation has sole responsibility for management. ABNJs do not fall under any one nation’s jurisdiction.
+Such approaches and philosophical commitment will be required for management and conservation of resources Arctic Areas Beyond National Jurisdiction (ABNJ). [ABNJ](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} refers to “the high seas” or those areas of the ocean where no one nation has sole responsibility for management. ABNJs do not fall under any one nation’s jurisdiction and most of the emerging ocean in the melting Arctic falls under this definition.
 
-ABNJ make up approximately [40 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the planet, comprising [64 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the oceans and nearly [95 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of its volume. These waters represent the largest and most diverse cache of biodiversity on earth. These vital living resources are collectively referred to as Biodiversity Beyond National Jurisdiction (BBNJ).
+Globally, ABNJs make up approximately [40 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the planet, comprising [64 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of the surface of the oceans and nearly [95 percent](https://www.thegef.org/topics/areas-beyond-national-jurisdiction){:target="\_blank"}{:rel="noopener"} of its volume. These waters represent the largest and most diverse cache of biodiversity on earth, collectively referred to as Biodiversity Beyond National Jurisdiction (BBNJ).
 
 {% include sc-statistic.html align='right' number='21,000' pre='Around' post='species inhabit the Arctic Ocean, including 5,000 animal species.' %}
 
@@ -156,9 +161,7 @@ credit="Based on EEZ boundaries from the Arctic Portal"
 width="medium"
 %}
 
-In July 2017, the United Nations agreed that negotiations for an international legally binding instrument on BBNJ (under UNCLOS) should move forward.[^7] The first session to discuss this instrument occurred in September 2018 where positions were put forward and elements of a working draft were discussed.
-
-If the United Nations is successful in its efforts to ensure biodiversity in the high seas area of the Central Arctic Ocean for future generations, it will chart a new course for a new ocean. {% logo %}
+In July 2017, the United Nations agreed that negotiations for an international legally binding instrument on BBNJ (under UNCLOS) should move forward.[^7] Two of four BBNJ negotiating sessions have concluded to date with the goal having a final agreed document by 2020. The world’s commitment to international norms for marine resource management and conservation will be tested by these negotiations and their outcome. If successful, we have the opportunity to chart a hopeful course for a new ocean. {% logo %}
 
 {% include sc-single-image.html
 url="https://res.cloudinary.com/csisideaslab/image/upload/v1552934533/ocean/Coast_Guard_boast_through_arctic_ice.jpg"
