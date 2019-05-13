@@ -39,16 +39,16 @@ related_commentary:
 image_groups:
   marine:
     - url: https://res.cloudinary.com/csisideaslab/image/upload/v1552068340/ocean/SOS_Arctic_static_MPA.jpg
-      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds , untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
-      credit: Based on PAME\'s 2017 Indicator Report
+      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds, untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
+      credit: Based on PAME's 2017 Indicator Report
     - url: https://res.cloudinary.com/csisideaslab/image/upload/v1554398849/ocean/Arctic_diverse_underwater_ecosystem.jpg
-      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds , untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
+      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds, untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
       credit: National Geographic
     - url: https://res.cloudinary.com/csisideaslab/image/upload/v1554398849/ocean/Arctic_polar_bear_on_ice.jpg
-      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds , untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
+      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds, untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
       credit: National Geographic
     - url: https://res.cloudinary.com/csisideaslab/image/upload/v1554398849/ocean/Arctic_walruses_on_beach.jpg
-      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds , untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
+      caption: Arctic biodiversity encompasses a vast array of ecosystems and species including marine mammals, seabirds, untouched fish stocks, and pristine benthic habitats – all of which are threatened by the impacts of a changing climate.
       credit: National Geographic
 contributors:
   - label: development and design
