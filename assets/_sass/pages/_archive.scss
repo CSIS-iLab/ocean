@@ -196,7 +196,7 @@
 
       #{$a}--spotlights & {
         @include breakpoint('medium') {
-          bottom: -1.5rem;
+          bottom: -4.5rem;
         }
       }
 
@@ -376,7 +376,7 @@
     }
 
     #{$a}--spotlights & {
-      height: initial;
+      // height: initial;
     }
   }
 }
