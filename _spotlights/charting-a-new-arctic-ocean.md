@@ -1,6 +1,6 @@
 ---
 title: Charting a New Arctic Ocean
-date: 2018-11-13 15:56:34 +0000
+date: 2019-05-15 00:00:00 +0000
 prefix: arctic
 js_files:
   - https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js
@@ -52,8 +52,7 @@ image_groups:
       credit: Enric Sala/National Geographic
 contributors:
   - label: photography
-    content:
-      Select photography provided by Enric Sala/National Geographic, from [National Geographic Pristine Seas](https://www.nationalgeographic.org/projects/pristine-seas/){:target="_blank"}{:rel="noopener"}
+    content: Select photography provided by Enric Sala/National Geographic, from [National Geographic Pristine Seas](https://www.nationalgeographic.org/projects/pristine-seas/){:target="_blank"}{:rel="noopener"}
   - label: development and design
     content:
       This Spotlight is a product of the Andreas C. Dracopoulos iDeas Lab, the
@@ -133,11 +132,11 @@ The rapid loss of sea ice and changes in ocean chemistry increasingly threatens 
 Unfortunately, countries have only embraced national MPAs rather than an integrated approach. Within U.S. waters, federally protected areas include the Arctic Management Area encompassing the Chukchi and Beaufort
 Seas and the Northern Bering Sea Research Area, just south of the Arctic Circle and the Bering Strait.
 
-An estimated [11.4 percent of the Arctic](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, or about 3.7 million square kilometers, is currently under some form of protected status but the degree of conservation in these areas can vary widely. PAME has defined Arctic MPAs using the IUCNs general definition of an MPA as “A clearly defined geographical space recognized, dedicated, and managed, through legal or other effective means, to achieve the long-term conservation of nature with associated ecosystem services and cultural values”. 
+An estimated [11.4 percent of the Arctic](https://www.pame.is/images/03_Projects/MPA/Indicator/Indicator_Report_on_Protected_Areas_.pdf){:target="\_blank"}{:rel="noopener"}, or about 3.7 million square kilometers, is currently under some form of protected status but the degree of conservation in these areas can vary widely. PAME has defined Arctic MPAs using the IUCNs general definition of an MPA as “A clearly defined geographical space recognized, dedicated, and managed, through legal or other effective means, to achieve the long-term conservation of nature with associated ecosystem services and cultural values”.
 
-PAME's definition is useful for its support of multiple management approaches but it has also been [criticized for being overly broad](https://www.sciencedirect.com/science/article/pii/S0308597X17307686){:target="\_blank"}{:rel="noopener"}. As a result, PAME’s Arctic MPA estimates includes special management and use areas for fisheries or other resources as well as some that are more fully protected.  Most of the U.S. waters included in the estimates represent an array of zones with varying restrictions on fishing, navigation, or other resource use but typically do not restrict all commercial use.
+PAME's definition is useful for its support of multiple management approaches but it has also been [criticized for being overly broad](https://www.sciencedirect.com/science/article/pii/S0308597X17307686){:target="\_blank"}{:rel="noopener"}. As a result, PAME’s Arctic MPA estimates includes special management and use areas for fisheries or other resources as well as some that are more fully protected. Most of the U.S. waters included in the estimates represent an array of zones with varying restrictions on fishing, navigation, or other resource use but typically do not restrict all commercial use.
 
-A range of management approaches, including both fully conserved areas and special management zones, are necessary to support sustainable use and development. However, [only fully protected areas](https://www.pewtrusts.org/-/media/assets/2018/02/recommendations-to-iucn-on-implementing-mpa-categories-for-printing.pdf){:target="\_blank"}{:rel="noopener"}  effectively conserve biodiversity and provide the most direct benefits to ecosystem resilience in the face of climate change.
+A range of management approaches, including both fully conserved areas and special management zones, are necessary to support sustainable use and development. However, [only fully protected areas](https://www.pewtrusts.org/-/media/assets/2018/02/recommendations-to-iucn-on-implementing-mpa-categories-for-printing.pdf){:target="\_blank"}{:rel="noopener"} effectively conserve biodiversity and provide the most direct benefits to ecosystem resilience in the face of climate change.
 
 ## Charting the Future of Arctic Biodiversity
 
