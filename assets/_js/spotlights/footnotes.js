@@ -8,21 +8,23 @@ const Footnotes = () => {
 
   footnotes.parentNode.insertBefore(readMore, footnotes.nextSibling)
 
-  const hiddenFootnotes = document.querySelectorAll(
-    '.footnotes ol li:nth-child(3) ~ li'
+  const hiddenFootnotes = Array.from(
+    document.querySelectorAll('.footnotes ol li:nth-child(3) ~ li')
   )
 
   const toggle = ariaExpanded => {
     if (!ariaExpanded) {
       hiddenFootnotes.forEach(footnote => {
-        footnote.style.display = 'list-item'
+        footnote.style.visibility = 'visible'
+        footnote.style.position = 'static'
       })
       readMore.innerText = 'Read Less'
       readMore.classList.add('is-active')
       readMore.setAttribute('aria-expanded', 'true')
     } else {
       hiddenFootnotes.forEach(footnote => {
-        footnote.style.display = 'none'
+        footnote.style.visibility = 'hidden'
+        footnote.style.position = 'absolute'
       })
       readMore.innerText = 'Read More'
       readMore.classList.remove('is-active')
