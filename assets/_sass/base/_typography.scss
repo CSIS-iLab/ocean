@@ -221,7 +221,12 @@ a {
     outline: 0;
   }
 
-  .post-content &:not(.btn):not(.reversefootnote):not(.sc-link),
+  // Footnote links
+  sup & {
+    color: $color__medblue;
+  }
+
+  .post-content &:not(.btn):not(.reversefootnote):not(.sc-link):not(.footnote),
   .about & {
     @include box-shadow(0, -2px, 0, 0, $color__medblue, true);
     color: inherit;

@@ -1,0 +1,99 @@
+<section class="arctic__map spotlight-component">
+  <div class="arctic__map-bg">
+    <div class="arctic__map-map">
+      <div class="arctic__legend">
+        <div class="arctic__legend-curr">
+          <span>Ice Extents in</span>
+          <select id="layer-selector" disabled>
+            <option value="jan" selected>January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+            <option value="may">May</option>
+            <option value="jun">June</option>
+            <option value="jul">July</option>
+            <option value="aug">August</option>
+            <option value="sep">September</option>
+            <option value="oct">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+          </select>
+        </div>
+        <p class="arctic__legend-desc">
+          Watch the ice extent grow and diminish throughout 2018.
+        </p>
+        <ul class="arctic__legend-key">
+          <li class="arctic__legend-key--ice ice--2018 checkbox-container">
+            <input type="checkbox" id="ice--2018" value="18" disabled checked />
+            <label for="ice--2018">2018</label>
+          </li>
+          <li class="arctic__legend-key--ice ice--2016 checkbox-container">
+            <input type="checkbox" id="ice--2016" value="16" disabled checked />
+            <label for="ice--2016">2016</label>
+          </li>
+          <li class="arctic__legend-key--ice ice--2017 checkbox-container">
+            <input type="checkbox" id="ice--2017" value="17" disabled checked />
+            <label for="ice--2017">2017</label>
+          </li>
+          <li class="arctic__legend-key--ice ice--2015 checkbox-container">
+            <input type="checkbox" id="ice--2015" value="15" disabled checked />
+            <label for="ice--2015">2015</label>
+          </li>
+          <li class="arctic__legend-key--median">Median (1981 &mdash; 2010)</li>
+        </ul>
+      </div>
+      {% include_relative arctic/map-svg.html %}
+      <div class="arctic__map-source">
+        CSIS | Data from National Snow and Ice Data Center
+      </div>
+    </div>
+  </div>
+  <div class="arctic__map-prose">
+    <div class="arctic__map-trigger" data-step="0">
+      <p>
+        Of course, one of the most distinctive features of the Arctic is its sea
+        ice.
+      </p>
+    </div>
+    <p class="arctic__map-trigger" data-step="1">
+      Both newer and thinner (young) ice as well as thicker, multi-year (old)
+      ice grows and diminishes, extending to a maximum in the fall and winter
+      months before slowly receding as temperatures warm in the spring and
+      summer (its minimum).
+    </p>
+    <div class="arctic__map-trigger" data-step="2">
+      <p>For nearly 40 years, scientists have monitored this ebb and flow.</p>
+      <p>
+        In 2018, Arctic sea ice extent reached its
+        <a
+          href="https://nsidc.org/arcticseaicenews/2018/03/arctic-sea-ice-maximum-second-lowest/"
+          target="_blank"
+          rel="noopener"
+          >maximum at 5.59 million square miles</a
+        >, which is the second lowest ever recorded confirming that the Arctic
+        continues to melt on an annual basis and at a record pace.
+      </p>
+    </div>
+    <p class="arctic__map-trigger" data-step="3">
+      The
+      <a
+        href="https://nsidc.org/arcticseaicenews/2018/03/arctic-sea-ice-maximum-second-lowest/"
+        target="_blank"
+        rel="noopener"
+        >four lowest seasonal maxima</a
+      >
+      have all occurred during the last four years.
+    </p>
+    <p class="arctic__map-trigger" data-step="4">
+      Record findings are also being reported for summer sea ice extent. This
+      past September, sea ice extent reached an
+      <a
+        href="https://nsidc.org/arcticseaicenews/2017/09/arctic-sea-ice-at-minimum-extent-2/"
+        target="_blank"
+        rel="noopener"
+        >annual minimum of 1.77 million square miles</a
+      >, 629,000 square miles below the 1981 to 2010 median extent. It is the
+      sixth lowest retreat since monitoring began.
+    </p>
+  </div>
+</section>

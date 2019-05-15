@@ -29,4 +29,54 @@
       color: $color__red-darker;
     }
   }
+
+  .read-more {
+    @extend %post__view-all;
+    padding: 0.5rem 0 0;
+    color: $color__dkgray;
+    white-space: nowrap;
+    background-color: transparent;
+    border-width: 3px 0 0;
+    border-color: $color__bluegray-light;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $color__black;
+    }
+
+    &:focus {
+      border-color: $color__focus;
+      outline: 0;
+    }
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      display: block;
+      margin: auto;
+    }
+
+    &::after {
+      width: 2rem;
+      margin-right: 0;
+      margin-left: 0.5rem;
+      font-family: sos;
+      font-weight: 400;
+      font-style: normal;
+      font-variant: normal;
+      line-height: 1em;
+      text-align: center;
+      text-transform: none;
+      text-decoration: inherit;
+      speak: none;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &.is-active::after {
+      content: '\e80e';
+    }
+
+    &:not(.is-active)::after {
+      content: '\e80d';
+    }
+  }
 }

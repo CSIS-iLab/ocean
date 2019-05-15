@@ -35,7 +35,7 @@
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 10;
+      z-index: 9999;
       margin: 0;
       padding: 1.4rem 1rem 1rem;
       background-color: $color__slate-lightest;
@@ -94,7 +94,7 @@
     @extend %post-content__table-title;
   }
 
-  &__body {
+  &__body p {
     @extend %body-text__med;
   }
 }
