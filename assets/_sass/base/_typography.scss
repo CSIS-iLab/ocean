@@ -196,11 +196,11 @@ big {
 =============================*/
 
 a {
-  color: inherit;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 
-  &:visited {
+  &:not(.btn),
+  &:not(.btn):visited {
     color: inherit;
   }
 
