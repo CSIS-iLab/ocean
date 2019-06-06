@@ -9,6 +9,8 @@ sections:
   label: Authors
   create: all
   match: "**/*"
+  templates:
+  - author
 - type: jekyll-pages
   label: Pages
   create: all
