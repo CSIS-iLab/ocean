@@ -24,6 +24,11 @@
     @extend %post-content__h3;
   }
 
+  p + h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
   &-person {
     margin: 1rem 0 2rem;
     @extend %body-text__med;

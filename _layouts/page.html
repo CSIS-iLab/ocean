@@ -28,9 +28,11 @@ layout: default
         </div>
         {%- endfor -%}
       <h3>{{ site.data.language.development_team }}</h3>
-      <p>{{ site.data.language.ilab | markdownify }}</p>
+      {{ site.data.language.ilab | markdownify }}
       <h3>{{ site.data.language.support }}</h3>
-      <p>{{ site.data.language.stephenson_foundation | markdownify }}</p>
+      {{ site.data.language.stephenson_foundation | markdownify }}
+      <h3>{{ site.data.language.about_csis }}</h3>
+      {{ site.data.language.about_csis_desc | markdownify }}
     </div>
     {%- endif -%}
 
