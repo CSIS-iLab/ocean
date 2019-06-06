@@ -35,9 +35,26 @@ iframe {
 
 figure {
   margin: 0;
-}
+  margin-bottom: 1rem;
 
-figcaption {
-  max-width: calc(98vw - 40px);
-  margin: auto;
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  figcaption {
+    max-width: calc(98vw - 40px);
+    margin: 0.5rem auto 0;
+    @extend %post-content__caption-desc;
+
+    &-label {
+      @extend %post-content__caption-label;
+    }
+
+    .img-caption__source {
+      @extend %post-content__caption-desc--sm;
+    }
+  }
 }

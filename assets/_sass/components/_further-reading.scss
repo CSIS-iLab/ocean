@@ -15,16 +15,10 @@
     }
 
     li {
-      width: fit-content;
       margin-bottom: 0.75rem;
       line-height: 1.3;
       list-style-type: none;
       @extend %body-text__med;
-
-      &:hover {
-        color: $color__medblue;
-        transition: inherit;
-      }
     }
 
     a::after {
@@ -41,6 +35,13 @@
 
       &:hover {
         color: $color__medblue-darker;
+      }
+    }
+
+    a {
+      &:hover {
+        color: $color__medblue;
+        transition: inherit;
       }
     }
   }

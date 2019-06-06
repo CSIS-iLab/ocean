@@ -1,6 +1,6 @@
 ---
 title: Making the Oceans More Secure
-date: 2019-01-09 05:00:28 +0000
+date: 2019-01-09T05:00:28.000+00:00
 excerpt: 'Combatting illicit fishing will require countries to develop common regional
   approaches to legal authorities and adjudication in order to fully take advantage
   of new enforcement capabilities.    '
@@ -18,7 +18,7 @@ further_reading: ''
 related_spotlight: []
 related_commentary:
 - _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
-is_featured: true
+is_featured: false
 image: ''
 image_caption: ''
 image_source: ''
