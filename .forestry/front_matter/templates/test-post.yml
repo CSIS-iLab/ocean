@@ -3,20 +3,20 @@ label: Post
 hide_body: false
 fields:
 - type: include
-  name: ''
-  label: ''
+  name: post_meta_primary
+  label: Post Meta Primary
   template: post-meta-primary
 - type: textarea
   label: Lede
   name: lede
   description: 1 or 2 sentence lede into the full article.
 - type: include
-  name: ''
-  label: ''
+  name: post_meta_secondary
+  label: Post Meta Secondary
   template: post-meta-secondary
 - type: include
-  name: ''
-  label: ''
+  name: image_upload
+  label: Image Upload
   template: image-upload
 pages:
 - _posts/2018-12-10-making-the-oceans-more-secure.md
