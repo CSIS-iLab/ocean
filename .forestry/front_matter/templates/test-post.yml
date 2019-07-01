@@ -6,6 +6,17 @@ fields:
   name: post_meta_primary
   label: Post Meta Primary
   template: post-meta-primary
+- name: introduction
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Introduction
+  description: An introduction to the commentary to relate it to the rest of the SOS
+    site. No more than 125 characters.
 - type: textarea
   label: Lede
   name: lede
