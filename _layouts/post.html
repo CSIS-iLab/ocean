@@ -11,6 +11,9 @@ layout: default
     <div class="post__header-content">
       {%- include content-type.html -%}
       {%- include post-title.html -%}
+      {%- if page.introduction -%}
+      <p class="post__header-intro">{{ page.introduction }}</p>
+      {%- endif -%}
     </div>
     {%- include social-share.html class="post__header" -%}
   </header>

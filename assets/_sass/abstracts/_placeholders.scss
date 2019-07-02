@@ -526,11 +526,15 @@
   @include font-size(30px);
 
   @include breakpoint('medium') {
-    @include font-size(48px);
+    @include font-size(38px);
     color: $color__white;
     line-height: 1.04;
     letter-spacing: 0.4px;
     text-shadow: 0 2px 4px rgba($color__black, 0.5);
+  }
+
+  @include breakpoint('large') {
+    @include font-size(48px);
   }
 }
 

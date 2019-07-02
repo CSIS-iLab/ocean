@@ -5,6 +5,7 @@ excerpt: In Peru's Tropical Pacific Sea, two main forces–industrial fishing fl
 authors:
   - _authors/marco-ruiz-serkovic.md
   - _authors/emi-koch.md
+introduction: This commentary comes from new contributors Emi Koch and Marco Ruiz-Serkovic, founders of Beyond the Surface International.  Emi and Marco describe an oft overlooked aspect of security challenges in the maritime space – the conflict between artisanal, or community level resource use, and industrial scale fishing. Small scale fisheries account for half of the global fish catch and 90 percent of direct employment within the fisheries sector.  Beyond the numbers, the people involved in these fisheries are often the ones most intimately associated with the resource and also most impacted by conflict over it.  The story that Emi and Marco tell here is a reminder that sustainability and security go hand in hand and that those most affected are not always the most visible.
 lede: In Peru's Tropical Pacific Sea, two main forces–industrial fishing fleets and foreign pirates–threaten small-scale fishing communities.
 keywords:
   - iuu
@@ -22,12 +23,6 @@ image_caption: ''
 image_source: ''
 
 ---
-
-_The Stephenson Ocean Security Project is proud to be hosting this week’s commentary from new contributors Emi Koch and Marco Ruiz-Serkovic, founders of Beyond the Surface International.  Emi and Marco describe an oft overlooked aspect of security challenges in the maritime space—the conflict between artisanal, or community level resource use, and industrial scale fishing. Small scale fisheries account for half of the global fish catch and 90 percent of the direct employment within the fisheries sector.  Beyond the numbers, the people involved in small scale fisheries are often the ones most intimately associated with the resource and therefore the ones most directly impacted by changes in its availability.  These changes can be brought about by ecosystem change, competition, security risk or, most likely, a combination of all three.  This is the story that Emi and Marco tell here. It is a reminder that sustainability and security go hand in hand and that those most affected are not always the most visible._
-
-\-	Whit Saumweber, Ph.D.<br/>
-	_Director, Stephenson Ocean Security Project_
-
 
 ![© Emi Koch](https://res.cloudinary.com/csisideaslab/image/upload/v1558463603/ocean/Peru__Artisanal-Fisherman-SU6A5363-2.jpg "Justo (whose name has been changed for his protection), as he gently tugs at the fishing line casted 20 minutes ago.")
 
