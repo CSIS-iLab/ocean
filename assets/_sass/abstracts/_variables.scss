@@ -83,6 +83,7 @@ $font__line-height-pre: 1.6;
 /*----------  Images -----------*/
 $img__home: '../images/home/';
 
+// prettier-ignore
 $img__footer: (
   'small': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546970933/ocean/footer-small.jpg',
   'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546970933/ocean/footer-medium.jpg',
@@ -90,6 +91,7 @@ $img__footer: (
   'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546970933/ocean/footer-xlarge.jpg'
 );
 
+// prettier-ignore
 $img__search: (
   'small': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546962127/ocean/hero_search-small.jpg',
   'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546962126/ocean/hero_search-medium.jpg',
@@ -97,6 +99,7 @@ $img__search: (
   'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546962127/ocean/hero_search-xlarge.jpg'
 );
 
+// prettier-ignore
 $img__about: (
   'small': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546968399/ocean/hero_about-small.jpg',
   'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546968399/ocean/hero_about-medium.jpg',
@@ -104,6 +107,7 @@ $img__about: (
   'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546968400/ocean/hero_about-xlarge.jpg'
 );
 
+// prettier-ignore
 $img__commentary: (
   'small': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546968400/ocean/hero_commentary-small.jpg',
   'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546968400/ocean/hero_commentary-medium.jpg',
@@ -111,6 +115,7 @@ $img__commentary: (
   'xlarge': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546968401/ocean/hero_commentary-xlarge.jpg'
 );
 
+// prettier-ignore
 $img__spotlight: (
   'small': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546968401/ocean/hero_spotlights-small.jpg',
   'medium': 'https://res.cloudinary.com/csisideaslab/image/upload/f_auto/v1546968401/ocean/hero_spotlights-medium.jpg',
@@ -241,9 +246,9 @@ $size__related-content-padding: (
 
 $size__page-header-height--post: (
   'small': 300px,
-  'medium': 400px,
-  'large': 450px,
-  'xlarge': 550px
+  'medium': 500px,
+  'large': 550px,
+  'xlarge': 650px
 );
 
 $size__page-header-padding--post: (
