@@ -22,7 +22,7 @@
 
     /* stylelint-disable */
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      height: 300px !important;
+      height: map-get($size__page-header-height--post, 'small') !important;
     }
     /* stylelint-enable */
 
@@ -33,7 +33,7 @@
 
       /* stylelint-disable */
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 400px !important;
+        height: map-get($size__page-header-height--post, 'medium') !important;
       }
       /* stylelint-enable */
     }
@@ -41,7 +41,7 @@
     @include breakpoint('large') {
       /* stylelint-disable */
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 450px !important;
+        height: map-get($size__page-header-height--post, 'large') !important;
       }
       /* stylelint-enable */
     }
@@ -49,7 +49,7 @@
     @include breakpoint('xlarge') {
       /* stylelint-disable */
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 550px !important;
+        height: map-get($size__page-header-height--post, 'xlarge') !important;
       }
       /* stylelint-enable */
     }
@@ -90,7 +90,6 @@
     }
 
     &-content {
-      $margin-right-sizes: ('large', 'xlarge');
       margin-top: 1.5rem;
       margin-bottom: 1rem;
 
@@ -100,19 +99,77 @@
       }
 
       @include breakpoint('large') {
+        $margin: return-map-value($size__content-margin--post, 'large');
         // prettier-ignore
-        margin-right: return-map-value($size__content-margin--post, 'large') * 2;
+        margin-right: $margin * 2;
+        margin-left: $margin;
       }
 
       @include breakpoint('xlarge') {
         // prettier-ignore
-        margin-right: nth(return-map-value($size__content-margin--post, 'xlarge'), 2) * 2;
+        $margin: nth(return-map-value($size__content-margin--post, 'xlarge'), 2);
+        margin-right: $margin * 2;
+        margin-left: $margin;
       }
     }
 
     #{$post}-title {
       @extend %post-title;
       margin: 0.75rem 0;
+    }
+
+    &-intro {
+      margin: 1rem auto;
+      padding: 1rem 0;
+      @include font-size(14px);
+      background-color: $color__ltgray-lighter;
+      @include full-width-background(
+        $background: $color__ltgray-lighter,
+        $excludeMargin: true
+      );
+
+      @include breakpoint('medium') {
+        margin-right: 2rem;
+        margin-bottom: calc(
+          (#{map-get($size__page-header-padding--post, 'medium')} + 1rem) * -1
+        );
+        margin-left: 0;
+        padding-right: 1rem;
+        color: $color__slate-light;
+        background-color: $color__dkblue-darker;
+
+        &::before {
+          background-color: $color__dkblue-darker;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      @include breakpoint('large') {
+        $width-offset: map-get($size__post-body-padding-right, 'large');
+        max-width: calc(70% + #{$width-offset});
+        margin-bottom: calc(
+          (#{map-get($size__page-header-padding--post, 'large')} + 1rem) * -1
+        );
+        padding: 2rem 2rem 2rem 0;
+        @include font-size(15px);
+
+        &::before {
+          z-index: 1;
+          height: calc(100% + 4rem);
+        }
+      }
+
+      @include breakpoint('xlarge') {
+        $width-offset: map-get($size__post-body-padding-right, 'xlarge');
+        max-width: calc(70% + #{$width-offset});
+        margin-bottom: calc(
+          (#{map-get($size__page-header-padding--post, 'xlarge')} + 1rem) * -1
+        );
+        @include font-size(16px);
+      }
     }
   }
 
