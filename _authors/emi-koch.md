@@ -1,8 +1,8 @@
 ---
 title: Emi Koch
-role: Fulbright-National Geographic Storytelling Fellow, Found and Director, Beyond
+role: Fulbright-National Geographic Storytelling Fellow, Founder and Director, Beyond
   the Surface International
-byline: Fulbright-National Geographic Storytelling Fellow, Found and Director, Beyond
+byline: Fulbright-National Geographic Storytelling Fellow, Founder and Director, Beyond
   the Surface International
 headshot: ''
 

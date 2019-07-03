@@ -15,8 +15,8 @@ fields:
   name: headshot
   label: headshot
 pages:
-- _authors/marco-ruiz-serkovic.md
 - _authors/emi-koch.md
+- _authors/marco-ruiz-serkovic.md
 - _authors/whitley-saumweber.md
 - _authors/monica-medina.md
 - _authors/test-sr.md
