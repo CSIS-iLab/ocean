@@ -11,7 +11,7 @@ keywords:
   - iuu
   - fishing
   - piracy
-? further_reading
+further_reading: ''
 related_commentary:
   - _posts/2018-12-10-making-the-oceans-more-secure.md
   - _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
