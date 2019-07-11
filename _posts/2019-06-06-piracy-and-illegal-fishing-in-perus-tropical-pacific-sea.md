@@ -1,28 +1,38 @@
 ---
 title: Piracy and Illegal Fishing in Peru’s Tropical Pacific Sea
 date: 2019-07-03T05:00:00.000+00:00
-excerpt: In Peru's Tropical Pacific Sea, two main forces–industrial fishing fleets and foreign pirates–threaten small-scale fishing communities.
+excerpt: In Peru's Tropical Pacific Sea, two main forces–industrial fishing fleets
+  and foreign pirates–threaten small-scale fishing communities.
 authors:
-  - _authors/emi-koch.md
-  - _authors/marco-ruiz-serkovic.md
-introduction: This commentary comes from new contributors Emi Koch and Marco Ruiz-Serkovic, founders of Beyond the Surface International.  Emi and Marco describe an oft overlooked aspect of security challenges in the maritime space – the conflict between artisanal, or community level resource use, and industrial scale fishing. Small scale fisheries account for half of the global fish catch and 90 percent of direct employment within the fisheries sector.  Beyond the numbers, the people involved in these fisheries are often the ones most intimately associated with the resource and also most impacted by conflict over it.  The story that Emi and Marco tell here is a reminder that sustainability and security go hand in hand and that those most affected are not always the most visible.
-lede: In Peru's Tropical Pacific Sea, two main forces–industrial fishing fleets and foreign pirates–threaten small-scale fishing communities.
+- _authors/emi-koch.md
+- _authors/marco-ruiz-serkovic.md
+introduction: This commentary comes from new contributors Emi Koch and Marco Ruiz-Serkovic.  Emi
+  and Marco describe an oft overlooked aspect of security challenges in the maritime
+  space – the conflict between artisanal, or community level resource use, and industrial
+  scale fishing. Small scale fisheries account for half of the global fish catch and
+  90 percent of direct employment within the fisheries sector.  Beyond the numbers,
+  the people involved in these fisheries are often the ones most intimately associated
+  with the resource and also most impacted by conflict over it.  The story that Emi
+  and Marco tell here is a reminder that sustainability and security go hand in hand
+  and that those most affected are not always the most visible.
+lede: In Peru's Tropical Pacific Sea, two main forces–industrial fishing fleets and
+  foreign pirates–threaten small-scale fishing communities.
 keywords:
-  - iuu
-  - fishing
-  - piracy
+- iuu
+- fishing
+- piracy
 further_reading: ''
 related_commentary:
-  - _posts/2018-12-10-making-the-oceans-more-secure.md
-  - _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
+- _posts/2018-12-10-making-the-oceans-more-secure.md
+- _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
 related_spotlight:
-  - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
+- _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
 is_featured: true
 image: ''
 image_caption: ''
 image_source: ''
----
 
+---
 "Pirates are lazy," Justo, a fisherman from Cabo Blanco, Peru, uses his teeth to sever a stubborn piece of fishing line he's successfully secured to a single hook. "These people like the easy life… stealing. They surround you, take your fishing gear, any electronics. If you resist, they kill you."
 
 ![© Emi Koch](https://res.cloudinary.com/csisideaslab/image/upload/v1558463603/ocean/Peru__Artisanal-Fisherman-SU6A5363-2.jpg 'Justo (whose name has been changed for his protection), as he gently tugs at the fishing line casted 20 minutes ago.')
