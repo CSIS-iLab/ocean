@@ -6,6 +6,7 @@ excerpt: SOS director Whitley Saumweber moderates a Capitol Hill Ocean Week pane
   illegal, unregulated, and unreported fishing.
 authors:
 - _authors/whitley-saumweber.md
+- _authors/yori-hook.md
 introduction: The annual Capitol Hill Ocean Week (CHOW) conference was convened by
   the National Marine Sanctuary Foundation in early June to celebrate Oceans Month.
   CHOW brings together the top national and global stakeholders to address pressing
@@ -14,12 +15,13 @@ lede: SOS director Whitley Saumweber moderates a Capitol Hill Ocean Week panel o
   strategies to increase seafood supply chain transparency in the fight against illegal,
   unregulated, and unreported fishing.
 keywords:
-- fishing
 - IUU
+- fishing
+- traceability
 further_reading: ''
 related_commentary:
-- _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
 - _posts/2018-12-10-making-the-oceans-more-secure.md
+- _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
 related_spotlight: []
 is_featured: false
 image: ''
