@@ -38,8 +38,13 @@ const chartVessels = () => {
   function renderChart(dataArray) {
     Highcharts.chart('chartVessels', {
       chart: {
-        styledMode: true,
-        zoomType: false
+        // styledMode: true,
+        zoomType: false,
+        events: {
+          load: function() {
+            Highcharts.css(this.container.parentNode, { overflow: 'visible' })
+          }
+        }
       },
       title: {
         x: 25,

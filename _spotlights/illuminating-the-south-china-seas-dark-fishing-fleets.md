@@ -3,7 +3,7 @@ title: Illuminating the South China Sea’s Dark Fishing Fleets
 date: 2019-01-09 05:00:00 +0000
 prefix: scs
 js_files:
-  - https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.2.0/highcharts.js
+  - https://code.highcharts.com/highcharts.js
   - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js
   - https://code.highcharts.com/modules/data.js
   - https://code.highcharts.com/modules/pattern-fill.js

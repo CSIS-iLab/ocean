@@ -78,6 +78,7 @@
     "algoliasearch": "^3.30.0",
     "algoliasearch-helper": "^2.26.1",
     "flickity": "^2.1.2",
+    "flickity-imagesloaded": "^2.0.0",
     "gsap": "^2.0.2",
     "instantsearch.js": "^2.10.4",
     "lazysizes": "^4.1.5",
