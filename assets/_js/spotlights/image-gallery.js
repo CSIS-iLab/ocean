@@ -1,5 +1,5 @@
 import Flickity from 'flickity'
-import Breakpoints from '../breakpoints'
+require('flickity-imagesloaded')
 
 const ImageGallery = () => {
   let galleries = Array.from(
@@ -17,7 +17,7 @@ const ImageGallery = () => {
       prevNextButtons: true,
       wrapAround: true,
       dragThreshold: 20,
-      lazyLoad: 3,
+      lazyLoad: 5,
       imagesLoaded: true,
       on: {
         ready: () => {
