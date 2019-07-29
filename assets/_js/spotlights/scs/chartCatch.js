@@ -10,7 +10,12 @@ const chartCatch = () => {
     chart: {
       zoomType: false,
       type: 'column',
-      height: '500px'
+      height: '500px',
+      events: {
+        load: function() {
+          Highcharts.css(this.container.parentNode, { overflow: 'visible' })
+        }
+      }
     },
     title: {
       // x: 25,
