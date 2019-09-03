@@ -22,7 +22,7 @@ related_commentary:
 - _posts/2018-12-10-making-the-oceans-more-secure.md
 related_spotlight:
 - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
-is_featured: false
+is_featured: true
 image: ''
 image_caption: ''
 image_source: ''
