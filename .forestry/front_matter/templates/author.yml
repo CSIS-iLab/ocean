@@ -15,6 +15,7 @@ fields:
   name: headshot
   label: headshot
 pages:
+- _authors/ty-loft.md
 - _authors/marco-ruiz-serkovic.md
 - _authors/emi-koch.md
 - _authors/whitley-saumweber.md
