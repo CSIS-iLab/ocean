@@ -9,9 +9,8 @@ layout: default
 >
   <header class="post__header">
     <div class="post__header-content">
-      {%- include content-type.html -%}
-      {%- include post-title.html -%}
-      {%- if page.introduction -%}
+      {%- include content-type.html -%} {%- include post-title.html -%} {%- if
+      page.introduction.size > 0 -%}
       <p class="post__header-intro">{{ page.introduction }}</p>
       {%- endif -%}
     </div>
@@ -20,15 +19,14 @@ layout: default
   <section class="post__content e-content" itemprop="articleBody">
     <p class="post-lede">{{ page.lede }}</p>
     <div class="post__content-aside">
-      {%- include date.html -%}
-      {%- include authors-block.html -%}
+      {%- include date.html -%} {%- include authors-block.html -%}
     </div>
     <div class="post__content-body post-content">{{ content }}</div>
   </section>
   <footer class="post__footer">
     <section class="post__footer-top">
       <div class="keywords">{% include keywords.html %}</div>
-      {%- include social-share.html class="post__footer"  -%}
+      {%- include social-share.html class="post__footer" -%}
     </section>
     <section class="post__footer-middle js-footer-bg js-footer-bg-switch">
       {% include further-reading.html %}
