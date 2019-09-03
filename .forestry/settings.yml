@@ -7,6 +7,8 @@ sections:
 - type: jekyll-posts
   label: Commentaries
   create: documents
+  templates:
+  - test-post
 - type: directory
   path: _spotlights
   label: Spotlights
