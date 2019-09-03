@@ -27,7 +27,7 @@ related_commentary:
 - _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
 related_spotlight:
 - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
-is_featured: true
+is_featured: false
 image: ''
 image_caption: ''
 image_source: ''
