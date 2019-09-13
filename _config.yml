@@ -15,6 +15,7 @@ cloudinary_url: https://res.cloudinary.com/csisideaslab/image/upload/
 cloudinary_folder: ocean
 
 twitter:
+  username: CSISOceans
   card: summary
 logo: /assets/images/sos-twitter-preview.jpg
 

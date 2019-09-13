@@ -283,7 +283,8 @@
   }
 
   &__address,
-  &__email {
+  &__email,
+  &__twitter {
     $margin: 1.5rem;
     position: relative;
     margin-left: $margin;
@@ -303,6 +304,12 @@
 
   &__email::before {
     content: '\e811';
+    @include font-size(11px);
+    top: 2px;
+  }
+  
+  &__twitter::before {
+    content: '\e82f';
     @include font-size(11px);
     top: 2px;
   }
