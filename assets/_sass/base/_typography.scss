@@ -36,21 +36,33 @@ p {
 @for $i from 2 through 6 {
   $placeholder: post-content__h#{$i};
 
-  .post-content {
-    p + h#{$i},
-    ul + h#{$i},
-    ol + h#{$i},
-    section + h#{$i} {
-      margin-top: 3rem;
+  @if $i == 2 {
+    .post-content {
+      p + h#{$i} {
+        margin-top: 4rem;
+      }
+      
+      ul + h#{$i},
+      ol + h#{$i},
+      section + h#{$i} {
+        margin-top: 3rem;
+      }
     }
+  } @else {
+    .post-content {
+      p + h#{$i},
+      ul + h#{$i},
+      ol + h#{$i},
+      section + h#{$i} {
+        margin-top: 3rem;
+      }
+    }
+  }
 
+  .post-content {
     h#{$i} {
       @extend %#{$placeholder} !optional;
-      @if $i == 2 {
-        margin-bottom: 2rem;
-      } @else {
-        margin-bottom: 1rem;
-      }
+      margin-bottom: 1rem;
     }
   }
 }
