@@ -41,25 +41,22 @@ p {
       p + h#{$i} {
         margin-top: 4rem;
       }
-
-      ul + h#{$i},
-      ol + h#{$i},
-      section + h#{$i} {
-        margin-top: 3rem;
-      }
     }
   } @else {
     .post-content {
-      p + h#{$i},
-      ul + h#{$i},
-      ol + h#{$i},
-      section + h#{$i} {
+      p + h#{$i} {
         margin-top: 3rem;
       }
     }
   }
 
   .post-content {
+    ul + h#{$i},
+    ol + h#{$i},
+    section + h#{$i} {
+      margin-top: 3rem;
+    }
+
     h#{$i} {
       @extend %#{$placeholder} !optional;
       margin-bottom: 1rem;
