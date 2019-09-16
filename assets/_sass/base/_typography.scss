@@ -24,7 +24,7 @@ textarea {
 ============================*/
 
 .post-content,
-.post-content p {
+.post-content > p {
   @extend %post-content__body;
 }
 
@@ -41,7 +41,7 @@ p {
       p + h#{$i} {
         margin-top: 4rem;
       }
-      
+
       ul + h#{$i},
       ol + h#{$i},
       section + h#{$i} {
