@@ -308,11 +308,11 @@
   }
 
   &__email::before {
-    content: '\e811';
+    content: '\e81b';
     @include font-size(11px);
     top: 2px;
   }
-  
+
   &__twitter::before {
     content: '\e82f';
     @include font-size(11px);
