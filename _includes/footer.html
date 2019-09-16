@@ -25,7 +25,8 @@
       {%- endif -%}
       <br />
       {%- if site.twitter.username -%}
-      <a class="site-footer__twitter" href="https://twitter.com/csisoceans">{{ site.twitter.username }}</a>
+      <a class="site-footer__twitter"
+        href="https://twitter.com/csisoceans">{{ site.twitter.username | prepend: '@' }}</a>
       {%- endif -%}
     </section>
     {% include site-nav.html class="footer__nav" location="inFooter" %}

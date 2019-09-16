@@ -287,6 +287,7 @@
   &__twitter {
     $margin: 1.5rem;
     position: relative;
+    display: block;
     margin-left: $margin;
 
     &::before {
@@ -306,6 +307,10 @@
     content: '\e811';
     @include font-size(11px);
     top: 2px;
+  }
+
+  &__twitter {
+    margin-top: -15px;
   }
   
   &__twitter::before {
