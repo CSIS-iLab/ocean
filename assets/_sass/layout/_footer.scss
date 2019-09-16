@@ -299,6 +299,10 @@
     }
   }
 
+  &__email {
+    margin-bottom: 0.25rem;
+  }
+
   &__address::before {
     content: '\e818';
   }
@@ -307,10 +311,6 @@
     content: '\e811';
     @include font-size(11px);
     top: 2px;
-  }
-
-  &__twitter {
-    margin-top: -15px;
   }
   
   &__twitter::before {
