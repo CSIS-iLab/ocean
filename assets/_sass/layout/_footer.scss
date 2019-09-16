@@ -283,9 +283,11 @@
   }
 
   &__address,
-  &__email {
+  &__email,
+  &__twitter {
     $margin: 1.5rem;
     position: relative;
+    display: block;
     margin-left: $margin;
 
     &::before {
@@ -297,12 +299,22 @@
     }
   }
 
+  &__email {
+    margin-bottom: 0.25rem;
+  }
+
   &__address::before {
     content: '\e818';
   }
 
   &__email::before {
     content: '\e811';
+    @include font-size(11px);
+    top: 2px;
+  }
+  
+  &__twitter::before {
+    content: '\e82f';
     @include font-size(11px);
     top: 2px;
   }
