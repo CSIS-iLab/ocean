@@ -11,6 +11,10 @@
     text-transform: uppercase;
   }
 
+  ol {
+    margin-top: 0.25rem;
+  }
+
   li,
   p {
     @extend %body-text__med;
