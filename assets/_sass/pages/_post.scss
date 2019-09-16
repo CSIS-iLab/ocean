@@ -115,6 +115,7 @@
 
     #{$post}-title {
       @extend %post-title;
+      max-width: 700px;
       margin: 0.75rem 0;
     }
 
@@ -182,7 +183,7 @@
     padding-bottom: 0.5rem;
 
     @include breakpoint('medium') {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       padding-top: 2rem;
       background-color: $color__white;
       border-left: 1px solid $color__gray-58;
@@ -229,6 +230,7 @@
 
   &-lede {
     order: 2;
+    max-width: 700px;
     margin: 0 0 1rem;
     @extend %post-lede;
 
