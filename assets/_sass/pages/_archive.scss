@@ -106,7 +106,6 @@
       position: relative;
       box-sizing: content-box;
       @include structure($size__content-margin--post, 'margin');
-      overflow: hidden;
 
       @each $size in ('medium', 'large', 'xlarge') {
         @include breakpoint($size) {

@@ -115,6 +115,7 @@
 
     #{$post}-title {
       @extend %post-title;
+      max-width: 700px;
       margin: 0.75rem 0;
     }
 
@@ -201,7 +202,7 @@
         left: 100%;
         width: calc((100vw - 100%) / 2 - 1px);
         // prettier-ignore
-        background-image: linear-gradient(180deg, rgba(14, 26, 44, 0), rgba(14, 26, 44, 0.8) 80px, #081324 120px, #081324 95%, rgba(0, 11, 14, 0.01));
+        background-image: linear-gradient(180deg, rgba(14, 26, 44, 0), rgba(14, 26, 44, 0.8) 80px, #081324 120px, #081324 97.7%, rgba(0, 11, 14, 0.01));
       }
 
       @include breakpoint('large') {
@@ -229,6 +230,7 @@
 
   &-lede {
     order: 2;
+    max-width: 700px;
     margin: 0 0 1rem;
     @extend %post-lede;
 
