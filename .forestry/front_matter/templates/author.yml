@@ -15,6 +15,7 @@ fields:
   name: headshot
   label: headshot
 pages:
+- _authors/rachel-rivera.md
 - _authors/johan-bergenas.md
 - _authors/ty-loft.md
 - _authors/marco-ruiz-serkovic.md
