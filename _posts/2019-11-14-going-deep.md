@@ -22,7 +22,7 @@ related_commentary:
 - _posts/2019-09-03-threading-the-needle-balancing-conservation-and-security-in-the-high-seas-treaty.md
 related_spotlight:
 - _spotlights/charting-a-new-arctic-ocean.md
-is_featured: false
+is_featured: true
 image: ''
 image_caption: ''
 image_source: ''
