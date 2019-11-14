@@ -54,7 +54,31 @@ Commitments by national governments and intergovernmental organizations are heav
 
 Indeed, this week, the White House Office of Science and Technology Policy, the Council on Environmental Quality, and the National Oceanic and Atmospheric Administration are organizing an event in Washington, D.C. to push for greater collaboration between the public and the private sector on a wide range of ocean issues. Public-private partnership (PPP) is an area where there is plenty of room for improvement for future Our Ocean conferences. In fact, less than 10 percent of all commitments announced at the six Our Ocean conferences feature PPPs.[\[2\]](#_ftn2)
 
-***
+**The climate-ocean disconnect**
+
+Commitment-makers can elect to position their commitments in one of several ocean health categories: climate change, marine pollution, protecting ocean areas, marine security, sustainable blue economy, and sustainable fisheries.
+
+There is ample evidence of how the climate and oceans can both negatively or positively impact one another. For example, the ocean absorbs approximately [30 percent](https://science.sciencemag.org/content/363/6432/1193) of anthropogenic CO2 emissions helping to reduce the amount of CO2 in the atmosphere. Absorbing this CO2, however, causes ocean acidification, which dissolves crustaceans’ shells and threatens coral reefs. More than [90 percent](https://www.nytimes.com/interactive/2016/09/12/science/earth/ocean-warming-climate-change.html) of the excess heat trapped from increased greenhouse gas emissions has passed into the ocean, making hurricanes stronger, causing the sea level to rise, and bleaching corals.
+
+Despite the connection between the climate change and oceans, which most experts believe is the greatest threat to ocean health, climate commitments have only been on par with other commitment categories, as indicated by the below illustration.
+
+However, in 2019, the total number of climate change commitments rose to 21 percent of all commitments, and this 9-percentage point increase is a welcomed development. This positive trend may be a result of recent high-level attention to the ocean-climate nexus. For example, during the UN climate action summit in NYC in September 2019, the Intergovernmental Panel on Climate Change released a [special report ](https://www.nytimes.com/2019/09/25/climate/climate-change-oceans-united-nations.html)on the negative consequences of climate change has on oceans. In addition, the High Level Panel for a Sustainable Ocean Economy recently released an [action plan](http://oceanpanel.org/sites/default/files/2019-10/HLP_Report_Ocean_Solution_Climate_Change_final.pdf) for ocean-based climate solutions. The increased emphasis on the ocean-climate link is important to drive further collaboration between these interconnected communities.
+
+**Looking ahead**
+
+The government of Palau will host next year’s Our Ocean Conference, and the following year ocean leaders will travel to Panama. These are key opportunities for the ocean community to fine tune their emphasis when making cost-effective and impactful contributions to the health of the seas moving forward.
+
+More organizations should emphasize public-private sector partnerships to leverage financial resources and ocean health tools. The Our Ocean Conference is an exceptional platform to make those partnerships public next year. Why not aim to go from under 10 percent to 50 percent of the commitments being collaborations between public and private, NGOs, foundations, cities, states, and other actors?
+
+Also, with climate change being the greatest threat to ocean health, Our Ocean Conference participants should prioritize climate commitments at future conferences.
+
+And finally, geopolitics and the ocean economy will emerge as a major inflection point in the international system in the coming years and decades. Rising powers will seek to feed their populations by continuing to aggressively go after the ocean’s fish. Competition will also mount over rare earth elements and who will lay claim and secure the enormous wealth that lies on top and beneath the seabed. And current and future trading lanes will be fault lines for great power politics as ice melts in the Arctic as a result of climate change. As the connection between ocean and geopolitics continues to grow, greater emphasis on the geostrategic implications of oceans and its resources should be brought to the Our Ocean Conference series.
+
+_Johan Bergenas is senior director for public policy at Vulcan Inc, Rachel Rivera is manager for philanthropic initiatives in the office of the chair at Vulcan Inc, and James Feinstein is a public policy analyst at Vulcan Inc._
+
+**_Commentary_ is produced by the Center for Strategic and International Studies (CSIS), a private, tax-exempt institution focusing on international public policy issues. Its research is nonpartisan and nonproprietary. CSIS does not take specific policy positions. Accordingly, all views, positions, and conclusions expressed in this publication should be understood to be solely those of the author(s).**
+
+**© 2019 by the Center for Strategic and International Studies. All rights reserved.**
 
 ***
 
