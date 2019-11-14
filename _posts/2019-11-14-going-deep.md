@@ -30,7 +30,7 @@ image_source: ''
 ---
 Global ocean leaders met in Oslo last month for the sixth installment of the Our Ocean Conference where participants announced 370 commitments to improve the health, resiliency, and security of the world’s seas. Making commitments is a centerpiece of this annual event, and since 2014, governments, intergovernmental organizations, the private sector, foundations, and nongovernmental organizations (NGOs) have made 1,385 of them. Over the last few months, we analyzed the commitments and this is what we found.\[^1\]
 
-**Race to the top**
+### Race to the top
 
 Undeniably, the Our Ocean Conference has generated a race to the top mentality among actors across the public, private, and not-for-profit communities. For example, during the first Our Ocean Conference, Palau’s president Thomas Remengesau Jr. proposed a new no-take National Marine Sanctuary covering 80 percent of the country’s exclusive economic zone. This was a dramatic and bold statement for an island nation dependent on foreign revenue fishing in its waters. Palau’s move, in part, triggered other countries to follow suit, and since 2014, 55 countries have used the Our Ocean Conference platform to announce that they too will preserve and protect large parts of their territorial waters, including Chile, Seychelles, the United States, and the United Kingdom.
 
@@ -40,7 +40,7 @@ Without a doubt, the Our Ocean Conference has been a catalyst for action.
 
 ![Graph of Cumulative Our Ocean Commitments from 2014-2019](https://res.cloudinary.com/csisideaslab/image/upload/v1573741962/ocean/Graph1_maixjw.png "Cumulative Our Ocean Commitments")
 
-**Show me the money**
+### **Show me the money**
 
 In 2019, conference participants self-reported a total of $63.7 billion in commitments, up from $1.8 billion committed in 2014. This is a tremendous influx of resources into the generally cash-strapped marine health community.
 
@@ -50,7 +50,7 @@ Despite the plethora of commitments and their significant financial value, ocean
 
 Consequently, conserving and sustaining our oceans will require significantly more resources.
 
-**Governments take the lead on commitments**
+### **Governments take the lead on commitments**
 
 Commitments by national governments and intergovernmental organizations are heavily represented at the Our Ocean conferences. Together, they produced over 65 percent of all commitments made between 2014 and 2019. Considering the plethora of businesses, cities, and states that depend on healthy oceans, it is noteworthy that the latter actors only made 14 percent of the total number of commitments. Moving forward, federal governments are likely to continue to call on the private sector, subnational entities, and the not-for-profit sector to play a larger role in ocean health.
 
@@ -58,7 +58,7 @@ Commitments by national governments and intergovernmental organizations are heav
 
 Indeed, this week, the White House Office of Science and Technology Policy, the Council on Environmental Quality, and the National Oceanic and Atmospheric Administration are organizing an event in Washington, D.C. to push for greater collaboration between the public and the private sector on a wide range of ocean issues. Public-private partnership (PPP) is an area where there is plenty of room for improvement for future Our Ocean conferences. In fact, less than 10 percent of all commitments announced at the six Our Ocean conferences feature PPPs.\[^2\]
 
-**The climate-ocean disconnect**
+### **The climate-ocean disconnect**
 
 Commitment-makers can elect to position their commitments in one of several ocean health categories: climate change, marine pollution, protecting ocean areas, marine security, sustainable blue economy, and sustainable fisheries.
 
@@ -70,7 +70,7 @@ Despite the connection between the climate change and oceans, which most experts
 
 However, in 2019, the total number of climate change commitments rose to 21 percent of all commitments, and this 9-percentage point increase is a welcomed development. This positive trend may be a result of recent high-level attention to the ocean-climate nexus. For example, during the UN climate action summit in NYC in September 2019, the Intergovernmental Panel on Climate Change released a [special report ](https://www.nytimes.com/2019/09/25/climate/climate-change-oceans-united-nations.html)on the negative consequences of climate change has on oceans. In addition, the High Level Panel for a Sustainable Ocean Economy recently released an [action plan](http://oceanpanel.org/sites/default/files/2019-10/HLP_Report_Ocean_Solution_Climate_Change_final.pdf) for ocean-based climate solutions. The increased emphasis on the ocean-climate link is important to drive further collaboration between these interconnected communities.
 
-**Looking ahead**
+### **Looking ahead**
 
 The government of Palau will host next year’s Our Ocean Conference, and the following year ocean leaders will travel to Panama. These are key opportunities for the ocean community to fine tune their emphasis when making cost-effective and impactful contributions to the health of the seas moving forward.
 
