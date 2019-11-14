@@ -1,5 +1,5 @@
 ---
-title: Going Deep
+title: 'Going Deep: Lessons from Six Global Ocean Conferences'
 date: 2019-11-14 05:00:00 +0000
 excerpt: Global ocean leaders met in Oslo last month for the sixth installment of
   the Our Ocean Conference where participants announced 370 commitments to improve
@@ -9,7 +9,7 @@ authors:
 - _authors/johan-bergenas.md
 - _authors/rachel-rivera.md
 - _authors/james-feinstein.md
-introduction: Lessons from Six Global Ocean Conferences
+introduction: ''
 lede: Ocean leaders just concluded the sixth Our Ocean Conference in Oslo. Since 2014,
   participants have announced 1,385 commitments to improve the health, resiliency,
   and security of the world’s seas. These are the lessons learned and what needs to
