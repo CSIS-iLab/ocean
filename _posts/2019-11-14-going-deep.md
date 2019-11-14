@@ -38,7 +38,7 @@ That same year, the government of Norway made a $1 million commitment to study m
 
 Without a doubt, the Our Ocean Conference has been a catalyst for action.
 
-![](https://res.cloudinary.com/csisideaslab/image/upload/v1573741962/ocean/Graph1_maixjw.png)
+![Graph of Cumulative Our Ocean Commitments from 2014-2019](https://res.cloudinary.com/csisideaslab/image/upload/v1573741962/ocean/Graph1_maixjw.png "Cumulative Our Ocean Commitments")
 
 **Show me the money**
 
@@ -54,7 +54,7 @@ Consequently, conserving and sustaining our oceans will require significantly mo
 
 Commitments by national governments and intergovernmental organizations are heavily represented at the Our Ocean conferences. Together, they produced over 65 percent of all commitments made between 2014 and 2019. Considering the plethora of businesses, cities, and states that depend on healthy oceans, it is noteworthy that the latter actors only made 14 percent of the total number of commitments. Moving forward, federal governments are likely to continue to call on the private sector, subnational entities, and the not-for-profit sector to play a larger role in ocean health.
 
-![](https://res.cloudinary.com/csisideaslab/image/upload/v1573742009/ocean/Graph2_zytwcz.png)
+![Pie chart of 2014-20169 Our Ocean Commitments by Player Type](https://res.cloudinary.com/csisideaslab/image/upload/v1573742009/ocean/Graph2_zytwcz.png "Our Ocean Commitments")
 
 Indeed, this week, the White House Office of Science and Technology Policy, the Council on Environmental Quality, and the National Oceanic and Atmospheric Administration are organizing an event in Washington, D.C. to push for greater collaboration between the public and the private sector on a wide range of ocean issues. Public-private partnership (PPP) is an area where there is plenty of room for improvement for future Our Ocean conferences. In fact, less than 10 percent of all commitments announced at the six Our Ocean conferences feature PPPs.[\[2\]](#_ftn2)
 
@@ -66,7 +66,7 @@ There is ample evidence of how the climate and oceans can both negatively or pos
 
 Despite the connection between the climate change and oceans, which most experts believe is the greatest threat to ocean health, climate commitments have only been on par with other commitment categories, as indicated by the below illustration.
 
-![](https://res.cloudinary.com/csisideaslab/image/upload/v1573742031/ocean/graph3_rc2hxs.png)
+![Pie chart of 2014-2019 Our Ocean Commitments by Category](https://res.cloudinary.com/csisideaslab/image/upload/v1573742031/ocean/graph3_rc2hxs.png "Our Ocean Commitments by Category")
 
 However, in 2019, the total number of climate change commitments rose to 21 percent of all commitments, and this 9-percentage point increase is a welcomed development. This positive trend may be a result of recent high-level attention to the ocean-climate nexus. For example, during the UN climate action summit in NYC in September 2019, the Intergovernmental Panel on Climate Change released a [special report ](https://www.nytimes.com/2019/09/25/climate/climate-change-oceans-united-nations.html)on the negative consequences of climate change has on oceans. In addition, the High Level Panel for a Sustainable Ocean Economy recently released an [action plan](http://oceanpanel.org/sites/default/files/2019-10/HLP_Report_Ocean_Solution_Climate_Change_final.pdf) for ocean-based climate solutions. The increased emphasis on the ocean-climate link is important to drive further collaboration between these interconnected communities.
 
