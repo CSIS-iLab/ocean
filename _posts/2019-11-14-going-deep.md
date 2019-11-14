@@ -1,6 +1,6 @@
 ---
 title: 'Going Deep: Lessons from Six Global Ocean Conferences'
-date: 2019-11-13 05:00:00 +0000
+date: 2019-11-14 05:00:00 +0000
 excerpt: Global ocean leaders met in Oslo last month for the sixth installment of
   the Our Ocean Conference where participants announced 370 commitments to improve
   the health, resiliency, and security of the world’s seas. Over the last few months,
@@ -28,7 +28,7 @@ image_caption: ''
 image_source: ''
 
 ---
-Global ocean leaders met in Oslo last month for the sixth installment of the Our Ocean Conference where participants announced 370 commitments to improve the health, resiliency, and security of the world’s seas. Making commitments is a centerpiece of this annual event, and since 2014, governments, intergovernmental organizations, the private sector, foundations, and nongovernmental organizations (NGOs) have made 1,385 of them. Over the last few months, we analyzed the commitments and this is what we found.[\[1\]](#_ftn1)
+Global ocean leaders met in Oslo last month for the sixth installment of the Our Ocean Conference where participants announced 370 commitments to improve the health, resiliency, and security of the world’s seas. Making commitments is a centerpiece of this annual event, and since 2014, governments, intergovernmental organizations, the private sector, foundations, and nongovernmental organizations (NGOs) have made 1,385 of them. Over the last few months, we analyzed the commitments and this is what we found.\[^1\]
 
 **Race to the top**
 
@@ -56,7 +56,7 @@ Commitments by national governments and intergovernmental organizations are heav
 
 ![Pie chart of 2014-20169 Our Ocean Commitments by Player Type](https://res.cloudinary.com/csisideaslab/image/upload/v1573742009/ocean/Graph2_zytwcz.png "Our Ocean Commitments")
 
-Indeed, this week, the White House Office of Science and Technology Policy, the Council on Environmental Quality, and the National Oceanic and Atmospheric Administration are organizing an event in Washington, D.C. to push for greater collaboration between the public and the private sector on a wide range of ocean issues. Public-private partnership (PPP) is an area where there is plenty of room for improvement for future Our Ocean conferences. In fact, less than 10 percent of all commitments announced at the six Our Ocean conferences feature PPPs.[\[2\]](#_ftn2)
+Indeed, this week, the White House Office of Science and Technology Policy, the Council on Environmental Quality, and the National Oceanic and Atmospheric Administration are organizing an event in Washington, D.C. to push for greater collaboration between the public and the private sector on a wide range of ocean issues. Public-private partnership (PPP) is an area where there is plenty of room for improvement for future Our Ocean conferences. In fact, less than 10 percent of all commitments announced at the six Our Ocean conferences feature PPPs.\[^2\]
 
 **The climate-ocean disconnect**
 
@@ -82,12 +82,8 @@ And finally, geopolitics and the ocean economy will emerge as a major inflection
 
 _Johan Bergenas is senior director for public policy at Vulcan Inc, Rachel Rivera is manager for philanthropic initiatives in the office of the chair at Vulcan Inc, and James Feinstein is a public policy analyst at Vulcan Inc._
 
-**_Commentary_ is produced by the Center for Strategic and International Studies (CSIS), a private, tax-exempt institution focusing on international public policy issues. Its research is nonpartisan and nonproprietary. CSIS does not take specific policy positions. Accordingly, all views, positions, and conclusions expressed in this publication should be understood to be solely those of the author(s).**
-
-**© 2019 by the Center for Strategic and International Studies. All rights reserved.**
-
 ***
 
-[\[1\]](#_ftnref1) We reviewed all 1,385 Our Ocean Conference commitments between 2014 to 2019 and categorized them by actor (governments, intergovernmental organizations, NGOs and foundations, private sector, and cities and states) and by theme (climate change, marine pollution, protecting ocean areas, marine security, sustainable blue economy, and sustainable fisheries). For 2019 data, we folded the future Our Ocean conferences commitments into the sustainable blue economy theme. As the Our Ocean Conference themes have evolved over time, we consolidated to maintain consistent themes over the years. For example, the 2014 Our Ocean Conference featured a “preventing and monitoring ocean acidification” theme, which we counted under our “climate change” theme. The 2014 Conference also includes the themes “building capacity,” “supporting coastal communities,” and “mapping and understanding the ocean.” As the commitments in these themes most closely align with the commitments made to the sustainable blue economy theme in subsequent years, we counted them as such. For 2019 data, we rolled the civil society organizations and philanthropist types into the NGOs and foundations type.
+\[^1\]: We reviewed all 1,385 Our Ocean Conference commitments between 2014 to 2019 and categorized them by actor (governments, intergovernmental organizations, NGOs and foundations, private sector, and cities and states) and by theme (climate change, marine pollution, protecting ocean areas, marine security, sustainable blue economy, and sustainable fisheries). For 2019 data, we folded the future Our Ocean conferences commitments into the sustainable blue economy theme. As the Our Ocean Conference themes have evolved over time, we consolidated to maintain consistent themes over the years. For example, the 2014 Our Ocean Conference featured a “preventing and monitoring ocean acidification” theme, which we counted under our “climate change” theme. The 2014 Conference also includes the themes “building capacity,” “supporting coastal communities,” and “mapping and understanding the ocean.” As the commitments in these themes most closely align with the commitments made to the sustainable blue economy theme in subsequent years, we counted them as such. For 2019 data, we rolled the civil society organizations and philanthropist types into the NGOs and foundations type.
 
-[\[2\]](#_ftnref2) There is no widely accepted [definition](https://ppp.worldbank.org/public-private-partnership/overview/what-are-public-private-partnerships) of a public-private partnership, but for the purposes of this analysis we used the following methodology: 1) the PPP must involve a government and/or intergovernmental organization in partnership with an NGO, foundation, the private sector, and/or an academic institution; 2) the commitment states that they are entering into a PPP or joint project together; 3) building on previous initiatives or established partnerships are counted; 4) commitments that do not count include: grants, vague references to partners, reaffirming previous commitments (unless expanded upon), and stating support without a quantifiable or explicit contribution.
+\[^2\]: There is no widely accepted [definition](https://ppp.worldbank.org/public-private-partnership/overview/what-are-public-private-partnerships) of a public-private partnership, but for the purposes of this analysis we used the following methodology: 1) the PPP must involve a government and/or intergovernmental organization in partnership with an NGO, foundation, the private sector, and/or an academic institution; 2) the commitment states that they are entering into a PPP or joint project together; 3) building on previous initiatives or established partnerships are counted; 4) commitments that do not count include: grants, vague references to partners, reaffirming previous commitments (unless expanded upon), and stating support without a quantifiable or explicit contribution.
