@@ -23,8 +23,10 @@ keywords:
 - Fishing
 further_reading: ''
 related_commentary: []
-related_spotlight: []
-is_featured: false
+related_spotlight:
+- _spotlights/charting-a-new-arctic-ocean.md
+- _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
+is_featured: true
 image: ''
 image_caption: ''
 image_source: ''
