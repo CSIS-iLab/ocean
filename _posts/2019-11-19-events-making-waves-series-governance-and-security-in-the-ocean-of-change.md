@@ -32,7 +32,7 @@ image_caption: ''
 image_source: ''
 
 ---
-<figure class="post-feature-video"> <div class="video-wrapper"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/693775780&amp;color=ff7700&amp;show_artwork=false"></iframe> </div> <figcaption class="img-caption">An Ocean of Change: How Climate Change is Upending our View of Maritime Sustainability, Sovereignty, and Security</figcaption> </figure>
+<figure class="post-feature-video"> <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/-denKHLBOAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> <figcaption class="img-caption">An Ocean of Change: How Climate Change is Upending our View of Maritime Sustainability, Sovereignty, and Security</figcaption> </figure>
 
 On October 8, the Stephenson Ocean Security Project hosted an event on the science and security implications of the Intergovernmental Panel on Climate Change’s (IPCC) _Special Report on the Ocean and Cryosphere in a Changing Climate_. In a first panel, speakers addressed the science outlined in the report, highlighting the effects of climate change on sea level rise, ocean biodiversity, ocean productivity, and species range shifts. In a second panel, speakers examined the security challenges raised by the changing ocean. A keynote conversation with retired Admiral John M. Richardson, the 31st chief of naval operations, explored the security strategies the United States can employ to meet those challenges.
 
