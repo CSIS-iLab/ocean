@@ -17,8 +17,10 @@ lede: Whitley Saumweber and Ty Loft highlight the opportunities for action raise
   in a Stephenson Ocean Security Project event on how climate change is shaping maritime
   sustainability, sovereignty, and security.
 keywords:
-- fishing
+- Making Waves
+- Security
 - Climate Change
+- Fishing
 further_reading: ''
 related_commentary: []
 related_spotlight: []
