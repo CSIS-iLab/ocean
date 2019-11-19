@@ -30,6 +30,7 @@ fields:
   label: Image Upload
   template: image-upload
 pages:
+- _posts/events-making-waves-series-governance-and-security-in-the-ocean-of-change.md
 - _posts/2019-11-14-going-deep.md
 - _posts/2019-09-03-threading-the-needle-balancing-conservation-and-security-in-the-high-seas-treaty.md
 - _posts/2019-05-21-chinas-most-destructive-boats-return-to-the-south-china-sea.md
