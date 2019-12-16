@@ -77,7 +77,7 @@ exports.stylelint = styleLintTask
 /*----------  JavaScript  ----------*/
 
 const jsFiles = []
-for (var i = 0; i <= config.js.entry.length - 1; i++) {
+for (let i = 0; i <= config.js.entry.length - 1; i++) {
   jsFiles.push(config.assets + '/' + config.js.src + '/' + config.js.entry[i])
 }
 
