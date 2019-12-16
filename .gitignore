@@ -10,7 +10,7 @@ _site
 .jekyll-metadata
 /.bundle
 /vendor
-.jekyll-cache
+.jekyll-cache/
 
 # Compiled Files
 /assets/css/**/*.css
