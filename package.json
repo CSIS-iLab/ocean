@@ -96,8 +96,6 @@
     "scrollmagic": "^2.0.6",
     "smooth-scroll": "^15.0.0",
     "stickyfilljs": "^2.1.0",
-    "stylelint-config-sass-guidelines": "^5.2.0",
-    "stylelint-scss": "^3.3.2",
     "tippy.js": "^3.3.0"
   }
 }
