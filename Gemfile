@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.4"
+gem "jekyll", "~> 4.0.0"
 gem "public_suffix", "~> 3.0.0"
 gem "algoliasearch", "1.6.1"
 
@@ -20,7 +20,7 @@ gem "algoliasearch", "1.6.1"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-seo-tag", ">= 2.4.0"
-  gem "jekyll-feed"
+  gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sitemap"
 end
 
