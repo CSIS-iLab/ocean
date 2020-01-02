@@ -1,35 +1,33 @@
 ---
 title: 'Going Deep: Lessons from Six Global Ocean Conferences'
-date: 2019-11-14 05:00:00 +0000
-excerpt:
-  Global ocean leaders met in Oslo last month for the sixth installment of
+date: 2019-11-14T05:00:00.000+00:00
+excerpt: Global ocean leaders met in Oslo last month for the sixth installment of
   the Our Ocean Conference where participants announced 370 commitments to improve
   the health, resiliency, and security of the world’s seas. Over the last few months,
   we analyzed the commitments and this is what we found.
 authors:
-  - _authors/johan-bergenas.md
-  - _authors/rachel-rivera.md
-  - _authors/james-feinstein.md
+- _authors/johan-bergenas.md
+- _authors/rachel-rivera.md
+- _authors/james-feinstein.md
 introduction: ''
-lede:
-  Ocean leaders just concluded the sixth Our Ocean Conference in Oslo. Since 2014,
+lede: Ocean leaders just concluded the sixth Our Ocean Conference in Oslo. Since 2014,
   participants have announced 1,385 commitments to improve the health, resiliency,
   and security of the world’s seas. These are the lessons learned and what needs to
   happen next.
 keywords:
-  - Climate Change
-  - Governance
+- Climate Change
+- Governance
 further_reading: ''
 related_commentary:
-  - _posts/2019-09-03-threading-the-needle-balancing-conservation-and-security-in-the-high-seas-treaty.md
+- _posts/2019-09-03-threading-the-needle-balancing-conservation-and-security-in-the-high-seas-treaty.md
 related_spotlight:
-  - _spotlights/charting-a-new-arctic-ocean.md
-is_featured: true
+- _spotlights/charting-a-new-arctic-ocean.md
+is_featured: false
 image: ''
 image_caption: ''
 image_source: ''
----
 
+---
 Global ocean leaders met in Oslo last month for the sixth installment of the Our Ocean Conference where participants announced 370 commitments to improve the health, resiliency, and security of the world’s seas. Making commitments is a centerpiece of this annual event, and since 2014, governments, intergovernmental organizations, the private sector, foundations, and nongovernmental organizations (NGOs) have made 1,385 of them. Over the last few months, we analyzed the commitments and this is what we found.[^1]
 
 ## Race to the top
