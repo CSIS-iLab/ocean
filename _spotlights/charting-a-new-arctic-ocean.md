@@ -8,7 +8,7 @@ js_files:
   - https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js
   - arctic
 css_files:
-  - arctic
+  - arctic/arctic
 include_header: arctic/intro.html
 excerpt:
   'Welcome to new and largely uncharted maritime space: the Arctic Ocean. Only
