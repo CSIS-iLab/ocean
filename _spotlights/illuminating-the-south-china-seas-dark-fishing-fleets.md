@@ -9,7 +9,7 @@ js_files:
   - https://code.highcharts.com/modules/pattern-fill.js
   - scs
 css_files:
-  - scs
+  - scs/scs
 include_header: scs/intro.html
 excerpt:
   Unseen fishing activity. Maritime militias in the Spratlys. Fishers have
