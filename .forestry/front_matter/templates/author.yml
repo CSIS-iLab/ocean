@@ -15,15 +15,15 @@ fields:
   name: headshot
   label: headshot
 pages:
-- _authors/johan-bergenas.md
-- _authors/rachel-rivera.md
-- _authors/james-feinstein.md
-- _authors/ty-loft.md
-- _authors/marco-ruiz-serkovic.md
-- _authors/emi-koch.md
-- _authors/whitley-saumweber.md
-- _authors/yori-hook.md
-- _authors/monica-medina.md
-- _authors/gregory-b-poling.md
 - _authors/carolyn-weis.md
 - _authors/dan-myers.md
+- _authors/emi-koch.md
+- _authors/gregory-b-poling.md
+- _authors/james-feinstein.md
+- _authors/johan-bergenas.md
+- _authors/marco-ruiz-serkovic.md
+- _authors/monica-medina.md
+- _authors/rachel-rivera.md
+- _authors/ty-loft.md
+- _authors/whitley-saumweber.md
+- _authors/yori-hook.md
