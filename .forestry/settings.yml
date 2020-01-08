@@ -10,6 +10,13 @@ sections:
   templates:
   - test-post
 - type: directory
+  path: _spotlights
+  label: Spotlights
+  create: documents
+  match: "**/*"
+  templates:
+  - introducing-a-new-arctic-ocean-7eafa651-7ad3-4777-b637-a542c77afacb
+- type: directory
   path: _authors
   label: Authors
   create: all
