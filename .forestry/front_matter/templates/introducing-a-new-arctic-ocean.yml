@@ -43,5 +43,3 @@ fields:
         format: markdown
   config:
     labelField: label
-pages:
-- _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
