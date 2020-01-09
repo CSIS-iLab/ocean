@@ -61,7 +61,7 @@ contributors:
 published: true
 ---
 
-<div id="spotlight__intro-p">Welcome to new and largely uncharted maritime space: the Arctic Ocean. Only 2 percent of its waters are charted to international standards, but what is truly unchartered is its rapid transformation.</div>
+<div id="spotlight__intro-p">Welcome to new and largely uncharted maritime space: the Arctic Ocean. Only 2 percent of its waters are charted to international standards, but what is truly uncharted is its rapid transformation.</div>
 
 The Arctic is warming at twice the rate of the rest of the planet and has been warmer over the past five years than at any time since records began in 1900.[^1] A warming Arctic is now home to a substantially diminished Greenland ice sheet and polar ice cap, ocean acidification, algae blooms, and dramatic changes to sensitive Arctic ecosystems crucial to sustaining sea life.
 
