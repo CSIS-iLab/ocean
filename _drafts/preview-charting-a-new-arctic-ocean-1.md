@@ -18,18 +18,10 @@ related_commentary:
 - _posts/2019-11-19-events-making-waves-series-governance-and-security-in-the-ocean-of-change.md
 related_spotlight:
 - _spotlights/charting-a-new-arctic-ocean.md
-is_featured: false
+is_featured: true
 
 ---
-<figure class="post-feature-video">
-
-<div class="video-wrapper"><iframe width="560" height="315" src="[https://www.youtube.com/embed/c6RRT3YiOKo](https://www.youtube.com/embed/c6RRT3YiOKo "https://www.youtube.com/embed/c6RRT3YiOKo")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</div>
-
-<figcaption class="img-caption">VIDEO CAPTION HERE <span class="img-caption__source">VIDEO SOURCE HERE</span></figcaption>
-
-</figure>
+<figure class="post-feature-video"> <div class="video-wrapper"><iframe width="560" height="315" src="[https://www.youtube.com/embed/c6RRT3YiOKo](https://www.youtube.com/embed/c6RRT3YiOKo "https://www.youtube.com/embed/c6RRT3YiOKo")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> <figcaption class="img-caption">PreView: Charting a New Arctic Ocean</figcaption> </figure>
 
 _The Arctic is warming faster than any other part of the planet, threatening ecosystems and biodiversity. As the ice melts, Russia and China are rapidly expanding their footprint in the region, in pursuit of resources, including fish, oil and gas, and minerals. Yet only 2 percent of Arctic Ocean waters are charted to international standards. How should the Arctic be governed to conserve fragile ecosystems, maintain U.S. security, and improve transparency?_
 
