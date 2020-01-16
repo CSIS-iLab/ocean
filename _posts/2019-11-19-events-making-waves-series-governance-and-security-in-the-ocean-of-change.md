@@ -1,6 +1,6 @@
 ---
 title: 'Events Making Waves Series: Governance and Security in the Ocean of Change'
-date: 2019-11-19 05:00:00 +0000
+date: 2019-11-19T05:00:00.000+00:00
 excerpt: Whitley Saumweber and Ty Loft highlight the opportunities for action raised
   in a Stephenson Ocean Security Project event on how climate change is shaping maritime
   sustainability, sovereignty, and security.
@@ -26,7 +26,7 @@ related_commentary: []
 related_spotlight:
 - _spotlights/charting-a-new-arctic-ocean.md
 - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
-is_featured: true
+is_featured: false
 image: ''
 image_caption: ''
 image_source: ''
