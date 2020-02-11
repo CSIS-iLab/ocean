@@ -32,4 +32,4 @@ is_featured: true
 
 </figure>
 
-SOS hosted the Second Annual CSIS Ocean Security Forum on January 7, 2020. Representative Jared Huffman (D-CA) and Vice Admiral Daniel B. Abel provided keynote remarks. The event featured expert panels on China’s distant-water fishing and on the relationship between illicit fishing and human rights abuses in the seafood industry.
+SOS hosted the Second Annual CSIS Ocean Security Forum on January 7, 2020. Representative Jared Huffman (D-CA) and Vice Admiral Daniel B. Abel provided keynote remarks. The event featured expert panels on China’s distant-water fishing fleet and on the relationship between illicit fishing and human rights abuses in the seafood industry.
