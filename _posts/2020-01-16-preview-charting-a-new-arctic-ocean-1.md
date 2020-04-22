@@ -18,7 +18,7 @@ related_commentary:
 - _posts/2019-11-19-events-making-waves-series-governance-and-security-in-the-ocean-of-change.md
 related_spotlight:
 - _spotlights/charting-a-new-arctic-ocean.md
-is_featured: true
+is_featured: false
 
 ---
 <figure class="post-feature-video"> <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/c6RRT3YiOKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> <figcaption class="img-caption">PreView: Charting a New Arctic Ocean</figcaption> </figure>
