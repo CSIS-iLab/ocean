@@ -7,6 +7,7 @@ excerpt: The ocean data revolution can help states improve offshore governance. 
   to data to dominate marine resources.
 authors:
 - _authors/ty-loft.md
+- _authors/whitley-saumweber.md
 introduction: ''
 lede: The ocean data revolution can help states improve offshore governance. But policymakers
   should consider how ownership over ocean data distributes power, so that seafaring
