@@ -1,6 +1,6 @@
 ---
 title: Are We Moving toward an Ocean Data Dystopia?
-date: 2020-04-22 12:00:00 +0000
+date: 2020-04-22T12:00:00.000+00:00
 excerpt: The ocean data revolution can help states improve offshore governance. But
   policymakers should consider how ownership over ocean data distributes power, so
   that seafaring superpowers, such as China and Russia, do not exploit uneven access
@@ -30,7 +30,7 @@ The ocean data revolution is making the sea’s wealth and workers visible by he
 
 James C. Scott, a Sterling Professor of Political Science at Yale, explains how the way data makes the world legible in turn distributes power in his book [_Seeing Like a State:_](https://books.google.co.nz/books?id=CA7UDwAAQBAJ&pg=PA78&lpg=PA78&dq=A+thoroughly+legible+society+eliminates+local+monopolies+of+information+and+creates+a+kind+of+national+transparency+through+the+uniformity+of+codes,+identities,+statistics,+and+measures.+.+.+.+It+is+likely+to+create+new+positional+advantages+for+those+at+the+apex+who+have+the+knowledge+and+access+to+easily+decipher+the+new+state-created+format.&source=bl&ots=NqpsYiCuMk&sig=ACfU3U1RAAOhp6NXVNqLhhsL_Mll5p9MsQ&hl=en&sa=X&ved=2ahUKEwi63uG39PzoAhVwxjgGHcsRA4EQ6AEwAHoECAoQAQ#v=onepage&q=A%20thoroughly%20legible%20society%20eliminates%20local%20monopolies%20of%20information%20and%20creates%20a%20kind%20of%20national%20transparency%20through%20the%20uniformity%20of%20codes%2C%20identities%2C%20statistics%2C%20and%20measures.%20.%20.%20.%20It%20is%20likely%20to%20create%20new%20positional%20advantages%20for%20those%20at%20the%20apex%20who%20have%20the%20knowledge%20and%20access%20to%20easily%20decipher%20the%20new%20state-created%20format.&f=false)
 
-> A thoroughly legible society eliminates local monopolies of information and creates a kind of national transparency through the uniformity of codes, identities, statistics, regulations, and measures. . . . It is likely to create new positional advantages for those at the apex who have the knowledge and access to easily decipher the new state-created format.
+A thoroughly legible society eliminates local monopolies of information and creates a kind of national transparency through the uniformity of codes, identities, statistics, regulations, and measures. . . . It is likely to create new positional advantages for those at the apex who have the knowledge and access to easily decipher the new state-created format.
 
 Data provides a helpful view of the world, but only to those with the technology to access it and the knowhow to interpret and use it. Powerful states and corporations, for example, can use new digital portraits of the ocean to more efficiently map fishing and deep-sea mining effort to resource locations.
 
