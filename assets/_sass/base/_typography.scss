@@ -161,8 +161,9 @@ cite {
 }
 
 .com-blockquote {
+  position: relative !important;
+  width: 80% !important;
   margin: 3rem auto;
-  width: 80%;
 }
 
 address {
