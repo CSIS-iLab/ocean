@@ -19,7 +19,7 @@ related_commentary:
 - _posts/2019-05-21-chinas-most-destructive-boats-return-to-the-south-china-sea.md
 - _posts/2019-01-15-launch-of-the-stephenson-ocean-security-project.md
 related_spotlight: []
-is_featured: true
+is_featured: false
 
 ---
 <figure class="post-feature-video">
