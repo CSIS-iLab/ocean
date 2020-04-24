@@ -1,9 +1,9 @@
 ---
 title: 'PreView: Charting a New Arctic Ocean'
 date: 2020-01-16T17:00:00.000+00:00
-excerpt: _The Arctic is warming faster than any other part of the planet, threatening
+excerpt: The Arctic is warming faster than any other part of the planet, threatening
   ecosystems and biodiversity. How should the Arctic be governed to conserve fragile
-  ecosystems, maintain U.S. security, and improve transparency?_
+  ecosystems, maintain U.S. security, and improve transparency?
 authors:
 - _authors/whitley-saumweber.md
 - _authors/heather-conley.md
