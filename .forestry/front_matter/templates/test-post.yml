@@ -26,6 +26,7 @@ fields:
   label: Post Meta Secondary
   template: post-meta-secondary
 pages:
+- _authors/sabrina-kim.md
 - _posts/2018-12-10-making-the-oceans-more-secure.md
 - _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
 - _posts/2019-05-21-chinas-most-destructive-boats-return-to-the-south-china-sea.md
