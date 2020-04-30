@@ -11,7 +11,11 @@ authors:
 - _authors/ty-loft-1.md
 - _authors/whitley-saumweber.md
 introduction: ''
-lede: ''
+lede: Scientific advances have made genetic data more valuable and available than
+  ever, but broad accessibility to potentially dangerous compounds can be risky. UN
+  delegates negotiating a High Seas Treaty should weigh any proposal to widely disseminate
+  novel genetic information against the realities of twenty-first century biological
+  security concerns.
 keywords:
 - High Seas
 - Biological Defense
