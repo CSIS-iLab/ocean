@@ -8,7 +8,7 @@ excerpt: Scientific advances have made genetic data more valuable and available 
   novel genetic information against the realities of twenty-first century biological
   security concerns.
 authors:
-- _authors/sabrina-kim.md
+- _authors/ty-loft-1.md
 - _authors/whitley-saumweber.md
 introduction: ''
 lede: Scientific advances have made genetic data more valuable and available than
