@@ -4,6 +4,7 @@ title: To Share Or Not to Share? Biological Security Risks for Marine Genetic Re
 date: 2020-04-30 12:00:00 +0000
 excerpt: ''
 authors:
+- _authors/sabrina-kim.md
 - _authors/whitley-saumweber.md
 introduction: ''
 lede: ''
