@@ -2,13 +2,22 @@
 title: To Share Or Not to Share? Biological Security Risks for Marine Genetic Resources
   on the High Seas
 date: 2020-04-30 12:00:00 +0000
-excerpt: ''
+excerpt: Scientific advances have made genetic data more valuable and available than
+  ever, but broad accessibility to potentially dangerous compounds can be risky. UN
+  delegates negotiating a High Seas Treaty should weigh any proposal to widely disseminate
+  novel genetic information against the realities of twenty-first century biological
+  security concerns.
 authors:
 - _authors/sabrina-kim.md
 - _authors/whitley-saumweber.md
 introduction: ''
-lede: ''
-keywords: []
+lede: Scientific advances have made genetic data more valuable and available than
+  ever, but broad accessibility to potentially dangerous compounds can be risky. UN
+  delegates negotiating a High Seas Treaty should weigh any proposal to widely disseminate
+  novel genetic information against the realities of twenty-first century biological
+  security concerns.
+keywords:
+- high seas
 further_reading: ''
 related_commentary: []
 related_spotlight: []
