@@ -22,7 +22,7 @@ related_commentary:
 - _posts/2019-11-19-events-making-waves-series-governance-and-security-in-the-ocean-of-change.md
 related_spotlight:
 - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
-is_featured: true
+is_featured: false
 
 ---
 Technology may soon [track](https://academic.oup.com/icesjms/article/75/5/1803/4984479) every shoal of tuna in the sea. Satellites can already [locate](https://amti.csis.org/illuminating-south-china-seas-dark-fishing-fleets/) every ship. We are, [according to experts](https://oceanpanel.org/sites/default/files/2020-01/19_HLP_BP6_V4.pdf), living through an “ocean data revolution.” But while unprecedented transparency can help states improve offshore governance, it also creates risks that must be managed. Seafaring superpowers, such as China and Russia, can exploit uneven access to data to dominate marine resources, particularly where [ocean governance](https://qz.com/africa/1506419/somalia-gives-fishing-license-to-31-china-vessels/) is weak. Before that happens, U.S. policymakers should consider how ownership over ocean data distributes power. They should lead the construction of a public ocean technology system that helps developing states apply data to marine resource management to compete in the new, blue economy. Otherwise, the data-blind may be left to fish for empty seawater.
