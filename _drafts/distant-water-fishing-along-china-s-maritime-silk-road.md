@@ -3,7 +3,9 @@ title: Distant-water Fishing along China’s Maritime Silk Road
 date: 2020-07-31 14:00:00 +0000
 excerpt: China’s burgeoning network of fishing bases, and the opacity of the bilateral
   fishing agreements they spring from, therefore raise three related sets of concerns.
-authors: []
+authors:
+- _authors/whitley-saumweber.md
+- _authors/ty-loft.md
 introduction: ''
 lede: ''
 keywords:
