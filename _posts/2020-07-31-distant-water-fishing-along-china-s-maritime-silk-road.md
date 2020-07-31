@@ -21,7 +21,6 @@ related_spotlight:
 is_featured: true
 
 ---
-
 <figure class="post-feature-video">
 
 <div class="video-wrapper"><iframe width="949" height="534" src="[https://www.youtube.com/embed/QAgLsd7b2Xo](https://www.youtube.com/embed/QAgLsd7b2Xo "China's Hidden Maritime Ambition")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -70,7 +69,7 @@ Climate change poses additional challenges, particularly in the tropics, where m
 
 Climate change will magnify the importance of good ocean governance because states will need to attune fisheries management to change to prevent disaster. But fishing bases make good governance harder. By shielding exploitation from view and undermining the PSMA, the bases leave states unable to control the amount of fish harvested from their waters and adjust catch allowances when stocks decline. Depleted ecosystems provide society fewer [hard services](http://www.fao.org/ecosystem-services-biodiversity/background/provisioning-services/en/), such as seafood, storm buffering, carbon sequestration, and [marine genetic resources](https://ocean.csis.org/commentary/to-share-or-not-to-share-biological-security-risks-for-marine-genetic-resources-on-the-high-seas/). They also offer fewer [intangible benefits](http://www.fao.org/ecosystem-services-biodiversity/background/cultural-services/en/), such as the cultural value of nature and the beauty of coral reefs and ocean wildlife.
 
-# Security
+## Security
 
 Fishing bases threaten international security and U.S. interests in three ways: they endanger livelihoods, increase China’s leverage over developing states, and weaken liberalism.
 
@@ -96,4 +95,4 @@ Ocean health benefits as well. Because the ocean is a shared space, and because 
 
 ## **Conclusion**
 
-As an emerging great power, China drives trends and shapes or distorts international norms within a given sector though its behavior the sector. The country’s impact on marine resources and global ocean sustainability is further multiplied by China’s massive demand and market presence and by the relatively smaller U.S. and EU distant-water fleet presences. This lack of a counterbalancing force in tonnage must be bolstered by commitments to multilateralism, international norms, and good governance, carried out using market power and diplomatic soft power. Above all, the United States and European Union should commit to working with developing states to manage marine resources sustainably and equitably. 
+As an emerging great power, China drives trends and shapes or distorts international norms within a given sector though its behavior the sector. The country’s impact on marine resources and global ocean sustainability is further multiplied by China’s massive demand and market presence and by the relatively smaller U.S. and EU distant-water fleet presences. This lack of a counterbalancing force in tonnage must be bolstered by commitments to multilateralism, international norms, and good governance, carried out using market power and diplomatic soft power. Above all, the United States and European Union should commit to working with developing states to manage marine resources sustainably and equitably.{% logo %}
