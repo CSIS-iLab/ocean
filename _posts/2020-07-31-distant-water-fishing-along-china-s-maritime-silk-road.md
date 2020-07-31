@@ -27,7 +27,7 @@ is_featured: true
 
 </div>
 
-<figcaption class="img-caption">Second Annual Ocean Security Forum <span class="img-caption__source">CSIS</span></figcaption>
+<figcaption class="img-caption">China's Hidden Maritime Ambition <span class="img-caption__source">CSIS</span></figcaption>
 
 </figure>
 
