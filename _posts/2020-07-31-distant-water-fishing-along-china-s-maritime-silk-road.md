@@ -23,7 +23,7 @@ is_featured: true
 ---
 <figure class="post-feature-video">
 
-<div class="video-wrapper"><iframe width="949" height="534" src="[https://www.youtube.com/embed/QAgLsd7b2Xo](https://www.youtube.com/embed/QAgLsd7b2Xo "China's Hidden Maritime Ambition")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="949" height="534" src="https://www.youtube.com/embed/QAgLsd7b2Xo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
