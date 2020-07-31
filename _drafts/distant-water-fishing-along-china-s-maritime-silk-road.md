@@ -18,7 +18,7 @@ related_commentary:
 - _posts/2020-02-11-second-annual-ocean-security-forum.md
 related_spotlight:
 - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
-is_featured: false
+is_featured: true
 
 ---
 
