@@ -22,6 +22,16 @@ is_featured: true
 
 ---
 
+<figure class="post-feature-video">
+
+<div class="video-wrapper"><iframe width="949" height="534" src="[https://www.youtube.com/embed/QAgLsd7b2Xo](https://www.youtube.com/embed/QAgLsd7b2Xo "China's Hidden Maritime Ambition")" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+<figcaption class="img-caption">Second Annual Ocean Security Forum <span class="img-caption__source">CSIS</span></figcaption>
+
+</figure>
+
 ## The Issue:
 
 China is building a network of fishing bases in developing countries across four continents. Comprising ports, boats, and fish processing plants, the bases service China’s distant-water fleet: an armada of over [4,600 vessels](https://onlinelibrary.wiley.com/doi/full/10.1111/faf.12032) (potentially [many more](https://www.odi.org/news/16995-chinas-distant-water-fishing-fleet-more-five-times-larger-estimated-new-odi-report#:\~:text=Home-,China's%20Distant%20Water%20Fishing%20fleet%20is%20more%20than%20five,than%20estimated%20%2D%20new%20ODI%20report&text=A%20new%20report%20from%20the,Oceans%20Day%20on%208%20June.)) that operates in the exclusive economic zones (EEZs) of [42 countries](http://www.moa.gov.cn/gk/ghjh_1/201712/t20171227_6128624.htm) and accounts for [14 percent](https://onlinelibrary.wiley.com/doi/full/10.1111/faf.12032) of worldwide marine catch by value. According to China’s latest [Ocean Fishery Development Plan](http://www.moa.gov.cn/gk/ghjh_1/201712/t20171227_6128624.htm), the bases fall under China’s Belt and Road Initiative (BRI), the umbrella project under which China is investing $1 trillion in global infrastructure. The plan calls distant-water fishing a tool to “build maritime power.”
