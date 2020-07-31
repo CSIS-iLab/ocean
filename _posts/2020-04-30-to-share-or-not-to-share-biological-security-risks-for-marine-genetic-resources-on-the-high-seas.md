@@ -24,7 +24,7 @@ related_commentary:
 - _posts/2020-04-22-are-we-moving-toward-an-ocean-data-dystopia.md
 - _posts/2019-09-03-threading-the-needle-balancing-conservation-and-security-in-the-high-seas-treaty.md
 related_spotlight: []
-is_featured: true
+is_featured: false
 
 ---
 The majority of the ocean is intended to be shared. Known as the high seas, these waters are beyond the jurisdiction of any one country and are open to all nations whether developed or developing, rich or poor, small or large. But this commons-based approach has a downside. Without a central authority to define and enforce the rules on the high seas—particularly when it comes to managing and using natural resources—criminal activity such as illegal, unreported, and unregulated fishing and human rights abuses can go unnoticed and unpunished.
