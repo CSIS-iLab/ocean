@@ -7,7 +7,8 @@ authors:
 - _authors/whitley-saumweber.md
 - _authors/ty-loft.md
 introduction: ''
-lede: ''
+lede: China is building a network of overseas, distant-water fishing bases, with major
+  implications for the sovereignty, sustainability, and security of developing states.
 keywords:
 - IUU
 - Fishing
