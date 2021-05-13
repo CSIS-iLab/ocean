@@ -85,7 +85,7 @@
     "core-js": "^3.5.0",
     "flickity": "^2.1.2",
     "flickity-imagesloaded": "^2.0.0",
-    "gsap": "^2.0.2",
+    "gsap": "^3.6.0",
     "instantsearch.js": "^2.10.4",
     "lazysizes": "^5.2.1",
     "luminous-lightbox": "^2.3.2",
