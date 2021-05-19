@@ -13,11 +13,14 @@ const plumber = require('gulp-plumber')
 const postcss = require('gulp-postcss')
 const pngquant = require('imagemin-pngquant')
 const sass = require('gulp-sass')
+const Fiber = require('fibers')
 const styleLint = require('gulp-stylelint')
 const t2 = require('through2')
 const log = require('fancy-log')
 const webpackStream = require('webpack-stream')
 const webpack = require('webpack')
+
+sass.compiler = require('sass')
 
 const server = browserSync.create()
 
@@ -26,7 +29,10 @@ const server = browserSync.create()
 function sassTask() {
   return src(config.assets + '/' + config.sass.src + '/**/*.scss')
     .pipe(
-      sass({ outputStyle: config.sass.outputStyle }).on('error', sass.logError)
+      sass({ fiber: Fiber, outputStyle: config.sass.outputStyle }).on(
+        'error',
+        sass.logError
+      )
     )
     .pipe(postcss([autoprefixer(config.sass.autoprefixer)]))
     .pipe(
