@@ -106,6 +106,7 @@ module.exports = {
       Stickyfill: 'stickyfilljs',
       TimelineMax: 'TimelineMax',
       'tippy.js': 'tippy',
+      TweenLite: 'TweenLite',
       TweenMax: 'TweenMax',
       Highcharts: 'Highcharts'
     },

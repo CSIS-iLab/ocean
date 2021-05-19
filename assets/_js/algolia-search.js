@@ -29,9 +29,11 @@ const searchParameters = {
 }
 
 if (!['all', 'authors'].includes(dataset.collectionTitle)) {
+  /* eslint-disable */
   searchParameters.filters = `content_type:'${
     dataset.collectionTitle
   }' AND is_featured: false`
+  /* eslint-enable */
 }
 
 if (dataset.collectionTitle === 'authors') {
@@ -97,9 +99,11 @@ const updateSearchInput = () => {
 }
 
 const updateTaglineTitle = () => {
+  /* eslint-disable */
   titleText.innerHTML = `ARTICLES WITH TAG: ${
     search.helper.state.hierarchicalFacetsRefinements.keywords
   }`
+  /* eslint-enable */
 }
 
 const toggleElementsOnNoResults = (elements, action) => {
@@ -203,6 +207,7 @@ const addResultSummary = () => {
           let results_text = 'Items'
           let page = data.page + 1
 
+          /* eslint-disable */
           if (data.hasOneResult) {
             results_text = 'Item'
           }
@@ -213,8 +218,8 @@ const addResultSummary = () => {
             <span class="summary-label">Page</span> <span class="summary-text">${page} of ${
             data.nbPages
           }</span>
-
           `
+          /* eslint-enable */
         },
         autoHideContainer: true
       }
