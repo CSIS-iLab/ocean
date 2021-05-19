@@ -76,12 +76,14 @@ const formatContent = reference => {
     }frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>`
   }
 
+  /* eslint-disable */
   let textContent =
     Breakpoints.isMobile() && title
       ? `<div class="tooltipped"><i class="icon-x"></i>${title}${entry}</div>`
       : Breakpoints.isMobile()
         ? `<div class="tooltipped"><i class="icon-x"></i>${entry}</div>`
         : `<div class="tooltipped">${entry}</div>`
+  /* eslint-enable */
 
   return textContent
 }
