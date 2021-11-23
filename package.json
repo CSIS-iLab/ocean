@@ -84,7 +84,7 @@
     "@babel/runtime": "^7.2.0",
     "@threespot/freeze-scroll": "^1.0.3",
     "algoliasearch": "^3.30.0",
-    "algoliasearch-helper": "^2.26.1",
+    "algoliasearch-helper": "^3.6.2",
     "core-js": "^3.5.0",
     "flickity": "^2.1.2",
     "flickity-imagesloaded": "^2.0.0",
