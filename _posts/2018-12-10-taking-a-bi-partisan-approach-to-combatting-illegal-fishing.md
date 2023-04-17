@@ -1,29 +1,30 @@
 ---
 title: Taking a Bi-Partisan Approach to Combatting Illegal Fishing
-date: 2019-01-09 05:00:57 +0000
-excerpt: 'Illicit fishing poses a global challenge to sustainability and security. 
-  Harmonizing the U.S. Government’s broad legal and authorities and enforcement capabilities
-  is a needed step to effectively counter this threat.    '
+date: '2019-01-09 05:00:57 +0000'
+excerpt: "Illicit fishing poses a global challenge to sustainability and security.\_ Harmonizing the U.S. Government’s broad legal and authorities and enforcement capabilities is a needed step to effectively counter this threat.    "
 authors:
-- _authors/monica-medina.md
-- _authors/carolyn-weis.md
-lede: Illicit fishing poses a global challenge to sustainability and security.  Harmonizing
-  the U.S. Government’s broad legal and authorities and enforcement capabilities is
-  a needed step to effectively counter this threat.
+  - _authors/monica-medina.md
+  - _authors/carolyn-weis.md
+lede: >-
+  Illicit fishing poses a global challenge to sustainability and security. 
+  Harmonizing the U.S. Government’s broad legal and authorities and enforcement
+  capabilities is a needed step to effectively counter this threat.
 keywords:
-- IUU
-- fishing
-- legal
+  - IUU
+  - fishing
+  - legal
 further_reading: ''
 related_spotlight: []
 related_commentary:
-- _posts/2018-12-10-making-the-oceans-more-secure.md
+  - _posts/2018-12-10-making-the-oceans-more-secure.md
 is_featured: false
 image: ''
 image_caption: ''
 image_source: ''
-
+_template: test_post
 ---
+
+
 When most Americans think about seafood, they don’t associate this [healthy source of protein with global conflict](https://foreignpolicy.com/2018/09/12/food-fight-illegal-fishing-conflict/). But in the future, access to seafood may [likely to cause heated international disputes](https://news.nationalgeographic.com/2018/06/climate-change-drives-fish-wars-science-environment/) and [threaten U.S. security interests](https://www.washingtonpost.com/opinions/the-fishing-wars-are-coming/2017/09/13/05c75208-97c6-11e7-b569-3360011663b4_story.html?utm_term=.e7c2dddbd907) much like competition over other critical natural resources, such as oil and water. The vast majority of the wild-caught fish we buy in grocery stores or order in restaurants comes from fishing grounds thousands of miles away. The dirty little secret about that fish is that up to 30 percent of it [very well may be caught illegally](https://fas.org/irp/nic/fishing.pdf), U.S. consumers have no way to know it.
 
 The supply chain for fish caught in the wild is long with few tools to trace fish all the way through. In 2016, the U.S. [government](https://fas.org/irp/nic/fishing.pdf) described a far too common practice of “fish laundering” in which legal and illegal fish catches are comingled on ships in the ocean to evade detection. According to the study, “\[a\]n estimated 95 percent of IUU \[Illegal, Unreported, or Unregulated\] tuna fishing activities in the EEZs and high seas adjacent to Australia, New Zealand, Papua New Guinea, and 12 smaller Pacific Islands, for example, are conducted by licensed vessels that fish beyond their quotas or authorized areas and then transfer the illegal portion of their catch to other vessels at sea.” Unfortunately, eradicating illegal fishing is getting more difficult as its common abuse of labor practices and human rights is making it easier to do.

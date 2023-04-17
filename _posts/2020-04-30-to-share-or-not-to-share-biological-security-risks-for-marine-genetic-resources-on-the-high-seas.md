@@ -1,32 +1,38 @@
 ---
-title: To Share Or Not to Share? Biological Security Risks for Marine Genetic Resources
-  on the High Seas
-date: 2020-04-30 12:00:00 +0000
-excerpt: Scientific advances have made genetic data more valuable and available than
-  ever, but broad accessibility to potentially dangerous compounds can be risky. UN
-  delegates negotiating a High Seas Treaty should weigh any proposal to widely disseminate
-  novel genetic information against the realities of twenty-first century biological
-  security concerns.
+title: >-
+  To Share Or Not to Share? Biological Security Risks for Marine Genetic
+  Resources on the High Seas
+date: '2020-04-30 12:00:00 +0000'
+excerpt: >-
+  Scientific advances have made genetic data more valuable and available than
+  ever, but broad accessibility to potentially dangerous compounds can be risky.
+  UN delegates negotiating a High Seas Treaty should weigh any proposal to
+  widely disseminate novel genetic information against the realities of
+  twenty-first century biological security concerns.
 authors:
-- _authors/ty-loft-1.md
-- _authors/whitley-saumweber.md
+  - _authors/sabrina-kim.md
+  - _authors/whitley-saumweber.md
 introduction: ''
-lede: Scientific advances have made genetic data more valuable and available than
-  ever, but broad accessibility to potentially dangerous compounds can be risky. UN
-  delegates negotiating a High Seas Treaty should weigh any proposal to widely disseminate
-  novel genetic information against the realities of twenty-first century biological
-  security concerns.
+lede: >-
+  Scientific advances have made genetic data more valuable and available than
+  ever, but broad accessibility to potentially dangerous compounds can be risky.
+  UN delegates negotiating a High Seas Treaty should weigh any proposal to
+  widely disseminate novel genetic information against the realities of
+  twenty-first century biological security concerns.
 keywords:
-- High Seas
-- Biological Defense
+  - High Seas
+  - Biological Defense
 further_reading: ''
 related_commentary:
-- _posts/2020-04-22-are-we-moving-toward-an-ocean-data-dystopia.md
-- _posts/2019-09-03-threading-the-needle-balancing-conservation-and-security-in-the-high-seas-treaty.md
+  - _posts/2020-04-22-are-we-moving-toward-an-ocean-data-dystopia.md
+  - >-
+    _posts/2019-09-03-threading-the-needle-balancing-conservation-and-security-in-the-high-seas-treaty.md
 related_spotlight: []
 is_featured: false
-
+_template: test_post
 ---
+
+
 The majority of the ocean is intended to be shared. Known as the high seas, these waters are beyond the jurisdiction of any one country and are open to all nations whether developed or developing, rich or poor, small or large. But this commons-based approach has a downside. Without a central authority to define and enforce the rules on the high seas—particularly when it comes to managing and using natural resources—criminal activity such as illegal, unreported, and unregulated fishing and human rights abuses can go unnoticed and unpunished.
 
 Creating a governance system that successfully threads the needle between accessibility and security is a difficult task. Doing so on the high seas, where there is a sense of global urgency surrounding resource competition, has proved to be particularly challenging. Delegates at the United Nations have spent the past year negotiating the High Seas Treaty to govern the sustainable use of biodiversity in areas beyond national jurisdiction, although the fourth and final meeting has been [postponed](https://www.un.org/bbnj/) due to the ongoing Covid-19 pandemic. One of the issues at stake in the treaty is the attribution of ownership for marine genetic resources (MGRs) discovered on the high seas. Treaty negotiators want to ensure that wealthy, developed nations do not benefit from MGRs at the expense of smaller countries, but delegates should view this desire for equity in the context of modern biological security risks.

@@ -1,30 +1,35 @@
 ---
 title: Are We Moving toward an Ocean Data Dystopia?
-date: 2020-04-22T12:00:00.000+00:00
-excerpt: The ocean data revolution can help states improve offshore governance. But
-  policymakers should consider how ownership over ocean data distributes power, so
-  that seafaring superpowers, such as China and Russia, do not exploit uneven access
-  to data to dominate marine resources.
+date: 2020-04-22T12:00:00.000Z
+excerpt: >-
+  The ocean data revolution can help states improve offshore governance. But
+  policymakers should consider how ownership over ocean data distributes power,
+  so that seafaring superpowers, such as China and Russia, do not exploit uneven
+  access to data to dominate marine resources.
 authors:
-- _authors/ty-loft.md
-- _authors/whitley-saumweber.md
+  - _authors/ty-loft.md
+  - _authors/whitley-saumweber.md
 introduction: ''
-lede: The ocean data revolution can help states improve offshore governance. But policymakers
-  should consider how ownership over ocean data distributes power, so that seafaring
-  superpowers, such as China and Russia, do not exploit uneven access to data to dominate
-  marine resources.
+lede: >-
+  The ocean data revolution can help states improve offshore governance. But
+  policymakers should consider how ownership over ocean data distributes power,
+  so that seafaring superpowers, such as China and Russia, do not exploit uneven
+  access to data to dominate marine resources.
 keywords:
-- Security
-- Governance
-- Fishing
+  - Security
+  - Governance
+  - Fishing
 further_reading: ''
 related_commentary:
-- _posts/2019-11-19-events-making-waves-series-governance-and-security-in-the-ocean-of-change.md
+  - >-
+    _posts/2019-11-19-events-making-waves-series-governance-and-security-in-the-ocean-of-change.md
 related_spotlight:
-- _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
+  - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
 is_featured: false
-
+_template: test_post
 ---
+
+
 Technology may soon [track](https://academic.oup.com/icesjms/article/75/5/1803/4984479) every shoal of tuna in the sea. Satellites can already [locate](https://amti.csis.org/illuminating-south-china-seas-dark-fishing-fleets/) every ship. We are, [according to experts](https://oceanpanel.org/sites/default/files/2020-01/19_HLP_BP6_V4.pdf), living through an “ocean data revolution.” But while unprecedented transparency can help states improve offshore governance, it also creates risks that must be managed. Seafaring superpowers, such as China and Russia, can exploit uneven access to data to dominate marine resources, particularly where [ocean governance](https://qz.com/africa/1506419/somalia-gives-fishing-license-to-31-china-vessels/) is weak. Before that happens, U.S. policymakers should consider how ownership over ocean data distributes power. They should lead the construction of a public ocean technology system that helps developing states apply data to marine resource management to compete in the new, blue economy. Otherwise, the data-blind may be left to fish for empty seawater.
 
 The ocean data revolution is making the sea’s wealth and workers visible by helping officials overcome the opacity of saltwater and vast distances offshore. [Drones with advanced radar](http://www3.weforum.org/docs/WEF_Harnessing_4IR_Oceans.pdf), for example, are being designed to sound out the silhouettes of fish below water, tracking them as they move between exclusive economic zones (EEZs) and adjust to changing conditions. Scientists are beginning to use environmental DNA sequencing to trace the presence of key species of marine life by [sampling seawater](http://www3.weforum.org/docs/WEF_Harnessing_4IR_Oceans.pdf). These new datasets allow analysts to distill the ocean into spatially and temporally distinct qualities that can be easily assessed, translated, and marketed. Sardine density, for example, or water temperature 500 feet below the surface, or the concentration of manganese nodes on the seafloor are all data that, when readily available, have huge value for resource management or resource exploitation. Data is making the complicated world offshore legible.

@@ -1,6 +1,7 @@
 ---
 layout: home
 wrapper: home
+permalink: /
 featured_spotlights:
   - _spotlights/charting-a-new-arctic-ocean.md
   - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md

@@ -1,26 +1,32 @@
 ---
 title: Distant-water Fishing along China’s Maritime Silk Road
-date: 2020-07-31 14:00:00 +0000
-excerpt: China’s burgeoning network of fishing bases, and the opacity of the bilateral
-  fishing agreements they spring from, therefore raise three related sets of concerns.
+date: '2020-07-31 14:00:00 +0000'
+excerpt: >-
+  China’s burgeoning network of fishing bases, and the opacity of the bilateral
+  fishing agreements they spring from, therefore raise three related sets of
+  concerns.
 authors:
-- _authors/whitley-saumweber.md
-- _authors/ty-loft.md
+  - _authors/whitley-saumweber.md
+  - _authors/ty-loft.md
 introduction: ''
-lede: China is building a network of overseas, distant-water fishing bases, with major
-  implications for the sovereignty, sustainability, and security of developing states.
+lede: >-
+  China is building a network of overseas, distant-water fishing bases, with
+  major implications for the sovereignty, sustainability, and security of
+  developing states.
 keywords:
-- IUU
-- Fishing
-- Governance
+  - IUU
+  - Fishing
+  - Governance
 further_reading: ''
 related_commentary:
-- _posts/2020-02-11-second-annual-ocean-security-forum.md
+  - _posts/2020-02-11-second-annual-ocean-security-forum.md
 related_spotlight:
-- _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
+  - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
 is_featured: true
-
+_template: test_post
 ---
+
+
 <figure class="post-feature-video">
 
 <div class="video-wrapper"><iframe width="949" height="534" src="https://www.youtube.com/embed/QAgLsd7b2Xo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

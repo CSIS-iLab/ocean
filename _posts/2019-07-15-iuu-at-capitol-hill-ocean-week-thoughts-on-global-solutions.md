@@ -1,34 +1,40 @@
 ---
 title: 'IUU at Capitol Hill Ocean Week: Thoughts on Global Solutions'
-date: 2019-07-15 04:00:00 +0000
-excerpt: SOS director Whitley Saumweber moderates a Capitol Hill Ocean Week panel
-  on strategies to increase seafood supply chain transparency in the fight against
+date: '2019-07-15 04:00:00 +0000'
+excerpt: >-
+  SOS director Whitley Saumweber moderates a Capitol Hill Ocean Week panel on
+  strategies to increase seafood supply chain transparency in the fight against
   illegal, unregulated, and unreported fishing.
 authors:
-- _authors/yori-hook.md
-- _authors/whitley-saumweber.md
-introduction: The annual Capitol Hill Ocean Week (CHOW) conference was convened by
-  the National Marine Sanctuary Foundation in early June to celebrate Oceans Month.
-  CHOW brings together the top national and global stakeholders to address pressing
-  concerns in the ocean sphere.
-lede: SOS director Whitley Saumweber moderates a Capitol Hill Ocean Week panel on
-  strategies to increase seafood supply chain transparency in the fight against illegal,
-  unregulated, and unreported fishing.
+  - _authors/yori-hook.md
+  - _authors/whitley-saumweber.md
+introduction: >-
+  The annual Capitol Hill Ocean Week (CHOW) conference was convened by the
+  National Marine Sanctuary Foundation in early June to celebrate Oceans Month.
+  CHOW brings together the top national and global stakeholders to address
+  pressing concerns in the ocean sphere.
+lede: >-
+  SOS director Whitley Saumweber moderates a Capitol Hill Ocean Week panel on
+  strategies to increase seafood supply chain transparency in the fight against
+  illegal, unregulated, and unreported fishing.
 keywords:
-- IUU
-- fishing
-- traceability
+  - IUU
+  - fishing
+  - traceability
 further_reading: ''
 related_commentary:
-- _posts/2018-12-10-making-the-oceans-more-secure.md
-- _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
+  - _posts/2018-12-10-making-the-oceans-more-secure.md
+  - >-
+    _posts/2018-12-10-taking-a-bi-partisan-approach-to-combatting-illegal-fishing.md
 related_spotlight: []
 is_featured: false
 image: ''
 image_caption: ''
 image_source: ''
-
+_template: test_post
 ---
+
+
 This year’s CHOW conference included a panel on “Combating Illegal, Unreported, and Unregulated (IUU) Fishing,” moderated by Whitley Saumweber, director of the Stephenson Ocean Security Project at the Center for Strategic and International Studies (CSIS). IUU fishing is considered one of the most significant threats to ocean health, and research has linked this practice to transnational organized criminal networks that also engage in human rights abuses, forced labor, tax evasion, and weapons and drug trafficking. With tools backed by a new wave of technological advances, stakeholders can employ traceability programs that counter IUU with data-based tracking systems, international IUU agreements, and an overall increase in transparency. As a major seafood market, the United States has a responsibility to lead these efforts to protect national consumers and influence global actors. This panel of experts encouraged us to think critically about solutions to help us achieve this goal.
 
 To begin the panel, Saumweber presented the idea of redefining “security” in a time characterized by significant change. Climate, population, and geopolitical dynamics are all facets of our changing world that must be considered when addressing ocean viability. However, concepts of sustainability, resilience, and environmental justice are often missing from security solutions, and thus these solutions remain incomplete. How do states incorporate these concepts in our modern security conversation, and how does this lens apply to the ocean space? IUU represents one of the most direct intersections between national security and environmental sustainability.
