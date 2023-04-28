@@ -1,37 +1,42 @@
 ---
 title: 'Events Making Waves Series: Governance and Security in the Ocean of Change'
-date: 2019-11-19T05:00:00.000+00:00
-excerpt: Whitley Saumweber and Ty Loft highlight the opportunities for action raised
-  in a Stephenson Ocean Security Project event on how climate change is shaping maritime
-  sustainability, sovereignty, and security.
+date: 2019-11-19T05:00:00.000Z
+excerpt: >-
+  Whitley Saumweber and Ty Loft highlight the opportunities for action raised in
+  a Stephenson Ocean Security Project event on how climate change is shaping
+  maritime sustainability, sovereignty, and security.
 authors:
-- _authors/whitley-saumweber.md
-- _authors/ty-loft.md
-introduction: 'The Events Making Waves Series helps transform the Stephenson Ocean
-  Security project’s public events into action. It distills the themes and challenges
-  raised by event speakers and highlights opportunities for pragmatism, problem-solving,
-  and U.S. leadership in ocean policy. This commentary focuses on an event held on
-  October 8, 2019: “An Ocean of Change: How Climate Change is Upending our View of
-  Maritime Sustainability, Sovereignty, and Security.”'
-lede: Whitley Saumweber and Ty Loft highlight the opportunities for action raised
-  in a Stephenson Ocean Security Project event on how climate change is shaping maritime
-  sustainability, sovereignty, and security.
+  - _authors/whitley-saumweber.md
+  - _authors/ty-loft.md
+introduction: >-
+  The Events Making Waves Series helps transform the Stephenson Ocean Security
+  project’s public events into action. It distills the themes and challenges
+  raised by event speakers and highlights opportunities for pragmatism,
+  problem-solving, and U.S. leadership in ocean policy. This commentary focuses
+  on an event held on October 8, 2019: “An Ocean of Change: How Climate Change
+  is Upending our View of Maritime Sustainability, Sovereignty, and Security.”
+lede: >-
+  Whitley Saumweber and Ty Loft highlight the opportunities for action raised in
+  a Stephenson Ocean Security Project event on how climate change is shaping
+  maritime sustainability, sovereignty, and security.
 keywords:
-- Making Waves
-- Security
-- Climate Change
-- Fishing
+  - Making Waves
+  - Security
+  - Climate Change
+  - Fishing
 further_reading: ''
 related_commentary: []
 related_spotlight:
-- _spotlights/charting-a-new-arctic-ocean.md
-- _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
+  - _spotlights/charting-a-new-arctic-ocean.md
+  - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
 is_featured: false
 image: ''
 image_caption: ''
 image_source: ''
-
+_template: test_post
 ---
+
+
 <figure class="post-feature-video"> <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/-denKHLBOAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> <figcaption class="img-caption">An Ocean of Change: How Climate Change is Upending our View of Maritime Sustainability, Sovereignty, and Security</figcaption> </figure>
 
 On October 8, the Stephenson Ocean Security Project hosted an event on the science and security implications of the Intergovernmental Panel on Climate Change’s (IPCC) _Special Report on the Ocean and Cryosphere in a Changing Climate_. In a first panel, speakers addressed the science outlined in the report, highlighting the effects of climate change on sea level rise, ocean biodiversity, ocean productivity, and species range shifts. In a second panel, speakers examined the security challenges raised by the changing ocean. A keynote conversation with retired Admiral John M. Richardson, the 31st chief of naval operations, explored the security strategies the United States can employ to meet those challenges.

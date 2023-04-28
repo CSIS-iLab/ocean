@@ -199,7 +199,7 @@ VIIRS data shows a significant amount of fishing in the South China Sea year-rou
     source="Developed based on information or analysis provided by Vulcan Technologies LLC. | CSIS"
     start_date="Jan 2013"
     end_date="May 2018"
-    image="https://res.cloudinary.com/csisideaslab/image/upload/f_auto,q_auto/v1546641648/ocean/VIIRS-2013-2018.jpg"
+    image="<https://res.cloudinary.com/csisideaslab/image/upload/f_auto>,q_auto/v1546641648/ocean/VIIRS-2013-2018.jpg"
     steps=65
     component_width="medium"
     %}

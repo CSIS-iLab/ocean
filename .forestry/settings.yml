@@ -4,22 +4,24 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: _posts
+  label: Commentaries
+  create: all
+  match: "**/*"
+  templates:
+  - test-post
 - type: document
   path: NETLIFY.md
   label: Build Status
   read_only: true
-- type: jekyll-posts
-  label: Commentaries
-  create: documents
-  templates:
-  - test-post
 - type: directory
   path: _spotlights
   label: Spotlights
-  create: documents
+  create: all
   match: "**/*"
   templates:
-  - introducing-a-new-arctic-ocean-7eafa651-7ad3-4777-b637-a542c77afacb
+  - spotlights
 - type: directory
   path: _authors
   label: Authors

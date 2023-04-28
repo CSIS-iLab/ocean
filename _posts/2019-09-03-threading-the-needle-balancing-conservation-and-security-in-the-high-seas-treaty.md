@@ -1,33 +1,38 @@
 ---
-title: 'Threading the Needle: Balancing Conservation and Security in the High Seas
-  Treaty'
-date: 2019-09-03T04:00:00.000+00:00
-excerpt: Treaty negotiators laying the groundwork for a high seas protected area system
-  must thread an environmental-security needle, balancing sound, science-based conservation
-  with forthright engagement of geopolitical realities.
+title: >-
+  Threading the Needle: Balancing Conservation and Security in the High Seas
+  Treaty
+date: 2019-09-03T04:00:00.000Z
+excerpt: >-
+  Treaty negotiators laying the groundwork for a high seas protected area system
+  must thread an environmental-security needle, balancing sound, science-based
+  conservation with forthright engagement of geopolitical realities.
 authors:
-- _authors/whitley-saumweber.md
-- _authors/ty-loft.md
+  - _authors/whitley-saumweber.md
+  - _authors/ty-loft.md
 introduction: ''
-lede: Treaty negotiators laying the groundwork for a high seas protected area system
-  must thread an environmental-security needle, balancing sound, science-based conservation
-  with forthright engagement of geopolitical realities.
+lede: >-
+  Treaty negotiators laying the groundwork for a high seas protected area system
+  must thread an environmental-security needle, balancing sound, science-based
+  conservation with forthright engagement of geopolitical realities.
 keywords:
-- IUU
-- fishing
-- high seas
-- marine protected areas
+  - IUU
+  - fishing
+  - high seas
+  - marine protected areas
 further_reading: ''
 related_commentary:
-- _posts/2018-12-10-making-the-oceans-more-secure.md
+  - _posts/2018-12-10-making-the-oceans-more-secure.md
 related_spotlight:
-- _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
+  - _spotlights/illuminating-the-south-china-seas-dark-fishing-fleets.md
 is_featured: false
 image: ''
 image_caption: ''
 image_source: ''
-
+_template: test_post
 ---
+
+
 Last Friday, delegates concluded the third round of treaty negotiations on the conservation and sustainable use of high seas marine biodiversity, the living resources in the 130 million square kilometers of ocean that lay beyond any country’s jurisdiction. At stake are four issues related to the high seas, including how we assess the environmental impact of commercial projects like [deep sea mining](https://www.iucn.org/resources/issues-briefs/deep-sea-mining); ensure the equitable use of [high seas genetic resources](https://www.sciencemag.org/news/2018/09/un-talks-tackle-tough-question-who-should-benefit-dna-collected-high-seas); provide technical capacity to developing states; and establish high seas marine protected areas (MPAs). Each topic is complicated. But the fourth—the establishment of a system of high seas MPAs—may, in the end, be most vexing.
 
 Negotiating such a system is difficult because, while the long-term gains will be great, some vested interests will feel the short-term losses more than others. Nevertheless, the scientific case for such a system is overwhelming; the high seas need protected areas to be resilient in the face of climate change and resource exploitation. But there is a risk that, if unplanned for, the unintended consequences of protected area development could negatively impact maritime security concerns in ways that undermine the protected area system’s effectiveness. Thus, treaty negotiators laying the groundwork for a high seas protected area system must thread an environmental security needle, balancing sound, science-based conservation with forthright engagement of geopolitical realities.

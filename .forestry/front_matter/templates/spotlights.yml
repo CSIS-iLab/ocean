@@ -4,6 +4,8 @@ hide_body: true
 fields:
 - type: include
   template: post-meta-primary
+  name: post_meta_primary
+  label: Post Meta primary
 - name: js_files
   label: Js files
   type: list
@@ -15,11 +17,13 @@ fields:
   hidden: true
   default: ''
 - type: include
-  name: ''
-  label: ''
+  name: post_meta_secondary
+  label: Post Meta Secondary
   template: post-meta-secondary
 - type: include
   template: image-upload
+  name: image_upload
+  label: Image Upload
 - type: textarea
   name: methodology
   label: Methodology

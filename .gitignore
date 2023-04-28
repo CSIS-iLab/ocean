@@ -2,19 +2,20 @@
 .sass-cache
 *.scssc
 
-# Sublime Text
+# Editors
 sftp-config.json
+.vscode
 
 # Jekyll
 _site
 .jekyll-metadata
 /.bundle
 /vendor
-.jekyll-cache/
+.jekyll-cache
 
 # Compiled Files
 /assets/css/**/*.css
-/assets/js/**/*.js
+/assets/js/*.js
 
 # Node.js
 node_modules/
@@ -33,3 +34,7 @@ doc/
 .DS_Store
 .idea
 .secret
+
+node_modules
+.env.local
+.env
