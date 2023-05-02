@@ -55,7 +55,7 @@ contributors:
     content: Select photography provided by Enric Sala/National Geographic, from [National Geographic Pristine Seas](https://www.nationalgeographic.org/projects/pristine-seas/){:target="_blank"}{:rel="noopener"}
   - label: development and design
     content:
-      This Spotlight is a product of the Andreas C. Dracopoulos iDeas Lab, the
+      This Spotlight is a product of the Andreas C. Dracopoulos iDeas Lab, the
       in-house digital, multimedia, and design agency at the Center for Strategic and
       International Studies.
 published: true
