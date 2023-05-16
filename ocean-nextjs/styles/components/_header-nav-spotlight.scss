@@ -1,0 +1,215 @@
+/*====================================
+=      Header: Nav Spotlight        =
+===================================*/
+
+.site-header__spotlight {
+  $site-header: '.site-header';
+  $header-active: '.site-header--menu-active';
+  $site-nav: '.site-header__nav';
+  $about-width: 325px;
+
+  $header-height-small: map-get($size__header-height--minimal, 'small');
+  $header-height-large: map-get($size__header-height--minimal, 'large');
+
+  display: flex;
+  align-items: center;
+  order: 1;
+  width: 40px;
+
+  @include breakpoint('large') {
+    order: 2;
+    width: auto;
+    margin: 0 auto 0 2rem;
+  }
+
+  #{$site-header}__section {
+    display: none;
+    @extend %header-nav__section;
+
+    @include breakpoint('large') {
+      position: relative;
+      display: block;
+      margin-left: 1rem;
+      padding-left: 1rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        bottom: -5px;
+        left: 0;
+        width: 1px;
+        background-color: $color__bluegray-light;
+      }
+    }
+  }
+
+  #{$site-header}__panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: $color__dkblue-dark;
+    transform: translateX(-150%);
+    visibility: hidden;
+    transition: transform 0.5s linear, visibility 0s linear 0.3s;
+    @include structure(
+      $size__header-height--minimal,
+      'top',
+      ('small', 'large')
+    );
+
+    @include breakpoint('large') {
+      flex-direction: row;
+      max-width: 800px;
+    }
+
+    &.is-active {
+      transform: translateY(0);
+      visibility: visible;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        display: block;
+        width: calc((100vw - 100%) / 2);
+        height: 100%;
+        background-color: $color__dkblue;
+        content: '';
+      }
+    }
+
+    &-site {
+      @include breakpoint('large') {
+        width: $about-width;
+      }
+    }
+
+    &-spotlight,
+    &-site {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      @include structure($size__header-container-padding, 'padding');
+    }
+
+    &-logo-sub {
+      @extend %header-nav__logo-sub;
+    }
+
+    &-logo {
+      margin-bottom: 1rem;
+      @extend %header-nav__logo;
+    }
+
+    &-desc {
+      margin-bottom: 2rem;
+      @extend %header-nav__logo-desc;
+
+      @include breakpoint('large') {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &-copyright {
+      @extend %copyright;
+      margin-bottom: 3rem;
+
+      @include breakpoint('large') {
+        position: absolute;
+        bottom: calc(100vh - 100% + #{$header-height-large} + 20px);
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #{$site-header}__panel-spotlight {
+    background-color: $color__dkblue;
+
+    @include breakpoint('large') {
+      width: calc(100% - #{$about-width});
+    }
+
+    &-title {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      @extend %header-nav__spotlight-title;
+      border-bottom: 1px solid $color__dkblue-light;
+    }
+  }
+
+  #{$site-nav}-spotlight-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0 0 1.5rem;
+      @extend %header-nav__spotlight;
+      color: $color__bluegray-light;
+    }
+
+    li.is-current {
+      color: $color__white;
+
+      &::before {
+        content: '\2014';
+        margin-right: 5px;
+      }
+    }
+
+    a {
+      &:hover,
+      &:focus {
+        color: $color__white;
+      }
+    }
+  }
+
+  #{$site-nav}-menu--spotlight {
+    margin-bottom: 1rem;
+    padding: 0;
+
+    @include breakpoint('large') {
+      position: absolute;
+      bottom: calc(100vh - 100% + #{$header-height-large} + 20px);
+    }
+
+    li {
+      margin: 0 0 0.5rem;
+    }
+
+    a {
+      color: $color__slate-light;
+
+      &:hover,
+      &:focus {
+        color: $color__white;
+      }
+    }
+  }
+
+  #{$site-nav}-spotlight-submenu {
+    margin: 2rem 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      @extend %header-nav__spotlight--sm;
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: $color__bluegray-light;
+
+      &:hover,
+      &:focus {
+        color: $color__white;
+      }
+    }
+  }
+}

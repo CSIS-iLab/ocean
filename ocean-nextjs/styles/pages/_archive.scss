@@ -1,0 +1,381 @@
+/*===============================
+=            Archive            =
+===============================*/
+
+:root {
+  --archive-cutout-height: #{$size__search-header-cutout-height};
+}
+
+.archive {
+  $a: &;
+  $search: #{$a}--search;
+  // prettier-ignore
+  $width-offset: nth(map-get($map: $size__container-padding, $key: 'xlarge'), 2);
+
+  &__header {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: $size__page-header-height--archive;
+    @include structure($size__page-header-max-height--archive, 'max-height');
+
+    #{$search} & {
+      align-items: flex-end;
+      @include structure($size__page-header-height--search, 'height');
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+      display: block;
+      width: 100vw;
+      height: calc(#{$size__page-header-height--archive} + 200px);
+      margin-right: -50vw;
+      margin-left: -50vw;
+      @include bg-images($img__commentary);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @include breakpoint('xlarge') {
+        width: calc(100vw + (#{$width-offset}) / 2);
+      }
+
+      #{$search} & {
+        height: 100%;
+        @include bg-images($img__search);
+
+        @include breakpoint(
+          $break: 'medium',
+          $until: 'large',
+          $breakpoints-map: $breakpoints--bg-img
+        ) {
+          background-position-x: right;
+        }
+      }
+
+      #{$a}--spotlights & {
+        @include bg-images($img__spotlight);
+      }
+    }
+
+    &-content {
+      position: relative;
+      padding: 0 0 4rem;
+
+      @include breakpoint('medium') {
+        padding: 3rem 0 2rem;
+      }
+
+      @include breakpoint('large') {
+        padding: 4.5rem 0 3rem;
+      }
+
+      #{$search} & {
+        @include structure($size__content-margin--post, 'margin');
+        margin-bottom: var(--archive-cutout-height);
+        padding: 0;
+      }
+
+      #{$search} &::before {
+        @extend %header-border;
+        height: 100%;
+      }
+    }
+
+    #{$a}__title {
+      margin: 0 0 2rem;
+      @extend %page-title;
+      text-transform: uppercase;
+
+      #{$search} & {
+        @extend %page-title--archive;
+        @include structure($size__page-title-margin--search, 'margin-bottom');
+        @include structure($size__content-padding, 'padding');
+      }
+    }
+
+    #{$a}__desc {
+      position: relative;
+      box-sizing: content-box;
+      @include structure($size__content-margin--post, 'margin');
+
+      @each $size in ('medium', 'large', 'xlarge') {
+        @include breakpoint($size) {
+          // prettier-ignore
+          $value: map-get($map: $size__content-padding, $key: $size);
+          @if $size == xlarge {
+            $value: nth($value, 2);
+          }
+          padding-left: $value;
+        }
+      }
+
+      @include breakpoint('large') {
+        position: relative;
+        max-width: $size__post-body-max-width;
+      }
+
+      &::before {
+        @extend %header-border;
+      }
+
+      p {
+        margin-bottom: 0;
+        @extend %page-desc;
+      }
+    }
+  }
+
+  &__content {
+    $border-width: 1px;
+    position: relative;
+    margin-top: calc(var(--archive-cutout-height) * -1);
+    @include structure($size__content-margin--archive, 'margin');
+    padding-bottom: 3rem;
+    @include structure($size__content-padding--archive, 'padding-left');
+    background-color: $color__white;
+
+    @include breakpoint('medium') {
+      padding-bottom: 4rem;
+      border-left: $border-width solid $color__gray-58;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      display: block;
+      width: calc((100vw - 100%) / 2);
+      background-color: $color__white;
+
+      @include breakpoint('medium') {
+        top: var(--archive-cutout-height);
+        right: calc(100% + 1px);
+        bottom: 0;
+        height: unset;
+      }
+    }
+
+    &::after {
+      @extend %content-side-gradient;
+
+      @include breakpoint('large') {
+        // prettier-ignore
+        $width_offset: nth(
+          map-get(
+            $map: $size__content-margin--archive,
+            $key: 'large'
+          ),
+          2
+        ) * 2;
+        width: calc((100vw - 100%) / 2 + #{$width_offset});
+      }
+
+      @include breakpoint('xlarge') {
+        // prettier-ignore
+        $width_offset: nth(
+          map-get(
+            $map: $size__content-margin--archive,
+            $key: 'xlarge'
+          ),
+          2
+        ) * 3;
+        width: calc((100vw - 100%) / 2 + #{$width_offset} - 1px);
+      }
+
+      #{$a}--spotlights & {
+        @include breakpoint('medium') {
+          bottom: -4.5rem;
+        }
+      }
+
+      #{$a}--search & {
+        top: calc(var(--archive-cutout-height) - 7.25rem);
+        bottom: -5rem;
+      }
+    }
+
+    #{$search} & {
+      margin-top: calc(var(--archive-cutout-height) * -1);
+    }
+  }
+
+  &__cutout {
+    padding-top: 1.5rem;
+    @include structure($size__content-padding--archive, 'padding-right');
+    padding-bottom: 1.5rem;
+
+    > p {
+      @extend %body-text__med;
+    }
+  }
+
+  &__content-filter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    @include breakpoint('medium') {
+      flex-direction: row;
+    }
+  }
+
+  &__result-summary,
+  &__filters {
+    display: flex;
+  }
+
+  &__result-summary {
+    position: relative;
+    flex: 0 1 auto;
+    align-self: flex-start;
+    order: 2;
+    max-width: fit-content;
+    white-space: nowrap;
+    background-color: $color__ltgray-light;
+    @extend %archive__results;
+
+    @include breakpoint('medium') {
+      order: 1;
+    }
+
+    @each $size in ('medium', 'xlarge') {
+      $padding: map-get($size__content-padding, $size);
+      @if $size == xlarge {
+        $padding: nth($padding, 2);
+      }
+      padding-right: $padding;
+      padding-left: $padding;
+
+      @include breakpoint($size) {
+        margin-left: calc((#{$padding} * -1) - 1px);
+      }
+    }
+
+    .ais-root {
+      display: flex;
+      align-items: center;
+      height: 2.5rem;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      width: map-get($size__container-padding, 'medium');
+      background-color: $color__ltgray;
+      content: '';
+
+      @include breakpoint('large') {
+        width: 2.5rem;
+      }
+    }
+  }
+
+  &__filters {
+    position: relative;
+    flex: 1;
+    flex-wrap: wrap;
+    order: 1;
+    @include structure($size__content-padding--archive, 'padding-right');
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    @include breakpoint('medium') {
+      justify-content: flex-end;
+      order: 2;
+    }
+
+    &-sort,
+    &-content_type,
+    &-keywords {
+      @include breakpoint('medium') {
+        margin-right: 1rem;
+      }
+    }
+
+    > div:not(:first-child):not(.archive__filters-sort) {
+      .ais-root {
+        @include breakpoint($break: 'medium', $dir: 'max-width') {
+          border-top: 1px solid $color__gray-58;
+        }
+      }
+    }
+
+    &-sort,
+    &-content_type,
+    &-keywords,
+    &-clear_all {
+      display: flex;
+      align-items: center;
+
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        flex-basis: 100%;
+
+        > div {
+          width: 100%;
+
+          .ais-root {
+            padding: 1rem 0;
+          }
+        }
+      }
+    }
+
+    &-clear_all {
+      @extend %archive__clear;
+      text-align: center;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $color__red;
+      }
+
+      &:focus {
+        @extend %focus--border;
+      }
+    }
+
+    &-sort .ais-root::before {
+      content: 'Sort By';
+    }
+
+    .selectCalc {
+      position: absolute;
+      height: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__footer {
+    position: relative;
+    height: 3rem;
+    @include structure($size__archive-footer-margin-right, 'margin-right');
+    margin-left: auto;
+    background-color: $color__red;
+
+    @include breakpoint('medium') {
+      width: fit-content;
+    }
+
+    #{$a}--spotlights & {
+      // height: initial;
+    }
+  }
+}

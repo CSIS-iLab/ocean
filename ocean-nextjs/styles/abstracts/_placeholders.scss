@@ -1,0 +1,611 @@
+/*====================================
+=            Placeholders            =
+====================================*/
+
+%align--right {
+  float: right;
+}
+
+%archive__clear {
+  color: $color__slate;
+  font-family: $font__proxima;
+  @include font-size(13px);
+}
+
+%archive__facet {
+  color: $color__black-light;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.29;
+  @include font-size(14px);
+}
+
+%archive__results {
+  color: $color__black-light;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  @include font-size(12px);
+}
+
+%body-text__med {
+  color: $color__black-light;
+  font-family: $font__proxima;
+  @include font-size(16px);
+  line-height: 1.44;
+}
+
+%button {
+  color: $color__white;
+  font-family: $font__proxima;
+  line-height: 1.29;
+  text-align: center;
+  @include font-size(14px);
+}
+
+%content-side-gradient {
+  content: '';
+  position: absolute;
+  top: var(--archive-cutout-height);
+  bottom: 0;
+  left: 100%;
+  display: block;
+  width: calc((100vw - 100%) / 2);
+  background-color: $color__white;
+
+  @include breakpoint('medium') {
+    content: '';
+    position: absolute;
+    top: calc(var(--archive-cutout-height) - 2rem);
+    bottom: -9rem;
+    left: 100%;
+    width: calc((100vw - 100%) / 2 - 1px);
+    // prettier-ignore
+    background-color: transparent;
+    background-image: linear-gradient(
+      180deg,
+      rgba(14, 26, 44, 0),
+      rgba(14, 26, 44, 0.8) 80px,
+      #081324 120px,
+      #081324 92.7%,
+      rgba(0, 11, 14, 0.01)
+    );
+  }
+}
+
+%copyright {
+  color: $color__slate;
+  font-family: $font__proxima;
+  line-height: 1.17;
+  @include font-size(12px);
+}
+
+%focus--bg {
+  background-color: $color__slate-lighter;
+}
+
+%focus--border {
+  border: 2px solid $color__focus;
+}
+
+%focus--outline {
+  outline-color: $color__focus;
+}
+
+%footer__heading {
+  color: $color__white;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.8px;
+  @include font-size(16px);
+
+  @include breakpoint('large') {
+    @include font-size(18px);
+    line-height: 1.11;
+    letter-spacing: 0.9px;
+  }
+}
+
+%footer__text {
+  color: $color__slate-light;
+  font-family: $font__proxima;
+  line-height: 1.43;
+  @include font-size(14px);
+
+  @include breakpoint('large') {
+    @include font-size(15px);
+    line-height: 1.49;
+  }
+}
+
+%header-border {
+  @include breakpoint('medium') {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 50vh;
+    background-color: $color__gray-58;
+  }
+}
+
+%header-nav__link {
+  font-family: $font__proxima;
+  @include font-size(14px);
+  line-height: 1.43;
+  letter-spacing: 1.4px;
+}
+
+%header-nav__logo {
+  color: $color__white;
+  font-family: $font__freight;
+  line-height: 1.25;
+  @include font-size(24px);
+}
+
+%header-nav__logo-desc {
+  color: $color__bluegray-light;
+  font-family: $font__proxima;
+  line-height: 1.6;
+  @include font-size(14px);
+}
+
+%header-nav__logo-sub {
+  color: $color__slate;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.67;
+  letter-spacing: 1.2px;
+  @include font-size(12px);
+  text-transform: uppercase;
+}
+
+%header-nav__section {
+  color: $color__black;
+  font-family: $font__freight;
+  line-height: 1.11;
+  letter-spacing: 0.6px;
+  @include font-size(18px);
+}
+
+%header-nav__spotlight {
+  font-family: $font__proxima;
+  @include font-size(18px);
+  line-height: 1.11;
+  letter-spacing: 0.6px;
+
+  &--sm {
+    color: $color__bluegray-light;
+    font-family: $font__proxima;
+    line-height: 1.25;
+    letter-spacing: 0.3px;
+    @include font-size(16px);
+  }
+}
+
+%header-nav__spotlight-title {
+  color: $color__white;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.17;
+  @include font-size(24px);
+
+  @include breakpoint('large') {
+    @include font-size(26px);
+    line-height: 1.23;
+  }
+}
+
+%input__search--archive {
+  color: $color__black;
+  font-family: $font__proxima;
+  line-height: 1.05;
+  @include font-size(20px);
+}
+
+%input__search--header {
+  font-family: $font__proxima;
+  @include font-size(21px);
+  line-height: 1;
+}
+
+%page-desc {
+  color: $color__ltgray-light;
+  font-family: $font__proxima;
+  line-height: 1.4;
+  @include font-size(16px);
+
+  @include breakpoint('medium') {
+    @include font-size(20px);
+  }
+
+  @include breakpoint('large') {
+    @include font-size(23px);
+    line-height: 1.39;
+  }
+}
+
+%page-title {
+  color: $color__white;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.06;
+  @include font-size(36px);
+
+  @include breakpoint('medium') {
+    @include font-size(50px);
+    line-height: 1.03;
+  }
+
+  @include breakpoint('large') {
+    @include font-size(72px);
+    line-height: 1.03;
+  }
+
+  &--archive {
+    color: $color__white;
+    font-family: $font__proxima;
+    font-weight: 600;
+    line-height: 1.05;
+    @include font-size(20px);
+  }
+}
+
+%pagination__item {
+  font-family: $font__proxima;
+  @include font-size(16px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.7px;
+}
+
+%post-block__featured {
+  @extend %post-block__type;
+
+  @include breakpoint('large') {
+    line-height: 1.29;
+    letter-spacing: 0.9px;
+  }
+}
+
+%post__view-all {
+  color: $color__slate-lighter;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 0.88;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  @include font-size(16px);
+}
+
+%post-block__meta {
+  color: $color__black;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  @include font-size(12px);
+}
+
+%post-block__meta-label {
+  color: $color__dkgray;
+  font-family: $font__freight;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.23;
+  letter-spacing: 0.2px;
+  @include font-size(13px);
+}
+
+%post-block__title {
+  font-family: $font__freight;
+  font-weight: 500;
+  @include font-size(22px);
+  line-height: 1.17;
+
+  @include breakpoint('large') {
+    @include font-size(28px);
+    line-height: 1.14;
+  }
+
+  &--related {
+    font-family: $font__freight;
+    font-weight: 500;
+    @include font-size(20px);
+    line-height: 1.29;
+
+    @include breakpoint('large') {
+      @include font-size(22px);
+      line-height: 1.17;
+    }
+  }
+
+  &--featured {
+    font-family: $font__freight;
+    font-weight: 500;
+    @include font-size(24px);
+    line-height: 1.07;
+
+    @include breakpoint('large') {
+      @include font-size(32px);
+      line-height: 1.19;
+    }
+  }
+
+  &--home {
+    font-family: $font__freight;
+    font-weight: 500;
+    @include font-size(32px);
+    line-height: 1.06;
+    letter-spacing: 0.4px;
+
+    @include breakpoint('large') {
+      @include font-size(36px);
+    }
+  }
+}
+
+%post-block__type {
+  color: $color__red;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: 0.5px;
+  @include font-size(12px);
+
+  @include breakpoint('large') {
+    @include font-size(13px);
+    line-height: 1;
+    letter-spacing: 1.3px;
+  }
+
+  &--related {
+    color: $color__red;
+    font-family: $font__proxima;
+    font-weight: 600;
+    @include font-size(13px);
+    line-height: 1.38;
+    letter-spacing: 0.8px;
+
+    @include breakpoint('large') {
+      @include font-size(14px);
+      line-height: 1.29;
+      letter-spacing: 0.9px;
+    }
+  }
+}
+
+%post-content__align--right {
+  $adjust-offset-left: 10px;
+  @include breakpoint('large') {
+    // prettier-ignore
+    $offset-right: map-get($map: $size__content-padding, $key: 'large');
+    // prettier-ignore
+    $offset-left: map-get($map: $size__post-body-padding-right, $key: 'large');
+    position: absolute;
+    right: $offset-right;
+    // prettier-ignore
+    width: calc(#{$size__post-sidebar-width} - #{$offset-left} + #{$adjust-offset-left});
+  }
+
+  @include breakpoint('xlarge') {
+    // prettier-ignore
+    $offset-right: nth(map-get($map: $size__content-padding, $key: 'xlarge'), 1);
+    // prettier-ignore
+    $offset-left: map-get($map: $size__post-body-padding-right, $key: 'xlarge');
+    right: $offset-right;
+    // prettier-ignore
+    width: calc(#{$size__post-sidebar-width} - #{$offset-left} + #{$adjust-offset-left});
+  }
+}
+
+%post-content__body {
+  color: $color__black-light;
+  font-family: $font__proxima;
+  line-height: 1.67;
+  @include font-size(18px);
+}
+
+%post-content__caption {
+  color: $color__black;
+  font-family: $font__freight;
+  font-weight: 500;
+  line-height: 1.3;
+  @include font-size(20px);
+
+  @include breakpoint('large') {
+    @include font-size(25px);
+    line-height: 1.3;
+  }
+}
+
+%post-content__caption-desc {
+  color: $color__black;
+  font-family: $font__proxima;
+  font-weight: 300;
+  line-height: 1.43;
+  @include font-size(14px);
+
+  @include breakpoint('large') {
+    @include font-size(15px);
+    line-height: 1.33;
+  }
+}
+
+%post-content__caption-desc--sm {
+  color: $color__dkgray-light;
+  font-family: $font__proxima;
+  line-height: 0.92;
+  letter-spacing: 0.3px;
+  @include font-size(13px);
+}
+
+%post-content__caption-label {
+  color: $color__black;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.54;
+  @include font-size(13px);
+
+  @include breakpoint('large') {
+    @include font-size(15px);
+    line-height: 1.33;
+  }
+}
+
+%post-content__caption-link {
+  color: $color__medblue;
+  font-family: $font__proxima;
+  line-height: 1.75;
+  @include font-size(12px);
+}
+
+%post-content__h2 {
+  color: $color__black;
+  font-family: $font__freight;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+  @include font-size(40px);
+}
+
+%post-content__h3 {
+  color: $color__black;
+  font-family: $font__freight;
+  font-weight: 400;
+  line-height: 1.13;
+  letter-spacing: 0.5px;
+  @include font-size(28px);
+}
+
+%post-content__h4 {
+  color: $color__black;
+  font-family: $font__proxima;
+  font-weight: normal;
+  line-height: 1.17;
+  @include font-size(22px);
+}
+
+%post-content__h5 {
+  color: $color__black;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.2;
+  @include font-size(20px);
+}
+
+%post-content__table-title {
+  color: $color__black;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1;
+  @include font-size(20px);
+}
+
+%post-lede {
+  color: $color__black;
+  font-family: $font__freight;
+  line-height: 1.4;
+  @include font-size(20px);
+
+  @include breakpoint('large') {
+    @include font-size(23px);
+    line-height: 1.39;
+  }
+}
+
+%post-title {
+  color: $color__black;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.07;
+  letter-spacing: 0.3px;
+  @include font-size(30px);
+
+  @include breakpoint('medium') {
+    @include font-size(38px);
+    color: $color__white;
+    line-height: 1.04;
+    letter-spacing: 0.4px;
+    text-shadow: 0 2px 4px rgba($color__black, 0.5);
+  }
+
+  @include breakpoint('large') {
+    @include font-size(48px);
+  }
+}
+
+%post-type {
+  color: $color__red;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: 1.3px;
+  @include font-size(13px);
+
+  @include breakpoint('large') {
+    @include font-size(18px);
+    line-height: 1.11;
+    letter-spacing: 1.8px;
+  }
+}
+
+%section-heading {
+  color: $color__black;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: 0.9px;
+  @include font-size(17px);
+
+  @include breakpoint('large') {
+    @include font-size(18px);
+    line-height: 1.11;
+    letter-spacing: 1.5px;
+  }
+}
+
+%spotlight-component__border {
+  @include breakpoint('medium') {
+    content: '';
+    display: block;
+    width: 33%;
+    height: 2px;
+    margin-bottom: 1rem;
+    border-top: 2px solid $color__bluegray-light;
+  }
+}
+
+%spotlight-component__label {
+  color: $color__black;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.43;
+  @include font-size(14px);
+
+  @include breakpoint('large') {
+    @include font-size(15px);
+    line-height: 1.33;
+  }
+}
+
+%tag {
+  color: $color__black;
+  font-family: $font__proxima;
+  font-weight: 600;
+  line-height: 1.25;
+  @include font-size(16px);
+}
+
+%tag__label {
+  color: $color__dkgray;
+  font-family: $font__freight;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.07;
+  letter-spacing: 0.3px;
+  @include font-size(15px);
+}

@@ -1,0 +1,69 @@
+@each $dir in ('right', 'left') {
+  .sc--float-#{$dir} {
+    @include breakpoint('medium') {
+      float: unquote($dir);
+
+      @if $dir == 'right' {
+        margin-right: 0;
+        margin-left: 2rem;
+      } @else {
+        margin-right: 2rem;
+        margin-left: 0;
+      }
+    }
+    @include breakpoint('large') {
+      @if $dir == 'right' {
+        margin-right: 0;
+        margin-left: 2.5rem;
+      } @else {
+        margin-right: 2.5rem;
+        margin-left: 0;
+      }
+    }
+    @include breakpoint('xlarge') {
+      @if $dir == 'right' {
+        margin-right: 0;
+        margin-left: 3rem;
+      } @else {
+        margin-right: 3rem;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.sc--float-small {
+  @include structure($size__sc--float-small, 'width');
+}
+
+.sc--float-medium {
+  @include structure($size__sc--float-medium, 'width');
+}
+
+.sc--float-large {
+  @include structure($size__sc--float-large, 'width');
+  max-width: 500px;
+}
+
+.sc--medium {
+  @include structure($size__sc--medium, 'width');
+  margin: 3rem auto !important;
+}
+
+.sc--large {
+  @include structure($size__sc--large, 'width');
+  margin: 3rem auto !important;
+}
+
+.sc--max {
+  width: $size__sc--max;
+  margin: 3rem auto !important;
+}
+
+.sc--full {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: $size__sc--full;
+  margin: 3rem -50vw !important;
+}

@@ -1,0 +1,21 @@
+$spotlight: '.scs';
+$color__default-accent: #68c8d2;
+$color__default-accent--hover: rgba($color__default-accent, 0.8);
+
+$color__map-bg: #131e24;
+
+$color__red-medlight: #eb9b8d;
+$color__default-accent-dkr: #397d82;
+
+:root {
+  --accent-color: #{$color__default-accent};
+  --accent-color--hover: #{$color__default-accent--hover};
+}
+
+#img-yue_tai_yu .sc-image-group__images-single--landscape {
+  flex-basis: 175%;
+}
+
+// #img-yue_tai_yu .sc-image-group__images-single:nth-of-type(2) img {
+//   object-position: right center;
+// }

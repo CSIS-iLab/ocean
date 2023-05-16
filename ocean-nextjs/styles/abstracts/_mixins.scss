@@ -1,0 +1,256 @@
+// Rem output with px fallback
+@mixin font-size($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculate-rem($size);
+}
+
+// Center block
+@mixin center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+  content: '';
+  display: table;
+  table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+  clear: both;
+}
+
+// Breakpoints
+// Breakpoints
+// $break: Breakpoint to use
+// $dir: 'min-width' or 'max-width'
+// $until: Maximum width
+// @include breakpoint('medium');
+// @include breakpoint($break: 'medium', $until: 'large');
+// @include breakpoint($break: 'medium', $dir: 'max-width');
+@mixin breakpoint($break, $dir: 'min-width', $until: null, $breakpoints-map: $breakpoints) {
+  @if not map-has-key($breakpoints-map, $break) {
+    $break: $break;
+  } @else {
+    $break: map-get($breakpoints-map, $break);
+  }
+
+  @if $break and $until {
+    @if not map-has-key($breakpoints-map, $until) {
+      $until: $until;
+    } @else {
+      $until: map-get($breakpoints-map, $until);
+    }
+
+    @media screen and (min-width: $break) and (max-width: $until) {
+      @content;
+    }
+  } @else {
+    @media screen and ($dir: $break) {
+      @content;
+    }
+  }
+}
+
+// Box Shadow
+/* @include box-shadow(1px,1px,1px,0, #fff, true); */
+
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
+  @if $inset {
+    box-shadow: inset $top $left $blur $size $color;
+  }
+  @else {
+    box-shadow: $top $left $blur $size $color;
+  }
+}
+
+// Extend Background to full width of window
+@mixin full-width-background($background, $direction: '', $excludeMargin: false) {
+  $width_forumula: calc((100vw - 100%) / 2);
+  position: relative;
+
+  @if $excludeMargin != true {
+    margin: 0 auto;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    width: $width_forumula;
+    height: 100%;
+    background-color: $background;
+  }
+
+  &::before {
+    right: 100%;
+  }
+
+  &::after {
+    left: 100%;
+  }
+
+  @if $direction == left {
+    // &::before {
+    //   width: calc(#{$width_forumula} - 50%);
+    // }
+
+    &::after {
+      display: none;
+    }
+  } @else if $direction == right {
+    // &::after {
+    //   width: calc(#{$width_forumula} - 50%);
+    // }
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+// Returns a property: value pair for each breakpoint
+/* @include structure($size__container-max-width, 'max-width'); */
+@mixin structure($map, $property, $sizes: $sizes__default) {
+  @each $size in $sizes {
+    $value: return-map-value($map, $size);
+    @if $size == 'small' {
+      @include structure-property($property, $value);
+    } @else {
+      @include breakpoint($size) {
+        @include structure-property($property, $value);
+      }
+    }
+  }
+}
+
+// Used exclusively by the structure mixin to return property-left/property-right/property depending on the type of property.
+@mixin structure-property($property, $value) {
+  @if $property == 'padding' or $property == 'margin' {
+    $right: nth($value, 1);
+    $left: nth($value, 1);
+    @if length($value) == 2 {
+      $left: nth($value, 2);
+    }
+    #{$property}-right: $right;
+    #{$property}-left: $left;
+  } @else {
+    #{$property}: $value;
+  }
+}
+
+@mixin further-reading-padding() {
+  @each $size in $sizes__default {
+    $padding-right: return-map-value($size__further-reading-padding-right, $size);
+    $padding-bottom: return-map-value($size__further-reading-padding-bottom, $size) + (nth(return-map-value($size__related-content-margin, $size), 1) * -1);
+
+    @if $size == 'small' {
+      padding-right: $padding-right;
+      padding-bottom: $padding-bottom;
+    } @else {
+      @include breakpoint($size) {
+        padding-right: $padding-right;
+        padding-bottom: $padding-bottom;
+      }
+    }
+  }
+}
+
+@mixin related-content-margin() {
+  @each $size in $sizes__default {
+    $values: return-map-value($size__related-content-margin, $size);
+    $top: nth($values, 1);
+    $bottom: nth($values, 2);
+
+    @if $size == 'small' {
+      margin-top: $top;
+      margin-bottom: $bottom;
+    } @else {
+      @include breakpoint($size) {
+        margin-top: $top;
+        margin-bottom: $bottom;
+      }
+    }
+  }
+}
+
+@mixin related-content-padding() {
+  @each $size in ('small', 'medium', 'large') {
+    $values: return-map-value($size__related-content-padding, $size);
+    $top: nth($values, 1);
+    $sides: nth($values, 2);
+
+    @if $size == 'small' {
+      padding: $top $sides;
+    } @else {
+      @include breakpoint($size) {
+        padding: $top $sides;
+      }
+    }
+  }
+}
+
+
+@mixin spotlight-footer-middle-padding {
+  @each $size in $sizes__default {
+    $values: return-map-value($size__related-content-margin, $size);
+    $top: nth($values, 1);
+    $bottom: nth($values, 2);
+
+    @if $size == 'small' {
+      padding-bottom: calc(#{$top} * -1 + 5rem);
+    } @else {
+      @include breakpoint($size) {
+        padding-bottom: calc(#{$top} * -1);
+      }
+    }
+  }
+}
+
+@mixin spotlight-footer-end-margin {
+  @each $size in $sizes__default {
+    $values: return-map-value($size__related-content-margin, $size);
+    $top: nth($values, 1);
+    $bottom: nth($values, 2);
+
+    @if $size == 'small' {
+      margin-top: calc(#{$top} - 8rem);
+      margin-bottom: $bottom;
+    } @else if $size == 'large' {
+      margin-top: calc(#{$top} - 4rem);
+      margin-bottom: $bottom;
+    } @else {
+      @include breakpoint($size) {
+        margin-top: calc(#{$top} - 4rem);
+        margin-bottom: $bottom;
+      }
+    }
+  }
+}
+
+/* example: @include bg-images($img__about); */
+@mixin bg-images($type) {
+  @each $size in $sizes__default {
+    $img: map-get($type, $size);
+    $value: url('#{$img}');
+    @if $size == 'small' {
+      background-image: $value;
+    } @else {
+      @include breakpoint($break: $size, $breakpoints-map: $breakpoints--bg-img) {
+        background-image: $value;
+      }
+    }
+  }
+}
+
+@mixin site-header-white() {
+  background-color: $color__white;
+  background-image: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 1px -1px rgba(0, 0, 0, 0.12),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}

@@ -1,0 +1,193 @@
+/*===========================
+=                           =
+=    Spotlight Components   =
+=                           =
+===========================*/
+
+.spotlight-component {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+
+  &__label {
+    @extend %spotlight-component__label;
+    margin-bottom: 0.2rem;
+  }
+
+  &__caption {
+    @extend %post-content__caption-desc--sm;
+  }
+
+  &__caption-serif {
+    @extend %post-content__caption;
+  }
+}
+
+/*=============================
+=                             =
+=          Blockquotes        =
+=                             =
+=============================*/
+
+.sc-blockquote {
+  position: relative;
+  @extend %post-content__caption;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    margin-top: 0.25rem;
+    border-top: 2px solid var(--accent-color);
+  }
+
+  cite {
+    margin-bottom: 0.5rem;
+    text-transform: none;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+/*===========================
+=                           =
+=          Document         =
+=                           =
+===========================*/
+
+.sc-document {
+  text-align: center;
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+
+  &__icon {
+    text-align: center;
+    vertical-align: middle;
+
+    @include breakpoint('medium') {
+      float: left;
+      padding-right: 0.5rem;
+    }
+
+    i {
+      width: 2.3rem;
+      height: 2.3rem;
+      padding: 0.3rem 0.25rem;
+      color: $color__white;
+      background-color: var(--accent-color);
+      border-radius: 50%;
+
+      &:hover {
+        background-color: var(--accent-color--hover);
+        transition: inherit;
+      }
+    }
+  }
+}
+
+/*===========================
+=                           =
+=         Reference         =
+=                           =
+===========================*/
+
+.sc-reference {
+  position: relative;
+  text-align: center;
+
+  @include breakpoint('medium') {
+    text-align: left;
+  }
+
+  &::before {
+    @extend %spotlight-component__border;
+  }
+
+  a {
+    &:hover {
+      color: var(--accent-color);
+
+      i {
+        color: var(--accent-color--hover);
+      }
+    }
+  }
+
+  i {
+    position: relative;
+    top: -2px;
+    margin-left: 0.25rem;
+    color: var(--accent-color);
+    font-size: 0.8em;
+    transition: inherit;
+  }
+
+  p {
+    @extend %body-text__med;
+  }
+}
+
+/*===========================
+=                           =
+=         Statistic         =
+=                           =
+===========================*/
+
+.sc-statistic {
+  color: var(--accent-color);
+  font-family: $font__proxima;
+  @include font-size(18px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  text-align: center;
+
+  @include breakpoint('medium') {
+    @include font-size(20px);
+    text-align: left;
+  }
+
+  &__pre {
+    text-transform: uppercase;
+  }
+
+  &__number {
+    @include font-size(50px);
+
+    @include breakpoint('medium') {
+      @include font-size(64px);
+    }
+  }
+}
+
+/*===========================
+=                           =
+=          Dialogue         =
+=                           =
+===========================*/
+
+.sc-dialogue {
+  padding: 0 2rem;
+  text-align: left;
+
+  cite {
+    @extend %post-content__caption-label;
+    margin: 0;
+    padding: 0;
+    color: $color__black;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      display: none;
+    }
+  }
+
+  blockquote {
+    @extend %post-content__body;
+  }
+}

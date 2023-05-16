@@ -1,0 +1,515 @@
+.layout-home {
+  .home__hero {
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 100vw;
+    margin: 0 -50vw;
+    background-color: #f0f2f6;
+  }
+
+  #px-render {
+    width: 100%;
+    height: 100%;
+  }
+
+  #top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hero_top {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 105vh;
+    overflow: hidden;
+    background: rgba(240, 242, 246, 1);
+    background: radial-gradient(
+      ellipse at center,
+      rgba(240, 242, 246, 1) 0%,
+      rgba(208, 216, 224, 1) 51%,
+      rgba(158, 179, 208, 1) 100%
+    );
+
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f2f6', endColorstr='#9eb3d0', GradientType=1);
+
+    .hero-logo {
+      display: block;
+      max-width: 200px;
+      margin: auto;
+
+      @include breakpoint('large') {
+        max-width: 500px;
+      }
+    }
+  }
+
+  #hero_bottom {
+    position: relative;
+    bottom: -100%;
+    z-index: 15;
+    width: 100vw;
+    height: 60vh;
+    min-height: 500px;
+    background: #0e2764;
+    background: linear-gradient(
+      75deg,
+      #0e2764 1%,
+      #1a4593 13%,
+      #447bb5 33%,
+      #447bb5 70%,
+      #1d509b 93%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e2764', endColorstr='#1d509b', GradientType=1);
+    animation: Gradient 5s ease infinite;
+
+    @include breakpoint('large') {
+      height: 800px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 100vw;
+      height: 101%;
+      background: rgb(10, 63, 131);
+      background: linear-gradient(
+        0deg,
+        rgba(10, 63, 131, 1) 0%,
+        rgba(10, 63, 131, 0) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a3f83', endColorstr='#0a3f83', GradientType=1);
+      content: '';
+    }
+  }
+
+  #sky {
+    position: relative;
+    display: flex;
+    flex-grow: 2;
+    width: 100vw;
+    height: 100%;
+    min-height: 65vh;
+    background-repeat: no-repeat;
+    //background: url("../img/bg/sky.png");
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  #clouds_1 {
+    background: url('#{$img__home}clouds_1.png');
+  }
+
+  #clouds_2 {
+    background: url('#{$img__home}clouds_2.png');
+  }
+
+  #clouds_1,
+  #clouds_2,
+  #clouds_3 {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+  }
+
+  #water {
+    position: relative;
+    height: 60vh;
+    background: url('#{$img__home}water2.png'), url('#{$img__home}water.png');
+    background-repeat: no-repeat;
+
+    @include breakpoint($break: 'medium', $until: 'xlarge-2') {
+      background: none;
+    }
+
+    @include breakpoint('medium') {
+      background-position-y: 120%, 0%;
+    }
+
+    &::after {
+      @include breakpoint('xlarge-2') {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 1499px;
+        display: block;
+        width: 1500px;
+        height: 100%;
+        background: url('#{$img__home}water2.png'),
+          url('#{$img__home}water.png');
+        background-repeat: no-repeat;
+        background-position-y: 120%, 0;
+        transform: scaleX(-1);
+      }
+    }
+
+    &.enable-animation::after {
+      @include breakpoint('xlarge-2') {
+        background: none;
+      }
+    }
+  }
+
+  #wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 55vh;
+    margin-top: -20vh;
+    overflow: hidden;
+    background: url('#{$img__home}wave.png');
+    background-repeat: no-repeat;
+    background-position-y: 15%;
+    transition: left 1s ease-in-out;
+
+    @include breakpoint($break: 'medium', $until: 'xlarge-2') {
+      background: none;
+    }
+
+    &::after {
+      @include breakpoint('xlarge-2') {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 1499px;
+        display: block;
+        width: 1500px;
+        height: 100%;
+        background: url('#{$img__home}wave.png');
+        background-repeat: no-repeat;
+        background-position-y: 15%;
+        transform: scaleX(-1);
+        transition: left 1s ease-in-out;
+      }
+    }
+
+    &.enable-animation::after {
+      @include breakpoint('xlarge-2') {
+        background: none;
+      }
+    }
+  }
+
+  #preserve {
+    color: $color__white;
+    filter: url('#turb');
+    fill: $color__white;
+  }
+
+  #preserve-svg,
+  #protect-svg {
+    z-index: 5;
+    width: 100%;
+    font-family: $font__proxima;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    @include font-size(60px);
+
+    @include breakpoint('large') {
+      @include font-size(120px);
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  #protect {
+    display: inline-flex;
+  }
+
+  #preserve-svg {
+    position: relative;
+    top: -200px;
+    letter-spacing: 0.25rem;
+    opacity: 0;
+    transition: opacity 0.5s, top 1s;
+
+    &:not(.disable-animation) {
+      top: -200px;
+      opacity: 0;
+      transition: opacity 0.5s, top 1s;
+    }
+
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    /* stylelint-enable */
+
+    &.pactive {
+      position: relative;
+      top: 0;
+      opacity: 1;
+      transition: opacity 3s, top 1s;
+    }
+  }
+
+  #hero-bottom_intro {
+    position: absolute;
+    top: 60%;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  #protect-svg {
+    position: fixed;
+    top: 33%;
+    opacity: 1;
+    transition: opacity 2s, top 2s;
+
+    // @media screen and (min-height: 800px) {
+    //   top: 15vh;
+    // }
+  }
+
+  #hero_bottom::before {
+    position: fixed;
+    content: '';
+  }
+
+  #home-scroll-container {
+    position: absolute;
+    top: calc(100vh - 100px);
+    z-index: 5;
+    display: block;
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+
+    .scroll-text {
+      display: block;
+      padding-bottom: 10px;
+      overflow: hidden;
+      color: $color__white;
+      font-family: $font__proxima;
+      text-align: center;
+      transition: opacity 1s;
+    }
+
+    .scroll-line {
+      display: block;
+      width: 1px;
+      height: 100px;
+      margin: 0 auto;
+      border: 0;
+      border-left: 1px $color__white solid;
+      transition: height 2s;
+    }
+
+    &.active {
+      .scroll-text {
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .scroll-line {
+        height: 0;
+        transition: height 2s;
+      }
+    }
+  }
+
+  #protect-svg span {
+    display: inline-block;
+    text-shadow: 0 0 0 $color__white;
+    transform: matrix(0.9, 0.3, 0, 0.4, -100, -100);
+    transform-origin: 0 0;
+    opacity: 0;
+    filter: blur(0);
+    transition: opacity 4;
+
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    /* stylelint-enable */
+  }
+
+  #underwater-container {
+    position: relative;
+    height: 100%;
+  }
+
+  .ray-container {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 70%;
+    margin-top: 10vh;
+    overflow: hidden;
+    filter: blur(6px);
+  }
+
+  .ray {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.15) 20%,
+      rgba(255, 255, 255, 0.2) 84%,
+      rgba(255, 255, 255, 0.2) 85%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: scale(1) rotate(0) translateX(0) translateY(0) skewX(30deg)
+      skewY(0deg);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=0);
+    transition: all 1000ms ease;
+
+    &:not(.disable-animation) {
+      filter: blur(6px);
+
+      &::before,
+      &::after {
+        filter: blur(10px);
+      }
+    }
+  }
+
+  .ray::before,
+  .ray::after {
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.15) 20%,
+      rgba(255, 255, 255, 0.2) 84%,
+      rgba(255, 255, 255, 0.2) 85%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=0); /* IE6-9 */
+    content: '';
+  }
+
+  .ray::before {
+    left: -150%;
+    width: 50px;
+  }
+
+  .ray::after {
+    left: 120%;
+    width: 75px;
+  }
+
+  @for $i from 1 through 4 {
+    $time: ($i / 2 + 2);
+    $time1: $time + s;
+
+    .ray:nth-child(#{$i}):not(.disable-animation) {
+      animation: move-#{$i} $time1 linear infinite alternate;
+    }
+
+    .ray:nth-child(#{$i}):not(.disable-animation)::before {
+      width: random(100) + px;
+      animation: move-#{$i} 5s linear infinite alternate;
+    }
+
+    .ray:nth-child(#{$i}):not(.disable-animation)::after {
+      width: random(100) + px;
+      animation: move-#{$i} 3s linear infinite alternate;
+    }
+
+    @keyframes move-#{$i} {
+      $height: random(70);
+
+      0% {
+        height: $height + '%';
+        margin-top: random(50) + px;
+        margin-left: (random(50) + 50) + px;
+        opacity: (random(70) / 100) + 0.1;
+      }
+
+      50% {
+        opacity: (random(4) / 100) + 0.2;
+      }
+
+      100% {
+        height: ($height - 20) + '%';
+        margin-top: 50 px;
+        margin-left: (random(50) + 100) + px;
+        opacity: (random(70) / 100) + 0.1;
+      }
+    }
+  }
+
+  .ray:nth-of-type(1) {
+    left: 10%;
+    width: 100px;
+  }
+
+  .ray:nth-of-type(2) {
+    left: 35%;
+    width: 100px;
+    content: '';
+  }
+
+  .ray:nth-of-type(3) {
+    left: 20%;
+    width: 80px;
+  }
+
+  .ray:nth-of-type(4) {
+    left: 50%;
+    width: 90px;
+  }
+
+  #intro-desc {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+
+    p {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+      color: $color__ltgray-light;
+      font-family: $font__freight;
+      @include font-size(30px);
+      font-style: italic;
+      line-height: 1.3;
+      text-align: center;
+
+      @include breakpoint('medium') {
+        @include font-size(40px);
+        padding: 0;
+      }
+    }
+  }
+
+  #home_bottom {
+    position: relative;
+    z-index: 15;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(1, 23, 43);
+    background: linear-gradient(
+      0deg,
+      rgba(1, 23, 43, 1) 0%,
+      rgba(1, 28, 56, 1) 22%,
+      rgba(10, 63, 131, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01172b', endColorstr='#0a3f83', GradientType=1);
+  }
+}

@@ -1,0 +1,19 @@
+/*===============================
+=         Content Type          =
+===============================*/
+
+.content-type {
+  text-transform: uppercase;
+
+  .post__header & {
+    @extend %post-type;
+  }
+
+  .post-block & {
+    @extend %post-block__type;
+  }
+
+  .post-block--related {
+    @extend %post-block__type--related;
+  }
+}

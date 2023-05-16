@@ -1,0 +1,109 @@
+.about {
+  order: 4;
+  margin-top: 2.5rem;
+
+  @include breakpoint('large') {
+    width: calc(100% - #{$size__post-sidebar-width});
+  }
+
+  @include structure(
+    $size__post-body-padding-right,
+    'padding-right',
+    ('large', 'xlarge')
+  );
+
+  h2 {
+    @extend %post-content__h2;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      text-align: center;
+    }
+  }
+
+  h3:not(.about-heading) {
+    @extend %post-content__h3;
+  }
+
+  p + h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &-person {
+    margin: 1rem 0 2rem;
+    @extend %body-text__med;
+    text-align: left;
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      text-align: center;
+    }
+
+    @include breakpoint('medium') {
+      display: grid;
+      grid-gap: 0 1.25rem;
+      grid-template-columns: minmax(90px, 150px) minmax(180px, auto);
+      grid-template-rows: auto 1fr;
+      /* stylelint-disable */
+      @include breakpoint('medium') {
+        -ms-grid-columns: 150px 1.25rem auto !important;
+        -ms-grid-rows: auto auto !important;
+      }
+      /* stylelint-enable */
+    }
+
+    img {
+      align-self: start;
+      width: 100%;
+      max-width: 150px;
+      margin: 0.5rem 0 1rem;
+      /* stylelint-disable */
+      @include breakpoint('medium') {
+        -ms-grid-column: 1 !important;
+        -ms-grid-row: 3 !important;
+      }
+      /* stylelint-enable */
+    }
+
+    p {
+      /* stylelint-disable */
+      @include breakpoint('medium') {
+        -ms-grid-column: 3 !important;
+        -ms-grid-row: 3 !important;
+      }
+      /* stylelint-enable */
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+
+  &-heading {
+    grid-column: 1 / -1;
+    @extend %section-heading;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    /* stylelint-disable */
+    @include breakpoint('medium') {
+      -ms-grid-column: 1 !important;
+      -ms-grid-column-span: 3 !important;
+      -ms-grid-row: 1 !important;
+    }
+    /* stylelint-enable */
+  }
+
+  &-subheading {
+    grid-column: 1 / -1;
+    @extend %post-block__type--related;
+    margin-bottom: 0.5rem;
+    color: $color__black;
+    text-transform: uppercase;
+    /* stylelint-disable */
+    @include breakpoint('medium') {
+      -ms-grid-column: 1 !important;
+      -ms-grid-column-span: 3 !important;
+      -ms-grid-row: 2 !important;
+    }
+    /* stylelint-enable */
+  }
+}

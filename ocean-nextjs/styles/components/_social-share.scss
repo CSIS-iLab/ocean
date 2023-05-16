@@ -1,0 +1,223 @@
+/*==================================
+=       Social Share Icons         =
+==================================*/
+
+.site-header__share {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  order: 3;
+  margin-right: 1rem;
+  transition: transform 0.5s linear, visibility 0s linear 0.3s;
+
+  @include breakpoint('large') {
+    margin-right: 0;
+  }
+
+  &-trigger {
+    position: relative;
+    z-index: 1;
+    display: block;
+    padding: 0;
+    background-color: $color__white;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 105%;
+      display: block;
+      width: 100vw;
+      height: 100%;
+      background-color: $color__white;
+      transition: background-color 0.2s linear;
+
+      content: '';
+    }
+
+    &:hover {
+      color: $color__medblue;
+    }
+
+    &:focus {
+      outline: 0;
+      @extend %focus--border;
+    }
+
+    &.is-active {
+      color: $color__slate;
+    }
+  }
+}
+
+.share-site__header {
+  position: absolute;
+  top: 0;
+  right: calc(100% + 0.5rem);
+  z-index: -1;
+  background-color: $color__white;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: transform 0.5s linear, visibility 0.5s linear 0.1s,
+    z-index 0.5s linear 0.1s;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    background-color: $color__white;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.1s;
+
+    @include breakpoint('large') {
+      display: none;
+    }
+  }
+
+  &.is-active {
+    z-index: 0;
+    transform: translateX(0);
+    visibility: visible;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  li a {
+    margin: 0 1rem;
+    color: $color__medblue;
+    @include font-size(18px);
+
+    @include breakpoint($break: 'medium', $dir: 'max-width') {
+      text-shadow: 0 0 4px rgba($color__black, 0.33);
+    }
+
+    &:hover {
+      color: $color__bluegray;
+    }
+  }
+}
+
+.share-post__header {
+  flex-direction: column;
+
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    display: none;
+  }
+
+  @include breakpoint($break: 'large', $until: 'xlarge') {
+    margin-right: return-map-value($size__content-margin--post, 'large');
+  }
+
+  li a {
+    margin-right: 2px;
+    color: $color__white;
+    opacity: 0.7;
+  }
+}
+
+.share-post__footer {
+  @include breakpoint($break: 'medium', $dir: 'max-width') {
+    font-size: 1.3rem;
+  }
+
+  li {
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+
+    a {
+      color: $color__dkgray;
+
+      &:hover {
+        color: $color__medblue;
+      }
+    }
+  }
+}
+
+.share {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+
+  li {
+    line-height: 1.5rem;
+    text-align: center;
+    list-style-type: none;
+
+    &:last-child {
+      display: none;
+    }
+
+    a {
+      display: block;
+      border: 2px solid transparent;
+
+      &:hover {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+
+      &:focus {
+        @extend %focus--border;
+        background-color: transparent;
+        outline: 0;
+      }
+    }
+
+    i::before {
+      width: auto;
+      height: auto;
+      margin: 0;
+    }
+  }
+}
+
+.archive .share {
+  display: none;
+
+  @include breakpoint('large') {
+    position: absolute;
+    bottom: calc(var(--archive-cutout-height) - 1.5rem);
+    display: flex;
+    align-self: flex-end;
+    margin: 0;
+  }
+
+  @each $size in ('large', 'xlarge') {
+    // prettier-ignore
+    $margin: nth(map-get($map: $size__content-margin--archive, $key: $size), 1);
+    $right: calc(#{$margin} / 2 - 1rem);
+
+    @if $size == 'xlarge' {
+      $right: calc(#{$margin} / 2 + 1rem);
+    }
+
+    @include breakpoint($size) {
+      right: $right;
+    }
+  }
+
+  li {
+    @include breakpoint('large') {
+      @include font-size(18px);
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  li:last-child {
+    display: block;
+    margin-top: 0.5rem;
+    opacity: 0.57;
+  }
+}

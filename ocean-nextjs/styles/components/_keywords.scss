@@ -1,0 +1,41 @@
+/*====================================
+=              Keywords              =
+===================================*/
+
+.keywords {
+  display: flex;
+
+  &__label {
+    flex: 0 0 auto;
+    @extend %tag__label;
+    padding-top: 0.1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 0.75rem;
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+  }
+
+  li {
+    @extend %tag;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0 0.75rem;
+    text-transform: lowercase;
+    list-style-type: none;
+
+    a:hover {
+      color: $color__red;
+    }
+
+    a:focus {
+      padding: 2px 5px;
+      background-color: transparent;
+      @extend %focus--border;
+    }
+  }
+}

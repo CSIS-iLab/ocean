@@ -1,0 +1,58 @@
+/*============================
+=      Related Posts         =
+============================*/
+
+.related-posts {
+  display: grid;
+  grid-row-gap: 0.5rem;
+
+  @include breakpoint('medium') {
+    grid-column-gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  &__header {
+    @extend %post-block__type--related;
+    grid-column: 1 / -1;
+    /* stylelint-disable */
+    -ms-grid-column-span: 3 !important;
+    /* stylelint-enable */
+    text-transform: uppercase;
+  }
+
+  &__block {
+    /* stylelint-disable */
+    @include breakpoint('medium') {
+      -ms-grid-row: 2 !important;
+    }
+    /* stylelint-enable */
+
+    &:first-of-type:not(:only-child) {
+      @include breakpoint($break: 'medium', $dir: 'max-width') {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &__title {
+      @extend %post-block__title--related;
+      margin-bottom: 0.25rem;
+
+      a:hover {
+        color: $color__medblue;
+      }
+    }
+
+    .post-meta {
+      @extend %archive__results;
+
+      &__label {
+        @extend %tag__label;
+      }
+
+      a:hover {
+        color: $color__medblue;
+      }
+    }
+  }
+}

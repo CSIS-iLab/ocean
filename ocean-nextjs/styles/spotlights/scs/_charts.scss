@@ -1,0 +1,102 @@
+%scs-chart {
+  .highcharts-container {
+    margin: 3rem 0;
+  }
+
+  .highcharts-title {
+    @extend %post-content__table-title;
+    fill: $color__black;
+  }
+
+  .highcharts-subtitle {
+    @extend %post-content__caption-desc;
+  }
+
+  .highcharts-tick {
+    opacity: 0;
+  }
+
+  .highcharts-axis-labels,
+  .highcharts-legend-item {
+    @extend %spotlight-component__label;
+  }
+
+  .highcharts-legend-item {
+    font-weight: normal;
+  }
+
+  .highcharts-root {
+    @extend %body-text__med;
+  }
+}
+
+#chartCatch {
+  $china: $color__red;
+  $spratly: $color__default-accent-dkr;
+  $scs: $color__default-accent;
+
+  @extend %scs-chart;
+
+  .highcharts-series-scs .highcharts-point {
+    fill: rgba($scs, 0.6);
+  }
+}
+
+#chartVessels {
+  $subi: $color__red-medlight;
+  $mischief: $color__default-accent;
+
+  @extend %scs-chart;
+
+  .highcharts-legend-item:first-of-type .highcharts-point {
+    fill: $subi;
+  }
+
+  .highcharts-legend-item:last-of-type .highcharts-point {
+    fill: $mischief;
+  }
+
+  .highcharts-series-subi {
+    &-area {
+      .highcharts-area {
+        fill: rgba($subi, 0.6);
+      }
+
+      .highcharts-graph {
+        stroke: none;
+      }
+
+      &.highcharts-tracker .highcharts-point {
+        fill: none;
+      }
+    }
+
+    &-column {
+      .highcharts-point {
+        fill: $subi;
+      }
+    }
+  }
+
+  .highcharts-series-mischief {
+    &-area {
+      .highcharts-area {
+        fill: rgba($mischief, 0.6);
+      }
+
+      .highcharts-graph {
+        stroke: none;
+      }
+
+      &.highcharts-tracker .highcharts-point {
+        fill: none;
+      }
+    }
+
+    &-column {
+      .highcharts-point {
+        fill: $mischief;
+      }
+    }
+  }
+}

@@ -1,0 +1,338 @@
+/*=============================
+=            Posts            =
+=============================*/
+
+.post {
+  $post: &;
+  // prettier-ignore
+  $width-offset: nth(map-get($map: $size__container-padding, $key: 'xlarge'), 2);
+
+  &__header {
+    position: relative;
+    @include structure(
+      $size__page-header-height--post,
+      'height',
+      ('medium', 'large', 'xlarge')
+    );
+    @include structure(
+      $size__page-header-padding--post,
+      'padding-bottom',
+      ('medium', 'large', 'xlarge')
+    );
+
+    /* stylelint-disable */
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      height: map-get($size__page-header-height--post, 'small') !important;
+    }
+    /* stylelint-enable */
+
+    @include breakpoint('medium') {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+
+      /* stylelint-disable */
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: map-get($size__page-header-height--post, 'medium') !important;
+      }
+      /* stylelint-enable */
+    }
+
+    @include breakpoint('large') {
+      /* stylelint-disable */
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: map-get($size__page-header-height--post, 'large') !important;
+      }
+      /* stylelint-enable */
+    }
+
+    @include breakpoint('xlarge') {
+      /* stylelint-disable */
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: map-get($size__page-header-height--post, 'xlarge') !important;
+      }
+      /* stylelint-enable */
+    }
+
+    &::before {
+      content: '';
+      position: relative;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 50%;
+      z-index: -1;
+      display: block;
+      width: 100vw;
+      height: return-map-value($size__page-header-height--post, 'small');
+      margin-right: -50vw;
+      margin-left: -50vw;
+      @include bg-images($img__commentary);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+
+      @include breakpoint('medium') {
+        position: absolute;
+        height: unset;
+        margin-bottom: -6.75rem;
+        background-position-y: top;
+      }
+
+      @include breakpoint('xlarge') {
+        width: calc(100vw + (#{$width-offset}) / 2);
+      }
+
+      .layout-page & {
+        @include bg-images($img__about);
+        background-position: center;
+      }
+    }
+
+    &-content {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+
+      @include breakpoint('medium') {
+        flex: 1;
+        margin-top: 0;
+      }
+
+      @include breakpoint('large') {
+        $margin: return-map-value($size__content-margin--post, 'large');
+        // prettier-ignore
+        margin-right: $margin * 2;
+        margin-left: $margin;
+      }
+
+      @include breakpoint('xlarge') {
+        // prettier-ignore
+        $margin: nth(return-map-value($size__content-margin--post, 'xlarge'), 2);
+        margin-right: $margin * 2;
+        margin-left: $margin;
+      }
+    }
+
+    #{$post}-title {
+      @extend %post-title;
+      max-width: 700px;
+      margin: 0.75rem 0;
+    }
+
+    &-intro {
+      margin: 1rem auto;
+      padding: 1rem 0;
+      @include font-size(14px);
+      background-color: $color__ltgray-lighter;
+      @include full-width-background(
+        $background: $color__ltgray-lighter,
+        $excludeMargin: true
+      );
+
+      @include breakpoint('medium') {
+        margin-right: 2rem;
+        margin-bottom: calc(
+          (#{map-get($size__page-header-padding--post, 'medium')} + 1rem) * -1
+        );
+        margin-left: 0;
+        padding-right: 1rem;
+        color: $color__slate-light;
+        background-color: $color__dkblue-darker;
+
+        &::before {
+          background-color: $color__dkblue-darker;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      @include breakpoint('large') {
+        $width-offset: map-get($size__post-body-padding-right, 'large');
+        max-width: calc(70% + #{$width-offset});
+        margin-bottom: calc(
+          (#{map-get($size__page-header-padding--post, 'large')} + 1rem) * -1
+        );
+        padding: 2rem 2rem 2rem 0;
+        @include font-size(15px);
+
+        &::before {
+          z-index: 1;
+          height: calc(100% + 4rem);
+        }
+      }
+
+      @include breakpoint('xlarge') {
+        $width-offset: map-get($size__post-body-padding-right, 'xlarge');
+        max-width: calc(70% + #{$width-offset});
+        margin-bottom: calc(
+          (#{map-get($size__page-header-padding--post, 'xlarge')} + 1rem) * -1
+        );
+        @include font-size(16px);
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: grid;
+    @include structure($size__content-margin--post, 'margin');
+    margin-bottom: 1rem;
+    @include structure($size__content-padding, 'padding');
+    padding-bottom: 0.5rem;
+
+    @include breakpoint('medium') {
+      margin-bottom: 2rem;
+      padding-top: 2rem;
+      background-color: $color__white;
+      border-left: 1px solid $color__gray-58;
+    }
+
+    @include breakpoint('large') {
+      display: block;
+    }
+
+    &::after {
+      @include breakpoint('medium') {
+        content: '';
+        position: absolute;
+        top: -10px;
+        bottom: -20rem;
+        left: 100%;
+        width: calc((100vw - 100%) / 2 - 1px);
+        // prettier-ignore
+        background-image: linear-gradient(180deg, rgba(14, 26, 44, 0), rgba(14, 26, 44, 0.8) 80px, #081324 120px, #081324 97.7%, rgba(0, 11, 14, 0.01));
+      }
+
+      @include breakpoint('large') {
+        bottom: -18rem;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 45%;
+      height: 1px;
+      background-color: $color__ltgray;
+
+      @include breakpoint('medium') {
+        right: calc(100% + 1px);
+        width: calc((100vw - 100%) / 2);
+        height: 100%;
+        background-color: $color__white;
+      }
+    }
+  }
+
+  &-lede {
+    order: 2;
+    max-width: 700px;
+    margin: 0 0 1rem;
+    @extend %post-lede;
+
+    @include breakpoint('large') {
+      margin-bottom: 2rem;
+    }
+
+    &:empty {
+      margin: 0;
+    }
+  }
+
+  &__content-aside {
+    order: 1;
+    margin-bottom: 2rem;
+
+    @include breakpoint('large') {
+      float: right;
+      width: $size__post-sidebar-width;
+    }
+  }
+
+  &__content-body {
+    order: 3;
+    @include structure(
+      $size__post-body-padding-right,
+      'padding-right',
+      ('large', 'xlarge')
+    );
+
+    @include breakpoint('large') {
+      width: calc(100% - #{$size__post-sidebar-width});
+    }
+  }
+
+  &__footer {
+    @include structure($size__content-margin--post, 'margin');
+    @include structure($size__post-footer-padding-right, 'padding-right');
+
+    &-top {
+      margin-bottom: 1rem;
+
+      @include breakpoint('large') {
+        display: flex;
+      }
+    }
+
+    .keywords {
+      margin-bottom: 1rem;
+      @include structure(
+        $size__post-body-padding-right,
+        'padding-right',
+        ('large', 'xlarge')
+      );
+
+      @include breakpoint('large') {
+        flex: 0 0 auto;
+        width: calc(100% - #{$size__post-sidebar-width});
+        margin-bottom: 0;
+      }
+    }
+
+    .share {
+      @include breakpoint('large') {
+        flex: 1 1 auto;
+        justify-content: flex-end;
+      }
+    }
+
+    &-middle {
+      position: relative;
+      padding-top: 2rem;
+      @include further-reading-padding;
+      background-color: $color__ltgray-lighter;
+      @include full-width-background($color__ltgray-lighter);
+
+      &::after {
+        // prettier-ignore
+        @include structure(
+          $size__post-footer-padding-right,
+          'width',
+          ('medium', 'large', 'xlarge')
+        );
+      }
+    }
+
+    &-end {
+      position: relative;
+      @include related-content-margin;
+      @include related-content-padding;
+      background-color: $color__white;
+      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.14);
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+}
