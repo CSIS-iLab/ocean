@@ -33,5 +33,3 @@ doc/
 .DS_Store
 .idea
 .secret
-package-lock.json
-Gemfile.lock
