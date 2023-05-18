@@ -19,7 +19,7 @@ $ git clone https://github.com/CSIS-iLab/ocean.git
 $ cd csis-jekyll-starter
 $ bundle install --path vendor/bundle
 $ npm install
-$ npm start
+$ npm start or npm run dev
 ```
 
 ## Usage
