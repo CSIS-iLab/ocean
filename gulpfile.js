@@ -1,3 +1,5 @@
+// gulpfile.js (Node 18 friendly / no fibers)
+
 const argv = require('yargs').argv
 const config = require('./frasco.config.js')
 const { src, dest, watch, series, parallel } = require('gulp')
@@ -12,39 +14,39 @@ const newer = require('gulp-newer')
 const plumber = require('gulp-plumber')
 const postcss = require('gulp-postcss')
 const pngquant = require('imagemin-pngquant')
-const sass = require('gulp-sass')
-const Fiber = require('fibers')
+// --- CHANGED: use gulp-sass v5 + Dart Sass, no fibers ---
+const dartSass = require('sass')
+const gulpSass = require('gulp-sass')(dartSass)
+// ---------------------------------------------------------
 const styleLint = require('gulp-stylelint')
 const t2 = require('through2')
 const log = require('fancy-log')
 const webpackStream = require('webpack-stream')
 const webpack = require('webpack')
 
-sass.compiler = require('sass')
-
+// browser-sync instance
 const server = browserSync.create()
 
 /*----------  SASS  ----------*/
 
 function sassTask() {
-  return src(config.assets + '/' + config.sass.src + '/**/*.scss')
+  return src(`${config.assets}/${config.sass.src}/**/*.scss`)
     .pipe(
-      sass({ fiber: Fiber, outputStyle: config.sass.outputStyle }).on(
-        'error',
-        sass.logError
-      )
+      // no { fiber: ... } option; Dart Sass is fast enough and fiber is deprecated
+      gulpSass.sync({ outputStyle: config.sass.outputStyle }),
+      'error',
+      gulpSass.logError
     )
     .pipe(postcss([autoprefixer(config.sass.autoprefixer)]))
     .pipe(
       t2.obj((chunk, enc, cb) => {
-        // Execute through2
-        let date = new Date()
+        const date = new Date()
         chunk.stat.atime = date
         chunk.stat.mtime = date
         cb(null, chunk)
       })
     )
-    .pipe(dest(config.assets + '/' + config.sass.dest))
+    .pipe(dest(`${config.assets}/${config.sass.dest}`))
     .pipe(server.stream({ match: '**/*.css' }))
     .on('end', () => log('SASS updated'))
 }
@@ -55,24 +57,19 @@ exports.sass = sassTask
 function styleLintTask() {
   let autoFix = false
   let failAfterError = false
-  if (argv.fix) {
-    autoFix = true
-  }
+  if (argv.fix) autoFix = true
+  if (argv.allow_stylelint_fail) failAfterError = true
 
-  if (argv.allow_stylelint_fail) {
-    failAfterError = true
-  }
-
-  let stream = src(config.assets + '/' + config.sass.src + '/**/*.scss').pipe(
+  let stream = src(`${config.assets}/${config.sass.src}/**/*.scss`).pipe(
     styleLint({
-      failAfterError: failAfterError,
+      failAfterError,
       reporters: [{ formatter: 'string', console: true }],
       fix: autoFix
     })
   )
 
   if (autoFix) {
-    stream = stream.pipe(dest(config.assets + '/' + config.sass.src))
+    stream = stream.pipe(dest(`${config.assets}/${config.sass.src}`))
   }
 
   return stream
@@ -84,7 +81,7 @@ exports.stylelint = styleLintTask
 
 const jsFiles = []
 for (let i = 0; i <= config.js.entry.length - 1; i++) {
-  jsFiles.push(config.assets + '/' + config.js.src + '/' + config.js.entry[i])
+  jsFiles.push(`${config.assets}/${config.js.src}/${config.js.entry[i]}`)
 }
 
 if (config.tasks.eslint) config.webpack.module.rules.push(config.eslintLoader)
@@ -98,15 +95,12 @@ function webpackTask() {
     .pipe(named())
     .pipe(babel())
     .pipe(webpackStream(config.webpack, webpack))
-    .pipe(dest(config.assets + '/' + config.js.dest))
+    .pipe(dest(`${config.assets}/${config.js.dest}`))
 }
 
 /*----------  esLint  ----------*/
-const runEslint = function() {
-  return src([
-    config.assets + '/' + config.js.src + '/**/*.js',
-    '!node_modules/**'
-  ])
+const runEslint = function () {
+  return src([`${config.assets}/${config.js.src}/**/*.js`, '!node_modules/**'])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failOnError())
@@ -116,9 +110,9 @@ exports.eslint = runEslint
 /*----------  Images  ----------*/
 
 function imagesTask() {
-  return src(config.assets + '/' + config.imagemin.src + '/**/*')
+  return src(`${config.assets}/${config.imagemin.src}/**/*`)
     .pipe(plumber())
-    .pipe(newer(config.assets + '/' + config.imagemin.dest))
+    .pipe(newer(`${config.assets}/${config.imagemin.dest}`))
     .pipe(
       imagemin({
         progressive: config.imagemin.progressive,
@@ -126,7 +120,7 @@ function imagesTask() {
         use: [pngquant()]
       })
     )
-    .pipe(dest(config.assets + '/' + config.imagemin.dest))
+    .pipe(dest(`${config.assets}/${config.imagemin.dest}`))
 }
 
 exports.imagemin = imagesTask
@@ -159,29 +153,29 @@ function serve(done) {
 const filesToWatch = [
   '!./node_modules/**/*',
   '!./README.md',
-  '!' + config.jekyll.dest + '/**/*',
+  `!${config.jekyll.dest}/**/*`,
   '_config*.yml',
   '*.html',
   './**/*.md',
   './**/*.markdown',
   '*.json',
-  config.jekyll.includes + '/**/*',
-  config.jekyll.layouts + '/**/*',
-  config.jekyll.posts + '/**/*',
-  config.assets + '/' + config.sass.dest + '/**/*',
-  config.assets + '/' + config.js.dest + '/**/*',
-  config.assets + '/' + config.imagemin.dest + '/**/*'
+  `${config.jekyll.includes}/**/*`,
+  `${config.jekyll.layouts}/**/*`,
+  `${config.jekyll.posts}/**/*`,
+  `${config.assets}/${config.sass.dest}/**/*`,
+  `${config.assets}/${config.js.dest}/**/*`,
+  `${config.assets}/${config.imagemin.dest}/**/*`
 ]
 
 function watchTask() {
   watch(
-    config.assets + '/' + config.sass.src + '/**/*',
+    `${config.assets}/${config.sass.src}/**/*`,
     series(styleLintTask, sassTask)
   )
 
-  watch(config.assets + '/' + config.js.src + '/**/*', series(webpackTask))
+  watch(`${config.assets}/${config.js.src}/**/*`, series(webpackTask))
 
-  watch(config.assets + '/' + config.imagemin.src + '/**/*', series(imagesTask))
+  watch(`${config.assets}/${config.imagemin.src}/**/*`, series(imagesTask))
 
   watch(filesToWatch, series(jekyllBuild, reload))
 }
@@ -201,17 +195,14 @@ function jekyllBuild(done) {
       : ''
   }
 
-  let buildArgs = ['exec', 'jekyll', 'build', '--config', jekyllConfig]
+  const buildArgs = ['exec', 'jekyll', 'build', '--config', jekyllConfig]
 
   if (argv.preview) {
-    buildArgs.push('--drafts')
-    buildArgs.push('--unpublished')
-    buildArgs.push('--future')
+    buildArgs.push('--drafts', '--unpublished', '--future')
   }
 
   if (argv.forestry) {
-    buildArgs.push('--destination')
-    buildArgs.push('_forestry_site')
+    buildArgs.push('--destination', '_forestry_site')
   }
 
   return cp

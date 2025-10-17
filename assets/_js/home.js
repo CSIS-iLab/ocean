@@ -5,8 +5,9 @@ import TweenMax from 'TweenMax'
 import TimelineMax from 'TimelineMax'
 import TweenLite from 'TweenLite'
 import { PixiPlugin, ScrollToPlugin, Sine } from 'gsap/all'
-import Plyr from 'plyr'
-import ScrollMagic from 'ScrollMagic'
+// import Plyr from 'plyr'
+import Plyr from 'plyr/dist/plyr.js'
+import ScrollMagic from 'scrollmagic'
 import 'animation.gsap'
 
 let loader
